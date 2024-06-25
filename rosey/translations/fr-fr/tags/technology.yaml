@@ -1,0 +1,58 @@
+urlTranslation: tags/technology/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      tags/technology/](https://glamorous-sanctuary.cloudvent.net/tags/technolo\
+      gy/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-fr)
+          comment: Text to translate on
+            [tags/technology/](https://glamorous-sanctuary.cloudvent.net/tags/technology/)
+          inputs:
+            - test-page
+        - heading: Already translated (fr-fr)
+          comment: Text already translated on
+            [tags/technology/](https://glamorous-sanctuary.cloudvent.net/tags/technology/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/technology/#:~:text=\
+      About)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/technology/#:~:text=\
+      Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/technology/#:~:text=\
+      RSS%20Feed)"
+  test-page:
+    label: Test Page
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/technology/#:~:text=\
+      Test%20Page)"
+about: Á propos
+blog: Nouvelles
+rss-feed: RSS Alimentation
+test-page: ""
