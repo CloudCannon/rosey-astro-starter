@@ -2,19 +2,17 @@ urlTranslation: tags/marketing/index.html
 _inputs:
   $:
     type: object
-    comment: "[See
-      tags/marketing/](https://glamorous-sanctuary.cloudvent.net/tags/marketing\
-      /)"
+    comment: "[See tags/marketing/](https://cool-ski.cloudvent.net/tags/marketing/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-de)
           comment: Text to translate on
-            [tags/marketing/](https://glamorous-sanctuary.cloudvent.net/tags/marketing/)
+            [tags/marketing/](https://cool-ski.cloudvent.net/tags/marketing/)
           inputs: []
         - heading: Already translated (de-de)
           comment: Text already translated on
-            [tags/marketing/](https://glamorous-sanctuary.cloudvent.net/tags/marketing/)
+            [tags/marketing/](https://cool-ski.cloudvent.net/tags/marketing/)
           inputs:
             - about
             - blog
@@ -26,32 +24,28 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=A\
-      bout)"
+      page](https://cool-ski.cloudvent.net/tags/marketing/#:~:text=About)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=B\
-      log)"
+      page](https://cool-ski.cloudvent.net/tags/marketing/#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=R\
-      SS%20Feed)"
+      page](https://cool-ski.cloudvent.net/tags/marketing/#:~:text=RSS%20Feed)"
   test-page:
     label: Test Page
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=T\
-      est%20Page)"
+      page](https://cool-ski.cloudvent.net/tags/marketing/#:~:text=Test%20Page)"
 about: Um
 blog: Nachricht
 rss-feed: RSS Feed

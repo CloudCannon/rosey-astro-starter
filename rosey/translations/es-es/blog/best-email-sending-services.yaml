@@ -3,20 +3,20 @@ _inputs:
   $:
     type: object
     comment: "[See
-      blog/best-email-sending-services/](https://glamorous-sanctuary.cloudvent.\
-      net/blog/best-email-sending-services/)"
+      blog/best-email-sending-services/](https://cool-ski.cloudvent.net/blog/be\
+      st-email-sending-services/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (es-es)
           comment: Text to translate on
-            [blog/best-email-sending-services/](https://glamorous-sanctuary.cloudvent.net/blog/best-email-sending-services/)
+            [blog/best-email-sending-services/](https://cool-ski.cloudvent.net/blog/best-email-sending-services/)
           inputs:
             - static:/blog/best-email-sending-services/
             - test-page
         - heading: Already translated (es-es)
           comment: Text already translated on
-            [blog/best-email-sending-services/](https://glamorous-sanctuary.cloudvent.net/blog/best-email-sending-services/)
+            [blog/best-email-sending-services/](https://cool-ski.cloudvent.net/blog/best-email-sending-services/)
           inputs:
             - about
             - blog
@@ -27,24 +27,24 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/best-email-sending-s\
-      ervices/#:~:text=About)"
+      page](https://cool-ski.cloudvent.net/blog/best-email-sending-services/#:~\
+      :text=About)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/best-email-sending-s\
-      ervices/#:~:text=Blog)"
+      page](https://cool-ski.cloudvent.net/blog/best-email-sending-services/#:~\
+      :text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/best-email-sending-s\
-      ervices/#:~:text=RSS%20Feed)"
+      page](https://cool-ski.cloudvent.net/blog/best-email-sending-services/#:~\
+      :text=RSS%20Feed)"
   static:/blog/best-email-sending-services/:
     label: When you send an email campaign, you expec...
     hidden: false
@@ -61,8 +61,8 @@ _inputs:
       bulletedlist: true
       numberedlist: true
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/best-email-sending-s\
-      ervices/#:~:text=When%20you%20send,a%20timely%20manner)"
+      page](https://cool-ski.cloudvent.net/blog/best-email-sending-services/#:~\
+      :text=When%20you%20send,a%20timely%20manner)"
     context:
       open: false
       title: Untranslated Text
@@ -150,8 +150,8 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/best-email-sending-s\
-      ervices/#:~:text=Test%20Page)"
+      page](https://cool-ski.cloudvent.net/blog/best-email-sending-services/#:~\
+      :text=Test%20Page)"
 about: Acerca de
 blog: Blog
 rss-feed: RSS Feed

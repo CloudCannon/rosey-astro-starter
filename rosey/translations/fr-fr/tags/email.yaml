@@ -2,18 +2,18 @@ urlTranslation: tags/email/index.html
 _inputs:
   $:
     type: object
-    comment: "[See tags/email/](https://glamorous-sanctuary.cloudvent.net/tags/email/)"
+    comment: "[See tags/email/](https://cool-ski.cloudvent.net/tags/email/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-fr)
           comment: Text to translate on
-            [tags/email/](https://glamorous-sanctuary.cloudvent.net/tags/email/)
+            [tags/email/](https://cool-ski.cloudvent.net/tags/email/)
           inputs:
             - test-page
         - heading: Already translated (fr-fr)
           comment: Text already translated on
-            [tags/email/](https://glamorous-sanctuary.cloudvent.net/tags/email/)
+            [tags/email/](https://cool-ski.cloudvent.net/tags/email/)
           inputs:
             - about
             - blog
@@ -23,32 +23,27 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/email/#:~:text=About\
-      )"
+    comment: "[See on page](https://cool-ski.cloudvent.net/tags/email/#:~:text=About)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/email/#:~:text=Blog)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/tags/email/#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/email/#:~:text=RSS%2\
-      0Feed)"
+      page](https://cool-ski.cloudvent.net/tags/email/#:~:text=RSS%20Feed)"
   test-page:
     label: Test Page
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/tags/email/#:~:text=Test%\
-      20Page)"
+      page](https://cool-ski.cloudvent.net/tags/email/#:~:text=Test%20Page)"
 about: Á propos
 blog: Nouvelles
 rss-feed: RSS Alimentation

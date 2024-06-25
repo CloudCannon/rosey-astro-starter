@@ -2,19 +2,18 @@ urlTranslation: index.html
 _inputs:
   $:
     type: object
-    comment: "[See ](https://glamorous-sanctuary.cloudvent.net/)"
+    comment: "[See ](https://cool-ski.cloudvent.net/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (es-es)
-          comment: Text to translate on [](https://glamorous-sanctuary.cloudvent.net/)
+          comment: Text to translate on [](https://cool-ski.cloudvent.net/)
           inputs:
             - static:hero-subheading-home-1
             - static:left-right-text-home-1
             - test-page
         - heading: Already translated (es-es)
-          comment: Text already translated on
-            [](https://glamorous-sanctuary.cloudvent.net/)
+          comment: Text already translated on [](https://cool-ski.cloudvent.net/)
           inputs:
             - about
             - astro-bookshop-starter
@@ -28,49 +27,46 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://glamorous-sanctuary.cloudvent.net/#:~:text=About)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=About)"
   astro-bookshop-starter:
     label: Astro Bookshop Starter
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=Astro%20Bookshop\
-      %20Starter)"
+      page](https://cool-ski.cloudvent.net/#:~:text=Astro%20Bookshop%20Starter)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://glamorous-sanctuary.cloudvent.net/#:~:text=Blog)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=Blog)"
   cloudcannon:
     label: CloudCannon
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=CloudCannon)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=CloudCannon)"
   github:
     label: GitHub
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://glamorous-sanctuary.cloudvent.net/#:~:text=GitHub)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=GitHub)"
   keep-what-you-need-delete-the-rest:
     label: Keep what you need. Delete the rest.
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=Keep%20what%20yo\
-      u,Delete%20the%20rest)"
+      page](https://cool-ski.cloudvent.net/#:~:text=Keep%20what%20you,Delete%20\
+      the%20rest)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=RSS%20Feed)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=RSS%20Feed)"
   static:hero-subheading-home-1:
     label: A starting point for developers looking to...
     hidden: false
@@ -87,8 +83,8 @@ _inputs:
       bulletedlist: true
       numberedlist: true
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=A%20starting%20p\
-      oint,the%20CloudCannon%20CMS)"
+      page](https://cool-ski.cloudvent.net/#:~:text=A%20starting%20point,the%20\
+      CloudCannon%20CMS)"
     context:
       open: false
       title: Untranslated Text
@@ -114,8 +110,8 @@ _inputs:
       bulletedlist: true
       numberedlist: true
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=To%20help%20save\
-      ,CSS%20variables)"
+      page](https://cool-ski.cloudvent.net/#:~:text=To%20help%20save,CSS%20vari\
+      ables)"
     context:
       open: false
       title: Untranslated Text
@@ -153,8 +149,7 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=Test%20Page)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=Test%20Page)"
 about: Acerca de
 astro-bookshop-starter: Inicio de la Bookshop Astro
 blog: Blog
