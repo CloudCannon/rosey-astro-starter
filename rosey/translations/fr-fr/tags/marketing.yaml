@@ -1,0 +1,58 @@
+urlTranslation: tags/marketing/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      tags/marketing/](https://glamorous-sanctuary.cloudvent.net/tags/marketing\
+      /)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-fr)
+          comment: Text to translate on
+            [tags/marketing/](https://glamorous-sanctuary.cloudvent.net/tags/marketing/)
+          inputs:
+            - test-page
+        - heading: Already translated (fr-fr)
+          comment: Text already translated on
+            [tags/marketing/](https://glamorous-sanctuary.cloudvent.net/tags/marketing/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=A\
+      bout)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=B\
+      log)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=R\
+      SS%20Feed)"
+  test-page:
+    label: Test Page
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/marketing/#:~:text=T\
+      est%20Page)"
+about: Á propos
+blog: Nouvelles
+rss-feed: RSS Alimentation
+test-page: ""
