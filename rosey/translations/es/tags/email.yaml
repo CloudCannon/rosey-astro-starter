@@ -1,0 +1,45 @@
+urlTranslation: tags/email/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See tags/email/](https://glamorous-sanctuary.cloudvent.net/tags/email/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es)
+          comment: Text to translate on
+            [tags/email/](https://glamorous-sanctuary.cloudvent.net/tags/email/)
+          inputs: []
+        - heading: Already translated (es)
+          comment: Text already translated on
+            [tags/email/](https://glamorous-sanctuary.cloudvent.net/tags/email/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/email/#:~:text=About\
+      )"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/email/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/email/#:~:text=RSS%2\
+      0Feed)"
+about: Acerca de
+blog: Blog
+rss-feed: RSS Feed

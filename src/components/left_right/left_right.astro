@@ -1,0 +1,192 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+import Markdown from '../utility/markdown.astro';
+import slugify from 'slugify';
+
+const generateRoseyID = (text: string) => {
+  const lowerCaseText = text.toLowerCase();
+  const formattedText = lowerCaseText.replaceAll(
+    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
+    /$1/
+  );
+  return slugify(formattedText, { remove: /[.*,:\/]/g });
+};
+const generateStaticRoseyId = (text: string) => {
+  if (!Astro.url.pathname) {
+    return text;
+  }
+  const pageName =
+    Astro.url.pathname === '/'
+      ? 'home'
+      : Astro.url.pathname?.replace('/index.html', '').replaceAll('/', '');
+
+  const keyNumber = Astro.props.key || '1';
+  return `${text}-${pageName}-${keyNumber}`;
+};
+
+interface Props {
+  background_color: string;
+  flipped: boolean;
+  heading: {
+    heading_text: string;
+    color: string;
+  };
+  text: {
+    markdown_content: string;
+    color: string;
+  };
+  image: {
+    image_path: string;
+    alt_text: string;
+  };
+  button: {
+    _bookshop_name: string;
+    button_text: string;
+    button_icon: string;
+    button_link: string;
+    background_color?: string;
+    hover_brightness: number;
+    text_color: string;
+  };
+}
+
+const block = Astro.props;
+const buttons = import.meta.glob('/src/components/buttons/**/*.astro', {
+  eager: true,
+});
+const buttonName = block.button?._bookshop_name.split('/').reverse()[0];
+const buttonFilePath = `/src/components/buttons/${buttonName}/${buttonName}.astro`;
+const Button = (buttons[buttonFilePath] as any)?.default;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/**/*.{jpeg,jpg,png,gif,svg}',
+  { eager: true }
+);
+
+const imageSrc =
+  images[block.image.image_path]?.default ?? block.image.image_path;
+---
+
+<div class="left-right" style={`background-color: ${block.background_color};`}>
+  {
+    block.flipped ? (
+      <div class="left-right__wrapper">
+        <Image
+          class="order-2 md:order-1"
+          alt={block.image.alt_text}
+          widths={[320, 500, 640]}
+          sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
+          src={imageSrc}
+        />
+        <div class="left-right__text order-1 md:order-2">
+          <h2
+            class="text-4xl"
+            style={`color: ${block.heading.color};`}
+            data-rosey={generateRoseyID(block.heading.heading_text)}>
+            {block.heading.heading_text}
+          </h2>
+          <div class="mb-4" style={`color: ${block.text.color};`}>
+            {ENV_BOOKSHOP_LIVE ? (
+              <Markdown
+                content={block.text.markdown_content}
+                roseyId="left-right-text"
+              />
+            ) : (
+              <Markdown
+                content={block.text.markdown_content}
+                roseyId={generateStaticRoseyId('left-right-text')}
+              />
+            )}
+          </div>
+          {block.button && <Button {...block.button} />}
+        </div>
+      </div>
+    ) : (
+      <div class="left-right__wrapper">
+        <div class="left-right__text">
+          <h2
+            class="text-4xl"
+            style={`color: ${block.heading.color};`}
+            data-rosey={generateRoseyID(block.heading.heading_text)}>
+            {block.heading.heading_text}
+          </h2>
+          <div class="mb-4" style={`color: ${block.text.color};`}>
+            {ENV_BOOKSHOP_LIVE ? (
+              <Markdown
+                content={block.text.markdown_content}
+                roseyId="left-right-text"
+              />
+            ) : (
+              <Markdown
+                content={block.text.markdown_content}
+                roseyId={generateStaticRoseyId('left-right-text')}
+              />
+            )}
+          </div>
+          {block.button && <Button {...block.button} />}
+        </div>
+        <Image
+          alt={block.image.alt_text}
+          widths={[320, 500, 640]}
+          sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
+          src={imageSrc}
+        />
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .left-right {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .left-right__wrapper {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block: 24px;
+    padding-inline: 32px;
+  }
+  .left-right__wrapper img {
+    width: 100%;
+    max-width: 500px;
+  }
+  .left-right__wrapper .left-right__text {
+  }
+  @media only screen and (min-width: 768px) {
+    .left-right__wrapper {
+      flex-direction: row;
+      gap: 4rem;
+      padding-block: 48px;
+    }
+    .left-right__wrapper img {
+      width: 50%;
+    }
+    .left-right__wrapper .left-right__text {
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .left-right__wrapper {
+      padding-block: 48px;
+      gap: 10rem;
+    }
+  }
+
+  .left-right__wrapper img {
+    margin-top: 32px;
+  }
+
+  h2 {
+    max-width: 620px;
+    margin-block: 30px;
+  }
+</style>

@@ -1,0 +1,43 @@
+urlTranslation: blog/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See blog/](https://glamorous-sanctuary.cloudvent.net/blog/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (jp)
+          comment: Text to translate on
+            [blog/](https://glamorous-sanctuary.cloudvent.net/blog/)
+          inputs: []
+        - heading: Already translated (jp)
+          comment: Text already translated on
+            [blog/](https://glamorous-sanctuary.cloudvent.net/blog/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/#:~:text=About)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/#:~:text=RSS%20Feed)"
+about: について
+blog: ブログ
+rss-feed: RSSフィード

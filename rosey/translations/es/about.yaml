@@ -1,0 +1,70 @@
+urlTranslation: about/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See about/](https://glamorous-sanctuary.cloudvent.net/about/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es)
+          comment: Text to translate on
+            [about/](https://glamorous-sanctuary.cloudvent.net/about/)
+          inputs: []
+        - heading: Already translated (es)
+          comment: Text already translated on
+            [about/](https://glamorous-sanctuary.cloudvent.net/about/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+            - static:hero-subheading-about-1
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/about/#:~:text=About)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/about/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/about/#:~:text=RSS%20Feed\
+      )"
+  static:hero-subheading-about-1:
+    label: " An example about page."
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/about/#:~:text=%20An%20ex\
+      ample%20about%20page)"
+about: Acerca de
+blog: Blog
+rss-feed: RSS Feed
+static:hero-subheading-about-1: Un ejemplo sobre la página.
