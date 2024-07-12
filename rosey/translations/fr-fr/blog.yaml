@@ -1,0 +1,39 @@
+urlTranslation: blog/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See blog/](https://cool-ski.cloudvent.net/blog/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-fr)
+          comment: Text to translate on [blog/](https://cool-ski.cloudvent.net/blog/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+        - heading: Already translated (fr-fr)
+          comment: Text already translated on
+            [blog/](https://cool-ski.cloudvent.net/blog/)
+          inputs: []
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://cool-ski.cloudvent.net/blog/#:~:text=About)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://cool-ski.cloudvent.net/blog/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://cool-ski.cloudvent.net/blog/#:~:text=RSS%20Feed)"
+about: ""
+blog: ""
+rss-feed: ""
