@@ -1,0 +1,20 @@
+@import 'blog';
+@import 'markdown';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+img {
+  object-fit: cover;
+}

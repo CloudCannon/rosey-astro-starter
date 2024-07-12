@@ -1,0 +1,140 @@
+urlTranslation: blog/a-test-page/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-\
+      page/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (jp)
+          comment: Text to translate on
+            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+            - static:/blog/a-test-page/
+        - heading: Already translated (jp)
+          comment: Text already translated on
+            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
+          inputs: []
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =About)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =RSS%20Feed)"
+  static:/blog/a-test-page/:
+    label: All you have to learn _here_ is how to hav...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =All%20you%20have,to%20use%20it)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >-
+        All you **have** to learn _here_ is how to have fun. Just pretend you
+        are a whisper floating across a mountain. You have to make almighty
+        decisions when you’re the creator. There we are.
+
+
+        ---
+
+
+        > We’ll throw some old gray clouds in here just sneaking around and
+        having fun. Only eight colors that you need. This is the fun part Put it
+        in, leave it alone. Get away from those little Christmas tree things we
+        used to make in school.
+
+
+        ```
+
+        code:
+          an_object_key:
+            options: {}
+            another_thing:
+              - an array item
+              - another array item
+        ```
+
+
+        Take your time. Speed will come later. You can bend rivers. But when I
+        get home, the only thing I have power over is the garbage. Let’s get
+        wild today. If you don’t think every day is a good day - try missing a
+        few. You’ll see. Play with the angles. We don’t have to be committed. We
+        are just playing here.
+
+
+        Another code block:
+
+
+        ```
+
+        <div>
+          <h1>This is a test for HTML code blocks</h1>
+          <p>A paragraph</p>
+        </div>
+
+        ```
+
+
+        Mix your color marbly don’t mix it dead. Trees cover up a multitude of
+        sins. The only prerequisite is that it makes you happy. If it makes you
+        happy then it’s good. When you do it your way you can go anywhere you
+        choose. We’ll have a super time. Don’t fiddle with it all day.
+
+
+        ![](/images/blog/featured-image-2.jpg)
+
+
+        We have all at one time or another mixed some mud. It’s beautiful - and
+        we haven’t even done anything to it yet. Let’s make some happy little
+        clouds in our world. Let your heart be your guide.
+
+
+        We have a fantastic little sky! We’re trying to teach you a technique
+        here and how to use it.
+about: ""
+blog: ""
+rss-feed: ""
+static:/blog/a-test-page/: ""

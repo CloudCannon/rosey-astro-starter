@@ -1,0 +1,94 @@
+---
+import '../styles/main.scss';
+import site from '../../data/site.json';
+import Header from '../components/navigation/header.astro';
+import Footer from '../components/navigation/footer.astro';
+import { SEO } from 'astro-seo';
+
+export interface SEOProps {
+  page_description: string | null;
+  featured_image: string | null;
+  featured_image_alt: string | null;
+  canonical_url: string | null;
+  no_index: boolean | null;
+  open_graph_type: string | null;
+  author_twitter_handle: string | null;
+}
+
+export interface Props {
+  title: string;
+  seo?: SEOProps;
+}
+
+const { seo } = Astro.props;
+const baseUrl = Astro.site;
+const title = Astro.props.title
+  ? `${Astro.props.title} | ${site.site_title}`
+  : site.site_title;
+const description = seo?.page_description || site.description;
+const image = seo?.featured_image || site.image;
+const image_alt = seo?.featured_image_alt || site.image_alt;
+const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Add fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Add editor styles -->
+    <link rel="stylesheet" href="/css/editor.css" />
+
+    <SEO
+      noindex={seo?.no_index || false}
+      title={title}
+      description={description}
+      canonical={canonicalURL.toString()}
+      openGraph={{
+        basic: {
+          title: Astro.props.title,
+          url: baseUrl?.toString(),
+          type: `${seo?.open_graph_type || 'website'}`,
+          image: `${baseUrl}${image}`,
+        },
+        optional: {
+          description: description,
+        },
+        image: {
+          url: `${baseUrl}${image}`,
+          alt: image_alt,
+        },
+      }}
+      twitter={{
+        creator: `${seo?.author_twitter_handle || site.twitter_site}`,
+        site: `${site.twitter_site}`,
+        card: 'summary_large_image',
+      }}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <style is:global>
+      :root {
+        --pageContainer: 1280px;
+        --pagePadding: 2rem;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+urlTranslation: tags/Testing/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      tags/Testing/](https://glamorous-sanctuary.cloudvent.net/tags/Testing/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (jp)
+          comment: Text to translate on
+            [tags/Testing/](https://glamorous-sanctuary.cloudvent.net/tags/Testing/)
+          inputs:
+            - about
+            - blog
+            - rss-feed
+        - heading: Already translated (jp)
+          comment: Text already translated on
+            [tags/Testing/](https://glamorous-sanctuary.cloudvent.net/tags/Testing/)
+          inputs: []
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/Testing/#:~:text=Abo\
+      ut)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/Testing/#:~:text=Blo\
+      g)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/tags/Testing/#:~:text=RSS\
+      %20Feed)"
+about: ""
+blog: ""
+rss-feed: ""

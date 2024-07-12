@@ -1,0 +1,202 @@
+urlTranslation: index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See ](https://glamorous-sanctuary.cloudvent.net/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr)
+          comment: Text to translate on [](https://glamorous-sanctuary.cloudvent.net/)
+          inputs: []
+        - heading: Already translated (fr)
+          comment: Text already translated on
+            [](https://glamorous-sanctuary.cloudvent.net/)
+          inputs:
+            - about
+            - astro-bookshop-starter
+            - blog
+            - cloudcannon
+            - github
+            - keep-what-you-need-delete-the-rest
+            - rss-feed
+            - static:hero-subheading-home-1
+            - static:left-right-text-home-1
+  about:
+    label: About
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://glamorous-sanctuary.cloudvent.net/#:~:text=About)"
+  astro-bookshop-starter:
+    label: Astro Bookshop Starter
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=Astro%20Bookshop\
+      %20Starter)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://glamorous-sanctuary.cloudvent.net/#:~:text=Blog)"
+  cloudcannon:
+    label: CloudCannon
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=CloudCannon)"
+  github:
+    label: GitHub
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://glamorous-sanctuary.cloudvent.net/#:~:text=GitHub)"
+  keep-what-you-need-delete-the-rest:
+    label: Keep what you need. Delete the rest.
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=Keep%20what%20yo\
+      u,Delete%20the%20rest)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=RSS%20Feed)"
+  static:hero-subheading-home-1:
+    label: A starting point for developers looking to...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=A%20starting%20p\
+      oint,the%20CloudCannon%20CMS)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: A starting point for **developers looking to build a multilingual
+        website with Astro and Rosey, using Bookshop components in
+        CloudCannon**. CloudCannon provides a UI for non-technical editors to
+        enter translations. Create your own copy, and start creating your own
+        components to use in the CloudCannon CMS.
+  static:left-right-text-home-1:
+    label: To help save you time, some features are s...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/#:~:text=To%20help%20save\
+      ,CSS%20variables)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >-
+        To help save you time, some features are set up in this template, like:
+
+
+        *
+        [Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/)
+
+        * Blog with pagination and tags
+
+        * [Image
+        optimization](https://docs.astro.build/en/guides/images/#image--astroassets)
+
+        * SEO Controls
+
+        * Responsive header and footer
+
+        * [Font Awesome Icons](https://fontawesome.com/search?o=r&m=free)
+
+        * Schemas for adding new pages
+
+        * Editable color pallete
+
+        * Markdown styles
+
+        * CloudCannon configuration
+
+        * CSS variables
+about: À propos
+astro-bookshop-starter: Astro Bookshop Starter
+blog: Blog
+cloudcannon: CloudCannon
+github: GitHub
+keep-what-you-need-delete-the-rest: Gardez ce dont vous avez besoin. Supprimez le reste.
+rss-feed: RSS Feed
+static:hero-subheading-home-1: Un point de départ pour les **développeurs
+  cherchant à créer un site Web multilingue avec Astro et Rosey, en utilisant
+  les composants Bookshop de CloudCannon**. CloudCannon fournit une interface
+  utilisateur permettant aux éditeurs non techniques de saisir des traductions.
+  Créez votre propre copie et commencez à créer vos propres composants à
+  utiliser dans le CMS CloudCannon.
+static:left-right-text-home-1: >-
+  Pour vous faire gagner du temps, certaines fonctionnalités sont configurées
+  dans ce modèle, comme :
+
+
+  *
+  [Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/)
+
+  * Blog avec pagination, balises et
+  [snippets](https://docs.astro.build/en/guides/markdown-content/#using-components-in-mdx)
+
+  * [Optimisation des
+  images](https://docs.astro.build/en/guides/images/#image--astroassets)
+
+  * Contrôles SEO
+
+  * En-tête et pied de page réactifs
+
+  * [Font Awesome Icons](https://fontawesome.com/search?o=r&amp;m=free)
+
+  * Schémas pour ajouter de nouvelles pages
+
+  * Palette de couleurs modifiable
+
+  * Styles de démarque
+
+  * Configuration de CloudCannon
+
+  * Variables CSS
