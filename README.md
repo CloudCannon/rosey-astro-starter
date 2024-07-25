@@ -1,10 +1,8 @@
-TODO: Put screenshot/video of translation workflow here
-
 # Astro Rosey Starter
 
 A starting point for developers looking to build a multilingual website with Astro, Rosey, using Bookshop's component based approach to building and editing sites in CloudCannon.
 
-This starter comes with a translation workflow set up in CloudCannon's CMS with Rosey and Bookshop, to provide UI for non-technical editors and translators to control a site's content and translations.
+This starter comes with a translation workflow set up in CloudCannon's CMS with Rosey and Bookshop, to provide a UI for non-technical editors and translators to control a site's content and translations.
 
 Rosey is an open source translation workflow for SSGs. We run custom `node fs` scripts in the site's postbuild to generate inputs that a user can enter translations into. Rosey then uses the provided translations to generate a multilingual site.
 
@@ -17,15 +15,11 @@ If you are an editor looking for an already built template, have a look at [Clou
 
 ## How it works
 
-Rosey generates a base.json file wherever it detects a `data-rosey=""` tag in your built site.
-
-From this `base.json` file we run a script that creates a translations file for each locale listed in your `LOCALES` environment variable.
-
-Editors can see an input for each translation in the CloudCannon UI, and can enter a translated value, with links to see the original version highlighted in context on the page.
-
-We then run a script in our postbuild to generate the [locale files that Rosey expects](https://rosey.app/docs/#creating-locale-files) to create our multilingual site from.
-
-Rosey then uses these locales files to generate a multilingual site.
+1. Rosey generates a base.json file from wherever it detects a `data-rosey=""` tag in your built site.
+2. We run a script that creates translations files from this `base.json` file. For each locale listed in your `LOCALES` environment variable, a directory is created in the translations directory. Inside these locale directories are the site's pages with inputs for each mention of a `data-rosey` tag on the page.
+3. Editors can see an input for each translation in the CloudCannon UI, and can enter a translated value. Inputs have links to see the original version highlighted in context on the page, the original phrase to translate as a label or context dropdown, and in some cases what was added or removed from the original phrase when it is edited.
+4. After entering translations and saving, another script runs in our postbuild to generate the [locale files that Rosey expects](https://rosey.app/docs/#creating-locale-files) from our translations.
+5. Rosey uses these locales files to generate a multilingual site.
 
 Add locale codes (eg. es, es-es) to the site's environment variables to see a new folder with all of the original site's data-rosey tag mentions, split by page.
 
@@ -37,21 +31,34 @@ Remove the placeholder locales, and delete the corresponding folders in the `ros
 
 CloudCannon offers migration services if needed for larger SSG projects wanting help migrating to a new multilingual workflow - get in touch with our [sales team](mailto:sales@cloudcannon.com) if you'd like to discuss this further.
 
+## Requirements
+
+- A CloudCannon organisation with access to publishing workflows [Standard Plan+](https://cloudcannon.com/pricing/)
+- No [snippets](https://docs.astro.build/en/guides/markdown-content/#using-components-in-mdx) are required throughout your site's markdown
+- Translations are entered or checked manually. If translations are being sent to an external service for translation, you can use Rosey as is - without the extra steps built into this starter.
+- Better suited to a site built primarily with components, rather than a text heavy site - think landing pages and marketing sites as opposed to a documentation site, which would be better suited to a traditional multilingual split-by-directory approach.
+
 ## Why is this useful?
 
-This approach separates your content and your layouts. Change the layout and styling in one place, and have those changes reflected across all the languages you translate to.
+- Provides simple inputs for your translators to enter content into, without ever having to see layout controls, or write any code.
 
-You provide an original, and translations, and Rosey does the rest.
+- Separates your content and your layouts. Keep your layouts consistent, meaning you can change the layout and styling on one page in the visual editor, and have those changes reflected across all the languages you translate to.
 
-Rosey redirects the site visitor to the locale that matches their browser language settings, or if their locale is not supported, directs them to the default version.
+- Handles duplicate translations of an original phrase. Duplicates on a page are grouped into one input, and the inputs for duplicates on other pages are overwritten on save when a new translation is detected in any of the duplicate inputs.
+
+- See links to the original content on the staging site page, with highlighted text.
+
+- Rosey redirects the site visitor to the locale that matches their browser's language settings, or if their locale is not supported, directs them to the default version.
+
+- Rosey also supports translating HTML attributes, where i18n does not.
 
 ### Example
 
-- An editor adds a new left-right block to a page.
-- The component could have plenty of other things to set up other than content (eg. style choices) which the editor would have to manually replicate across all languages on the site.
+- An editor adds a new left-right block to a page, which has data-rosey tags set up.
+- The component could have plenty of other things to set up other than content (eg. style choices) which the editor would have to manually replicate across all languages on the site (if using a the split-by-directory approach).
 - They have to go to the version of that page in each language in CloudCannon and add the component with the translated content for that language.
 - With Rosey, the component is added in the English version, and for each locale we have defined in our environment variables, a translation entry will appear for the new left right content.
-- Each page has all of its text copy laid out in a form, with inputs for translations, and links to see the original version highlighted in context on the page.
+- The translation page that has the new left right will have an input for translations, and links to see the original version highlighted in context on the page.
 
 ## Getting Started
 
@@ -85,7 +92,7 @@ Rosey redirects the site visitor to the locale that matches their browser langua
   ```
 - Add translations collection to cloudcannon.config
 - Add commands to postbuild
-- Add Rosey tags to necessary html tags
+- Add Rosey tags to any html tags to translate
 
 ## Adding Translations
 
@@ -185,7 +192,6 @@ Bookshop is already set up on this project, so that you can start building compo
 To add a new component:
 
 1. Create a new folder in `src/components` using the component name as the folder name.
-   - Note: If using .mdx snippets, as we are in this template, avoid using kebab-case naming conventions. Use snake_case or camelCase instead.
 2. Create two files in this folder
    `src/components/ExampleComponent/ExampleComponent.astro`
 
@@ -266,17 +272,19 @@ _inputs:
 
 ### Blog & Documentation Pages
 
+This workflow is more suited to static sites built with components, rather than a markdown heavy site.
+
+Consider using a split-by-directory approach for text heavy sites. In practice, sites will often be a mix of both. In such cases - as long as snippets aren't needed, this workflow will handle both.
+
 Blog section with tags and pagination included.
 
 Documentation, blog and other text heavy sections should replicate how the blog section is implemented in this template.
 
-The blog pages in this template use MDX to allow for snippets. Snippets allow you to use HTML components throughout your markdown text.
+The blog pages in this template DO NOT allow for snippets. Snippets allow you to use HTML components throughout your markdown text. Rendering of these components is usually handled by the SSG build. Since we are using markdown-it, rather than the SSG, to build the translated markdown into HTML, snippets aren't supported.
 
-A common layout, with changing markdown content is favored for these kinds of text heavy pages, rather than using Bookshop components - which are defined and managed in your markdown pages frontmatter.
+A common layout, with changing markdown content is favored for these kinds of text heavy pages, rather than using Bookshop components - which are defined and managed in your markdown pages frontmatter. These text heavy pages will be edited in CloudCannon's content editor, rather than the visual editor used for building pages with Bookshop components.
 
-These text heavy pages will be edited in CloudCannon's content editor, rather than the visual editor used for building pages with Bookshop components.
-
-For the main page content, rosey ids are statically generated via the page url, so that translations are preserved between changes to the original content, and a diff is shown to help editors update their translations.
+For the main page content, rosey ids are statically generated via the page url, so that translations are preserved between changes to the original content. A diff is shown to help editors update their translations if the original content changes.
 
 ### Image Optimization
 
@@ -428,33 +436,3 @@ See the CloudCannon [Docs](https://cloudcannon.com/documentation/articles/config
 Shows how to set global CSS variables in Astro, to set commonly used values like `pagePadding`, and `pageContainer`.
 
 Extra work could be done to write a `node fs` script to write said values from a data file to the appropriate places in the code, which would then allow editors to control sitewide styles like page max-width and padding.
-
-### Stretch Goals
-
-- If this is workflow is better for a 'component driven' approach to building a website, set up a 'content driven' approach with Alto
-  - Content Driven
-    - Separate pages by directory eg /es/docs and /docs
-    - Use i18n to handle common parts of the site
-      - Set this up nicely in the data editor
-  - Hybrid?
-    - Exclude content heavy pages from the Rosey workflow and set up with a content directory approach
-      - Eg. es/docs and docs
-    - Tricky parts
-      - Where does Rosey build the pages that are using the content dir approach eg. es/es/docs/, or just es/docs
-- Handle right aligned languages like jp
-- Integrate with an automatic translation service like smartling/deepl/chatgpt or something similar
-  - Send away untranslated values
-  - Receive auto generated translation
-  - Editors can check and edit the results in CC data editor
-- Check whether a duplicate entry with a translation exists already when creating a new entry
-- Translations in the visual editor with Bookshop
-  - Have switch input: showTranslationsInVisualEditor
-  - A select is hidden/shown depending on the value of showTranslationsInVisualEditor with the values of the env var LOCALES
-  - A range of inputs for each locale is hidden/shown depending on the value of showTranslationsInVisualEditor
-  - In the component with the translated text
-    - If in visual editor && showTranslationsInVisualEditor is true
-      - Display the translated input value as the text in the component for whatever locale is selected in the select input
-    - Else display the original version
-  - In generateTranslationFiles.cjs loop through our pages and see if there are any components with translations in the component front matter, and write that to our translations data files
-  - Conversely, we could overwrite component front matter when we get a new translation via the translations data files
-  - Could display a tooltip within the fallback that tells the editor to save and wait for build to finish before we see duplicate entries overwritten, and before the component front matter translation and the translation data files are synced up with each other.
