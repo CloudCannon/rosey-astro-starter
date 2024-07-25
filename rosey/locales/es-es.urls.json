@@ -1,11 +1,11 @@
 {
-	"404.html": {
-		"original": "404.html",
-		"value": "404.html"
-	},
 	"about/index.html": {
 		"original": "about/index.html",
 		"value": "about/index.html"
+	},
+	"404.html": {
+		"original": "404.html",
+		"value": "404.html"
 	},
 	"blog/index.html": {
 		"original": "blog/index.html",
