@@ -10,7 +10,7 @@ _inputs:
           comment: Text to translate on [](https://cool-ski.cloudvent.net/)
           inputs:
             - about
-            - astro-bookshop-starter
+            - astro-and-rosey-bookshop-starter
             - blog
             - cloudcannon
             - github
@@ -27,13 +27,14 @@ _inputs:
     type: text
     options: {}
     comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=About)"
-  astro-bookshop-starter:
-    label: Astro Bookshop Starter
+  astro-and-rosey-bookshop-starter:
+    label: Astro  Rosey Bookshop Starter
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/#:~:text=Astro%20Bookshop%20Starter)"
+      page](https://cool-ski.cloudvent.net/#:~:text=Astro%20%20Rosey%20Bookshop\
+      %20Starter)"
   blog:
     label: Blog
     hidden: false
@@ -87,18 +88,29 @@ _inputs:
       code: true
       horizontalrule: true
       image: true
-    comment: "[See on
-      page](https://cool-ski.cloudvent.net/#:~:text=A%20starting%20point,the%20\
-      CloudCannon%20CMS)"
+    comment: >-
+      Added: After a developer has set up the site, user interface maintain the
+      site's content and
+
+
+      Removed: UI
+
+
+      [See on
+      page](https://cool-ski.cloudvent.net/#:~:text=A%20starting%20point,the%20CloudCannon%20CMS)
     context:
       open: false
       title: Untranslated Text
       icon: translate
       content: A starting point for **developers looking to build a multilingual
-        website with Astro and Rosey, using Bookshop components in
-        CloudCannon**. CloudCannon provides a UI for non-technical editors to
-        enter translations. Create your own copy, and start creating your own
-        components to use in the CloudCannon CMS.
+        website with [Astro](https://astro.build/) and
+        [Rosey](https://rosey.app/), using
+        [Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/)
+        components in CloudCannon**. After a developer has set up the site,
+        CloudCannon provides a user interface for non-technical editors to
+        maintain the site's content and enter translations. Create your own
+        copy, and start creating your own components to use in the CloudCannon
+        CMS.
   static:left-right-text-home-1:
     label: To help save you time, some features are s...
     hidden: false
@@ -155,7 +167,7 @@ _inputs:
 
         * CSS variables
 about: ""
-astro-bookshop-starter: ""
+astro-and-rosey-bookshop-starter: ""
 blog: ""
 cloudcannon: ""
 github: ""
