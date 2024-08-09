@@ -7,13 +7,13 @@
 		"original": "about/index.html",
 		"value": "about/index.html"
 	},
-	"index.html": {
-		"original": "index.html",
-		"value": "index.html"
-	},
 	"blog/index.html": {
 		"original": "blog/index.html",
 		"value": "blog/index.html"
+	},
+	"index.html": {
+		"original": "index.html",
+		"value": "index.html"
 	},
 	"tags/Testing/index.html": {
 		"original": "tags/Testing/index.html",

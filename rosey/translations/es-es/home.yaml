@@ -89,11 +89,11 @@ _inputs:
       horizontalrule: true
       image: true
     comment: >-
-      Added: After a developer has set up the site, user interface maintain the
-      site's content and
+      Added: github CloudCannon 's component-based approach to building and
+      editing sites .
 
 
-      Removed: UI
+      Removed: cloudcannon documentation guides -astro-guide components .
 
 
       [See on
@@ -102,15 +102,15 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: A starting point for **developers looking to build a multilingual
+      content: A starting point for \*\*developers looking to build a multilingual
         website with [Astro](https://astro.build/) and
         [Rosey](https://rosey.app/), using
-        [Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/)
-        components in CloudCannon**. After a developer has set up the site,
-        CloudCannon provides a user interface for non-technical editors to
-        maintain the site's content and enter translations. Create your own
-        copy, and start creating your own components to use in the CloudCannon
-        CMS.
+        [Bookshop](https://github.com/CloudCannon/bookshop)'s component-based
+        approach to building and editing sites in CloudCannon. After a developer
+        has set up the site, CloudCannon provides a user interface for
+        non-technical editors to maintain the site's content and enter
+        translations. Create your own copy, and start creating your own
+        components to use in the CloudCannon CMS.
   static:left-right-text-home-1:
     label: To help save you time, some features are s...
     hidden: false
