@@ -89,11 +89,10 @@ _inputs:
       horizontalrule: true
       image: true
     comment: >-
-      Added: github CloudCannon 's component-based approach to building and
-      editing sites .
+      Added: .
 
 
-      Removed: cloudcannon documentation guides -astro-guide components .
+      Removed: .
 
 
       [See on
@@ -102,17 +101,17 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: A starting point for \*\*developers looking to build a multilingual
+      content: A starting point for **developers looking to build a multilingual
         website with [Astro](https://astro.build/) and
         [Rosey](https://rosey.app/), using
         [Bookshop](https://github.com/CloudCannon/bookshop)'s component-based
-        approach to building and editing sites in CloudCannon. After a developer
-        has set up the site, CloudCannon provides a user interface for
+        approach to building and editing sites in CloudCannon**. After a
+        developer has set up the site, CloudCannon provides a user interface for
         non-technical editors to maintain the site's content and enter
         translations. Create your own copy, and start creating your own
         components to use in the CloudCannon CMS.
   static:left-right-text-home-1:
-    label: To help save you time, some features are s...
+    label: As well as a translations workflow, some f...
     hidden: false
     type: markdown
     options:
@@ -132,15 +131,23 @@ _inputs:
       code: true
       horizontalrule: true
       image: true
-    comment: "[See on
-      page](https://cool-ski.cloudvent.net/#:~:text=To%20help%20save,CSS%20vari\
-      ables)"
+    comment: >-
+      Added: As well as a translations workflow come already to help you start
+      building components quickly
+
+
+      Removed: To help save you time are
+
+
+      [See on
+      page](https://cool-ski.cloudvent.net/#:~:text=As%20well%20as,CSS%20variables)
     context:
       open: false
       title: Untranslated Text
       icon: translate
       content: >-
-        To help save you time, some features are set up in this template, like:
+        As well as a translations workflow, some features come already set up in
+        this template to help you start building components quickly, like:
 
 
         *

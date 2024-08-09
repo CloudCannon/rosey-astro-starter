@@ -103,7 +103,7 @@
       "total": 1
     },
     "static:hero-subheading-home-1": {
-      "original": "<p>A starting point for **developers looking to build a multilingual website with <a href=\"https://astro.build/\">Astro</a> and <a href=\"https://rosey.app/\">Rosey</a>, using <a href=\"https://github.com/CloudCannon/bookshop\">Bookshop</a>'s component-based approach to building and editing sites in CloudCannon. After a developer has set up the site, CloudCannon provides a user interface for non-technical editors to maintain the site's content and enter translations. Create your own copy, and start creating your own components to use in the CloudCannon CMS.</p>\n",
+      "original": "<p>A starting point for <strong>developers looking to build a multilingual website with <a href=\"https://astro.build/\">Astro</a> and <a href=\"https://rosey.app/\">Rosey</a>, using <a href=\"https://github.com/CloudCannon/bookshop\">Bookshop</a>'s component-based approach to building and editing sites in CloudCannon</strong>. After a developer has set up the site, CloudCannon provides a user interface for non-technical editors to maintain the site's content and enter translations. Create your own copy, and start creating your own components to use in the CloudCannon CMS.</p>\n",
       "value": null,
       "pages": {
         "index.html": 1
@@ -111,7 +111,7 @@
       "total": 1
     },
     "static:left-right-text-home-1": {
-      "original": "<p>To help save you time, some features are set up in this template, like:</p>\n<ul>\n<li><a href=\"https://cloudcannon.com/documentation/guides/bookshop-astro-guide/\">Bookshop</a></li>\n<li>Blog with pagination and tags</li>\n<li><a href=\"https://docs.astro.build/en/guides/images/#image--astroassets\">Image optimization</a></li>\n<li>SEO Controls</li>\n<li>Responsive header and footer</li>\n<li><a href=\"https://fontawesome.com/search?o=r&amp;m=free\">Font Awesome Icons</a></li>\n<li>Schemas for adding new pages</li>\n<li>Editable color pallete</li>\n<li>Markdown styles</li>\n<li>CloudCannon configuration</li>\n<li>CSS variables</li>\n</ul>\n",
+      "original": "<p>As well as a translations workflow, some features come already set up in this template to help you start building components quickly, like:</p>\n<ul>\n<li><a href=\"https://cloudcannon.com/documentation/guides/bookshop-astro-guide/\">Bookshop</a></li>\n<li>Blog with pagination and tags</li>\n<li><a href=\"https://docs.astro.build/en/guides/images/#image--astroassets\">Image optimization</a></li>\n<li>SEO Controls</li>\n<li>Responsive header and footer</li>\n<li><a href=\"https://fontawesome.com/search?o=r&amp;m=free\">Font Awesome Icons</a></li>\n<li>Schemas for adding new pages</li>\n<li>Editable color pallete</li>\n<li>Markdown styles</li>\n<li>CloudCannon configuration</li>\n<li>CSS variables</li>\n</ul>\n",
       "value": null,
       "pages": {
         "index.html": 1
