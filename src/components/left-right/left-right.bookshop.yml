@@ -27,8 +27,9 @@ blueprint:
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.
     color: '#393939'
-  image:
+  media:
     image_path: /src/assets/images/undraw-hello.svg
+    video_path: 
     alt_text: An image
   flipped: true
   button: bookshop:structure:buttons
@@ -56,7 +57,7 @@ _inputs:
           - Text
         subtext:
           - 'Update text content and color.'
-  image:
+  media:
     options:
       preview:
         icon: 'image'
@@ -65,8 +66,11 @@ _inputs:
           - 'Image'
         subtext:
           - key: image_path
-          - 'Update image'
+          - key: video_path
+          - 'Update image or video'
         image:
           - key: image_path
+  video_path:
+    type: file
   flipped:
     type: switch

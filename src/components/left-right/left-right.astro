@@ -1,8 +1,8 @@
 ---
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
-import Markdown from '../utility/markdown.astro';
-import slugify from 'slugify';
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import Markdown from "../utility/markdown.astro";
+import slugify from "slugify";
 
 const generateRoseyID = (text: string) => {
   const lowerCaseText = text.toLowerCase();
@@ -17,11 +17,11 @@ const generateStaticRoseyId = (text: string) => {
     return text;
   }
   const pageName =
-    Astro.url.pathname === '/'
-      ? 'home'
-      : Astro.url.pathname?.replace('/index.html', '').replaceAll('/', '');
+    Astro.url.pathname === "/"
+      ? "home"
+      : Astro.url.pathname?.replace("/index.html", "").replaceAll("/", "");
 
-  const keyNumber = Astro.props.key || '1';
+  const keyNumber = Astro.props.key || "1";
   return `${text}-${pageName}-${keyNumber}`;
 };
 
@@ -36,8 +36,9 @@ interface Props {
     markdown_content: string;
     color: string;
   };
-  image: {
+  media: {
     image_path: string;
+    video_path: string;
     alt_text: string;
   };
   button: {
@@ -52,33 +53,48 @@ interface Props {
 }
 
 const block = Astro.props;
-const buttons = import.meta.glob('/src/components/buttons/**/*.astro', {
+const buttons = import.meta.glob("/src/components/buttons/**/*.astro", {
   eager: true,
 });
-const buttonName = block.button?._bookshop_name.split('/').reverse()[0];
+const buttonName = block.button?._bookshop_name.split("/").reverse()[0];
 const buttonFilePath = `/src/components/buttons/${buttonName}/${buttonName}.astro`;
 const Button = (buttons[buttonFilePath] as any)?.default;
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/**/*.{jpeg,jpg,png,gif,svg}',
+  "/src/assets/**/*.{jpeg,jpg,png,gif,svg}",
   { eager: true }
 );
 
 const imageSrc =
-  images[block.image.image_path]?.default ?? block.image.image_path;
+  images[block.media.image_path]?.default ?? block.media.image_path;
 ---
 
 <div class="left-right" style={`background-color: ${block.background_color};`}>
   {
     block.flipped ? (
       <div class="left-right__wrapper">
-        <Image
-          class="order-2 md:order-1"
-          alt={block.image.alt_text}
-          widths={[320, 500, 640]}
-          sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
-          src={imageSrc}
-        />
+        {block.media.image_path ? (
+          <Image
+            class="order-2 md:order-1"
+            alt={block.media.alt_text}
+            widths={[320, 500, 640]}
+            sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
+            src={imageSrc}
+          />
+        ) : block.media.video_path ? (
+          <iframe
+            class="aspect-video order-2 md:order-1"
+            width="560"
+            height="315"
+            src={block.media.video_path}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          />
+        ) : null}
+
         <div class="left-right__text order-1 md:order-2">
           <h2
             class="text-4xl"
@@ -95,7 +111,7 @@ const imageSrc =
             ) : (
               <Markdown
                 content={block.text.markdown_content}
-                roseyId={generateStaticRoseyId('left-right-text')}
+                roseyId={generateStaticRoseyId("left-right-text")}
               />
             )}
           </div>
@@ -120,18 +136,32 @@ const imageSrc =
             ) : (
               <Markdown
                 content={block.text.markdown_content}
-                roseyId={generateStaticRoseyId('left-right-text')}
+                roseyId={generateStaticRoseyId("left-right-text")}
               />
             )}
           </div>
           {block.button && <Button {...block.button} />}
         </div>
-        <Image
-          alt={block.image.alt_text}
-          widths={[320, 500, 640]}
-          sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
-          src={imageSrc}
-        />
+        {block.media.image_path ? (
+          <Image
+            alt={block.media.alt_text}
+            widths={[320, 500, 640]}
+            sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
+            src={imageSrc}
+          />
+        ) : block.media.video_path ? (
+          <iframe
+            class="aspect-video"
+            width="560"
+            height="315"
+            src={block.media.video_path}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          />
+        ) : null}
       </div>
     )
   }
