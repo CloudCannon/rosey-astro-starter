@@ -18,14 +18,11 @@ content_blocks:
   - _bookshop_name: hero
     background_color: '#ffffff'
     heading:
-      heading_text: Astro Bookshop Starter
+      heading_text: Astro & Rosey Bookshop Starter
       heading_gradient_color: '#a0a2ff'
     subheading:
       markdown_content: >-
-        A starting point for **developers looking to build a multilingual
-        website with Astro and Rosey, using Bookshop components in
-        CloudCannon**. CloudCannon provides a UI for non-technical editors to
-        enter translations. Create your own copy, and start creating your own
+        A starting point for **developers looking to build a multilingual website with [Astro](https://astro.build/) and [Rosey](https://rosey.app/), using [Bookshop](https://cloudcannon.com/documentation/guides/bookshop-astro-guide/) components in CloudCannon**. After a developer has set up the site, CloudCannon provides a user interface for non-technical editors to maintain the site's content and enter translations. Create your own copy, and start creating your own
         components to use in the CloudCannon CMS.
       color: '#393939'
     image:
