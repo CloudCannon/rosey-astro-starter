@@ -2,15 +2,13 @@ urlTranslation: blog/a-test-page/index.html
 _inputs:
   $:
     type: object
-    comment: "[See
-      blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-\
-      page/)"
+    comment: "[See blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (jp)
           comment: Text to translate on
-            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
           inputs:
             - about
             - blog
@@ -18,7 +16,7 @@ _inputs:
             - static:/blog/a-test-page/
         - heading: Already translated (jp)
           comment: Text already translated on
-            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
           inputs: []
   about:
     label: About
@@ -26,24 +24,22 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
-      =About)"
+      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=About)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
-      =Blog)"
+      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
-      =RSS%20Feed)"
+      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=RSS%20Feed\
+      )"
   static:/blog/a-test-page/:
     label: All you have to learn _here_ is how to hav...
     hidden: false
@@ -66,8 +62,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
-      =All%20you%20have,to%20use%20it)"
+      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=All%20you%\
+      20have,to%20use%20it)"
     context:
       open: false
       title: Untranslated Text

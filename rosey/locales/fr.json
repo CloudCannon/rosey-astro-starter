@@ -11,13 +11,9 @@
 		"original": " RSS Feed ",
 		"value": "RSS Feed"
 	},
-	"static:hero-subheading-about-1": {
-		"original": "<h3>An example <strong>about</strong> page.</h3>\n",
-		"value": "<h3>An example <strong>about</strong> page.</h3>\n"
-	},
-	"astro-bookshop-starter": {
-		"original": " Astro Bookshop Starter ",
-		"value": "Astro Bookshop Starter"
+	"astro-rosey-starter": {
+		"original": " Astro Rosey Starter ",
+		"value": " Astro Rosey Starter "
 	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
@@ -32,11 +28,11 @@
 		"value": "Gardez ce dont vous avez besoin. Supprimez le reste."
 	},
 	"static:hero-subheading-home-1": {
-		"original": "<p>A starting point for <strong>developers looking to build a multilingual website with Astro and Rosey, using Bookshop components in CloudCannon</strong>. CloudCannon provides a UI for non-technical editors to enter translations. Create your own copy, and start creating your own components to use in the CloudCannon CMS.</p>\n",
+		"original": "<p>A starting point for <strong>developers looking to build a multilingual website with <a href=\"https://astro.build/\">Astro</a> and <a href=\"https://rosey.app/\">Rosey</a>, using <a href=\"https://github.com/CloudCannon/bookshop\">Bookshop</a>'s component-based approach to building and editing sites in CloudCannon</strong>. After a developer has set up the site, CloudCannon provides a user interface for non-technical editors to maintain the site's content and enter translations. Create your own copy, and start creating your own components to use in the CloudCannon CMS.</p>\n",
 		"value": "<p>Un point de départ pour les <strong>développeurs cherchant à créer un site Web multilingue avec Astro et Rosey, en utilisant les composants Bookshop de CloudCannon</strong>. CloudCannon fournit une interface utilisateur permettant aux éditeurs non techniques de saisir des traductions. Créez votre propre copie et commencez à créer vos propres composants à utiliser dans le CMS CloudCannon.</p>\n"
 	},
 	"static:left-right-text-home-1": {
-		"original": "<p>To help save you time, some features are set up in this template, like:</p>\n<ul>\n<li><a href=\"https://cloudcannon.com/documentation/guides/bookshop-astro-guide/\">Bookshop</a></li>\n<li>Blog with pagination and tags</li>\n<li><a href=\"https://docs.astro.build/en/guides/images/#image--astroassets\">Image optimization</a></li>\n<li>SEO Controls</li>\n<li>Responsive header and footer</li>\n<li><a href=\"https://fontawesome.com/search?o=r&amp;m=free\">Font Awesome Icons</a></li>\n<li>Schemas for adding new pages</li>\n<li>Editable color pallete</li>\n<li>Markdown styles</li>\n<li>CloudCannon configuration</li>\n<li>CSS variables</li>\n</ul>\n",
+		"original": "<p>As well as a translations workflow, some features come already set up in this template to help you start building components quickly, like:</p>\n<ul>\n<li><a href=\"https://cloudcannon.com/documentation/guides/bookshop-astro-guide/\">Bookshop</a></li>\n<li>Blog with pagination and tags</li>\n<li><a href=\"https://docs.astro.build/en/guides/images/#image--astroassets\">Image optimization</a></li>\n<li>SEO Controls</li>\n<li>Responsive header and footer</li>\n<li><a href=\"https://fontawesome.com/search?o=r&amp;m=free\">Font Awesome Icons</a></li>\n<li>Schemas for adding new pages</li>\n<li>Editable color pallete</li>\n<li>Markdown styles</li>\n<li>CloudCannon configuration</li>\n<li>CSS variables</li>\n</ul>\n",
 		"value": "<p>Pour vous faire gagner du temps, certaines fonctionnalités sont configurées dans ce modèle, comme :</p>\n<ul>\n<li><a href=\"https://cloudcannon.com/documentation/guides/bookshop-astro-guide/\">Bookshop</a></li>\n<li>Blog avec pagination, balises et <a href=\"https://docs.astro.build/en/guides/markdown-content/#using-components-in-mdx\">snippets</a></li>\n<li><a href=\"https://docs.astro.build/en/guides/images/#image--astroassets\">Optimisation des images</a></li>\n<li>Contrôles SEO</li>\n<li>En-tête et pied de page réactifs</li>\n<li><a href=\"https://fontawesome.com/search?o=r&amp;m=free\">Font Awesome Icons</a></li>\n<li>Schémas pour ajouter de nouvelles pages</li>\n<li>Palette de couleurs modifiable</li>\n<li>Styles de démarque</li>\n<li>Configuration de CloudCannon</li>\n<li>Variables CSS</li>\n</ul>\n"
 	},
 	"static:/blog/a-test-page/": {
