@@ -18,7 +18,7 @@ content_blocks:
   - _bookshop_name: hero
     background_color: '#ffffff'
     heading:
-      heading_text: Astro Bookshop Starter
+      heading_text: Astro Rosey Starter
       heading_gradient_color: '#a0a2ff'
     subheading:
       markdown_content: >-
