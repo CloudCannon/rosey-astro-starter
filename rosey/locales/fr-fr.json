@@ -11,13 +11,9 @@
 		"original": " RSS Feed ",
 		"value": " RSS Feed "
 	},
-	"static:hero-subheading-about-1": {
-		"original": "<h3>An example <strong>about</strong> page.</h3>\n",
-		"value": "<h3>An example <strong>about</strong> page.</h3>\n"
-	},
-	"astro-and-rosey-bookshop-starter": {
-		"original": " Astro &amp; Rosey Bookshop Starter ",
-		"value": " Astro &amp; Rosey Bookshop Starter "
+	"astro-rosey-starter": {
+		"original": " Astro Rosey Starter ",
+		"value": " Astro Rosey Starter "
 	},
 	"cloudcannon": {
 		"original": " CloudCannon ",

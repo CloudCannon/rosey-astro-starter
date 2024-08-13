@@ -1,15 +1,7 @@
 {
-	"about/index.html": {
-		"original": "about/index.html",
-		"value": "about/index.html"
-	},
 	"404.html": {
 		"original": "404.html",
 		"value": "404.html"
-	},
-	"index.html": {
-		"original": "index.html",
-		"value": "index.html"
 	},
 	"blog/index.html": {
 		"original": "blog/index.html",
@@ -18,6 +10,10 @@
 	"tags/Testing/index.html": {
 		"original": "tags/Testing/index.html",
 		"value": "tags/Testing/index.html"
+	},
+	"index.html": {
+		"original": "index.html",
+		"value": "index.html"
 	},
 	"tags/email/index.html": {
 		"original": "tags/email/index.html",
