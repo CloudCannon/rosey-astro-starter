@@ -87,17 +87,9 @@ _inputs:
       code: true
       horizontalrule: true
       image: true
-    comment: >-
-      Added: 's component-based approach to building and editing sites After a
-      developer has set up the site, user interface maintain the site's content
-      and
-
-
-      Removed: components UI
-
-
-      [See on
-      page](https://cool-ski.cloudvent.net/#:~:text=A%20starting%20point,the%20CloudCannon%20CMS)
+    comment: "[See on
+      page](https://cool-ski.cloudvent.net/#:~:text=A%20starting%20point,the%20\
+      CloudCannon%20CMS)"
     context:
       open: false
       title: Untranslated Text
@@ -132,16 +124,9 @@ _inputs:
       code: true
       horizontalrule: true
       image: true
-    comment: >-
-      Added: As well as a translations workflow come already to help you start
-      building components quickly
-
-
-      Removed: To help save you time are
-
-
-      [See on
-      page](https://cool-ski.cloudvent.net/#:~:text=As%20well%20as,CSS%20variables)
+    comment: "[See on
+      page](https://cool-ski.cloudvent.net/#:~:text=As%20well%20as,CSS%20variab\
+      les)"
     context:
       open: false
       title: Untranslated Text
