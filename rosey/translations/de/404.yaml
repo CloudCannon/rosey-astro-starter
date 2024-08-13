@@ -2,17 +2,15 @@ urlTranslation: 404.html
 _inputs:
   $:
     type: object
-    comment: "[See 404](https://glamorous-sanctuary.cloudvent.net/404)"
+    comment: "[See 404](https://cool-ski.cloudvent.net/404)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de)
-          comment: Text to translate on
-            [404](https://glamorous-sanctuary.cloudvent.net/404)
+          comment: Text to translate on [404](https://cool-ski.cloudvent.net/404)
           inputs: []
         - heading: Already translated (de)
-          comment: Text already translated on
-            [404](https://glamorous-sanctuary.cloudvent.net/404)
+          comment: Text already translated on [404](https://cool-ski.cloudvent.net/404)
           inputs:
             - about
             - blog
@@ -22,21 +20,19 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/404#:~:text=About)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/404#:~:text=About)"
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://glamorous-sanctuary.cloudvent.net/404#:~:text=Blog)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/404#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://glamorous-sanctuary.cloudvent.net/404#:~:text=RSS%20Feed)"
+    comment: "[See on page](https://cool-ski.cloudvent.net/404#:~:text=RSS%20Feed)"
 about: Um
 blog: Blog
 rss-feed: RSS-Feed
