@@ -84,6 +84,7 @@ const imageSrc =
         ) : block.media.video_path ? (
           <iframe
             class="aspect-video order-2 md:order-1"
+            loading="lazy"
             width="560"
             height="315"
             src={block.media.video_path}
@@ -152,6 +153,7 @@ const imageSrc =
         ) : block.media.video_path ? (
           <iframe
             class="aspect-video"
+            loading="lazy"
             width="560"
             height="315"
             src={block.media.video_path}
