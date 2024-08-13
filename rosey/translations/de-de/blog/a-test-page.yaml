@@ -61,9 +61,32 @@ _inputs:
       code: true
       horizontalrule: true
       image: true
-    comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=All%20you%\
-      20have,to%20use%20it)"
+    comment: >-
+      Added: All you have to learn \_here\_ is how to have fun. Just pretend you
+      are a whisper floating across a mountain. You have to make almighty
+      decisions when you’re the creator. There we are. --- We’ll throw some old
+      gray clouds in here just sneaking around and having fun. Only eight colors
+      that you need. This is the fun part Put it in, leave it alone. Get away
+      from those little Christmas tree things we used to make in school. \`\`\`
+      code: an\_object\_key: options: another\_thing: - an array item - another
+      array item \`\`\` Take your time. Speed will come later. You can bend
+      rivers. But when I get home, the only thing I have power over is the
+      garbage. Let’s get wild today. If you don’t think every day is a good day
+      - try missing a few. You’ll see. Play with the angles. We don’t have to be
+      committed. We are just playing here. Another code block: \`\`\` div h1This
+      is a test for HTML code blocksh1 pA paragraphp div \`\`\` Mix your color
+      marbly don’t mix it dead. Trees cover up a multitude of sins. The only
+      prerequisite is that it makes you happy. If it makes you happy then it’s
+      good. When you do it your way you can go anywhere you choose. We’ll have a
+      super time. Don’t fiddle with it all day. ! We have all at one time or
+      another mixed some mud. It’s beautiful - and we haven’t even done anything
+      to it yet. Let’s make some happy little clouds in our world. Let your
+      heart be your guide. We have a fantastic little sky! We’re trying to teach
+      you a technique here and how to use it.
+
+
+      [See on
+      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=All%20you%20have,to%20use%20it)
     context:
       open: false
       title: Untranslated Text
