@@ -12,6 +12,10 @@ To try to cut down on setup time this starter template also includes some common
 
 This template is aimed at helping developers build multilingual sites quickly or referencing how to migrate your existing SSG setup to use this workflow. If you are an editor looking for an already built template, have a look at [CloudCannon's templates page](https://cloudcannon.com/templates/).
 
+## YouTube overview and setup instructions
+
+[![Easily manage your multilingual Astro site in CloudCannon](https://img.youtube.com/vi/u5WittUT3Ts/0.jpg)](https://www.youtube.com/watch?v=u5WittUT3Ts)
+
 ## How it works
 
 1. Rosey generates a base.json file from wherever it detects a `data-rosey=""` tag in your built site.
