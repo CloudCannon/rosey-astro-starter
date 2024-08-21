@@ -6,10 +6,6 @@
     "color": "#393939",
     "links": [
       {
-        "link": "/about/",
-        "text": "About"
-      },
-      {
         "link": "/blog/",
         "text": "Blog"
       },
@@ -53,10 +49,6 @@
     "background_color": "#333232",
     "color": "#ffffff",
     "links": [
-      {
-        "link": "/about/",
-        "text": "About"
-      },
       {
         "link": "/blog/",
         "text": "Blog"

@@ -1,20 +1,6 @@
 {
   "version": 2,
   "keys": {
-    "about": {
-      "original": " About ",
-      "value": null,
-      "pages": {
-        "404.html": 1,
-        "blog/a-test-page/index.html": 1,
-        "blog/email-delivery-tips/index.html": 1,
-        "blog/index.html": 1,
-        "index.html": 1,
-        "tags/Testing/index.html": 1,
-        "tags/email/index.html": 1
-      },
-      "total": 7
-    },
     "astro-rosey-starter": {
       "original": " Astro Rosey Starter ",
       "value": null,

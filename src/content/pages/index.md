@@ -16,10 +16,10 @@ seo:
   no_index: false
 content_blocks:
   - _bookshop_name: hero
-    background_color: '#ffffff'
+    background_color: "#ffffff"
     heading:
       heading_text: Astro Rosey Starter
-      heading_gradient_color: '#a0a2ff'
+      heading_gradient_color: "#a0a2ff"
     subheading:
       markdown_content: >-
         A starting point for **developers looking to build a multilingual
@@ -31,7 +31,7 @@ content_blocks:
         non-technical editors to maintain the site's content and enter
         translations. Create your own copy, and start creating your own
         components to use in the CloudCannon CMS.
-      color: '#393939'
+      color: "#393939"
     image:
       image_path: /src/assets/images/featured-image-5.jpg
       alt_text: A placeholder image
@@ -40,20 +40,20 @@ content_blocks:
         button_text: GitHub
         button_icon: Github
         button_link: https://github.com/cloudCannon/rosey-astro-starter
-        background_color: '#034AD8'
+        background_color: "#034AD8"
         hover_brightness: 0.85
-        text_color: '#ffffff'
+        text_color: "#ffffff"
       - _bookshop_name: buttons/secondary
         button_text: CloudCannon
         button_icon: CloudCannon
         button_link: https://www.cloudcannon.com
-        text_color: '#034AD8'
+        text_color: "#034AD8"
         hover_brightness: 0.95
   - _bookshop_name: left-right
-    background_color: '#ffffff'
+    background_color: "#ffffff"
     heading:
       heading_text: Keep what you need. Delete the rest.
-      color: '#393939'
+      color: "#393939"
     text:
       markdown_content: >-
         As well as a translations workflow, some features come already set up in
@@ -82,10 +82,10 @@ content_blocks:
         - CloudCannon configuration
 
         - CSS variables
-      color: '#393939'
+      color: "#393939"
     media:
       image_path:
-      video_path: https://www.youtube.com/embed/u5WittUT3Ts?si=BjBfbF-x5MoaAyVO
+      youtube_path: https://www.youtube.com/embed/u5WittUT3Ts?si=BjBfbF-x5MoaAyVO
       alt_text: An image
     flipped: true
     button:
@@ -93,7 +93,7 @@ content_blocks:
       button_text: GitHub
       button_icon: Github
       button_link: https://github.com/cloudCannon/rosey-astro-starter
-      background_color: '#034AD8'
+      background_color: "#034AD8"
       hover_brightness: 0.85
-      text_color: '#ffffff'
+      text_color: "#ffffff"
 ---

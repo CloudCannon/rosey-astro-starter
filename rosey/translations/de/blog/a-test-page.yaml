@@ -10,7 +10,6 @@ _inputs:
           comment: Text to translate on
             [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
           inputs:
-            - about
             - blog
             - rss-feed
         - heading: Already translated (de)
@@ -18,13 +17,6 @@ _inputs:
             [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
           inputs:
             - static:/blog/a-test-page/
-  about:
-    label: About
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=About)"
   blog:
     label: Blog
     hidden: false
@@ -130,7 +122,6 @@ _inputs:
 
         We have a fantastic little sky! We’re trying to teach you a technique
         here and how to use it.
-about: ""
 blog: ""
 rss-feed: ""
 static:/blog/a-test-page/: >-

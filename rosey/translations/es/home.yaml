@@ -13,7 +13,6 @@ _inputs:
         - heading: Already translated (es)
           comment: Text already translated on [](https://cool-ski.cloudvent.net/)
           inputs:
-            - about
             - blog
             - cloudcannon
             - github
@@ -21,12 +20,6 @@ _inputs:
             - rss-feed
             - static:hero-subheading-home-1
             - static:left-right-text-home-1
-  about:
-    label: About
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See on page](https://cool-ski.cloudvent.net/#:~:text=About)"
   astro-rosey-starter:
     label: Astro Rosey Starter
     hidden: false
@@ -159,7 +152,6 @@ _inputs:
         * CloudCannon configuration
 
         * CSS variables
-about: Acerca de
 astro-rosey-starter: ""
 blog: Blog
 cloudcannon: CloudCannon

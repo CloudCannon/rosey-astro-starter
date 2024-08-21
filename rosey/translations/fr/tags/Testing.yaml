@@ -10,19 +10,12 @@ _inputs:
           comment: Text to translate on
             [tags/Testing/](https://cool-ski.cloudvent.net/tags/Testing/)
           inputs:
-            - about
             - blog
             - rss-feed
         - heading: Already translated (fr)
           comment: Text already translated on
             [tags/Testing/](https://cool-ski.cloudvent.net/tags/Testing/)
           inputs: []
-  about:
-    label: About
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See on page](https://cool-ski.cloudvent.net/tags/Testing/#:~:text=About)"
   blog:
     label: Blog
     hidden: false
@@ -36,6 +29,5 @@ _inputs:
     options: {}
     comment: "[See on
       page](https://cool-ski.cloudvent.net/tags/Testing/#:~:text=RSS%20Feed)"
-about: ""
 blog: ""
 rss-feed: ""
