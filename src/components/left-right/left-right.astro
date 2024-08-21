@@ -1,6 +1,7 @@
 ---
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
+import { YouTube } from "astro-embed";
 import Markdown from "../utility/markdown.astro";
 import slugify from "slugify";
 
@@ -38,7 +39,7 @@ interface Props {
   };
   media: {
     image_path: string;
-    video_path: string;
+    youtube_path: string;
     alt_text: string;
   };
   button: {
@@ -81,19 +82,8 @@ const imageSrc =
             sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
             src={imageSrc}
           />
-        ) : block.media.video_path ? (
-          <iframe
-            class="aspect-video order-2 md:order-1"
-            loading="lazy"
-            width="560"
-            height="315"
-            src={block.media.video_path}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          />
+        ) : block.media.youtube_path ? (
+          <YouTube class="w-full aspect-video" id={block.media.youtube_path} />
         ) : null}
 
         <div class="left-right__text order-1 md:order-2">
@@ -150,19 +140,8 @@ const imageSrc =
             sizes={`(max-width: 640px) 320px, (max-width: 960px) 500px, (max-width: 1280px) 640px`}
             src={imageSrc}
           />
-        ) : block.media.video_path ? (
-          <iframe
-            class="aspect-video"
-            loading="lazy"
-            width="560"
-            height="315"
-            src={block.media.video_path}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          />
+        ) : block.media.youtube_path ? (
+          <YouTube class="w-full aspect-video" id={block.media.youtube_path} />
         ) : null}
       </div>
     )
