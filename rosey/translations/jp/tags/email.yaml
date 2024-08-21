@@ -14,15 +14,8 @@ _inputs:
           comment: Text already translated on
             [tags/email/](https://cool-ski.cloudvent.net/tags/email/)
           inputs:
-            - about
             - blog
             - rss-feed
-  about:
-    label: About
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See on page](https://cool-ski.cloudvent.net/tags/email/#:~:text=About)"
   blog:
     label: Blog
     hidden: false
@@ -36,6 +29,5 @@ _inputs:
     options: {}
     comment: "[See on
       page](https://cool-ski.cloudvent.net/tags/email/#:~:text=RSS%20Feed)"
-about: について
 blog: ブログ
 rss-feed: RSSフィード
