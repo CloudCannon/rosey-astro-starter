@@ -2,16 +2,17 @@ urlTranslation: blog/index.html
 _inputs:
   $:
     type: object
-    comment: "[See blog/](https://cool-ski.cloudvent.net/blog/)"
+    comment: "[See blog/](https://glamorous-sanctuary.cloudvent.net/blog/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de)
-          comment: Text to translate on [blog/](https://cool-ski.cloudvent.net/blog/)
+          comment: Text to translate on
+            [blog/](https://glamorous-sanctuary.cloudvent.net/blog/)
           inputs: []
         - heading: Already translated (de)
           comment: Text already translated on
-            [blog/](https://cool-ski.cloudvent.net/blog/)
+            [blog/](https://glamorous-sanctuary.cloudvent.net/blog/)
           inputs:
             - blog
             - rss-feed
@@ -20,12 +21,14 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://cool-ski.cloudvent.net/blog/#:~:text=Blog)"
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://cool-ski.cloudvent.net/blog/#:~:text=RSS%20Feed)"
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/#:~:text=RSS%20Feed)"
 blog: Blog
 rss-feed: RSS-Feed
