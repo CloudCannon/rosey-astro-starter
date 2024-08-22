@@ -15,10 +15,6 @@
 		"original": "tags/Testing/index.html",
 		"value": "tags/Testing/index.html"
 	},
-	"tags/email/index.html": {
-		"original": "tags/email/index.html",
-		"value": "tags/email/index.html"
-	},
 	"blog/a-test-page/index.html": {
 		"original": "blog/a-test-page/index.html",
 		"value": "blog/a-test-page/index.html"
@@ -26,5 +22,9 @@
 	"blog/email-delivery-tips/index.html": {
 		"original": "blog/email-delivery-tips/index.html",
 		"value": "blog/email-delivery-tips/index.html"
+	},
+	"tags/email/index.html": {
+		"original": "tags/email/index.html",
+		"value": "tags/email/index.html"
 	}
 }

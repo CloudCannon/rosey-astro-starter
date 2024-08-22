@@ -7,6 +7,10 @@
 		"original": "404.html",
 		"value": "404.html"
 	},
+	"index.html": {
+		"original": "index.html",
+		"value": "index.html"
+	},
 	"tags/Testing/index.html": {
 		"original": "tags/Testing/index.html",
 		"value": "tags/Testing/index.html"
@@ -14,10 +18,6 @@
 	"tags/email/index.html": {
 		"original": "tags/email/index.html",
 		"value": "tags/email/index.html"
-	},
-	"index.html": {
-		"original": "index.html",
-		"value": "index.html"
 	},
 	"blog/a-test-page/index.html": {
 		"original": "blog/a-test-page/index.html",
