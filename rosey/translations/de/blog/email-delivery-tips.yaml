@@ -3,19 +3,19 @@ _inputs:
   $:
     type: object
     comment: "[See
-      blog/email-delivery-tips/](https://cool-ski.cloudvent.net/blog/email-deli\
-      very-tips/)"
+      blog/email-delivery-tips/](https://glamorous-sanctuary.cloudvent.net/blog\
+      /email-delivery-tips/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de)
           comment: Text to translate on
-            [blog/email-delivery-tips/](https://cool-ski.cloudvent.net/blog/email-delivery-tips/)
+            [blog/email-delivery-tips/](https://glamorous-sanctuary.cloudvent.net/blog/email-delivery-tips/)
           inputs:
             - static:/blog/email-delivery-tips/
         - heading: Already translated (de)
           comment: Text already translated on
-            [blog/email-delivery-tips/](https://cool-ski.cloudvent.net/blog/email-delivery-tips/)
+            [blog/email-delivery-tips/](https://glamorous-sanctuary.cloudvent.net/blog/email-delivery-tips/)
           inputs:
             - blog
             - rss-feed
@@ -25,16 +25,16 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/email-delivery-tips/#:~:text=Bl\
-      og)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/email-delivery-tips/\
+      #:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/email-delivery-tips/#:~:text=RS\
-      S%20Feed)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/email-delivery-tips/\
+      #:~:text=RSS%20Feed)"
   static:/blog/email-delivery-tips/:
     label: When you send an email campaign, you expec...
     hidden: false
@@ -57,8 +57,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/email-delivery-tips/#:~:text=Wh\
-      en%20you%20send,a%20timely%20manner)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/email-delivery-tips/\
+      #:~:text=When%20you%20send,a%20timely%20manner)"
     context:
       open: false
       title: Untranslated Text
