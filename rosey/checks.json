@@ -5,21 +5,21 @@
     "total": 10,
     "states": {
       "unused": 0,
-      "outdated": 0,
+      "current": 10,
       "missing": 0,
-      "current": 10
+      "outdated": 0
     },
     "keys": {
-      "github": "current",
-      "astro-rosey-starter": "current",
       "blog": "current",
+      "github": "current",
       "static:/blog/email-delivery-tips/": "current",
-      "static:/blog/a-test-page/": "current",
-      "rss-feed": "current",
-      "static:hero-subheading-home-1": "current",
       "cloudcannon": "current",
+      "keep-what-you-need-delete-the-rest": "current",
+      "static:/blog/a-test-page/": "current",
+      "static:hero-subheading-home-1": "current",
+      "rss-feed": "current",
       "static:left-right-text-home-1": "current",
-      "keep-what-you-need-delete-the-rest": "current"
+      "astro-rosey-starter": "current"
     }
   },
   "de.urls": {
@@ -27,29 +27,29 @@
     "baseTotal": 10,
     "total": 7,
     "states": {
-      "outdated": 0,
-      "unused": 7,
       "current": 0,
-      "missing": 10
+      "missing": 10,
+      "unused": 7,
+      "outdated": 0
     },
     "keys": {
-      "blog/a-test-page/index.html": "unused",
-      "cloudcannon": "missing",
-      "blog": "missing",
-      "static:/blog/email-delivery-tips/": "missing",
-      "blog/email-delivery-tips/index.html": "unused",
-      "tags/email/index.html": "unused",
+      "static:/blog/a-test-page/": "missing",
+      "astro-rosey-starter": "missing",
       "keep-what-you-need-delete-the-rest": "missing",
       "rss-feed": "missing",
-      "blog/index.html": "unused",
-      "index.html": "unused",
-      "static:left-right-text-home-1": "missing",
-      "static:/blog/a-test-page/": "missing",
+      "blog": "missing",
+      "tags/email/index.html": "unused",
       "github": "missing",
+      "blog/a-test-page/index.html": "unused",
+      "static:/blog/email-delivery-tips/": "missing",
+      "static:left-right-text-home-1": "missing",
+      "static:hero-subheading-home-1": "missing",
+      "blog/email-delivery-tips/index.html": "unused",
+      "index.html": "unused",
       "404.html": "unused",
+      "blog/index.html": "unused",
       "tags/Testing/index.html": "unused",
-      "astro-rosey-starter": "missing",
-      "static:hero-subheading-home-1": "missing"
+      "cloudcannon": "missing"
     }
   },
   "es": {
@@ -58,21 +58,21 @@
     "total": 10,
     "states": {
       "unused": 0,
-      "outdated": 0,
       "current": 10,
-      "missing": 0
+      "missing": 0,
+      "outdated": 0
     },
     "keys": {
-      "github": "current",
       "static:hero-subheading-home-1": "current",
-      "static:left-right-text-home-1": "current",
+      "blog": "current",
+      "astro-rosey-starter": "current",
       "cloudcannon": "current",
+      "static:/blog/a-test-page/": "current",
+      "github": "current",
       "rss-feed": "current",
       "keep-what-you-need-delete-the-rest": "current",
-      "blog": "current",
-      "static:/blog/a-test-page/": "current",
       "static:/blog/email-delivery-tips/": "current",
-      "astro-rosey-starter": "current"
+      "static:left-right-text-home-1": "current"
     }
   },
   "es.urls": {
@@ -80,29 +80,29 @@
     "baseTotal": 10,
     "total": 7,
     "states": {
-      "outdated": 0,
-      "unused": 7,
       "current": 0,
-      "missing": 10
+      "unused": 7,
+      "missing": 10,
+      "outdated": 0
     },
     "keys": {
-      "static:left-right-text-home-1": "missing",
-      "404.html": "unused",
-      "index.html": "unused",
-      "keep-what-you-need-delete-the-rest": "missing",
-      "tags/Testing/index.html": "unused",
       "static:/blog/email-delivery-tips/": "missing",
-      "static:hero-subheading-home-1": "missing",
-      "blog": "missing",
-      "cloudcannon": "missing",
-      "static:/blog/a-test-page/": "missing",
-      "github": "missing",
-      "blog/a-test-page/index.html": "unused",
+      "astro-rosey-starter": "missing",
       "blog/email-delivery-tips/index.html": "unused",
-      "blog/index.html": "unused",
-      "tags/email/index.html": "unused",
+      "cloudcannon": "missing",
+      "static:left-right-text-home-1": "missing",
+      "tags/Testing/index.html": "unused",
       "rss-feed": "missing",
-      "astro-rosey-starter": "missing"
+      "static:hero-subheading-home-1": "missing",
+      "tags/email/index.html": "unused",
+      "index.html": "unused",
+      "github": "missing",
+      "blog": "missing",
+      "static:/blog/a-test-page/": "missing",
+      "404.html": "unused",
+      "keep-what-you-need-delete-the-rest": "missing",
+      "blog/a-test-page/index.html": "unused",
+      "blog/index.html": "unused"
     }
   },
   "fr": {
@@ -110,22 +110,22 @@
     "baseTotal": 10,
     "total": 10,
     "states": {
+      "current": 10,
       "outdated": 0,
       "missing": 0,
-      "unused": 0,
-      "current": 10
+      "unused": 0
     },
     "keys": {
-      "cloudcannon": "current",
-      "keep-what-you-need-delete-the-rest": "current",
       "static:hero-subheading-home-1": "current",
-      "blog": "current",
-      "static:/blog/a-test-page/": "current",
-      "astro-rosey-starter": "current",
-      "rss-feed": "current",
       "static:left-right-text-home-1": "current",
+      "keep-what-you-need-delete-the-rest": "current",
+      "blog": "current",
+      "astro-rosey-starter": "current",
       "github": "current",
-      "static:/blog/email-delivery-tips/": "current"
+      "static:/blog/a-test-page/": "current",
+      "static:/blog/email-delivery-tips/": "current",
+      "rss-feed": "current",
+      "cloudcannon": "current"
     }
   },
   "fr.urls": {
@@ -133,29 +133,29 @@
     "baseTotal": 10,
     "total": 7,
     "states": {
+      "unused": 7,
       "current": 0,
       "missing": 10,
-      "outdated": 0,
-      "unused": 7
+      "outdated": 0
     },
     "keys": {
+      "tags/email/index.html": "unused",
+      "static:/blog/email-delivery-tips/": "missing",
       "keep-what-you-need-delete-the-rest": "missing",
       "blog/index.html": "unused",
-      "tags/Testing/index.html": "unused",
-      "rss-feed": "missing",
-      "static:left-right-text-home-1": "missing",
-      "blog": "missing",
-      "github": "missing",
       "static:hero-subheading-home-1": "missing",
-      "static:/blog/email-delivery-tips/": "missing",
-      "blog/email-delivery-tips/index.html": "unused",
-      "index.html": "unused",
+      "rss-feed": "missing",
       "static:/blog/a-test-page/": "missing",
-      "tags/email/index.html": "unused",
+      "blog/a-test-page/index.html": "unused",
+      "github": "missing",
+      "tags/Testing/index.html": "unused",
+      "index.html": "unused",
+      "blog": "missing",
+      "cloudcannon": "missing",
       "404.html": "unused",
       "astro-rosey-starter": "missing",
-      "cloudcannon": "missing",
-      "blog/a-test-page/index.html": "unused"
+      "static:left-right-text-home-1": "missing",
+      "blog/email-delivery-tips/index.html": "unused"
     }
   },
   "jp": {
@@ -163,22 +163,22 @@
     "baseTotal": 10,
     "total": 10,
     "states": {
-      "unused": 0,
+      "current": 10,
       "outdated": 0,
       "missing": 0,
-      "current": 10
+      "unused": 0
     },
     "keys": {
-      "github": "current",
-      "static:/blog/a-test-page/": "current",
-      "keep-what-you-need-delete-the-rest": "current",
+      "static:/blog/email-delivery-tips/": "current",
       "cloudcannon": "current",
       "blog": "current",
-      "static:/blog/email-delivery-tips/": "current",
       "astro-rosey-starter": "current",
+      "keep-what-you-need-delete-the-rest": "current",
+      "static:left-right-text-home-1": "current",
       "static:hero-subheading-home-1": "current",
       "rss-feed": "current",
-      "static:left-right-text-home-1": "current"
+      "github": "current",
+      "static:/blog/a-test-page/": "current"
     }
   },
   "jp.urls": {
@@ -186,29 +186,29 @@
     "baseTotal": 10,
     "total": 7,
     "states": {
+      "current": 0,
       "unused": 7,
       "outdated": 0,
-      "current": 0,
       "missing": 10
     },
     "keys": {
-      "static:/blog/email-delivery-tips/": "missing",
-      "static:hero-subheading-home-1": "missing",
-      "tags/Testing/index.html": "unused",
-      "blog/index.html": "unused",
-      "astro-rosey-starter": "missing",
-      "keep-what-you-need-delete-the-rest": "missing",
-      "cloudcannon": "missing",
+      "github": "missing",
       "blog": "missing",
-      "static:left-right-text-home-1": "missing",
-      "blog/a-test-page/index.html": "unused",
-      "index.html": "unused",
-      "tags/email/index.html": "unused",
-      "blog/email-delivery-tips/index.html": "unused",
       "rss-feed": "missing",
       "404.html": "unused",
-      "github": "missing",
-      "static:/blog/a-test-page/": "missing"
+      "blog/email-delivery-tips/index.html": "unused",
+      "static:hero-subheading-home-1": "missing",
+      "tags/email/index.html": "unused",
+      "static:/blog/a-test-page/": "missing",
+      "blog/a-test-page/index.html": "unused",
+      "cloudcannon": "missing",
+      "static:/blog/email-delivery-tips/": "missing",
+      "static:left-right-text-home-1": "missing",
+      "blog/index.html": "unused",
+      "index.html": "unused",
+      "keep-what-you-need-delete-the-rest": "missing",
+      "tags/Testing/index.html": "unused",
+      "astro-rosey-starter": "missing"
     }
   }
 }
