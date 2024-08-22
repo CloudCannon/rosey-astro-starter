@@ -1,4 +1,8 @@
 {
+	"blog/index.html": {
+		"original": "blog/index.html",
+		"value": "blog/index.html"
+	},
 	"404.html": {
 		"original": "404.html",
 		"value": "404.html"
@@ -6,10 +10,6 @@
 	"index.html": {
 		"original": "index.html",
 		"value": "index.html"
-	},
-	"blog/index.html": {
-		"original": "blog/index.html",
-		"value": "blog/index.html"
 	},
 	"tags/Testing/index.html": {
 		"original": "tags/Testing/index.html",
