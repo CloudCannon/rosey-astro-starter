@@ -2,20 +2,29 @@ urlTranslation: blog/a-test-page/index.html
 _inputs:
   $:
     type: object
-    comment: "[See blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)"
+    comment: "[See
+      blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-\
+      page/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr)
           comment: Text to translate on
-            [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
           inputs:
             - blog
+            - markdown:all-you
+            - markdown:another-code-block
+            - markdown:mix-your-color-marbly-dont-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-its-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-well-have-a-super-time-dont-fiddle-with-it-all-day
+            - markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-lets-get-wild-today-if-you-dont-think-every-day-is-a-good-day-try-missing-a-few-youll-see-play-with-the-angles-we-dont-have-to-be-committed-we-are-just-playing-here
+            - markdown:we-have-a-fantastic-little-sky-were-trying-to-teach-you-a-technique-here-and-how-to-use-it
+            - markdown:we-have-all-at-one-time-or-another-mixed-some-mud-its-beautiful-and-we-havent-even-done-anything-to-it-yet-lets-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide
+            - markdown:well-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school
             - rss-feed
-            - static:/blog/a-test-page/
+            - yay-we-support-snippets-now!
         - heading: Already translated (fr)
           comment: Text already translated on
-            [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
           inputs: []
   blog:
     label: Blog
@@ -23,16 +32,9 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=Blog)"
-  rss-feed:
-    label: RSS Feed
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=RSS%20Feed\
-      )"
-  static:/blog/a-test-page/:
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Blog)"
+  markdown:all-you:
     label: All you have to learn _here_ is how to hav...
     hidden: false
     type: markdown
@@ -54,74 +56,220 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=All%20you%\
-      20have,to%20use%20it)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =All%20you%20have,There%20we%20are)"
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: >-
-        All you **have** to learn _here_ is how to have fun. Just pretend you
+      content: All you **have** to learn _here_ is how to have fun. Just pretend you
         are a whisper floating across a mountain. You have to make almighty
         decisions when you’re the creator. There we are.
-
-
-        ---
-
-
-        > We’ll throw some old gray clouds in here just sneaking around and
-        having fun. Only eight colors that you need. This is the fun part Put it
-        in, leave it alone. Get away from those little Christmas tree things we
-        used to make in school.
-
-
-        ```
-
-        code:
-          an_object_key:
-            options: {}
-            another_thing:
-              - an array item
-              - another array item
-        ```
-
-
-        Take your time. Speed will come later. You can bend rivers. But when I
+  markdown:another-code-block:
+    label: "Another code block:"
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Another%20code%20block)"
+  markdown:mix-your-color-marbly-dont-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-its-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-well-have-a-super-time-dont-fiddle-with-it-all-day:
+    label: Mix your color marbly don’t mix it dead. T...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Mix%20your%20color,it%20all%20day)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Mix your color marbly don’t mix it dead. Trees cover up a multitude of
+        sins. The only prerequisite is that it makes you happy. If it makes you
+        happy then it’s good. When you do it your way you can go anywhere you
+        choose. We’ll have a super time. Don’t fiddle with it all day.
+  markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-lets-get-wild-today-if-you-dont-think-every-day-is-a-good-day-try-missing-a-few-youll-see-play-with-the-angles-we-dont-have-to-be-committed-we-are-just-playing-here:
+    label: Take your time. Speed will come later. You...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Take%20your%20time,just%20playing%20here)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Take your time. Speed will come later. You can bend rivers. But when I
         get home, the only thing I have power over is the garbage. Let’s get
         wild today. If you don’t think every day is a good day - try missing a
         few. You’ll see. Play with the angles. We don’t have to be committed. We
         are just playing here.
-
-
-        Another code block:
-
-
-        ```
-
-        <div>
-          <h1>This is a test for HTML code blocks</h1>
-          <p>A paragraph</p>
-        </div>
-
-        ```
-
-
-        Mix your color marbly don’t mix it dead. Trees cover up a multitude of
-        sins. The only prerequisite is that it makes you happy. If it makes you
-        happy then it’s good. When you do it your way you can go anywhere you
-        choose. We’ll have a super time. Don’t fiddle with it all day.
-
-
-        ![](/images/blog/featured-image-2.jpg)
-
-
-        We have all at one time or another mixed some mud. It’s beautiful - and
+  markdown:we-have-a-fantastic-little-sky-were-trying-to-teach-you-a-technique-here-and-how-to-use-it:
+    label: We have a fantastic little sky! We’re tryi...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =We%20have%20a,to%20use%20it)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: We have a fantastic little sky! We’re trying to teach you a technique
+        here and how to use it.
+  markdown:we-have-all-at-one-time-or-another-mixed-some-mud-its-beautiful-and-we-havent-even-done-anything-to-it-yet-lets-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide:
+    label: We have all at one time or another mixed s...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =We%20have%20all,be%20your%20guide)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: We have all at one time or another mixed some mud. It’s beautiful - and
         we haven’t even done anything to it yet. Let’s make some happy little
         clouds in our world. Let your heart be your guide.
-
-
-        We have a fantastic little sky! We’re trying to teach you a technique
-        here and how to use it.
+  markdown:well-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school:
+    label: We’ll throw some old gray clouds in here j...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      bulletedlist: true
+      numberedlist: true
+      blockquote: true
+      superscript: true
+      subscript: true
+      code: true
+      horizontalrule: true
+      image: true
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =We%E2%80%99ll%20throw%20some,make%20in%20school)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: We’ll throw some old gray clouds in here just sneaking around and
+        having fun. Only eight colors that you need. This is the fun part Put it
+        in, leave it alone. Get away from those little Christmas tree things we
+        used to make in school.
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =RSS%20Feed)"
+  yay-we-support-snippets-now!:
+    label: Yay, we support snippets now!
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Yay%20we%20support%20snippets%20now!)"
 blog: ""
+markdown:all-you: ""
+markdown:another-code-block: ""
+markdown:mix-your-color-marbly-dont-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-its-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-well-have-a-super-time-dont-fiddle-with-it-all-day: ""
+markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-lets-get-wild-today-if-you-dont-think-every-day-is-a-good-day-try-missing-a-few-youll-see-play-with-the-angles-we-dont-have-to-be-committed-we-are-just-playing-here: ""
+markdown:we-have-a-fantastic-little-sky-were-trying-to-teach-you-a-technique-here-and-how-to-use-it: ""
+markdown:we-have-all-at-one-time-or-another-mixed-some-mud-its-beautiful-and-we-havent-even-done-anything-to-it-yet-lets-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide: ""
+markdown:well-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school: ""
 rss-feed: ""
-static:/blog/a-test-page/: ""
+yay-we-support-snippets-now!: ""
