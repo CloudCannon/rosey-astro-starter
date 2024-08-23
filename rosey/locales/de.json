@@ -5,7 +5,7 @@
 	},
 	"rss-feed": {
 		"original": " RSS Feed ",
-		"value": "RSS-Feed"
+		"value": "RSS Feed"
 	},
 	"astro-rosey-starter": {
 		"original": " Astro Rosey Starter ",
@@ -33,35 +33,35 @@
 	},
 	"markdown:all-you": {
 		"original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
-		"value": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are."
+		"value": "<p><strong>Hier</strong> <em>müssen</em> Sie nur lernen, wie man Spaß hat. Stellen Sie sich einfach vor, Sie wären ein Flüstern, das über einen Berg schwebt. Als Schöpfer musst du allmächtige Entscheidungen treffen. Da sind wir.</p>\n"
 	},
 	"markdown:another-code-block": {
 		"original": "Another code block:",
-		"value": "Another code block:"
+		"value": "<p>Ein weiterer Codeblock:</p>\n"
 	},
 	"markdown:mix-your-color-marbly-dont-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-its-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-well-have-a-super-time-dont-fiddle-with-it-all-day": {
 		"original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
-		"value": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day."
+		"value": "<p>Mischen Sie Ihre Farbe marmoriert, nicht tot. Bäume verdecken eine Vielzahl von Sünden. Die einzige Voraussetzung ist, dass es glücklich macht. Wenn es dich glücklich macht, dann ist es gut. Wenn Sie es auf Ihre Weise tun, können Sie überall hingehen, wo Sie möchten. Wir werden eine super Zeit haben. Spielen Sie nicht den ganzen Tag damit herum.</p>\n"
 	},
 	"markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-lets-get-wild-today-if-you-dont-think-every-day-is-a-good-day-try-missing-a-few-youll-see-play-with-the-angles-we-dont-have-to-be-committed-we-are-just-playing-here": {
 		"original": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here.",
-		"value": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here."
+		"value": "<p>Nehmen Sie sich Zeit. Geschwindigkeit kommt später. Sie können Flüsse biegen. Aber wenn ich nach Hause komme, ist das Einzige, worüber ich Macht habe, der Müll. Lasst uns heute wild werden. Wenn Sie nicht glauben, dass jeder Tag ein guter Tag ist, versuchen Sie, ein paar zu verpassen. Du wirst sehen. Spielen Sie mit den Winkeln. Wir müssen uns nicht verpflichten. Wir spielen hier nur.</p>\n"
 	},
 	"markdown:we-have-a-fantastic-little-sky-were-trying-to-teach-you-a-technique-here-and-how-to-use-it": {
 		"original": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it.",
-		"value": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it."
+		"value": "<p>Wir haben einen fantastischen kleinen Himmel! Wir versuchen Ihnen hier eine Technik und deren Anwendung beizubringen.</p>\n"
 	},
 	"markdown:we-have-all-at-one-time-or-another-mixed-some-mud-its-beautiful-and-we-havent-even-done-anything-to-it-yet-lets-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide": {
 		"original": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide.",
-		"value": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide."
+		"value": "<p>Wir haben alle schon einmal etwas Schlamm angerührt. Es ist wunderschön – und wir haben noch nicht einmal etwas daran gemacht. Lasst uns ein paar glückliche kleine Wolken in unsere Welt bringen. Lassen Sie sich von Ihrem Herzen leiten.</p>\n"
 	},
 	"markdown:well-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school": {
 		"original": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school.",
-		"value": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school."
+		"value": "<p>Wir werfen hier ein paar alte graue Wolken rein, schleichen einfach herum und haben Spaß. Nur acht Farben, die Sie benötigen. Das ist der lustige Teil. Setzen Sie es ein und lassen Sie es in Ruhe. Weg von den kleinen Weihnachtsbaum-Sachen, die wir in der Schule gebastelt haben.</p>\n"
 	},
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
-		"value": " Yay, we support snippets now! "
+		"value": "Ja, wir unterstützen jetzt Snippets!"
 	},
 	"markdown:be-aware-of-whats-normal-for-your-target-customers-inboxes-if-youre-sending-out-emails-to-people-who-are-on-gmail-and-yahoo-accounts-then-theres-little-chance-theyll-get-blocked-because-their-addresses-havent-been-flagged-as-spam-yet-but-if-youre-reaching-out-to-people-with-outlook-or-aol-addresses-theres-a-good-chance-your-message-will-get-flagged-as-junk-mail-and-end-up-in-their-spam-folder-before-they-ever-see-it-make-sure-youre-testing-different-types-of-addresses-before-sending-out-any-mass-marketing-campaigns": {
 		"original": "Be aware of what’s normal for your target customers’ inboxes. If you’re sending out emails to people who are on Gmail and Yahoo accounts, then there’s little chance they’ll get blocked because their addresses haven’t been flagged as spam yet. But if you’re reaching out to people with Outlook or AOL addresses, there’s a good chance your message will get flagged as junk mail and end up in their spam folder before they ever see it. Make sure you’re testing different types of addresses before sending out any mass marketing campaigns.",
