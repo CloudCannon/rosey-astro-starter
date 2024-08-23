@@ -1,8 +1,8 @@
 ---
-import Layout from './Layout.astro';
-import PostSummary from '../components/blog/summary';
-import { getCollection } from 'astro:content';
-import type { MarkdownLayoutProps } from 'astro';
+import Layout from "./Layout.astro";
+import PostSummary from "../components/blog/summary";
+import { getCollection } from "astro:content";
+import type { MarkdownLayoutProps } from "astro";
 
 type Props =
   | {
@@ -22,17 +22,16 @@ type Props =
     }>;
 
 const props =
-  'frontmatter' in Astro.props ? Astro.props.frontmatter : Astro.props;
+  "frontmatter" in Astro.props ? Astro.props.frontmatter : Astro.props;
 const content =
-  'body' in Astro.props ? Astro.props.body : Astro.props.rawContent();
+  "body" in Astro.props ? Astro.props.body : Astro.props.rawContent();
 
 const { title, date, image, image_alt, author } = props;
-const wordCount = content.split(' ').length;
+const wordCount = content.split(" ").length;
 const readingTime = Math.floor(wordCount / 183);
 const dateObj = new Date(date);
 
-const posts = await getCollection('blog');
-const roseyId = Astro.url.pathname || 'page';
+const posts = await getCollection("blog");
 ---
 
 <Layout {...props}>
@@ -52,9 +51,9 @@ const roseyId = Astro.url.pathname || 'page';
           <p>
             {
               dateObj.toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
+                year: "numeric",
+                month: "long",
+                day: "numeric",
               })
             }
           </p>
@@ -68,7 +67,7 @@ const roseyId = Astro.url.pathname || 'page';
           </li>
         </div>
       </ul>
-      <div class="markdown-text" data-rosey-ns="static" data-rosey={roseyId}>
+      <div class="markdown-text">
         <slot />
       </div>
     </article>
@@ -95,7 +94,7 @@ const roseyId = Astro.url.pathname || 'page';
 
   .post-size::after {
     position: absolute;
-    content: '';
+    content: "";
     background: #4d4d4d;
     width: 1px;
     height: 15px;
@@ -111,7 +110,7 @@ const roseyId = Astro.url.pathname || 'page';
 
     .post-data-list-item::after {
       position: absolute;
-      content: '';
+      content: "";
       background: #4d4d4d;
       width: 1px;
       height: 15px;

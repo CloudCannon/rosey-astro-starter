@@ -1,0 +1,30 @@
+---
+import Icon from "../utility/icon";
+import slugify from "slugify";
+
+const generateRoseyID = (text: string) => {
+  if (!text) {
+    return "";
+  }
+  const lowerCaseText = text.toLowerCase();
+  // Remove all markdown links, and replace with just text
+  const formattedText = lowerCaseText.replaceAll(
+    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
+    /$1/
+  );
+  return slugify(formattedText, { remove: /['".*,:\/]/g });
+};
+
+const block = Astro.props;
+---
+
+<div
+  class="flex items-center gap-4 px-4 py-2 rounded-lg shadow-md my-4"
+  style={`background-color: ${block.background_color}; color: ${block.color};`}>
+  <div class="w-[1rem]">
+    <Icon icon={block.icon} />
+  </div>
+  <p class="!mb-0" data-rosey={generateRoseyID(block.alert_message)}>
+    {block.alert_message}
+  </p>
+</div>
