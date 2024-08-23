@@ -2,13 +2,15 @@ urlTranslation: blog/a-test-page/index.html
 _inputs:
   $:
     type: object
-    comment: "[See blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)"
+    comment: "[See
+      blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-\
+      page/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (jp)
           comment: Text to translate on
-            [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
           inputs:
             - blog
             - markdown:all-you
@@ -19,9 +21,10 @@ _inputs:
             - markdown:we-have-all-at-one-time-or-another-mixed-some-mud-its-beautiful-and-we-havent-even-done-anything-to-it-yet-lets-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide
             - markdown:well-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school
             - rss-feed
+            - yay-we-support-snippets-now!
         - heading: Already translated (jp)
           comment: Text already translated on
-            [blog/a-test-page/](https://cool-ski.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/)
           inputs: []
   blog:
     label: Blog
@@ -29,7 +32,8 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=Blog)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Blog)"
   markdown:all-you:
     label: All you have to learn _here_ is how to hav...
     hidden: false
@@ -52,8 +56,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=All%20you%\
-      20have,There%20we%20are)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =All%20you%20have,There%20we%20are)"
     context:
       open: false
       title: Untranslated Text
@@ -83,8 +87,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=Another%20\
-      code%20block)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Another%20code%20block)"
   markdown:mix-your-color-marbly-dont-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-its-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-well-have-a-super-time-dont-fiddle-with-it-all-day:
     label: Mix your color marbly don’t mix it dead. T...
     hidden: false
@@ -107,8 +111,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=Mix%20your\
-      %20color,it%20all%20day)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Mix%20your%20color,it%20all%20day)"
     context:
       open: false
       title: Untranslated Text
@@ -139,8 +143,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=Take%20you\
-      r%20time,just%20playing%20here)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Take%20your%20time,just%20playing%20here)"
     context:
       open: false
       title: Untranslated Text
@@ -172,8 +176,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=We%20have%\
-      20a,to%20use%20it)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =We%20have%20a,to%20use%20it)"
     context:
       open: false
       title: Untranslated Text
@@ -202,8 +206,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=We%20have%\
-      20all,be%20your%20guide)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =We%20have%20all,be%20your%20guide)"
     context:
       open: false
       title: Untranslated Text
@@ -233,8 +237,8 @@ _inputs:
       horizontalrule: true
       image: true
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=We%E2%80%9\
-      9ll%20throw%20some,make%20in%20school)"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =We%E2%80%99ll%20throw%20some,make%20in%20school)"
     context:
       open: false
       title: Untranslated Text
@@ -249,8 +253,16 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://cool-ski.cloudvent.net/blog/a-test-page/#:~:text=RSS%20Feed\
-      )"
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =RSS%20Feed)"
+  yay-we-support-snippets-now!:
+    label: Yay, we support snippets now!
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://glamorous-sanctuary.cloudvent.net/blog/a-test-page/#:~:text\
+      =Yay%20we%20support%20snippets%20now!)"
 blog: ""
 markdown:all-you: ""
 markdown:another-code-block: ""
@@ -260,3 +272,4 @@ markdown:we-have-a-fantastic-little-sky-were-trying-to-teach-you-a-technique-her
 markdown:we-have-all-at-one-time-or-another-mixed-some-mud-its-beautiful-and-we-havent-even-done-anything-to-it-yet-lets-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide: ""
 markdown:well-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school: ""
 rss-feed: ""
+yay-we-support-snippets-now!: ""

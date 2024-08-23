@@ -244,6 +244,14 @@
         "index.html": 1
       },
       "total": 1
+    },
+    "yay-we-support-snippets-now!": {
+      "original": " Yay, we support snippets now! ",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
     }
   }
 }
