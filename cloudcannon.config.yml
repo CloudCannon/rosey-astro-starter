@@ -1,6 +1,6 @@
 paths:
   data: data
-  static: 'public'
+  static: "public"
   uploads: public/images
 _editables:
   content: &markdown_options
@@ -20,10 +20,11 @@ _editables:
     code: true
     horizontalrule: true
     image: true
+    snippet: true
 collections_config:
   pages:
     path: src/content/pages
-    url: '/[full_slug]/'
+    url: "/[full_slug]/"
     output: true
     icon: laptop_mac
     _enabled_editors:
@@ -40,7 +41,7 @@ collections_config:
         path: schemas/page.md
         remove_extra_inputs: false
     create:
-      path: '[relative_base_path]/{title|slugify}.md'
+      path: "[relative_base_path]/{title|slugify}.md"
   translations:
     path: rosey/translations
     output: false
@@ -58,8 +59,9 @@ collections_config:
     disable_file_actions: true
   posts:
     path: src/content/blog
+    parser: front-matter
     output: true
-    url: '/blog/[full_slug]/'
+    url: "/blog/[full_slug]/"
     _enabled_editors:
       - content
       - visual
@@ -70,9 +72,9 @@ collections_config:
     schemas:
       default:
         name: New Post
-        path: schemas/post.md
+        path: schemas/post.mdx
     create:
-      path: '[relative_base_path]/{title|slugify}.md'
+      path: "[relative_base_path]/{title|slugify}.mdx"
     _inputs:
       title:
         options:
@@ -141,18 +143,18 @@ _inputs:
         - image/jpeg
         - image/gif
       paths:
-        static: '.'
+        static: "."
         uploads: src/assets/images
   alt_text:
     label: Image Alt Text
     type: textarea
-    hidden: '!image_path'
+    hidden: "!image_path"
   width:
     type: number
   height:
     type: number
   background_color:
-    hidden: 'border_only'
+    hidden: "border_only"
     type: select
     options:
       values: data.colors
@@ -197,10 +199,10 @@ _inputs:
       preview:
         icon: query_stats
         text:
-          - 'Search engine optimization'
+          - "Search engine optimization"
         subtext:
           - key: page_description
-          - 'Update SEO values for the page'
+          - "Update SEO values for the page"
   layout:
     hidden: true
   date:
@@ -218,10 +220,10 @@ _inputs:
         icon: link
         text:
           - key: text
-          - 'Link'
+          - "Link"
         subtext:
           - key: link
-          - 'Add a social link'
+          - "Add a social link"
   social_icon:
     type: select
     options:
@@ -272,3 +274,116 @@ generator:
       html: true
       linkify: false
       breaks: true
+
+_snippets_imports:
+  mdx: true
+_snippets:
+  alert:
+    template: mdx_component
+    inline: false
+    preview:
+      text:
+        - key: alert_message
+        - "Alert"
+    definitions:
+      component_name: SnippetsAlert
+      named_args:
+        - editor_key: background_color
+          source_key: background_color
+          type: string
+        - editor_key: alert_message
+          source_key: alert_message
+          type: string
+        - editor_key: color
+          source_key: color
+          type: string
+        - editor_key: icon
+          source_key: icon
+          type: string
+    _inputs:
+      background_color:
+        type: select
+        options:
+          values: data.colors
+          value_key: value
+          preview:
+            text:
+              - key: name
+      icon:
+        type: select
+        options:
+          values: data.icons
+      color:
+        type: select
+        options:
+          values: data.colors
+          value_key: value
+          preview:
+            text:
+              - key: name
+      alert_message:
+        comment: This is the text displayed in the alert
+        type: textarea
+  video:
+    template: mdx_component
+    inline: false
+    preview:
+      text: Video
+    definitions:
+      component_name: SnippetsVideo
+      named_args:
+        - editor_key: src
+          source_key: src
+          type: string
+    _inputs:
+      src:
+        type: file
+        options:
+          paths:
+            uploads: public/videos
+  file:
+    template: mdx_component
+    inline: false
+    preview:
+      text: File
+    definitions:
+      component_name: SnippetsFile
+      named_args:
+        - editor_key: src
+          source_key: src
+          type: string
+        - editor_key: file_name
+          source_key: file_name
+          type: string
+        - editor_key: link_message
+          source_key: link_message
+          type: string
+    _inputs:
+      src:
+        type: file
+        label: File source
+        options:
+          paths:
+            uploads: public/documents
+      file_name:
+        comment: The name of the file, once downloaded.
+      link_message:
+        type: textarea
+        comment: The text for the download link
+  mdx_tint:
+    template: mdx_paired_component
+    inline: true
+    preview:
+      text: Tint
+    definitions:
+      component_name: SnippetsTint
+      content_key: inner_text
+      named_args:
+        - editor_key: color
+          source_key: tint_color
+          type: string
+    _inputs:
+      tint_color:
+        type: color
+      inner_text:
+        comment: This text will be tinted
