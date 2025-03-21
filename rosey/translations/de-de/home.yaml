@@ -79,18 +79,9 @@ _inputs:
       code: true
       horizontalrule: true
       image: true
-    comment: >-
-      Added: A starting point for developers looking to build a multilingual
-      website with Astro and Rosey, using Bookshop's component-based approach to
-      building and editing sites in CloudCannon. After a developer has set up
-      the site, CloudCannon provides a user interface for non-technical editors
-      to maintain the site's content and enter translations. Create your own
-      copy, and start creating your own components to use in the CloudCannon
-      CMS.
-
-
-      [See on
-      page](http://localhost:4321/#:~:text=A%20starting%20point,the%20CloudCannon%20CMS)
+    comment: "[See on
+      page](http://localhost:4321/#:~:text=A%20starting%20point,the%20CloudCann\
+      on%20CMS)"
     context:
       open: false
       title: Untranslated Text
@@ -125,17 +116,8 @@ _inputs:
       code: true
       horizontalrule: true
       image: true
-    comment: >-
-      Added: As well as a translations workflow, some features come already set
-      up in this template to help you start building components quickly, like:
-      Bookshop Blog with pagination and tags Image optimization SEO Controls
-      Responsive header and footer Font Awesome Icons Schemas for adding new
-      pages Editable color pallete Markdown styles CloudCannon configuration CSS
-      variables
-
-
-      [See on
-      page](http://localhost:4321/#:~:text=As%20well%20as,CSS%20variables)
+    comment: "[See on
+      page](http://localhost:4321/#:~:text=As%20well%20as,CSS%20variables)"
     context:
       open: false
       title: Untranslated Text
