@@ -1,1 +1,10 @@
-{}
+{
+	"blog": {
+		"original": " Blog ",
+		"value": " Blog "
+	},
+	"rss-feed": {
+		"original": " RSS Feed ",
+		"value": " RSS-Feed "
+	}
+}
