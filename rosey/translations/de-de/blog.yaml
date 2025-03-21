@@ -2,29 +2,32 @@ urlTranslation: blog/index.html
 _inputs:
   $:
     type: object
-    comment: "[See blog/](http://localhost:4321/blog/)"
+    comment: "[See blog/](https://steaming-shoelace.cloudvent.net/blog/)"
     options:
       place_groups_below: false
       groups:
-        - heading: Still to translate (de-de)
-          comment: Text to translate on [blog/](http://localhost:4321/blog/)
+        - heading: Still to translate (de-DE)
+          comment: Text to translate on
+            [blog/](https://steaming-shoelace.cloudvent.net/blog/)
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: Text already translated on
+            [blog/](https://steaming-shoelace.cloudvent.net/blog/)
           inputs:
             - blog
             - rss-feed
-        - heading: Already translated (de-de)
-          comment: Text already translated on [blog/](http://localhost:4321/blog/)
-          inputs: []
   blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](http://localhost:4321/blog/#:~:text=Blog)"
+    comment: "[See on page](https://steaming-shoelace.cloudvent.net/blog/#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](http://localhost:4321/blog/#:~:text=RSS%20Feed)"
-blog: ""
-rss-feed: ""
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/blog/#:~:text=RSS%20Feed)"
+blog: Blog
+rss-feed: RSS-Feed
