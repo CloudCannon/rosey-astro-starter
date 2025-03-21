@@ -1,0 +1,32 @@
+urlTranslation: tags/Testing/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See tags/Testing/](http://localhost:4321/tags/Testing/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-fr)
+          comment: Text to translate on
+            [tags/Testing/](http://localhost:4321/tags/Testing/)
+          inputs:
+            - blog
+            - rss-feed
+        - heading: Already translated (fr-fr)
+          comment: Text already translated on
+            [tags/Testing/](http://localhost:4321/tags/Testing/)
+          inputs: []
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](http://localhost:4321/tags/Testing/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](http://localhost:4321/tags/Testing/#:~:text=RSS%20Feed)"
+blog: ""
+rss-feed: ""
