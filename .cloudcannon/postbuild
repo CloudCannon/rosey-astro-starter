@@ -1,23 +1,13 @@
 #!/usr/bin/env bash
-
 npx @bookshop/generate
 
-if [[ $TRANSLATE != "true" ]];
+if [[ $ROSEYPROD != "true" ]];
 then
-  echo "🌹Generating site with Rosey"
   npx rosey generate --source dist
-  echo "🌹Generated a base.json from the built site"
-  echo "🌹Checking locales files against base.json to see if there are any differences"
-  npx rosey check
-  echo "🌹Generating translation files from base.json"
-  node utils/generateTranslationFiles.cjs
-  echo "🌹Generated translation files to be edited"
-  echo "🌹Generating the locales files Rosey needs from our translation files"
-  node utils/generateLocales.cjs
-  echo "🌹Generated locales"
+  node rosey/utils/roseyCloudCannonConnector.js
 fi
 
-if [[ $TRANSLATE == "true" ]];
+if [[ $ROSEYPROD == "true" ]];
 then
   echo "Translating site with Rosey"
   # We only want this to run on our production site, as it can interfere with CloudCannon CMS's visual editor

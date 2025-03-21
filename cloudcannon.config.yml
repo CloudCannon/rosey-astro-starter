@@ -1,7 +1,133 @@
 paths:
-  data: data
   static: "public"
   uploads: public/images
+
+collections_config:
+  pages:
+    path: src/content/pages
+    url: "/[full_slug]/"
+    icon: laptop_mac
+    _enabled_editors:
+      - visual
+    add_options:
+      - name: Add New Page
+        schema: default
+        icon: pages
+    schemas:
+      default:
+        name: New Page
+        path: '.cloudcannon/schemas/page.md'
+        remove_extra_inputs: false
+    create:
+      path: "[relative_base_path]/{title|slugify}.md"
+  posts:
+    path: src/content/blog
+    url: "/blog/[full_slug]/"
+    _enabled_editors:
+      - content
+      - visual
+    add_options:
+      - name: Add New Post
+        schema: default
+        icon: post_add
+    schemas:
+      default:
+        name: New Post
+        path: '.cloudcannon/schemas/post.mdx'
+    create:
+      path: "[relative_base_path]/{title|slugify}.mdx"
+    _inputs:
+      title:
+        options:
+          empty_type: string
+      image:
+        options:
+          empty_type: string
+      image_alt:
+        options:
+          empty_type: string
+      author:
+        options:
+          empty_type: string
+      tags:
+        type: array
+        options:
+          empty_type: array
+      tags[*]:
+        type: text
+        options:
+          empty_type: string
+  data:
+    path: data
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    _inputs:
+      icons:
+        comment: Add an icon from the list of [Font Awesome icons](https://fontawesome.com/search?o=r&m=free). Then add it to the ```src/components/utility/icon.jsx``` file, following the existing pattern.
+      code:
+        comment: Enter the URL language code
+      flag:
+        type: image
+      locales:
+        type: array
+      locales[*]:
+        type: text
+  translations_config:
+    path: rosey
+    icon: translate
+    disable_url: true
+    disable_add: true
+    disable_add_folder: true
+    disable_file_actions: true
+    glob:
+      - config.yaml
+      - 'translations/**'
+    _inputs:
+      urlTranslation:
+        type: text
+        comment: Provide a translation for the URL that Rosey will build this page at.
+
+collection_groups:
+  - heading: Pages
+    collections:
+      - pages
+      - posts
+  - heading: Data
+    collections:
+      - data
+      - translations
+      - translations_config
+
+file_config:
+  - glob: data/colors.json
+    _structures:
+      color:
+        values:
+          - value:
+              name:
+              value:
+            preview:
+              icon: palette
+    _inputs:
+      $:
+        type: array
+        label: Colors
+        comment: Set the colors available in the color selectors throughout the site.
+        options:
+          structures: _structures.color
+      value:
+        type: color
+      name:
+        type: text
+        comment: What is seen in the color selector dropdown.
+
+data_config:
+  icons:
+    path: data/icons.json
+  colors:
+    path: data/colors.json
+ 
 _editables:
   content: &markdown_options
     bold: true
@@ -21,119 +147,8 @@ _editables:
     horizontalrule: true
     image: true
     snippet: true
-collections_config:
-  pages:
-    path: src/content/pages
-    url: "/[full_slug]/"
-    output: true
-    icon: laptop_mac
-    _enabled_editors:
-      - visual
-    filter:
-      base: strict
-    add_options:
-      - name: Add New Page
-        schema: default
-        icon: pages
-    schemas:
-      default:
-        name: New Page
-        path: schemas/page.md
-        remove_extra_inputs: false
-    create:
-      path: "[relative_base_path]/{title|slugify}.md"
-  translations:
-    path: rosey/translations
-    output: false
-    icon: translate
-    disable_add: false
-    add_options:
-      - name: Add Language
-        icon: translate
-        href: cloudcannon:settings/build
-    _inputs:
-      urlTranslation:
-        type: text
-        comment: Provide a translation for the URL that Rosey will build this page at.
-    disable_add_folder: true
-    disable_file_actions: true
-  posts:
-    path: src/content/blog
-    parser: front-matter
-    output: true
-    url: "/blog/[full_slug]/"
-    _enabled_editors:
-      - content
-      - visual
-    add_options:
-      - name: Add New Post
-        schema: default
-        icon: post_add
-    schemas:
-      default:
-        name: New Post
-        path: schemas/post.mdx
-    create:
-      path: "[relative_base_path]/{title|slugify}.mdx"
-    _inputs:
-      title:
-        options:
-          empty_type: string
-      image:
-        options:
-          empty_type: string
-      image_alt:
-        options:
-          empty_type: string
-      author:
-        options:
-          empty_type: string
-      tags:
-        type: array
-        options:
-          allow_create: true
-          empty_type: array
-      tags[*]:
-        type: text
-        options:
-          empty_type: string
-  data:
-    path: data
-    disable_add: true
-    disable_add_folder: true
-    _inputs:
-      colors[*]:
-        options:
-          preview:
-            icon: palette
-      value:
-        type: color
-      icons:
-        comment: Add an icon from the list of [Font Awesome icons](https://fontawesome.com/search?o=r&m=free). Then add it to the ```src/components/utility/icon.jsx``` file, following the existing pattern.
-      code:
-        comment: Enter the URL language code
-      flag:
-        type: image
-      locales:
-        type: array
-      locales[*]:
-        options:
-          preview:
-            icon: translate
 
-collection_groups:
-  - heading: Pages
-    collections:
-      - pages
-      - posts
-  - heading: Data
-    collections:
-      - data
-      - translations
 _inputs:
-  markdown_content:
-    type: markdown
-    options: *markdown_options
   image_path:
     type: image
     comment: The path to the source file of the image to be optimized.
@@ -260,20 +275,6 @@ _inputs:
     comment:
       When selected this removes the page from your sitemap and adds the noindex
       robots meta tag
-
-data_config:
-  icons:
-    path: data/icons.json
-  colors:
-    path: data/colors.json
-
-generator:
-  metadata:
-    markdown: markdown-it
-    markdown-it:
-      html: true
-      linkify: false
-      breaks: true
 
 _snippets_imports:
   mdx: true

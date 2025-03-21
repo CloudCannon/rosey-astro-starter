@@ -1,24 +1,17 @@
 {
   "ssg": "astro",
-  "build_configuration": {
+  "mode": "hosted",
+  "build": {
     "install_command": "npm install",
-    "build_command": "",
+    "build_command": "npm run build",
     "output_path": "dist",
     "preserved_paths": "",
     "preserveOutput": false,
     "includeGit": true,
     "environment_variables": [
       {
-        "key": "SYNC_PATHS",
-        "value": "/rosey/"
-      },
-      {
-        "key": "TRANSLATE",
-        "value": "false"
-      },
-      {
-        "key": "LOCALES",
-        "value": "fr-fr,de-de,es-es"
+        "key": "ROSEYPROD",
+        "value": false
       }
     ]
   }
