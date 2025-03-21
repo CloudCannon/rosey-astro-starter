@@ -1,0 +1,30 @@
+urlTranslation: blog/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See blog/](http://localhost:4321/blog/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-es)
+          comment: Text to translate on [blog/](http://localhost:4321/blog/)
+          inputs:
+            - blog
+            - rss-feed
+        - heading: Already translated (es-es)
+          comment: Text already translated on [blog/](http://localhost:4321/blog/)
+          inputs: []
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](http://localhost:4321/blog/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](http://localhost:4321/blog/#:~:text=RSS%20Feed)"
+blog: ""
+rss-feed: ""
