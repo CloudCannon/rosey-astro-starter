@@ -2,7 +2,7 @@
 import Icon from "../utility/icon";
 import slugify from "slugify";
 
-const generateRoseyID = (text: string) => {
+const generateRoseyId = (text: string) => {
   if (!text) {
     return "";
   }
@@ -24,7 +24,7 @@ const block = Astro.props;
   <div class="w-[1rem]">
     <Icon icon={block.icon} />
   </div>
-  <p class="!mb-0" data-rosey={generateRoseyID(block.alert_message)}>
+  <p class="!mb-0" data-rosey={generateRoseyId(block.alert_message)}>
     {block.alert_message}
   </p>
 </div>

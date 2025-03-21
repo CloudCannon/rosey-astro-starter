@@ -2,29 +2,8 @@
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import { YouTube } from "astro-embed";
-import Markdown from "../utility/markdown.astro";
-import slugify from "slugify";
-
-const generateRoseyID = (text: string) => {
-  const lowerCaseText = text.toLowerCase();
-  const formattedText = lowerCaseText.replaceAll(
-    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
-    /$1/
-  );
-  return slugify(formattedText, { remove: /[.*,:\/]/g });
-};
-const generateStaticRoseyId = (text: string) => {
-  if (!Astro.url.pathname) {
-    return text;
-  }
-  const pageName =
-    Astro.url.pathname === "/"
-      ? "home"
-      : Astro.url.pathname?.replace("/index.html", "").replaceAll("/", "");
-
-  const keyNumber = Astro.props.key || "1";
-  return `${text}-${pageName}-${keyNumber}`;
-};
+import Markdown from "../utility/rosey-markdown.astro";
+import { generateRoseyId } from "../../../rosey/utils/helpers/component-helper.js";
 
 interface Props {
   background_color: string;
@@ -54,6 +33,7 @@ interface Props {
 }
 
 const block = Astro.props;
+
 const buttons = import.meta.glob("/src/components/buttons/**/*.astro", {
   eager: true,
 });
@@ -68,6 +48,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 
 const imageSrc =
   images[block.media.image_path]?.default ?? block.media.image_path;
+const headingStyle = `color: ${block.heading.color};`;
 ---
 
 <div class="left-right" style={`background-color: ${block.background_color};`}>
@@ -88,23 +69,13 @@ const imageSrc =
 
         <div class="left-right__text order-1 md:order-2">
           <h2
+            style={headingStyle}
             class="text-4xl"
-            style={`color: ${block.heading.color};`}
-            data-rosey={generateRoseyID(block.heading.heading_text)}>
+            data-rosey={generateRoseyId(block.heading.heading_text)}>
             {block.heading.heading_text}
           </h2>
           <div class="mb-4" style={`color: ${block.text.color};`}>
-            {ENV_BOOKSHOP_LIVE ? (
-              <Markdown
-                content={block.text.markdown_content}
-                roseyId="left-right-text"
-              />
-            ) : (
-              <Markdown
-                content={block.text.markdown_content}
-                roseyId={generateStaticRoseyId("left-right-text")}
-              />
-            )}
+            <Markdown content={block.text.markdown_content} />
           </div>
           {block.button && <Button {...block.button} />}
         </div>
@@ -113,23 +84,13 @@ const imageSrc =
       <div class="left-right__wrapper">
         <div class="left-right__text">
           <h2
+            style={headingStyle}
             class="text-4xl"
-            style={`color: ${block.heading.color};`}
-            data-rosey={generateRoseyID(block.heading.heading_text)}>
+            data-rosey={generateRoseyId(block.heading.heading_text)}>
             {block.heading.heading_text}
           </h2>
           <div class="mb-4" style={`color: ${block.text.color};`}>
-            {ENV_BOOKSHOP_LIVE ? (
-              <Markdown
-                content={block.text.markdown_content}
-                roseyId="left-right-text"
-              />
-            ) : (
-              <Markdown
-                content={block.text.markdown_content}
-                roseyId={generateStaticRoseyId("left-right-text")}
-              />
-            )}
+            <Markdown content={block.text.markdown_content} />
           </div>
           {block.button && <Button {...block.button} />}
         </div>
