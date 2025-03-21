@@ -1,0 +1,36 @@
+urlTranslation: tags/Testing/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      tags/Testing/](https://steaming-shoelace.cloudvent.net/tags/Testing/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: Text to translate on
+            [tags/Testing/](https://steaming-shoelace.cloudvent.net/tags/Testing/)
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: Text already translated on
+            [tags/Testing/](https://steaming-shoelace.cloudvent.net/tags/Testing/)
+          inputs:
+            - blog
+            - rss-feed
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/tags/Testing/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://steaming-shoelace.cloudvent.net/tags/Testing/#:~:text=RSS%2\
+      0Feed)"
+blog: " Blog "
+rss-feed: " RSS-Feed "
