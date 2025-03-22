@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+npx @bookshop/generate
+
+if [[ $ROSEYPROD != "true" ]];
+then
+  npx rosey generate --source dist
+  node rosey-connector/roseyCloudCannonConnector.js
+fi
+
+if [[ $ROSEYPROD == "true" ]];
+then
+  echo "Translating site with Rosey"
+  # By default, Rosey will place the default language under a language code, e.g. /en/index.html, and will generate a redirect file at /index.html.
+  # By setting the flag --default-language-at-root, Rosey will output the default language at the root path, e.g. /index.html.
+  # By setting the flag --default-language-at-root, Rosey will not generate any redirect pages.
+
+  # We only want this to run on our production site, as it can interfere with CloudCannon CMS's visual editor
+  # There's a little bit of shuffling around here to ensure the translated site ends up where CloudCannon picks up your site
+  mv ./dist ./untranslated_site                  
+  npx rosey build --source untranslated_site --dest dist 
+fi

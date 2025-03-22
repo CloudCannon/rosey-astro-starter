@@ -1,0 +1,342 @@
+{
+  "version": 2,
+  "keys": {
+    "a-snippet-in-the-middle-of-markdown-content": {
+      "original": " A snippet in the middle of markdown content ",
+      "value": null,
+      "pages": {
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 1
+    },
+    "a-test-page": {
+      "original": "A Test Page",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 2,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/Testing/index.html": 1
+      },
+      "total": 6
+    },
+    "a-test-post-vid": {
+      "original": "A test post vid",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 2,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/video/index.html": 1
+      },
+      "total": 6
+    },
+    "blog": {
+      "original": " Blog ",
+      "value": null,
+      "pages": {
+        "404.html": 1,
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "index.html": 1,
+        "tags/Testing/index.html": 1,
+        "tags/bob ross/index.html": 1,
+        "tags/video/index.html": 1
+      },
+      "total": 9
+    },
+    "bob-ross": {
+      "original": "Bob ross",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "tags/bob ross/index.html": 1
+      },
+      "total": 2
+    },
+    "bob-ross-test": {
+      "original": "Bob Ross Test",
+      "value": null,
+      "pages": {
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/bob ross/index.html": 1
+      },
+      "total": 3
+    },
+    "cloudcannon": {
+      "original": " CloudCannon ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "github": {
+      "original": " GitHub ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
+      "original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
+      "original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo": {
+      "original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test. Adding this as well, after making this site part of a monorepo.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are": {
+      "original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:another-code-block": {
+      "original": "Another code block:",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
+      "original": "Control translations via a user friendly interface in CloudCannon.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
+      "original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
+      "original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
+      "value": null,
+      "pages": {
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor": {
+      "original": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
+      "original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:mix-your-color-marbly-don't-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-it's-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-we'll-have-a-super-time-don't-fiddle-with-it-all-day": {
+      "original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-let's-get-wild-today-if-you-don't-think-every-day-is-a-good-day-try-missing-a-few-you'll-see-play-with-the-angles-we-don't-have-to-be-committed-we-are-just-playing-here": {
+      "original": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:testing-translations-after-separating-out-the-logic-from-the-translations": {
+      "original": "Testing translations after <em>separating</em> out the logic from the translations.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
+      "original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
+      "original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
+      "original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
+      "value": null,
+      "pages": {
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we'll-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school": {
+      "original": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we're-changing-things": {
+      "original": "We're <em><strong>changing</strong></em> things.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we-have-a-fantastic-little-sky!-we're-trying-to-teach-you-a-technique-here-and-how-to-use-it": {
+      "original": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:we-have-all-at-one-time-or-another-mixed-some-mud-it's-beautiful-and-we-haven't-even-done-anything-to-it-yet-let's-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide": {
+      "original": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide.",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "minutes": {
+      "original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 3
+    },
+    "recent-posts": {
+      "original": "Recent Posts",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 3
+    },
+    "rosey-cloudcannon-connector": {
+      "original": " Rosey - CloudCannon Connector ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "rss-feed": {
+      "original": " RSS Feed ",
+      "value": null,
+      "pages": {
+        "404.html": 1,
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "index.html": 1,
+        "tags/Testing/index.html": 1,
+        "tags/bob ross/index.html": 1,
+        "tags/video/index.html": 1
+      },
+      "total": 9
+    },
+    "testing": {
+      "original": "Testing",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/Testing/index.html": 1
+      },
+      "total": 5
+    },
+    "this-is-just-a-test": {
+      "original": " This is just a test. ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "video": {
+      "original": "Video",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/video/index.html": 1
+      },
+      "total": 5
+    },
+    "words": {
+      "original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 3
+    },
+    "yay-we-support-snippets-now!": {
+      "original": " Yay, we support snippets now! ",
+      "value": null,
+      "pages": {
+        "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    }
+  }
+}
