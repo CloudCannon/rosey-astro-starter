@@ -16,7 +16,7 @@ _inputs:
             - cloudcannon
             - github
             - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
-            - markdown:adding-another-paragraph-for-a-little-smartling-test
+            - markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo
             - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
             - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
             - markdown:testing-translations-after-separating-out-the-logic-from-the-translations
@@ -65,7 +65,7 @@ _inputs:
       title: Untranslated Text
       icon: translate
       content: A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
-  markdown:adding-another-paragraph-for-a-little-smartling-test:
+  markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo:
     label: Adding another paragraph for a little Smar...
     hidden: false
     type: markdown
@@ -81,12 +81,13 @@ _inputs:
       blockquote: true
     comment: "[See on
       page](https://poised-plain.cloudvent.net/#:~:text=Adding%20another%20para\
-      graph,little%20Smartling%20test)"
+      graph,of%20a%20monorepo)"
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Adding _another_ paragraph for a little **Smartling** test.
+      content: Adding _another_ paragraph for a little **Smartling** test. Adding this
+        as well, after making this site part of a monorepo.
   markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
     label: Control translations via a user friendly i...
     hidden: false
@@ -221,7 +222,10 @@ blog: " Blog "
 cloudcannon: " CloudCannon "
 github: " GitHub (Englisch) "
 markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro: Eine Demo-Site für den Rosey-CloudCannon Multilingual Connector für Astro.
-markdown:adding-another-paragraph-for-a-little-smartling-test: Ich füge _einen weiteren_ Absatz für einen kleinen **Smartling-Test** hinzu.
+markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo:
+  Ich füge _einen weiteren_ Absatz für einen kleinen **Smartling-Test** hinzu.
+  Fügen Sie dies auch hinzu, nachdem Sie diese Website zu einem Teil eines
+  Monorepos gemacht haben.
 markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
   Steuern Sie Übersetzungen über eine benutzerfreundliche Oberfläche in
   CloudCannon.
