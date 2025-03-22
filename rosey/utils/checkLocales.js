@@ -9,6 +9,8 @@ export async function checkLocales(configData) {
   const locales = configData.locales;
 
   // Remove extra locales in the translations directory
+  console.log(`📂📂 ${translationsDirPath} ensuring folder exists`);
+  await fs.promises.mkdir(translationsDirPath, { recursive: true });
   const translationDirs = await fs.promises.readdir(translationsDirPath);
   for (let i = 0; i < translationDirs.length; i++) {
     const localeDir = translationDirs[i];
@@ -22,6 +24,8 @@ export async function checkLocales(configData) {
   }
 
   // Remove extra locales in the locales directory
+  console.log(`📂📂 ${localesDirPath} ensuring folder exists`);
+  await fs.promises.mkdir(localesDirPath, { recursive: true });
   const localeDirs = await fs.promises.readdir(localesDirPath);
   for (let i = 0; i < localeDirs.length; i++) {
     const localeFile = localeDirs[i];
@@ -34,6 +38,12 @@ export async function checkLocales(configData) {
   }
 
   // Remove incoming Smartling translation files if not in locales
+  console.log(
+    `📂📂 ${incomingSmartlingTranslationsDirPath} ensuring folder exists`
+  );
+  await fs.promises.mkdir(incomingSmartlingTranslationsDirPath, {
+    recursive: true,
+  });
   const smartlingTranslationFiles = await fs.promises.readdir(
     incomingSmartlingTranslationsDirPath
   );
