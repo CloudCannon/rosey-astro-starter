@@ -1,9 +1,9 @@
 ---
 import Layout from "./Layout.astro";
-import PostSummary from "../components/blog/summary";
+import PostSummary from "../components/blog/summary.jsx";
 import { getCollection } from "astro:content";
 import type { MarkdownLayoutProps } from "astro";
-import { generateRoseyId } from "../../rosey-connector/helpers/component-helper.js";
+import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper.js";
 
 type Props =
   | {

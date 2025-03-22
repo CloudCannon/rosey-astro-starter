@@ -3,10 +3,10 @@ locales:
   - fr-FR
 base_url: https://poised-plain.cloudvent.net/
 rosey_paths:
-  rosey_base_file_path: ./rosey/base.json
-  rosey_base_urls_file_path: ./rosey/base.urls.json
-  translations_dir_path: ./rosey/translations
-  locales_dir_path: ./rosey/locales
+  rosey_base_file_path: ./astro/rosey/base.json
+  rosey_base_urls_file_path: ./astro/rosey/base.urls.json
+  translations_dir_path: ./astro/rosey/translations
+  locales_dir_path: ./astro/rosey/locales
 smartling:
   smartling_enabled: false
   dev_project_id: 403ba8439
@@ -14,8 +14,8 @@ smartling:
   ping_interval: 20000
   ping_maximum: 6
   pings_to_wait_for_auth: 3
-  incoming_translations_dir: ./rosey/smartling-translations/
-  outgoing_translations_file_path: ./rosey/outgoing-smartling-translations.json
+  incoming_translations_dir: ./astro/rosey/smartling-translations/
+  outgoing_translations_file_path: ./astro/rosey/outgoing-smartling-translations.json
   outgoing_translation_file_uri: /rosey/translations/
 _inputs:
   locales:

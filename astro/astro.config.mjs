@@ -4,7 +4,7 @@ import bookshop from "@bookshop/astro-bookshop";
 import tailwind from "@astrojs/tailwind";
 import alpine from "@astrojs/alpinejs";
 import mdx from "@astrojs/mdx";
-import { autoAddRoseyTags } from "./rosey-connector/ssgs/astroMarkdownPlugin";
+import { autoAddRoseyTags } from "../rosey-connector/ssgs/astroMarkdownPlugin";
 
 // https://astro.build/config
 export default defineConfig({

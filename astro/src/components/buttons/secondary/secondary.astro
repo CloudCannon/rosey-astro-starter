@@ -1,12 +1,11 @@
 ---
-import Icon from "../../utility/icon";
-import { generateRoseyId } from "../../../../rosey-connector/helpers/component-helper.js";
+import Icon from "../../utility/icon.jsx";
+import { generateRoseyId } from "../../../../../rosey-connector/helpers/component-helper.js";
 
 interface Props {
   button_text: string;
   button_icon: string;
   button_link: string;
-  background_color: string;
   hover_brightness: number;
   text_color: string;
 }
@@ -15,7 +14,9 @@ const block = Astro.props;
 const hover_brightness = block.hover_brightness;
 ---
 
-<button style={`background-color: ${block.background_color};`} class="button">
+<button
+  style={`background-color: transparent; border: 2px solid ${block.text_color};`}
+  class="button">
   <a style={`color: ${block.text_color}`} href={block.button_link}>
     {
       block.button_icon ? (
