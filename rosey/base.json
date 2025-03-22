@@ -14,14 +14,16 @@
       "value": null,
       "pages": {
         "404.html": 1,
+        "blog/a-new-post-name/index.html": 1,
         "blog/a-test-page/index.html": 1,
         "blog/bobo-rosso/index.html": 1,
         "blog/index.html": 1,
         "index.html": 1,
         "tags/Testing/index.html": 1,
-        "tags/bob ross/index.html": 1
+        "tags/bob ross/index.html": 1,
+        "tags/video/index.html": 1
       },
-      "total": 7
+      "total": 9
     },
     "cloudcannon": {
       "original": " CloudCannon ",
@@ -95,6 +97,14 @@
       },
       "total": 1
     },
+    "markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
+      "original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1
+      },
+      "total": 1
+    },
     "markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
       "original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
       "value": null,
@@ -140,6 +150,14 @@
       "value": null,
       "pages": {
         "index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
+      "original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1
       },
       "total": 1
     },
@@ -196,14 +214,16 @@
       "value": null,
       "pages": {
         "404.html": 1,
+        "blog/a-new-post-name/index.html": 1,
         "blog/a-test-page/index.html": 1,
         "blog/bobo-rosso/index.html": 1,
         "blog/index.html": 1,
         "index.html": 1,
         "tags/Testing/index.html": 1,
-        "tags/bob ross/index.html": 1
+        "tags/bob ross/index.html": 1,
+        "tags/video/index.html": 1
       },
-      "total": 7
+      "total": 9
     },
     "this-is-just-a-test": {
       "original": " This is just a test. ",

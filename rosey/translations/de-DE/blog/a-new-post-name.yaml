@@ -1,0 +1,92 @@
+urlTranslation: blog/a-new-post-name/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post\
+      -name/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: Text to translate on
+            [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
+          inputs:
+            - markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes
+            - markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique
+        - heading: Already translated (de-DE)
+          comment: Text already translated on
+            [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
+          inputs:
+            - blog
+            - rss-feed
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Bl\
+      og)"
+  markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes:
+    label: Don’t over do it — be careful. Be careful....
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Do\
+      n%E2%80%99t%20over%20do,through%20different%20eyes)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Don’t over do it — be careful. Be careful. Always start with a clean
+        brush in a light area and work outward. We planned this son-of-a-gun
+        right from the beginning. People are so excited when they see this
+        happen. Everybody will see nature through different eyes.
+  markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique:
+    label: Today’s such a wonderful day, let’s just m...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=To\
+      day%E2%80%99s%20such%20a,this%20whole%20technique)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Today’s such a wonderful day, let’s just make a happy little painting.
+        Maybe I’ll have a bit mountain today. You can do anything that you
+        believe you can do. Get it to where you want it, and leave it alone.
+        That’s the fun part of this whole technique.
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=RS\
+      S%20Feed)"
+blog: " Blog "
+markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes: ""
+markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique: ""
+rss-feed: " RSS-Feed "

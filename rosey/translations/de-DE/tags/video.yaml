@@ -1,0 +1,34 @@
+urlTranslation: tags/video/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See tags/video/](https://poised-plain.cloudvent.net/tags/video/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: Text to translate on
+            [tags/video/](https://poised-plain.cloudvent.net/tags/video/)
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: Text already translated on
+            [tags/video/](https://poised-plain.cloudvent.net/tags/video/)
+          inputs:
+            - blog
+            - rss-feed
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/tags/video/#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/tags/video/#:~:text=RSS%20Feed)"
+blog: " Blog "
+rss-feed: " RSS-Feed "
