@@ -1,19 +1,19 @@
 {
 	"blog": {
 		"original": " Blog ",
-		"value": "Blog"
+		"value": " Blog "
 	},
 	"rss-feed": {
 		"original": " RSS Feed ",
-		"value": "Flux RSS"
+		"value": " Flux RSS "
 	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
-		"value": "CloudCannon"
+		"value": " CloudCannon "
 	},
 	"github": {
 		"original": " GitHub ",
-		"value": "GitHub"
+		"value": " GitHub "
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
@@ -25,7 +25,7 @@
 	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
-		"value": "<p>Translated in the data editor.</p>\n"
+		"value": "<p>Contrôlez les traductions via une interface conviviale dans CloudCannon.</p>\n"
 	},
 	"markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
@@ -57,7 +57,7 @@
 	},
 	"markdown:another-code-block": {
 		"original": "Another code block:",
-		"value": "<p>Un autre bloc de code</p>\n"
+		"value": "<p>Un autre bloc de code :</p>\n"
 	},
 	"markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor": {
 		"original": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor.",
@@ -85,6 +85,6 @@
 	},
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
-		"value": "Nous supportons maintenant les snippets !"
+		"value": " Nous prenons désormais en charge les snippets ! "
 	}
 }
