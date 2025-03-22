@@ -91,6 +91,22 @@
 		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93 Wörter"
 	},
+	"a-snippet-in-the-middle-of-markdown-content": {
+		"original": " A snippet in the middle of markdown content ",
+		"value": " Ein Snippet in der Mitte des Markdown-Inhalts "
+	},
+	"markdown:": {
+		"original": "&nbsp;",
+		"value": "&nbsp;"
+	},
+	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
+		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
+		"value": "<p>Jeder sollte einen Freund haben. Erfinde diese Dinge einfach in deinem Kopf und lass sie auf dich zukommen. Helfen Sie ihnen, ein oder zwei glückliche Summen zu verdienen. Irgendwie eine orangy-gelbliche Farbe. Wasser bricht, und es wühlt auf, und es macht Spaß!</p>\n"
+	},
+	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
+		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
+		"value": "<p>Wir werden ein paar große, alte, riesige Berge machen! Es gibt schon zu viele komplizierte Dinge in unserem Leben. Alles, worüber Sie sich Sorgen machen, ist diese schöne Außenform. Folgen Sie immer den Winkeln. Decken Sie nicht einfach alles ab – lassen Sie diese Flecken!</p>\n"
+	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
 		"value": "<p>Ein Neues. Testabsatz, der lang genug sein muss, aber auf eine bestimmte Weise endet.</p>\n"
@@ -130,21 +146,5 @@
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": " Juhu, wir unterstützen jetzt Snippets! "
-	},
-	"a-snippet-in-the-middle-of-markdown-content": {
-		"original": " A snippet in the middle of markdown content ",
-		"value": " Ein Snippet in der Mitte des Markdown-Inhalts "
-	},
-	"markdown:": {
-		"original": "&nbsp;",
-		"value": "&nbsp;"
-	},
-	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
-		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
-		"value": "<p>Jeder sollte einen Freund haben. Erfinde diese Dinge einfach in deinem Kopf und lass sie auf dich zukommen. Helfen Sie ihnen, ein oder zwei glückliche Summen zu verdienen. Irgendwie eine orangy-gelbliche Farbe. Wasser bricht, und es wühlt auf, und es macht Spaß!</p>\n"
-	},
-	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
-		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
-		"value": "<p>Wir werden ein paar große, alte, riesige Berge machen! Es gibt schon zu viele komplizierte Dinge in unserem Leben. Alles, worüber Sie sich Sorgen machen, ist diese schöne Außenform. Folgen Sie immer den Winkeln. Decken Sie nicht einfach alles ab – lassen Sie diese Flecken!</p>\n"
 	}
 }
