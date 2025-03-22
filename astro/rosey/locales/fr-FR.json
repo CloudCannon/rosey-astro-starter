@@ -45,7 +45,7 @@
 	},
 	"markdown:adding-another-paragraph-for-a-little-smartling-test": {
 		"original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test.",
-		"value": "<p>Ajout d'un paragraphe <em>supplémentaire</em> pour un petit test de <strong>Smartling</strong>. Adding my own content in the translations as if I was QAing the translation.</p>\n"
+		"value": "<p>Ajout d'un paragraphe <em>supplémentaire</em> pour un petit test de <strong>Smartling</strong>. This has changed after monorepo changes! Test...</p>\n"
 	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
@@ -97,7 +97,7 @@
 	},
 	"a-snippet-in-the-middle-of-markdown-content": {
 		"original": " A snippet in the middle of markdown content ",
-		"value": "Un extrait au milieu du contenu Markdown"
+		"value": "Un extrait au milieu du contenu Markdown. Changed post monorepo :)"
 	},
 	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
 		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
