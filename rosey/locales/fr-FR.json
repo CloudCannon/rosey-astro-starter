@@ -43,6 +43,10 @@
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
 		"value": "<p>Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour Astro.</p>\n"
 	},
+	"markdown:adding-another-paragraph-for-a-little-smartling-test": {
+		"original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test.",
+		"value": "<p>Ajout d'un paragraphe <em>supplémentaire</em> pour un petit test de <strong>Smartling</strong>. Adding my own content in the translations as if I was QAing the translation.</p>\n"
+	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
 		"value": "<p>Contrôlez les traductions via une interface conviviale dans CloudCannon.</p>\n"
