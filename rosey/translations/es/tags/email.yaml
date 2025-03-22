@@ -2,17 +2,16 @@ urlTranslation: tags/email/index.html
 _inputs:
   $:
     type: object
-    comment: "[See tags/email/](https://cool-ski.cloudvent.net/tags/email/)"
+    comment: "[See tags/email/](http://localhost:4321/tags/email/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (es)
-          comment: Text to translate on
-            [tags/email/](https://cool-ski.cloudvent.net/tags/email/)
+          comment: Text to translate on [tags/email/](http://localhost:4321/tags/email/)
           inputs: []
         - heading: Already translated (es)
           comment: Text already translated on
-            [tags/email/](https://cool-ski.cloudvent.net/tags/email/)
+            [tags/email/](http://localhost:4321/tags/email/)
           inputs:
             - blog
             - rss-feed
@@ -21,13 +20,12 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://cool-ski.cloudvent.net/tags/email/#:~:text=Blog)"
+    comment: "[See on page](http://localhost:4321/tags/email/#:~:text=Blog)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://cool-ski.cloudvent.net/tags/email/#:~:text=RSS%20Feed)"
+    comment: "[See on page](http://localhost:4321/tags/email/#:~:text=RSS%20Feed)"
 blog: Blog
 rss-feed: RSS Feed
