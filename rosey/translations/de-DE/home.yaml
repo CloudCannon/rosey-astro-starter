@@ -2,15 +2,15 @@ urlTranslation: index.html
 _inputs:
   $:
     type: object
-    comment: "[See ](https://steaming-shoelace.cloudvent.net/)"
+    comment: "[See ](https://poised-plain.cloudvent.net/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-DE)
-          comment: Text to translate on [](https://steaming-shoelace.cloudvent.net/)
+          comment: Text to translate on [](https://poised-plain.cloudvent.net/)
           inputs: []
         - heading: Already translated (de-DE)
-          comment: Text already translated on [](https://steaming-shoelace.cloudvent.net/)
+          comment: Text already translated on [](https://poised-plain.cloudvent.net/)
           inputs:
             - blog
             - cloudcannon
@@ -29,20 +29,19 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=Blog)"
+    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=Blog)"
   cloudcannon:
     label: CloudCannon
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=CloudCannon)"
+    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=CloudCannon)"
   github:
     label: GitHub
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://steaming-shoelace.cloudvent.net/#:~:text=GitHub)"
+    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=GitHub)"
   markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
     label: A demo site for the Rosey-CloudCannon Mult...
     hidden: false
@@ -58,8 +57,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=A%20demo%20site,Co\
-      nnector%20for%20Astro)"
+      page](https://poised-plain.cloudvent.net/#:~:text=A%20demo%20site,Connect\
+      or%20for%20Astro)"
     context:
       open: false
       title: Untranslated Text
@@ -80,8 +79,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=A%20new%20phrase,t\
-      he%20correct%20order)"
+      page](https://poised-plain.cloudvent.net/#:~:text=A%20new%20phrase,the%20\
+      correct%20order)"
     context:
       open: false
       title: Untranslated Text
@@ -103,8 +102,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=Control%20translat\
-      ions%20via,interface%20in%20CloudCannon)"
+      page](https://poised-plain.cloudvent.net/#:~:text=Control%20translations%\
+      20via,interface%20in%20CloudCannon)"
     context:
       open: false
       title: Untranslated Text
@@ -125,8 +124,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=It's%20cold,a%20ni\
-      ce%20color)"
+      page](https://poised-plain.cloudvent.net/#:~:text=It's%20cold,a%20nice%20\
+      color)"
     context:
       open: false
       title: Untranslated Text
@@ -148,8 +147,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=They%20say%20every\
-      thing,upset%20the%20critics)"
+      page](https://poised-plain.cloudvent.net/#:~:text=They%20say%20everything\
+      ,upset%20the%20critics)"
     context:
       open: false
       title: Untranslated Text
@@ -171,31 +170,30 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=We're%20changing%2\
-      0things.)"
+      page](https://poised-plain.cloudvent.net/#:~:text=We're%20changing%20thin\
+      gs.)"
   rosey-cloudcannon-connector:
     label: Rosey - CloudCannon Connector
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=Rosey%20-%20CloudC\
-      annon%20Connector)"
+      page](https://poised-plain.cloudvent.net/#:~:text=Rosey%20-%20CloudCannon\
+      %20Connector)"
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=RSS%20Feed)"
+    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=RSS%20Feed)"
   this-is-just-a-test:
     label: This is just a test.
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/#:~:text=This%20is%20just%2\
-      0a%20test.)"
+      page](https://poised-plain.cloudvent.net/#:~:text=This%20is%20just%20a%20\
+      test.)"
 blog: " Blog "
 cloudcannon: " CloudCannon "
 github: " GitHub (Englisch) "

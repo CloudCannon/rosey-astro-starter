@@ -3,18 +3,17 @@ _inputs:
   $:
     type: object
     comment: "[See
-      blog/a-test-page/](https://steaming-shoelace.cloudvent.net/blog/a-test-pa\
-      ge/)"
+      blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-DE)
           comment: Text to translate on
-            [blog/a-test-page/](https://steaming-shoelace.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)
           inputs: []
         - heading: Already translated (de-DE)
           comment: Text already translated on
-            [blog/a-test-page/](https://steaming-shoelace.cloudvent.net/blog/a-test-page/)
+            [blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)
           inputs:
             - blog
             - markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way
@@ -34,8 +33,7 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=B\
-      log)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Blog)"
   markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way:
     label: A new. test paragraph that has to be long ...
     hidden: false
@@ -51,8 +49,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=A\
-      %20new,a%20certain)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=A%20ne\
+      w,a%20certain)"
     context:
       open: false
       title: Untranslated Text
@@ -74,8 +72,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=A\
-      ll%20you%20have,There%20we%20are)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=All%20\
+      you%20have,There%20we%20are)"
     context:
       open: false
       title: Untranslated Text
@@ -98,8 +96,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=A\
-      nother%20code%20block:)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Anothe\
+      r%20code%20block:)"
   markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor:
     label: Here’s a new paragraph with a link in the ...
     hidden: false
@@ -115,8 +113,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=H\
-      ere%E2%80%99s%20a%20new,the%20content%20editor)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Here%E\
+      2%80%99s%20a%20new,the%20content%20editor)"
     context:
       open: false
       title: Untranslated Text
@@ -138,8 +136,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=M\
-      ix%20your%20color,it%20all%20day)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Mix%20\
+      your%20color,it%20all%20day)"
     context:
       open: false
       title: Untranslated Text
@@ -163,8 +161,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=T\
-      ake%20your%20time,just%20playing%20here)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Take%2\
+      0your%20time,just%20playing%20here)"
     context:
       open: false
       title: Untranslated Text
@@ -189,8 +187,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=W\
-      e%E2%80%99ll%20throw%20some,make%20in%20school)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=We%E2%\
+      80%99ll%20throw%20some,make%20in%20school)"
     context:
       open: false
       title: Untranslated Text
@@ -214,8 +212,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=W\
-      e%20have%20a,to%20use%20it)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=We%20h\
+      ave%20a,to%20use%20it)"
     context:
       open: false
       title: Untranslated Text
@@ -237,8 +235,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=W\
-      e%20have%20all,be%20your%20guide)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=We%20h\
+      ave%20all,be%20your%20guide)"
     context:
       open: false
       title: Untranslated Text
@@ -252,16 +250,16 @@ _inputs:
     type: text
     options: {}
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=R\
-      SS%20Feed)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=RSS%20\
+      Feed)"
   yay-we-support-snippets-now!:
     label: Yay, we support snippets now!
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://steaming-shoelace.cloudvent.net/blog/a-test-page/#:~:text=Y\
-      ay,%20we%20support%20snippets%20now!)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Yay,%2\
+      0we%20support%20snippets%20now!)"
 blog: " Blog "
 markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way:
   Ein Neues. Testabsatz, der lang genug sein muss, aber auf eine bestimmte Weise
