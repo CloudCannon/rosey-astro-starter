@@ -1,3 +1,5 @@
+import { generateRoseyId } from "../../../rosey/utils/helpers/component-helper.js"
+
 export default function PostSummary({ post }) {
   const {
     data: { thumb_image_path, thumb_image_alt, title, author, date, tags },
@@ -19,7 +21,7 @@ export default function PostSummary({ post }) {
           </a>
           <div className="blog-post-tag">
             {tags.slice(0, 2).map((tag, i) => (
-              <a href={`/tags/${tag.toLowerCase()}`} key={i}>
+              <a href={`/tags/${tag.toLowerCase()}`} key={i} data-rosey={generateRoseyId(tag)}>
                 {tag[0].toUpperCase() + tag.slice(1)}
               </a>
             ))}
@@ -27,7 +29,7 @@ export default function PostSummary({ post }) {
           <a
             className="flex flex-col justify-start mt-2 max-w-[500px]"
             href={`/blog/${slug}`}>
-            <p className="text-2xl font-semibold">{title}</p>
+            <p className="text-2xl font-semibold" data-rosey={generateRoseyId(title)}>{title}</p>
             <p className="font-light">{author}</p>
             <p className="font-light">
               {dateObj.toLocaleDateString(undefined, {
