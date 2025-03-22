@@ -11,14 +11,14 @@ _inputs:
         - heading: Still to translate (de-DE)
           comment: Text to translate on
             [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
-          inputs:
-            - markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes
-            - markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique
+          inputs: []
         - heading: Already translated (de-DE)
           comment: Text already translated on
             [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
           inputs:
             - blog
+            - markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes
+            - markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique
             - rss-feed
   blog:
     label: Blog
@@ -87,6 +87,15 @@ _inputs:
       page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=RS\
       S%20Feed)"
 blog: " Blog "
-markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes: ""
-markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique: ""
+markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes:
+  Übertreiben Sie es nicht – seien Sie vorsichtig. Sei vorsichtig. Beginnen Sie
+  immer mit einem sauberen Pinsel an einer hellen Stelle und arbeiten Sie nach
+  außen. Wir haben diesen Sohn-of-a-Gun von Anfang an geplant. Die Leute sind so
+  aufgeregt, wenn sie das sehen. Jeder wird die Natur mit anderen Augen sehen.
+markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique:
+  Heute ist so ein wunderbarer Tag, lasst uns einfach ein fröhliches kleines
+  Bild malen. Vielleicht habe ich heute ein bisschen Berg. Du kannst alles tun,
+  von dem du glaubst, dass du es tun kannst. Bringen Sie es dorthin, wo Sie es
+  haben wollen, und lassen Sie es in Ruhe. Das ist der lustige Teil dieser
+  ganzen Technik.
 rss-feed: " RSS-Feed "

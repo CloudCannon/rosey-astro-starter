@@ -11,15 +11,15 @@ _inputs:
           comment: Text to translate on
             [blog/bobo-rosso/](https://poised-plain.cloudvent.net/blog/bobo-rosso/)
           inputs:
-            - a-snippet-in-the-middle-of-markdown-content
             - "markdown:"
-            - markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!
-            - markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!
         - heading: Already translated (de-DE)
           comment: Text already translated on
             [blog/bobo-rosso/](https://poised-plain.cloudvent.net/blog/bobo-rosso/)
           inputs:
+            - a-snippet-in-the-middle-of-markdown-content
             - blog
+            - markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!
+            - markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!
             - rss-feed
   a-snippet-in-the-middle-of-markdown-content:
     label: A snippet in the middle of markdown conten...
@@ -114,9 +114,17 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=RSS%20F\
       eed)"
-a-snippet-in-the-middle-of-markdown-content: ""
+a-snippet-in-the-middle-of-markdown-content: " Ein Snippet in der Mitte des Markdown-Inhalts "
 blog: " Blog "
 "markdown:": ""
-markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!: ""
-markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!: ""
+markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
+  Jeder sollte einen Freund haben. Erfinde diese Dinge einfach in deinem Kopf
+  und lass sie auf dich zukommen. Helfen Sie ihnen, ein oder zwei glückliche
+  Summen zu verdienen. Irgendwie eine orangy-gelbliche Farbe. Wasser bricht, und
+  es wühlt auf, und es macht Spaß!
+markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!:
+  Wir werden ein paar große, alte, riesige Berge machen! Es gibt schon zu viele
+  komplizierte Dinge in unserem Leben. Alles, worüber Sie sich Sorgen machen,
+  ist diese schöne Außenform. Folgen Sie immer den Winkeln. Decken Sie nicht
+  einfach alles ab – lassen Sie diese Flecken!
 rss-feed: " RSS-Feed "
