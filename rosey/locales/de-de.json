@@ -1,19 +1,19 @@
 {
 	"blog": {
 		"original": " Blog ",
-		"value": "Blog"
+		"value": " Blog "
 	},
 	"rss-feed": {
 		"original": " RSS Feed ",
-		"value": "RSS-Feed"
+		"value": " RSS-Feed "
 	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
-		"value": "CloudCannon"
+		"value": " CloudCannon "
 	},
 	"github": {
 		"original": " GitHub ",
-		"value": "GitHub (Englisch)"
+		"value": " GitHub (Englisch) "
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
@@ -49,7 +49,7 @@
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
-		"value": "<p>Ein neuer Testabsatz, der lang genug sein muss, aber auf eine bestimmte Weise endet</p>\n"
+		"value": "<p>Ein Neues. Testabsatz, der lang genug sein muss, aber auf eine bestimmte Weise endet.</p>\n"
 	},
 	"markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are": {
 		"original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
@@ -57,7 +57,7 @@
 	},
 	"markdown:another-code-block": {
 		"original": "Another code block:",
-		"value": "<p>Ein weiterer Codeblock</p>\n"
+		"value": "<p>Ein weiterer Codeblock:</p>\n"
 	},
 	"markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor": {
 		"original": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor.",
@@ -85,6 +85,6 @@
 	},
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
-		"value": "Juhu, wir unterstützen jetzt Snippets!"
+		"value": " Juhu, wir unterstützen jetzt Snippets! "
 	}
 }
