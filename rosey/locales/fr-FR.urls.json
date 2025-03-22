@@ -7,13 +7,13 @@
 		"original": "blog/index.html",
 		"value": "blog/index.html"
 	},
-	"index.html": {
-		"original": "index.html",
-		"value": "index.html"
-	},
 	"tags/Testing/index.html": {
 		"original": "tags/Testing/index.html",
 		"value": "tags/Testing/index.html"
+	},
+	"index.html": {
+		"original": "index.html",
+		"value": "index.html"
 	},
 	"tags/bob ross/index.html": {
 		"original": "tags/bob ross/index.html",
