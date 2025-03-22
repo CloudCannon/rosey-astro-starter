@@ -75,9 +75,9 @@ _inputs:
     type: text
     options: {}
     comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Video)"
-a-test-page: ""
+a-test-page: Een testpagina
 a-test-post-vid: ""
-blog: ""
+blog: Blog
 bob-ross: ""
 bob-ross-test: ""
 rss-feed: ""

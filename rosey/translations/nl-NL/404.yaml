@@ -27,5 +27,5 @@ _inputs:
     type: text
     options: {}
     comment: "[See on page](https://poised-plain.cloudvent.net/404#:~:text=RSS%20Feed)"
-blog: ""
+blog: Blog
 rss-feed: ""

@@ -46,7 +46,7 @@ _inputs:
     options: {}
     comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
       ross/#:~:text=RSS%20Feed)"
-blog: ""
+blog: Blog
 bob-ross: ""
 bob-ross-test: ""
 rss-feed: ""

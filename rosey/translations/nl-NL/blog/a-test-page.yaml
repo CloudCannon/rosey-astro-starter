@@ -322,9 +322,9 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Yay,%2\
       0we%20support%20snippets%20now!)"
-a-test-page: ""
+a-test-page: Een testpagina
 a-test-post-vid: ""
-blog: ""
+blog: Blog
 markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way: ""
 markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are: ""
 markdown:another-code-block: ""
@@ -335,7 +335,7 @@ markdown:we'll-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-havin
 markdown:we-have-a-fantastic-little-sky!-we're-trying-to-teach-you-a-technique-here-and-how-to-use-it: ""
 markdown:we-have-all-at-one-time-or-another-mixed-some-mud-it's-beautiful-and-we-haven't-even-done-anything-to-it-yet-let's-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide: ""
 minutes: ""
-recent-posts: ""
+recent-posts: Recente berichten
 rss-feed: ""
 testing: ""
 video: ""

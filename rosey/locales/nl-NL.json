@@ -1,7 +1,7 @@
 {
 	"blog": {
 		"original": " Blog ",
-		"value": " Blog "
+		"value": "Blog"
 	},
 	"rss-feed": {
 		"original": " RSS Feed ",
@@ -9,7 +9,7 @@
 	},
 	"a-test-page": {
 		"original": "A Test Page",
-		"value": "A Test Page"
+		"value": "Een testpagina"
 	},
 	"a-test-post-vid": {
 		"original": "A test post vid",
@@ -33,19 +33,19 @@
 	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
-		"value": " CloudCannon "
+		"value": "CloudCannon"
 	},
 	"github": {
 		"original": " GitHub ",
-		"value": " GitHub "
+		"value": "GitHub"
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
-		"value": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro."
+		"value": "<p>Een demosite voor de Rosey-CloudCannon Multilingual Connector voor Astro.</p>\n"
 	},
 	"markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order": {
 		"original": "A new phrase to send away. Again!? And one more with a later resolve? And in the correct order.",
-		"value": "A new phrase to send away. Again!? And one more with a later resolve? And in the correct order."
+		"value": "<p>Een nieuwe zin om weg te sturen. Opnieuw!? En nog een met een later besluit? En in de juiste volgorde.</p>\n"
 	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
@@ -61,7 +61,7 @@
 	},
 	"markdown:we're-changing-things": {
 		"original": "We're <em><strong>changing</strong></em> things.",
-		"value": "We're <em><strong>changing</strong></em> things."
+		"value": "<p>We veranderen dingen</p>\n"
 	},
 	"rosey-cloudcannon-connector": {
 		"original": " Rosey - CloudCannon Connector ",
@@ -85,27 +85,11 @@
 	},
 	"recent-posts": {
 		"original": "Recent Posts",
-		"value": "Recent Posts"
+		"value": "Recente berichten"
 	},
 	"words": {
 		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>"
-	},
-	"a-snippet-in-the-middle-of-markdown-content": {
-		"original": " A snippet in the middle of markdown content ",
-		"value": " A snippet in the middle of markdown content "
-	},
-	"markdown:": {
-		"original": "&nbsp;",
-		"value": "&nbsp;"
-	},
-	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
-		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
-		"value": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!"
-	},
-	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
-		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
-		"value": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!"
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
@@ -146,5 +130,21 @@
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": " Yay, we support snippets now! "
+	},
+	"a-snippet-in-the-middle-of-markdown-content": {
+		"original": " A snippet in the middle of markdown content ",
+		"value": "Een fragment in het midden van markdown-inhoud"
+	},
+	"markdown:": {
+		"original": "&nbsp;",
+		"value": "&nbsp;"
+	},
+	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
+		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
+		"value": "<p>Ledereen zou een vriend moeten hebben. Bedenk dit soort dingen gewoon in je hoofd en laat ze binnenkomen. Help ze om een ​​paar gelukkige dollars te verdienen. Een soort oranje-gelige kleur. Water breekt, het karnt en het heeft plezier!</p>\n"
+	},
+	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
+		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
+		"value": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!"
 	}
 }
