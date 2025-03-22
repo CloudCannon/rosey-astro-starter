@@ -1,11 +1,11 @@
 {
-	"blog/index.html": {
-		"original": "blog/index.html",
-		"value": "blog/index.html"
-	},
 	"404.html": {
 		"original": "404.html",
 		"value": "404.html"
+	},
+	"blog/index.html": {
+		"original": "blog/index.html",
+		"value": "blog/index.html"
 	},
 	"index.html": {
 		"original": "index.html",
@@ -15,8 +15,16 @@
 		"original": "tags/Testing/index.html",
 		"value": "tags/Testing/index.html"
 	},
+	"tags/bob ross/index.html": {
+		"original": "tags/bob ross/index.html",
+		"value": "tags/bob ross/index.html"
+	},
 	"blog/a-test-page/index.html": {
 		"original": "blog/a-test-page/index.html",
 		"value": "blog/a-test-page/index.html"
+	},
+	"blog/bobo-rosso/index.html": {
+		"original": "blog/bobo-rosso/index.html",
+		"value": "blog/bobo-rosso/index.html"
 	}
 }
