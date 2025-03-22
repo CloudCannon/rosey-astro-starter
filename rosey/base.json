@@ -9,6 +9,30 @@
       },
       "total": 1
     },
+    "a-test-page": {
+      "original": "A Test Page",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 2,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/Testing/index.html": 1
+      },
+      "total": 6
+    },
+    "a-test-post-vid": {
+      "original": "A test post vid",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 2,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/video/index.html": 1
+      },
+      "total": 6
+    },
     "blog": {
       "original": " Blog ",
       "value": null,
@@ -24,6 +48,25 @@
         "tags/video/index.html": 1
       },
       "total": 9
+    },
+    "bob-ross": {
+      "original": "Bob ross",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "tags/bob ross/index.html": 1
+      },
+      "total": 2
+    },
+    "bob-ross-test": {
+      "original": "Bob Ross Test",
+      "value": null,
+      "pages": {
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/bob ross/index.html": 1
+      },
+      "total": 3
     },
     "cloudcannon": {
       "original": " CloudCannon ",
@@ -201,6 +244,26 @@
       },
       "total": 1
     },
+    "minutes": {
+      "original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 3
+    },
+    "recent-posts": {
+      "original": "Recent Posts",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 3
+    },
     "rosey-cloudcannon-connector": {
       "original": " Rosey - CloudCannon Connector ",
       "value": null,
@@ -225,6 +288,18 @@
       },
       "total": 9
     },
+    "testing": {
+      "original": "Testing",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/Testing/index.html": 1
+      },
+      "total": 5
+    },
     "this-is-just-a-test": {
       "original": " This is just a test. ",
       "value": null,
@@ -232,6 +307,28 @@
         "index.html": 1
       },
       "total": 1
+    },
+    "video": {
+      "original": "Video",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1,
+        "blog/index.html": 1,
+        "tags/video/index.html": 1
+      },
+      "total": 5
+    },
+    "words": {
+      "original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
+      "value": null,
+      "pages": {
+        "blog/a-new-post-name/index.html": 1,
+        "blog/a-test-page/index.html": 1,
+        "blog/bobo-rosso/index.html": 1
+      },
+      "total": 3
     },
     "yay-we-support-snippets-now!": {
       "original": " Yay, we support snippets now! ",
