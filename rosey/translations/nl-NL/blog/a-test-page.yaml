@@ -11,9 +11,7 @@ _inputs:
           comment: Text to translate on
             [blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)
           inputs:
-            - a-test-page
             - a-test-post-vid
-            - blog
             - markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way
             - markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are
             - markdown:another-code-block
@@ -24,7 +22,6 @@ _inputs:
             - markdown:we-have-a-fantastic-little-sky!-we're-trying-to-teach-you-a-technique-here-and-how-to-use-it
             - markdown:we-have-all-at-one-time-or-another-mixed-some-mud-it's-beautiful-and-we-haven't-even-done-anything-to-it-yet-let's-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide
             - minutes
-            - recent-posts
             - rss-feed
             - testing
             - video
@@ -33,7 +30,10 @@ _inputs:
         - heading: Already translated (nl-NL)
           comment: Text already translated on
             [blog/a-test-page/](https://poised-plain.cloudvent.net/blog/a-test-page/)
-          inputs: []
+          inputs:
+            - a-test-page
+            - blog
+            - recent-posts
   a-test-page:
     label: A Test Page
     hidden: false

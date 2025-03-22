@@ -9,9 +9,7 @@ _inputs:
         - heading: Still to translate (nl-NL)
           comment: Text to translate on [blog/](https://poised-plain.cloudvent.net/blog/)
           inputs:
-            - a-test-page
             - a-test-post-vid
-            - blog
             - bob-ross
             - bob-ross-test
             - rss-feed
@@ -20,7 +18,9 @@ _inputs:
         - heading: Already translated (nl-NL)
           comment: Text already translated on
             [blog/](https://poised-plain.cloudvent.net/blog/)
-          inputs: []
+          inputs:
+            - a-test-page
+            - blog
   a-test-page:
     label: A Test Page
     hidden: false

@@ -9,12 +9,12 @@ _inputs:
         - heading: Still to translate (nl-NL)
           comment: Text to translate on [404](https://poised-plain.cloudvent.net/404)
           inputs:
-            - blog
             - rss-feed
         - heading: Already translated (nl-NL)
           comment: Text already translated on
             [404](https://poised-plain.cloudvent.net/404)
-          inputs: []
+          inputs:
+            - blog
   blog:
     label: Blog
     hidden: false

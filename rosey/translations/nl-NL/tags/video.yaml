@@ -11,13 +11,13 @@ _inputs:
             [tags/video/](https://poised-plain.cloudvent.net/tags/video/)
           inputs:
             - a-test-post-vid
-            - blog
             - rss-feed
             - video
         - heading: Already translated (nl-NL)
           comment: Text already translated on
             [tags/video/](https://poised-plain.cloudvent.net/tags/video/)
-          inputs: []
+          inputs:
+            - blog
   a-test-post-vid:
     label: A test post vid
     hidden: false

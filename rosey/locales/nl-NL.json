@@ -71,26 +71,6 @@
 		"original": " This is just a test. ",
 		"value": " This is just a test. "
 	},
-	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
-		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
-		"value": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes."
-	},
-	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
-		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
-		"value": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique."
-	},
-	"minutes": {
-		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
-		"value": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>"
-	},
-	"recent-posts": {
-		"original": "Recent Posts",
-		"value": "Recente berichten"
-	},
-	"words": {
-		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
-		"value": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>"
-	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
 		"value": "A new. test paragraph that has to be long enough words but end in a certain, way."
@@ -127,9 +107,29 @@
 		"original": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide.",
 		"value": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide."
 	},
+	"minutes": {
+		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
+		"value": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>"
+	},
+	"recent-posts": {
+		"original": "Recent Posts",
+		"value": "Recente berichten"
+	},
+	"words": {
+		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
+		"value": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>"
+	},
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": " Yay, we support snippets now! "
+	},
+	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
+		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
+		"value": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes."
+	},
+	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
+		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
+		"value": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique."
 	},
 	"a-snippet-in-the-middle-of-markdown-content": {
 		"original": " A snippet in the middle of markdown content ",

@@ -10,14 +10,14 @@ _inputs:
           comment: Text to translate on [tags/bob
             ross/](https://poised-plain.cloudvent.net/tags/bob ross/)
           inputs:
-            - blog
             - bob-ross
             - bob-ross-test
             - rss-feed
         - heading: Already translated (nl-NL)
           comment: Text already translated on [tags/bob
             ross/](https://poised-plain.cloudvent.net/tags/bob ross/)
-          inputs: []
+          inputs:
+            - blog
   blog:
     label: Blog
     hidden: false

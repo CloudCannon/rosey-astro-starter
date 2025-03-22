@@ -10,14 +10,14 @@ _inputs:
           comment: Text to translate on
             [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
           inputs:
-            - a-test-page
-            - blog
             - rss-feed
             - testing
         - heading: Already translated (nl-NL)
           comment: Text already translated on
             [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
-          inputs: []
+          inputs:
+            - a-test-page
+            - blog
   a-test-page:
     label: A Test Page
     hidden: false
