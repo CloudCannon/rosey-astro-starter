@@ -4,7 +4,7 @@ spec:
     - buttons
   label: Secondary Button
   description: Button with outline
-  icon: 'smart_button'
+  icon: "smart_button"
   tags:
     - Button
     - Outline
@@ -13,8 +13,8 @@ spec:
 blueprint:
   button_text:
   button_icon:
-  button_link: ''
-  text_color: ''
+  button_link: ""
+  text_color: ""
   hover_brightness: 0.85
 
 # Overrides any fields in the blueprint when viewing this component in the component browser

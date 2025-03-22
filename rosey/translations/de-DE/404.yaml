@@ -1,0 +1,31 @@
+urlTranslation: 404.html
+_inputs:
+  $:
+    type: object
+    comment: "[See 404](https://poised-plain.cloudvent.net/404)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: Text to translate on [404](https://poised-plain.cloudvent.net/404)
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: Text already translated on
+            [404](https://poised-plain.cloudvent.net/404)
+          inputs:
+            - blog
+            - rss-feed
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/404#:~:text=Blog)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/404#:~:text=RSS%20Feed)"
+blog: " Blog "
+rss-feed: " RSS-Feed "

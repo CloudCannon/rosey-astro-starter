@@ -1,15 +1,7 @@
 ---
-import Icon from '../../utility/icon';
-import slugify from 'slugify';
+import Icon from "../../utility/icon";
+import { generateRoseyId } from "../../../../rosey/utils/helpers/component-helper.js";
 
-const generateRoseyID = (text: string) => {
-  const lowerCaseText = text.toLowerCase();
-  const formattedText = lowerCaseText.replaceAll(
-    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
-    /$1/
-  );
-  return slugify(formattedText, { remove: /[.*,:\/]/g });
-};
 interface Props {
   button_text: string;
   button_icon: string;
@@ -32,7 +24,7 @@ const hover_brightness = block.hover_brightness;
         </span>
       ) : null
     }
-    <span data-rosey={generateRoseyID(block.button_text)}>
+    <span data-rosey={generateRoseyId(block.button_text)}>
       {block.button_text}
     </span>
   </a>

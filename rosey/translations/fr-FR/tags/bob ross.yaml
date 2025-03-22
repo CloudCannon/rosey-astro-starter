@@ -1,0 +1,52 @@
+urlTranslation: tags/bob ross/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See tags/bob ross/](https://poised-plain.cloudvent.net/tags/bob ross/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: Text to translate on [tags/bob
+            ross/](https://poised-plain.cloudvent.net/tags/bob ross/)
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: Text already translated on [tags/bob
+            ross/](https://poised-plain.cloudvent.net/tags/bob ross/)
+          inputs:
+            - blog
+            - bob-ross
+            - bob-ross-test
+            - rss-feed
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
+      ross/#:~:text=Blog)"
+  bob-ross:
+    label: Bob ross
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
+      ross/#:~:text=Bob%20ross)"
+  bob-ross-test:
+    label: Bob Ross Test
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
+      ross/#:~:text=Bob%20Ross%20Test)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
+      ross/#:~:text=RSS%20Feed)"
+blog: " Blog "
+bob-ross: Bob ross
+bob-ross-test: Test Bob Ross
+rss-feed: " Flux RSS "

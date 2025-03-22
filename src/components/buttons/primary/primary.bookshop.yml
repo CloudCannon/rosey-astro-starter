@@ -4,7 +4,7 @@ spec:
     - buttons
   label: Primary Button
   description: Background color
-  icon: 'smart_button'
+  icon: "smart_button"
   tags:
     - Button
     - Background color
@@ -13,10 +13,10 @@ spec:
 blueprint:
   button_text:
   button_icon:
-  button_link: ''
-  background_color: ''
+  button_link: ""
+  background_color: ""
   hover_brightness: 0.85
-  text_color: ''
+  text_color: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

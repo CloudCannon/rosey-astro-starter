@@ -7,14 +7,20 @@
       "pages": {},
       "total": 0
     },
+    "blog/a-new-post-name/index.html": {
+      "original": "blog/a-new-post-name/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
     "blog/a-test-page/index.html": {
       "original": "blog/a-test-page/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "blog/email-delivery-tips/index.html": {
-      "original": "blog/email-delivery-tips/index.html",
+    "blog/bobo-rosso/index.html": {
+      "original": "blog/bobo-rosso/index.html",
       "value": null,
       "pages": {},
       "total": 0
@@ -37,8 +43,14 @@
       "pages": {},
       "total": 0
     },
-    "tags/email/index.html": {
-      "original": "tags/email/index.html",
+    "tags/bob ross/index.html": {
+      "original": "tags/bob ross/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/video/index.html": {
+      "original": "tags/video/index.html",
       "value": null,
       "pages": {},
       "total": 0

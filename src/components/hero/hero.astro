@@ -1,26 +1,9 @@
 ---
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
-import Markdown from '../utility/markdown.astro';
-import slugify from 'slugify';
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import Markdown from "../utility/rosey-markdown.astro";
+import { generateRoseyId } from "../../../rosey/utils/helpers/component-helper.js";
 
-const generateRoseyID = (text: string) => {
-  const lowerCaseText = text.toLowerCase();
-  const formattedText = lowerCaseText.replaceAll(
-    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
-    /$1/
-  );
-  return slugify(formattedText, { remove: /[.*,:\/]/g });
-};
-const generateStaticRoseyId = (text: string) => {
-  const pageName =
-    Astro.url.pathname === '/'
-      ? 'home'
-      : Astro.url.pathname?.replace('/index.html', '').replaceAll('/', '');
-
-  const keyNumber = Astro.props.key || '1';
-  return `${text}-${pageName}-${keyNumber}`;
-};
 interface Props {
   background_color: string;
   heading: {
@@ -49,11 +32,12 @@ interface Props {
 }
 
 const block = Astro.props;
-const buttons = import.meta.glob('/src/components/buttons/**/*.astro', {
+
+const buttons = import.meta.glob("/src/components/buttons/**/*.astro", {
   eager: true,
 });
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/**/*.{jpeg,jpg,png,gif}',
+  "/src/assets/**/*.{jpeg,jpg,png,gif}",
   { eager: true }
 );
 
@@ -65,31 +49,19 @@ const headingGradientColor = block.heading.heading_gradient_color;
 
 <section style={`background-color: ${block.background_color};`}>
   <div class="hero-container">
-    <div class="content">
+    <div class="hero-content">
       <h1
         class="heading"
-        data-rosey={generateRoseyID(block.heading.heading_text)}>
+        data-rosey={generateRoseyId(block.heading.heading_text)}>
         {block.heading.heading_text}
       </h1>
       <div class="subheading-text" style={`color: ${block.subheading.color};`}>
-        {
-          ENV_BOOKSHOP_LIVE ? (
-            <Markdown
-              content={block.subheading.markdown_content}
-              roseyId="hero-subheading"
-            />
-          ) : (
-            <Markdown
-              content={block.subheading.markdown_content}
-              roseyId={generateStaticRoseyId('hero-subheading')}
-            />
-          )
-        }
+        <Markdown content={block.subheading.markdown_content} />
       </div>
       <div class="buttons">
         {
           block.buttons.map((button) => {
-            const name = button._bookshop_name.split('/').reverse()[0];
+            const name = button._bookshop_name.split("/").reverse()[0];
             const filePath = `/src/components/buttons/${name}/${name}.astro`;
             const Component = (buttons[filePath] as any)?.default;
             return <Component {...button} />;
@@ -106,144 +78,117 @@ const headingGradientColor = block.heading.heading_gradient_color;
       />
     </div>
   </div>
+</section>
 
-  <style define:vars={{ headingGradientColor }}>
-    .hero-container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      justify-content: space-between;
-      align-items: center;
-      padding-block: 24px;
-      padding-inline: var(--pagePadding);
-      max-width: var(--pageContainer);
-      margin-inline: auto;
-      overflow: hidden;
-    }
+<style is:global define:vars={{ headingGradientColor }}>
+  .heading {
+    font-size: 1.5rem;
+    line-height: 1em;
+    padding-block: 0.5rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(to left, #eee 50%, #333);
+    background: linear-gradient(
+      to left,
+      var(--headingGradientColor) 50%,
+      #000000
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-    .content h1 {
+  @media only screen and (min-width: 400px) {
+    .hero-content h1 {
       font-size: 2.5rem;
-      line-height: 1em;
-      padding-block: 0.5rem;
-      font-weight: 700;
-      background: -webkit-linear-gradient(to left, #eee 50%, #333);
-      background: linear-gradient(
-        to left,
-        var(--headingGradientColor) 50%,
-        #000000
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
-
-    .content {
-      display: flex;
-      flex-direction: column;
+  }
+  @media only screen and (min-width: 640px) {
+    .hero-content h1 {
+      font-size: 3.8rem;
     }
+  }
+</style>
+<style>
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 24px;
+    padding-inline: var(--pagePadding);
+    max-width: var(--pageContainer);
+    margin-inline: auto;
+    overflow: hidden;
+  }
 
-    .subheading-text {
-      margin-top: 1rem;
-    }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .subheading-text {
+    margin-top: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: fit-content;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .blob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .blob > img {
+    max-width: 600px;
+    width: 100%;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    margin: 20px;
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+
+  @media only screen and (min-width: 400px) {
     .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: fit-content;
-      justify-content: center;
-      margin-top: 1rem;
+      flex-direction: row;
+      margin-top: 2rem;
     }
-    button {
-      padding: 0.75rem 1.2rem;
-      border-radius: 20px;
-      font-size: 1.25em;
-      cursor: pointer;
-      transition: all ease-in-out 0.15s;
-      align-items: center;
-      justify-content: center;
+  }
+  @media only screen and (min-width: 960px) {
+    .hero-container {
+      flex-direction: row;
+      padding-block: 48px;
     }
-    .btn {
-      background: #4384e6;
-      color: #fff;
-      border: none;
-      display: flex;
-      gap: 8px;
-      padding: 1rem;
-    }
-    .btn svg {
-      width: 1rem;
-    }
-
-    .btn:hover {
-      background: #0066ff;
-    }
-
-    .btn-outline {
-      border: 1px solid #0d6efd;
-      background: transparent;
-      color: #0d6efd;
-      margin-left: 5px;
-    }
-
-    button i {
-      font-size: 0.78em;
+    .hero-content {
+      width: 50%;
     }
 
     .blob {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+      width: 50%;
     }
-    .blob > img {
-      max-width: 600px;
-      width: 100%;
-      background-size: cover;
-      -webkit-background-position: center;
-      background-position: center center;
-      margin: 20px;
-      animation: animate 10s ease-in-out infinite;
-      transition: all 1s ease-in-out;
+    .buttons {
+      flex-direction: column;
     }
+  }
+  @media only screen and (min-width: 1280px) {
+    .buttons {
+      flex-direction: row;
+    }
+  }
 
-    @media only screen and (min-width: 400px) {
-      .buttons {
-        flex-direction: row;
-        margin-top: 2rem;
-      }
-      .content h1 {
-        font-size: 3.8rem;
-      }
+  @keyframes animate {
+    0%,
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
-    @media only screen and (min-width: 960px) {
-      .hero-container {
-        flex-direction: row;
-        padding-block: 48px;
-      }
-      .content {
-        width: 50%;
-      }
-
-      .blob {
-        width: 50%;
-      }
-      .buttons {
-        flex-direction: column;
-      }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
-    @media only screen and (min-width: 1280px) {
-      .buttons {
-        flex-direction: row;
-      }
-    }
-
-    @keyframes animate {
-      0%,
-      100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-      }
-      50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-      }
-    }
-  </style>
-</section>
+  }
+</style>

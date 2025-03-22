@@ -1,16 +1,8 @@
 ---
-import { header } from '../../../data/navigation.json';
-import Icon from '../utility/icon';
-import slugify from 'slugify';
-const generateRoseyID = (text: string) => {
-  const lowerCaseText = text.toLowerCase();
-  const formattedText = lowerCaseText.replaceAll(
-    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
-    /$1/
-  );
-  return slugify(formattedText, { remove: /[.*,:\/]/g });
-};
-const pagePath = Astro.url.pathname || 'page';
+import { header } from "../../../data/navigation.json";
+import Icon from "../utility/icon";
+import { generateRoseyId } from "rosey/utils/helpers/component-helper";
+const pagePath = Astro.url.pathname || "page";
 ---
 
 <header
@@ -55,7 +47,7 @@ const pagePath = Astro.url.pathname || 'page';
                   <a
                     class="header__nav-link"
                     href={link.link}
-                    data-rosey={generateRoseyID(link.text)}>
+                    data-rosey={generateRoseyId(link.text)}>
                     {link.text}
                   </a>
                 </li>

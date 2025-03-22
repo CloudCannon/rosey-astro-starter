@@ -16,29 +16,24 @@
     ],
     "locales": [
       {
-        "code": "es",
-        "name": "Espanol",
-        "flag": "/images/flags/spain-flag-png-large.png"
-      },
-      {
-        "code": "de",
+        "code": "de-DE",
         "name": "Deutsch",
         "flag": "/images/flags/germany-flag.png"
       },
       {
-        "code": "fr",
+        "code": "fr-FR",
         "name": "French",
         "flag": "/images/flags/france-flag.png"
       },
       {
-        "code": "en",
+        "code": "",
         "name": "English (US)",
         "flag": "/images/flags/usa-flag.jpeg"
       },
       {
-        "code": "jp",
-        "name": "日本語",
-        "flag": "/images/flags/flag-of-japan.png"
+        "code": "nl-NL",
+        "name": "Dutch",
+        "flag": null
       }
     ]
   },

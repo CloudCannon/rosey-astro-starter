@@ -1,0 +1,85 @@
+urlTranslation: blog/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See blog/](https://poised-plain.cloudvent.net/blog/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: Text to translate on [blog/](https://poised-plain.cloudvent.net/blog/)
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: Text already translated on
+            [blog/](https://poised-plain.cloudvent.net/blog/)
+          inputs:
+            - a-test-page
+            - a-test-post-vid
+            - blog
+            - bob-ross
+            - bob-ross-test
+            - rss-feed
+            - testing
+            - video
+  a-test-page:
+    label: A Test Page
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/#:~:text=A%20Test%20Page)"
+  a-test-post-vid:
+    label: A test post vid
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/#:~:text=A%20test%20post%20\
+      vid)"
+  blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Blog)"
+  bob-ross:
+    label: Bob ross
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/#:~:text=Bob%20ross)"
+  bob-ross-test:
+    label: Bob Ross Test
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/#:~:text=Bob%20Ross%20Test)"
+  rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/#:~:text=RSS%20Feed)"
+  testing:
+    label: Testing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Testing)"
+  video:
+    label: Video
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Video)"
+a-test-page: Une page test
+a-test-post-vid: Un post-vidéo test
+blog: " Blog "
+bob-ross: Bob ross
+bob-ross-test: Test Bob Ross
+rss-feed: " Flux RSS "
+testing: Essais
+video: Vidéo
