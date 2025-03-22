@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "simulate-cloudcannon-build": "run-s astro build && mkdir dist/_cloudcannon && echo '{}' >> dist/_cloudcannon/info.json && ./.cloudcannon/postbuild",
+    "clean-translation-files": "node rosey-connector/localFileCleaner.js",
     "preview": "astro preview",
     "astro": "astro",
     "prebuild:fetch-theme-color": "node fetch-theme-color.cjs"
