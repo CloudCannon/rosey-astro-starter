@@ -100,14 +100,6 @@
       },
       "total": 1
     },
-    "markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order": {
-      "original": "A new phrase to send away. Again!? And one more with a later resolve? And in the correct order.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
       "original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
       "value": null,
@@ -185,6 +177,14 @@
       "value": null,
       "pages": {
         "blog/a-test-page/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:testing-translations-after-separating-out-the-logic-from-the-translations": {
+      "original": "Testing translations after <em>separating</em> out the logic from the translations.",
+      "value": null,
+      "pages": {
+        "index.html": 1
       },
       "total": 1
     },

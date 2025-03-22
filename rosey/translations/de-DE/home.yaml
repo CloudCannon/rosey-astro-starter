@@ -8,7 +8,8 @@ _inputs:
       groups:
         - heading: Still to translate (de-DE)
           comment: Text to translate on [](https://poised-plain.cloudvent.net/)
-          inputs: []
+          inputs:
+            - markdown:testing-translations-after-separating-out-the-logic-from-the-translations
         - heading: Already translated (de-DE)
           comment: Text already translated on [](https://poised-plain.cloudvent.net/)
           inputs:
@@ -16,7 +17,6 @@ _inputs:
             - cloudcannon
             - github
             - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
-            - markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order
             - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
             - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
             - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
@@ -64,29 +64,6 @@ _inputs:
       title: Untranslated Text
       icon: translate
       content: A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
-  markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order:
-    label: A new phrase to send away. Again!? And one...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=A%20new%20phrase,the%20\
-      correct%20order)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: A new phrase to send away. Again!? And one more with a later resolve?
-        And in the correct order.
   markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
     label: Control translations via a user friendly i...
     hidden: false
@@ -132,6 +109,29 @@ _inputs:
       icon: translate
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
+  markdown:testing-translations-after-separating-out-the-logic-from-the-translations:
+    label: Testing translations after separating out ...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Testing%20translations%\
+      20after,from%20the%20translations)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Testing translations after _separating_ out the logic from the
+        translations.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
     label: They say everything looks better with odd ...
     hidden: false
@@ -198,15 +198,13 @@ blog: " Blog "
 cloudcannon: " CloudCannon "
 github: " GitHub (Englisch) "
 markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro: Eine Demo-Site für den Rosey-CloudCannon Multilingual Connector für Astro.
-markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order:
-  Eine neue Phrase zum Verschicken. Wieder!? Und noch eines mit einer späteren
-  Entschlossenheit? Und zwar in der richtigen Reihenfolge.
 markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
   Steuern Sie Übersetzungen über eine benutzerfreundliche Oberfläche in
   CloudCannon.
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
   Es ist kalt, aber es ist schön. Werden Sie hart damit, werden Sie stark. Braun
   ist so eine schöne Farbe.
+markdown:testing-translations-after-separating-out-the-logic-from-the-translations: ""
 markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
   Man sagt, dass _alles_ besser aussieht, wenn es eine ungerade Anzahl von
   Dingen gibt. Aber manchmal setze ich gerade Zahlen – nur um die Kritiker zu
