@@ -84,14 +84,6 @@
       },
       "total": 1
     },
-    "markdown:": {
-      "original": "&nbsp;",
-      "value": null,
-      "pages": {
-        "blog/bobo-rosso/index.html": 1
-      },
-      "total": 1
-    },
     "markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
       "original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
       "value": null,

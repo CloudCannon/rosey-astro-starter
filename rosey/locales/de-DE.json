@@ -7,30 +7,6 @@
 		"original": " RSS Feed ",
 		"value": " RSS-Feed "
 	},
-	"a-test-page": {
-		"original": "A Test Page",
-		"value": "Eine Testseite"
-	},
-	"a-test-post-vid": {
-		"original": "A test post vid",
-		"value": "Ein Test-Post-Video"
-	},
-	"bob-ross": {
-		"original": "Bob ross",
-		"value": "Bob Ross"
-	},
-	"bob-ross-test": {
-		"original": "Bob Ross Test",
-		"value": "Bob Ross Test"
-	},
-	"testing": {
-		"original": "Testing",
-		"value": "Testen"
-	},
-	"video": {
-		"original": "Video",
-		"value": "Video"
-	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
 		"value": " CloudCannon "
@@ -70,6 +46,30 @@
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
 		"value": " Dies ist nur ein Test. "
+	},
+	"a-test-page": {
+		"original": "A Test Page",
+		"value": "Eine Testseite"
+	},
+	"a-test-post-vid": {
+		"original": "A test post vid",
+		"value": "Ein Test-Post-Video"
+	},
+	"bob-ross": {
+		"original": "Bob ross",
+		"value": "Bob Ross"
+	},
+	"bob-ross-test": {
+		"original": "Bob Ross Test",
+		"value": "Bob Ross Test"
+	},
+	"testing": {
+		"original": "Testing",
+		"value": "Testen"
+	},
+	"video": {
+		"original": "Video",
+		"value": "Video"
 	},
 	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
 		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
@@ -134,10 +134,6 @@
 	"a-snippet-in-the-middle-of-markdown-content": {
 		"original": " A snippet in the middle of markdown content ",
 		"value": " Ein Snippet in der Mitte des Markdown-Inhalts "
-	},
-	"markdown:": {
-		"original": "&nbsp;",
-		"value": "&nbsp;"
 	},
 	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
 		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",

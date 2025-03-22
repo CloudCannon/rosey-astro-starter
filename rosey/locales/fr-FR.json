@@ -135,10 +135,6 @@
 		"original": " A snippet in the middle of markdown content ",
 		"value": "Un extrait au milieu du contenu Markdown"
 	},
-	"markdown:": {
-		"original": "&nbsp;",
-		"value": "&nbsp;"
-	},
 	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
 		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
 		"value": "<p>Tout le monde devrait avoir un ami. Imaginez ces choses dans votre tête et laissez-les tomber. Aidez-les à gagner un ou deux dollars. Une couleur jaune orangé. L'eau se brise, elle bouillonne et elle s'amuse !</p>\n"
