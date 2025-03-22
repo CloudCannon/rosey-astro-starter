@@ -19,7 +19,7 @@ collections_config:
         path: '.cloudcannon/schemas/page.md'
         remove_extra_inputs: false
     create:
-      path: "[relative_base_path]/{title|slugify}.md"
+      path: "[relative_base_path]/{filename|slugify}.md"
   posts:
     path: src/content/blog
     url: "/blog/[full_slug]/"
@@ -35,7 +35,7 @@ collections_config:
         name: New Post
         path: '.cloudcannon/schemas/post.mdx'
     create:
-      path: "[relative_base_path]/{title|slugify}.mdx"
+      path: "[relative_base_path]/{filename|slugify}.mdx"
     _inputs:
       title:
         options:
