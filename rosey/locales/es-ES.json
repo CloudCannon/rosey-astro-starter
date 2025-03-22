@@ -91,18 +91,6 @@
 		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>"
 	},
-	"a-snippet-in-the-middle-of-markdown-content": {
-		"original": " A snippet in the middle of markdown content ",
-		"value": "Un fragmento en medio del contenido de Markdown"
-	},
-	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
-		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
-		"value": "<p>Todos deberían tener un amigo. Simplemente inventa estas cosas en tu mente y déjalas caer. Ayúdalos a ganar un par de dólares felices. De un color naranja amarillento. ¡Se rompe la fuente, se agita y se divierte!</p>\n"
-	},
-	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
-		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
-		"value": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!"
-	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
 		"value": "A new. test paragraph that has to be long enough words but end in a certain, way."
@@ -142,5 +130,17 @@
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": " Yay, we support snippets now! "
+	},
+	"a-snippet-in-the-middle-of-markdown-content": {
+		"original": " A snippet in the middle of markdown content ",
+		"value": "Un fragmento en medio del contenido de Markdown"
+	},
+	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
+		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
+		"value": "<p>Todos deberían tener un amigo. Simplemente inventa estas cosas en tu mente y déjalas caer. Ayúdalos a ganar un par de dólares felices. De un color naranja amarillento. ¡Se rompe la fuente, se agita y se divierte!</p>\n"
+	},
+	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
+		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
+		"value": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!"
 	}
 }
