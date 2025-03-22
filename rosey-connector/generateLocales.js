@@ -247,13 +247,10 @@ async function processTranslation(
     translationFilename
   );
   const fileContents = await readFileWithFallback(translationsPath, "");
-  // console.log({ fileContents });
   const translationHTMLFilename =
     getTranslationHTMLFilename(translationFilename);
-  console.log({ translationFilename });
 
   const data = YAML.parse(fileContents);
-  // console.log({ data });
 
   // Check if theres a translation and
   // Add each obj to our locales data, excluding '_inputs' object.
