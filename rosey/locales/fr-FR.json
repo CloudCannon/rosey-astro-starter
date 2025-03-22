@@ -53,7 +53,7 @@
 	},
 	"markdown:testing-translations-after-separating-out-the-logic-from-the-translations": {
 		"original": "Testing translations after <em>separating</em> out the logic from the translations.",
-		"value": "Testing translations after <em>separating</em> out the logic from the translations."
+		"value": "<p>Tester les traductions après avoir séparé la logique des traductions.</p>\n"
 	},
 	"markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
 		"original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
