@@ -100,6 +100,14 @@
       },
       "total": 1
     },
+    "markdown:adding-another-paragraph-for-a-little-smartling-test": {
+      "original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
     "markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are": {
       "original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
       "value": null,

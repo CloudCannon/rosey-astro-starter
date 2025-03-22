@@ -1,12 +1,4 @@
 {
-	"blog": {
-		"original": " Blog ",
-		"value": " Blog "
-	},
-	"rss-feed": {
-		"original": " RSS Feed ",
-		"value": " RSS-Feed "
-	},
 	"a-test-page": {
 		"original": "A Test Page",
 		"value": "Eine Testseite"
@@ -15,6 +7,10 @@
 		"original": "A test post vid",
 		"value": "Ein Test-Post-Video"
 	},
+	"blog": {
+		"original": " Blog ",
+		"value": " Blog "
+	},
 	"bob-ross": {
 		"original": "Bob ross",
 		"value": "Bob Ross"
@@ -22,6 +18,10 @@
 	"bob-ross-test": {
 		"original": "Bob Ross Test",
 		"value": "Bob Ross Test"
+	},
+	"rss-feed": {
+		"original": " RSS Feed ",
+		"value": " RSS-Feed "
 	},
 	"testing": {
 		"original": "Testing",
@@ -42,6 +42,10 @@
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
 		"value": "<p>Eine Demo-Site für den Rosey-CloudCannon Multilingual Connector für Astro.</p>\n"
+	},
+	"markdown:adding-another-paragraph-for-a-little-smartling-test": {
+		"original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test.",
+		"value": "<p>Ich füge <em>einen weiteren</em> Absatz für einen kleinen <strong>Smartling-Test</strong> hinzu.</p>\n"
 	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
