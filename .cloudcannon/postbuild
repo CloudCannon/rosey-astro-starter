@@ -13,5 +13,5 @@ then
   # We only want this to run on our production site, as it can interfere with CloudCannon CMS's visual editor
   # There's a little bit of shuffling around here to ensure the translated site ends up where CloudCannon picks up your site
   mv ./dist ./untranslated_site                  
-  npx rosey build --source untranslated_site --dest dist --default-language-at-root
+  npx rosey build --default-language-at-root --source untranslated_site --dest dist 
 fi
