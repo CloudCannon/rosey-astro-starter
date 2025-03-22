@@ -6,18 +6,18 @@ _inputs:
     options:
       place_groups_below: false
       groups:
-        - heading: Still to translate (nl-NL)
+        - heading: Still to translate (es-ES)
           comment: Text to translate on
-            [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
-          inputs:
-            - rss-feed
-            - testing
-        - heading: Already translated (nl-NL)
-          comment: Text already translated on
             [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
           inputs:
             - a-test-page
             - blog
+            - rss-feed
+            - testing
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
+          inputs: []
   a-test-page:
     label: A Test Page
     hidden: false
@@ -48,7 +48,7 @@ _inputs:
     options: {}
     comment: "[See on
       page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=Testing)"
-a-test-page: Een testpagina
-blog: Blog
+a-test-page: ""
+blog: ""
 rss-feed: ""
 testing: ""

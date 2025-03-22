@@ -6,18 +6,18 @@ _inputs:
     options:
       place_groups_below: false
       groups:
-        - heading: Still to translate (nl-NL)
+        - heading: Still to translate (es-ES)
           comment: Text to translate on
             [tags/video/](https://poised-plain.cloudvent.net/tags/video/)
           inputs:
             - a-test-post-vid
+            - blog
             - rss-feed
             - video
-        - heading: Already translated (nl-NL)
+        - heading: Already translated (es-ES)
           comment: Text already translated on
             [tags/video/](https://poised-plain.cloudvent.net/tags/video/)
-          inputs:
-            - blog
+          inputs: []
   a-test-post-vid:
     label: A test post vid
     hidden: false
@@ -48,6 +48,6 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/tags/video/#:~:text=Video)"
 a-test-post-vid: ""
-blog: Blog
+blog: ""
 rss-feed: ""
 video: ""

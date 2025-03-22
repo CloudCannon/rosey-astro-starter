@@ -6,21 +6,21 @@ _inputs:
     options:
       place_groups_below: false
       groups:
-        - heading: Still to translate (nl-NL)
+        - heading: Still to translate (es-ES)
           comment: Text to translate on [blog/](https://poised-plain.cloudvent.net/blog/)
           inputs:
+            - a-test-page
             - a-test-post-vid
+            - blog
             - bob-ross
             - bob-ross-test
             - rss-feed
             - testing
             - video
-        - heading: Already translated (nl-NL)
+        - heading: Already translated (es-ES)
           comment: Text already translated on
             [blog/](https://poised-plain.cloudvent.net/blog/)
-          inputs:
-            - a-test-page
-            - blog
+          inputs: []
   a-test-page:
     label: A Test Page
     hidden: false
@@ -75,9 +75,9 @@ _inputs:
     type: text
     options: {}
     comment: "[See on page](https://poised-plain.cloudvent.net/blog/#:~:text=Video)"
-a-test-page: Een testpagina
+a-test-page: ""
 a-test-post-vid: ""
-blog: Blog
+blog: ""
 bob-ross: ""
 bob-ross-test: ""
 rss-feed: ""

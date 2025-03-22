@@ -8,25 +8,25 @@ _inputs:
     options:
       place_groups_below: false
       groups:
-        - heading: Still to translate (nl-NL)
+        - heading: Still to translate (es-ES)
           comment: Text to translate on
             [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
           inputs:
+            - a-test-page
             - a-test-post-vid
+            - blog
             - markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes
             - markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique
             - minutes
+            - recent-posts
             - rss-feed
             - testing
             - video
             - words
-        - heading: Already translated (nl-NL)
+        - heading: Already translated (es-ES)
           comment: Text already translated on
             [blog/a-new-post-name/](https://poised-plain.cloudvent.net/blog/a-new-post-name/)
-          inputs:
-            - a-test-page
-            - blog
-            - recent-posts
+          inputs: []
   a-test-page:
     label: A Test Page
     hidden: false
@@ -149,13 +149,13 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=93\
       %20words)"
-a-test-page: Een testpagina
+a-test-page: ""
 a-test-post-vid: ""
-blog: Blog
+blog: ""
 markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes: ""
 markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique: ""
 minutes: ""
-recent-posts: Recente berichten
+recent-posts: ""
 rss-feed: ""
 testing: ""
 video: ""

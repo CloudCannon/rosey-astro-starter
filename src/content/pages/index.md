@@ -21,12 +21,15 @@ content_blocks:
       heading_text: Rosey - CloudCannon Connector
       heading_gradient_color: '#034AD8'
     subheading:
-      markdown_content: |-
+      markdown_content: >-
         A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
+
 
         Control translations via a user friendly interface in CloudCannon.
 
-        A new phrase to send away. Again!? And one more with a later resolve? And in the correct order.
+
+        Testing translations after *separating* out the logic from the
+        translations.
       color: '#393939'
     image:
       image_path: /src/assets/images/featured-image-5.jpg

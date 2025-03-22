@@ -10,8 +10,7 @@ _inputs:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on
             [blog/bobo-rosso/](https://poised-plain.cloudvent.net/blog/bobo-rosso/)
-          inputs:
-            - "markdown:"
+          inputs: []
         - heading: Already translated (fr-FR)
           comment: Text already translated on
             [blog/bobo-rosso/](https://poised-plain.cloudvent.net/blog/bobo-rosso/)
@@ -73,22 +72,6 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Bob%20R\
       oss%20Test)"
-  "markdown:":
-    label: ""
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=)"
   markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
     label: Everybody should have a friend. Just sorta...
     hidden: false
@@ -190,7 +173,6 @@ a-test-page: Une page test
 a-test-post-vid: Un post-vidéo test
 blog: " Blog "
 bob-ross-test: Test Bob Ross
-"markdown:": ""
 markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
   Tout le monde devrait avoir un ami. Imaginez ces choses dans votre tête et
   laissez-les tomber. Aidez-les à gagner un ou deux dollars. Une couleur jaune

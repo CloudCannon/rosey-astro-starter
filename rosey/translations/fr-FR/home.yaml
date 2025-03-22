@@ -16,9 +16,9 @@ _inputs:
             - cloudcannon
             - github
             - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
-            - markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order
             - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
             - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
+            - markdown:testing-translations-after-separating-out-the-logic-from-the-translations
             - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
             - markdown:we're-changing-things
             - rosey-cloudcannon-connector
@@ -64,29 +64,6 @@ _inputs:
       title: Untranslated Text
       icon: translate
       content: A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
-  markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order:
-    label: A new phrase to send away. Again!? And one...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=A%20new%20phrase,the%20\
-      correct%20order)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: A new phrase to send away. Again!? And one more with a later resolve?
-        And in the correct order.
   markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
     label: Control translations via a user friendly i...
     hidden: false
@@ -132,6 +109,29 @@ _inputs:
       icon: translate
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
+  markdown:testing-translations-after-separating-out-the-logic-from-the-translations:
+    label: Testing translations after separating out ...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Testing%20translations%\
+      20after,from%20the%20translations)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Testing translations after _separating_ out the logic from the
+        translations.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
     label: They say everything looks better with odd ...
     hidden: false
@@ -200,17 +200,15 @@ github: " GitHub "
 markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
   Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour
   Astro.
-markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order:
-  Une nouvelle phrase à renvoyer. Encore une fois !? Et un autre avec une
-  résolution plus tardive ? Et dans le bon ordre.
 markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: Contrôlez les traductions via une interface conviviale dans CloudCannon.
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
   Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron
   est une couleur très agréable.
+markdown:testing-translations-after-separating-out-the-logic-from-the-translations: Tester les traductions après avoir séparé la logique des traductions.
 markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
-  On dit que _tout_ est plus beau avec un nombre impair de choses. Mais il
+  On dit que *tout* est plus beau avec un nombre impair de choses. Mais il
   m'arrive de mettre des nombres pairs, juste pour contrarier les critiques.
-markdown:we're-changing-things: Nous _**changeons**_ les choses.
+markdown:we're-changing-things: Nous ***changeons*** les choses.
 rosey-cloudcannon-connector: " Rosey - Connecteur CloudCannon "
 rss-feed: " Flux RSS "
 this-is-just-a-test: " Ce n'est qu'un test. "

@@ -1,7 +1,7 @@
 locales:
   - de-DE
   - fr-FR
-  - nl-NL
+  - es-ES
 base_url: https://poised-plain.cloudvent.net/
 rosey_paths:
   rosey_base_file_path: ./rosey/base.json

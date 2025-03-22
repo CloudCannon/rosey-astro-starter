@@ -26,14 +26,14 @@
         "flag": "/images/flags/france-flag.png"
       },
       {
-        "code": "",
+        "code": "en",
         "name": "English (US)",
         "flag": "/images/flags/usa-flag.jpeg"
       },
       {
-        "code": "nl-NL",
-        "name": "Dutch",
-        "flag": null
+        "code": "es-ES",
+        "name": "Español",
+        "flag": "/images/flags/spain-flag-png-large.png"
       }
     ]
   },

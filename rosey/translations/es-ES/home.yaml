@@ -6,24 +6,24 @@ _inputs:
     options:
       place_groups_below: false
       groups:
-        - heading: Still to translate (nl-NL)
+        - heading: Still to translate (es-ES)
           comment: Text to translate on [](https://poised-plain.cloudvent.net/)
-          inputs:
-            - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
-            - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
-            - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
-            - rosey-cloudcannon-connector
-            - rss-feed
-            - this-is-just-a-test
-        - heading: Already translated (nl-NL)
-          comment: Text already translated on [](https://poised-plain.cloudvent.net/)
           inputs:
             - blog
             - cloudcannon
             - github
-            - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
-            - markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order
+            - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
+            - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
+            - markdown:testing-translations-after-separating-out-the-logic-from-the-translations
+            - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
             - markdown:we're-changing-things
+            - rosey-cloudcannon-connector
+            - rss-feed
+            - this-is-just-a-test
+        - heading: Already translated (es-ES)
+          comment: Text already translated on [](https://poised-plain.cloudvent.net/)
+          inputs:
+            - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
   blog:
     label: Blog
     hidden: false
@@ -64,29 +64,6 @@ _inputs:
       title: Untranslated Text
       icon: translate
       content: A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
-  markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order:
-    label: A new phrase to send away. Again!? And one...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      format: p h1 h2 h3 h4
-      italic: true
-      link: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-      blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=A%20new%20phrase,the%20\
-      correct%20order)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: A new phrase to send away. Again!? And one more with a later resolve?
-        And in the correct order.
   markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
     label: Control translations via a user friendly i...
     hidden: false
@@ -132,6 +109,29 @@ _inputs:
       icon: translate
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
+  markdown:testing-translations-after-separating-out-the-logic-from-the-translations:
+    label: Testing translations after separating out ...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Testing%20translations%\
+      20after,from%20the%20translations)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Testing translations after _separating_ out the logic from the
+        translations.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
     label: They say everything looks better with odd ...
     hidden: false
@@ -194,17 +194,17 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/#:~:text=This%20is%20just%20a%20\
       test.)"
-blog: Blog
-cloudcannon: CloudCannon
-github: GitHub
-markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro: Een demosite voor de Rosey-CloudCannon Multilingual Connector voor Astro.
-markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order:
-  Een nieuwe zin om weg te sturen. Opnieuw!? En nog een met een later besluit?
-  En in de juiste volgorde.
+blog: ""
+cloudcannon: ""
+github: ""
+markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
+  Un sitio de demostración para el conector multilingüe Rosey-CloudCannon para
+  Astro.
 markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: ""
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color: ""
+markdown:testing-translations-after-separating-out-the-logic-from-the-translations: ""
 markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics: ""
-markdown:we're-changing-things: We veranderen dingen
+markdown:we're-changing-things: ""
 rosey-cloudcannon-connector: ""
 rss-feed: ""
 this-is-just-a-test: ""

@@ -1,11 +1,35 @@
 {
+	"a-test-page": {
+		"original": "A Test Page",
+		"value": "Une page test"
+	},
+	"a-test-post-vid": {
+		"original": "A test post vid",
+		"value": "Un post-vidéo test"
+	},
 	"blog": {
 		"original": " Blog ",
 		"value": " Blog "
 	},
+	"bob-ross": {
+		"original": "Bob ross",
+		"value": "Bob ross"
+	},
+	"bob-ross-test": {
+		"original": "Bob Ross Test",
+		"value": "Test Bob Ross"
+	},
 	"rss-feed": {
 		"original": " RSS Feed ",
 		"value": " Flux RSS "
+	},
+	"testing": {
+		"original": "Testing",
+		"value": "Essais"
+	},
+	"video": {
+		"original": "Video",
+		"value": "Vidéo"
 	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
@@ -19,10 +43,6 @@
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
 		"value": "<p>Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour Astro.</p>\n"
 	},
-	"markdown:a-new-phrase-to-send-away-again!?-and-one-more-with-a-later-resolve?-and-in-the-correct-order": {
-		"original": "A new phrase to send away. Again!? And one more with a later resolve? And in the correct order.",
-		"value": "<p>Une nouvelle phrase à renvoyer. Encore une fois !? Et un autre avec une résolution plus tardive ? Et dans le bon ordre.</p>\n"
-	},
 	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
 		"original": "Control translations via a user friendly interface in CloudCannon.",
 		"value": "<p>Contrôlez les traductions via une interface conviviale dans CloudCannon.</p>\n"
@@ -30,6 +50,10 @@
 	"markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
 		"value": "<p>Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron est une couleur très agréable.</p>\n"
+	},
+	"markdown:testing-translations-after-separating-out-the-logic-from-the-translations": {
+		"original": "Testing translations after <em>separating</em> out the logic from the translations.",
+		"value": "<p>Tester les traductions après avoir séparé la logique des traductions.</p>\n"
 	},
 	"markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
 		"original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
@@ -46,30 +70,6 @@
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
 		"value": " Ce n'est qu'un test. "
-	},
-	"a-test-page": {
-		"original": "A Test Page",
-		"value": "Une page test"
-	},
-	"a-test-post-vid": {
-		"original": "A test post vid",
-		"value": "Un post-vidéo test"
-	},
-	"bob-ross": {
-		"original": "Bob ross",
-		"value": "Bob ross"
-	},
-	"bob-ross-test": {
-		"original": "Bob Ross Test",
-		"value": "Test Bob Ross"
-	},
-	"testing": {
-		"original": "Testing",
-		"value": "Essais"
-	},
-	"video": {
-		"original": "Video",
-		"value": "Vidéo"
 	},
 	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
 		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
@@ -90,6 +90,18 @@
 	"words": {
 		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93 mots"
+	},
+	"a-snippet-in-the-middle-of-markdown-content": {
+		"original": " A snippet in the middle of markdown content ",
+		"value": "Un extrait au milieu du contenu Markdown"
+	},
+	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
+		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
+		"value": "<p>Tout le monde devrait avoir un ami. Imaginez ces choses dans votre tête et laissez-les tomber. Aidez-les à gagner un ou deux dollars. Une couleur jaune orangé. L'eau se brise, elle bouillonne et elle s'amuse !</p>\n"
+	},
+	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
+		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
+		"value": "<p>On va faire de grosses montagnes ! Il y a déjà trop de choses compliquées dans notre vie. Tout ce qui compte, c'est cette jolie forme extérieure. Toujours suivre les angles. Ne vous contentez pas de tout masquer, laissez ces endroits !</p>\n"
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
@@ -130,21 +142,5 @@
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": " Nous prenons désormais en charge les snippets ! "
-	},
-	"a-snippet-in-the-middle-of-markdown-content": {
-		"original": " A snippet in the middle of markdown content ",
-		"value": "Un extrait au milieu du contenu Markdown"
-	},
-	"markdown:": {
-		"original": "&nbsp;",
-		"value": "&nbsp;"
-	},
-	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
-		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
-		"value": "<p>Tout le monde devrait avoir un ami. Imaginez ces choses dans votre tête et laissez-les tomber. Aidez-les à gagner un ou deux dollars. Une couleur jaune orangé. L'eau se brise, elle bouillonne et elle s'amuse !</p>\n"
-	},
-	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
-		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
-		"value": "<p>On va faire de grosses montagnes ! Il y a déjà trop de choses compliquées dans notre vie. Tout ce qui compte, c'est cette jolie forme extérieure. Toujours suivre les angles. Ne vous contentez pas de tout masquer, laissez ces endroits !</p>\n"
 	}
 }

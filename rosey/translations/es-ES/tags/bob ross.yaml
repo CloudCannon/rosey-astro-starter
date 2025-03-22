@@ -6,18 +6,18 @@ _inputs:
     options:
       place_groups_below: false
       groups:
-        - heading: Still to translate (nl-NL)
+        - heading: Still to translate (es-ES)
           comment: Text to translate on [tags/bob
             ross/](https://poised-plain.cloudvent.net/tags/bob ross/)
           inputs:
+            - blog
             - bob-ross
             - bob-ross-test
             - rss-feed
-        - heading: Already translated (nl-NL)
+        - heading: Already translated (es-ES)
           comment: Text already translated on [tags/bob
             ross/](https://poised-plain.cloudvent.net/tags/bob ross/)
-          inputs:
-            - blog
+          inputs: []
   blog:
     label: Blog
     hidden: false
@@ -46,7 +46,7 @@ _inputs:
     options: {}
     comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
       ross/#:~:text=RSS%20Feed)"
-blog: Blog
+blog: ""
 bob-ross: ""
 bob-ross-test: ""
 rss-feed: ""
