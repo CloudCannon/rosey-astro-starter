@@ -69,14 +69,24 @@ collections_config:
     _inputs:
       icons:
         comment: Add an icon from the list of [Font Awesome icons](https://fontawesome.com/search?o=r&m=free). Then add it to the ```src/components/utility/icon.jsx``` file, following the existing pattern.
-      code:
-        comment: Enter the URL language code
-      flag:
-        type: image
       locales:
         type: array
-      locales[*]:
-        type: text
+        options:
+          structures: _structures.locale
+    _structures:
+      locale:
+        values:
+          - value:
+              code:
+              name:
+              flag:
+            _inputs:
+              name:
+                comment: The text displayed in the language picker menu.
+              code:
+                comment: Enter the URL language code.
+              flag:
+                type: image
   translations:
     path: rosey
     icon: translate
