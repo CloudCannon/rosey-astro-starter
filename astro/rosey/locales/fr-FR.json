@@ -55,6 +55,10 @@
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
 		"value": "<p>Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron est une couleur très agréable.</p>\n"
 	},
+	"markdown:more-changes-on-the-real-staging-branch": {
+		"original": "More changes on the real staging branch.",
+		"value": "<p>Plus de changements sur la branche staging.</p>\n"
+	},
 	"markdown:testing-translations-after-separating-out-the-logic-from-the-translations": {
 		"original": "Testing translations after <em>separating</em> out the logic from the translations.",
 		"value": "<p>Tester les traductions après avoir séparé la logique des traductions.</p>\n"
