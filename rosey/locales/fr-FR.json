@@ -71,26 +71,6 @@
 		"original": " This is just a test. ",
 		"value": " Ce n'est qu'un test. "
 	},
-	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
-		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
-		"value": "<p>N'en faites pas trop - soyez prudent. Attention. Commencez toujours par une brosse propre sur une zone claire et progressez vers l'extérieur. Nous avons planifié ce fils de canon dès le début. Les gens sont très enthousiastes lorsqu'ils voient cela se produire. Chacun voit la nature avec des yeux différents.</p>\n"
-	},
-	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
-		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
-		"value": "<p>Aujourd'hui est une journée merveilleuse, faisons une petite peinture joyeuse. Je prendrai peut-être un peu de montagne aujourd'hui. Vous pouvez faire tout ce que vous croyez pouvoir faire. Faites en sorte qu'il atteigne le niveau souhaité et ne vous en occupez pas. C'est le côté amusant de toute cette technique.</p>\n"
-	},
-	"minutes": {
-		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
-		"value": "0 minute"
-	},
-	"recent-posts": {
-		"original": "Recent Posts",
-		"value": "Messages récents"
-	},
-	"words": {
-		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
-		"value": "93 mots"
-	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
 		"value": "<p>Un nouveau paragraphe de test qui doit être suffisamment long mais se terminer d'une certaine manière.</p>\n"
@@ -127,9 +107,29 @@
 		"original": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide.",
 		"value": "<p>Nous avons tous, à un moment ou à un autre, mélangé de la boue. Il est magnifique - et nous n'y avons encore rien fait. Créons des petits nuages heureux dans notre monde. Laissez votre cœur vous guider.</p>\n"
 	},
+	"minutes": {
+		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
+		"value": "0 minute"
+	},
+	"recent-posts": {
+		"original": "Recent Posts",
+		"value": "Messages récents"
+	},
+	"words": {
+		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
+		"value": "93 mots"
+	},
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": " Nous prenons désormais en charge les snippets ! "
+	},
+	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
+		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
+		"value": "<p>N'en faites pas trop - soyez prudent. Attention. Commencez toujours par une brosse propre sur une zone claire et progressez vers l'extérieur. Nous avons planifié ce fils de canon dès le début. Les gens sont très enthousiastes lorsqu'ils voient cela se produire. Chacun voit la nature avec des yeux différents.</p>\n"
+	},
+	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
+		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
+		"value": "<p>Aujourd'hui est une journée merveilleuse, faisons une petite peinture joyeuse. Je prendrai peut-être un peu de montagne aujourd'hui. Vous pouvez faire tout ce que vous croyez pouvoir faire. Faites en sorte qu'il atteigne le niveau souhaité et ne vous en occupez pas. C'est le côté amusant de toute cette technique.</p>\n"
 	},
 	"a-snippet-in-the-middle-of-markdown-content": {
 		"original": " A snippet in the middle of markdown content ",
