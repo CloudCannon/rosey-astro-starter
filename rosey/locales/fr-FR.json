@@ -7,30 +7,6 @@
 		"original": " RSS Feed ",
 		"value": " Flux RSS "
 	},
-	"a-test-page": {
-		"original": "A Test Page",
-		"value": "Une page test"
-	},
-	"a-test-post-vid": {
-		"original": "A test post vid",
-		"value": "Un post-vidéo test"
-	},
-	"bob-ross": {
-		"original": "Bob ross",
-		"value": "Bob ross"
-	},
-	"bob-ross-test": {
-		"original": "Bob Ross Test",
-		"value": "Test Bob Ross"
-	},
-	"testing": {
-		"original": "Testing",
-		"value": "Essais"
-	},
-	"video": {
-		"original": "Video",
-		"value": "Vidéo"
-	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
 		"value": " CloudCannon "
@@ -70,6 +46,30 @@
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
 		"value": " Ce n'est qu'un test. "
+	},
+	"a-test-page": {
+		"original": "A Test Page",
+		"value": "Une page test"
+	},
+	"a-test-post-vid": {
+		"original": "A test post vid",
+		"value": "Un post-vidéo test"
+	},
+	"bob-ross": {
+		"original": "Bob ross",
+		"value": "Bob ross"
+	},
+	"bob-ross-test": {
+		"original": "Bob Ross Test",
+		"value": "Test Bob Ross"
+	},
+	"testing": {
+		"original": "Testing",
+		"value": "Essais"
+	},
+	"video": {
+		"original": "Video",
+		"value": "Vidéo"
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
