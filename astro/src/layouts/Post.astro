@@ -1,0 +1,124 @@
+---
+import Layout from "./Layout.astro";
+import PostSummary from "../components/blog/summary.jsx";
+import { getCollection } from "astro:content";
+import type { MarkdownLayoutProps } from "astro";
+import { generateRoseyId } from "../../rosey-connector/helpers/component-helper.js";
+
+type Props =
+  | {
+      title: string;
+      date: string | Date;
+      image: string;
+      image_alt: string;
+      author: string;
+      body: string;
+    }
+  | MarkdownLayoutProps<{
+      title: string;
+      date: string | Date;
+      image: string;
+      image_alt: string;
+      author: string;
+    }>;
+
+const props =
+  "frontmatter" in Astro.props ? Astro.props.frontmatter : Astro.props;
+const content =
+  "body" in Astro.props ? Astro.props.body : Astro.props.rawContent();
+
+const { title, date, image, image_alt, author } = props;
+const wordCount = content.split(" ").length;
+const readingTime = Math.floor(wordCount / 183);
+const dateObj = new Date(date);
+
+const posts = await getCollection("blog");
+---
+
+<Layout {...props}>
+  <main class="py-[48px] md:py-[96px] px-8">
+    <article class="max-w-screen-md mx-auto">
+      <img class="rounded-lg mb-4" src={image} alt={image_alt} />
+      <h1
+        class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold sm:text-center"
+        data-rosey={generateRoseyId(title)}>
+        {title}
+      </h1>
+      <ul
+        class="flex flex-col justify-between sm:flex-row sm:justify-center sm:gap-5 py-5 font-light text-sm">
+        <li class="post-data-list-item">
+          {author}
+        </li>
+        <li class="post-data-list-item">
+          <p>
+            {
+              dateObj.toLocaleDateString(undefined, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })
+            }
+          </p>
+        </li>
+        <div class="flex gap-3">
+          <li class="post-data-list-item post-size">
+            <p data-rosey="words">{wordCount}<span> words</span></p>
+          </li>
+          <li>
+            <p data-rosey="minutes">{readingTime}<span> minutes</span></p>
+          </li>
+        </div>
+      </ul>
+      <div class="markdown-text">
+        <slot />
+      </div>
+    </article>
+    <section
+      class="max-w-screen-md mx-auto pt-[48px] flex flex-col items-center">
+      <h2 class="text-2xl" data-rosey="recent-posts">Recent Posts</h2>
+      <div class="grid sm:grid-cols-2 gap-5 mt-5">
+        {
+          posts.slice(0, 2).map((post, i) => (
+            <div class="max-w-[420px]">
+              <PostSummary post={post} />
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .post-size {
+    position: relative;
+  }
+
+  .post-size::after {
+    position: absolute;
+    content: "";
+    background: #4d4d4d;
+    width: 1px;
+    height: 15px;
+    top: 50%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: 640px) {
+    .post-data-list-item {
+      position: relative;
+    }
+
+    .post-data-list-item::after {
+      position: absolute;
+      content: "";
+      background: #4d4d4d;
+      width: 1px;
+      height: 15px;
+      top: 50%;
+      right: -12%;
+      transform: translate(-50%, -50%);
+    }
+  }
+</style>

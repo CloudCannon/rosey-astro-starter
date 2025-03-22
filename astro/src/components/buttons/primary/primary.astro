@@ -1,0 +1,56 @@
+---
+import Icon from "../../utility/icon.jsx";
+import { generateRoseyId } from "../../../../rosey-connector/helpers/component-helper.js";
+
+interface Props {
+  button_text: string;
+  button_icon: string;
+  button_link: string;
+  background_color: string;
+  hover_brightness: number;
+  text_color: string;
+}
+
+const block = Astro.props;
+const hover_brightness = block.hover_brightness;
+---
+
+<button style={`background-color: ${block.background_color};`} class="button">
+  <a style={`color: ${block.text_color}`} href={block.button_link}>
+    {
+      block.button_icon ? (
+        <span class="button__icon">
+          <Icon icon={block.button_icon} />
+        </span>
+      ) : null
+    }
+    <span data-rosey={generateRoseyId(block.button_text)}>
+      {block.button_text}
+    </span>
+  </a>
+</button>
+
+<style define:vars={{ hover_brightness }}>
+  .button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+  }
+  .button a {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+  .button a:hover {
+    backdrop-filter: brightness(var(--hover_brightness));
+  }
+
+  .button__icon {
+    width: 1rem;
+  }
+</style>

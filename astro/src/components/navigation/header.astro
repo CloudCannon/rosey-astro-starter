@@ -1,0 +1,186 @@
+---
+import { header } from "../../../data/navigation.json";
+import Icon from "../utility/icon";
+import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper";
+const pagePath = Astro.url.pathname || "page";
+---
+
+<header
+  class="header"
+  x-data="{ open: false, langopen: false }"
+  x-transition
+  style={`background-color: ${header.background_color}; color: ${header.color};`}>
+  <div class="header__container">
+    <nav class="header__nav">
+      <a class="header__logo-link" href={header.logo_url}>
+        <img class="header__logo-image" src={header.logo} alt="Logo" />
+      </a>
+      <div class="flex items-center gap-8">
+        <button class="hamburger" @click="open = ! open">
+          <svg height="16" width="24" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path
+                d="M0 16h24v-2.667H0V16zm0-6.667h24V6.667H0v2.666zM0 0v2.667h24V0H0z"
+                id="a">
+              </path>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <mask fill="#fff" id="b">
+                <use href="#a"> </use>
+              </mask>
+              <use fill="#000" fill-rule="nonzero" href="#a"> </use>
+              <g mask="url(#b)">
+                <path d="M-4-8h32v32H-4z" fill="#034AD8"> </path>
+              </g>
+            </g>
+          </svg>
+        </button>
+        <ul
+          class="header__nav-links"
+          x-show="open"
+          x-transition
+          @click.outside="open = false">
+          {
+            header.links.map((link) => {
+              return (
+                <li class="header__nav-item">
+                  <a
+                    class="header__nav-link"
+                    href={link.link}
+                    data-rosey={generateRoseyId(link.text)}>
+                    {link.text}
+                  </a>
+                </li>
+              );
+            })
+          }
+        </ul>
+        <button x-on:click="langopen = !langopen" class="w-5">
+          <Icon icon="Language" />
+        </button>
+        <ul class="lang-list" x-show="langopen" x-cloak x-transition>
+          {
+            header.locales.map((locale) => {
+              return (
+                <li>
+                  <a href={`/${locale.code}${pagePath}`}>
+                    <span>{locale.name}</span>
+                    <img
+                      class="w-[32px]"
+                      src={locale.flag}
+                      alt={`${locale.name} Flag`}
+                    />
+                  </a>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header__container {
+    max-width: var(--pageContainer);
+    margin: 0 auto;
+    padding-inline: var(--pagePadding);
+  }
+
+  .header li {
+    list-style-type: none;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    position: relative;
+  }
+
+  .header__logo-image {
+    width: 200px;
+  }
+
+  .header__nav-links {
+    position: absolute;
+    z-index: 99;
+    background-color: white;
+    right: 0;
+    top: 5rem;
+    left: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .header__nav-link {
+    cursor: pointer;
+  }
+  .header__nav-link:hover {
+    color: #034ad8;
+  }
+
+  .lang-list {
+    position: absolute;
+    z-index: 99;
+    top: 3rem;
+    right: 0;
+
+    width: max-content;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0 0 0 4px;
+    letter-spacing: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    gap: 0.25rem;
+  }
+  .lang-list li a {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @media screen and (min-width: 600px) {
+    .header__nav-links {
+      position: static;
+      display: flex !important;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding: 0;
+      min-width: 0;
+      min-height: 0;
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .header__nav-item {
+      padding-left: 1rem;
+    }
+  }
+
+  .hamburger {
+    padding: 0.5rem;
+    transform: translateX(0.5rem);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .hamburger:hover {
+    background-color: #e5ecfb;
+  }
+
+  @media screen and (min-width: 600px) {
+    .hamburger {
+      display: none;
+    }
+  }
+</style>
