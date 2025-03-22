@@ -32,7 +32,8 @@ content_blocks:
         translations.
 
 
-        Adding *another* paragraph for a little **Smartling** test.
+        Adding *another* paragraph for a little **Smartling** test. Adding this
+        as well, after making this site part of a monorepo.
       color: '#393939'
     image:
       image_path: /src/assets/images/featured-image-5.jpg
