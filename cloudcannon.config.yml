@@ -73,7 +73,7 @@ collections_config:
         type: array
       locales[*]:
         type: text
-  translations_config:
+  translations:
     path: rosey
     icon: translate
     disable_url: true
