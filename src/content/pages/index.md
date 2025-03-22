@@ -30,6 +30,9 @@ content_blocks:
 
         Testing translations after *separating* out the logic from the
         translations.
+
+
+        Adding *another* paragraph for a little **Smartling** test.
       color: '#393939'
     image:
       image_path: /src/assets/images/featured-image-5.jpg
