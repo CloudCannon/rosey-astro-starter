@@ -2,5 +2,5 @@
 
 echo "Running in the root of the monorepo"
 cd $SITE_DIR
-echo "cd into $SITE_DIR"
+echo "cd into and run postbuild in subdir $SITE_DIR"
 ./.cloudcannon/postbuild
