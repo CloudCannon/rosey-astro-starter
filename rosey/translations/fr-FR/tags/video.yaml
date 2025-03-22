@@ -14,8 +14,18 @@ _inputs:
           comment: Text already translated on
             [tags/video/](https://poised-plain.cloudvent.net/tags/video/)
           inputs:
+            - a-test-post-vid
             - blog
             - rss-feed
+            - video
+  a-test-post-vid:
+    label: A test post vid
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/tags/video/#:~:text=A%20test%20p\
+      ost%20vid)"
   blog:
     label: Blog
     hidden: false
@@ -30,5 +40,14 @@ _inputs:
     options: {}
     comment: "[See on
       page](https://poised-plain.cloudvent.net/tags/video/#:~:text=RSS%20Feed)"
+  video:
+    label: Video
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/tags/video/#:~:text=Video)"
+a-test-post-vid: Un post-vidéo test
 blog: " Blog "
 rss-feed: " Flux RSS "
+video: Vidéo

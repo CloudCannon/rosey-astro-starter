@@ -14,8 +14,18 @@ _inputs:
           comment: Text already translated on
             [tags/Testing/](https://poised-plain.cloudvent.net/tags/Testing/)
           inputs:
+            - a-test-page
             - blog
             - rss-feed
+            - testing
+  a-test-page:
+    label: A Test Page
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=A%20Test%2\
+      0Page)"
   blog:
     label: Blog
     hidden: false
@@ -31,5 +41,14 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=RSS%20Feed\
       )"
+  testing:
+    label: Testing
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/tags/Testing/#:~:text=Testing)"
+a-test-page: Une page test
 blog: " Blog "
 rss-feed: " Flux RSS "
+testing: Essais

@@ -15,6 +15,8 @@ _inputs:
             ross/](https://poised-plain.cloudvent.net/tags/bob ross/)
           inputs:
             - blog
+            - bob-ross
+            - bob-ross-test
             - rss-feed
   blog:
     label: Blog
@@ -23,6 +25,20 @@ _inputs:
     options: {}
     comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
       ross/#:~:text=Blog)"
+  bob-ross:
+    label: Bob ross
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
+      ross/#:~:text=Bob%20ross)"
+  bob-ross-test:
+    label: Bob Ross Test
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
+      ross/#:~:text=Bob%20Ross%20Test)"
   rss-feed:
     label: RSS Feed
     hidden: false
@@ -31,4 +47,6 @@ _inputs:
     comment: "[See on page](https://poised-plain.cloudvent.net/tags/bob
       ross/#:~:text=RSS%20Feed)"
 blog: " Blog "
+bob-ross: Bob Ross
+bob-ross-test: Bob Ross Test
 rss-feed: " RSS-Feed "
