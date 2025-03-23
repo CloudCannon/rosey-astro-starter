@@ -1,4 +1,12 @@
 {
+	"blog": {
+		"original": " Blog ",
+		"value": " Blog "
+	},
+	"rss-feed": {
+		"original": " RSS Feed ",
+		"value": " RSS-Feed "
+	},
 	"a-test-page": {
 		"original": "A Test Page",
 		"value": "Eine Testseite"
@@ -7,10 +15,6 @@
 		"original": "A test post vid",
 		"value": "Ein Test-Post-Video"
 	},
-	"blog": {
-		"original": " Blog ",
-		"value": " Blog "
-	},
 	"bob-ross": {
 		"original": "Bob ross",
 		"value": "Bob Ross"
@@ -18,10 +22,6 @@
 	"bob-ross-test": {
 		"original": "Bob Ross Test",
 		"value": "Bob Ross Test"
-	},
-	"rss-feed": {
-		"original": " RSS Feed ",
-		"value": " RSS-Feed "
 	},
 	"testing": {
 		"original": "Testing",
@@ -79,13 +79,17 @@
 		"original": " This is just a test. ",
 		"value": " Dies ist nur ein Test. "
 	},
-	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
-		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
-		"value": "<p>Übertreiben Sie es nicht – seien Sie vorsichtig. Sei vorsichtig. Beginnen Sie immer mit einem sauberen Pinsel an einer hellen Stelle und arbeiten Sie nach außen. Wir haben diesen Sohn-of-a-Gun von Anfang an geplant. Die Leute sind so aufgeregt, wenn sie das sehen. Jeder wird die Natur mit anderen Augen sehen.</p>\n"
+	"a-snippet-in-the-middle-of-markdown-content": {
+		"original": " A snippet in the middle of markdown content ",
+		"value": " Ein Snippet in der Mitte des Markdown-Inhalts "
 	},
-	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
-		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
-		"value": "<p>Heute ist so ein wunderbarer Tag, lasst uns einfach ein fröhliches kleines Bild malen. Vielleicht habe ich heute ein bisschen Berg. Du kannst alles tun, von dem du glaubst, dass du es tun kannst. Bringen Sie es dorthin, wo Sie es haben wollen, und lassen Sie es in Ruhe. Das ist der lustige Teil dieser ganzen Technik.</p>\n"
+	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
+		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
+		"value": "<p>Jeder sollte einen Freund haben. Erfinde diese Dinge einfach in deinem Kopf und lass sie auf dich zukommen. Helfen Sie ihnen, ein oder zwei glückliche Summen zu verdienen. Irgendwie eine orangy-gelbliche Farbe. Wasser bricht, und es wühlt auf, und es macht Spaß!</p>\n"
+	},
+	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
+		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
+		"value": "<p>Wir werden ein paar große, alte, riesige Berge machen! Es gibt schon zu viele komplizierte Dinge in unserem Leben. Alles, worüber Sie sich Sorgen machen, ist diese schöne Außenform. Folgen Sie immer den Winkeln. Decken Sie nicht einfach alles ab – lassen Sie diese Flecken!</p>\n"
 	},
 	"minutes": {
 		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
@@ -98,6 +102,14 @@
 	"words": {
 		"original": "93<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93 Wörter"
+	},
+	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
+		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
+		"value": "<p>Übertreiben Sie es nicht – seien Sie vorsichtig. Sei vorsichtig. Beginnen Sie immer mit einem sauberen Pinsel an einer hellen Stelle und arbeiten Sie nach außen. Wir haben diesen Sohn-of-a-Gun von Anfang an geplant. Die Leute sind so aufgeregt, wenn sie das sehen. Jeder wird die Natur mit anderen Augen sehen.</p>\n"
+	},
+	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
+		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
+		"value": "<p>Heute ist so ein wunderbarer Tag, lasst uns einfach ein fröhliches kleines Bild malen. Vielleicht habe ich heute ein bisschen Berg. Du kannst alles tun, von dem du glaubst, dass du es tun kannst. Bringen Sie es dorthin, wo Sie es haben wollen, und lassen Sie es in Ruhe. Das ist der lustige Teil dieser ganzen Technik.</p>\n"
 	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
@@ -138,17 +150,5 @@
 	"yay-we-support-snippets-now!": {
 		"original": " Yay, we support snippets now! ",
 		"value": " Juhu, wir unterstützen jetzt Snippets! "
-	},
-	"a-snippet-in-the-middle-of-markdown-content": {
-		"original": " A snippet in the middle of markdown content ",
-		"value": " Ein Snippet in der Mitte des Markdown-Inhalts "
-	},
-	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
-		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
-		"value": "<p>Jeder sollte einen Freund haben. Erfinde diese Dinge einfach in deinem Kopf und lass sie auf dich zukommen. Helfen Sie ihnen, ein oder zwei glückliche Summen zu verdienen. Irgendwie eine orangy-gelbliche Farbe. Wasser bricht, und es wühlt auf, und es macht Spaß!</p>\n"
-	},
-	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
-		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
-		"value": "<p>Wir werden ein paar große, alte, riesige Berge machen! Es gibt schon zu viele komplizierte Dinge in unserem Leben. Alles, worüber Sie sich Sorgen machen, ist diese schöne Außenform. Folgen Sie immer den Winkeln. Decken Sie nicht einfach alles ab – lassen Sie diese Flecken!</p>\n"
 	}
 }
