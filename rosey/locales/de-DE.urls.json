@@ -3,21 +3,17 @@
 		"original": "404.html",
 		"value": "404.html"
 	},
-	"index.html": {
-		"original": "index.html",
-		"value": "index.html"
-	},
 	"blog/index.html": {
 		"original": "blog/index.html",
 		"value": "blog/index.html"
 	},
+	"index.html": {
+		"original": "index.html",
+		"value": "index.html"
+	},
 	"tags/Testing/index.html": {
 		"original": "tags/Testing/index.html",
 		"value": "tags/Testing/index.html"
-	},
-	"tags/bob ross/index.html": {
-		"original": "tags/bob ross/index.html",
-		"value": "tags/bob ross/index.html"
 	},
 	"tags/video/index.html": {
 		"original": "tags/video/index.html",
@@ -26,6 +22,10 @@
 	"blog/a-new-post-name/index.html": {
 		"original": "blog/a-new-post-name/index.html",
 		"value": "blog/a-new-post-name/index.html"
+	},
+	"tags/bob ross/index.html": {
+		"original": "tags/bob ross/index.html",
+		"value": "tags/bob ross/index.html"
 	},
 	"blog/bobo-rosso/index.html": {
 		"original": "blog/bobo-rosso/index.html",
