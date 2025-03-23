@@ -18,5 +18,29 @@
 	"projects/index.html": {
 		"original": "projects/index.html",
 		"value": "projects/index.html"
+	},
+	"tag/life/index.html": {
+		"original": "tag/life/index.html",
+		"value": "tag/life.html"
+	},
+	"tag/lifestyle/index.html": {
+		"original": "tag/lifestyle/index.html",
+		"value": "tag/lifestyle.html"
+	},
+	"tag/notes/index.html": {
+		"original": "tag/notes/index.html",
+		"value": "tag/notes.html"
+	},
+	"tag/rest/index.html": {
+		"original": "tag/rest/index.html",
+		"value": "tag/rest.html"
+	},
+	"tag/story/index.html": {
+		"original": "tag/story/index.html",
+		"value": "tag/story.html"
+	},
+	"tag/travel/index.html": {
+		"original": "tag/travel/index.html",
+		"value": "tag/travel.html"
 	}
 }
