@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "keys": {
+    "get-in-touch": {
+      "original": "Get in touch",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "hi-there-i-am-vanessa-marley": {
+      "original": "Hi there, I am Vanessa Marley",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "p-strong-photographer-strong-and-strong-visual-content-strategist-strong-from-albany-i-work-as-a-lifestyle-product-and-landscape-photographer-creating-images-for-a-diverse-range-of-requests-from-online-media-to-printed-artwork-p": {
+      "original": "<p><strong>Photographer</strong> and <strong>Visual Content Strategist</strong> from Albany. I work as a lifestyle, product, and landscape photographer, creating images for a diverse range of requests, from online media to printed artwork.</p>",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "see-my-works": {
+      "original": "\n                  See my works\n                ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    }
+  }
+}
