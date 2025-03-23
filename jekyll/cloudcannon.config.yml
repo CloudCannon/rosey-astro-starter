@@ -1,14 +1,14 @@
-source: jekyll/site
+source: jekyll
 
 timezone: Etc/UTC
 
 paths:
-  uploads: images
-  static: ''
+  uploads: site/images
+  static: 'site'
   
 collections_config:
   posts:
-    path: collections/_posts
+    path: site/collections/_posts
     url: '/[full_slug]/'
     glob:
       - '**/*.md'
@@ -23,7 +23,7 @@ collections_config:
       default:
         path: jekyll/.cloudcannon/schemas/post.md
   pages:
-    path: collections/_pages
+    path: site/collections/_pages
     url: '/[full_slug]/'
     glob:
       - '**/*.html'
@@ -37,7 +37,7 @@ collections_config:
     create:
       path: '[relative_base_path]/{filename|slugify}.md'
   projects:
-    path: collections/_projects
+    path: site/collections/_projects
     url: '/[full_slug]/'
     glob:
       - '**/*.md'
@@ -55,7 +55,7 @@ collections_config:
     create:
       path: '[relative_base_path]/{filename|slugify}.md'
   testimonials:
-    path: collections/_testimonials
+    path: site/collections/_testimonials
     url: '/[full_slug]/'
     glob:
       - '**/*.md'
@@ -82,7 +82,7 @@ collections_config:
     create:
       path: '[relative_base_path]/{filename|slugify}.md'
   drafts:
-    path: collections/_drafts
+    path: site/collections/_drafts
     disable_url: true
     create:
       publish_to: posts
@@ -90,7 +90,7 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
   data:
-    path: _data
+    path: site/_data
     disable_url: true
     disable_add: true
     disable_add_folder: true
@@ -147,17 +147,17 @@ collection_groups:
     
 data_config:
   author:
-    path: _data/author.yml
+    path: site/_data/author.yml
   footer:
-    path: _data/footer.yml
+    path: site/_data/footer.yml
   general_settings:
-    path: _data/general_settings.yml
+    path: site/_data/general_settings.yml
   navigation:
-    path: _data/navigation.yml
+    path: site/_data/navigation.yml
   newsletter:
-    path: _data/newsletter.yml
+    path: site/_data/newsletter.yml
   social_links:
-    path: _data/social_links.yml
+    path: site/_data/social_links.yml
 
 _inputs:
   tags:
