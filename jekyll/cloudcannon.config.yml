@@ -90,7 +90,7 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
   data:
-    path: data
+    path: _data
     disable_url: true
     disable_add: true
     disable_add_folder: true
