@@ -1,0 +1,18 @@
+urlTranslation: blog/that-which-does-not-kill-us-makes-us-stronger.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/that-which-does-not-kill-us-makes-us-stronger](https://driven-darkne\
+      ss.cloudvent.net/blog/that-which-does-not-kill-us-makes-us-stronger)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/that-which-does-not-kill-us-makes-us-stronger](https://driven-darkness.cloudvent.net/blog/that-which-does-not-kill-us-makes-us-stronger)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/that-which-does-not-kill-us-makes-us-stronger](https://driven-darkness.cloudvent.net/blog/that-which-does-not-kill-us-makes-us-stronger)
+          inputs: []

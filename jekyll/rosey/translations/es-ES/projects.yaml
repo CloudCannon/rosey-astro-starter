@@ -1,0 +1,16 @@
+urlTranslation: projects/index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See projects/](https://driven-darkness.cloudvent.net/projects/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [projects/](https://driven-darkness.cloudvent.net/projects/)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [projects/](https://driven-darkness.cloudvent.net/projects/)
+          inputs: []

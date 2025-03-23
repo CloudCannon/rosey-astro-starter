@@ -1,0 +1,19 @@
+urlTranslation: blog/it-is-never-too-late-to-be-what-you-might-have-been.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/it-is-never-too-late-to-be-what-you-might-have-been](https://driven-\
+      darkness.cloudvent.net/blog/it-is-never-too-late-to-be-what-you-might-hav\
+      e-been)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/it-is-never-too-late-to-be-what-you-might-have-been](https://driven-darkness.cloudvent.net/blog/it-is-never-too-late-to-be-what-you-might-have-been)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/it-is-never-too-late-to-be-what-you-might-have-been](https://driven-darkness.cloudvent.net/blog/it-is-never-too-late-to-be-what-you-might-have-been)
+          inputs: []

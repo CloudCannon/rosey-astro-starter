@@ -1,0 +1,18 @@
+urlTranslation: project/antelope-anyon.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      project/antelope-anyon](https://driven-darkness.cloudvent.net/project/ant\
+      elope-anyon)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [project/antelope-anyon](https://driven-darkness.cloudvent.net/project/antelope-anyon)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [project/antelope-anyon](https://driven-darkness.cloudvent.net/project/antelope-anyon)
+          inputs: []

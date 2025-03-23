@@ -1,0 +1,18 @@
+urlTranslation: project/green-plant.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      project/green-plant](https://driven-darkness.cloudvent.net/project/green-\
+      plant)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [project/green-plant](https://driven-darkness.cloudvent.net/project/green-plant)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [project/green-plant](https://driven-darkness.cloudvent.net/project/green-plant)
+          inputs: []

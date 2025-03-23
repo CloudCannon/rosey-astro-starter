@@ -1,0 +1,19 @@
+urlTranslation: blog/strive-not-to-be-a-success-but-rather-to-be-of-value.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/strive-not-to-be-a-success-but-rather-to-be-of-value](https://driven\
+      -darkness.cloudvent.net/blog/strive-not-to-be-a-success-but-rather-to-be-\
+      of-value)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/strive-not-to-be-a-success-but-rather-to-be-of-value](https://driven-darkness.cloudvent.net/blog/strive-not-to-be-a-success-but-rather-to-be-of-value)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/strive-not-to-be-a-success-but-rather-to-be-of-value](https://driven-darkness.cloudvent.net/blog/strive-not-to-be-a-success-but-rather-to-be-of-value)
+          inputs: []

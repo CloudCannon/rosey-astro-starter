@@ -1,0 +1,18 @@
+urlTranslation: project/big-airplane.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      project/big-airplane](https://driven-darkness.cloudvent.net/project/big-a\
+      irplane)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [project/big-airplane](https://driven-darkness.cloudvent.net/project/big-airplane)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [project/big-airplane](https://driven-darkness.cloudvent.net/project/big-airplane)
+          inputs: []

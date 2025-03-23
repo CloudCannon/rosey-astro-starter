@@ -1,0 +1,19 @@
+urlTranslation: blog/the-way-i-see-it-every-life-is-a-pile-of-good-things.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/the-way-i-see-it-every-life-is-a-pile-of-good-things](https://driven\
+      -darkness.cloudvent.net/blog/the-way-i-see-it-every-life-is-a-pile-of-goo\
+      d-things)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/the-way-i-see-it-every-life-is-a-pile-of-good-things](https://driven-darkness.cloudvent.net/blog/the-way-i-see-it-every-life-is-a-pile-of-good-things)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/the-way-i-see-it-every-life-is-a-pile-of-good-things](https://driven-darkness.cloudvent.net/blog/the-way-i-see-it-every-life-is-a-pile-of-good-things)
+          inputs: []

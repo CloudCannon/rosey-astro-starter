@@ -1,0 +1,19 @@
+urlTranslation: blog/believe-and-act-as-if-it-were-impossible-to-fail.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/believe-and-act-as-if-it-were-impossible-to-fail](https://driven-dar\
+      kness.cloudvent.net/blog/believe-and-act-as-if-it-were-impossible-to-fail\
+      )"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/believe-and-act-as-if-it-were-impossible-to-fail](https://driven-darkness.cloudvent.net/blog/believe-and-act-as-if-it-were-impossible-to-fail)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/believe-and-act-as-if-it-were-impossible-to-fail](https://driven-darkness.cloudvent.net/blog/believe-and-act-as-if-it-were-impossible-to-fail)
+          inputs: []

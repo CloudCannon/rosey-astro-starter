@@ -1,0 +1,18 @@
+urlTranslation: blog/everything-has-beauty-but-not-everyone-can-see.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/everything-has-beauty-but-not-everyone-can-see](https://driven-darkn\
+      ess.cloudvent.net/blog/everything-has-beauty-but-not-everyone-can-see)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/everything-has-beauty-but-not-everyone-can-see](https://driven-darkness.cloudvent.net/blog/everything-has-beauty-but-not-everyone-can-see)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/everything-has-beauty-but-not-everyone-can-see](https://driven-darkness.cloudvent.net/blog/everything-has-beauty-but-not-everyone-can-see)
+          inputs: []

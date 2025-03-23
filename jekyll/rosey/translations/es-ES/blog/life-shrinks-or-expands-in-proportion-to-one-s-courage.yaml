@@ -1,0 +1,19 @@
+urlTranslation: blog/life-shrinks-or-expands-in-proportion-to-one-s-courage.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/life-shrinks-or-expands-in-proportion-to-one-s-courage](https://driv\
+      en-darkness.cloudvent.net/blog/life-shrinks-or-expands-in-proportion-to-o\
+      ne-s-courage)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/life-shrinks-or-expands-in-proportion-to-one-s-courage](https://driven-darkness.cloudvent.net/blog/life-shrinks-or-expands-in-proportion-to-one-s-courage)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/life-shrinks-or-expands-in-proportion-to-one-s-courage](https://driven-darkness.cloudvent.net/blog/life-shrinks-or-expands-in-proportion-to-one-s-courage)
+          inputs: []

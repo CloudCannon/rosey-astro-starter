@@ -1,0 +1,19 @@
+urlTranslation: blog/you-must-be-the-change-you-wish-to-see-in-the-world.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/you-must-be-the-change-you-wish-to-see-in-the-world](https://driven-\
+      darkness.cloudvent.net/blog/you-must-be-the-change-you-wish-to-see-in-the\
+      -world)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/you-must-be-the-change-you-wish-to-see-in-the-world](https://driven-darkness.cloudvent.net/blog/you-must-be-the-change-you-wish-to-see-in-the-world)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/you-must-be-the-change-you-wish-to-see-in-the-world](https://driven-darkness.cloudvent.net/blog/you-must-be-the-change-you-wish-to-see-in-the-world)
+          inputs: []

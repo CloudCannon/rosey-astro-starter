@@ -1,0 +1,18 @@
+urlTranslation: project/desk-setup.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      project/desk-setup](https://driven-darkness.cloudvent.net/project/desk-se\
+      tup)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [project/desk-setup](https://driven-darkness.cloudvent.net/project/desk-setup)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [project/desk-setup](https://driven-darkness.cloudvent.net/project/desk-setup)
+          inputs: []

@@ -1,0 +1,19 @@
+urlTranslation: blog/do-what-you-can-with-what-you-have-where-you-are.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      blog/do-what-you-can-with-what-you-have-where-you-are](https://driven-dar\
+      kness.cloudvent.net/blog/do-what-you-can-with-what-you-have-where-you-are\
+      )"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [blog/do-what-you-can-with-what-you-have-where-you-are](https://driven-darkness.cloudvent.net/blog/do-what-you-can-with-what-you-have-where-you-are)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [blog/do-what-you-can-with-what-you-have-where-you-are](https://driven-darkness.cloudvent.net/blog/do-what-you-can-with-what-you-have-where-you-are)
+          inputs: []
