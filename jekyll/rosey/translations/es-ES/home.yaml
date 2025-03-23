@@ -1,0 +1,62 @@
+urlTranslation: index.html
+_inputs:
+  $:
+    type: object
+    comment: "[See ](https://driven-darkness.cloudvent.net/)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on [](https://driven-darkness.cloudvent.net/)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on [](https://driven-darkness.cloudvent.net/)
+          inputs:
+            - get-in-touch
+            - hi-there-i-am-vanessa-marley
+            - p-strong-photographer-strong-and-strong-visual-content-strategist-strong-from-albany-i-work-as-a-lifestyle-product-and-landscape-photographer-creating-images-for-a-diverse-range-of-requests-from-online-media-to-printed-artwork-p
+            - see-my-works
+  get-in-touch:
+    label: Get in touch
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://driven-darkness.cloudvent.net/#:~:text=Get%20in%20touch)"
+  hi-there-i-am-vanessa-marley:
+    label: Hi there, I am Vanessa Marley
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://driven-darkness.cloudvent.net/#:~:text=Hi%20there,%20I%20am\
+      %20Vanessa%20Marley)"
+  p-strong-photographer-strong-and-strong-visual-content-strategist-strong-from-albany-i-work-as-a-lifestyle-product-and-landscape-photographer-creating-images-for-a-diverse-range-of-requests-from-online-media-to-printed-artwork-p:
+    label: Photographer and Visual Content Strategist...
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See on
+      page](https://driven-darkness.cloudvent.net/#:~:text=Photographer%20and%2\
+      0Visual,to%20printed%20artwork)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: "**Photographer** and **Visual Content Strategist** from Albany. I work
+        as a lifestyle, product, and landscape photographer, creating images for
+        a diverse range of requests, from online media to printed artwork."
+  see-my-works:
+    label: See my works
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See on
+      page](https://driven-darkness.cloudvent.net/#:~:text=See%20my%20works)"
+get-in-touch: Ponte en contacto
+hi-there-i-am-vanessa-marley: Hola, soy Vanessa Marley.
+p-strong-photographer-strong-and-strong-visual-content-strategist-strong-from-albany-i-work-as-a-lifestyle-product-and-landscape-photographer-creating-images-for-a-diverse-range-of-requests-from-online-media-to-printed-artwork-p:
+  Fotógrafo y estratega de contenido visual de Albany. Trabajo como fotógrafo de
+  estilo de vida, productos y paisajes, creando imágenes para una amplia gama de
+  solicitudes, desde medios digitales hasta obras impresas.
+see-my-works: Ver mis trabajos

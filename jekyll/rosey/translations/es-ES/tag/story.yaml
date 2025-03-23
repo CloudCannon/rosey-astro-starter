@@ -1,0 +1,16 @@
+urlTranslation: tag/story.html
+_inputs:
+  $:
+    type: object
+    comment: "[See tag/story](https://driven-darkness.cloudvent.net/tag/story)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [tag/story](https://driven-darkness.cloudvent.net/tag/story)
+          inputs: []
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [tag/story](https://driven-darkness.cloudvent.net/tag/story)
+          inputs: []

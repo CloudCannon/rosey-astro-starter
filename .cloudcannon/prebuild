@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "Running in the root of the monorepo"
+cd $SITE_DIR
+echo "cd into and run prebuild in subdir $SITE_DIR"
+./.cloudcannon/prebuild

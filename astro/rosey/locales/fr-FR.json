@@ -41,7 +41,7 @@
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
 		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
-		"value": "<p>Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour Astro.</p>\n"
+		"value": "<p>Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour Astro. Checking this works post preinstall move.</p>\n"
 	},
 	"markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo": {
 		"original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test. Adding this as well, after making this site part of a monorepo.",

@@ -1,0 +1,106 @@
+urlTranslation: project/mountains.html
+_inputs:
+  $:
+    type: object
+    comment: "[See
+      project/mountains](https://driven-darkness.cloudvent.net/project/mountain\
+      s)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (es-ES)
+          comment: Text to translate on
+            [project/mountains](https://driven-darkness.cloudvent.net/project/mountains)
+          inputs:
+            - markdown:defecerit-sed-isti-ipsi-qui-voluptate-et-dolore-omnia-metiuntur-nonne-clamant-sapienti-plus-semper-adesse-quod-velit-quam-quod-nolit-quae-quidem-sapientes-sequuntur-duce-natura-tamquam-videntes-quod-enim-dissolutum-sit-id-esse-sine-sensu-quod-autem-sine-sensu-sunt-omnia-longum-est-enim-ad-omnia-respondere-quae-a-te-dicta-sunt-nam-cui-proposito-sit-conservatio-sui-necesse-est-huic-partes-quoque-sui-caras-suo-genere-laudabiles-servari
+            - markdown:in-qua-quid-est-boni-praeter-summam-voluptatem-et-eam-sempiternam-cur-post-tarentum-ad-archytam-qua-ex-cognitione-facilior-facta-est-investigatio-rerum-occultissimarum-negat-enim-tenuissimo-victu-id-est-contemptissimis-escis-et-potionibus-minorem-voluptatem
+            - markdown:praeteritis-inquit-gaudeo-praeteritis-inquit-gaudeo-quod-inquit-quamquam-voluptatibus-quibusdam-est-saepe-iucundius-tamen-expetitur-propter-voluptatem-scientiam-pollicentur-quam-non-erat-mirum-sapientiae-cupido-patria-esse-cariorem-non-quaeritur-autem-quid-naturae-tuae-consentaneum-sit-sed-quid-disciplinae-ita-ne-hoc-quidem-modo-paria-peccata-sunt-ita-prorsus-inquam-nunc-ita-separantur-ut-disiuncta-sint-quo-nihil-potest-esse-perversius-virtutibus-igitur-rectissime-mihi-videris-et-ad-consuetudinem-nostrae-orationis
+        - heading: Already translated (es-ES)
+          comment: Text already translated on
+            [project/mountains](https://driven-darkness.cloudvent.net/project/mountains)
+          inputs: []
+  markdown:defecerit-sed-isti-ipsi-qui-voluptate-et-dolore-omnia-metiuntur-nonne-clamant-sapienti-plus-semper-adesse-quod-velit-quam-quod-nolit-quae-quidem-sapientes-sequuntur-duce-natura-tamquam-videntes-quod-enim-dissolutum-sit-id-esse-sine-sensu-quod-autem-sine-sensu-sunt-omnia-longum-est-enim-ad-omnia-respondere-quae-a-te-dicta-sunt-nam-cui-proposito-sit-conservatio-sui-necesse-est-huic-partes-quoque-sui-caras-suo-genere-laudabiles-servari:
+    label: Defecerit Sed isti ipsi, qui voluptate et ...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://driven-darkness.cloudvent.net/project/mountains#:~:text=Def\
+      ecerit%20Sed%20isti,genere%20laudabiles%20servari)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Defecerit Sed isti ipsi, qui voluptate et dolore omnia metiuntur, nonne
+        clamant sapienti plus semper adesse quod velit quam quod nolit? Quae
+        quidem sapientes sequuntur duce natura tamquam videntes; Quod enim
+        dissolutum sit, id esse sine sensu, quod autem sine sensu. Sunt omnia
+        Longum est enim ad omnia respondere, quae a te dicta sunt. Nam cui
+        proposito sit conservatio sui, necesse est huic partes quoque sui caras
+        suo genere laudabiles servari.
+  markdown:in-qua-quid-est-boni-praeter-summam-voluptatem-et-eam-sempiternam-cur-post-tarentum-ad-archytam-qua-ex-cognitione-facilior-facta-est-investigatio-rerum-occultissimarum-negat-enim-tenuissimo-victu-id-est-contemptissimis-escis-et-potionibus-minorem-voluptatem:
+    label: In qua quid est boni praeter summam volupt...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://driven-darkness.cloudvent.net/project/mountains#:~:text=In%\
+      20qua%20quid,potionibus)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur
+        post Tarentum ad Archytam? Qua ex cognitione facilior facta est
+        investigatio rerum occultissimarum. Negat enim tenuissimo victu, id est
+        contemptissimis escis et potionibus, minorem voluptatem.
+  markdown:praeteritis-inquit-gaudeo-praeteritis-inquit-gaudeo-quod-inquit-quamquam-voluptatibus-quibusdam-est-saepe-iucundius-tamen-expetitur-propter-voluptatem-scientiam-pollicentur-quam-non-erat-mirum-sapientiae-cupido-patria-esse-cariorem-non-quaeritur-autem-quid-naturae-tuae-consentaneum-sit-sed-quid-disciplinae-ita-ne-hoc-quidem-modo-paria-peccata-sunt-ita-prorsus-inquam-nunc-ita-separantur-ut-disiuncta-sint-quo-nihil-potest-esse-perversius-virtutibus-igitur-rectissime-mihi-videris-et-ad-consuetudinem-nostrae-orationis:
+    label: Praeteritis, inquit, gaudeo. Praeteritis, ...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://driven-darkness.cloudvent.net/project/mountains#:~:text=Pra\
+      eteritis,consuetudinem%20nostrae%20orationis)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Praeteritis, inquit, gaudeo. Praeteritis, inquit, gaudeo. Quod, inquit,
+        quamquam voluptatibus quibusdam est saepe iucundius, tamen expetitur
+        propter voluptatem. Scientiam pollicentur, quam non erat mirum
+        sapientiae cupido patria esse cariorem. Non quaeritur autem quid naturae
+        tuae consentaneum sit, sed quid disciplinae. Ita ne hoc quidem modo
+        paria peccata sunt. Ita prorsus, inquam; Nunc ita separantur, ut
+        disiuncta sint, quo nihil potest esse perversius. Virtutibus igitur
+        rectissime mihi videris et ad consuetudinem nostrae orationis.
+markdown:defecerit-sed-isti-ipsi-qui-voluptate-et-dolore-omnia-metiuntur-nonne-clamant-sapienti-plus-semper-adesse-quod-velit-quam-quod-nolit-quae-quidem-sapientes-sequuntur-duce-natura-tamquam-videntes-quod-enim-dissolutum-sit-id-esse-sine-sensu-quod-autem-sine-sensu-sunt-omnia-longum-est-enim-ad-omnia-respondere-quae-a-te-dicta-sunt-nam-cui-proposito-sit-conservatio-sui-necesse-est-huic-partes-quoque-sui-caras-suo-genere-laudabiles-servari: ""
+markdown:in-qua-quid-est-boni-praeter-summam-voluptatem-et-eam-sempiternam-cur-post-tarentum-ad-archytam-qua-ex-cognitione-facilior-facta-est-investigatio-rerum-occultissimarum-negat-enim-tenuissimo-victu-id-est-contemptissimis-escis-et-potionibus-minorem-voluptatem: ""
+markdown:praeteritis-inquit-gaudeo-praeteritis-inquit-gaudeo-quod-inquit-quamquam-voluptatibus-quibusdam-est-saepe-iucundius-tamen-expetitur-propter-voluptatem-scientiam-pollicentur-quam-non-erat-mirum-sapientiae-cupido-patria-esse-cariorem-non-quaeritur-autem-quid-naturae-tuae-consentaneum-sit-sed-quid-disciplinae-ita-ne-hoc-quidem-modo-paria-peccata-sunt-ita-prorsus-inquam-nunc-ita-separantur-ut-disiuncta-sint-quo-nihil-potest-esse-perversius-virtutibus-igitur-rectissime-mihi-videris-et-ad-consuetudinem-nostrae-orationis: ""

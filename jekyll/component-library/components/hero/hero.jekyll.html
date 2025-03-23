@@ -1,0 +1,42 @@
+<!-- begin hero -->
+{% assign c = "c-hero" %}
+<section class="{{c}} animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="{{c}}__inner">
+
+          <div class="{{c}}__left">
+            <h1 class="{{c}}__title" data-rosey="{{ include.title | slugify }}">{{ include.title }}</h1>
+            <div class="{{c}}__description" data-rosey="{{ include.description_html | slugify }}">{{ include.description_html }}</div>
+            <div class="{{c}}__btn">
+              <a
+                href="{{ include.cta_button_link }}"
+                class="cta-button c-button c-button--primary c-button--small"
+                data-rosey="{{ include.cta_button | slugify }}">{{ include.cta_button }}</a>
+              <a class="works-button c-button c-button--secondary c-button--small" href="{{ include.works_button_link }}">
+                <span class="circle-bg">
+                  <i class="ion ion-md-arrow-down button-arrow"></i>
+                </span>
+                <span data-rosey="{{ include.works_button | slugify }}">
+                  {{ include.works_button }}
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="{{c}}__right">
+            <div class="{{c}}__image">
+              <img
+                loading="lazy"
+                src="{{ include.image }}"
+                alt="{{ include.hero_image_alt }}">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->

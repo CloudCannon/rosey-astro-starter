@@ -1,0 +1,39 @@
+{
+  "name": "vonge-jekyll-bookshop-template",
+  "type": "module",
+  "description": "Vonge template for CloudCannon",
+  "scripts": {
+    "bookshop": "bookshop-browser",
+    "jekyll:install": "bundle config set --local path 'vendor/bundle' && BUNDLE_GEMFILE=site/Gemfile bundle install",
+    "bookshop-dev": "bookshop-browser -p 6086 -b ./component-library",
+    "bookshop-hosted": "bookshop-browser -b ./component-library -o site/js/bookshop-hosted.js",
+    "bookshop-live": "bookshop-live -b ./component-library -o site/_cloudcannon/bookshop-live.js",
+    "jekyll": "BUNDLE_GEMFILE=site/Gemfile bundle exec jekyll serve --source site --port 6060 --trace --unpublished",
+    "start": "run-p bookshop jekyll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCannon/vonge-jekyll-bookshop-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CloudCannon/vonge-jekyll-bookshop-template/issues"
+  },
+  "homepage": "https://github.com/CloudCannon/vonge-jekyll-bookshop-template#readme",
+  "devDependencies": {
+    "@bookshop/browser": "3.14.0",
+    "@bookshop/jekyll-engine": "3.14.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@bookshop/generate": "3.14.0",
+    "markdown-it": "^13.0.1",
+    "node-html-markdown": "^1.3.0",
+    "rosey": "^2.3.3",
+    "slugify": "^1.6.6",
+    "yaml": "^2.4.2",
+    "smartling-api-sdk-nodejs": "^2.11.0",
+    "dotenv": "^16.4.5"
+  }
+}

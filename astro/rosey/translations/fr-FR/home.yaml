@@ -241,9 +241,9 @@ cloudcannon: " CloudCannon "
 github: " GitHub "
 markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
   Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour
-  Astro.
+  Astro. Checking this works post preinstall move.
 markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo:
-  Ajout d'un paragraphe _supplémentaire_ pour un petit test de **Smartling**. Je
+  Ajout d'un paragraphe *supplémentaire* pour un petit test de **Smartling**. Je
   l'ajoute également, après avoir intégré ce site dans une monorepo.
 markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: Contrôlez les traductions via une interface conviviale dans CloudCannon.
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
