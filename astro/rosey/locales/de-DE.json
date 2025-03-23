@@ -1,12 +1,4 @@
 {
-	"blog": {
-		"original": " Blog ",
-		"value": " Blog "
-	},
-	"rss-feed": {
-		"original": " RSS Feed ",
-		"value": " RSS-Feed "
-	},
 	"a-test-page": {
 		"original": "A Test Page",
 		"value": "Eine Testseite"
@@ -15,6 +7,10 @@
 		"original": "A test post vid",
 		"value": "Ein Test-Post-Video"
 	},
+	"blog": {
+		"original": " Blog ",
+		"value": " Blog "
+	},
 	"bob-ross": {
 		"original": "Bob ross",
 		"value": "Bob Ross"
@@ -22,6 +18,10 @@
 	"bob-ross-test": {
 		"original": "Bob Ross Test",
 		"value": "Bob Ross Test"
+	},
+	"rss-feed": {
+		"original": " RSS Feed ",
+		"value": " RSS-Feed "
 	},
 	"testing": {
 		"original": "Testing",
