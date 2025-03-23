@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+mkdir site/_plugins
+mv rosey-connector/ssgs/jekyllMarkdownPlugin.rb site/_plugins/jekyllMarkdownPlugin.rb
