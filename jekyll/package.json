@@ -1,6 +1,6 @@
 {
   "name": "vonge-jekyll-bookshop-template",
-  "private": true,
+  "type": "module",
   "description": "Vonge template for CloudCannon",
   "scripts": {
     "bookshop": "bookshop-browser",
