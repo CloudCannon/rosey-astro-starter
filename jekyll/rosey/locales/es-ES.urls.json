@@ -3,13 +3,13 @@
 		"original": "about/index.html",
 		"value": "about/index.html"
 	},
-	"elements/index.html": {
-		"original": "elements/index.html",
-		"value": "elements/index.html"
-	},
 	"blog/index.html": {
 		"original": "blog/index.html",
 		"value": "blog/index.html"
+	},
+	"elements/index.html": {
+		"original": "elements/index.html",
+		"value": "elements/index.html"
 	},
 	"index.html": {
 		"original": "index.html",
@@ -20,27 +20,57 @@
 		"value": "projects/index.html"
 	},
 	"tag/life/index.html": {
-		"original": "tag/life/index.html",
 		"value": "tag/life.html"
 	},
 	"tag/lifestyle/index.html": {
-		"original": "tag/lifestyle/index.html",
 		"value": "tag/lifestyle.html"
 	},
-	"tag/notes/index.html": {
-		"original": "tag/notes/index.html",
-		"value": "tag/notes.html"
-	},
 	"tag/rest/index.html": {
-		"original": "tag/rest/index.html",
 		"value": "tag/rest.html"
 	},
-	"tag/story/index.html": {
-		"original": "tag/story/index.html",
-		"value": "tag/story.html"
+	"tag/notes/index.html": {
+		"value": "tag/notes.html"
 	},
 	"tag/travel/index.html": {
-		"original": "tag/travel/index.html",
 		"value": "tag/travel.html"
+	},
+	"tag/story/index.html": {
+		"value": "tag/story.html"
+	},
+	"project/antelope-anyon/index.html": {
+		"original": "project/antelope-anyon/index.html",
+		"value": "project/antelope-anyon.html"
+	},
+	"project/desk-setup/index.html": {
+		"original": "project/desk-setup/index.html",
+		"value": "project/desk-setup.html"
+	},
+	"project/big-airplane/index.html": {
+		"original": "project/big-airplane/index.html",
+		"value": "project/big-airplane.html"
+	},
+	"project/green-plant/index.html": {
+		"original": "project/green-plant/index.html",
+		"value": "project/green-plant.html"
+	},
+	"project/mountains/index.html": {
+		"original": "project/mountains/index.html",
+		"value": "project/mountains.html"
+	},
+	"project/quiet-lake/index.html": {
+		"original": "project/quiet-lake/index.html",
+		"value": "project/quiet-lake.html"
+	},
+	"project/sea-and-rest/index.html": {
+		"original": "project/sea-and-rest/index.html",
+		"value": "project/sea-and-rest.html"
+	},
+	"project/prague-city/index.html": {
+		"original": "project/prague-city/index.html",
+		"value": "project/prague-city.html"
+	},
+	"project/the-rocks/index.html": {
+		"original": "project/the-rocks/index.html",
+		"value": "project/the-rocks.html"
 	}
 }
