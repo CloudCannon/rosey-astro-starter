@@ -1,0 +1,109 @@
+locales:
+  - es-ES
+base_url: https://driven-darkness.cloudvent.net/
+rosey_paths:
+  rosey_base_file_path: ./rosey/base.json
+  rosey_base_urls_file_path: ./rosey/base.urls.json
+  translations_dir_path: ./rosey/translations
+  locales_dir_path: ./rosey/locales
+smartling:
+  smartling_enabled: false
+  dev_project_id: 403ba8439
+  dev_user_identifier: widgoyosxtbfsfonzlcfejabgndxst
+  ping_interval: 20000
+  ping_maximum: 6
+  pings_to_wait_for_auth: 3
+  incoming_translations_dir: ./rosey/smartling-translations/
+  outgoing_translations_file_path: ./rosey/outgoing-smartling-translations.json
+  outgoing_translation_file_uri: /rosey/translations/
+_inputs:
+  locales:
+    type: array
+    comment: >-
+      Add and remove the locales you need for your site. Locales can be any
+      format, usually either a two letter code (es), or a hyphenated four letter
+      code (es-ES).
+  base_url:
+    comment: >-
+      The url to the CloudCannon staging site that you enter your translation
+      data to. Used to generate links to the original content to help provide
+      context to translators.
+  rosey_paths:
+    type: object
+    options:
+      preview:
+        icon: folder
+  rosey_base_file_path:
+    type: text
+    comment: The location of your Rosey base.json file
+  rosey_base_urls_file_path:
+    type: text
+    comment: The location of your Rosey base.urls.json file
+  translations_dir_path:
+    type: text
+    comment: The location of the directory for your Rosey translation YAML files
+  locales_dir_path:
+    type: text
+    comment: The location of the directory for your Rosey locales JSON files
+  smartling:
+    type: object
+    options:
+      preview:
+        icon: smart_toy
+  smartling_enabled:
+    type: switch
+    comment: >-
+      Enable automatic Smartling AI powered machine translations? Requires a
+      Smartling account with an API key set in this site's environment
+      variables. Make sure you understand the billing around these translations
+      before enabling this.
+  dev_project_id:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: Enter your Smartling project id here
+  dev_user_identifier:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: Enter your Smartling user id here
+  ping_interval:
+    type: number
+    hidden: '!smartling_enabled'
+    comment: >-
+      The time between pings to Smartlings API when checking if translations are
+      done yet. Measured in ms.
+  ping_maximum:
+    type: number
+    hidden: '!smartling_enabled'
+    comment: >-
+      The number of pings to try Smartlings API for new translations before
+      giving up.
+  pings_to_wait_for_auth:
+    type: number
+    hidden: '!smartling_enabled'
+    comment: >-
+      The number of pings to try Smartlings API for authorization for new
+      translations before timing out. If there are no new translations, but the
+      API call somehow goes through, Smartling will get stuck on
+      AWAITING_AUTHORIZATION. If this is the case can save time to exit before
+      trying the full set of pings.
+  incoming_translations_dir:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: >-
+      The location of the directory that the incoming translation files are
+      downloaded to.
+  outgoing_translations_file_path:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: The location of the outgoing translations JSON file.
+  outgoing_translation_file_uri:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: >-
+      The unique identifier that Smartling uses for this site. Can be anything
+      as long as it's unique to this site in your Smartling project.
+  tagged_body_content_elements:
+    type: array
+    comment: >-
+      The block level elements to add data-rosey tags to when parsing body
+      content on this site.
