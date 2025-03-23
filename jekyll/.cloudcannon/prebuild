@@ -5,3 +5,6 @@ mkdir site/_plugins
 echo "Moving jekyllMarkdownPlugin.rb to _plugins"
 mv rosey-connector/ssgs/jekyllMarkdownPlugin.rb site/_plugins/jekyllMarkdownPlugin.rb
 echo "Moved jekyllMarkdownPlugin.rb to _plugins!"
+echo "Moving jekyllImagePlugin.rb to _plugins"
+mv rosey-connector/ssgs/jekyllImagePlugin.rb site/_plugins/jekyllImagePlugin.rb
+echo "Moved jekyllImagePlugin.rb to _plugins!"
