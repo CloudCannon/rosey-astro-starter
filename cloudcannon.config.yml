@@ -1,5 +1,3 @@
-source: astro
-
 paths:
   static: 'public'
   uploads: public/images
@@ -20,7 +18,7 @@ collections_config:
     schemas:
       default:
         name: New Page
-        path: 'astro/.cloudcannon/schemas/page.md'
+        path: '.cloudcannon/schemas/page.md'
         remove_extra_inputs: false
     create:
       path: '[relative_base_path]/{filename|slugify}.md'
@@ -39,7 +37,7 @@ collections_config:
     schemas:
       default:
         name: New Post
-        path: 'astro/.cloudcannon/schemas/post.mdx'
+        path: '.cloudcannon/schemas/post.mdx'
     create:
       path: '[relative_base_path]/{filename|slugify}.mdx'
     _inputs:
