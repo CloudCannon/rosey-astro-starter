@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-echo "Running in the root of the monorepo"
-mv rosey-connector $SITE_DIR
-echo "moved rosey-connector into subdir $SITE_DIR"
