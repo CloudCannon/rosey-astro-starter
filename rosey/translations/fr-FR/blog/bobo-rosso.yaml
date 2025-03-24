@@ -122,12 +122,12 @@ _inputs:
         outside shape. Always follow the angles. Don’t just cover it all up —
         leave these spots!
   minutes:
-    label: 0 minutes
+    label: 1 minutes
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=0%20min\
+      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=1%20min\
       utes)"
   recent-posts:
     label: Recent Posts
@@ -161,13 +161,13 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Video)"
   words:
-    label: 93 words
+    label: 326 words
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=93%20wo\
-      rds)"
+      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=326%20w\
+      ords)"
 a-snippet-in-the-middle-of-markdown-content: Un extrait au milieu du contenu Markdown. Changed post monorepo :)
 a-test-page: Une page test
 a-test-post-vid: Un post-vidéo test
