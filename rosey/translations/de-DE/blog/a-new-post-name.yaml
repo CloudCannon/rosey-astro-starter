@@ -102,12 +102,12 @@ _inputs:
         believe you can do. Get it to where you want it, and leave it alone.
         That’s the fun part of this whole technique.
   minutes:
-    label: 0 minutes
+    label: 1 minutes
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=0%\
+      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=1%\
       20minutes)"
   recent-posts:
     label: Recent Posts
@@ -142,13 +142,13 @@ _inputs:
       page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=Vi\
       deo)"
   words:
-    label: 93 words
+    label: 326 words
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=93\
-      %20words)"
+      page](https://poised-plain.cloudvent.net/blog/a-new-post-name/#:~:text=32\
+      6%20words)"
 a-test-page: Eine Testseite
 a-test-post-vid: Ein Test-Post-Video
 blog: " Blog "
