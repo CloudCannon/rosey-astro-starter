@@ -23,10 +23,6 @@
 		"original": "tags/video/index.html",
 		"value": "tags/video/index.html"
 	},
-	"blog/a-test-page/index.html": {
-		"original": "blog/a-test-page/index.html",
-		"value": "blog/a-test-page/index.html"
-	},
 	"blog/a-new-post-name/index.html": {
 		"original": "blog/a-new-post-name/index.html",
 		"value": "blog/a-new-post-name/index.html"
@@ -34,5 +30,9 @@
 	"blog/bobo-rosso/index.html": {
 		"original": "blog/bobo-rosso/index.html",
 		"value": "blog/bobo-rosso/index.html"
+	},
+	"blog/a-test-page/index.html": {
+		"original": "blog/a-test-page/index.html",
+		"value": "blog/a-test-page/index.html"
 	}
 }
