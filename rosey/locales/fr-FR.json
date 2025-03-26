@@ -7,6 +7,30 @@
 		"original": " RSS Feed ",
 		"value": " Flux RSS "
 	},
+	"a-test-page": {
+		"original": " A Test Page ",
+		"value": "Une page test"
+	},
+	"a-test-post-vid": {
+		"original": "A test post vid",
+		"value": "Un post-vidéo test"
+	},
+	"bob-ross": {
+		"original": "Bob ross",
+		"value": "Bob ross"
+	},
+	"bob-ross-test": {
+		"original": " Bob Ross Test ",
+		"value": "Test Bob Ross"
+	},
+	"testing": {
+		"original": "Testing",
+		"value": "Essais"
+	},
+	"video": {
+		"original": "Video",
+		"value": "Vidéo"
+	},
 	"cloudcannon": {
 		"original": " CloudCannon ",
 		"value": " CloudCannon "
@@ -54,30 +78,6 @@
 	"this-is-just-a-test": {
 		"original": " This is just a test. ",
 		"value": " Ce n'est qu'un test. "
-	},
-	"a-test-page": {
-		"original": " A Test Page ",
-		"value": "Une page test"
-	},
-	"a-test-post-vid": {
-		"original": "A test post vid",
-		"value": "Un post-vidéo test"
-	},
-	"bob-ross": {
-		"original": "Bob ross",
-		"value": "Bob ross"
-	},
-	"bob-ross-test": {
-		"original": " Bob Ross Test ",
-		"value": "Test Bob Ross"
-	},
-	"testing": {
-		"original": "Testing",
-		"value": "Essais"
-	},
-	"video": {
-		"original": "Video",
-		"value": "Vidéo"
 	},
 	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
 		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
