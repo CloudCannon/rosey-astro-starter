@@ -27,7 +27,7 @@ What the RCC connector does is create a way for non-technical editors to create 
 
 A traditional easier-to-understand approach would be to maintain separate copies of each page for each language. This would mean creating a directory for each language, with content pages for each. This is sometimes referred to as split-by-directory. While it is easy to understand, and debug, it can become tedious to have to replicate any non-text changes across all the separate copies of your languages.
 
-This approach has you maintain one copy of a page. Inputs are generated for all the text content that is tagged for translation, meaning editors can focus on providing just the translations instead of replicating all changes made to the page. It basically separates your content and your layouts - a concept well established in the SSG (and CMS) world. You can change the layout and styling in one place, and have those changes reflected across all the languages you translate to.
+This approach has you maintain one copy of a page. Inputs are generated for all the text content that is tagged for translation, meaning editors can focus on providing just the translations instead of replicating all changes made to a page. It basically separates your content and your layouts - a concept well established in the SSG (and CMS) world. You can change the layout and styling in one place, and have those changes reflected across all the languages you translate to.
 
 ## Getting started
 
@@ -48,6 +48,14 @@ This approach has you maintain one copy of a page. Inputs are generated for all 
 6. To your production site, add the env variable `ROSEYPROD` with a value of `true`.
 
 7. In your `rosey/config.yml` change the language code in the `locales` array to one that you want, and add your staging cloudvent url to the `base_url` key.
+
+8. To add automatic AI-powered translations - which your editors can then QA - enable Smartling in your `rosey/config.yaml` file, by setting `smartling_enabled: true`. Make sure to fill in your `dev_project_id`, and `dev_user_identifier`, with the credentials in your Smartling account. Ensure you have added you secret API key to your environment variables in CloudCannon, as `DEV_USER_SECRET`. You can set this locally in a `.env` file if you want to test it in your development environment. 
+
+    > [!IMPORTANT]
+    > Make sure to not push any secret API keys to your source control. The `.env` file should already be in your .gitignore.
+
+    > [!IMPORTANT]
+    > **Be aware these translations have some cost involved**, so make sure you understand the pricing around Smartling machine-translations before enabling this. 
 
 ## Adding this to an existing site
 Follow the instructions on [this repository](https://github.com/CloudCannon/rcc?tab=readme-ov-file#getting-started).
