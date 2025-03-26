@@ -20,7 +20,7 @@ What the RCC connector does is create a way for non-technical editors to create 
 
 ## Requirements
 
-- A CloudCannon organisation with access to [publishing workflows](https://cloudcannon.com/pricing/)
+- A CloudCannon organisation with access to [publishing workflows](https://cloudcannon.com)
 - A static site
 
 ## Why is this useful?
