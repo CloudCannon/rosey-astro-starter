@@ -44,6 +44,7 @@ async function generateLocale(locale, configData) {
   console.log(`📂📂 ${localesDirPath} ensuring directory exists`);
   await fs.promises.mkdir(localesDirPath, { recursive: true });
 
+  // Get last round's translations
   const oldLocaleData = JSON.parse(
     await readFileWithFallback(localePath, "{}")
   );
