@@ -1,0 +1,70 @@
+---
+import { visit, SKIP } from "unist-util-visit";
+import { fromHtmlIsomorphic } from "hast-util-from-html-isomorphic";
+import { toHtml } from "hast-util-to-html";
+import type { Element } from "hast";
+import { generateRoseyMarkdownID } from "../helpers/component-helper";
+import markdownIt from "markdown-it";
+const md = markdownIt();
+
+// Block level elements to add tags to - inline elements should not have tag added
+const textElementTagNames = ["p", "li", "h1", "h2", "h3", "h4", "h5", "h6"];
+
+const formatInnerText = (text: string) => {
+  if (!text) {
+    return "";
+  }
+  const removedSup = text.replaceAll("<sup>", "").replaceAll("</sup>", "");
+  const removedSub = removedSup
+    .replaceAll("<sub>", "")
+    .replaceAll("</sub>", "");
+  return removedSub;
+};
+
+const isTextElement = (element: Element) =>
+  textElementTagNames.includes(element.tagName);
+
+const { content } = Astro.props;
+const HTMLTextContent = content ? md.render(content) : "";
+const hastTree = fromHtmlIsomorphic(HTMLTextContent, { fragment: true });
+visit(hastTree, function (node, index, parent) {
+  if (node.type !== "element") {
+    return;
+  }
+
+  // Combine all the childrens values if text is in them (for the id)
+  if (isTextElement(node)) {
+    let elementInnerText = "";
+    node.children.forEach((child) => {
+      if (child.type === "text") {
+        const childFormatted = formatInnerText(child.value);
+        elementInnerText += childFormatted;
+      }
+      if (child.type === "element" && child.children) {
+        child.children.forEach((grandchild) => {
+          if (grandchild.type === "text") {
+            const grandChildFormatted = formatInnerText(grandchild.value);
+            elementInnerText += grandChildFormatted;
+          }
+          if (grandchild.type === "element" && grandchild.children) {
+            grandchild.children.forEach((greatGrandchild) => {
+              if (greatGrandchild.type === "text") {
+                const greatGrandChildFormatted = formatInnerText(
+                  greatGrandchild.value
+                );
+                elementInnerText += greatGrandChildFormatted;
+              }
+            });
+          }
+        });
+      }
+    });
+    node.properties["data-rosey"] = generateRoseyMarkdownID(elementInnerText);
+    // Skip any children that might accidentally get a nested tag
+    return SKIP;
+  }
+});
+const taggedHTML = toHtml(hastTree);
+---
+
+<div class="markdown-text" set:html={taggedHTML} />
