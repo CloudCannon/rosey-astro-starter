@@ -10,7 +10,7 @@
       "total": 1
     },
     "a-test-page": {
-      "original": "A Test Page",
+      "original": " A Test Page ",
       "value": null,
       "pages": {
         "blog/a-new-post-name/index.html": 1,
@@ -253,7 +253,7 @@
       "total": 1
     },
     "minutes": {
-      "original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
+      "original": "1<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
       "value": null,
       "pages": {
         "blog/a-new-post-name/index.html": 1,
@@ -329,7 +329,7 @@
       "total": 5
     },
     "words": {
-      "original": "90<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
+      "original": "326<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
       "value": null,
       "pages": {
         "blog/a-new-post-name/index.html": 1,
