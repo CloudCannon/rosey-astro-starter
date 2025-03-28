@@ -268,12 +268,12 @@ _inputs:
         we haven’t even done anything to it yet. Let’s make some happy little
         clouds in our world. Let your heart be your guide.
   minutes:
-    label: 1 minutes
+    label: 0 minutes
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=1%20mi\
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=0%20mi\
       nutes)"
   recent-posts:
     label: Recent Posts
@@ -307,13 +307,13 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=Video)"
   words:
-    label: 326 words
+    label: 90 words
     hidden: false
     type: textarea
     options: {}
     comment: "[See on
-      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=326%20\
-      words)"
+      page](https://poised-plain.cloudvent.net/blog/a-test-page/#:~:text=90%20w\
+      ords)"
   yay-we-support-snippets-now!:
     label: Yay, we support snippets now!
     hidden: false
