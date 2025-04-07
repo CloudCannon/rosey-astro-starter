@@ -8,7 +8,8 @@ _inputs:
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate on [](https://poised-plain.cloudvent.net/)
-          inputs: []
+          inputs:
+            - markdown:lets-just-add-one-more-smartling-do-yo-thing
         - heading: Already translated (fr-FR)
           comment: Text already translated on [](https://poised-plain.cloudvent.net/)
           inputs:
@@ -134,6 +135,28 @@ _inputs:
       icon: translate
       content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
+  markdown:lets-just-add-one-more-smartling-do-yo-thing:
+    label: Lets just add one more, Smartling do yo th...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Lets%20just%20add,do%20\
+      yo%20thing)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Lets just add one more, **Smartling** do yo thing.
   markdown:more-changes-on-the-real-staging-branch:
     label: More changes on the real staging branch.
     hidden: false
@@ -249,6 +272,7 @@ markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: Cont
 markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
   Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron
   est une couleur très agréable.
+markdown:lets-just-add-one-more-smartling-do-yo-thing: ""
 markdown:more-changes-on-the-real-staging-branch: Plus de changements sur la branche staging.
 markdown:testing-translations-after-separating-out-the-logic-from-the-translations: Tester les traductions après avoir séparé la logique des traductions.
 markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
