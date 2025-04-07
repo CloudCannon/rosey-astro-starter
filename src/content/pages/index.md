@@ -37,6 +37,9 @@ content_blocks:
 
 
         More changes on the real staging branch.
+
+
+        Lets just add one more, **Smartling** do yo thing.
       color: '#393939'
     image:
       image_path: /src/assets/images/featured-image-5.jpg

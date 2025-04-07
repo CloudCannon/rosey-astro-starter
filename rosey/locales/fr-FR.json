@@ -71,6 +71,10 @@
 		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
 		"value": "<p>Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron est une couleur très agréable.</p>\n"
 	},
+	"markdown:lets-just-add-one-more-smartling-do-yo-thing": {
+		"original": "Lets just add one more, <strong>Smartling</strong> do yo thing.",
+		"value": "<p>Just enter a translation!</p>\n"
+	},
 	"markdown:mix-your-color-marbly-don't-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-it's-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-we'll-have-a-super-time-don't-fiddle-with-it-all-day": {
 		"original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
 		"value": "<p>Mélangez votre couleur marbrée, ne la mélangez pas morte. Les arbres couvrent une multitude de péchés. La seule condition est qu'il vous rende heureux. Si cela vous rend heureux, c'est bien. Lorsque vous le faites à votre manière, vous pouvez aller où vous voulez. Nous allons passer un excellent moment. Ne le manipulez pas toute la journée.</p>\n"
