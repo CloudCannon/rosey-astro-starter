@@ -2,7 +2,7 @@ urlTranslation: index.html
 _inputs:
   $:
     type: object
-    comment: "[See ](https://poised-plain.cloudvent.net/)"
+    comment: '[See ](https://poised-plain.cloudvent.net/)'
     options:
       place_groups_below: false
       groups:
@@ -16,13 +16,19 @@ _inputs:
             - blog
             - cloudcannon
             - github
-            - markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
-            - markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo
-            - markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
-            - markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
+            - >-
+              markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro
+            - >-
+              markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo
+            - >-
+              markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon
+            - >-
+              markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color
             - markdown:more-changes-on-the-real-staging-branch
-            - markdown:testing-translations-after-separating-out-the-logic-from-the-translations
-            - markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
+            - >-
+              markdown:testing-translations-after-separating-out-the-logic-from-the-translations
+            - >-
+              markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics
             - markdown:we're-changing-things
             - rosey-cloudcannon-connector
             - rss-feed
@@ -32,19 +38,19 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=Blog)"
+    comment: '[See on page](https://poised-plain.cloudvent.net/#:~:text=Blog)'
   cloudcannon:
     label: CloudCannon
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=CloudCannon)"
+    comment: '[See on page](https://poised-plain.cloudvent.net/#:~:text=CloudCannon)'
   github:
     label: GitHub
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=GitHub)"
+    comment: '[See on page](https://poised-plain.cloudvent.net/#:~:text=GitHub)'
   markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
     label: A demo site for the Rosey-CloudCannon Mult...
     hidden: false
@@ -59,9 +65,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=A%20demo%20site,Connect\
-      or%20for%20Astro)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=A%20demo%20site,Connector%20for%20Astro)
     context:
       open: false
       title: Untranslated Text
@@ -81,14 +87,15 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=Adding%20another%20para\
-      graph,of%20a%20monorepo)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Adding%20another%20paragraph,of%20a%20monorepo)
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Adding _another_ paragraph for a little **Smartling** test. Adding this
+      content: >-
+        Adding _another_ paragraph for a little **Smartling** test. Adding this
         as well, after making this site part of a monorepo.
   markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon:
     label: Control translations via a user friendly i...
@@ -104,9 +111,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=Control%20translations%\
-      20via,interface%20in%20CloudCannon)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Control%20translations%20via,interface%20in%20CloudCannon)
     context:
       open: false
       title: Untranslated Text
@@ -126,14 +133,15 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=It's%20cold,a%20nice%20\
-      color)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=It's%20cold,a%20nice%20color)
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: It's cold, but it's beautiful. Get tough with it, get strong. Brown is
+      content: >-
+        It's cold, but it's beautiful. Get tough with it, get strong. Brown is
         such a nice color.
   markdown:lets-just-add-one-more-smartling-do-yo-thing:
     label: Lets just add one more, Smartling do yo th...
@@ -149,9 +157,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=Lets%20just%20add,do%20\
-      yo%20thing)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Lets%20just%20add,do%20yo%20thing)
     context:
       open: false
       title: Untranslated Text
@@ -171,9 +179,9 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=More%20changes%20on,rea\
-      l%20staging%20branch)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=More%20changes%20on,real%20staging%20branch)
   markdown:testing-translations-after-separating-out-the-logic-from-the-translations:
     label: Testing translations after separating out ...
     hidden: false
@@ -188,14 +196,15 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=Testing%20translations%\
-      20after,from%20the%20translations)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Testing%20translations%20after,from%20the%20translations)
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Testing translations after _separating_ out the logic from the
+      content: >-
+        Testing translations after _separating_ out the logic from the
         translations.
   markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
     label: They say everything looks better with odd ...
@@ -211,14 +220,15 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=They%20say%20everything\
-      ,upset%20the%20critics)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=They%20say%20everything,upset%20the%20critics)
     context:
       open: false
       title: Untranslated Text
       icon: translate
-      content: They say _everything_ looks better with odd numbers of things. But
+      content: >-
+        They say _everything_ looks better with odd numbers of things. But
         sometimes I put even numbers—just to upset the critics.
   markdown:we're-changing-things:
     label: We're changing things.
@@ -234,51 +244,51 @@ _inputs:
       removeformat: true
       copyformatting: true
       blockquote: true
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=We're%20changing%20thin\
-      gs.)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=We're%20changing%20things.)
   rosey-cloudcannon-connector:
     label: Rosey - CloudCannon Connector
     hidden: false
     type: textarea
     options: {}
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=Rosey%20-%20CloudCannon\
-      %20Connector)"
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=Rosey%20-%20CloudCannon%20Connector)
   rss-feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-    comment: "[See on page](https://poised-plain.cloudvent.net/#:~:text=RSS%20Feed)"
+    comment: '[See on page](https://poised-plain.cloudvent.net/#:~:text=RSS%20Feed)'
   this-is-just-a-test:
     label: This is just a test.
     hidden: false
     type: textarea
     options: {}
-    comment: "[See on
-      page](https://poised-plain.cloudvent.net/#:~:text=This%20is%20just%20a%20\
-      test.)"
-blog: " Blog "
-cloudcannon: " CloudCannon "
-github: " GitHub "
-markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro:
+    comment: >-
+      [See on
+      page](https://poised-plain.cloudvent.net/#:~:text=This%20is%20just%20a%20test.)
+blog: ' Blog '
+cloudcannon: ' CloudCannon '
+github: ' GitHub '
+markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro: >-
   Un site de démonstration pour le connecteur multilingue Rosey-CloudCannon pour
   Astro. Checking this works post preinstall move.
-markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo:
+markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo: >-
   Ajout d'un paragraphe *supplémentaire* pour un petit test de **Smartling**. Je
   l'ajoute également, après avoir intégré ce site dans une monorepo.
 markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon: Contrôlez les traductions via une interface conviviale dans CloudCannon.
-markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color:
+markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color: >-
   Il fait froid, mais c'est beau. Il faut s'endurcir, devenir fort. Le marron
   est une couleur très agréable.
-markdown:lets-just-add-one-more-smartling-do-yo-thing: ""
+markdown:lets-just-add-one-more-smartling-do-yo-thing: Just enter a translation!
 markdown:more-changes-on-the-real-staging-branch: Plus de changements sur la branche staging.
 markdown:testing-translations-after-separating-out-the-logic-from-the-translations: Tester les traductions après avoir séparé la logique des traductions.
-markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics:
+markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics: >-
   On dit que *tout* est plus beau avec un nombre impair de choses. Mais il
   m'arrive de mettre des nombres pairs, juste pour contrarier les critiques.
 markdown:we're-changing-things: Nous ***changeons*** les choses.
-rosey-cloudcannon-connector: " Rosey - Connecteur CloudCannon "
-rss-feed: " Flux RSS "
-this-is-just-a-test: " Ce n'est qu'un test. "
+rosey-cloudcannon-connector: ' Rosey - Connecteur CloudCannon '
+rss-feed: ' Flux RSS '
+this-is-just-a-test: ' Ce n''est qu''un test. '
