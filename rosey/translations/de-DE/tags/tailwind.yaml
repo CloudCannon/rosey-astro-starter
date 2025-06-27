@@ -1,0 +1,23 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/tailwind/](https://poised-plain.cloudvent.net/tags/tailwind/)  \
+      //  [Git
+      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
+      ing/./rosey/translations/de-DE/tags/tailwind.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: "[tags/tailwind/](https://poised-plain.cloudvent.net/tags/tailwind/)  \
+            //  [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/de-DE/tags/tailwind.yaml)"
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: "[tags/tailwind/](https://poised-plain.cloudvent.net/tags/tailwind/)  \
+            //  [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/de-DE/tags/tailwind.yaml)"
+          inputs: []
+urlTranslation: tags/tailwind/index.html

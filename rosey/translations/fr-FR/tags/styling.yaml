@@ -1,0 +1,23 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/styling/](https://poised-plain.cloudvent.net/tags/styling/)  //  \
+      [Git
+      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
+      ing/./rosey/translations/fr-FR/tags/styling.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: "[tags/styling/](https://poised-plain.cloudvent.net/tags/styling/)  //  \
+            [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/fr-FR/tags/styling.yaml)"
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: "[tags/styling/](https://poised-plain.cloudvent.net/tags/styling/)  //  \
+            [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/fr-FR/tags/styling.yaml)"
+          inputs: []
+urlTranslation: tags/styling/index.html

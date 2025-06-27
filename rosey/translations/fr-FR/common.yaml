@@ -1,0 +1,13 @@
+_inputs:
+  $:
+    type: object
+    comment: Translations that appear on many pages
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: Text to translate
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: Text already translated
+          inputs: []

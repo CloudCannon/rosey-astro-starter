@@ -1,0 +1,20 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/seo/](https://poised-plain.cloudvent.net/tags/seo/)  //  [Git
+      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
+      ing/./rosey/translations/de-DE/tags/seo.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: "[tags/seo/](https://poised-plain.cloudvent.net/tags/seo/)  //  [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/de-DE/tags/seo.yaml)"
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: "[tags/seo/](https://poised-plain.cloudvent.net/tags/seo/)  //  [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/de-DE/tags/seo.yaml)"
+          inputs: []
+urlTranslation: tags/seo/index.html

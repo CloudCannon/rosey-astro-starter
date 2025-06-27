@@ -1,0 +1,23 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/search/](https://poised-plain.cloudvent.net/tags/search/)  //  \
+      [Git
+      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
+      ing/./rosey/translations/de-DE/tags/search.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: "[tags/search/](https://poised-plain.cloudvent.net/tags/search/)  //  \
+            [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/de-DE/tags/search.yaml)"
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: "[tags/search/](https://poised-plain.cloudvent.net/tags/search/)  //  \
+            [Git
+            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
+            s/staging/./rosey/translations/de-DE/tags/search.yaml)"
+          inputs: []
+urlTranslation: tags/search/index.html
