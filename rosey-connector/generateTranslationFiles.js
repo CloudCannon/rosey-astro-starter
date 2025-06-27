@@ -1,381 +1,291 @@
 import fs from "fs";
 import YAML from "yaml";
 import path from "path";
-import dotenv, { config } from "dotenv";
 import { NodeHtmlMarkdown } from "node-html-markdown";
 import {
-  isDirectory,
-  readFileWithFallback,
   readJsonFromFile,
-} from "./helpers/file-helper.js";
+  readYamlFromFile,
+  removeOldTranslationFiles,
+  getYamlFileName,
+  createParentDirIfExists,
+} from "./helpers/file-helpers.js";
+import {
+  initDefaultInputs,
+  getInputConfig,
+  initNamespacePageInputs,
+  getNamespaceInputConfig,
+  sortTranslationIntoInputGroup,
+} from "./helpers/input-helpers.js";
 
 const nhm = new NodeHtmlMarkdown(
   /* options (optional) */ {},
   /* customTransformers (optional) */ undefined,
   /* customCodeBlockTranslators (optional) */ undefined
 );
-dotenv.config();
 
 export async function generateTranslationFiles(configData) {
+  // Get all the config data
   const locales = configData.locales;
-  // Loop through locales
+  const seeOnPageCommentSettings = configData.see_on_page_comment;
+  const githubCommentSettings = configData.github_history;
+  const inputLengths = configData.input_lengths;
+  const baseFilePath = configData.rosey_paths.rosey_base_file_path;
+  const baseUrlFilePath = configData.rosey_paths.rosey_base_urls_file_path;
+  const translationFilesDirPath = configData.rosey_paths.translations_dir_path;
+  const incomingSmartlingTranslationsDir =
+    configData.smartling.incoming_translations_dir;
+  const namespaceArray = configData.namespace_pages;
+
+  // Get the base.json and base.urls.json
+  const baseFileData = await readJsonFromFile(baseFilePath);
+  const baseUrlFileData = await readJsonFromFile(baseUrlFilePath);
+
+  // Generate translation files for each locale
   for (let i = 0; i < locales.length; i++) {
     const locale = locales[i];
 
-    generateTranslationFilesForLocale(locale, configData).catch((err) => {
+    await generateTranslationFilesForLocale(
+      locale,
+      seeOnPageCommentSettings,
+      githubCommentSettings,
+      inputLengths,
+      baseFileData,
+      baseUrlFileData,
+      translationFilesDirPath,
+      incomingSmartlingTranslationsDir,
+      namespaceArray
+    ).catch((err) => {
       console.error(`❌❌ Encountered an error translating ${locale}:`, err);
     });
   }
 }
 
-async function generateTranslationFilesForLocale(locale, configData) {
-  // Get the Rosey generated data
-  const baseURL = configData.base_url;
-  const inputFilePath = configData.rosey_paths.rosey_base_file_path;
-  const inputURLFilePath = configData.rosey_paths.rosey_base_urls_file_path;
-  const translationFilesDirPath = configData.rosey_paths.translations_dir_path;
-  const incomingSmartlingTranslationsDir =
-    configData.smartling.incoming_translations_dir;
-  const smartlingTranslationsDataFilePath = path.join(
-    incomingSmartlingTranslationsDir,
-    `${locale}.json`
-  );
+async function generateTranslationFilesForLocale(
+  locale,
+  seeOnPageCommentSettings,
+  githubCommentSettings,
+  inputLengths,
+  baseFileData,
+  baseUrlFileData,
+  translationFilesDirPath,
+  incomingSmartlingTranslationsDir,
+  namespaceArray
+) {
+  // Get pages from the base.urls.json
+  const baseUrlFileDataKeys = baseUrlFileData.keys;
+  const pages = Object.keys(baseUrlFileDataKeys);
 
-  const inputFileData = await readJsonFromFile(inputFilePath);
-  const inputURLFileData = await readJsonFromFile(inputURLFilePath);
-  const smartlingTranslationData = await readJsonFromFile(
-    smartlingTranslationsDataFilePath
-  );
-
-  const pages = Object.keys(inputURLFileData.keys);
-
+  // Make sure there is a directory for the translation files to go in
   const translationsLocalePath = path.join(translationFilesDirPath, locale);
-
-  console.log(`📂📂 ${translationsLocalePath} ensuring folder exists`);
   await fs.promises.mkdir(translationsLocalePath, { recursive: true });
 
+  // Get current translation files
   const translationsFiles = await fs.promises.readdir(translationsLocalePath, {
     recursive: true,
   });
 
-  // Remove translations pages no longer present in the base.json file
-  await Promise.all(
-    translationsFiles.map(async (fileNameWithExt) => {
-      const filePath = path.join(translationsLocalePath, fileNameWithExt);
+  // Remove translations pages that are no longer present in the base.json file or are one of our namepace-created files
+  await removeOldTranslationFiles(
+    translationsFiles,
+    translationsLocalePath,
+    baseUrlFileDataKeys,
+    pages,
+    namespaceArray
+  );
 
-      if (await isDirectory(filePath)) {
-        return;
-      }
-
-      const fileNameHTMLFormatted = getTranslationHTMLFilename(fileNameWithExt);
-
-      if (!pages.includes(fileNameHTMLFormatted)) {
-        console.log(
-          `❌ Deleting ${fileNameHTMLFormatted}(${filePath}), since it doesn't exist in the pages in our base.json`
-        );
-
-        await fs.promises.unlink(filePath);
-        console.log(`❌ ${fileNameHTMLFormatted} at ${filePath} was deleted`);
-      }
-    })
+  // Get Smartling data if any exists
+  const smartlingTranslationsDataFilePath = path.join(
+    incomingSmartlingTranslationsDir,
+    `${locale}.json`
+  );
+  // Fallback of empty object
+  const smartlingTranslationData = await readJsonFromFile(
+    smartlingTranslationsDataFilePath
   );
 
   // Loop through the pages present in the base.json
   await Promise.all(
     pages.map(async (page) => {
-      // Format the page name
-      const pageName = page
-        .replace("/index.html", "")
-        .replace(".html", "")
-        .replace("index", "home");
+      const translationDataToWrite = {};
 
-      // Find the page file path
+      // Get the path of the equivalent translation page to the base.json one we're on
+      const yamlPageName = getYamlFileName(page);
       const translationFilePath = path.join(
         translationFilesDirPath,
         locale,
-        `${pageName}.yaml`
+        yamlPageName
+      );
+      // Ensure nested translation pages have parent directory
+      await createParentDirIfExists(page, translationFilesDirPath, locale);
+
+      // Get existing translation page data, returns a fallback if none exists
+      const translationFileData = await readYamlFromFile(translationFilePath);
+      // Set up inputs for the page if none exist already
+      initDefaultInputs(
+        translationDataToWrite,
+        translationFilesDirPath,
+        page,
+        locale,
+        seeOnPageCommentSettings,
+        githubCommentSettings
+      );
+      // Process the url translation
+      processUrlTranslation(translationFileData, translationDataToWrite, page);
+      // Process the rest of the translations
+      // TODO: As part of process translations, look for keys with common at the start and
+      // add them to common array
+      // Don't write them to the translation file
+      processTranslations(
+        baseFileData,
+        translationFileData,
+        translationDataToWrite,
+        smartlingTranslationData,
+        page,
+        namespaceArray,
+        seeOnPageCommentSettings,
+        inputLengths
       );
 
-      let cleanedOutputFileData = {};
-
-      // Ensure nested pages have parent folders
-      const pageHasParentFolder = pageName.includes("/");
-      if (pageHasParentFolder) {
-        const parentFolder = pageName.substring(
-          0,
-          pageName.lastIndexOf("/") + 1
-        );
-        const parentFolderFilePath = path.join(
-          translationFilesDirPath,
-          locale,
-          parentFolder
-        );
-        await fs.promises.mkdir(parentFolderFilePath, { recursive: true });
-      }
-
-      const translationFileString = await readFileWithFallback(
-        translationFilePath,
-        "_inputs: {}"
-      );
-      const translationFileData = await YAML.parse(translationFileString);
-
-      // Create the url key
-      if (translationFileData["urlTranslation"]?.length > 0) {
-        cleanedOutputFileData["urlTranslation"] =
-          translationFileData["urlTranslation"];
-      } else {
-        cleanedOutputFileData["urlTranslation"] = page;
-      }
-
-      initDefaultInputs(cleanedOutputFileData, page, locale, baseURL);
-
-      // Loop through keys to check for changes
-      // Exit early if key doesn't exist on the page we're on in the loop
-      Object.keys(inputFileData.keys).forEach((inputKey) => {
-        const inputTranslationObj = inputFileData.keys[inputKey];
-
-        // If input doesn't exist on this page exit early
-        if (!inputTranslationObj.pages[page]) {
-          return;
-        }
-
-        // Only add the key to our output data if it still exists in base.json
-        // If entry no longer exists in base.json it's original has changed
-        if (translationFileData[inputKey]) {
-          cleanedOutputFileData[inputKey] = translationFileData[inputKey];
-        }
-
-        // If entry doesn't exist in our output file, add it
-        // Check smartling translations for the translation and add it here if it exists
-        if (!cleanedOutputFileData[inputKey]) {
-          if (smartlingTranslationData[inputKey]) {
-            cleanedOutputFileData[inputKey] = nhm.translate(
-              smartlingTranslationData[inputKey]
-            );
-          } else {
-            cleanedOutputFileData[inputKey] = "";
-          }
-        }
-
-        cleanedOutputFileData["_inputs"][inputKey] = getInputConfig(
-          inputKey,
-          page,
-          inputTranslationObj,
-          baseURL
-        );
-
-        // Add each entry to page object group depending on whether they are translated or not
-        if (cleanedOutputFileData[inputKey]?.length > 0) {
-          cleanedOutputFileData["_inputs"]["$"].options.groups[1].inputs.push(
-            inputKey
-          );
-        } else {
-          cleanedOutputFileData["_inputs"]["$"].options.groups[0].inputs.push(
-            inputKey
-          );
-        }
-      });
-
+      // Write the file back once we've processed the translations
       await fs.promises.writeFile(
         translationFilePath,
-        YAML.stringify(cleanedOutputFileData)
+        YAML.stringify(translationDataToWrite)
       );
-      console.log("✅✅ " + translationFilePath + " updated succesfully");
+      console.log(
+        `Translation file: ${translationFilePath} updated succesfully`
+      );
+    })
+  );
+
+  // Loop over that array replacing common with the namespace name
+  // After the normal pages are done looping and writing, loop over the namespaced pages, and write a file for each
+
+  await Promise.all(
+    namespaceArray.map(async (namespace) => {
+      const namespaceFilePath = path.join(
+        translationFilesDirPath,
+        locale,
+        `${namespace}.yaml`
+      );
+
+      // Get the existing namespace file translations
+      const existingNamespaceFileData = await readYamlFromFile(
+        namespaceFilePath
+      ); // Falls back to empty `inputs:` obj
+
+      // Loop through the existing keys again
+      const namespaceTranslationDataToWrite = {};
+      initNamespacePageInputs(namespaceTranslationDataToWrite, locale);
+
+      await Promise.all(
+        Object.keys(baseFileData.keys).map(async (inputKey) => {
+          if (!inputKey.startsWith(`${namespace}:`)) {
+            return;
+          }
+          const baseTranslationObj = baseFileData.keys[inputKey];
+
+          // If they exist on the page already, preserve the translation
+          if (existingNamespaceFileData[inputKey]) {
+            namespaceTranslationDataToWrite[inputKey] =
+              existingNamespaceFileData[inputKey];
+          } else {
+            // Otherwise add them to the common page with their
+            namespaceTranslationDataToWrite[inputKey] = "";
+          }
+
+          // Set up inputs for each key
+          namespaceTranslationDataToWrite._inputs[inputKey] =
+            getNamespaceInputConfig(inputKey, baseTranslationObj, inputLengths);
+
+          // Add each entry to page object group depending on whether they are already translated or not
+          sortTranslationIntoInputGroup(
+            namespaceTranslationDataToWrite,
+            inputKey
+          );
+        })
+      );
+
+      // Write the file back once we've processed the translations
+      await fs.promises.writeFile(
+        namespaceFilePath,
+        YAML.stringify(namespaceTranslationDataToWrite)
+      );
+      console.log(`Translation file: ${namespaceFilePath} updated succesfully`);
     })
   );
 }
 
-function getPageString(page) {
-  return page.replace(".html", "").replace("index", "");
-}
-
-function initDefaultInputs(data, page, locale, baseURL) {
-  // Create the inputs obj if there is none
-  if (!data["_inputs"]) {
-    data["_inputs"] = {};
-  }
-
-  // Create the page input object
-  if (!data["_inputs"]["$"]) {
-    const pageString = getPageString(page);
-    data["_inputs"]["$"] = {
-      type: "object",
-      comment: `[See ${pageString}](${baseURL}${pageString})`,
-      options: {
-        place_groups_below: false,
-        groups: [
-          {
-            heading: `Still to translate (${locale})`,
-            comment: `Text to translate on [${pageString}](${baseURL}${pageString})`,
-            inputs: [],
-          },
-          {
-            heading: `Already translated (${locale})`,
-            comment: `Text already translated on [${pageString}](${baseURL}${pageString})`,
-            inputs: [],
-          },
-        ],
-      },
-    };
+function processUrlTranslation(
+  translationFileData,
+  translationDataToWrite,
+  page
+) {
+  const existingUrlTranslation = translationFileData.urlTranslation;
+  if (existingUrlTranslation?.length > 0) {
+    translationDataToWrite.urlTranslation = existingUrlTranslation;
+  } else {
+    translationDataToWrite.urlTranslation = page;
   }
 }
 
-function formatMarkdownForComments(markdown) {
-  return (
-    markdown
-      .trim()
-      // Remove all md links
-      .replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, /$1/)
-      // Remove special chars
-      .replaceAll(/[&\/\\#+()$~%"*<>{}_]/gm, "")
-  );
-}
+function processTranslations(
+  baseFileData,
+  translationFileData,
+  translationDataToWrite,
+  smartlingTranslationData,
+  page,
+  namespaceArray,
+  seeOnPageCommentSettings,
+  inputLengths
+) {
+  // Loop through all the translations in the base.json
+  Object.keys(baseFileData.keys).map((inputKey) => {
+    const baseTranslationObj = baseFileData.keys[inputKey];
 
-function getInputConfig(inputKey, page, inputTranslationObj, baseURL) {
-  const untranslatedPhrase = inputTranslationObj.original.trim();
-  const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
-  const originalPhraseTidiedForComment = formatMarkdownForComments(
-    untranslatedPhraseMarkdown
-  );
-
-  const isKeyMarkdown = inputKey.slice(0, 10).includes("markdown:");
-  const isInputShortText = untranslatedPhrase.length < 20;
-
-  const inputType = isKeyMarkdown
-    ? "markdown"
-    : isInputShortText
-      ? "text"
-      : "textarea";
-
-  const options = isKeyMarkdown
-    ? {
-        bold: true,
-        format: "p h1 h2 h3 h4",
-        italic: true,
-        link: true,
-        undo: true,
-        redo: true,
-        removeformat: true,
-        copyformatting: true,
-        blockquote: true,
-      }
-    : {};
-
-  const locationString = generateLocationString(
-    originalPhraseTidiedForComment,
-    page,
-    baseURL
-  );
-
-  const isLabelConcat = originalPhraseTidiedForComment.length > 42;
-
-  const formattedLabel = isLabelConcat
-    ? `${originalPhraseTidiedForComment.substring(0, 42)}...`
-    : originalPhraseTidiedForComment;
-
-  const inputConfig = isLabelConcat
-    ? {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "" ? true : false,
-        type: inputType,
-        options: options,
-        comment: locationString,
-        context: {
-          open: false,
-          title: "Untranslated Text",
-          icon: "translate",
-          content: untranslatedPhraseMarkdown,
-        },
-      }
-    : {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "" ? true : false,
-        type: inputType,
-        options: options,
-        comment: locationString,
-      };
-
-  return inputConfig;
-}
-
-function getTranslationHTMLFilename(translationFilename) {
-  if (translationFilename === "404.yaml") {
-    return "404.html";
-  }
-
-  if (translationFilename === "home.yaml") {
-    return "index.html";
-  }
-
-  return translationFilename.replace(".yaml", "/index.html");
-}
-
-function generateLocationString(originalPhrase, page, baseURL) {
-  // Limit each phrase to 3 words
-  const urlHighlighterWordLength = 3;
-  const originalPhraseArray = originalPhrase.split(/[\n]+/);
-  // Get the first and last line of the markdown so we only have complete lines in the highlight url
-  const firstPhrase = originalPhraseArray[0];
-  const lastPhrase = originalPhraseArray[originalPhraseArray.length - 1];
-  const endHighlightArrayAll = lastPhrase.split(" ");
-
-  const startHighlightArrayWithPunctuation = firstPhrase
-    .split(" ")
-    .slice(0, urlHighlighterWordLength);
-
-  const endHighlightArrayWithPunctuation = endHighlightArrayAll.slice(
-    endHighlightArrayAll.length - urlHighlighterWordLength,
-    endHighlightArrayAll.length
-  );
-
-  // Look at these arrays for any words with a special character after
-  // That is our last word in the start or end highlight
-  // The phrase stops there in an attempt to still capture the block of text
-
-  const startHighlightArrayWithoutPunctuation = [];
-  const endHighlightArrayWithoutPunctuation = [];
-  const regexToMatch = /[&#,+()$~%.":*?<>{}_]/gm;
-
-  for (let i = 0; i < startHighlightArrayWithPunctuation.length; i++) {
-    const word = startHighlightArrayWithPunctuation[i];
-    const foundMatches = word.match(regexToMatch);
-    if (foundMatches && foundMatches.length > 0) {
-      startHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(regexToMatch, "")
-      );
-      break;
-    } else {
-      startHighlightArrayWithoutPunctuation.push(word);
+    // If translation doesn't exist on this page, exit early
+    if (!baseTranslationObj.pages[page]) {
+      return;
     }
-  }
-
-  for (let j = 0; j < endHighlightArrayWithPunctuation.length; j++) {
-    const word = endHighlightArrayWithPunctuation[j];
-    const foundMatches = word.match(regexToMatch);
-    if (foundMatches && foundMatches.length > 0) {
-      endHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(regexToMatch, "")
-      );
-      break;
-    } else {
-      endHighlightArrayWithoutPunctuation.push(word);
+    // Check for namespace and exit early since this translation key belongs to a ns page, not one of the real pages we're looping through
+    let isInputKeyNamespace = false;
+    for (const namespace of namespaceArray) {
+      if (inputKey.startsWith(`${namespace}:`)) {
+        isInputKeyNamespace = true;
+        break;
+      }
     }
-  }
+    if (isInputKeyNamespace) {
+      return;
+    }
 
-  const originalPhraseArrayByWord = originalPhraseArray.join(" ").split(" ");
+    // Only add the key to our output data if it still exists in base.json
+    if (translationFileData[inputKey]) {
+      translationDataToWrite[inputKey] = translationFileData[inputKey];
+    }
 
-  // Trim and encode the resulting phrase
-  const startHighlight = startHighlightArrayWithoutPunctuation.join(" ").trim();
-  const endHighlight = endHighlightArrayWithoutPunctuation.join(" ").trim();
+    // If entry doesn't exist in our output file but exists in the base.json, add it
+    // Check Smartling translations for the translation and add it here if it exists
+    // We only need to check Smartling for new translations
+    if (!translationDataToWrite[inputKey]) {
+      if (smartlingTranslationData[inputKey]) {
+        translationDataToWrite[inputKey] = nhm.translate(
+          smartlingTranslationData[inputKey]
+        );
+      } else {
+        translationDataToWrite[inputKey] = "";
+      }
+    }
 
-  const encodedStartHighlight = encodeURI(startHighlight);
-  const encodedEndHighlight = encodeURI(endHighlight);
-  const encodedOriginalPhrase = encodeURI(originalPhraseArray.join(" "));
+    // Set up inputs for each key
+    translationDataToWrite._inputs[inputKey] = getInputConfig(
+      inputKey,
+      page,
+      baseTranslationObj,
+      seeOnPageCommentSettings,
+      inputLengths
+    );
 
-  const pageString = getPageString(page);
-  // Look to see if original phrase is 5 words or shorter
-  // if it is fallback to the encoded original phrase for the highlight link
-  return originalPhraseArrayByWord.length > urlHighlighterWordLength * 2
-    ? `[See on page](${baseURL}${pageString}#:~:text=${encodedStartHighlight},${encodedEndHighlight})`
-    : `[See on page](${baseURL}${pageString}#:~:text=${encodedOriginalPhrase})`;
+    // Add each entry to page object group depending on whether they are already translated or not
+    sortTranslationIntoInputGroup(translationDataToWrite, inputKey);
+  });
 }
