@@ -14,11 +14,9 @@ const formatInnerText = (text: string) => {
   if (!text) {
     return "";
   }
-  const removedSup = text.replaceAll("<sup>", "").replaceAll("</sup>", "");
-  const removedSub = removedSup
-    .replaceAll("<sub>", "")
-    .replaceAll("</sub>", "");
-  return removedSub;
+  // Add any formatting needed here
+
+  return text;
 };
 
 const isTextElement = (element: Element) =>

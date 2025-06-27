@@ -1,7 +1,21 @@
+# TODO: add comments in here from the blog post
 locales:
   - de-DE
   - fr-FR
-base_url: https://poised-plain.cloudvent.net/
+input_lengths:
+  label: 42
+  textarea: 20
+see_on_page_comment:
+  enabled: true
+  base_url: https://poised-plain.cloudvent.net/
+  comment_text: See in context
+github_history:
+  enabled: true
+  repo_url: https://github.com/tomrcc/rosey-jekyll-starter-work
+  branch_name: staging
+  comment_text: Git history
+namespace_pages:
+  - common
 rosey_paths:
   rosey_base_file_path: ./rosey/base.json
   rosey_base_urls_file_path: ./rosey/base.urls.json
@@ -18,6 +32,14 @@ smartling:
   outgoing_translations_file_path: ./rosey/outgoing-smartling-translations.json
   outgoing_translation_file_uri: /rosey/translations/
 _inputs:
+  namespace_pages:
+    type: array
+    comment: >-
+      Group translations by namespace. A page will be created for each
+      namespace, your translations will be scanned for corresponding Rosey
+      namespaces, and grouped on the namespace page. See the [Rosey
+      docs](https://rosey.app/docs/namespacing/) for details on adding
+      namespaces to your html.
   locales:
     type: array
     comment: >-
