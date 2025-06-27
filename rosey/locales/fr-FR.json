@@ -1,34 +1,26 @@
 {
 	"a-snippet-in-the-middle-of-markdown-content": {
-		"original": " A snippet in the middle of markdown content ",
 		"value": "Un extrait au milieu du contenu Markdown. Changed post monorepo :)"
 	},
 	"a-test-page": {
-		"original": "A Test Page",
 		"value": "Une page test"
 	},
 	"a-test-post-vid": {
-		"original": "A test post vid",
 		"value": "Un post-vidéo test"
 	},
 	"blog": {
-		"original": " Blog ",
 		"value": " Blog "
 	},
 	"bob-ross": {
-		"original": "Bob ross",
 		"value": "Bob ross"
 	},
 	"bob-ross-test": {
-		"original": " Bob Ross Test ",
 		"value": "Test Bob Ross"
 	},
 	"cloudcannon": {
-		"original": " CloudCannon ",
 		"value": " CloudCannon "
 	},
 	"github": {
-		"original": " GitHub ",
 		"value": " GitHub "
 	},
 	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
@@ -98,38 +90,30 @@
 		"value": "<p>Nous avons tous, à un moment ou à un autre, mélangé de la boue. Il est magnifique - et nous n'y avons encore rien fait. Créons des petits nuages heureux dans notre monde. Laissez votre cœur vous guider.</p>\n"
 	},
 	"minutes": {
-		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
 		"value": "0 minute"
 	},
 	"recent-posts": {
-		"original": "Recent Posts",
 		"value": "Messages récents"
 	},
 	"rosey-cloudcannon-connector": {
-		"original": " Rosey - CloudCannon Connector ",
 		"value": " Rosey - Connecteur CloudCannon "
 	},
 	"rss-feed": {
-		"original": " RSS Feed ",
 		"value": " Flux RSS "
 	},
 	"testing": {
-		"original": "Testing",
 		"value": "Essais"
 	},
 	"this-is-just-a-test": {
 		"value": " Ce n'est qu'un test. "
 	},
 	"video": {
-		"original": "Video",
 		"value": "Vidéo"
 	},
 	"words": {
-		"original": "90<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93 mots"
 	},
 	"yay-we-support-snippets-now!": {
-		"original": " Yay, we support snippets now! ",
 		"value": " Nous prenons désormais en charge les snippets ! "
 	}
 }
