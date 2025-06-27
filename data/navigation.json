@@ -1,17 +1,23 @@
 {
   "header": {
     "logo": "/images/logos/logo-wordmark-blue.png",
+    "logo_alt_text": "CloudCannon logo",
     "logo_url": "/",
     "background_color": "#ffffff",
-    "color": "#393939",
+    "text_color": "#393939",
+    "hover_text_color": "#808080",
     "links": [
       {
         "link": "/blog/",
         "text": "Blog"
       },
       {
-        "link": "/feed.xml",
-        "text": "RSS Feed"
+        "link": "https://github.com/CloudCannon/astro-starter/",
+        "text": "GitHub"
+      },
+      {
+        "link": "https://cloudcannon.com/",
+        "text": "CloudCannon"
       }
     ],
     "locales": [
@@ -39,10 +45,12 @@
   },
   "footer": {
     "logo": "/images/logos/logo-wordmark-white.png",
+    "logo_alt_text": "CloudCannon logo",
     "logo_url": "/",
     "copyright": "MyCompany. All rights reserved.",
     "background_color": "#333232",
-    "color": "#ffffff",
+    "text_color": "#ffffff",
+    "hover_text_color": "#F2F2F2",
     "links": [
       {
         "link": "/blog/",
@@ -56,19 +64,23 @@
     "social": [
       {
         "link": "https://www.facebook.com/mycompany",
-        "social_icon": "Facebook"
+        "icon": "Facebook",
+        "name": "Facebook"
       },
       {
         "link": "https://www.instagram.com/mycompany",
-        "social_icon": "Instagram"
+        "icon": "Instagram",
+        "name": "Instagram"
       },
       {
         "link": "https://www.github.com/mycompany",
-        "social_icon": "Github"
+        "icon": "GitHub",
+        "name": "GitHub"
       },
       {
         "link": "https://www.youtube.com/mycompany",
-        "social_icon": "Youtube"
+        "icon": "Youtube",
+        "name": "Youtube"
       }
     ]
   }

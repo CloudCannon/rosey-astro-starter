@@ -36,7 +36,6 @@ import {
   faShopLock,
   faCar,
   faCircleHalfStroke,
-  faLanguage,
   faLocationDot,
   faLocationPin,
   faLocationCrosshairs,
@@ -56,6 +55,11 @@ import {
   faCircleInfo,
   faFire,
   faHand,
+  faPause,
+  faPlay,
+  faClock,
+  faBook,
+  faLanguage
 } from '@fortawesome/free-solid-svg-icons';
 
 import { faLemon, faBookmark } from '@fortawesome/free-regular-svg-icons';
@@ -73,6 +77,14 @@ export default function Icon({ icon }) {
   switch (icon) {
     case 'Language':
       return <FontAwesomeIcon icon={faLanguage} />;
+    case 'Clock':
+      return <FontAwesomeIcon icon={faClock} />;
+    case 'Book':
+      return <FontAwesomeIcon icon={faBook} />;
+    case 'Pause':
+      return <FontAwesomeIcon icon={faPause} />;
+    case 'Play':
+      return <FontAwesomeIcon icon={faPlay} />;
     case 'Envelope':
       return <FontAwesomeIcon icon={faEnvelope} />;
     case 'User':
@@ -199,7 +211,7 @@ export default function Icon({ icon }) {
       return <FontAwesomeIcon icon={faStripe} />;
     case 'Shopify':
       return <FontAwesomeIcon icon={faShopify} />;
-    case 'Github':
+    case 'GitHub':
       return <FontAwesomeIcon icon={faGithub} />;
     case 'CloudCannon':
       return (
