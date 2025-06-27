@@ -5,9 +5,6 @@ export function generateRoseyId(data) {
   if (!data) {
     return "";
   }
-  if (typeof data === "object" && data.original) {
-    text = data.original;
-  }
   if (typeof data === "string") {
     text = data;
   }

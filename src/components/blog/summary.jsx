@@ -1,4 +1,4 @@
-import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper.js"
+import { generateRoseyId } from "../../../rosey-connector/helpers/component-helpers"
 
 export default function PostSummary({ post }) {
   const {
