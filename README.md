@@ -76,7 +76,7 @@ All commands are run from the root of the project, from a terminal:
 
 To use the provided markdown plugin, and markdown component for Astro, these extra dependencies need to be installed. Add the following to your `package.json` and run `npm install`.
 
-```json
+```JSON
   "dependencies": {
     "markdown-it": "^13.0.1",
     "node-html-markdown": "^1.3.0",
