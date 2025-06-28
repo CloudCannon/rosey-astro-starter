@@ -10,7 +10,7 @@ function removeSpecialCharactersFromMarkdown(markdownText) {
   if (!markdownText) {
     return "";
   }
-  return markdownText.replaceAll(/[&\/\\#+()$~%"*<>{}_]/gm, "");
+  return markdownText.replaceAll(/[&\/\\#+()$~.%'"*<>{}_]/gm, "");
 }
 function formatMarkdownText(markdownText) {
   if (!markdownText) {
