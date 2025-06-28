@@ -1,5 +1,5 @@
 import { getPageString, getYamlFileName } from "./file-helpers.js";
-import { formatMarkdownText } from "./markdown-formatters.js";
+import { formatMarkdownTextForComments } from "./markdown-formatters.js";
 import { NodeHtmlMarkdown } from "node-html-markdown";
 const nhm = new NodeHtmlMarkdown(
   /* options (optional) */ {},
@@ -76,7 +76,7 @@ function getInputConfig(
   const seeOnPageCommentText = seeOnPageCommentSettings.comment_text;
   const untranslatedPhrase = baseTranslationObj.original.trim();
   const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
-  const originalPhraseTidiedForComment = formatMarkdownText(
+  const originalPhraseTidiedForComment = formatMarkdownTextForComments(
     untranslatedPhraseMarkdown
   );
 
@@ -253,7 +253,7 @@ function initNamespacePageInputs(data, locale) {
 function getNamespaceInputConfig(inputKey, baseTranslationObj, inputLengths) {
   const untranslatedPhrase = baseTranslationObj.original.trim();
   const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
-  const originalPhraseTidiedForComment = formatMarkdownText(
+  const originalPhraseTidiedForComment = formatMarkdownTextForComments(
     untranslatedPhraseMarkdown
   );
 

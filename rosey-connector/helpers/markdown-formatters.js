@@ -6,20 +6,37 @@ function removeLinksFromMarkdown(markdownText) {
   }
   return markdownText.replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, /$1/);
 }
-function removeSpecialCharactersFromMarkdown(markdownText) {
-  if (!markdownText) {
+function removeAllSpecCharsFromText(text) {
+  if (!text) {
     return "";
   }
-  return markdownText.replaceAll(/[&\/\\#+()$~.%'"*<>{}_]/gm, "");
+  return text.replaceAll(/[&\/\\#+()$~.%'"*<>{}_]/gm, "");
 }
-function formatMarkdownText(markdownText) {
+function removeNonPuncCharsFromText(text) {
+  if (!text) {
+    return "";
+  }
+  return text.replaceAll(/[\/\\#~%"*<>{}_]/gm, "");
+}
+function formatMarkdownTextForIds(markdownText) {
   if (!markdownText) {
     return "";
   }
   // TODO: Add the sup/sub stuff here
   const trimmedWhiteSpace = markdownText.trim();
   const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
-  const cleanedText = removeSpecialCharactersFromMarkdown(noLinks);
+  const cleanedText = removeAllSpecCharsFromText(noLinks);
+
+  return cleanedText;
+}
+function formatMarkdownTextForComments(markdownText) {
+  if (!markdownText) {
+    return "";
+  }
+  // TODO: Add the sup/sub stuff here
+  const trimmedWhiteSpace = markdownText.trim();
+  const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
+  const cleanedText = removeNonPuncCharsFromText(noLinks);
 
   return cleanedText;
 }
@@ -27,8 +44,8 @@ function formatAndSlugifyMarkdownText(markdownText) {
   if (!markdownText) {
     return "";
   }
-  const formattedText = formatMarkdownText(markdownText).toLowerCase();
+  const formattedText = formatMarkdownTextForIds(markdownText).toLowerCase();
   return slugify(formattedText);
 }
 
-export { formatAndSlugifyMarkdownText, formatMarkdownText };
+export { formatAndSlugifyMarkdownText, formatMarkdownTextForComments };
