@@ -1,4 +1,4 @@
-import { formatAndSlugifyMarkdownText } from "./markdown-formatters.js";
+import { formatAndSlugifyText } from "./markdown-formatters.js";
 
 export function generateRoseyId(data) {
   let text = "";
@@ -9,7 +9,7 @@ export function generateRoseyId(data) {
     text = data;
   }
 
-  return formatAndSlugifyMarkdownText(text);
+  return formatAndSlugifyText(text);
 }
 
 export function generateRoseyMarkdownId(text) {
@@ -17,5 +17,5 @@ export function generateRoseyMarkdownId(text) {
     return "";
   }
 
-  return `markdown:${formatAndSlugifyMarkdownText(text)}`;
+  return `markdown:${formatAndSlugifyText(text)}`;
 }

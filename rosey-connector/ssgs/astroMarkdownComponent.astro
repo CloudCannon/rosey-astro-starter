@@ -9,7 +9,7 @@ import {
 } from "../helpers/text-formatters.ts";
 import { generateRoseyMarkdownId } from "rosey-connector/helpers/component-helpers.js";
 import markdownIt from "markdown-it";
-const md = markdownIt();
+const md = markdownIt({ html: true });
 
 // Block level elements to add tags to - inline elements should not have tag added
 const textElementTagNames = ["p", "li", "h1", "h2", "h3", "h4", "h5", "h6"];

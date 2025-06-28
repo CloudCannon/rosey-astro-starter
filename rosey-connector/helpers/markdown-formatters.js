@@ -10,37 +10,45 @@ function removeAllSpecCharsFromText(text) {
   if (!text) {
     return "";
   }
-  return text.replaceAll(/[&\/\\#+()$~.%'"*<>{}_]/gm, "");
+  const removedSupSub = text
+    .replaceAll("<sup>", "")
+    .replaceAll("</sup>", "")
+    .replaceAll("<sub>", "")
+    .replaceAll("</sub>", "");
+  return removedSupSub.replaceAll(/[&\/\\#+()$~.%'"*<>{}_]/gm, "");
 }
 function removeNonPuncCharsFromText(text) {
   if (!text) {
     return "";
   }
-  return text.replaceAll(/[\/\\#~%"*<>{}_]/gm, "");
+  const removedSupSub = text
+    .replaceAll("<sup>", "")
+    .replaceAll("</sup>", "")
+    .replaceAll("<sub>", "")
+    .replaceAll("</sub>", "");
+  return removedSupSub.replaceAll(/[\/\\#~%"*<>{}_]/gm, "");
 }
 function formatMarkdownTextForIds(markdownText) {
   if (!markdownText) {
     return "";
   }
-  // TODO: Add the sup/sub stuff here
   const trimmedWhiteSpace = markdownText.trim();
   const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
   const cleanedText = removeAllSpecCharsFromText(noLinks);
 
   return cleanedText;
 }
-function formatMarkdownTextForComments(markdownText) {
+function formatTextForInputComments(markdownText) {
   if (!markdownText) {
     return "";
   }
-  // TODO: Add the sup/sub stuff here
   const trimmedWhiteSpace = markdownText.trim();
   const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
   const cleanedText = removeNonPuncCharsFromText(noLinks);
 
   return cleanedText;
 }
-function formatAndSlugifyMarkdownText(markdownText) {
+function formatAndSlugifyText(markdownText) {
   if (!markdownText) {
     return "";
   }
@@ -48,4 +56,4 @@ function formatAndSlugifyMarkdownText(markdownText) {
   return slugify(formattedText);
 }
 
-export { formatAndSlugifyMarkdownText, formatMarkdownTextForComments };
+export { formatAndSlugifyText, formatTextForInputComments };
