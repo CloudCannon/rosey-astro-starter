@@ -5,7 +5,7 @@ import {
   isTextElement,
   getElementInnerText,
 } from "../helpers/text-formatters.ts";
-import { generateRoseyMarkdownID } from "../helpers/component-helpers.js";
+import { generateRoseyMarkdownId } from "../helpers/component-helpers.js";
 
 // Block level elements to add tags to - inline elements should not have tag added
 const textElementTagNames = ["p", "li", "h1", "h2", "h3", "h4", "h5", "h6"];
@@ -30,7 +30,7 @@ export const autoAddRoseyTags: RehypePlugin = () => {
         return;
       }
       element.properties["data-rosey"] =
-        generateRoseyMarkdownID(elementInnerText);
+        generateRoseyMarkdownId(elementInnerText);
       // Skip any children that might accidentally get a nested tag
       return SKIP;
     });

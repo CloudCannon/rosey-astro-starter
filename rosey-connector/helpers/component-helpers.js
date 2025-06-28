@@ -12,7 +12,7 @@ export function generateRoseyId(data) {
   return formatAndSlugifyMarkdownText(text);
 }
 
-export function generateRoseyMarkdownID(text) {
+export function generateRoseyMarkdownId(text) {
   if (!text) {
     return "";
   }

@@ -154,7 +154,7 @@ Sometimes a component needs to contain markdown content. A `type: markdown` inpu
 
 Some SSGs come with a `markdownify` filter out of the box that processes content from markdown to html. In such an SSG we would simply add this filter to the templating our component. In Astro, we need to roll our own with one of the many markdown processing libraries out there. A component has been provided `rosey-connector/ssgs/astroMarkdownComponent.astro` to add wherever you need to parse markdown that isn't going to be automatically parsed by Astro. 
 
-Drag it into your project's components folder, and update the import `import { generateRoseyMarkdownID } from "../helpers/component-helper";` to reflect it's new relative address. It can then be used throughout your components and layouts like:
+Drag it into your project's components folder, and update the import `import { generateRoseyMarkdownId } from "../helpers/component-helper";` to reflect it's new relative address. It can then be used throughout your components and layouts like:
   
   ```jsx
   <div class="mb-4" style={`color: ${block.text.color};`}>

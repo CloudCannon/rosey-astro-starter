@@ -3,7 +3,7 @@ import { visit, SKIP } from "unist-util-visit";
 import { fromHtmlIsomorphic } from "hast-util-from-html-isomorphic";
 import { toHtml } from "hast-util-to-html";
 import type { Element } from "hast";
-import { generateRoseyMarkdownID } from "rosey-connector/helpers/component-helpers.js";
+import { generateRoseyMarkdownId } from "rosey-connector/helpers/component-helpers.js";
 import markdownIt from "markdown-it";
 const md = markdownIt();
 
@@ -61,7 +61,7 @@ visit(hastTree, function (node, index, parent) {
         });
       }
     });
-    node.properties["data-rosey"] = generateRoseyMarkdownID(elementInnerText);
+    node.properties["data-rosey"] = generateRoseyMarkdownId(elementInnerText);
     // Skip any children that might accidentally get a nested tag
     return SKIP;
   }
