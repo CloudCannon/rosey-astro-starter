@@ -8,7 +8,7 @@ import {
   getTranslationHtmlFilename,
 } from "./helpers/file-helpers.js";
 import dotenv from "dotenv";
-const md = markdownit();
+const md = markdownit({ html: true });
 dotenv.config();
 
 export async function generateLocales(configData) {
@@ -227,8 +227,15 @@ function processContentTranslationKey(
   const oldLocaleDataValue = oldLocaleData[keyName]?.value.trim();
   const baseFileDataOriginal = baseFileData[keyName]?.original.trim();
 
+  // No translated string use the original
+  if (!translatedString) {
+    return {
+      original: baseFileDataOriginal,
+      value: baseFileDataOriginal,
+    };
+  }
+
   if (
-    !translatedString ||
     translatedString === oldLocaleDataValue ||
     md.render(translatedString) === oldLocaleDataValue
   ) {
