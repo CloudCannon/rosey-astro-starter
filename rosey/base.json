@@ -80,7 +80,7 @@
       "total": 1
     },
     "markdown:control-seo-values-on-a-page-by-page-and-site-wide-basis": {
-      "original": "Control SEO values on a page-by-page, and site-wide basis.",
+      "original": "Control <a href=\"https://a-test-link.com\">SEO</a> values on a page-by-page, and site-wide basis.",
       "value": null,
       "pages": {
         "blog/seo/index.html": 1

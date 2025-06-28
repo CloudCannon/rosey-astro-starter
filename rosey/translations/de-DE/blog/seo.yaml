@@ -65,7 +65,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Control SEO values on a page-by-page, and site-wide basis.
+      content: Control [SEO](https://a-test-link.com) values on a page-by-page, and
+        site-wide basis.
   markdown:inputs-on-individual-pages-are-used-for-seo-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback:
     label: Inputs on individual pages are used for SE...
     hidden: false
