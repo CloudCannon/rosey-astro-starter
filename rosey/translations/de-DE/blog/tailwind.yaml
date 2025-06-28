@@ -1,18 +1,18 @@
 _inputs:
   $:
     type: object
-    comment: "[blog/tailwind/](https://poised-plain.cloudvent.net/blog/tailwind/)  \
-      //  [Git
-      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
-      ing/./rosey/translations/de-DE/blog/tailwind.yaml)"
+    comment: "[blog/tailwind/](https://cool-ski.cloudvent.net/blog/tailwind/)  //  \
+      [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/de-DE/blog/tailwind.yaml)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-DE)
-          comment: "[blog/tailwind/](https://poised-plain.cloudvent.net/blog/tailwind/)  \
-            //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/de-DE/blog/tailwind.yaml)"
+          comment: "[blog/tailwind/](https://cool-ski.cloudvent.net/blog/tailwind/)  //  \
+            [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/blog/tailwind.yaml)"
           inputs:
             - markdown:delete-your-tailwindconfigmjs-file
             - "markdown:if-you'd-like-to-remove-tailwind:"
@@ -21,10 +21,10 @@ _inputs:
             - "markdown:run-the-following-command-in-the-root-of-the-site:"
             - markdown:use-tailwind-to-style-your-html-allowing-you-to-style-your-components-without-leaving-your-html-this-can-be-used-in-combination-with-normal-css-and-scss-styling-leaving-you-to-add-styles-to-your-site-however-you-want
         - heading: Already translated (de-DE)
-          comment: "[blog/tailwind/](https://poised-plain.cloudvent.net/blog/tailwind/)  \
-            //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/de-DE/blog/tailwind.yaml)"
+          comment: "[blog/tailwind/](https://cool-ski.cloudvent.net/blog/tailwind/)  //  \
+            [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/blog/tailwind.yaml)"
           inputs: []
   markdown:delete-your-tailwindconfigmjs-file:
     label: Delete your `tailwindconfigmjs` file
@@ -41,8 +41,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/tailwind/#:~:text=Delete\
-      %20your%20%60tailwindconfigmjs%60%20file)"
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
+      our%20%60tailwindconfigmjs%60%20file)"
   "markdown:if-you'd-like-to-remove-tailwind:":
     label: "If you’d like to remove Tailwind:"
     hidden: false
@@ -58,8 +58,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/tailwind/#:~:text=If%20y\
-      ou%E2%80%99d%20like%20to%20remove%20Tailwind:)"
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
+      2%80%99d%20like%20to%20remove%20Tailwind:)"
   markdown:npm-uninstall-tailwindcss-@astrojstailwind:
     label: "`npm uninstall tailwindcss @astrojstailwin..."
     hidden: false
@@ -75,8 +75,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/tailwind/#:~:text=%60npm\
-      %20uninstall%20tailwindcss%20@astrojstailwind%60)"
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20u\
+      ninstall%20tailwindcss%20@astrojstailwind%60)"
     context:
       open: false
       title: Untranslated Text
@@ -97,8 +97,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/tailwind/#:~:text=Remove\
-      %20mentions%20of,from%20your%20%60astroconfigmjs%60)"
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Remove%20m\
+      entions%20of,from%20your%20%60astroconfigmjs%60)"
     context:
       open: false
       title: Untranslated Text
@@ -119,8 +119,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/tailwind/#:~:text=Run%20\
-      the%20following,of%20the%20site)"
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Run%20the%\
+      20following,of%20the%20site)"
     context:
       open: false
       title: Untranslated Text
@@ -141,8 +141,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/tailwind/#:~:text=Use%20\
-      Tailwind%20to,however%20you%20want)"
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Use%20Tail\
+      wind%20to,however%20you%20want)"
     context:
       open: false
       title: Untranslated Text

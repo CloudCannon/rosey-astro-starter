@@ -1,23 +1,23 @@
 _inputs:
   $:
     type: object
-    comment: "[tags/building/](https://poised-plain.cloudvent.net/tags/building/)  \
-      //  [Git
-      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
-      ing/./rosey/translations/de-DE/tags/building.yaml)"
+    comment: "[tags/building/](https://cool-ski.cloudvent.net/tags/building/)  //  \
+      [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/de-DE/tags/building.yaml)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-DE)
-          comment: "[tags/building/](https://poised-plain.cloudvent.net/tags/building/)  \
-            //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/de-DE/tags/building.yaml)"
+          comment: "[tags/building/](https://cool-ski.cloudvent.net/tags/building/)  //  \
+            [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/tags/building.yaml)"
           inputs: []
         - heading: Already translated (de-DE)
-          comment: "[tags/building/](https://poised-plain.cloudvent.net/tags/building/)  \
-            //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/de-DE/tags/building.yaml)"
+          comment: "[tags/building/](https://cool-ski.cloudvent.net/tags/building/)  //  \
+            [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/tags/building.yaml)"
           inputs: []
 urlTranslation: tags/building/index.html

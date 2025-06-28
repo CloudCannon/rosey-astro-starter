@@ -1,24 +1,24 @@
 _inputs:
   $:
     type: object
-    comment: "[blog/seo/](https://poised-plain.cloudvent.net/blog/seo/)  //  [Git
-      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
-      ing/./rosey/translations/fr-FR/blog/seo.yaml)"
+    comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/fr-FR/blog/seo.yaml)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
-          comment: "[blog/seo/](https://poised-plain.cloudvent.net/blog/seo/)  //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/fr-FR/blog/seo.yaml)"
+          comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/blog/seo.yaml)"
           inputs:
             - markdown:comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-seo-rankings-performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well
             - markdown:control-seo-values-on-a-page-by-page-and-site-wide-basis
             - markdown:inputs-on-individual-pages-are-used-for-seo-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback
         - heading: Already translated (fr-FR)
-          comment: "[blog/seo/](https://poised-plain.cloudvent.net/blog/seo/)  //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/fr-FR/blog/seo.yaml)"
+          comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/blog/seo.yaml)"
           inputs: []
   markdown:comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-seo-rankings-performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well:
     label: Comes with all the inputs you need to enco...
@@ -35,8 +35,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/seo/#:~:text=Comes%20wit\
-      h%20all,this%20as%20well)"
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Comes%20with%20\
+      all,this%20as%20well)"
     context:
       open: false
       title: Untranslated Text
@@ -59,8 +59,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/seo/#:~:text=Control%20S\
-      EO%20values,and%20site-wide%20basis)"
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Control%20SEO%2\
+      0values,and%20site-wide%20basis)"
     context:
       open: false
       title: Untranslated Text
@@ -81,8 +81,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/seo/#:~:text=Inputs%20on\
-      %20individual,as%20a%20fallback)"
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Inputs%20on%20i\
+      ndividual,as%20a%20fallback)"
     context:
       open: false
       title: Untranslated Text

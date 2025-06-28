@@ -1,20 +1,20 @@
 _inputs:
   $:
     type: object
-    comment: "[index.html](https://poised-plain.cloudvent.net/index.html)  //  [Git
-      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
-      ing/./rosey/translations/fr-FR/home.yaml)"
+    comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/fr-FR/home.yaml)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
-          comment: "[index.html](https://poised-plain.cloudvent.net/index.html)  //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/fr-FR/home.yaml)"
+          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs: []
         - heading: Already translated (fr-FR)
-          comment: "[index.html](https://poised-plain.cloudvent.net/index.html)  //  [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/fr-FR/home.yaml)"
+          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs: []
 urlTranslation: index.html

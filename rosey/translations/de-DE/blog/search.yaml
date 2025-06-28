@@ -1,28 +1,25 @@
 _inputs:
   $:
     type: object
-    comment: "[blog/search/](https://poised-plain.cloudvent.net/blog/search/)  //  \
-      [Git
-      history](https://github.com/tomrcc/rosey-jekyll-starter-work/commits/stag\
-      ing/./rosey/translations/de-DE/blog/search.yaml)"
+    comment: "[blog/search/](https://cool-ski.cloudvent.net/blog/search/)  //  [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/de-DE/blog/search.yaml)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-DE)
-          comment: "[blog/search/](https://poised-plain.cloudvent.net/blog/search/)  //  \
-            [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/de-DE/blog/search.yaml)"
+          comment: "[blog/search/](https://cool-ski.cloudvent.net/blog/search/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/blog/search.yaml)"
           inputs:
             - markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration-you-can-see-the-prebuilt-ui-at-the-top-of-this-page
             - markdown:on-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer-the-search-bar-is-located-at-the-top-of-the-blog-index-page
             - markdown:pagefind-is-a-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure
             - markdown:the-goal-of-pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kb-including-the-pagefind-library-itself-for-most-sites-this-will-be-closer-to-100kb
         - heading: Already translated (de-DE)
-          comment: "[blog/search/](https://poised-plain.cloudvent.net/blog/search/)  //  \
-            [Git
-            history](https://github.com/tomrcc/rosey-jekyll-starter-work/commit\
-            s/staging/./rosey/translations/de-DE/blog/search.yaml)"
+          comment: "[blog/search/](https://cool-ski.cloudvent.net/blog/search/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/blog/search.yaml)"
           inputs: []
   markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration-you-can-see-the-prebuilt-ui-at-the-top-of-this-page:
     label: After indexing, Pagefind adds a static sea...
@@ -39,8 +36,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/search/#:~:text=After%20\
-      indexing,of%20this%20page)"
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=After%20inde\
+      xing,of%20this%20page)"
     context:
       open: false
       title: Untranslated Text
@@ -64,8 +61,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/search/#:~:text=On%20thi\
-      s%20template,blog%20index%20page)"
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=On%20this%20\
+      template,blog%20index%20page)"
     context:
       open: false
       title: Untranslated Text
@@ -89,8 +86,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/search/#:~:text=Pagefind\
-      %20is%20a,hosting%20any%20infrastructure)"
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Pagefind%20i\
+      s%20a,hosting%20any%20infrastructure)"
     context:
       open: false
       title: Untranslated Text
@@ -113,8 +110,8 @@ _inputs:
       copyformatting: true
       blockquote: true
     comment: "[See in
-      context](https://poised-plain.cloudvent.net/blog/search/#:~:text=The%20go\
-      al%20of,closer%20to%20100kB)"
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=The%20goal%2\
+      0of,closer%20to%20100kB)"
     context:
       open: false
       title: Untranslated Text
