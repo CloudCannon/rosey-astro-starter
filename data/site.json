@@ -3,5 +3,6 @@
   "description": "A starter template for a multilingual site using Astro and Rosey, built by Bookshop components - for CloudCannon CMS.",
   "twitter_site": "",
   "image": "/images/logos/logo-wordmark-blue.png",
-  "image_alt": "CloudCannon"
+  "image_alt": "CloudCannon",
+  "default_author": "CloudCannon"
 }
