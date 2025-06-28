@@ -6,11 +6,13 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "simulate-cloudcannon-build": "run-s astro build && mkdir dist/_cloudcannon && echo '{}' >> dist/_cloudcannon/info.json && ./.cloudcannon/postbuild",
-    "clean-translation-files": "node rosey-connector/localFileCleaner.js",
     "preview": "astro preview",
     "astro": "astro",
-    "prebuild:fetch-theme-color": "node fetch-theme-color.cjs"
+    "simulate-cloudcannon-build": "run-s astro build && mkdir dist/_cloudcannon && echo '{}' >> dist/_cloudcannon/info.json && ./.cloudcannon/postbuild",
+    "clean-translation-files": "node rosey-connector/localFileCleaner.js",
+    "new-component": "node src/bookshop/create-new-component.js",
+    "pagefind": "npx -y pagefind --site dist --serve",
+    "pagefind-server": "run-s build pagefind"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.3",
@@ -29,15 +31,16 @@
     "alpinejs": "^3.14.8",
     "astro": "^5.1.10",
     "astro-embed": "^0.9.0",
-    "dotenv": "^16.4.5",
-    "hast-util-from-html-isomorphic": "^2.0.0",
-    "punycode": "^2.3.1",
+    "npm-run-all": "^4.1.5",
+    "punycode": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "^0.33.5",
-    "smartling-api-sdk-nodejs": "^2.11.0",
     "tailwindcss": "^3.3.3",
-    "unist-util-visit": "^5.0.0"
+    "smartling-api-sdk-nodejs": "^2.11.0",
+    "unist-util-visit": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hast-util-from-html-isomorphic": "^2.0.0"
   },
   "devDependencies": {
     "@astrojs/rss": "^4.0.11",
