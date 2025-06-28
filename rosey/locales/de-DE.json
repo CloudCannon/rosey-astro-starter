@@ -1,4 +1,16 @@
 {
+	"common:blog": {
+		"original": "Blog",
+		"value": "Blog"
+	},
+	"common:cloudcannon": {
+		"original": "CloudCannon",
+		"value": "CloudCannon"
+	},
+	"common:github": {
+		"original": "GitHub",
+		"value": "GitHub"
+	},
 	"markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site.-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration.-you-can-see-the-prebuilt-ui-at-the-top-of-this-page.": {
 		"original": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)",
 		"value": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)"

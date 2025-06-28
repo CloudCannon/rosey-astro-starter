@@ -7,7 +7,28 @@ _inputs:
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate
-          inputs: []
+          inputs:
+            - common:blog
+            - common:cloudcannon
+            - common:github
         - heading: Already translated (fr-FR)
           comment: Text already translated
           inputs: []
+  common:blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+  common:cloudcannon:
+    label: CloudCannon
+    hidden: false
+    type: text
+    options: {}
+  common:github:
+    label: GitHub
+    hidden: false
+    type: text
+    options: {}
+common:blog: ""
+common:cloudcannon: ""
+common:github: ""

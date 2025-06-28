@@ -1,6 +1,60 @@
 {
   "version": 2,
   "keys": {
+    "common:blog": {
+      "original": " Blog ",
+      "value": null,
+      "pages": {
+        "404.html": 1,
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/search/index.html": 1,
+        "tags/seo/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 11
+    },
+    "common:cloudcannon": {
+      "original": " CloudCannon ",
+      "value": null,
+      "pages": {
+        "404.html": 1,
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/search/index.html": 1,
+        "tags/seo/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 11
+    },
+    "common:github": {
+      "original": " GitHub ",
+      "value": null,
+      "pages": {
+        "404.html": 1,
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/search/index.html": 1,
+        "tags/seo/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 11
+    },
     "markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site.-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration.-you-can-see-the-prebuilt-ui-at-the-top-of-this-page.": {
       "original": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)",
       "value": null,
