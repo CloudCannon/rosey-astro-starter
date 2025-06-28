@@ -55,7 +55,7 @@
       },
       "total": 11
     },
-    "markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site.-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration.-you-can-see-the-prebuilt-ui-at-the-top-of-this-page.": {
+    "markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration-you-can-see-the-prebuilt-ui-at-the-top-of-this-page": {
       "original": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)",
       "value": null,
       "pages": {
@@ -63,7 +63,7 @@
       },
       "total": 1
     },
-    "markdown:comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-seo-rankings.-performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well.": {
+    "markdown:comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-seo-rankings-performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well": {
       "original": "Comes with all the inputs you need to encourage editors to fill in the content that search engines expect for good SEO rankings. Performance, best practices and accessibility all play a part in this as well.",
       "value": null,
       "pages": {
@@ -71,7 +71,7 @@
       },
       "total": 1
     },
-    "markdown:control-seo-values-on-a-page-by-page-and-site-wide-basis.": {
+    "markdown:control-seo-values-on-a-page-by-page-and-site-wide-basis": {
       "original": "Control SEO values on a page-by-page, and site-wide basis.",
       "value": null,
       "pages": {
@@ -79,7 +79,7 @@
       },
       "total": 1
     },
-    "markdown:delete-your-tailwind.config.mjs-file.": {
+    "markdown:delete-your-tailwindconfigmjs-file": {
       "original": "Delete your <code>tailwind.config.mjs</code> file.",
       "value": null,
       "pages": {
@@ -95,7 +95,7 @@
       },
       "total": 1
     },
-    "markdown:inputs-on-individual-pages-are-used-for-seo-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback.": {
+    "markdown:inputs-on-individual-pages-are-used-for-seo-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback": {
       "original": "Inputs on individual pages are used for SEO values for the page, and if they’re not set the site-wide values are used as a fallback.",
       "value": null,
       "pages": {
@@ -111,7 +111,7 @@
       },
       "total": 1
     },
-    "markdown:on-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer.-the-search-bar-is-located-at-the-top-of-the-blog-index-page.": {
+    "markdown:on-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer-the-search-bar-is-located-at-the-top-of-the-blog-index-page": {
       "original": "On this template, the search has been scoped to index only the text content of blog posts, to avoid showing results on the homepage, blog index page, header and footer. The search bar is located at the top of the blog index page.",
       "value": null,
       "pages": {
@@ -119,7 +119,7 @@
       },
       "total": 1
     },
-    "markdown:pagefind-is-a-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure.": {
+    "markdown:pagefind-is-a-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure": {
       "original": "Pagefind is a fully static search library that aims to perform well on large sites, while using as little of your users’ bandwidth as possible, and without hosting any infrastructure.",
       "value": null,
       "pages": {
@@ -127,7 +127,7 @@
       },
       "total": 1
     },
-    "markdown:remove-mentions-of-tailwind-from-your-astro.config.mjs": {
+    "markdown:remove-mentions-of-tailwind-from-your-astroconfigmjs": {
       "original": "Remove mentions of Tailwind from your <code>astro.config.mjs</code>",
       "value": null,
       "pages": {
@@ -143,7 +143,7 @@
       },
       "total": 1
     },
-    "markdown:the-goal-of-pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible.-pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index.-pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kb-including-the-pagefind-library-itself.-for-most-sites-this-will-be-closer-to-100kb.": {
+    "markdown:the-goal-of-pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kb-including-the-pagefind-library-itself-for-most-sites-this-will-be-closer-to-100kb": {
       "original": "The goal of Pagefind is that websites with tens of thousands of pages should be searchable by someone in their browser, while consuming as little bandwidth as possible. Pagefind’s search index is split into chunks, so that searching in the browser only ever needs to load a small subset of the search index. Pagefind can run a full-text search on a 10,000 page site with a total network payload under 300kB, including the Pagefind library itself. For most sites, this will be closer to 100kB.",
       "value": null,
       "pages": {
@@ -151,7 +151,7 @@
       },
       "total": 1
     },
-    "markdown:use-tailwind-to-style-your-html-allowing-you-to-style-your-components-without-leaving-your-html.-this-can-be-used-in-combination-with-normal-css-and-scss-styling-leaving-you-to-add-styles-to-your-site-however-you-want.": {
+    "markdown:use-tailwind-to-style-your-html-allowing-you-to-style-your-components-without-leaving-your-html-this-can-be-used-in-combination-with-normal-css-and-scss-styling-leaving-you-to-add-styles-to-your-site-however-you-want": {
       "original": "Use Tailwind to style your HTML, allowing you to style your components without leaving your HTML. This can be used in combination with normal CSS and SCSS styling, leaving you to add styles to your site however you want.",
       "value": null,
       "pages": {
