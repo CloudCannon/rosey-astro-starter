@@ -25,7 +25,7 @@
 	},
 	"markdown:control-seo-values-on-a-page-by-page-and-site-wide-basis": {
 		"original": "Control <a href=\"https://a-test-link.com\">SEO</a> values on a page-by-page, and site-wide basis.",
-		"value": "Control SEO values on a page-by-page, and site-wide basis."
+		"value": "Control <a href=\"https://a-test-link.com\">SEO</a> values on a page-by-page, and site-wide basis."
 	},
 	"markdown:delete-your-tailwindconfigmjs-file": {
 		"original": "Delete your <code>tailwind.config.mjs</code> file.",
