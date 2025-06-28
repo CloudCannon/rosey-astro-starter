@@ -7,11 +7,11 @@ input_lengths:
   textarea: 20
 see_on_page_comment:
   enabled: true
-  base_url: https://poised-plain.cloudvent.net/
+  base_url: https://cool-ski.cloudvent.net/
   comment_text: See in context
 github_history:
   enabled: true
-  repo_url: https://github.com/tomrcc/rosey-jekyll-starter-work
+  repo_url: https://github.com/CloudCannon/rosey-astro-starter
   branch_name: staging
   comment_text: Git history
 namespace_pages:
