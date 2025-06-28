@@ -20,7 +20,7 @@ _inputs:
             /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs: []
   keep-what-you-need-delete-the-rest:
-    label: Keep what you need Delete the rest
+    label: Keep what you need. Delete the rest.
     hidden: false
     type: textarea
     options: {}
@@ -28,13 +28,13 @@ _inputs:
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20\
       you,Delete%20the%20rest)"
   you-choose-your-editing-experience:
-    label: You choose your editing experience
+    label: You choose your editing experience.
     hidden: false
     type: textarea
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
-      0your%20editing%20experience)"
+      0your%20editing%20experience.)"
 urlTranslation: index.html
 keep-what-you-need-delete-the-rest: ""
 you-choose-your-editing-experience: ""
