@@ -10,13 +10,17 @@ const md = markdownIt();
 // Block level elements to add tags to - inline elements should not have tag added
 const textElementTagNames = ["p", "li", "h1", "h2", "h3", "h4", "h5", "h6"];
 
+// TODO: Can we use the other markdown formatters (which are actually just used for ids as well)
+// And add in the sub/sub removal to those as well?
 const formatInnerText = (text: string) => {
   if (!text) {
     return "";
   }
-  // Add any formatting needed here
-
-  return text;
+  const removedSup = text.replaceAll("<sup>", "").replaceAll("</sup>", "");
+  const removedSub = removedSup
+    .replaceAll("<sub>", "")
+    .replaceAll("</sub>", "");
+  return removedSub;
 };
 
 const isTextElement = (element: Element) =>

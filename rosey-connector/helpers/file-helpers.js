@@ -34,6 +34,7 @@ async function readYamlFromFile(filepath) {
   return YAML.parse(translationFileRaw);
 }
 
+// Not used but keeping just in case
 async function readContentPage(filePath) {
   if (!filePath) {
     console.log("No filepath provided");
@@ -61,7 +62,11 @@ async function readConfigFile(configFilePath) {
   return configData;
 }
 
-function getTranslationHtmlFilename(translationFilename, baseUrlFileData) {
+function getTranslationHtmlFilename(
+  translationFilename,
+  baseUrlFileData,
+  namespaceArray
+) {
   if (translationFilename === "home.yaml") {
     return "index.html";
   }
@@ -83,7 +88,13 @@ function getTranslationHtmlFilename(translationFilename, baseUrlFileData) {
     fileName = extensionlessHtmlFileName;
   }
 
-  if (!fileName) {
+  // Before throwing a log check that the file doesn't exist, and check that it's not in our namespace arr
+  // We will still return an empty string as the fileName, as its used for urlTranslations check
+  // But no need to log a warning if its in ns arr as it makes sense there's no .html file for ns pages
+  if (
+    !fileName &&
+    !namespaceArray?.includes(translationFilename.replace(".yaml", ""))
+  ) {
     console.log(
       `No .html filename found in our base.urls.json for ${translationFilename}`
     );
@@ -114,7 +125,9 @@ function getParentDirName(filePath) {
     return "";
   }
 
-  return filePath.substring(0, filePath.lastIndexOf("/") + 1);
+  // /index.html shouldn't count as a parent dir
+  const removedExtensionUrl = filePath.replace("/index.html", "");
+  return filePath.substring(0, removedExtensionUrl.lastIndexOf("/") + 1);
 }
 
 async function createParentDirIfExists(

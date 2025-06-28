@@ -16,6 +16,7 @@ function formatMarkdownText(markdownText) {
   if (!markdownText) {
     return "";
   }
+  // TODO: Add the sup/sub stuff here
   const trimmedWhiteSpace = markdownText.trim();
   const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
   const cleanedText = removeSpecialCharactersFromMarkdown(noLinks);

@@ -132,9 +132,8 @@ async function generateTranslationFilesForLocale(
       // Process the url translation
       processUrlTranslation(translationFileData, translationDataToWrite, page);
       // Process the rest of the translations
-      // TODO: As part of process translations, look for keys with common at the start and
-      // add them to common array
-      // Don't write them to the translation file
+      // As part of process translations, look for keys with a value in the namespace array
+      // at the start and don't write them to the translation file
       processTranslations(
         baseFileData,
         translationFileData,
@@ -157,9 +156,8 @@ async function generateTranslationFilesForLocale(
     })
   );
 
-  // Loop over that array replacing common with the namespace name
-  // After the normal pages are done looping and writing, loop over the namespaced pages, and write a file for each
-
+  // After the normal pages are done looping and writing,
+  // loop over the namespaced pages, and write a file for each
   await Promise.all(
     namespaceArray.map(async (namespace) => {
       const namespaceFilePath = path.join(
