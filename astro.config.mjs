@@ -12,18 +12,18 @@ export default defineConfig({
   integrations: [react(), tailwind(), bookshop(), alpine(), mdx()],
   markdown: {
     // rehypePlugins: [autoAddRoseyTags],
-    remarkRehype: {
-      // https://github.com/syntax-tree/mdast-util-to-hast?tab=readme-ov-file#options
-      handlers: {
-        mdxJsxTextElement(state, node) {
-          return {
-            type: "element",
-            tagName: node.name,
-            properties: {},
-            children: state.all(node),
-          };
-        },
-      },
-    },
+    // remarkRehype: {
+    //   // https://github.com/syntax-tree/mdast-util-to-hast?tab=readme-ov-file#options
+    //   handlers: {
+    //     mdxJsxTextElement(state, node) {
+    //       return {
+    //         type: "element",
+    //         tagName: node.name,
+    //         properties: {},
+    //         children: state.all(node),
+    //       };
+    //     },
+    //   },
+    // },
   },
 });
