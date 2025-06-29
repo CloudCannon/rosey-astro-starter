@@ -1,13 +1,6 @@
 import { getPageString, getYamlFileName } from "./file-helpers.js";
 import { formatTextForInputComments } from "./markdown-formatters.js";
 import { htmlToMarkdownHandler } from "./html-to-markdown.js";
-import { NodeHtmlMarkdown } from "node-html-markdown";
-
-const nhm = new NodeHtmlMarkdown(
-  /* options (optional) */ {},
-  /* customTransformers (optional) */ undefined,
-  /* customCodeBlockTranslators (optional) */ undefined
-);
 
 // Input set up
 function initDefaultInputs(
@@ -77,11 +70,10 @@ async function getInputConfig(
   const baseUrl = seeOnPageCommentSettings.base_url;
   const seeOnPageCommentText = seeOnPageCommentSettings.comment_text;
   const untranslatedPhrase = baseTranslationObj.original.trim();
-  //
-  const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
 
-  const tidiedUnifiedTest = await htmlToMarkdownHandler(untranslatedPhrase);
-  console.log({ tidiedUnifiedTest });
+  const untranslatedPhraseMarkdown = await htmlToMarkdownHandler(
+    untranslatedPhrase
+  );
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );
@@ -258,9 +250,15 @@ function initNamespacePageInputs(data, locale) {
   }
 }
 
-function getNamespaceInputConfig(inputKey, baseTranslationObj, inputLengths) {
+async function getNamespaceInputConfig(
+  inputKey,
+  baseTranslationObj,
+  inputLengths
+) {
   const untranslatedPhrase = baseTranslationObj.original.trim();
-  const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
+  const untranslatedPhraseMarkdown = await htmlToMarkdownHandler(
+    untranslatedPhrase
+  );
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );

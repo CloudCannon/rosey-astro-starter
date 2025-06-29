@@ -193,7 +193,11 @@ async function generateTranslationFilesForLocale(
 
           // Set up inputs for each key
           namespaceTranslationDataToWrite._inputs[inputKey] =
-            getNamespaceInputConfig(inputKey, baseTranslationObj, inputLengths);
+            await getNamespaceInputConfig(
+              inputKey,
+              baseTranslationObj,
+              inputLengths
+            );
 
           // Add each entry to page object group depending on whether they are already translated or not
           sortTranslationIntoInputGroup(
