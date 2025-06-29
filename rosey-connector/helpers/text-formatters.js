@@ -27,31 +27,31 @@ function removeNonPuncCharsFromText(text) {
   // We shouldn't remove any chars here that will help format context comments
   return text.replaceAll(/[#%{}_]/gm, "");
 }
-function formatMarkdownTextForIds(markdownText) {
-  if (!markdownText) {
+function formatTextForIds(text) {
+  if (!text) {
     return "";
   }
-  const trimmedWhiteSpace = markdownText.trim();
+  const trimmedWhiteSpace = text.trim();
   const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
   const cleanedText = removeAllSpecCharsFromText(noLinks);
 
   return cleanedText;
 }
-function formatTextForInputComments(markdownText) {
-  if (!markdownText) {
+function formatTextForInputComments(text) {
+  if (!text) {
     return "";
   }
-  const trimmedWhiteSpace = markdownText.trim();
+  const trimmedWhiteSpace = text.trim();
   const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
   const cleanedText = removeNonPuncCharsFromText(noLinks);
 
   return cleanedText;
 }
-function formatAndSlugifyText(markdownText) {
-  if (!markdownText) {
+function formatAndSlugifyText(text) {
+  if (!text) {
     return "";
   }
-  const formattedText = formatMarkdownTextForIds(markdownText).toLowerCase();
+  const formattedText = formatTextForIds(text).toLowerCase();
   return slugify(formattedText);
 }
 

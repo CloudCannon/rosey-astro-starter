@@ -4,7 +4,7 @@ import type { Element } from "hast";
 import {
   isTextElement,
   getElementInnerText,
-} from "../helpers/text-formatters.ts";
+} from "../helpers/ast-helpers.ts";
 import { generateRoseyMarkdownId } from "../helpers/component-helpers.js";
 
 // Block level elements to add tags to - inline elements should not have tag added

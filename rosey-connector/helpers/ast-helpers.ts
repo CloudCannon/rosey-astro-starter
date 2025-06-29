@@ -1,11 +1,10 @@
 import type { Element } from "hast";
 
-
 const isTextElement = (element: Element, textElementTagNames: Array<string>) =>
   textElementTagNames.includes(element.tagName);
 
 // This checks three levels deep of nesting in an AST for text
-function getElementInnerText(node) {
+function getElementInnerText(node: any) {
   let elementInnerText = "";
   for (const child of node.children) {
     if (child.type === "text") {

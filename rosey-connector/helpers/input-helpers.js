@@ -2,7 +2,7 @@ import { getPageString, getYamlFileName } from "./file-helpers.js";
 import {
   formatTextForInputComments,
   removeSuperAndSubFromText,
-} from "./markdown-formatters.js";
+} from "./text-formatters.js";
 import { htmlToMarkdownHandler } from "./html-to-markdown.js";
 
 // Input set up
@@ -223,7 +223,7 @@ function generateLocationString(
     : `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=${encodedOriginalPhrase})`;
 }
 
-// Common input set up
+// Namespace pages input set up
 
 function initNamespacePageInputs(data, locale) {
   // Create the inputs obj if there is none
