@@ -14,10 +14,10 @@
     "reset-and-install": "rm -r node_modules && rm package-lock.json && npm i"
   },
   "dependencies": {
-    "@astrojs/alpinejs": "^0.4.0",
-    "@astrojs/mdx": "^2.2.4",
-    "@astrojs/react": "^3.0.2",
-    "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/alpinejs": "^0.4.8",
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/react": "^4.3.0",
+    "@astrojs/tailwind": "^6.0.2",
     "@bookshop/astro-bookshop": "3.16.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
@@ -28,7 +28,7 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "alpinejs": "^3.13.8",
-    "astro": "4.0.0",
+    "astro": "^5.10.1",
     "astro-embed": "^0.7.2",
     "dotenv": "^16.4.5",
     "hast-util-from-html-isomorphic": "^2.0.0",
@@ -41,7 +41,7 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@astrojs/rss": "^3.0.0",
+    "@astrojs/rss": "^4.0.12",
     "@bookshop/astro-engine": "3.16.1",
     "@bookshop/generate": "3.16.1",
     "@types/markdown-it": "^14.0.1",
