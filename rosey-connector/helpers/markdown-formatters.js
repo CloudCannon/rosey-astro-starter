@@ -1,15 +1,55 @@
 import slugify from "slugify";
 
-function formatAndSlugifyMarkdownText(markdownText) {
+function removeLinksFromMarkdown(markdownText) {
   if (!markdownText) {
     return "";
   }
-  const lowerCaseText = markdownText.toLowerCase();
-  const formattedLinks = lowerCaseText.replaceAll(
-    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
-    /$1/
-  );
-  return slugify(formattedLinks, { remove: /[.*,:\/]/g });
+  return markdownText.replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, /$1/);
+}
+function removeAllSpecCharsFromText(text) {
+  if (!text) {
+    return "";
+  }
+  const removedSupSub = text
+    .replaceAll("<sup>", "")
+    .replaceAll("</sup>", "")
+    .replaceAll("<sub>", "")
+    .replaceAll("</sub>", "");
+  return removedSupSub.replaceAll(/[&\/\\#+()$~.%'!"*<>{}_]/gm, "");
+}
+function removeNonPuncCharsFromText(text) {
+  if (!text) {
+    return "";
+  }
+  // We shouldn't remove any chars here that will help format context comments
+  return text.replaceAll(/[#%{}_]/gm, "");
+}
+function formatMarkdownTextForIds(markdownText) {
+  if (!markdownText) {
+    return "";
+  }
+  const trimmedWhiteSpace = markdownText.trim();
+  const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
+  const cleanedText = removeAllSpecCharsFromText(noLinks);
+
+  return cleanedText;
+}
+function formatTextForInputComments(markdownText) {
+  if (!markdownText) {
+    return "";
+  }
+  const trimmedWhiteSpace = markdownText.trim();
+  const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
+  const cleanedText = removeNonPuncCharsFromText(noLinks);
+
+  return cleanedText;
+}
+function formatAndSlugifyText(markdownText) {
+  if (!markdownText) {
+    return "";
+  }
+  const formattedText = formatMarkdownTextForIds(markdownText).toLowerCase();
+  return slugify(formattedText);
 }
 
-export { formatAndSlugifyMarkdownText };
+export { formatAndSlugifyText, formatTextForInputComments };

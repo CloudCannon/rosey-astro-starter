@@ -2,9 +2,13 @@ import fs from "fs";
 import YAML from "yaml";
 import markdownit from "markdown-it";
 import path from "path";
-import { isDirectory, readFileWithFallback } from "./helpers/file-helper.js";
+import {
+  isDirectory,
+  readFileWithFallback,
+  getTranslationHtmlFilename,
+} from "./helpers/file-helpers.js";
 import dotenv from "dotenv";
-const md = markdownit();
+const md = markdownit({ html: true });
 dotenv.config();
 
 export async function generateLocales(configData) {
@@ -16,7 +20,7 @@ export async function generateLocales(configData) {
     try {
       await generateLocale(locale, configData);
     } catch (err) {
-      console.error(`❌❌ Encountered an error translating ${locale}:`, err);
+      console.error(`❌ Encountered an error translating ${locale}:`, err);
     }
   }
 }
@@ -28,20 +32,18 @@ async function generateLocale(locale, configData) {
     configData.rosey_paths.rosey_base_file_path
   );
   const baseFileData = JSON.parse(baseFile.toString("utf-8")).keys;
-  const baseURLsFile = await fs.promises.readFile(
+  const baseUrlsFile = await fs.promises.readFile(
     configData.rosey_paths.rosey_base_urls_file_path
   );
-  const baseUrlFileData = JSON.parse(baseURLsFile.toString("utf-8")).keys;
+  const baseUrlFileData = JSON.parse(baseUrlsFile.toString("utf-8")).keys;
+  const namespaceArray = configData.namespace_pages;
 
   const localePath = path.join(localesDirPath, `${locale}.json`);
-  const localeURLsPath = path.join(localesDirPath, `${locale}.urls.json`);
+  const localeUrlsPath = path.join(localesDirPath, `${locale}.urls.json`);
   const translationsLocalePath = path.join(translationsDirPath, locale);
 
   // Ensure directories exist
-  console.log(`📂📂 ${translationsLocalePath} ensuring directory exists`);
   await fs.promises.mkdir(translationsLocalePath, { recursive: true });
-
-  console.log(`📂📂 ${localesDirPath} ensuring directory exists`);
   await fs.promises.mkdir(localesDirPath, { recursive: true });
 
   // Get last round's translations
@@ -49,7 +51,7 @@ async function generateLocale(locale, configData) {
     await readFileWithFallback(localePath, "{}")
   );
   const oldUrlsLocaleData = JSON.parse(
-    await readFileWithFallback(localeURLsPath, "{}")
+    await readFileWithFallback(localeUrlsPath, "{}")
   );
 
   // Get current translations
@@ -60,6 +62,7 @@ async function generateLocale(locale, configData) {
   // Loop through each file in the translations directory
   const localeDataEntries = {};
   await Promise.all(
+    // Exit early if its a dir
     translationsFiles.map(async (filename) => {
       if (
         await isDirectory(
@@ -69,6 +72,7 @@ async function generateLocale(locale, configData) {
         return;
       }
 
+      // Process the translation (it may be a url or a normal translation)
       const response = await processTranslation(
         locale,
         filename,
@@ -76,26 +80,31 @@ async function generateLocale(locale, configData) {
         oldLocaleData,
         oldUrlsLocaleData,
         baseFileData,
-        baseUrlFileData
+        baseUrlFileData,
+        namespaceArray
       );
 
       localeDataEntries[filename] = response;
     })
   );
 
-  let localeData = {};
-  let localeUrlsData = {};
-  let keysToUpdate = {};
+  const localeData = {};
+  const localeUrlsData = {};
+  const keysToUpdate = {};
 
+  // Loop through all the translations,
+  // including old ones and untranslated ones falling back to original
   await Promise.all(
     Object.keys(localeDataEntries).map(async (filename) => {
       const { data, urlData } = localeDataEntries[filename];
 
-      Object.keys(urlData).forEach((key) => {
+      // Sort out the url translations from the normal translations
+      for (const key of Object.keys(urlData)) {
         localeUrlsData[key] = urlData[key];
-      });
+      }
 
-      Object.keys(data).forEach((key) => {
+      // Find first time translations, or new translations and add them to locale data to write
+      for (const key of Object.keys(data)) {
         if (!localeData[key] || data[key].isNewTranslation) {
           const isKeyMarkdown = key.slice(0, 10).includes("markdown:");
 
@@ -103,18 +112,20 @@ async function generateLocale(locale, configData) {
             original: data[key].original,
             value:
               isKeyMarkdown && data[key].isNewTranslation
-                ? md.render(data[key].value)
+                ? md.renderInline(data[key].value)
                 : data[key].value,
           };
         }
 
+        // If new translations - prep to sync duplicate inputs on other translation pages
         if (data[key].isNewTranslation) {
           keysToUpdate[key] = data[key].value;
         }
-      });
+      }
     })
   );
 
+  // Search for duplicate keys on each translation page for new translations
   await Promise.all(
     Object.keys(localeDataEntries).map(async (filename) => {
       const translationFilePath = getTranslationPath(
@@ -125,22 +136,18 @@ async function generateLocale(locale, configData) {
       const fileContents = await readFileWithFallback(translationFilePath, "");
       const data = YAML.parse(fileContents);
 
-      let updatedKeys = [];
-      Object.keys(keysToUpdate).forEach((key) => {
-        if (data[key] || data[key] === "") {
+      const updatedKeys = [];
+      for (const key of Object.keys(keysToUpdate)) {
+        if (data[key] || data[key] === "" || data[key] === null) {
           data[key] = keysToUpdate[key];
-          updatedKeys = [key];
+          updatedKeys.push(key);
         }
-      });
+      }
 
+      // If we've found any duplicate keys to update write the file
       if (updatedKeys.length > 0) {
         const yamlString = YAML.stringify(data);
         await fs.promises.writeFile(translationFilePath, yamlString);
-        console.log(
-          `✅ ${translationFilePath} succesfully updated duplicate keys: ${updatedKeys.join(
-            ", "
-          )}`
-        );
       }
     })
   );
@@ -166,35 +173,23 @@ async function generateLocale(locale, configData) {
     localePath,
     JSON.stringify(orderedLocaleData, null, "\t")
   );
-  console.log(`✅✅ ${localePath} updated succesfully`);
+  console.log(`Locale file: ${localePath} updated succesfully`);
 
-  // Write locales URL data
+  // Write locales Url data
   await fs.promises.writeFile(
-    localeURLsPath,
+    localeUrlsPath,
     JSON.stringify(orderedLocaleUrlData, null, "\t")
   );
-  console.log(`✅✅ ${localeURLsPath} updated succesfully`);
+  console.log(`Locale url file: ${localeUrlsPath} updated succesfully`);
 }
 
 function getTranslationPath(locale, translationsDirPath, translationFilename) {
   return path.join(translationsDirPath, locale, translationFilename);
 }
 
-function getTranslationHTMLFilename(translationFilename) {
-  if (translationFilename === "404.yaml") {
-    return "404.html";
-  }
-
-  if (translationFilename === "home.yaml") {
-    return "index.html";
-  }
-
-  return translationFilename.replace(".yaml", "/index.html");
-}
-
 function processUrlTranslationKey(
   translationEntry,
-  translationHTMLFilename,
+  translationHtmlFilename,
   baseUrlFileData,
   oldUrlsLocaleData
 ) {
@@ -202,19 +197,22 @@ function processUrlTranslationKey(
     return;
   }
 
-  if (translationEntry !== oldUrlsLocaleData[translationHTMLFilename]?.value) {
-    console.log(`Detected a new URL translation: ${translationEntry}`);
+  const lastTranslationUrlValue =
+    oldUrlsLocaleData[translationHtmlFilename]?.value;
+  const baseUrlFileOriginal =
+    baseUrlFileData[translationHtmlFilename]?.original;
+
+  if (translationEntry !== lastTranslationUrlValue) {
+    console.log(`Detected a new Url translation: ${translationEntry}`);
     return {
-      original: translationHTMLFilename,
+      original: translationHtmlFilename,
       value: translationEntry,
     };
   }
 
   return {
-    original: baseUrlFileData[translationHTMLFilename]?.original,
-    value:
-      oldUrlsLocaleData[translationHTMLFilename]?.value ||
-      baseUrlFileData[translationHTMLFilename]?.original,
+    original: baseUrlFileOriginal,
+    value: lastTranslationUrlValue || baseUrlFileOriginal,
   };
 }
 
@@ -226,22 +224,32 @@ function processContentTranslationKey(
   oldLocaleData
 ) {
   // Exit early if it's not a new translation, and use old locales data instead
+  const oldLocaleDataValue = oldLocaleData[keyName]?.value.trim();
+  const baseFileDataOriginal = baseFileData[keyName]?.original.trim();
+
+  // No translated string use the original
+  if (!translatedString) {
+    return {
+      original: baseFileDataOriginal,
+      value: baseFileDataOriginal,
+    };
+  }
+
   if (
-    !translatedString ||
-    translatedString === oldLocaleData[keyName]?.value ||
-    md.render(translatedString) === oldLocaleData[keyName]?.value
+    translatedString === oldLocaleDataValue ||
+    md.renderInline(translatedString) === oldLocaleDataValue
   ) {
     return !localeData[keyName]
       ? {
-          original: baseFileData[keyName]?.original,
-          value:
-            oldLocaleData[keyName]?.value || baseFileData[keyName]?.original,
+          original: baseFileDataOriginal,
+          value: oldLocaleDataValue || baseFileDataOriginal,
         }
       : localeData[keyName];
   }
   // If its not an old translation, write the value to the locales file
+  console.log(`Detected a new translation: ${translatedString}`);
   return {
-    original: baseFileData[keyName]?.original,
+    original: baseFileDataOriginal,
     value: translatedString,
     isNewTranslation: true,
   };
@@ -254,7 +262,8 @@ async function processTranslation(
   oldLocaleData,
   oldUrlsLocaleData,
   baseFileData,
-  baseUrlFileData
+  baseUrlFileData,
+  namespaceArray
 ) {
   const localeData = {};
   const localeUrlsData = {};
@@ -274,11 +283,15 @@ async function processTranslation(
     console.log("No data from filepath: ", translationsPath);
   }
 
-  const translationHTMLFilename =
-    getTranslationHTMLFilename(translationFilename);
+  const translationHtmlFilename = getTranslationHtmlFilename(
+    translationFilename,
+    baseUrlFileData,
+    namespaceArray
+  );
+
   // Check if theres a translation and
   // Add each obj to our locales data, excluding '_inputs' object.
-  Object.entries(data).forEach(([keyName, translatedString]) => {
+  Object.entries(data).map(([keyName, translatedString]) => {
     if (keyName === "_inputs") {
       return;
     }
@@ -288,27 +301,27 @@ async function processTranslation(
     if (keyName === "urlTranslation") {
       const newEntry = processUrlTranslationKey(
         translatedString,
-        translationHTMLFilename,
+        translationHtmlFilename,
         baseUrlFileData,
         oldUrlsLocaleData
       );
 
       if (newEntry) {
-        localeUrlsData[translationHTMLFilename] = newEntry;
+        localeUrlsData[translationHtmlFilename] = newEntry;
       } else if (
-        // Provide a fallback if there's no translated URL so the translated URL isn't a blank string
-        localeUrlsData[translationHTMLFilename]?.value === "" ||
-        localeUrlsData[translationHTMLFilename]?.value === undefined
+        // Provide a fallback if there's no translated Url so the translated Url isn't a blank string
+        localeUrlsData[translationHtmlFilename]?.value === "" ||
+        localeUrlsData[translationHtmlFilename]?.value === undefined
       ) {
         return {
-          original: baseUrlFileData[translationHTMLFilename]?.original,
-          value: baseUrlFileData[translationHTMLFilename]?.original,
+          original: baseUrlFileData[translationHtmlFilename]?.original,
+          value: baseUrlFileData[translationHtmlFilename]?.original,
         };
       }
-      // Preserve old URL translation
+      // Preserve old Url translation
       return {
-        original: baseUrlFileData[translationHTMLFilename]?.original,
-        value: baseUrlFileData[translationHTMLFilename]?.value,
+        original: baseUrlFileData[translationHtmlFilename]?.original,
+        value: baseUrlFileData[translationHtmlFilename]?.value,
       };
     }
 

@@ -3,23 +3,12 @@ import { visit, SKIP } from "unist-util-visit";
 import { fromHtmlIsomorphic } from "hast-util-from-html-isomorphic";
 import { toHtml } from "hast-util-to-html";
 import type { Element } from "hast";
-import { generateRoseyMarkdownID } from "rosey-connector/helpers/component-helper";
+import { generateRoseyMarkdownId } from "rosey-connector/helpers/component-helpers.js";
 import markdownIt from "markdown-it";
-const md = markdownIt();
+const md = markdownIt({ html: true });
 
 // Block level elements to add tags to - inline elements should not have tag added
 const textElementTagNames = ["p", "li", "h1", "h2", "h3", "h4", "h5", "h6"];
-
-const formatInnerText = (text: string) => {
-  if (!text) {
-    return "";
-  }
-  const removedSup = text.replaceAll("<sup>", "").replaceAll("</sup>", "");
-  const removedSub = removedSup
-    .replaceAll("<sub>", "")
-    .replaceAll("</sub>", "");
-  return removedSub;
-};
 
 const isTextElement = (element: Element) =>
   textElementTagNames.includes(element.tagName);
@@ -37,21 +26,19 @@ visit(hastTree, function (node, index, parent) {
     let elementInnerText = "";
     node.children.forEach((child) => {
       if (child.type === "text") {
-        const childFormatted = formatInnerText(child.value);
+        const childFormatted = child.value;
         elementInnerText += childFormatted;
       }
       if (child.type === "element" && child.children) {
         child.children.forEach((grandchild) => {
           if (grandchild.type === "text") {
-            const grandChildFormatted = formatInnerText(grandchild.value);
+            const grandChildFormatted = grandchild.value;
             elementInnerText += grandChildFormatted;
           }
           if (grandchild.type === "element" && grandchild.children) {
             grandchild.children.forEach((greatGrandchild) => {
               if (greatGrandchild.type === "text") {
-                const greatGrandChildFormatted = formatInnerText(
-                  greatGrandchild.value
-                );
+                const greatGrandChildFormatted = greatGrandchild.value;
                 elementInnerText += greatGrandChildFormatted;
               }
             });
@@ -59,7 +46,7 @@ visit(hastTree, function (node, index, parent) {
         });
       }
     });
-    node.properties["data-rosey"] = generateRoseyMarkdownID(elementInnerText);
+    node.properties["data-rosey"] = generateRoseyMarkdownId(elementInnerText);
     // Skip any children that might accidentally get a nested tag
     return SKIP;
   }

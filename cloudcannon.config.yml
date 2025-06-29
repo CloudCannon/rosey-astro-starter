@@ -1,13 +1,19 @@
 paths:
-  static: 'public'
+  static: public
   uploads: public/images
+
+commit_templates:
+  - label: Default message
+    template_string: '[default_commit_message]'
+  - label: Custom message
+    template_string: '{message}'
 
 collections_config:
   pages:
     path: src/content/pages
-    url: '/[full_slug]/'
     glob:
       - '**/*.md'
+    url: '/[full_slug]/'
     icon: laptop_mac
     _enabled_editors:
       - visual
@@ -20,73 +26,110 @@ collections_config:
         name: New Page
         path: '.cloudcannon/schemas/page.md'
         remove_extra_inputs: false
+      paginated:
+        name: Paginated collection
+        path: '.cloudcannon/schemas/paginated.md'
+        remove_extra_inputs: false
     create:
-      path: '[relative_base_path]/{filename|slugify}.md'
-  posts:
+      path: '[relative_base_path]/{filename|slugify|lowercase}.md'
+    new_preview_url: /
+    _inputs:
+      title:
+        type: text
+        comment: Controls the metadata title for the page.
+  blog:
     path: src/content/blog
-    url: '/blog/[full_slug]/'
     glob:
       - '**/*.mdx'
+    url: '/blog/[full_slug]/'
+    icon: newspaper
+    preview:
+      text:
+        - key: title
+      gallery:
+        fit: cover
+        image: 
+          - key: thumb_image_path
+          - key: post_hero.image
+      metadata:
+        - icon: calendar_month
+          text: 
+            - template: Created {post_hero.date|date_long}
+            - Add date
+        - icon: person
+          text:
+            - template: By {post_hero.author}
+            - No author
+        - icon: style
+          text:
+            - template: '{post_hero.tags[*]}'
+            - No tags
     _enabled_editors:
-      - content
       - visual
+      - content
     add_options:
       - name: Add New Post
         schema: default
         icon: post_add
+        editor: content
     schemas:
       default:
-        name: New Post
         path: '.cloudcannon/schemas/post.mdx'
     create:
-      path: '[relative_base_path]/{filename|slugify}.mdx'
+      path: '[relative_base_path]/{filename|slugify|lowercase}.mdx'
     _inputs:
       title:
+        comment: Controls the metadata title, and the title used when linking to this page elsewhere on the site.
         options:
           empty_type: string
+      post_hero:
+        type: object
+        options:
+          preview:
+            image:
+              - key: image
+            icon: description
       image:
+        type: image
+        comment: The hero image at the top of the post.
         options:
           empty_type: string
+          paths:
+            static: ''
+            uploads: src/assets/images/blog
       image_alt:
+        type: textarea
+        options:
+          empty_type: string
+      thumb_image_path:
+        type: image
+        label: Thumbnail Image
+        comment: The image used as the page thumbnail when being referenced elsewhere on the site. Does not affect the image used when sharing the page, which is set inside of the page's SEO inputs.
+        options:
+          empty_type: string
+          paths:
+            static: ''
+            uploads: src/assets/images/blog
+      thumb_image_alt:
+        type: textarea
+        label: Thumbnail Image Alt Text
         options:
           empty_type: string
       author:
         options:
           empty_type: string
       tags:
-        type: array
+        type: multiselect
+        comment: To add a new tag, go to the [tags data file](cloudcannon:collections/data/tags.json).
         options:
+          values: data.tags
           empty_type: array
-      tags[*]:
-        type: text
-        options:
-          empty_type: string
   data:
     path: data
-    disable_url: true
     disable_add: true
     disable_add_folder: true
-    _inputs:
-      icons:
-        comment: Add an icon from the list of [Font Awesome icons](https://fontawesome.com/search?o=r&m=free). Then add it to the ```src/components/utility/icon.jsx``` file, following the existing pattern.
-      locales:
-        type: array
-        options:
-          structures: _structures.locale
-    _structures:
-      locale:
-        values:
-          - value:
-              code:
-              name:
-              flag:
-            _inputs:
-              name:
-                comment: The text displayed in the language picker menu.
-              code:
-                comment: Enter the URL language code.
-              flag:
-                type: image
+    glob: 
+      - '!icons.json'
   translations:
     path: rosey
     icon: translate
@@ -106,12 +149,19 @@ collection_groups:
   - heading: Pages
     collections:
       - pages
-      - posts
+      - blog
   - heading: Data
     collections:
       - data
       - translations
-      - translations_config
+
+data_config:
+  icons:
+    path: data/icons.json
+  colors:
+    path: data/colors.json
+  tags:
+    path: data/tags.json
 
 file_config:
   - glob: data/colors.json
@@ -135,44 +185,144 @@ file_config:
       name:
         type: text
         comment: What is seen in the color selector dropdown.
+  - glob: data/tags.json
+    _inputs:
+      $:
+        type: array
+        label: Tags
+        comment: Set the tags available in posts.
+      $[*]:
+        type: text
+  - glob: data/navigation.json
+    _inputs:
+      locales:
+        type: array
+        options:
+          structures: _structures.locale
+      header:
+        type: object
+        options:
+          preview:
+            icon: menu
+            text: Header details
+            subtext: Update logo, colors, and links.
+      footer:
+        type: object
+        options:
+          preview:
+            icon: menu
+            text: Footer details
+            subtext: Update logo, colors, socials, copyright, and links.
+      social:
+        type: array
+        options:
+          structures: _structures.social_links
+    _structures:
+      locale:
+        values:
+          - value:
+              code:
+              name:
+              flag:
+            _inputs:
+              name:
+                comment: The text displayed in the language picker menu.
+              code:
+                comment: Enter the URL language code.
+              flag:
+                type: image
+      social_links:
+        values:
+          - value:
+              icon:
+              link:
+              name:
+            _inputs:
+              name:
+                type: text
+                comment: Adds an aria-label for assistive technologies.
+            preview:
+              icon: group
 
-data_config:
-  icons:
-    path: data/icons.json
-  colors:
-    path: data/colors.json
- 
 _editables:
-  content: &markdown_options
+  content:
+    blockquote: true
     bold: true
-    format: p h1 h2 h3 h4
+    format: p h2 h3 h4
     italic: true
+    strike: true
+    subscript: true
+    superscript: true
+    underline: true
     link: true
+    bulletedlist: true
+    indent: true
+    numberedlist: true
+    outdent: true
+    code: true
+    embed: true
+    horizontalrule: true
+    image: true
+    table: true
     undo: true
     redo: true
     removeformat: true
     copyformatting: true
-    bulletedlist: true
-    numberedlist: true
-    blockquote: true
-    superscript: true
-    subscript: true
-    code: true
-    horizontalrule: true
-    image: true
+    styles: /css/editor.css
+    left: align-left
+    center: align-center
+    right: align-right
+    justify: align-justify
+    image_size_attributes: true
     snippet: true
 
 _inputs:
+  content_blocks:
+    type: array
+    options:
+      structures: _structures.content_blocks
+      empty_type: array
+  hero_block:
+    type: object
+    options:
+      structures: _structures.hero_blocks
+  feature_list:
+    type: multiselect
+    options:
+      empty_type: array
+      values: collections.blog
+      value_key: title
+  main_feature:
+    type: select
+    options:
+      values: collections.blog
+      value_key: title
+  text_content:
+    type: markdown
+    options:
+      blockquote: true
+      bold: true
+      format: p h2 h3 h4
+      italic: true
+      strike: true
+      subscript: true
+      superscript: true
+      underline: true
+      link: true
+      bulletedlist: true
+      indent: true
+      numberedlist: true
+      outdent: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
   image_path:
     type: image
     comment: The path to the source file of the image to be optimized.
     options:
-      accepts_mime_types:
-        - image/png
-        - image/jpeg
-        - image/gif
       paths:
-        static: '.'
+        static: ''
         uploads: src/assets/images
   alt_text:
     label: Image Alt Text
@@ -183,7 +333,6 @@ _inputs:
   height:
     type: number
   background_color:
-    hidden: 'border_only'
     type: select
     options:
       values: data.colors
@@ -191,6 +340,9 @@ _inputs:
       preview:
         text:
           - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   text_color:
     type: select
     options:
@@ -199,6 +351,9 @@ _inputs:
       preview:
         text:
           - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   color:
     type: select
     options:
@@ -207,6 +362,20 @@ _inputs:
       preview:
         text:
           - key: name
+        icon: palette
+        icon_color: 
+          - key: value
+  hover_text_color:
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: name
+        icon: palette
+        icon_color: 
+          - key: value
   icon:
     type: select
     options:
@@ -224,6 +393,8 @@ _inputs:
       max: 1.5
       step: 0.05
   seo:
+    type: object
+    comment: Set SEO values for the page, otherwise [site defaults](cloudcannon:collections/data/site.json) will be used as a fallback.
     options:
       preview:
         icon: query_stats
@@ -238,12 +409,14 @@ _inputs:
     instance_value: NOW
   page_size:
     type: number
-    comment: The number of collection items to list per page
+    comment: The number of collection items to list per page. This does not update live in the visual editor, but will take effect next save & rebuild.
   social:
+    type: object
     options:
       preview:
         icon: link
   links[*]:
+    type: object
     options:
       preview:
         icon: link
@@ -253,67 +426,69 @@ _inputs:
         subtext:
           - key: link
           - 'Add a social link'
-  social_icon:
-    type: select
-    options:
-      values: data.icons
   social[*]:
+    type: object
     options:
       preview:
         icon: query_stats
   logo:
     type: image
   logo_url:
-    comment: Link for the logo in the top left of the footer
+    comment: Link for the logo in the top left of the footer.
   copyright:
-    comment: Automatically prefixed with the current year
+    comment: Automatically prefixed with the current year.
   page_description:
-    comment: Defaults to the description set in the Site SEO data file
+    comment: Defaults to the description set in the Site SEO data file.
   canonical_url:
-    comment: Defaults to the pages url
+    comment: Defaults to the pages url.
   featured_image:
-    comment: Defaults to the image set in the Site SEO data file
+    comment: Defaults to the image set in the Site SEO data file.
   open_graph_type:
     type: select
     options:
       values:
         - website
         - article
-    comment: Defaults to the type 'website'
+    comment: Defaults to the type 'website'.
   author_twitter_handle:
-    comment: Defaults to the twitter site value set in the Site SEO data file
+    comment: Defaults to the twitter site value set in the Site SEO data file.
   twitter_site:
     type: url
   no_index:
     type: checkbox
     comment:
-      When selected this removes the page from your sitemap and adds the noindex
-      robots meta tag
+      When selected this removes the page from your sitemap and adds the noindex robots meta tag. This is only needed if you are using your own custom domain, as adjective-noun.cloudvent.net urls are no-indexed by default anyway.
 
 _snippets_imports:
-  mdx: true
+  # TODO: Remove this after fixing snippet-in-content-in-visual-editor bug
+  mdx: 
+    exclude:
+      - _cc_mdx_unknown_template
+      - import
+
 _snippets:
   alert:
     template: mdx_component
     inline: false
     preview:
-      text:
+      icon: announcement
+      text: Alert
+      subtext:
         - key: alert_message
-        - 'Alert'
+        - Update alert content and styles
+    picker_preview:
+      gallery:
+        image: /images/components-screenshots/alert.png
     definitions:
       component_name: SnippetsAlert
       named_args:
         - editor_key: background_color
-          source_key: background_color
           type: string
         - editor_key: alert_message
-          source_key: alert_message
           type: string
         - editor_key: color
-          source_key: color
           type: string
         - editor_key: icon
-          source_key: icon
           type: string
     _inputs:
       background_color:
@@ -324,6 +499,9 @@ _snippets:
           preview:
             text:
               - key: name
+            icon: palette
+            icon_color: 
+              - key: value
       icon:
         type: select
         options:
@@ -336,42 +514,175 @@ _snippets:
           preview:
             text:
               - key: name
+            icon: palette
+            icon_color: 
+              - key: value
       alert_message:
-        comment: This is the text displayed in the alert
+        comment: This is the text displayed in the alert.
+        type: textarea
+  astro_image:
+    template: mdx_component
+    inline: false
+    view: gallery
+    preview:
+      icon: image
+      text: Astro Image
+      subtext:
+        - key: image_alt
+        - Update image path and alt text
+      image:
+        - key: image_path
+      gallery:
+        image:
+          - key: image_path
+    picker_preview:
+      gallery:
+        image: /images/components-screenshots/image.png
+    definitions:
+      component_name: SnippetsAstroImage
+      named_args:
+        - editor_key: image_path
+          type: string
+        - editor_key: image_alt
+          type: string
+        - editor_key: loading
+          type: string
+    _inputs:
+      loading:
+        comment: Set to lazy when not in the initial view on page load.
+        type: select
+        options:
+          values: 
+            - lazy
+            - eager
+      image_alt:
+        type: textarea
+      image_path:
+        type: image
+        options:
+          empty_type: string
+          paths:
+            static: ''
+            uploads: src/assets/images
+  accordion:
+    template: mdx_component
+    inline: false
+    definitions:
+      component_name: SnippetsAccordion
+      named_args:
+        - editor_key: heading
+          type: string
+        - editor_key: text
+          type: string
+    picker_preview:
+      gallery:
+        image: /images/components-screenshots/accordion.png
+    preview:
+      icon: expand_more
+      text: Accordion
+      subtext:
+        - key: text
+        - Update accordion content.
+    _inputs:
+      heading:
+        type: textarea
+      text:
         type: textarea
   video:
     template: mdx_component
     inline: false
-    preview:
-      text: Video
     definitions:
       component_name: SnippetsVideo
       named_args:
         - editor_key: src
-          source_key: src
           type: string
+    preview:
+      text: Video
+      subtext: A self hosted video from our static files
+      icon: duo
+    picker_preview:
+      gallery:
+        image: /images/components-screenshots/video.png
     _inputs:
       src:
+        comment: Link to a video hosted in our own files.
         type: file
         options:
           paths:
             uploads: public/videos
+  youtube:
+    template: mdx_component
+    inline: false
+    definitions:
+      component_name: SnippetsYoutube
+      named_args:
+        - editor_key: video_link
+          type: string
+        - editor_key: poster
+          type: string
+        - editor_key: poster_quality
+          type: string
+        - editor_key: params
+          type: string
+        - editor_key: playlabel
+          type: string
+        - editor_key: title
+          type: string
+    preview:
+      icon: duo
+      text:
+        - key: title
+        - Youtube Video
+      subtext:
+        - key: video_link
+        - Update Youtube video details 
+    picker_preview:
+      gallery:
+        image: /images/components-screenshots/youtube.png
+    _inputs:
+      video_link:
+        type: url
+        comment: Paste the url of the Youtube video here.
+      poster:
+        type: image
+        comment: You can provide an alternative poster image by adding a URL here.
+      poster_quality:
+        type: select
+        comment: When using the default YouTube poster image, set the Poster Quality to change the size of the placeholder image.
+        options:
+          values:
+            - low
+            - default	
+            - high	
+            - max
+      params:
+        comment: >-
+          You can pass in params text here to set the YouTube player parameters. This looks like a series of URL search params, eg. 'start=57&end=75'.
+        type: text
+      playlabel:
+        comment: By default, the play button in the embed has an accessible label set to “Play”. If you want to customise this, for example to match the language of your website, you can set the label text here.
+        type: text
+      title:
+        comment: Set a visible title to overlay on the video.
+        type: text
   file:
     template: mdx_component
     inline: false
     preview:
-      text: File
+      text: File download
+      subtext:
+        - key: src
+    picker_preview:
+      gallery:
+        image: /images/components-screenshots/file.png
     definitions:
       component_name: SnippetsFile
       named_args:
         - editor_key: src
-          source_key: src
           type: string
         - editor_key: file_name
-          source_key: file_name
           type: string
         - editor_key: link_message
-          source_key: link_message
           type: string
     _inputs:
       src:
@@ -380,16 +691,21 @@ _snippets:
         options:
           paths:
             uploads: public/documents
+            static: 'public'
       file_name:
         comment: The name of the file, once downloaded.
       link_message:
         type: textarea
-        comment: The text for the download link
+        comment: The text for the download link.
   mdx_tint:
     template: mdx_paired_component
     inline: true
     preview:
       text: Tint
+      icon: pallet
+    picker_preview:
+      gallery:
+        image: /images/components-screenshots/tint.png
     definitions:
       component_name: SnippetsTint
       content_key: inner_text
@@ -401,4 +717,4 @@ _snippets:
       tint_color:
         type: color
       inner_text:
-        comment: This text will be tinted
+        comment: This text will be tinted.

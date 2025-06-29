@@ -1,84 +1,130 @@
 ---
-_schema: page
-title: Home
+_schema: default
+title: CloudCannon Astro Starter
 seo:
   page_description: >-
-    A starting point for developers looking to build a multilingual website with
-    Astro and Rosey, using Bookshop components in CloudCannon. CloudCannon
-    provides a UI for non-technical editors to enter translations. Create your
-    own copy, and start creating your own components to use in the CloudCannon
-    CMS.
+    A starting point for developers looking to build a website with Astro, using
+    Bookshop components in CloudCannon.
   canonical_url:
   featured_image:
   featured_image_alt:
   author_twitter_handle:
   open_graph_type:
   no_index: false
+hero_block:
+  _bookshop_name: heroes/hero
+  background_color: '#ffffff'
+  heading:
+    heading_text: CloudCannon Astro Starter!
+    heading_gradient_color: '#A0A2FF'
+    text_color: '#333232'
+  subheading:
+    text_content: >-
+      A starting point for developers looking to build a website with Astro,
+      using Bookshop components in CloudCannon. Create your own copy, and start
+      creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.
+
+      
+      Another paragraph to test translations. With punctuation and stuff<sup>TM</sup>.
+    color: '#393939'
+    text_color: '#333232'
+  image:
+    image_path: /src/assets/images/transparent-bg/undraw-online-test.svg
+    alt_text: An image
+  buttons:
+    - _bookshop_name: buttons/primary
+      button_text: GitHub
+      button_icon: GitHub
+      button_link: https://github.com/CloudCannon/astro-starter/
+      background_color: '#034AD8'
+      hover_brightness: 0.85
+      text_color: '#ffffff'
+      button_aria_label:
+    - _bookshop_name: buttons/secondary
+      button_text: CloudCannon
+      button_icon: CloudCannon
+      button_link: https://www.cloudcannon.com
+      text_color: '#034AD8'
+      hover_brightness: 0.85
+      button_aria_label:
+      background_color: '#034ad8'
 content_blocks:
-  - _bookshop_name: hero
+  - _bookshop_name: left-right
     background_color: '#ffffff'
     heading:
-      heading_text: Rosey - CloudCannon Connector
-      heading_gradient_color: '#034AD8'
-    subheading:
-      markdown_content: >-
-        A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.
-
-
-        Control translations via a user friendly interface in CloudCannon.
-
-
-        Testing translations after *separating* out the logic from the
-        translations.
-
-
-        Adding *another* paragraph for a little **Smartling** test. Adding this
-        as well, after making this site part of a monorepo.
-
-
-        More changes on the real staging branch.
-
-
-        Lets just add one more, **Smartling** do yo thing.
+      heading_text: Keep what you need. Delete the rest.
       color: '#393939'
-    image:
-      image_path: /src/assets/images/featured-image-5.jpg
-      alt_text: A placeholder image
-    buttons:
-      - _bookshop_name: buttons/primary
-        button_text: GitHub
-        button_icon: Github
-        button_link: https://github.com/cloudCannon/rosey-astro-starter
-        background_color: '#034AD8'
-        hover_brightness: 0.85
-        text_color: '#ffffff'
-      - _bookshop_name: buttons/secondary
-        button_text: CloudCannon
-        button_icon: CloudCannon
-        button_link: https://www.cloudcannon.com
-        text_color: '#034AD8'
-        hover_brightness: 0.95
-  - _bookshop_name: left-right
-    background_color: '#c8d5b9'
-    heading:
-      heading_text: This is just a test.
-      color: '#393939'
+      text_color: '#333232'
     text:
-      markdown_content: >-
-        They say *everything* looks better with odd numbers of things. But
-        sometimes I put even numbers—just to upset the critics.
+      text_content: >-
+        The Astro CloudCannon Starter's aim is to get developers building their
+        own site quickly in CloudCannon. This template is trying to strike a
+        balance between minimal, and easy-to-delete boiler plate, while
+        providing some commonly used features out of the box:
 
 
-        We're ***changing*** things.
+        * [Tailwind](/blog/tailwind/)
 
+        * [Font Awesome icons](/blog/icons/)
 
-        It's cold, but it's beautiful. Get tough with it, get strong. Brown is
-        such a nice color.
+        * [Built-in search with Pagefind](/blog/search/)
+
+        * [Blog with pagination & tags](/blog/paginated-collection/)
+
+        * [Page building with Bookshop components](/blog/bookshop/)
+
+        * [Markdown options & styles](/blog/markdown/)
+
+        * [Pre-configured shortcodes](/blog/markdown/)
+
+        * [Header and Footer controls](/blog/data-files/)
+
+        * [Create and delete pages](/blog/page-building/)
+
+        * [Accessibility controls](/blog/markdown/)
+
+        * [SEO controls](/blog/seo/)
+
+        * [Color palette controls](/blog/data-files/)
       color: '#393939'
-    media:
-      image_path:
-      youtube_path: https://www.youtube.com/embed/u5WittUT3Ts?si=BjBfbF-x5MoaAyVO
+      text_color: '#333232'
+    image:
+      image_path: /src/assets/images/transparent-bg/undraw-hello.svg
       alt_text: An image
     flipped: true
     button:
+  - _bookshop_name: left-right
+    background_color: '#ffffff'
+    heading:
+      heading_text: You choose your editing experience.
+      color: '#393939'
+      text_color: '#333232'
+    text:
+      text_content: >-
+        A flexible git-backed CMS that specialises in editing markdown and data
+        files. 
+
+
+        Visual editing allows you to preview your changes live before you save
+        them. 
+
+
+        Git-backed means you can keep all your familiar git workflows, while
+        providing an easy-to-understand interface for non-technical editors to
+        collaborate via git. 
+      color: '#393939'
+      text_color: '#333232'
+    image:
+      image_path: /src/assets/images/transparent-bg/undraw-startup.svg
+      alt_text: An image
+    flipped: false
+    button:
+      _bookshop_name: buttons/primary
+      button_text: GitHub
+      button_icon: GitHub
+      button_link: https://github.com/CloudCannon/Astro-starter/
+      background_color: '#034AD8'
+      hover_brightness: 0.85
+      text_color: '#ffffff'
+      button_aria_label:
 ---

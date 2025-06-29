@@ -1,7 +1,6 @@
 ---
-import Icon from "../../utility/icon.jsx";
-import { generateRoseyId } from "../../../../rosey-connector/helpers/component-helper.js";
-
+import Icon from "../../utility/Icon";
+import { generateRoseyId } from "rosey-connector/helpers/component-helpers.js";
 interface Props {
   button_text: string;
   button_icon: string;
@@ -15,38 +14,42 @@ const block = Astro.props;
 const hover_brightness = block.hover_brightness;
 ---
 
-<button style={`background-color: ${block.background_color};`} class="button">
-  <a style={`color: ${block.text_color}`} href={block.button_link}>
+<a
+  class="button"
+  href={block.button_link}
+  style={`color: ${block.text_color}; background-color: ${block.background_color}; border: 2px solid ${block.background_color};`}>
+  <div>
     {
-      block.button_icon ? (
+      block.button_icon && (
         <span class="button__icon">
           <Icon icon={block.button_icon} />
         </span>
-      ) : null
+      )
     }
-    <span data-rosey={generateRoseyId(block.button_text)}>
-      {block.button_text}
-    </span>
-  </a>
-</button>
+    {block.button_text}
+  </div>
+</a>
 
 <style define:vars={{ hover_brightness }}>
   .button {
     cursor: pointer;
     border: none;
     border-radius: 8px;
+    display: block;
+    max-width: max-content;
     padding: 0;
   }
-  .button a {
+  .button div {
     background: transparent;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     border-radius: 8px;
     padding: 0.5rem 1.5rem;
     font-size: 1rem;
   }
-  .button a:hover {
+  .button div:hover {
     backdrop-filter: brightness(var(--hover_brightness));
   }
 
