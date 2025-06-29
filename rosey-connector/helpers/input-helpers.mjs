@@ -1,9 +1,9 @@
-import { getPageString, getYamlFileName } from "./file-helpers.js";
+import { getPageString, getYamlFileName } from "./file-helpers.mjs";
 import {
   formatTextForInputComments,
   removeSuperAndSubFromText,
-} from "./text-formatters.js";
-import { htmlToMarkdownHandler } from "./html-to-markdown.js";
+} from "./text-formatters.mjs";
+import { htmlToMarkdownHandler } from "./html-to-markdown.mjs";
 
 // Input set up
 function initDefaultInputs(

@@ -8,14 +8,14 @@ import {
   removeOldTranslationFiles,
   getYamlFileName,
   createParentDirIfExists,
-} from "./helpers/file-helpers.js";
+} from "./helpers/file-helpers.mjs";
 import {
   initDefaultInputs,
   getInputConfig,
   initNamespacePageInputs,
   getNamespaceInputConfig,
   sortTranslationIntoInputGroup,
-} from "./helpers/input-helpers.js";
+} from "./helpers/input-helpers.mjs";
 
 const nhm = new NodeHtmlMarkdown(
   /* options (optional) */ {},

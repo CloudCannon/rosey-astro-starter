@@ -3,7 +3,7 @@ import { visit, SKIP } from "unist-util-visit";
 import { fromHtmlIsomorphic } from "hast-util-from-html-isomorphic";
 import { toHtml } from "hast-util-to-html";
 import type { Element } from "hast";
-import { generateRoseyMarkdownId } from "rosey-connector/helpers/component-helpers.js";
+import { generateRoseyMarkdownId } from "rosey-connector/helpers/component-helpers.mjs";
 import markdownIt from "markdown-it";
 const md = markdownIt({ html: true });
 

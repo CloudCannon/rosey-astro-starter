@@ -4,8 +4,8 @@ import type { Element } from "hast";
 import {
   isTextElement,
   getElementInnerText,
-} from "../helpers/ast-helpers.ts";
-import { generateRoseyMarkdownId } from "../helpers/component-helpers.js";
+} from "../helpers/ast-helpers.mts";
+import { generateRoseyMarkdownId } from "../helpers/component-helpers.mjs";
 
 // Block level elements to add tags to - inline elements should not have tag added
 const textElementTagNames = ["p", "li", "h1", "h2", "h3", "h4", "h5", "h6"];
