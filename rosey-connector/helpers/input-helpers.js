@@ -1,6 +1,8 @@
 import { getPageString, getYamlFileName } from "./file-helpers.js";
 import { formatTextForInputComments } from "./markdown-formatters.js";
+import { htmlToMarkdownHandler } from "./html-to-markdown.js";
 import { NodeHtmlMarkdown } from "node-html-markdown";
+
 const nhm = new NodeHtmlMarkdown(
   /* options (optional) */ {},
   /* customTransformers (optional) */ undefined,
@@ -64,7 +66,7 @@ function initDefaultInputs(
   }
 }
 
-function getInputConfig(
+async function getInputConfig(
   inputKey,
   page,
   baseTranslationObj,
@@ -75,8 +77,11 @@ function getInputConfig(
   const baseUrl = seeOnPageCommentSettings.base_url;
   const seeOnPageCommentText = seeOnPageCommentSettings.comment_text;
   const untranslatedPhrase = baseTranslationObj.original.trim();
+  //
   const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
-  console.log({ untranslatedPhraseMarkdown });
+
+  const tidiedUnifiedTest = await htmlToMarkdownHandler(untranslatedPhrase);
+  console.log({ tidiedUnifiedTest });
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );

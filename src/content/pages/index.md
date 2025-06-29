@@ -20,7 +20,7 @@ hero_block:
     text_color: '#333232'
   subheading:
     text_content: >-
-      A starting point for developers looking to build a website with Astro,
+      A starting point for <br> developers looking to build a website with Astro,
       using Bookshop components in CloudCannon. Create your own copy, and start
       creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.
 
