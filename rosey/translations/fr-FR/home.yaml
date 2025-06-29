@@ -12,7 +12,6 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs:
-            - cloudcannon-astro-starter
             - keep-what-you-need-delete-the-rest
             - you-choose-your-editing-experience
         - heading: Already translated (fr-FR)
@@ -20,14 +19,6 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs: []
-  cloudcannon-astro-starter:
-    label: CloudCannon Astro Starter
-    hidden: false
-    type: textarea
-    options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20\
-      Astro%20Starter)"
   keep-what-you-need-delete-the-rest:
     label: Keep what you need. Delete the rest.
     hidden: false
@@ -45,6 +36,5 @@ _inputs:
       context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
       0your%20editing%20experience.)"
 urlTranslation: index.html
-cloudcannon-astro-starter: ""
 keep-what-you-need-delete-the-rest: ""
 you-choose-your-editing-experience: ""
