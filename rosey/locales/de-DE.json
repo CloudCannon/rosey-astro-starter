@@ -31,58 +31,6 @@
 		"original": " GitHub ",
 		"value": " GitHub (Englisch) "
 	},
-	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
-		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
-		"value": "<p>Ein Neues. Testabsatz, der lang genug sein muss, aber auf eine bestimmte Weise endet.</p>\n"
-	},
-	"markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are": {
-		"original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
-		"value": "<p>Alles, was Sie <em>hier</em> lernen müssen, ist, wie man Spaß hat. Stell dir einfach so vor, du wärst ein Flüsterer, der über einen Berg schwebt. Du musst allmächtige Entscheidungen treffen, wenn du der Schöpfer bist. Da sind wir.</p>\n"
-	},
-	"markdown:another-code-block": {
-		"original": "Another code block:",
-		"value": "<p>Ein weiterer Codeblock:</p>\n"
-	},
-	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
-		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
-		"value": "<p>Übertreiben Sie es nicht – seien Sie vorsichtig. Sei vorsichtig. Beginnen Sie immer mit einem sauberen Pinsel an einer hellen Stelle und arbeiten Sie nach außen. Wir haben diesen Sohn-of-a-Gun von Anfang an geplant. Die Leute sind so aufgeregt, wenn sie das sehen. Jeder wird die Natur mit anderen Augen sehen.</p>\n"
-	},
-	"markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!": {
-		"original": "Everybody should have a friend. Just sorta make these things up in your mind, and let them drop in. Help them make a happy buck or two. Sort of an orangy-yellowish color. Water breaks, and it churns, and it has fun!",
-		"value": "<p>Jeder sollte einen Freund haben. Erfinde diese Dinge einfach in deinem Kopf und lass sie auf dich zukommen. Helfen Sie ihnen, ein oder zwei glückliche Summen zu verdienen. Irgendwie eine orangy-gelbliche Farbe. Wasser bricht, und es wühlt auf, und es macht Spaß!</p>\n"
-	},
-	"markdown:here's-a-new-paragraph-with-a-link-in-the-content-editor": {
-		"original": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor.",
-		"value": "<p>Hier ist ein neuer Absatz mit einem <a href=\"https://cloudcannon.com/\">Link</a> im Content-Editor.</p>\n"
-	},
-	"markdown:mix-your-color-marbly-don't-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-it's-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-we'll-have-a-super-time-don't-fiddle-with-it-all-day": {
-		"original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
-		"value": "<p>Mischen Sie Ihre Farbe marmoriert, mischen Sie sie nicht tot. Bäume verdecken eine Vielzahl von Sünden. Die einzige Voraussetzung ist, dass es dich glücklich macht. Wenn es dich glücklich macht, dann ist es gut. Wenn Sie es auf Ihre Weise tun, können Sie überall hingehen, wo Sie wollen. Wir werden eine super Zeit haben. Fummeln Sie nicht den ganzen Tag daran herum.</p>\n"
-	},
-	"markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-let's-get-wild-today-if-you-don't-think-every-day-is-a-good-day-try-missing-a-few-you'll-see-play-with-the-angles-we-don't-have-to-be-committed-we-are-just-playing-here": {
-		"original": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here.",
-		"value": "<p>Lass dir Zeit. Die Geschwindigkeit kommt später. Du kannst Flüsse biegen. Aber wenn ich nach Hause komme, ist das Einzige, worüber ich Macht habe, der Müll. Lass uns heute wild werden. Wenn Sie nicht glauben, dass jeder Tag ein guter Tag ist, versuchen Sie, ein paar zu verpassen. Du wirst sehen. Spielen Sie mit den Winkeln. Wir müssen uns nicht festlegen. Wir spielen nur hier.</p>\n"
-	},
-	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
-		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
-		"value": "<p>Heute ist so ein wunderbarer Tag, lasst uns einfach ein fröhliches kleines Bild malen. Vielleicht habe ich heute ein bisschen Berg. Du kannst alles tun, von dem du glaubst, dass du es tun kannst. Bringen Sie es dorthin, wo Sie es haben wollen, und lassen Sie es in Ruhe. Das ist der lustige Teil dieser ganzen Technik.</p>\n"
-	},
-	"markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!": {
-		"original": "We’ll make some big ol’ huge mountains! There’s too many complicated things in our life already. All you’re worried about is this nice outside shape. Always follow the angles. Don’t just cover it all up — leave these spots!",
-		"value": "<p>Wir werden ein paar große, alte, riesige Berge machen! Es gibt schon zu viele komplizierte Dinge in unserem Leben. Alles, worüber Sie sich Sorgen machen, ist diese schöne Außenform. Folgen Sie immer den Winkeln. Decken Sie nicht einfach alles ab – lassen Sie diese Flecken!</p>\n"
-	},
-	"markdown:we'll-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school": {
-		"original": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school.",
-		"value": "<p>Wir werfen hier ein paar alte graue Wolken rein, schleichen einfach herum und haben Spaß. Nur acht Farben, die Sie brauchen. Das ist der lustige Teil: Stecken Sie es hinein, lassen Sie es in Ruhe. Weg von den kleinen Weihnachtsbaumdingern, die wir in der Schule gebastelt haben.</p>\n"
-	},
-	"markdown:we-have-a-fantastic-little-sky!-we're-trying-to-teach-you-a-technique-here-and-how-to-use-it": {
-		"original": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it.",
-		"value": "<p>Wir haben einen fantastischen kleinen Himmel! Wir versuchen, Ihnen hier eine Technik beizubringen und wie Sie sie anwenden können.</p>\n"
-	},
-	"markdown:we-have-all-at-one-time-or-another-mixed-some-mud-it's-beautiful-and-we-haven't-even-done-anything-to-it-yet-let's-make-some-happy-little-clouds-in-our-world-let-your-heart-be-your-guide": {
-		"original": "We have all at one time or another mixed some mud. It’s beautiful - and we haven’t even done anything to it yet. Let’s make some happy little clouds in our world. Let your heart be your guide.",
-		"value": "<p>Wir haben alle schon einmal etwas Schlamm vermischt. Es ist wunderschön - und wir haben noch nicht einmal etwas daran gemacht. Lasst uns ein paar glückliche kleine Wolken in unserer Welt machen. Lassen Sie sich von Ihrem Herzen leiten.</p>\n"
-	},
 	"minutes": {
 		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
 		"value": "0 Minuten"
