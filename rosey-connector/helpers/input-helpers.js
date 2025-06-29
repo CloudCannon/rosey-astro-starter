@@ -96,14 +96,16 @@ function getInputConfig(
   const options = isKeyMarkdown
     ? {
         bold: true,
-        format: "p h1 h2 h3 h4",
         italic: true,
+        strike: true,
         link: true,
+        subscript: true,
+        superscript: true,
+        underline: true,
         undo: true,
         redo: true,
         removeformat: true,
         copyformatting: true,
-        blockquote: true,
       }
     : {};
 

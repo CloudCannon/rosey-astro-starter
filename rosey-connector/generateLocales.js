@@ -112,7 +112,7 @@ async function generateLocale(locale, configData) {
             original: data[key].original,
             value:
               isKeyMarkdown && data[key].isNewTranslation
-                ? md.render(data[key].value)
+                ? md.renderInline(data[key].value)
                 : data[key].value,
           };
         }
@@ -237,7 +237,7 @@ function processContentTranslationKey(
 
   if (
     translatedString === oldLocaleDataValue ||
-    md.render(translatedString) === oldLocaleDataValue
+    md.renderInline(translatedString) === oldLocaleDataValue
   ) {
     return !localeData[keyName]
       ? {
