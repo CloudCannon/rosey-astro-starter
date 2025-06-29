@@ -2,7 +2,7 @@
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 import { YouTube } from "astro-embed";
-import Markdown from "../utility/rosey-markdown.astro";
+// import Markdown from "../utility/rosey-markdown.astro";
 import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper.js";
 
 interface Props {
@@ -75,7 +75,7 @@ const headingStyle = `color: ${block.heading.color};`;
             {block.heading.heading_text}
           </h2>
           <div class="mb-4" style={`color: ${block.text.color};`}>
-            <Markdown content={block.text.markdown_content} />
+            {/* <Markdown content={block.text.markdown_content} /> */}
           </div>
           {block.button && <Button {...block.button} />}
         </div>
@@ -90,7 +90,7 @@ const headingStyle = `color: ${block.heading.color};`;
             {block.heading.heading_text}
           </h2>
           <div class="mb-4" style={`color: ${block.text.color};`}>
-            <Markdown content={block.text.markdown_content} />
+            {/* <Markdown content={block.text.markdown_content} /> */}
           </div>
           {block.button && <Button {...block.button} />}
         </div>
