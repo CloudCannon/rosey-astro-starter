@@ -29,7 +29,9 @@ _inputs:
       context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20\
       Astro%20Starter!)"
   markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms-a-sub-to-test:
-    label: A starting point for developers looking to...
+    label: |-
+      A starting point for   
+       developers lookin...
     hidden: false
     type: markdown
     options:
@@ -51,10 +53,9 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: A starting point for developers looking to build a website with Astro,
-        using Bookshop components in CloudCannon. Create your own copy, and
-        start creating your own components to use in CloudCannon’s CMS A sub to
-        test.
+      content: >-
+        A starting point for   
+         developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS A sub to test.
   markdown:another-paragraph-to-test-translations-with-punctuation-and-stufftm:
     label: Another paragraph to test translations. Wi...
     hidden: false
