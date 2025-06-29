@@ -7,26 +7,26 @@
       "pages": {},
       "total": 0
     },
-    "blog/a-new-post-name/index.html": {
-      "original": "blog/a-new-post-name/index.html",
-      "value": null,
-      "pages": {},
-      "total": 0
-    },
-    "blog/a-test-page/index.html": {
-      "original": "blog/a-test-page/index.html",
-      "value": null,
-      "pages": {},
-      "total": 0
-    },
-    "blog/bobo-rosso/index.html": {
-      "original": "blog/bobo-rosso/index.html",
-      "value": null,
-      "pages": {},
-      "total": 0
-    },
     "blog/index.html": {
       "original": "blog/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/search/index.html": {
+      "original": "blog/search/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/seo/index.html": {
+      "original": "blog/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/tailwind/index.html": {
+      "original": "blog/tailwind/index.html",
       "value": null,
       "pages": {},
       "total": 0
@@ -37,20 +37,32 @@
       "pages": {},
       "total": 0
     },
-    "tags/Testing/index.html": {
-      "original": "tags/Testing/index.html",
+    "tags/building/index.html": {
+      "original": "tags/building/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "tags/bob ross/index.html": {
-      "original": "tags/bob ross/index.html",
+    "tags/search/index.html": {
+      "original": "tags/search/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "tags/video/index.html": {
-      "original": "tags/video/index.html",
+    "tags/seo/index.html": {
+      "original": "tags/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/styling/index.html": {
+      "original": "tags/styling/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/tailwind/index.html": {
+      "original": "tags/tailwind/index.html",
       "value": null,
       "pages": {},
       "total": 0

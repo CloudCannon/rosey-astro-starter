@@ -3,36 +3,44 @@
 		"original": "404.html",
 		"value": "404.html"
 	},
-	"blog/a-new-post-name/index.html": {
-		"original": "blog/a-new-post-name/index.html",
-		"value": "blog/a-new-post-name/index.html"
-	},
-	"blog/a-test-page/index.html": {
-		"original": "blog/a-test-page/index.html",
-		"value": "blog/a-test-page/index.html"
-	},
-	"blog/bobo-rosso/index.html": {
-		"original": "blog/bobo-rosso/index.html",
-		"value": "blog/bobo-rosso/index.html"
-	},
 	"blog/index.html": {
 		"original": "blog/index.html",
 		"value": "blog/index.html"
+	},
+	"blog/search/index.html": {
+		"original": "blog/search/index.html",
+		"value": "blog/search/index.html"
+	},
+	"blog/seo/index.html": {
+		"original": "blog/seo/index.html",
+		"value": "blog/seo/index.html"
+	},
+	"blog/tailwind/index.html": {
+		"original": "blog/tailwind/index.html",
+		"value": "blog/tailwind/index.html"
 	},
 	"index.html": {
 		"original": "index.html",
 		"value": "index.html"
 	},
-	"tags/Testing/index.html": {
-		"original": "tags/Testing/index.html",
-		"value": "tags/Testing/index.html"
+	"tags/building/index.html": {
+		"original": "tags/building/index.html",
+		"value": "tags/building/index.html"
 	},
-	"tags/bob ross/index.html": {
-		"original": "tags/bob ross/index.html",
-		"value": "tags/bob ross/index.html"
+	"tags/search/index.html": {
+		"original": "tags/search/index.html",
+		"value": "tags/search/index.html"
 	},
-	"tags/video/index.html": {
-		"original": "tags/video/index.html",
-		"value": "tags/video/index.html"
+	"tags/seo/index.html": {
+		"original": "tags/seo/index.html",
+		"value": "tags/seo/index.html"
+	},
+	"tags/styling/index.html": {
+		"original": "tags/styling/index.html",
+		"value": "tags/styling/index.html"
+	},
+	"tags/tailwind/index.html": {
+		"original": "tags/tailwind/index.html",
+		"value": "tags/tailwind/index.html"
 	}
 }

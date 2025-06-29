@@ -1,0 +1,23 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)  //  [G\
+      it
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/fr-FR/tags/styling.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)  //  [G\
+            it
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/styling.yaml)"
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)  //  [G\
+            it
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/styling.yaml)"
+          inputs: []
+urlTranslation: tags/styling/index.html
