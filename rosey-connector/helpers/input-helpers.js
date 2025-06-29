@@ -1,5 +1,8 @@
 import { getPageString, getYamlFileName } from "./file-helpers.js";
-import { formatTextForInputComments } from "./markdown-formatters.js";
+import {
+  formatTextForInputComments,
+  removeSuperAndSubFromText,
+} from "./markdown-formatters.js";
 import { htmlToMarkdownHandler } from "./html-to-markdown.js";
 
 // Input set up
@@ -155,8 +158,10 @@ function generateLocationString(
   const urlHighlighterWordLength = 3;
   const originalPhraseArray = originalPhrase.split(/[\n]+/);
   // Get the first and last line of the markdown so we only have complete lines in the highlight url
-  const firstPhrase = originalPhraseArray[0];
-  const lastPhrase = originalPhraseArray[originalPhraseArray.length - 1];
+  const firstPhrase = removeSuperAndSubFromText(originalPhraseArray[0]);
+  const lastPhrase = removeSuperAndSubFromText(
+    originalPhraseArray[originalPhraseArray.length - 1]
+  );
   const endHighlightArrayAll = lastPhrase.split(" ");
 
   const startHighlightArrayWithPunctuation = firstPhrase
