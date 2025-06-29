@@ -15,10 +15,10 @@ _inputs:
             /staging/./rosey/translations/de-DE/blog/tailwind.yaml)"
           inputs:
             - markdown:delete-your-tailwindconfigmjs-file
-            - "markdown:if-you'd-like-to-remove-tailwind:"
+            - markdown:if-you'd-like-to-remove-tailwind
             - markdown:npm-uninstall-tailwindcss-@astrojstailwind
             - markdown:remove-mentions-of-tailwind-from-your-astroconfigmjs
-            - "markdown:run-the-following-command-in-the-root-of-the-site:"
+            - markdown:run-the-following-command-in-the-root-of-the-site
             - markdown:use-tailwind-to-style-your-html-allowing-you-to-style-your-components-without-leaving-your-html-this-can-be-used-in-combination-with-normal-css-and-scss-styling-leaving-you-to-add-styles-to-your-site-however-you-want
         - heading: Already translated (de-DE)
           comment: "[blog/tailwind/](https://cool-ski.cloudvent.net/blog/tailwind/)  //  \
@@ -45,7 +45,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
       our%20%60tailwind.config.mjs%60%20file.)"
-  "markdown:if-you'd-like-to-remove-tailwind:":
+  markdown:if-you'd-like-to-remove-tailwind:
     label: "If you’d like to remove Tailwind:"
     hidden: false
     type: markdown
@@ -114,7 +114,7 @@ _inputs:
       icon: translate
       content: |
         Remove mentions of Tailwind from your `astro.config.mjs`
-  "markdown:run-the-following-command-in-the-root-of-the-site:":
+  markdown:run-the-following-command-in-the-root-of-the-site:
     label: Run the following command in the root of t...
     hidden: false
     type: markdown
@@ -169,8 +169,8 @@ _inputs:
         want.
 urlTranslation: blog/tailwind/index.html
 markdown:delete-your-tailwindconfigmjs-file: ""
-"markdown:if-you'd-like-to-remove-tailwind:": ""
+markdown:if-you'd-like-to-remove-tailwind: ""
 markdown:npm-uninstall-tailwindcss-@astrojstailwind: ""
 markdown:remove-mentions-of-tailwind-from-your-astroconfigmjs: ""
-"markdown:run-the-following-command-in-the-root-of-the-site:": ""
+markdown:run-the-following-command-in-the-root-of-the-site: ""
 markdown:use-tailwind-to-style-your-html-allowing-you-to-style-your-components-without-leaving-your-html-this-can-be-used-in-combination-with-normal-css-and-scss-styling-leaving-you-to-add-styles-to-your-site-however-you-want: ""

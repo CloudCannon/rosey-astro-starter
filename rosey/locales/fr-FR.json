@@ -43,7 +43,7 @@
 		"original": "Delete your <code>tailwind.config.mjs</code> file.",
 		"value": "Delete your <code>tailwind.config.mjs</code> file."
 	},
-	"markdown:if-you'd-like-to-remove-tailwind:": {
+	"markdown:if-you'd-like-to-remove-tailwind": {
 		"original": "If you’d like to remove Tailwind:",
 		"value": "If you’d like to remove Tailwind:"
 	},
@@ -67,7 +67,7 @@
 		"original": "Remove mentions of Tailwind from your <code>astro.config.mjs</code>",
 		"value": "Remove mentions of Tailwind from your <code>astro.config.mjs</code>"
 	},
-	"markdown:run-the-following-command-in-the-root-of-the-site:": {
+	"markdown:run-the-following-command-in-the-root-of-the-site": {
 		"original": "Run the following command in the root of the site:",
 		"value": "Run the following command in the root of the site:"
 	},
