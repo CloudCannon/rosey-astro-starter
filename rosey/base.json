@@ -1,6 +1,14 @@
 {
   "version": 2,
   "keys": {
+    "cloudcannon-astro-starter": {
+      "original": " CloudCannon Astro Starter ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
     "common:blog": {
       "original": " Blog ",
       "value": null,
@@ -68,6 +76,14 @@
       "value": null,
       "pages": {
         "blog/search/index.html": 1
+      },
+      "total": 1
+    },
+    "markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms": {
+      "original": "A starting point for developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.",
+      "value": null,
+      "pages": {
+        "index.html": 1
       },
       "total": 1
     },

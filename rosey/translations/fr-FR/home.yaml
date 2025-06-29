@@ -12,13 +12,23 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs:
+            - cloudcannon-astro-starter
             - keep-what-you-need-delete-the-rest
+            - markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms
             - you-choose-your-editing-experience
         - heading: Already translated (fr-FR)
           comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs: []
+  cloudcannon-astro-starter:
+    label: CloudCannon Astro Starter
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20\
+      Astro%20Starter)"
   keep-what-you-need-delete-the-rest:
     label: Keep what you need. Delete the rest.
     hidden: false
@@ -27,6 +37,32 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20\
       you,Delete%20the%20rest)"
+  markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms:
+    label: A starting point for developers looking to...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
+      0point,in%20CloudCannon%E2%80%99s%20CMS)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: A starting point for developers looking to build a website with Astro,
+        using Bookshop components in CloudCannon. Create your own copy, and
+        start creating your own components to use in CloudCannon’s CMS.
   you-choose-your-editing-experience:
     label: You choose your editing experience.
     hidden: false
@@ -36,5 +72,7 @@ _inputs:
       context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
       0your%20editing%20experience.)"
 urlTranslation: index.html
+cloudcannon-astro-starter: ""
 keep-what-you-need-delete-the-rest: ""
+markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms: ""
 you-choose-your-editing-experience: ""
