@@ -15,18 +15,14 @@ function removeAllSpecCharsFromText(text) {
     .replaceAll("</sup>", "")
     .replaceAll("<sub>", "")
     .replaceAll("</sub>", "");
-  return removedSupSub.replaceAll(/[&\/\\#+()$~.%'"*<>{}_]/gm, "");
+  return removedSupSub.replaceAll(/[&\/\\#+()$~.%'!"*<>{}_]/gm, "");
 }
 function removeNonPuncCharsFromText(text) {
   if (!text) {
     return "";
   }
-  const removedSupSub = text
-    .replaceAll("<sup>", "")
-    .replaceAll("</sup>", "")
-    .replaceAll("<sub>", "")
-    .replaceAll("</sub>", "");
-  return removedSupSub.replaceAll(/[\/\\#~%"*<>{}_]/gm, "");
+  // We shouldn't remove any chars here that will help format context comments
+  return text.replaceAll(/[#%{}_]/gm, "");
 }
 function formatMarkdownTextForIds(markdownText) {
   if (!markdownText) {

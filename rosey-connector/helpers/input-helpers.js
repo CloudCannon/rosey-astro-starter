@@ -76,6 +76,7 @@ function getInputConfig(
   const seeOnPageCommentText = seeOnPageCommentSettings.comment_text;
   const untranslatedPhrase = baseTranslationObj.original.trim();
   const untranslatedPhraseMarkdown = nhm.translate(untranslatedPhrase);
+  console.log({ untranslatedPhraseMarkdown });
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );
