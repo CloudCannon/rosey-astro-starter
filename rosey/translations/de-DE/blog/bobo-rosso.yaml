@@ -20,6 +20,8 @@ _inputs:
             - a-test-post-vid
             - blog
             - bob-ross-test
+            - markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!
+            - markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!
             - minutes
             - recent-posts
             - rss-feed
@@ -70,6 +72,55 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Bob%20R\
       oss%20Test)"
+  markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
+    label: Everybody should have a friend. Just sorta...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Everybo\
+      dy%20should%20have,it%20has%20fun!)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Everybody should have a friend. Just sorta make these things up in your
+        mind, and let them drop in. Help them make a happy buck or two. Sort of
+        an orangy-yellowish color. Water breaks, and it churns, and it has fun!
+  markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!:
+    label: We’ll make some big ol’ huge mountains! Th...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=We%E2%8\
+      0%99ll%20make%20some,leave%20these%20spots!)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: We’ll make some big ol’ huge mountains! There’s too many complicated
+        things in our life already. All you’re worried about is this nice
+        outside shape. Always follow the angles. Don’t just cover it all up —
+        leave these spots!
   minutes:
     label: 0 minutes
     hidden: false
@@ -122,6 +173,16 @@ a-test-page: Eine Testseite
 a-test-post-vid: Ein Test-Post-Video
 blog: " Blog "
 bob-ross-test: Bob Ross Test
+markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
+  Jeder sollte einen Freund haben. Erfinde diese Dinge einfach in deinem Kopf
+  und lass sie auf dich zukommen. Helfen Sie ihnen, ein oder zwei glückliche
+  Summen zu verdienen. Irgendwie eine orangy-gelbliche Farbe. Wasser bricht, und
+  es wühlt auf, und es macht Spaß!
+markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!:
+  Wir werden ein paar große, alte, riesige Berge machen! Es gibt schon zu viele
+  komplizierte Dinge in unserem Leben. Alles, worüber Sie sich Sorgen machen,
+  ist diese schöne Außenform. Folgen Sie immer den Winkeln. Decken Sie nicht
+  einfach alles ab – lassen Sie diese Flecken!
 minutes: 0 Minuten
 recent-posts: Neueste Beiträge
 rss-feed: " RSS-Feed "

@@ -20,6 +20,8 @@ _inputs:
             - a-test-post-vid
             - blog
             - bob-ross-test
+            - markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!
+            - markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!
             - minutes
             - recent-posts
             - rss-feed
@@ -70,6 +72,55 @@ _inputs:
     comment: "[See on
       page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Bob%20R\
       oss%20Test)"
+  markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
+    label: Everybody should have a friend. Just sorta...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=Everybo\
+      dy%20should%20have,it%20has%20fun!)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: Everybody should have a friend. Just sorta make these things up in your
+        mind, and let them drop in. Help them make a happy buck or two. Sort of
+        an orangy-yellowish color. Water breaks, and it churns, and it has fun!
+  markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!:
+    label: We’ll make some big ol’ huge mountains! Th...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      format: p h1 h2 h3 h4
+      italic: true
+      link: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+      blockquote: true
+    comment: "[See on
+      page](https://poised-plain.cloudvent.net/blog/bobo-rosso/#:~:text=We%E2%8\
+      0%99ll%20make%20some,leave%20these%20spots!)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: We’ll make some big ol’ huge mountains! There’s too many complicated
+        things in our life already. All you’re worried about is this nice
+        outside shape. Always follow the angles. Don’t just cover it all up —
+        leave these spots!
   minutes:
     label: 0 minutes
     hidden: false
@@ -122,6 +173,15 @@ a-test-page: Une page test
 a-test-post-vid: Un post-vidéo test
 blog: " Blog "
 bob-ross-test: Test Bob Ross
+markdown:everybody-should-have-a-friend-just-sorta-make-these-things-up-in-your-mind-and-let-them-drop-in-help-them-make-a-happy-buck-or-two-sort-of-an-orangy-yellowish-color-water-breaks-and-it-churns-and-it-has-fun!:
+  Tout le monde devrait avoir un ami. Il suffit d'inventer ces choses dans votre
+  esprit et de les laisser venir. Aidez-les à faire un ou deux heureux. Une
+  sorte de couleur orangée-jaunâtre. L'eau se brise, s'agite et s'amuse !
+markdown:we'll-make-some-big-ol'-huge-mountains!-there's-too-many-complicated-things-in-our-life-already-all-you're-worried-about-is-this-nice-outside-shape-always-follow-the-angles-don't-just-cover-it-all-up-—-leave-these-spots!:
+  Nous ferons de grandes montagnes ! Il y a déjà trop de choses compliquées dans
+  notre vie. Tout ce qui vous préoccupe, c'est cette belle forme extérieure.
+  Suivez toujours les angles. Ne vous contentez pas d'étouffer l'affaire -
+  laissez ces taches !
 minutes: 0 minute
 recent-posts: Messages récents
 rss-feed: " Flux RSS "
