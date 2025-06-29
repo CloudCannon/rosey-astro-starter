@@ -107,12 +107,12 @@ const pagePath = Astro.url.pathname || "page";
                 return (
                   <li>
                     <a href={`/${locale.code}${pagePath}`}>
-                      <span>{locale.name}</span>
                       <img
                         class="w-[32px]"
                         src={locale.flag}
                         alt={`${locale.name} Flag`}
                       />
+                      <span>{locale.name}</span>
                     </a>
                   </li>
                 );

@@ -35,11 +35,6 @@
         "code": "en",
         "name": "English (US)",
         "flag": "/images/flags/usa-flag.jpeg"
-      },
-      {
-        "code": "es-ES",
-        "name": "Español",
-        "flag": "/images/flags/spain-flag-png-large.png"
       }
     ]
   },
