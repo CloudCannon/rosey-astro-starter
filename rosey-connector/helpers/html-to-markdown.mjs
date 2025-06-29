@@ -7,7 +7,7 @@ import remarkStringify from "remark-stringify";
 import { unified } from "unified";
 import { toHtml } from "hast-util-to-html";
 
-async function htmlToMarkdownHandler(html) {
+async function htmlToMarkdown(html) {
   const testingUnifiedParse = await unified()
     .use(rehypeParse)
     .use(rehypeRemark, {
@@ -49,4 +49,4 @@ async function htmlToMarkdownHandler(html) {
   return tidiedUnifiedTest;
 }
 
-export { htmlToMarkdownHandler };
+export { htmlToMarkdown };

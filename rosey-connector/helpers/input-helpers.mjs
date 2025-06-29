@@ -3,7 +3,7 @@ import {
   formatTextForInputComments,
   removeSuperAndSubFromText,
 } from "./text-formatters.mjs";
-import { htmlToMarkdownHandler } from "./html-to-markdown.mjs";
+import { htmlToMarkdown } from "./html-to-markdown.mjs";
 
 // Input set up
 function initDefaultInputs(
@@ -74,9 +74,7 @@ async function getInputConfig(
   const seeOnPageCommentText = seeOnPageCommentSettings.comment_text;
   const untranslatedPhrase = baseTranslationObj.original.trim();
 
-  const untranslatedPhraseMarkdown = await htmlToMarkdownHandler(
-    untranslatedPhrase
-  );
+  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );
@@ -261,9 +259,7 @@ async function getNamespaceInputConfig(
   inputLengths
 ) {
   const untranslatedPhrase = baseTranslationObj.original.trim();
-  const untranslatedPhraseMarkdown = await htmlToMarkdownHandler(
-    untranslatedPhrase
-  );
+  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );
