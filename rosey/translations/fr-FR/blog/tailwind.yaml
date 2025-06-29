@@ -65,7 +65,7 @@ _inputs:
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
       2%80%99d%20like%20to%20remove%20Tailwind:)"
   markdown:npm-uninstall-tailwindcss-@astrojstailwind:
-    label: "`npm uninstall tailwindcss @astrojstailwin..."
+    label: "`npm uninstall tailwindcss @astrojs/tailwi..."
     hidden: false
     type: markdown
     options:
@@ -82,7 +82,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20u\
-      ninstall%20tailwindcss%20@astrojstailwind%60)"
+      ninstall%20tailwindcss%20@astrojs/tailwind%60)"
     context:
       open: false
       title: Untranslated Text

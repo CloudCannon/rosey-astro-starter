@@ -23,7 +23,7 @@ _inputs:
             /staging/./rosey/translations/fr-FR/blog/search.yaml)"
           inputs: []
   markdown:a-new-paragraph:
-    label: A new paragraph.
+    label: A **new** paragraph.
     hidden: false
     type: markdown
     options:
@@ -39,8 +39,8 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20new%20pa\
-      ragraph.)"
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20**new**%\
+      20paragraph.)"
   markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration-you-can-see-the-prebuilt-ui-at-the-top-of-this-page:
     label: After indexing, Pagefind adds a static sea...
     hidden: false

@@ -23,7 +23,7 @@ _inputs:
             - markdown:a-new-paragraph
             - markdown:the-goal-of-pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kb-including-the-pagefind-library-itself-for-most-sites-this-will-be-closer-to-100kb
   markdown:a-new-paragraph:
-    label: A new paragraph.
+    label: A **new** paragraph.
     hidden: false
     type: markdown
     options:
@@ -39,8 +39,8 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20new%20pa\
-      ragraph.)"
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20**new**%\
+      20paragraph.)"
   markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration-you-can-see-the-prebuilt-ui-at-the-top-of-this-page:
     label: After indexing, Pagefind adds a static sea...
     hidden: false
