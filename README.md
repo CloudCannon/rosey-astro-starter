@@ -133,7 +133,7 @@ When tagging content for translation, the slugified contents of that translation
 A helper function has been provided. Add this to the top of your component, or layout, adjusting the import address as needed.
 
   ```js
-  import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper.js";
+  import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper.mjs";
   ```
 
 Add it to your html templating like:
