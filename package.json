@@ -10,14 +10,15 @@
     "clean-translation-files": "node rosey-connector/localFileCleaner.js",
     "preview": "astro preview",
     "astro": "astro",
-    "prebuild:fetch-theme-color": "node fetch-theme-color.cjs"
+    "prebuild:fetch-theme-color": "node fetch-theme-color.cjs",
+    "reset-and-install": "rm -r node_modules && rm package-lock.json && npm i"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/mdx": "^2.2.4",
     "@astrojs/react": "^3.0.2",
     "@astrojs/tailwind": "^5.0.0",
-    "@bookshop/astro-bookshop": "3.14.0",
+    "@bookshop/astro-bookshop": "3.16.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
@@ -41,8 +42,8 @@
   },
   "devDependencies": {
     "@astrojs/rss": "^3.0.0",
-    "@bookshop/astro-engine": "3.14.0",
-    "@bookshop/generate": "3.14.0",
+    "@bookshop/astro-engine": "3.16.1",
+    "@bookshop/generate": "3.16.1",
     "@types/markdown-it": "^14.0.1",
     "astro-seo": "^0.8.0",
     "markdown-it": "^13.0.1",
