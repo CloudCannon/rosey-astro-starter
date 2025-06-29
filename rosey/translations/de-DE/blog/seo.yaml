@@ -26,14 +26,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Comes%20with%20\
       all,this%20as%20well)"
@@ -50,14 +52,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Control%20SEO%2\
       0values,and%20site-wide%20basis)"
@@ -73,14 +77,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Inputs%20on%20i\
       ndividual,as%20a%20fallback)"

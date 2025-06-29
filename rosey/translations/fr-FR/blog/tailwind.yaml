@@ -32,14 +32,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
       our%20%60tailwind.config.mjs%60%20file.)"
@@ -49,14 +51,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
       2%80%99d%20like%20to%20remove%20Tailwind:)"
@@ -66,14 +70,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20u\
       ninstall%20tailwindcss%20@astrojstailwind%60)"
@@ -88,14 +94,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Remove%20m\
       entions%20of,from%20your%20%60astroconfigmjs%60)"
@@ -110,14 +118,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Run%20the%\
       20following,of%20the%20site)"
@@ -132,14 +142,16 @@ _inputs:
     type: markdown
     options:
       bold: true
-      format: p h1 h2 h3 h4
       italic: true
+      strike: true
       link: true
+      subscript: true
+      superscript: true
+      underline: true
       undo: true
       redo: true
       removeformat: true
       copyformatting: true
-      blockquote: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Use%20Tail\
       wind%20to,however%20you%20want)"
