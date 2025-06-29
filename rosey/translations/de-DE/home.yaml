@@ -55,7 +55,9 @@ _inputs:
       icon: translate
       content: >-
         A starting point for   
-         developers looking to build a website with Astro, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS A sub to test.
+         developers looking to build a website with Astro, using   
+        Bookshop components in CloudCannon. Create your own copy, and start
+        creating your own components to use in CloudCannon’s CMS A sub to test.
   markdown:another-paragraph-to-test-translations-with-punctuation-and-stufftm:
     label: Another paragraph to test translations. Wi...
     hidden: false
