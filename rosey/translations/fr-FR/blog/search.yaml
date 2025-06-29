@@ -64,7 +64,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: After indexing, Pagefind adds a static search bundle to your built
+      content: >
+        After indexing, Pagefind adds a static search bundle to your built
         files, which exposes a JavaScript search API that can be used anywhere
         on your site. Pagefind also provides a prebuilt UI that can be used with
         no configuration. (You can see the prebuilt UI at the top of this page.)
@@ -91,7 +92,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: On this template, the search has been scoped to index only the text
+      content: >
+        On this template, the search has been scoped to index only the text
         content of blog posts, to avoid showing results on the homepage, blog
         index page, header and footer. The search bar is located at the top of
         the blog index page.
@@ -118,7 +120,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Pagefind sup! is a sup fully static search library that aims to perform
+      content: >
+        Pagefind sup! is a sup fully static search library that aims to perform
         well on large sites, while using as little of your users’ bandwidth as
         possible, and without hosting any infrastructure.
   markdown:the-goal-of-pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kb-including-the-pagefind-library-itself-for-most-sites-this-will-be-closer-to-100kb:
@@ -144,14 +147,15 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: The goal of Pagefind is that websites with tens of thousands of pages
+      content: >
+        The goal of Pagefind is that websites with tens of thousands of pages
         should be searchable by someone in their browser, while consuming as
-        little bandwidth as possible. Pagefind’s search index is split into
-        chunks, so that searching in the browser _only_ ever ~~needs~~ to load a
-        small subset of the search index. Pagefind can run a full-text search on
-        a 10,000 page site with a total network payload under 300kB, including
-        the Pagefind library itself. For most sites, this will be closer to
-        100kB.
+        little bandwidth as possible. *Pagefind’s* search <sup>index</sup> is
+        <sub>split</sub> into chunks, so that searching in the browser *only*
+        ever <s>needs</s> to load a small subset of the search index. Pagefind
+        can run a full-text search on a 10,000 page site with a total network
+        payload under 300kB, including the Pagefind library itself. For most
+        sites, this will be closer to 100kB.
 urlTranslation: blog/search/index.html
 markdown:a-new-paragraph: ""
 markdown:after-indexing-pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-javascript-search-api-that-can-be-used-anywhere-on-your-site-pagefind-also-provides-a-prebuilt-ui-that-can-be-used-with-no-configuration-you-can-see-the-prebuilt-ui-at-the-top-of-this-page: ""

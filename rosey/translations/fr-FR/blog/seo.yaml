@@ -43,7 +43,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Comes with all the inputs you need to encourage editors to fill in the
+      content: >
+        Comes with all the inputs you need to encourage editors to fill in the
         content that search engines expect for good SEO rankings. Performance,
         best practices and accessibility all play a part in this as well.
   markdown:control-seo-values-on-a-page-by-page-and-site-wide-basis:
@@ -69,7 +70,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Control [SEO](https://a-test-link.com) values on a page-by-page, and
+      content: >
+        Control [SEO](https://a-test-link.com) values on a page-by-page, and
         site-wide basis.
   markdown:inputs-on-individual-pages-are-used-for-seo-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback:
     label: Inputs on individual pages are used for SE...
@@ -94,7 +96,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Inputs on individual pages are used for SEO values for the page, and if
+      content: >
+        Inputs on individual pages are used for SEO values for the page, and if
         they’re not set the site-wide values are used as a fallback.
 urlTranslation: blog/seo/index.html
 markdown:comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-seo-rankings-performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well: ""

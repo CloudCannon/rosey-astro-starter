@@ -87,7 +87,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: "`npm uninstall tailwindcss @astrojs/tailwind`"
+      content: |
+        `npm uninstall tailwindcss @astrojs/tailwind`
   markdown:remove-mentions-of-tailwind-from-your-astroconfigmjs:
     label: Remove mentions of Tailwind from your `ast...
     hidden: false
@@ -111,7 +112,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Remove mentions of Tailwind from your `astro.config.mjs`
+      content: |
+        Remove mentions of Tailwind from your `astro.config.mjs`
   "markdown:run-the-following-command-in-the-root-of-the-site:":
     label: Run the following command in the root of t...
     hidden: false
@@ -135,7 +137,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: "Run the following command in the root of the site:"
+      content: |
+        Run the following command in the root of the site:
   markdown:use-tailwind-to-style-your-html-allowing-you-to-style-your-components-without-leaving-your-html-this-can-be-used-in-combination-with-normal-css-and-scss-styling-leaving-you-to-add-styles-to-your-site-however-you-want:
     label: Use Tailwind to style your HTML, allowing ...
     hidden: false
@@ -159,7 +162,8 @@ _inputs:
       open: false
       title: Untranslated Text
       icon: translate
-      content: Use Tailwind to style your HTML, allowing you to style your components
+      content: >
+        Use Tailwind to style your HTML, allowing you to style your components
         without leaving your HTML. This can be used in combination with normal
         CSS and SCSS styling, leaving you to add styles to your site however you
         want.
