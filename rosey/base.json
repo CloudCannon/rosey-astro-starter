@@ -84,27 +84,11 @@
       },
       "total": 1
     },
-    "markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
-      "original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
       "original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
       "value": null,
       "pages": {
         "blog/a-test-page/index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo": {
-      "original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test. Adding this as well, after making this site part of a monorepo.",
-      "value": null,
-      "pages": {
-        "index.html": 1
       },
       "total": 1
     },
@@ -121,14 +105,6 @@
       "value": null,
       "pages": {
         "blog/a-test-page/index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
-      "original": "Control translations via a user friendly interface in CloudCannon.",
-      "value": null,
-      "pages": {
-        "index.html": 1
       },
       "total": 1
     },
@@ -156,22 +132,6 @@
       },
       "total": 1
     },
-    "markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
-      "original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:lets-just-add-one-more-smartling-do-yo-thing": {
-      "original": "Lets just add one more, <strong>Smartling</strong> do yo thing.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "markdown:mix-your-color-marbly-don't-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-it's-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-we'll-have-a-super-time-don't-fiddle-with-it-all-day": {
       "original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
       "value": null,
@@ -180,35 +140,11 @@
       },
       "total": 1
     },
-    "markdown:more-changes-on-the-real-staging-branch": {
-      "original": "More changes on the real staging branch.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-let's-get-wild-today-if-you-don't-think-every-day-is-a-good-day-try-missing-a-few-you'll-see-play-with-the-angles-we-don't-have-to-be-committed-we-are-just-playing-here": {
       "original": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here.",
       "value": null,
       "pages": {
         "blog/a-test-page/index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:testing-translations-after-separating-out-the-logic-from-the-translations": {
-      "original": "Testing translations after <em>separating</em> out the logic from the translations.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
-      "original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
-      "value": null,
-      "pages": {
-        "index.html": 1
       },
       "total": 1
     },
@@ -233,14 +169,6 @@
       "value": null,
       "pages": {
         "blog/a-test-page/index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:we're-changing-things": {
-      "original": "We're <em><strong>changing</strong></em> things.",
-      "value": null,
-      "pages": {
-        "index.html": 1
       },
       "total": 1
     },

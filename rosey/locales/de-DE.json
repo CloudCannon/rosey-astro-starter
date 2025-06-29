@@ -31,17 +31,9 @@
 		"original": " GitHub ",
 		"value": " GitHub (Englisch) "
 	},
-	"markdown:a-demo-site-for-the-rosey-cloudcannon-multilingual-connector-for-astro": {
-		"original": "A demo site for the Rosey-CloudCannon Multilingual Connector for Astro.",
-		"value": "<p>Eine Demo-Site für den Rosey-CloudCannon Multilingual Connector für Astro.</p>\n"
-	},
 	"markdown:a-new-test-paragraph-that-has-to-be-long-enough-words-but-end-in-a-certain-way": {
 		"original": "A new. test paragraph that has to be long enough words but end in a certain, way.",
 		"value": "<p>Ein Neues. Testabsatz, der lang genug sein muss, aber auf eine bestimmte Weise endet.</p>\n"
-	},
-	"markdown:adding-another-paragraph-for-a-little-smartling-test-adding-this-as-well-after-making-this-site-part-of-a-monorepo": {
-		"original": "Adding <em>another</em> paragraph for a little <strong>Smartling</strong> test. Adding this as well, after making this site part of a monorepo.",
-		"value": "<p>Ich füge <em>einen weiteren</em> Absatz für einen kleinen <strong>Smartling-Test</strong> hinzu. Fügen Sie dies auch hinzu, nachdem Sie diese Website zu einem Teil eines Monorepos gemacht haben.</p>\n"
 	},
 	"markdown:all-you-have-to-learn-here-is-how-to-have-fun-just-pretend-you-are-a-whisper-floating-across-a-mountain-you-have-to-make-almighty-decisions-when-you're-the-creator-there-we-are": {
 		"original": "All you <strong>have</strong> to learn <em>here</em> is how to have fun. Just pretend you are a whisper floating across a mountain. You have to make almighty <sub>decisions</sub> when you’re the <sup>creator</sup>. There we are.",
@@ -50,10 +42,6 @@
 	"markdown:another-code-block": {
 		"original": "Another code block:",
 		"value": "<p>Ein weiterer Codeblock:</p>\n"
-	},
-	"markdown:control-translations-via-a-user-friendly-interface-in-cloudcannon": {
-		"original": "Control translations via a user friendly interface in CloudCannon.",
-		"value": "<p>Steuern Sie Übersetzungen über eine benutzerfreundliche Oberfläche in CloudCannon.</p>\n"
 	},
 	"markdown:don't-over-do-it-—-be-careful-be-careful-always-start-with-a-clean-brush-in-a-light-area-and-work-outward-we-planned-this-son-of-a-gun-right-from-the-beginning-people-are-so-excited-when-they-see-this-happen-everybody-will-see-nature-through-different-eyes": {
 		"original": "Don’t over do it — be careful. Be careful. Always start with a clean brush in a light area and work outward. We planned this son-of-a-gun right from the beginning. People are so excited when they see this happen. Everybody will see nature through different eyes.",
@@ -67,33 +55,13 @@
 		"original": "Here’s a new paragraph with a <a href=\"https://cloudcannon.com/\">link</a> in the content editor.",
 		"value": "<p>Hier ist ein neuer Absatz mit einem <a href=\"https://cloudcannon.com/\">Link</a> im Content-Editor.</p>\n"
 	},
-	"markdown:it's-cold-but-it's-beautiful-get-tough-with-it-get-strong-brown-is-such-a-nice-color": {
-		"original": "It's cold, but it's beautiful. Get tough with it, get strong. Brown is such a nice color.",
-		"value": "<p>Es ist kalt, aber es ist schön. Werden Sie hart damit, werden Sie stark. Braun ist so eine schöne Farbe.</p>\n"
-	},
-	"markdown:lets-just-add-one-more-smartling-do-yo-thing": {
-		"original": "Lets just add one more, <strong>Smartling</strong> do yo thing.",
-		"value": "Lets just add one more, <strong>Smartling</strong> do yo thing."
-	},
 	"markdown:mix-your-color-marbly-don't-mix-it-dead-trees-cover-up-a-multitude-of-sins-the-only-prerequisite-is-that-it-makes-you-happy-if-it-makes-you-happy-then-it's-good-when-you-do-it-your-way-you-can-go-anywhere-you-choose-we'll-have-a-super-time-don't-fiddle-with-it-all-day": {
 		"original": "Mix your color marbly don’t mix it dead. Trees cover up a multitude of sins. The only prerequisite is that it makes you happy. If it makes you happy then it’s good. When you do it your way you can go anywhere you choose. We’ll have a super time. Don’t fiddle with it all day.",
 		"value": "<p>Mischen Sie Ihre Farbe marmoriert, mischen Sie sie nicht tot. Bäume verdecken eine Vielzahl von Sünden. Die einzige Voraussetzung ist, dass es dich glücklich macht. Wenn es dich glücklich macht, dann ist es gut. Wenn Sie es auf Ihre Weise tun, können Sie überall hingehen, wo Sie wollen. Wir werden eine super Zeit haben. Fummeln Sie nicht den ganzen Tag daran herum.</p>\n"
 	},
-	"markdown:more-changes-on-the-real-staging-branch": {
-		"original": "More changes on the real staging branch.",
-		"value": "<p>Weitere Änderungen am echten Staging-Zweig.</p>\n"
-	},
 	"markdown:take-your-time-speed-will-come-later-you-can-bend-rivers-but-when-i-get-home-the-only-thing-i-have-power-over-is-the-garbage-let's-get-wild-today-if-you-don't-think-every-day-is-a-good-day-try-missing-a-few-you'll-see-play-with-the-angles-we-don't-have-to-be-committed-we-are-just-playing-here": {
 		"original": "Take your time. Speed will come later. You can bend rivers. But when I get home, the only thing I have power over is the garbage. Let’s get wild today. If you don’t think every day is a good day - try missing a few. You’ll see. Play with the angles. We don’t have to be committed. We are just playing here.",
 		"value": "<p>Lass dir Zeit. Die Geschwindigkeit kommt später. Du kannst Flüsse biegen. Aber wenn ich nach Hause komme, ist das Einzige, worüber ich Macht habe, der Müll. Lass uns heute wild werden. Wenn Sie nicht glauben, dass jeder Tag ein guter Tag ist, versuchen Sie, ein paar zu verpassen. Du wirst sehen. Spielen Sie mit den Winkeln. Wir müssen uns nicht festlegen. Wir spielen nur hier.</p>\n"
-	},
-	"markdown:testing-translations-after-separating-out-the-logic-from-the-translations": {
-		"original": "Testing translations after <em>separating</em> out the logic from the translations.",
-		"value": "<p>Testen von Übersetzungen, nachdem die Logik von den Übersetzungen <em>getrennt wurde</em> .</p>\n"
-	},
-	"markdown:they-say-everything-looks-better-with-odd-numbers-of-things-but-sometimes-i-put-even-numbers—just-to-upset-the-critics": {
-		"original": "They say <em>everything</em> looks better with odd numbers of things. But sometimes I put even numbers—just to upset the critics.",
-		"value": "<p>Man sagt, dass <em>alles</em> besser aussieht, wenn es eine ungerade Anzahl von Dingen gibt. Aber manchmal setze ich gerade Zahlen – nur um die Kritiker zu verärgern.</p>\n"
 	},
 	"markdown:today's-such-a-wonderful-day-let's-just-make-a-happy-little-painting-maybe-i'll-have-a-bit-mountain-today-you-can-do-anything-that-you-believe-you-can-do-get-it-to-where-you-want-it-and-leave-it-alone-that's-the-fun-part-of-this-whole-technique": {
 		"original": "Today’s such a wonderful day, let’s just make a happy little painting. Maybe I’ll have a bit mountain today. You can do anything that you believe you can do. Get it to where you want it, and leave it alone. That’s the fun part of this whole technique.",
@@ -106,10 +74,6 @@
 	"markdown:we'll-throw-some-old-gray-clouds-in-here-just-sneaking-around-and-having-fun-only-eight-colors-that-you-need-this-is-the-fun-part-put-it-in-leave-it-alone-get-away-from-those-little-christmas-tree-things-we-used-to-make-in-school": {
 		"original": "We’ll throw some old gray clouds in here just sneaking around and having fun. Only eight colors that you need. This is the fun part Put it in, leave it alone. Get away from those little Christmas tree things we used to make in school.",
 		"value": "<p>Wir werfen hier ein paar alte graue Wolken rein, schleichen einfach herum und haben Spaß. Nur acht Farben, die Sie brauchen. Das ist der lustige Teil: Stecken Sie es hinein, lassen Sie es in Ruhe. Weg von den kleinen Weihnachtsbaumdingern, die wir in der Schule gebastelt haben.</p>\n"
-	},
-	"markdown:we're-changing-things": {
-		"original": "We're <em><strong>changing</strong></em> things.",
-		"value": "<p>Wir <em><strong>verändern</strong></em> Dinge.</p>\n"
 	},
 	"markdown:we-have-a-fantastic-little-sky!-we're-trying-to-teach-you-a-technique-here-and-how-to-use-it": {
 		"original": "We have a fantastic little sky! We’re trying to teach you a technique here and how to use it.",
