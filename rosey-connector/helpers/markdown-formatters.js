@@ -18,7 +18,7 @@ function removeAllSpecCharsFromText(text) {
     return "";
   }
   const removedSupSub = removeSuperAndSubFromText(text);
-  return removedSupSub.replaceAll(/[&\/\\#+()$~.%'!"*<>{}_]/gm, "");
+  return removedSupSub.replaceAll(/[&\/\\#+()$~.%'!:"*<>{}_]/gm, "");
 }
 function removeNonPuncCharsFromText(text) {
   if (!text) {
