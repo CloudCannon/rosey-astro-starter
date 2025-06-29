@@ -4,7 +4,7 @@
 		"value": " Ein Snippet in der Mitte des Markdown-Inhalts "
 	},
 	"a-test-page": {
-		"original": " A Test Page ",
+		"original": "A Test Page",
 		"value": "Eine Testseite"
 	},
 	"a-test-post-vid": {
@@ -120,7 +120,7 @@
 		"value": "<p>Wir haben alle schon einmal etwas Schlamm vermischt. Es ist wunderschön - und wir haben noch nicht einmal etwas daran gemacht. Lasst uns ein paar glückliche kleine Wolken in unserer Welt machen. Lassen Sie sich von Ihrem Herzen leiten.</p>\n"
 	},
 	"minutes": {
-		"original": "1<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
+		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
 		"value": "0 Minuten"
 	},
 	"recent-posts": {
@@ -148,7 +148,7 @@
 		"value": "Video"
 	},
 	"words": {
-		"original": "326<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
+		"original": "90<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93 Wörter"
 	},
 	"yay-we-support-snippets-now!": {

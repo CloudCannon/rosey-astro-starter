@@ -4,7 +4,7 @@
 		"value": "Un extrait au milieu du contenu Markdown. Changed post monorepo :)"
 	},
 	"a-test-page": {
-		"original": " A Test Page ",
+		"original": "A Test Page",
 		"value": "Une page test"
 	},
 	"a-test-post-vid": {
@@ -120,7 +120,7 @@
 		"value": "<p>Nous avons tous, à un moment ou à un autre, mélangé de la boue. Il est magnifique - et nous n'y avons encore rien fait. Créons des petits nuages heureux dans notre monde. Laissez votre cœur vous guider.</p>\n"
 	},
 	"minutes": {
-		"original": "1<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
+		"original": "0<span data-astro-cid-gvpn4u4b=\"\"> minutes</span>",
 		"value": "0 minute"
 	},
 	"recent-posts": {
@@ -148,7 +148,7 @@
 		"value": "Vidéo"
 	},
 	"words": {
-		"original": "326<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
+		"original": "90<span data-astro-cid-gvpn4u4b=\"\"> words</span>",
 		"value": "93 mots"
 	},
 	"yay-we-support-snippets-now!": {
