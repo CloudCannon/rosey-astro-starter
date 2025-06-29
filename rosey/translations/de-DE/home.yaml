@@ -46,7 +46,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
-      0point,to%20test/sub)"
+      0point,to%20test)"
     context:
       open: false
       title: Untranslated Text
@@ -74,7 +74,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Another%20para\
-      graph%20to,stuff%20supTM/sup)"
+      graph%20to,stuff%20TM)"
     context:
       open: false
       title: Untranslated Text
