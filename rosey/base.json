@@ -55,14 +55,6 @@
       },
       "total": 11
     },
-    "keep-what-you-need-delete-the-rest": {
-      "original": " Keep what you need. Delete the rest. ",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "markdown:a-new-paragraph": {
       "original": "A <strong>new</strong> paragraph.",
       "value": null,
@@ -172,14 +164,6 @@
       "value": null,
       "pages": {
         "blog/tailwind/index.html": 1
-      },
-      "total": 1
-    },
-    "you-choose-your-editing-experience": {
-      "original": " You choose your editing experience. ",
-      "value": null,
-      "pages": {
-        "index.html": 1
       },
       "total": 1
     }

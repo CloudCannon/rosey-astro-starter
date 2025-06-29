@@ -11,10 +11,6 @@
 		"original": "GitHub",
 		"value": "GitHub"
 	},
-	"keep-what-you-need-delete-the-rest": {
-		"original": "Keep what you need. Delete the rest.",
-		"value": "Keep what you need. Delete the rest."
-	},
 	"markdown:a-new-paragraph": {
 		"original": "A <strong>new</strong> paragraph.",
 		"value": "A <strong>new</strong> paragraph."
@@ -70,9 +66,5 @@
 	"markdown:use-tailwind-to-style-your-html-allowing-you-to-style-your-components-without-leaving-your-html-this-can-be-used-in-combination-with-normal-css-and-scss-styling-leaving-you-to-add-styles-to-your-site-however-you-want": {
 		"original": "Use Tailwind to style your HTML, allowing you to style your components without leaving your HTML. This can be used in combination with normal CSS and SCSS styling, leaving you to add styles to your site however you want.",
 		"value": "Use Tailwind to style your HTML, allowing you to style your components without leaving your HTML. This can be used in combination with normal CSS and SCSS styling, leaving you to add styles to your site however you want."
-	},
-	"you-choose-your-editing-experience": {
-		"original": "You choose your editing experience.",
-		"value": "You choose your editing experience."
 	}
 }
