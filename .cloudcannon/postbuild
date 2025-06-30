@@ -4,7 +4,7 @@ npx @bookshop/generate
 if [[ $ROSEYPROD != "true" ]];
 then
   npx rosey generate --source dist
-  node rosey-connector/roseyCloudCannonConnector.mjs
+  node rosey-connector/main.mjs
 fi
 
 if [[ $ROSEYPROD == "true" ]];
