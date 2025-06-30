@@ -211,7 +211,7 @@ async function removeOldTranslationFiles(
       // Archive the page if it no longer exists in base.json
       if (!pages.includes(fileNameHtmlFormatted)) {
         console.log(
-          `🧹 The page ${filePath} doesn't exist in the pages in our base.json - archiving the translation file!`
+          `🧹 The page ${filePath} doesn't exist in the pages in our base.json, or in our namespaced pages - archiving the translation file!`
         );
 
         // Create the archive dir to move the old files to
