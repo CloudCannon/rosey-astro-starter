@@ -2,10 +2,9 @@ import fs from "fs";
 import path from "path";
 import slugify from "slugify";
 
-export async function checkAndCleanDirs(configData) {
+export async function checkAndCleanRemovedLocales(configData) {
   const currentDateTime = Date(Date.now()).toString();
   const currentDateTimeSlugified = slugify(currentDateTime);
-  console.log(currentDateTimeSlugified);
   const archivedFilesDir = path.join(
     "rosey",
     "archived",
@@ -16,11 +15,6 @@ export async function checkAndCleanDirs(configData) {
   const incomingSmartlingTranslationsDirPath =
     configData.smartling.incoming_translations_dir;
   const locales = configData.locales;
-
-  // TODO: If something already exists with the locale code, maybe we should
-  // delete the old one and write again for whole dirs - its likely we've
-  // taken the locale away, readded it, then taken away
-  // For single files use write file so we just join the old info w the new
 
   // Create an archived dir to keep old files in
   console.log(`📂📂 Ensuring archive folder exists`);
@@ -44,7 +38,7 @@ export async function checkAndCleanDirs(configData) {
 
       // Move the old translation files
       await fs.promises.rename(pathToArchive, archivePath);
-      console.log("Moved old translation dir to archives");
+      console.log(`Archived locale ${localeDir} translation files`);
     }
   }
 
@@ -75,7 +69,7 @@ export async function checkAndCleanDirs(configData) {
         localeFile
       );
       await fs.promises.rename(filePathToArchive, archivePath);
-      console.log("Moved old locale files to archives");
+      console.log(`Archived locale ${localeCode} locale files`);
     }
   }
 
@@ -115,7 +109,7 @@ export async function checkAndCleanDirs(configData) {
 
       // Move the old smartling translations
       await fs.promises.rename(filePathToArchive, archivePath);
-      console.log("Moved old locale from incoming smartling files to archives");
+      console.log(`Archived locale ${localeCode} smartling files`);
     }
   }
 }

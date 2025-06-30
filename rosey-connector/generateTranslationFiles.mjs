@@ -181,7 +181,7 @@ async function generateTranslationFilesForLocale(
             namespaceTranslationDataToWrite[inputKey] =
               existingNamespaceFileData[inputKey];
           } else {
-            // Otherwise add them to the common page with their
+            // Otherwise add them to the namespace page
             namespaceTranslationDataToWrite[inputKey] = "";
           }
 

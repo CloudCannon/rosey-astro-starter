@@ -1,6 +1,7 @@
 import fs from "fs";
 import YAML from "yaml";
 import path from "path";
+import slugify from "slugify";
 
 async function isDirectory(filepath) {
   const stat = await fs.promises.stat(filepath);
@@ -157,11 +158,38 @@ async function removeOldTranslationFiles(
   await Promise.all(
     translationsFiles.map(async (fileName) => {
       const filePath = path.join(translationsLocalePath, fileName);
+      const currentDateTime = Date(Date.now()).toString();
+      const currentDateTimeSlugified = slugify(currentDateTime);
+      const localeCodeArr = translationsLocalePath.split("/");
+      const localeCode = localeCodeArr[localeCodeArr.length - 1];
+      // Get filename and parent dir names
+      const fileNameParentDirArr = fileName.split("/");
+      let parentDirName = "";
+      let fileNameNoParent = "";
+      if (fileNameParentDirArr.length > 1) {
+        fileNameNoParent = fileNameParentDirArr.pop();
+        parentDirName = fileNameParentDirArr.join("/");
+      } else {
+        fileNameNoParent = fileName;
+      }
 
+      // Dir and path to write to archives to
+      const archivedFilesDir = path.join(
+        "rosey",
+        "archived",
+        currentDateTimeSlugified,
+        localeCode,
+        "translations",
+        parentDirName // Is an empty string if there are no parent dirs for the file, so resolves to nothing when joining
+      );
+      const archivedFilePath = path.join(archivedFilesDir, fileNameNoParent);
+
+      // Don't archive directories
       if (await isDirectory(filePath)) {
         return;
       }
 
+      // Don't archive namespaced pages
       let isFilePathNamespace = false;
       for (const namespace of namespaceArray) {
         if (filePath.endsWith(`${namespace}.yaml`)) {
@@ -170,21 +198,30 @@ async function removeOldTranslationFiles(
         }
       }
       if (isFilePathNamespace) {
+        // TODO: Check here if the namespace is still in the namespace array, otherwise archive the translation file
         return;
       }
 
+      // Get the html equivalent of the yaml file to check if it exists in base.json which deals in .html files
       const fileNameHtmlFormatted = getTranslationHtmlFilename(
         fileName,
         baseUrlFileDataKeys
       );
 
+      // Archive the page if it no longer exists in base.json
       if (!pages.includes(fileNameHtmlFormatted)) {
         console.log(
-          `🧹 The page ${filePath} doesn't exist in the pages in our base.json - deleting!`
+          `🧹 The page ${filePath} doesn't exist in the pages in our base.json - archiving the translation file!`
         );
 
-        await fs.promises.unlink(filePath);
-        console.log(`🧹 Translation file ${filePath} was deleted!`);
+        // Create the archive dir to move the old files to
+        // If the page is nested, like in a blog section, we make sure the parent dir is created as well
+        console.log(`📂📂 Ensuring archive folder exists`);
+        await fs.promises.mkdir(archivedFilesDir, { recursive: true });
+
+        // Move the old file to the archives
+        await fs.promises.rename(filePath, archivedFilePath);
+        console.log(`🧹 Translation file ${filePath} was archived!`);
       }
     })
   );
