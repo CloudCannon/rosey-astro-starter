@@ -1,0 +1,23 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/tailwind/](https://cool-ski.cloudvent.net/tags/tailwind/)  //  \
+      [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/fr-FR/tags/tailwind.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: "[tags/tailwind/](https://cool-ski.cloudvent.net/tags/tailwind/)  //  \
+            [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/tailwind.yaml)"
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: "[tags/tailwind/](https://cool-ski.cloudvent.net/tags/tailwind/)  //  \
+            [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/tailwind.yaml)"
+          inputs: []
+urlTranslation: tags/tailwind/index.html

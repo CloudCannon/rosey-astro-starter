@@ -1,0 +1,20 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/seo/](https://cool-ski.cloudvent.net/tags/seo/)  //  [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/fr-FR/tags/seo.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: "[tags/seo/](https://cool-ski.cloudvent.net/tags/seo/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/seo.yaml)"
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: "[tags/seo/](https://cool-ski.cloudvent.net/tags/seo/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/seo.yaml)"
+          inputs: []
+urlTranslation: tags/seo/index.html
