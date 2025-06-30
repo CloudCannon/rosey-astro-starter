@@ -2,23 +2,113 @@ import fs from "fs";
 import path from "path";
 import slugify from "slugify";
 
-export async function checkAndCleanRemovedLocales(configData) {
-  const currentDateTime = Date(Date.now()).toString();
-  const currentDateTimeSlugified = slugify(currentDateTime);
-  const archivedFilesDir = path.join(
-    "rosey",
-    "archived",
-    currentDateTimeSlugified
-  );
+const currentDateTime = Date(Date.now()).toString();
+const currentDateTimeSlugified = slugify(currentDateTime);
+const archivedFilesDir = path.join(
+  "rosey",
+  "archived",
+  currentDateTimeSlugified
+);
+
+export async function cleanUnusedFiles(configData) {
+  await removeSmartlingFilesIfDisabled(configData);
+  await checkAndCleanRemovedLocales(configData);
+}
+
+async function removeSmartlingFilesIfDisabled(configData) {
+  const smartlingEnabled = configData.smartling.smartling_enabled;
+
+  if (smartlingEnabled) {
+    return;
+  }
+
+  const incomingSmartlingDirPath =
+    configData.smartling.incoming_translations_dir;
+
+  const outgoingSmartlingFilePath =
+    configData.smartling.outgoing_translations_file_path;
+
+  // Check if the incoming dir is there otherwise, we shouldn't try move it
+  let incomingSmartlingDirExists = true;
+  try {
+    await fs.promises.access(incomingSmartlingDirPath);
+  } catch (error) {
+    incomingSmartlingDirExists = false;
+  }
+
+  // If we rename the incoming dir the empty dir sometimes remains,
+  // Check if there's contents otherwise we shouldn't try move it
+  let incomingSmartlingHasContents = false;
+  try {
+    const incomingSmartlingDirContents = await fs.promises.readdir(
+      incomingSmartlingDirPath
+    );
+    if (incomingSmartlingDirContents.length > 0) {
+      incomingSmartlingHasContents = true;
+    }
+  } catch (error) {
+    incomingSmartlingHasContents = false;
+  }
+
+  if (incomingSmartlingDirExists && incomingSmartlingHasContents) {
+    // Create an archived dir to keep old files in
+    console.log(`📂📂 Ensuring archive folder exists`);
+    await fs.promises.mkdir(archivedFilesDir, { recursive: true });
+
+    const incomingSmartlingDirNameArr = incomingSmartlingDirPath.split("/");
+    const incomingSmartlingDirName =
+      incomingSmartlingDirNameArr[incomingSmartlingDirNameArr.length - 2];
+
+    const incomingSmartlingArchivePathToWrite = path.join(
+      archivedFilesDir,
+      incomingSmartlingDirName
+    );
+
+    // Move the incoming smartling files
+    await fs.promises.rename(
+      incomingSmartlingDirPath,
+      incomingSmartlingArchivePathToWrite
+    );
+    console.log(
+      `Smartling disabled - Archived incoming Smartling translation files`
+    );
+  }
+
+  // Check if the outgoing file is there otherwise we shouldn't try move it
+  let outgoingSmartlingFileExists = true;
+  try {
+    await fs.promises.access(outgoingSmartlingFilePath);
+  } catch (error) {
+    outgoingSmartlingFileExists = false;
+  }
+
+  if (outgoingSmartlingFileExists) {
+    const outgoingSmartlingDirNameArr = outgoingSmartlingFilePath.split("/");
+    const outgoingTranslationsFileName =
+      outgoingSmartlingDirNameArr[outgoingSmartlingDirNameArr.length - 1];
+
+    const outgoingSmartlingArchivePathToWrite = path.join(
+      archivedFilesDir,
+      outgoingTranslationsFileName
+    );
+
+    // Move the outgoing smartling file
+    await fs.promises.rename(
+      outgoingSmartlingFilePath,
+      outgoingSmartlingArchivePathToWrite
+    );
+    console.log(
+      `Smartling disabled - Archived outgoing Smartling translation file`
+    );
+  }
+}
+
+async function checkAndCleanRemovedLocales(configData) {
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
   const incomingSmartlingTranslationsDirPath =
     configData.smartling.incoming_translations_dir;
   const locales = configData.locales;
-
-  // Create an archived dir to keep old files in
-  console.log(`📂📂 Ensuring archive folder exists`);
-  await fs.promises.mkdir(archivedFilesDir, { recursive: true });
 
   // Remove extra locales in the translations directory
   console.log(`📂📂 ${translationsDirPath} ensuring folder exists`);
@@ -29,6 +119,10 @@ export async function checkAndCleanRemovedLocales(configData) {
     const localeDir = translationDirs[i];
 
     if (!locales.includes(localeDir)) {
+      // Create an archived dir to keep old files in
+      console.log(`📂📂 Ensuring archive folder exists`);
+      await fs.promises.mkdir(archivedFilesDir, { recursive: true });
+
       const pathToArchive = path.join(translationsDirPath, localeDir);
       const archiveLocaleDirPath = path.join(archivedFilesDir, localeDir);
       const archivePath = path.join(archiveLocaleDirPath, "translations");
@@ -45,12 +139,17 @@ export async function checkAndCleanRemovedLocales(configData) {
   // Remove extra locales in the locales directory
   console.log(`📂📂 ${localesDirPath} ensuring folder exists`);
   await fs.promises.mkdir(localesDirPath, { recursive: true });
+
   const localeDirs = await fs.promises.readdir(localesDirPath);
   for (let i = 0; i < localeDirs.length; i++) {
     const localeFile = localeDirs[i];
     const localeCode = localeFile.replace(".json", "").replace(".urls", "");
 
     if (!locales.includes(localeCode)) {
+      // Create an archived dir to keep old files in
+      console.log(`📂📂 Ensuring archive folder exists`);
+      await fs.promises.mkdir(archivedFilesDir, { recursive: true });
+
       const filePathToArchive = path.join(localesDirPath, localeFile);
 
       // Ensure the locale dir exists to move to
