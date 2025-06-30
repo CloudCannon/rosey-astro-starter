@@ -1,7 +1,6 @@
 import fs from "fs";
 import YAML from "yaml";
 import path from "path";
-import { NodeHtmlMarkdown } from "node-html-markdown";
 import {
   readJsonFromFile,
   readYamlFromFile,
@@ -16,12 +15,7 @@ import {
   getNamespaceInputConfig,
   sortTranslationIntoInputGroup,
 } from "./helpers/input-helpers.mjs";
-
-const nhm = new NodeHtmlMarkdown(
-  /* options (optional) */ {},
-  /* customTransformers (optional) */ undefined,
-  /* customCodeBlockTranslators (optional) */ undefined
-);
+import { htmlToMarkdown } from "./helpers/html-to-markdown.mjs";
 
 export async function generateTranslationFiles(configData) {
   // Get all the config data
@@ -249,7 +243,8 @@ async function processTranslations(
       if (!baseTranslationObj.pages[page]) {
         return;
       }
-      // Check for namespace and exit early since this translation key belongs to a ns page, not one of the real pages we're looping through
+      // Check for namespace and exit early
+      // since this translation key belongs to a ns page, not one of the real pages we're looping through
       let isInputKeyNamespace = false;
       for (const namespace of namespaceArray) {
         if (inputKey.startsWith(`${namespace}:`)) {
@@ -271,7 +266,7 @@ async function processTranslations(
       // We only need to check Smartling for new translations
       if (!translationDataToWrite[inputKey]) {
         if (smartlingTranslationData[inputKey]) {
-          translationDataToWrite[inputKey] = nhm.translate(
+          translationDataToWrite[inputKey] = htmlToMarkdown(
             smartlingTranslationData[inputKey]
           );
         } else {

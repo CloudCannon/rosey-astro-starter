@@ -138,7 +138,7 @@ collections_config:
     disable_add_folder: true
     disable_file_actions: true
     glob:
-      - config.yaml
+      - rcc.yaml
       - 'translations/**'
     _inputs:
       urlTranslation:

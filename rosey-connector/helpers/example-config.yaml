@@ -1,0 +1,165 @@
+# A list of locales you need files generated for. 
+# Adding to this will generate the yaml and JSON files needed for each locale. 
+# Locales can be anything you want, are case-sensitive, 
+# and will be used for the URL prefix for your translated section of the site. 
+# Some common examples would be `fr`, `fr-FR` or `french`.
+locales: []
+
+input_lengths:
+    # Define the behaviour for when an input in the editor facing files will concatenate it's label, 
+    # and create a context box to see the whole translation.
+    # https://cloudcannon.com/documentation/articles/inputs-reference/#_inputs.*.context
+  label: 42
+  # Define when an input is a simple text input, and when it should grow to be a textarea input.
+  textarea: 20
+
+# Shows a comment under each input that links to where the phrase is used on the page.
+see_on_page_comment:
+  # Define whether these 'context' comments should be enabled at all.
+  enabled: true
+  # Your staging site url used to generate the comments that link to the phrase seen in context on the page.
+  base_url: https://adjective-noun.cloudvent.net/
+  # The text used for the link.
+  comment_text: See in context
+
+# Shows a comment under each input that links to the GitHub history for the page.
+github_history:
+  # Define whether these 'Git history' comments should be enabled at all.
+  enabled: true
+  # Your site's GitHub url, used to generate the comments that link to the page's GitHub history.
+  repo_url: https://github.com/org/repo
+   # Your staging site's branch name, if different from the classic 'staging'.
+  branch_name: staging
+   # The text used for the link.
+  comment_text: Git history
+
+# Use a Rosey namespace to mark certain phrases to be grouped together and omitted from the yaml translation files for the page they appear on
+namespace_pages:
+  - common
+
+# Tells the RCC if you're storing the files Rosey expects in a different location to the default. 
+# You'll also need to update the CLI commands for Rosey in your staging & production site's postbuild.
+rosey_paths:
+  rosey_base_file_path: ./rosey/base.json
+  rosey_base_urls_file_path: ./rosey/base.urls.json
+  translations_dir_path: ./rosey/translations
+  locales_dir_path: ./rosey/locales
+
+# Smartling integration configuration for automatic AI-powered machine translations.
+# https://help.smartling.com/hc/en-us/articles/4405992477979-Node-js-SDK
+smartling:
+  # Enable/Disbale the integration.
+  smartling_enabled: false
+  # The public facing credentials Smartling gives you.
+  dev_project_id: 
+  dev_user_identifier: 
+  # How long to wait between pings to check whether Smartling has finished translating your content.
+  ping_interval: 20000
+  # How many pings to wait before exiting the process because you're waiting for authorization (usually due to no new content).
+  ping_maximum: 6
+  pings_to_wait_for_auth: 3
+  # The paths to save outgoing and incoming Smartling data.
+  incoming_translations_dir: ./rosey/smartling-translations/
+  outgoing_translations_file_path: ./rosey/outgoing-smartling-translations.json
+  # The unique identifier for this Smartling job.
+  outgoing_translation_file_uri: /rosey/translations/
+
+_inputs:
+  namespace_pages:
+    type: array
+    comment: >-
+      Group translations by namespace. A page will be created for each
+      namespace, your translations will be scanned for corresponding Rosey
+      namespaces, and grouped on the namespace page. See the [Rosey
+      docs](https://rosey.app/docs/namespacing/) for details on adding
+      namespaces to your html.
+  locales:
+    type: array
+    comment: >-
+      Add and remove the locales you need for your site. Locales can be any
+      format, usually either a two letter code (es), or a hyphenated four letter
+      code (es-ES).
+  base_url:
+    comment: >-
+      The url to the CloudCannon staging site that you enter your translation
+      data to. Used to generate links to the original content to help provide
+      context to translators.
+  rosey_paths:
+    type: object
+    options:
+      preview:
+        icon: folder
+  rosey_base_file_path:
+    type: text
+    comment: The location of your Rosey base.json file
+  rosey_base_urls_file_path:
+    type: text
+    comment: The location of your Rosey base.urls.json file
+  translations_dir_path:
+    type: text
+    comment: The location of the directory for your Rosey translation YAML files
+  locales_dir_path:
+    type: text
+    comment: The location of the directory for your Rosey locales JSON files
+  smartling:
+    type: object
+    options:
+      preview:
+        icon: smart_toy
+  smartling_enabled:
+    type: switch
+    comment: >-
+      Enable automatic Smartling AI powered machine translations? Requires a
+      Smartling account with an API key set in this site's environment
+      variables. Make sure you understand the billing around these translations
+      before enabling this.
+  dev_project_id:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: Enter your Smartling project id here
+  dev_user_identifier:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: Enter your Smartling user id here
+  ping_interval:
+    type: number
+    hidden: '!smartling_enabled'
+    comment: >-
+      The time between pings to Smartlings API when checking if translations are
+      done yet. Measured in ms.
+  ping_maximum:
+    type: number
+    hidden: '!smartling_enabled'
+    comment: >-
+      The number of pings to try Smartlings API for new translations before
+      giving up.
+  pings_to_wait_for_auth:
+    type: number
+    hidden: '!smartling_enabled'
+    comment: >-
+      The number of pings to try Smartlings API for authorization for new
+      translations before timing out. If there are no new translations, but the
+      API call somehow goes through, Smartling will get stuck on
+      AWAITING_AUTHORIZATION. If this is the case can save time to exit before
+      trying the full set of pings.
+  incoming_translations_dir:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: >-
+      The location of the directory that the incoming translation files are
+      downloaded to.
+  outgoing_translations_file_path:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: The location of the outgoing translations JSON file.
+  outgoing_translation_file_uri:
+    type: text
+    hidden: '!smartling_enabled'
+    comment: >-
+      The unique identifier that Smartling uses for this site. Can be anything
+      as long as it's unique to this site in your Smartling project.
+  tagged_body_content_elements:
+    type: array
+    comment: >-
+      The block level elements to add data-rosey tags to when parsing body
+      content on this site.

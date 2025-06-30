@@ -3,9 +3,12 @@ import { checkLocales } from "./checkLocales.mjs";
 import { callSmartling } from "./callSmartling.mjs";
 import { generateTranslationFiles } from "./generateTranslationFiles.mjs";
 import { generateLocales } from "./generateLocales.mjs";
+import { generateConfig } from "./generateConfig.mjs";
 
 (async () => {
-  const configData = await readConfigFile("./rosey/config.yaml");
+  console.log("🏗️ Checking a config file exists...");
+  await generateConfig();
+  const configData = await readConfigFile("./rosey/rcc.yaml");
   console.log("🏗️ Checking locales...");
   await checkLocales(configData);
   console.log("🏗️ Checked locales!");
