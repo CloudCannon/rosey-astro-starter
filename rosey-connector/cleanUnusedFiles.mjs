@@ -173,15 +173,14 @@ async function checkAndCleanRemovedLocales(configData) {
   }
 
   // Remove incoming Smartling translation files if not in locales
-  console.log(
-    `📂📂 ${incomingSmartlingTranslationsDirPath} ensuring folder exists`
-  );
-  await fs.promises.mkdir(incomingSmartlingTranslationsDirPath, {
-    recursive: true,
-  });
-  const smartlingTranslationFiles = await fs.promises.readdir(
-    incomingSmartlingTranslationsDirPath
-  );
+  let smartlingTranslationFiles;
+  try {
+    smartlingTranslationFiles = await fs.promises.readdir(
+      incomingSmartlingTranslationsDirPath
+    );
+  } catch (error) {
+    return;
+  }
 
   for (let i = 0; i < smartlingTranslationFiles.length; i++) {
     const smartlingTranslationFile = smartlingTranslationFiles[i];
