@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-export async function checkLocales(configData) {
+export async function checkAndCleanDirs(configData) {
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
   const incomingSmartlingTranslationsDirPath =

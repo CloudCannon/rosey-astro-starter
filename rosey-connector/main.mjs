@@ -1,5 +1,5 @@
 import { readConfigFile } from "./helpers/file-helpers.mjs";
-import { checkLocales } from "./checkLocales.mjs";
+import { checkAndCleanDirs } from "./checkAndCleanDirs.mjs";
 import { callSmartling } from "./callSmartling.mjs";
 import { generateTranslationFiles } from "./generateTranslationFiles.mjs";
 import { generateLocales } from "./generateLocales.mjs";
@@ -9,9 +9,9 @@ import { generateConfig } from "./generateConfig.mjs";
   console.log("🏗️ Checking a config file exists...");
   await generateConfig();
   const configData = await readConfigFile("./rosey/rcc.yaml");
-  console.log("🏗️ Checking locales...");
-  await checkLocales(configData);
-  console.log("🏗️ Checked locales!");
+  console.log("🏗️ Cleaning old content...");
+  await checkAndCleanDirs(configData);
+  console.log("🏗️ Cleaned content!");
   if (configData.smartling.smartling_enabled) {
     console.log("🏗️ Calling Smartling for translations...");
     await callSmartling(configData);
