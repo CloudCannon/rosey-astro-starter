@@ -1,7 +1,6 @@
 # TODO: add comments in here from the blog post
 locales:
   - de-DE
-  - fr-FR
 input_lengths:
   label: 42
   textarea: 20
