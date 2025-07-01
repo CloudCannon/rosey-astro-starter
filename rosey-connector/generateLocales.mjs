@@ -116,9 +116,8 @@ async function generateLocale(locale, configData) {
       // Sort out the url translations from the normal translations
       for (const key of Object.keys(urlData)) {
         localeUrlsData[key] = urlData[key];
-        console.log(urlData[key]);
-        // TODO: Add log stat here
 
+        // Update stats for url translations here
         if (urlData[key].original === urlData[key].value) {
           logStatistics.numberOfUntranslatedUrls += 1;
         }
@@ -219,12 +218,15 @@ async function generateLocale(locale, configData) {
     JSON.stringify(orderedLocaleUrlData, null, "\t")
   );
 
+  // Log translation statistics
   console.log(`Translation statistics:`);
   console.log(`- Total Keys: ${logStatistics.numberOfKeysInBaseJson}`);
   console.log(
     `- Completed Translations: ${logStatistics.completedTranslations}`
   );
   console.log(`- Missing Translations: ${logStatistics.missingTranslations}`);
+
+  // Only display url translation statistics if there is at least on url translation
   if (logStatistics.numberOfTranslatedUrls > 0) {
     console.log(
       `- Completed Url Translations: ${logStatistics.numberOfTranslatedUrls}`
