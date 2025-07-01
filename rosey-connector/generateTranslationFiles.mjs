@@ -1,27 +1,21 @@
 import fs from "fs";
 import YAML from "yaml";
 import path from "path";
-import { NodeHtmlMarkdown } from "node-html-markdown";
 import {
   readJsonFromFile,
   readYamlFromFile,
-  removeOldTranslationFiles,
+  archiveOldTranslationFiles,
   getYamlFileName,
   createParentDirIfExists,
-} from "./helpers/file-helpers.js";
+} from "./helpers/file-helpers.mjs";
 import {
   initDefaultInputs,
   getInputConfig,
   initNamespacePageInputs,
   getNamespaceInputConfig,
   sortTranslationIntoInputGroup,
-} from "./helpers/input-helpers.js";
-
-const nhm = new NodeHtmlMarkdown(
-  /* options (optional) */ {},
-  /* customTransformers (optional) */ undefined,
-  /* customCodeBlockTranslators (optional) */ undefined
-);
+} from "./helpers/input-helpers.mjs";
+import { htmlToMarkdown } from "./helpers/html-to-markdown.mjs";
 
 export async function generateTranslationFiles(configData) {
   // Get all the config data
@@ -55,7 +49,7 @@ export async function generateTranslationFiles(configData) {
       incomingSmartlingTranslationsDir,
       namespaceArray
     ).catch((err) => {
-      console.error(`❌❌ Encountered an error translating ${locale}:`, err);
+      console.error(`\n❌ Encountered an error translating ${locale}:`, err);
     });
   }
 }
@@ -71,6 +65,11 @@ async function generateTranslationFilesForLocale(
   incomingSmartlingTranslationsDir,
   namespaceArray
 ) {
+  console.log(`\n🌍 Processing locale: ${locale}`);
+  const logStatistics = {
+    numberOfTranslationFilesUpdated: 0,
+    numberOfNamespaceTranslationFilesUpdated: 0,
+  };
   // Get pages from the base.urls.json
   const baseUrlFileDataKeys = baseUrlFileData.keys;
   const pages = Object.keys(baseUrlFileDataKeys);
@@ -85,7 +84,7 @@ async function generateTranslationFilesForLocale(
   });
 
   // Remove translations pages that are no longer present in the base.json file or are one of our namepace-created files
-  await removeOldTranslationFiles(
+  await archiveOldTranslationFiles(
     translationsFiles,
     translationsLocalePath,
     baseUrlFileDataKeys,
@@ -134,7 +133,7 @@ async function generateTranslationFilesForLocale(
       // Process the rest of the translations
       // As part of process translations, look for keys with a value in the namespace array
       // at the start and don't write them to the translation file
-      processTranslations(
+      await processTranslations(
         baseFileData,
         translationFileData,
         translationDataToWrite,
@@ -150,9 +149,7 @@ async function generateTranslationFilesForLocale(
         translationFilePath,
         YAML.stringify(translationDataToWrite)
       );
-      console.log(
-        `Translation file: ${translationFilePath} updated succesfully`
-      );
+      logStatistics.numberOfTranslationFilesUpdated += 1;
     })
   );
 
@@ -187,13 +184,17 @@ async function generateTranslationFilesForLocale(
             namespaceTranslationDataToWrite[inputKey] =
               existingNamespaceFileData[inputKey];
           } else {
-            // Otherwise add them to the common page with their
+            // Otherwise add them to the namespace page
             namespaceTranslationDataToWrite[inputKey] = "";
           }
 
           // Set up inputs for each key
           namespaceTranslationDataToWrite._inputs[inputKey] =
-            getNamespaceInputConfig(inputKey, baseTranslationObj, inputLengths);
+            await getNamespaceInputConfig(
+              inputKey,
+              baseTranslationObj,
+              inputLengths
+            );
 
           // Add each entry to page object group depending on whether they are already translated or not
           sortTranslationIntoInputGroup(
@@ -208,8 +209,18 @@ async function generateTranslationFilesForLocale(
         namespaceFilePath,
         YAML.stringify(namespaceTranslationDataToWrite)
       );
-      console.log(`Translation file: ${namespaceFilePath} updated succesfully`);
+      logStatistics.numberOfNamespaceTranslationFilesUpdated += 1;
     })
+  );
+
+  // Log statistics
+  const totalNumberOfPages = Object.keys(baseUrlFileDataKeys).length;
+  const totalNumberOfNamespacePages = namespaceArray.length;
+  console.log(
+    `- ${logStatistics.numberOfTranslationFilesUpdated}/${totalNumberOfPages} Translation files generated.`
+  );
+  console.log(
+    `- ${logStatistics.numberOfNamespaceTranslationFilesUpdated}/${totalNumberOfNamespacePages} Namespace files generated.`
   );
 }
 
@@ -226,7 +237,7 @@ function processUrlTranslation(
   }
 }
 
-function processTranslations(
+async function processTranslations(
   baseFileData,
   translationFileData,
   translationDataToWrite,
@@ -236,54 +247,57 @@ function processTranslations(
   seeOnPageCommentSettings,
   inputLengths
 ) {
-  // Loop through all the translations in the base.json
-  Object.keys(baseFileData.keys).map((inputKey) => {
-    const baseTranslationObj = baseFileData.keys[inputKey];
+  await Promise.all(
+    // Loop through all the translations in the base.json
+    Object.keys(baseFileData.keys).map(async (inputKey) => {
+      const baseTranslationObj = baseFileData.keys[inputKey];
 
-    // If translation doesn't exist on this page, exit early
-    if (!baseTranslationObj.pages[page]) {
-      return;
-    }
-    // Check for namespace and exit early since this translation key belongs to a ns page, not one of the real pages we're looping through
-    let isInputKeyNamespace = false;
-    for (const namespace of namespaceArray) {
-      if (inputKey.startsWith(`${namespace}:`)) {
-        isInputKeyNamespace = true;
-        break;
+      // If translation doesn't exist on this page, exit early
+      if (!baseTranslationObj.pages[page]) {
+        return;
       }
-    }
-    if (isInputKeyNamespace) {
-      return;
-    }
-
-    // Only add the key to our output data if it still exists in base.json
-    if (translationFileData[inputKey]) {
-      translationDataToWrite[inputKey] = translationFileData[inputKey];
-    }
-
-    // If entry doesn't exist in our output file but exists in the base.json, add it
-    // Check Smartling translations for the translation and add it here if it exists
-    // We only need to check Smartling for new translations
-    if (!translationDataToWrite[inputKey]) {
-      if (smartlingTranslationData[inputKey]) {
-        translationDataToWrite[inputKey] = nhm.translate(
-          smartlingTranslationData[inputKey]
-        );
-      } else {
-        translationDataToWrite[inputKey] = "";
+      // Check for namespace and exit early
+      // since this translation key belongs to a ns page, not one of the real pages we're looping through
+      let isInputKeyNamespace = false;
+      for (const namespace of namespaceArray) {
+        if (inputKey.startsWith(`${namespace}:`)) {
+          isInputKeyNamespace = true;
+          break;
+        }
       }
-    }
+      if (isInputKeyNamespace) {
+        return;
+      }
 
-    // Set up inputs for each key
-    translationDataToWrite._inputs[inputKey] = getInputConfig(
-      inputKey,
-      page,
-      baseTranslationObj,
-      seeOnPageCommentSettings,
-      inputLengths
-    );
+      // Only add the key to our output data if it still exists in base.json
+      if (translationFileData[inputKey]) {
+        translationDataToWrite[inputKey] = translationFileData[inputKey];
+      }
 
-    // Add each entry to page object group depending on whether they are already translated or not
-    sortTranslationIntoInputGroup(translationDataToWrite, inputKey);
-  });
+      // If entry doesn't exist in our output file but exists in the base.json, add it
+      // Check Smartling translations for the translation and add it here if it exists
+      // We only need to check Smartling for new translations
+      if (!translationDataToWrite[inputKey]) {
+        if (smartlingTranslationData[inputKey]) {
+          translationDataToWrite[inputKey] = htmlToMarkdown(
+            smartlingTranslationData[inputKey]
+          );
+        } else {
+          translationDataToWrite[inputKey] = "";
+        }
+      }
+
+      // Set up inputs for each key
+      translationDataToWrite._inputs[inputKey] = await getInputConfig(
+        inputKey,
+        page,
+        baseTranslationObj,
+        seeOnPageCommentSettings,
+        inputLengths
+      );
+
+      // Add each entry to page object group depending on whether they are already translated or not
+      sortTranslationIntoInputGroup(translationDataToWrite, inputKey);
+    })
+  );
 }

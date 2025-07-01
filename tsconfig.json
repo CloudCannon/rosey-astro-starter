@@ -5,6 +5,7 @@
     "baseUrl": ".",
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "lib": ["ES2021.String"]
+    "lib": ["ES2021.String"],
+    "allowImportingTsExtensions": true
   }
 }

@@ -1,4 +1,4 @@
-import { formatAndSlugifyText } from "./markdown-formatters.js";
+import { formatAndSlugifyText } from "./text-formatters.mjs";
 
 export function generateRoseyId(data) {
   let text = "";

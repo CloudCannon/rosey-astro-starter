@@ -6,8 +6,8 @@ import type { Element } from "hast";
 import {
   isTextElement,
   getElementInnerText,
-} from "../helpers/text-formatters.ts";
-import { generateRoseyMarkdownId } from "rosey-connector/helpers/component-helpers.js";
+} from "rosey-connector/helpers/ast-helpers.mts";
+import { generateRoseyMarkdownId } from "rosey-connector/helpers/component-helpers.mjs";
 import markdownIt from "markdown-it";
 const md = markdownIt({ html: true });
 

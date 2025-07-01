@@ -29,7 +29,7 @@ TODO: Links to
 
 7. In your `rosey/config.yml` change the language code in the `locales` array to one that you want, and add your staging cloudvent url to the `base_url` key.
 
-8. To add automatic AI-powered translations - which your editors can then QA - enable Smartling in your `rosey/config.yaml` file, by setting `smartling_enabled: true`. Make sure to fill in your `dev_project_id`, and `dev_user_identifier`, with the credentials in your Smartling account. Ensure you have added you secret API key to your environment variables in CloudCannon, as `DEV_USER_SECRET`. You can set this locally in a `.env` file if you want to test it in your development environment. 
+8. To add automatic AI-powered translations - which your editors can then QA - enable Smartling in your `rosey/rcc.yaml` configuration file, by setting `smartling_enabled: true`. Make sure to fill in your `dev_project_id`, and `dev_user_identifier`, with the credentials in your Smartling account. Ensure you have added you secret API key to your environment variables in CloudCannon, as `DEV_USER_SECRET`. You can set this locally in a `.env` file if you want to test it in your development environment. 
 
     > [!IMPORTANT]
     > Make sure to not push any secret API keys to your source control. The `.env` file should already be in your .gitignore.
@@ -133,7 +133,7 @@ When tagging content for translation, the slugified contents of that translation
 A helper function has been provided. Add this to the top of your component, or layout, adjusting the import address as needed.
 
   ```js
-  import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper.js";
+  import { generateRoseyId } from "../../../rosey-connector/helpers/component-helper.mjs";
   ```
 
 Add it to your html templating like:

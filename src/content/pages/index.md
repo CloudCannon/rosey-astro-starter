@@ -20,12 +20,14 @@ hero_block:
     text_color: '#333232'
   subheading:
     text_content: >-
-      A starting point for developers looking to build a website with Astro,
-      using Bookshop components in CloudCannon. Create your own copy, and start
-      creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.
+      A starting point for <br> developers looking to build a website with
+      Astro, using <br>Bookshop components in CloudCannon. Create your own copy,
+      and start creating your own components to use in CloudCannon’s CMS <sub>A
+      sub to test</sub>.
 
-      
-      Another paragraph to test translations. With punctuation and stuff<sup>TM</sup>.
+
+      Another paragraph to test translations. With punctuation and
+      stuff<sup>TM</sup>.
     color: '#393939'
     text_color: '#333232'
   image:

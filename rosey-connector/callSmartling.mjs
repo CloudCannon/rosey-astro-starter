@@ -13,7 +13,7 @@ import {
 import fs from "fs";
 import path from "path";
 import dotenv from "dotenv";
-import { readJsonFromFile } from "./helpers/file-helpers.js";
+import { readJsonFromFile } from "./helpers/file-helpers.mjs";
 dotenv.config();
 
 export async function callSmartling(configData) {
@@ -54,10 +54,10 @@ export async function callSmartling(configData) {
   );
 
   if (!smartlingTranslateEnabled || smartlingTranslateEnabled === "false") {
-    console.log("⏭️ Smartling translation disabled - skipping API call");
+    console.log("⏭️ Smartling translation disabled - skipping API call.");
     return;
   } else {
-    console.log("🤖 Smartling translation enabled - continuing with API call");
+    console.log("🤖 Smartling translation enabled - continuing with API call.");
   }
 
   // Get the outgoing translation file, and one of the last returned set of translations
@@ -73,11 +73,11 @@ export async function callSmartling(configData) {
     outgoingTranslationsFileData
   );
   if (outgoingTranslationFileDataKeys.length < 1) {
-    console.log("⏭️⏭️ Nothing to send to Smartling - skipping API call");
+    console.log("⏭️ Nothing to send to Smartling - skipping API call.");
     return;
   } else {
     console.log(
-      "🤖 Detected a new translation and page(s) have translations enabled - continuing with API call"
+      "🤖 Detected a new translation and page(s) have translations enabled - continuing with API call."
     );
   }
 
@@ -111,10 +111,10 @@ export async function callSmartling(configData) {
   }
 
   if (!isThereANewTranslation) {
-    console.log("⏭️ No new translation - skipping API call");
+    console.log("⏭️ No new translation - skipping API call.");
     return;
   } else {
-    console.log("🤖 New translation detected - continuing with API call");
+    console.log("🤖 New translation detected - continuing with API call.");
   }
 
   // Get a token
@@ -154,7 +154,7 @@ export async function callSmartling(configData) {
     uploadBatchFileParams
   );
 
-  console.log(`🤖 Uploaded file ${outgoingTranslationsFilePath} to Smartling`);
+  console.log(`🤖 Uploaded file ${outgoingTranslationsFilePath} to Smartling.`);
 
   // Call Job Status API until translation is completed, or we timeout.
 
@@ -180,7 +180,7 @@ export async function callSmartling(configData) {
       }
       pingCount++;
       console.log(
-        `☎️  Smartling translation job status API call: ${pingCount}`
+        `☎️  Smartling translation job status API call: ${pingCount}.`
       );
 
       switch (jobStatus) {
@@ -233,7 +233,7 @@ export async function callSmartling(configData) {
 
             existingSmartlingTranslationsKeys.forEach((key) => {
               if (!baseFileDataKeys.includes(key)) {
-                console.log("Deleting old key: ", key);
+                console.log(`Deleting old key: ${key}.`);
                 delete existingSmartlingTranslationsData[key];
               }
             });
@@ -357,5 +357,5 @@ async function generateOutgoingTranslationFile(baseFilePath, outgoingFilePath) {
     outgoingFilePath,
     JSON.stringify(translationObject)
   );
-  console.log("🤖 Outgoing translations updated succesfully");
+  console.log("🤖 Outgoing translations updated succesfully.");
 }
