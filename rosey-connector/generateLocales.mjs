@@ -29,9 +29,11 @@ async function generateLocale(locale, configData) {
   console.log(`\n🌍 Processing locale: ${locale}`);
   const logStatistics = {
     numberOfKeysInBaseJson: 0,
-    numberOfKeysInUrlBaseJson: 0,
     completedTranslations: 0,
     missingTranslations: 0,
+    numberOfKeysInUrlBaseJson: 0,
+    numberOfUntranslatedUrls: 0,
+    numberOfTranslatedUrls: 0,
   };
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
@@ -114,12 +116,24 @@ async function generateLocale(locale, configData) {
       // Sort out the url translations from the normal translations
       for (const key of Object.keys(urlData)) {
         localeUrlsData[key] = urlData[key];
+        console.log(urlData[key]);
+        // TODO: Add log stat here
+
+        if (urlData[key].original === urlData[key].value) {
+          logStatistics.numberOfUntranslatedUrls += 1;
+        }
+        // If the value and original aren't the same, and theres something for the value, we have a translated url
+        if (
+          urlData[key].original !== urlData[key].value &&
+          urlData[key].value
+        ) {
+          logStatistics.numberOfTranslatedUrls += 1;
+        }
       }
 
       // Find first time translations, or new translations and add them to locale data to write
       for (const key of Object.keys(data)) {
-        // TODO: Extract translation statistics for the logger
-        // console.log(data);
+        // Extract translation statistics for the logger
         if (data[key].untranslated) {
           logStatistics.missingTranslations += 1;
         }
@@ -211,7 +225,16 @@ async function generateLocale(locale, configData) {
     `- Completed Translations: ${logStatistics.completedTranslations}`
   );
   console.log(`- Missing Translations: ${logStatistics.missingTranslations}`);
-  console.log(`- Total Urls: ${logStatistics.numberOfKeysInUrlBaseJson}`);
+  if (logStatistics.numberOfTranslatedUrls > 0) {
+    console.log(
+      `- Completed Url Translations: ${logStatistics.numberOfTranslatedUrls}`
+    );
+    console.log(
+      `- Untranslated Urls: ${logStatistics.numberOfUntranslatedUrls}`
+    );
+  } else {
+    console.log(`- Total Urls: ${logStatistics.numberOfKeysInUrlBaseJson}`);
+  }
 }
 
 function getTranslationPath(locale, translationsDirPath, translationFilename) {
