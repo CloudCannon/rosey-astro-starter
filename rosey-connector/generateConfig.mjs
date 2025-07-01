@@ -7,10 +7,9 @@ export async function generateConfig() {
   // Check if a config already exists
   try {
     await fs.promises.access(configPath);
-    console.log("🏗️ Config file exists!");
     return;
   } catch (error) {
-    console.log("🏗️ Creating empty config file...");
+    console.log("🏗️ No existing config file - Creating one...");
     // If not read the example one
     const exampleConfigPath = path.join(
       "rosey-connector",
@@ -22,6 +21,6 @@ export async function generateConfig() {
 
     // Write the example config to the correct place
     await fs.promises.writeFile(configPath, exampleFileData);
-    console.log("🏗️ Generated an empty RCC config file!");
+    console.log("🏗️ Generated an RCC config file!");
   }
 }

@@ -16,6 +16,7 @@ export async function cleanUnusedFiles(configData) {
 }
 
 async function removeSmartlingFilesIfDisabled(configData) {
+  let haveWeArchivedSmartlingFiles = false;
   const smartlingEnabled = configData.smartling.smartling_enabled;
 
   if (smartlingEnabled) {
@@ -52,7 +53,6 @@ async function removeSmartlingFilesIfDisabled(configData) {
 
   if (incomingSmartlingDirExists && incomingSmartlingHasContents) {
     // Create an archived dir to keep old files in
-    console.log(`📂📂 Ensuring archive folder exists`);
     await fs.promises.mkdir(archivedFilesDir, { recursive: true });
 
     const incomingSmartlingDirNameArr = incomingSmartlingDirPath.split("/");
@@ -70,8 +70,9 @@ async function removeSmartlingFilesIfDisabled(configData) {
       incomingSmartlingArchivePathToWrite
     );
     console.log(
-      `Smartling disabled - Archived incoming Smartling translation files`
+      `Smartling disabled - Archived incoming Smartling translation files.`
     );
+    haveWeArchivedSmartlingFiles = true;
   }
 
   // Check if the outgoing file is there otherwise we shouldn't try move it
@@ -98,12 +99,18 @@ async function removeSmartlingFilesIfDisabled(configData) {
       outgoingSmartlingArchivePathToWrite
     );
     console.log(
-      `Smartling disabled - Archived outgoing Smartling translation file`
+      `Smartling disabled - Archived outgoing Smartling translation file.`
     );
+    haveWeArchivedSmartlingFiles = true;
+  }
+
+  if (!haveWeArchivedSmartlingFiles) {
+    console.log("No Smartling files archived.");
   }
 }
 
 async function checkAndCleanRemovedLocales(configData) {
+  const haveWeArchivedFiles = [];
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
   const incomingSmartlingTranslationsDirPath =
@@ -111,7 +118,6 @@ async function checkAndCleanRemovedLocales(configData) {
   const locales = configData.locales;
 
   // Remove extra locales in the translations directory
-  console.log(`📂📂 ${translationsDirPath} ensuring folder exists`);
   await fs.promises.mkdir(translationsDirPath, { recursive: true });
   const translationDirs = await fs.promises.readdir(translationsDirPath);
 
@@ -120,7 +126,6 @@ async function checkAndCleanRemovedLocales(configData) {
 
     if (!locales.includes(localeDir)) {
       // Create an archived dir to keep old files in
-      console.log(`📂📂 Ensuring archive folder exists`);
       await fs.promises.mkdir(archivedFilesDir, { recursive: true });
 
       const pathToArchive = path.join(translationsDirPath, localeDir);
@@ -132,12 +137,12 @@ async function checkAndCleanRemovedLocales(configData) {
 
       // Move the old translation files
       await fs.promises.rename(pathToArchive, archivePath);
-      console.log(`Archived locale ${localeDir} translation files`);
+      console.log(`Archived locale ${localeDir} translation files.`);
+      haveWeArchivedFiles.push(localeDir);
     }
   }
 
   // Remove extra locales in the locales directory
-  console.log(`📂📂 ${localesDirPath} ensuring folder exists`);
   await fs.promises.mkdir(localesDirPath, { recursive: true });
 
   const localeDirs = await fs.promises.readdir(localesDirPath);
@@ -147,7 +152,6 @@ async function checkAndCleanRemovedLocales(configData) {
 
     if (!locales.includes(localeCode)) {
       // Create an archived dir to keep old files in
-      console.log(`📂📂 Ensuring archive folder exists`);
       await fs.promises.mkdir(archivedFilesDir, { recursive: true });
 
       const filePathToArchive = path.join(localesDirPath, localeFile);
@@ -168,7 +172,8 @@ async function checkAndCleanRemovedLocales(configData) {
         localeFile
       );
       await fs.promises.rename(filePathToArchive, archivePath);
-      console.log(`Archived locale ${localeCode} locale files`);
+      console.log(`Archived locale ${localeCode} locale files.`);
+      haveWeArchivedFiles.push(localeCode);
     }
   }
 
@@ -179,7 +184,7 @@ async function checkAndCleanRemovedLocales(configData) {
       incomingSmartlingTranslationsDirPath
     );
   } catch (error) {
-    return;
+    smartlingTranslationFiles = [];
   }
 
   for (let i = 0; i < smartlingTranslationFiles.length; i++) {
@@ -207,7 +212,15 @@ async function checkAndCleanRemovedLocales(configData) {
 
       // Move the old smartling translations
       await fs.promises.rename(filePathToArchive, archivePath);
-      console.log(`Archived locale ${localeCode} smartling files`);
+      console.log(`Archived locale ${localeCode} smartling files.`);
+      haveWeArchivedFiles.push(localeCode);
     }
+  }
+
+  if (haveWeArchivedFiles.length > 0) {
+    const archivedLocales = haveWeArchivedFiles.join(", ");
+    console.log(`Archived ${archivedLocales} files.`);
+  } else {
+    console.log(`No old locales to archive.`);
   }
 }

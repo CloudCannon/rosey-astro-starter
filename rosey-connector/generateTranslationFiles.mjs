@@ -4,7 +4,7 @@ import path from "path";
 import {
   readJsonFromFile,
   readYamlFromFile,
-  removeOldTranslationFiles,
+  archiveOldTranslationFiles,
   getYamlFileName,
   createParentDirIfExists,
 } from "./helpers/file-helpers.mjs";
@@ -49,7 +49,7 @@ export async function generateTranslationFiles(configData) {
       incomingSmartlingTranslationsDir,
       namespaceArray
     ).catch((err) => {
-      console.error(`❌❌ Encountered an error translating ${locale}:`, err);
+      console.error(`\n❌ Encountered an error translating ${locale}:`, err);
     });
   }
 }
@@ -65,6 +65,11 @@ async function generateTranslationFilesForLocale(
   incomingSmartlingTranslationsDir,
   namespaceArray
 ) {
+  console.log(`\n🌍 Processing locale: ${locale}`);
+  const logStatistics = {
+    numberOfTranslationFilesUpdated: 0,
+    numberOfNamespaceTranslationFilesUpdated: 0,
+  };
   // Get pages from the base.urls.json
   const baseUrlFileDataKeys = baseUrlFileData.keys;
   const pages = Object.keys(baseUrlFileDataKeys);
@@ -79,7 +84,7 @@ async function generateTranslationFilesForLocale(
   });
 
   // Remove translations pages that are no longer present in the base.json file or are one of our namepace-created files
-  await removeOldTranslationFiles(
+  await archiveOldTranslationFiles(
     translationsFiles,
     translationsLocalePath,
     baseUrlFileDataKeys,
@@ -144,9 +149,7 @@ async function generateTranslationFilesForLocale(
         translationFilePath,
         YAML.stringify(translationDataToWrite)
       );
-      console.log(
-        `Translation file: ${translationFilePath} updated succesfully`
-      );
+      logStatistics.numberOfTranslationFilesUpdated += 1;
     })
   );
 
@@ -206,8 +209,18 @@ async function generateTranslationFilesForLocale(
         namespaceFilePath,
         YAML.stringify(namespaceTranslationDataToWrite)
       );
-      console.log(`Translation file: ${namespaceFilePath} updated succesfully`);
+      logStatistics.numberOfNamespaceTranslationFilesUpdated += 1;
     })
+  );
+
+  // Log statistics
+  const totalNumberOfPages = Object.keys(baseUrlFileDataKeys).length;
+  const totalNumberOfNamespacePages = namespaceArray.length;
+  console.log(
+    `- ${logStatistics.numberOfTranslationFilesUpdated}/${totalNumberOfPages} Translation files generated.`
+  );
+  console.log(
+    `- ${logStatistics.numberOfNamespaceTranslationFilesUpdated}/${totalNumberOfNamespacePages} Namespace files generated.`
   );
 }
 

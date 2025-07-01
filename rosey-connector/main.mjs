@@ -6,21 +6,28 @@ import { generateLocales } from "./generateLocales.mjs";
 import { generateConfig } from "./generateConfig.mjs";
 
 (async () => {
-  console.log("🏗️ Checking a config file exists...");
+  console.log("\n--- Starting Rosey CloudCannon Connector ---");
+
+  console.log("\n🏗️ Reading config file...");
   await generateConfig();
   const configData = await readConfigFile("./rosey/rcc.yaml");
-  console.log("🏗️ Cleaning old content...");
+
+  console.log("\n\n🏗️ Checking for content to archive...");
   await cleanUnusedFiles(configData);
-  console.log("🏗️ Cleaned content!");
+
   if (configData.smartling.smartling_enabled) {
-    console.log("🏗️ Calling Smartling for translations...");
+    console.log("\n\n🏗️ Calling Smartling for translations...");
     await callSmartling(configData);
     console.log("🏗️ Finished calling & generating Smartling files!");
   }
-  console.log("🏗️ Generating translation files...");
+
+  console.log("\n\n🏗️ Generating translation files...");
   await generateTranslationFiles(configData);
-  console.log("🏗️ Finished generating translation files!");
-  console.log("🏗️ Generating locales files...");
+  console.log("\n🏗️ Finished generating translation files!");
+
+  console.log("\n\n🏗️ Generating locales files...");
   await generateLocales(configData);
-  console.log("🏗️ Finished generating locales files!");
+  console.log("\n🏗️ Finished generating locales files!");
+
+  console.log("\n--- Finished Rosey CloudCannon Connector ---");
 })();

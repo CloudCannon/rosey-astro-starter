@@ -97,7 +97,7 @@ function getTranslationHtmlFilename(
     !namespaceArray?.includes(translationFilename.replace(".yaml", ""))
   ) {
     console.log(
-      `No .html filename found in our base.urls.json for ${translationFilename}`
+      `No .html filename found for ${translationFilename} in our base.urls.json`
     );
   }
 
@@ -148,7 +148,7 @@ async function createParentDirIfExists(
   }
 }
 
-async function removeOldTranslationFiles(
+async function archiveOldTranslationFiles(
   translationsFiles,
   translationsLocalePath,
   baseUrlFileDataKeys,
@@ -198,7 +198,6 @@ async function removeOldTranslationFiles(
         }
       }
       if (isFilePathNamespace) {
-        // TODO: Check here if the namespace is still in the namespace array, otherwise archive the translation file
         return;
       }
 
@@ -211,12 +210,11 @@ async function removeOldTranslationFiles(
       // Archive the page if it no longer exists in base.json
       if (!pages.includes(fileNameHtmlFormatted)) {
         console.log(
-          `🧹 The page ${filePath} doesn't exist in the pages in our base.json, or in our namespaced pages - archiving the translation file!`
+          `🧹 Archiving translation file: ${filePath}, as it no longer exists in the pages in our base.json, or namespaced pages.`
         );
 
         // Create the archive dir to move the old files to
         // If the page is nested, like in a blog section, we make sure the parent dir is created as well
-        console.log(`📂📂 Ensuring archive folder exists`);
         await fs.promises.mkdir(archivedFilesDir, { recursive: true });
 
         // Move the old file to the archives
@@ -238,5 +236,5 @@ export {
   getYamlFileName,
   getPageString,
   createParentDirIfExists,
-  removeOldTranslationFiles,
+  archiveOldTranslationFiles,
 };
