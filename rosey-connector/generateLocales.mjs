@@ -141,7 +141,7 @@ async function generateLocale(locale, configData) {
           logStatistics.completedTranslations[key] = true;
         }
         if (data[key].isNewTranslation) {
-          logStatistics.completedTranslations = true;
+          logStatistics.completedTranslations[key] = true;
         }
 
         if (!localeData[key] || data[key].isNewTranslation) {
