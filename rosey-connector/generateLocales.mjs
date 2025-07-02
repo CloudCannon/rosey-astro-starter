@@ -29,11 +29,11 @@ async function generateLocale(locale, configData) {
   console.log(`\n🌍 Processing locale: ${locale}`);
   const logStatistics = {
     numberOfKeysInBaseJson: 0,
-    completedTranslations: 0,
-    missingTranslations: 0,
+    completedTranslations: {},
+    missingTranslations: {},
     numberOfKeysInUrlBaseJson: 0,
-    numberOfUntranslatedUrls: 0,
-    numberOfTranslatedUrls: 0,
+    numberOfUntranslatedUrls: {},
+    numberOfTranslatedUrls: {},
   };
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
@@ -118,15 +118,16 @@ async function generateLocale(locale, configData) {
         localeUrlsData[key] = urlData[key];
 
         // Update stats for url translations here
+        // We save the key in an object rather than incrementing a number to prevent duplicates ruining the totals
         if (urlData[key].original === urlData[key].value) {
-          logStatistics.numberOfUntranslatedUrls += 1;
+          logStatistics.numberOfUntranslatedUrls[key] = true;
         }
         // If the value and original aren't the same, and theres something for the value, we have a translated url
         if (
           urlData[key].original !== urlData[key].value &&
           urlData[key].value
         ) {
-          logStatistics.numberOfTranslatedUrls += 1;
+          logStatistics.numberOfTranslatedUrls[key] = true;
         }
       }
 
@@ -134,13 +135,13 @@ async function generateLocale(locale, configData) {
       for (const key of Object.keys(data)) {
         // Extract translation statistics for the logger
         if (data[key].untranslated) {
-          logStatistics.missingTranslations += 1;
+          logStatistics.missingTranslations[key] = true;
         }
         if (data[key].isTranslated) {
-          logStatistics.completedTranslations += 1;
+          logStatistics.completedTranslations[key] = true;
         }
         if (data[key].isNewTranslation) {
-          logStatistics.completedTranslations += 1;
+          logStatistics.completedTranslations = true;
         }
 
         if (!localeData[key] || data[key].isNewTranslation) {
@@ -222,17 +223,27 @@ async function generateLocale(locale, configData) {
   console.log(`Translation statistics:`);
   console.log(`- Total Keys: ${logStatistics.numberOfKeysInBaseJson}`);
   console.log(
-    `- Completed Translations: ${logStatistics.completedTranslations}`
+    `- Completed Translations: ${
+      Object.keys(logStatistics.completedTranslations).length
+    }`
   );
-  console.log(`- Missing Translations: ${logStatistics.missingTranslations}`);
+  console.log(
+    `- Missing Translations: ${
+      Object.keys(logStatistics.missingTranslations).length
+    }`
+  );
 
   // Only display url translation statistics if there is at least on url translation
   if (logStatistics.numberOfTranslatedUrls > 0) {
     console.log(
-      `- Completed Url Translations: ${logStatistics.numberOfTranslatedUrls}`
+      `- Completed Url Translations: ${
+        Object.keys(logStatistics.numberOfTranslatedUrls).length
+      }`
     );
     console.log(
-      `- Untranslated Urls: ${logStatistics.numberOfUntranslatedUrls}`
+      `- Untranslated Urls: ${
+        Object.keys(logStatistics.numberOfUntranslatedUrls).length
+      }`
     );
   } else {
     console.log(`- Total Urls: ${logStatistics.numberOfKeysInUrlBaseJson}`);
