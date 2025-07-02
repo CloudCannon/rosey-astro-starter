@@ -137,6 +137,11 @@ async function generateLocale(locale, configData) {
         if (data[key].untranslated) {
           logStatistics.missingTranslations[key] = true;
         }
+        // If we clear a translation add it to missing translations
+        // We handle duplicates below (we haven't synced up dupes to be overwritten to be blank here yet)
+        if (data[key].isNewlyClearedTranslation) {
+          logStatistics.missingTranslations[key] = true;
+        }
         if (data[key].isTranslated) {
           logStatistics.completedTranslations[key] = true;
         }
@@ -160,9 +165,24 @@ async function generateLocale(locale, configData) {
         if (data[key].isNewTranslation) {
           keysToUpdate[key] = data[key].value;
         }
+        // If new translation is blank aka we've cleared an old one,
+        // add that to keys to update to sync duplicate keys on other pages
+        if (data[key].isNewlyClearedTranslation) {
+          keysToUpdate[key] = "";
+        }
       }
     })
   );
+
+  // Check keysToUpdate for anything with a blank string
+  // Remove any of those kets from logStatistics.completedTranslations
+  // It may have snuck in there if we there are duplicate keys on separate pages
+
+  for (const key of Object.keys(keysToUpdate)) {
+    if (keysToUpdate[key] === "" && logStatistics.completedTranslations[key]) {
+      delete logStatistics.completedTranslations[key];
+    }
+  }
 
   // Search for duplicate keys on each translation page for new translations
   await Promise.all(
@@ -176,6 +196,7 @@ async function generateLocale(locale, configData) {
       const data = YAML.parse(fileContents);
 
       const updatedKeys = [];
+
       for (const key of Object.keys(keysToUpdate)) {
         if (data[key] || data[key] === "" || data[key] === null) {
           data[key] = keysToUpdate[key];
@@ -183,7 +204,7 @@ async function generateLocale(locale, configData) {
         }
       }
 
-      // If we've found any duplicate keys to update write the file
+      // If we've found any duplicate keys to update overwrite the file
       if (updatedKeys.length > 0) {
         const yamlString = YAML.stringify(data);
         await fs.promises.writeFile(translationFilePath, yamlString);
@@ -377,6 +398,15 @@ function processContentTranslationKey(
 
   // No translated string use the original
   if (!translatedString) {
+    // Check if there was a translation the round before and we've cleared it
+    if (oldLocaleDataValue && oldLocaleDataValue !== baseFileDataOriginal) {
+      return {
+        original: baseFileDataOriginal,
+        value: baseFileDataOriginal,
+        isNewlyClearedTranslation: true,
+      };
+    }
+    // Otherwise its just not translated so use the original
     return {
       original: baseFileDataOriginal,
       value: baseFileDataOriginal,
