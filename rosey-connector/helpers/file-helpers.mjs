@@ -3,8 +3,8 @@ import YAML from "yaml";
 import path from "path";
 import slugify from "slugify";
 
-async function isDirectory(filepath) {
-  const stat = await fs.promises.stat(filepath);
+async function isDirectory(filePath) {
+  const stat = await fs.promises.stat(filePath);
 
   return stat.isDirectory();
 }
