@@ -29,8 +29,9 @@ import { isDirectory } from "../rosey-connector/helpers/file-helpers.mjs";
 // Sanitise the html
 // Parse the AST back into html and write it back to where we found it
 
-const tagNameToLookFor = "dataRoseyTagger"; // Prop names are camelCased
-const dirPath = "_site";
+// Looks for the tag data-rosey-tagger="true". Prop names are camelCased.
+const tagNameToLookFor = "dataRoseyTagger";
+const disallowedIdChars = /[*+~.()'",#%^!:@]/g;
 
 const logStatistics = {
   tagsAdded: {},
@@ -74,8 +75,23 @@ const blockLevelElements = [
 (async () => {
   console.log("🔎 Beginning tagging of html files...");
 
+  // Checks for --source flag and if it has a value
+  const sourceIndex = process.argv.indexOf("--source");
+  let sourceDir;
+
+  if (sourceIndex > -1) {
+    // Retrieve the value after --source
+    sourceDir = process.argv[sourceIndex + 1];
+  }
+
+  if (!sourceDir) {
+    console.log(
+      "\nPlease provide a source directory to read using the --source flag. Eg. `node rosey-tagger/main.mjs --source _site`\n"
+    );
+  }
+
   // Walk the build dir
-  await walkDirs(dirPath);
+  await walkDirs(sourceDir);
 })();
 
 // Walk dirs to find .html files, and if it finds a dir recursively calls itself on that dir
@@ -86,12 +102,11 @@ async function walkDirs(dirToTagPath) {
     // If its an html file look for places to add data-rosey tags
     if (filePath.endsWith(".html")) {
       await readTagAndWriteHtmlFile(filePath);
-    } else {
-      // If it's a dir recursively call this fn
-      const filePathIsDir = await isDirectory(filePath);
-      if (filePathIsDir) {
-        await walkDirs(filePath);
-      }
+    }
+    // If it's a dir recursively call this fn
+    const filePathIsDir = await isDirectory(filePath);
+    if (filePathIsDir) {
+      await walkDirs(filePath);
     }
   }
 }
@@ -191,7 +206,9 @@ function walkChildren(node, filePath) {
         const innerText = extractTextChildren(child.children, filePath);
         // Add a data-rosey tag to it with slugified inner text if no data-rosey tag already there
         if (innerText && !Object.keys(child.properties).includes("dataRosey")) {
-          child.properties["data-rosey"] = slugify(innerText);
+          child.properties["data-rosey"] = slugify(innerText, {
+            remove: disallowedIdChars,
+          });
           // If there is already a running total for the tagName in the logStatistics obj for this page increment by 1
           if (
             logStatistics[filePath]?.tagsAdded &&
