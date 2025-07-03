@@ -83,14 +83,15 @@ async function walkDirs(dirToTagPath) {
   const dirToTagFiles = await fs.promises.readdir(dirToTagPath);
   for (const fileName of dirToTagFiles) {
     const filePath = path.join(dirToTagPath, fileName);
-    // TODO: If its an html file run the readTagAndWriteHtmlFile fn on it
+    // If its an html file look for places to add data-rosey tags
     if (filePath.endsWith(".html")) {
       await readTagAndWriteHtmlFile(filePath);
-    }
-    // If it's a dir recursively call this fn
-    const filePathIsDir = await isDirectory(filePath);
-    if (filePathIsDir) {
-      await walkDirs(filePath);
+    } else {
+      // If it's a dir recursively call this fn
+      const filePathIsDir = await isDirectory(filePath);
+      if (filePathIsDir) {
+        await walkDirs(filePath);
+      }
     }
   }
 }
