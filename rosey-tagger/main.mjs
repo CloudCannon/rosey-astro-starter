@@ -102,11 +102,12 @@ async function walkDirs(dirToTagPath) {
     // If its an html file look for places to add data-rosey tags
     if (filePath.endsWith(".html")) {
       await readTagAndWriteHtmlFile(filePath);
-    }
-    // If it's a dir recursively call this fn
-    const filePathIsDir = await isDirectory(filePath);
-    if (filePathIsDir) {
-      await walkDirs(filePath);
+    } else {
+      // If it's a dir recursively call this fn
+      const filePathIsDir = await isDirectory(filePath);
+      if (filePathIsDir) {
+        await walkDirs(filePath);
+      }
     }
   }
 }
