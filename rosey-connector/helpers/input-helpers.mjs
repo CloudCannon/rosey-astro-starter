@@ -155,8 +155,9 @@ function generateLocationString(
 ) {
   // Limit each phrase to 3 words
   const urlHighlighterWordLength = 3;
-  const originalPhraseArray = originalPhrase.split(/[\n]+/);
+
   // Get the first and last line of the markdown so we only have complete lines in the highlight url
+  const originalPhraseArray = originalPhrase.split(/[\n]+/);
   const firstPhrase = removeSuperAndSubFromText(originalPhraseArray[0]);
   const lastPhrase = removeSuperAndSubFromText(
     originalPhraseArray[originalPhraseArray.length - 1]
@@ -166,27 +167,22 @@ function generateLocationString(
   const startHighlightArrayWithPunctuation = firstPhrase
     .split(" ")
     .slice(0, urlHighlighterWordLength);
-
   const endHighlightArrayWithPunctuation = endHighlightArrayAll.slice(
     endHighlightArrayAll.length - urlHighlighterWordLength,
     endHighlightArrayAll.length
   );
 
-  // Look at these arrays for any words with a special character after
-  // That is our last word in the start or end highlight
+  // Look at these arrays for any words with a special character in it
   // The phrase stops there in an attempt to still capture the block of text
 
   const startHighlightArrayWithoutPunctuation = [];
   const endHighlightArrayWithoutPunctuation = [];
-  const regexToMatch = /[&#,\-+()$~%.":*?<>{}_]/gm;
+  const regexToMatch = /[&#,\-+)($~%.":*?<>{}_]/gm;
 
   for (let i = 0; i < startHighlightArrayWithPunctuation.length; i++) {
     const word = startHighlightArrayWithPunctuation[i];
     const foundMatches = word.match(regexToMatch);
     if (foundMatches && foundMatches.length > 0) {
-      startHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(regexToMatch, "")
-      );
       break;
     }
     startHighlightArrayWithoutPunctuation.push(word);
@@ -196,9 +192,6 @@ function generateLocationString(
     const word = endHighlightArrayWithPunctuation[j];
     const foundMatches = word.match(regexToMatch);
     if (foundMatches && foundMatches.length > 0) {
-      endHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(regexToMatch, "")
-      );
       break;
     }
     endHighlightArrayWithoutPunctuation.push(word);
