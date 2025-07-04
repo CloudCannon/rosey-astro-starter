@@ -8,11 +8,6 @@
     "preserved_paths": "",
     "preserveOutput": false,
     "includeGit": true,
-    "environment_variables": [
-      {
-        "key": "ROSEYPROD",
-        "value": false
-      }
-    ]
+    "environment_variables": []
   }
 }

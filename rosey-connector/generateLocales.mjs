@@ -393,8 +393,8 @@ function processContentTranslationKey(
   oldLocaleData
 ) {
   // Exit early if it's not a new translation, and use old locales data instead
-  const oldLocaleDataValue = oldLocaleData[keyName]?.value.trim();
-  const baseFileDataOriginal = baseFileData[keyName]?.original.trim();
+  const oldLocaleDataValue = oldLocaleData[keyName]?.value;
+  const baseFileDataOriginal = baseFileData[keyName]?.original;
 
   // No translated string use the original
   if (!translatedString) {

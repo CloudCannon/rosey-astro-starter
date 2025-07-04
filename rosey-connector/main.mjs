@@ -1,4 +1,5 @@
 import { readConfigFile } from "./helpers/file-helpers.mjs";
+import { configWarnings } from "./configWarnings.mjs";
 import { cleanUnusedFiles } from "./cleanUnusedFiles.mjs";
 import { callSmartling } from "./callSmartling.mjs";
 import { generateTranslationFiles } from "./generateTranslationFiles.mjs";
@@ -11,6 +12,9 @@ import { generateConfig } from "./generateConfig.mjs";
   console.log("\n🏗️ Reading config file...");
   await generateConfig();
   const configData = await readConfigFile("./rosey/rcc.yaml");
+
+  // Some warnings for commonly forgotten unconfigured values
+  configWarnings(configData);
 
   console.log("\n\n🏗️ Checking for content to archive...");
   await cleanUnusedFiles(configData);
