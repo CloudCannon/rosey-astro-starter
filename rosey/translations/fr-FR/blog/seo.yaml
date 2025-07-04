@@ -48,6 +48,7 @@ _inputs:
       subscript: true
       superscript: true
       underline: true
+      code: true
       undo: true
       redo: true
       removeformat: true
@@ -75,6 +76,7 @@ _inputs:
       subscript: true
       superscript: true
       underline: true
+      code: true
       undo: true
       redo: true
       removeformat: true
@@ -101,6 +103,7 @@ _inputs:
       subscript: true
       superscript: true
       underline: true
+      code: true
       undo: true
       redo: true
       removeformat: true
