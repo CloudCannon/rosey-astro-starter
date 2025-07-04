@@ -4,5 +4,7 @@ const block = Astro.props;
 
 <video class="py-6" controls>
   <source src={block.src} type="video/mp4" />
-  Your browser does not support the video tag.
+  <p data-rosey="video-fallback-message">
+    Your browser does not support the video tag.
+  </p>
 </video>

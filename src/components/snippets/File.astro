@@ -1,5 +1,12 @@
 ---
+import { generateRoseyId } from "rosey-connector/helpers/component-helpers.mjs";
+
 const block = Astro.props;
 ---
 
-<a href={block.src} download={block.file_name}>{block.link_message}</a>
+<a
+  href={block.src}
+  download={block.file_name}
+  data-rosey={generateRoseyId(block.link_message)}>
+  {block.link_message}
+</a>

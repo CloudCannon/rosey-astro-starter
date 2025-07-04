@@ -4,7 +4,7 @@ function removeLinksFromMarkdown(markdownText) {
   if (!markdownText) {
     return "";
   }
-  return markdownText.replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, /$1/);
+  return markdownText.replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, "$1");
 }
 function removeSuperAndSubFromText(text) {
   return text

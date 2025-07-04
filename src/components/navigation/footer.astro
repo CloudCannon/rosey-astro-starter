@@ -1,11 +1,13 @@
 ---
+import { generateRoseyId } from "rosey-connector/helpers/component-helpers.mjs";
 import { footer } from "../../../data/navigation.json";
 import Icon from "../utility/Icon";
 const linkHoverColor = footer.hover_text_color;
 ---
 
 <footer
-  style={`background-color: ${footer.background_color}; color: ${footer.text_color};`}>
+  style={`background-color: ${footer.background_color}; color: ${footer.text_color};`}
+  data-rosey-ns="common">
   <div class="px-8">
     <div
       class="footer grid grid-cols-1 sm:grid-cols-3 justify-between items-center gap-8 py-[48px]">
@@ -37,7 +39,9 @@ const linkHoverColor = footer.hover_text_color;
           footer.links.map((link) => {
             return (
               <li>
-                <a href={link.link}>{link.text}</a>
+                <a href={link.link} data-rosey={generateRoseyId(link.text)}>
+                  {link.text}
+                </a>
               </li>
             );
           })
@@ -47,7 +51,9 @@ const linkHoverColor = footer.hover_text_color;
 
     <p class="text-center py-8">
       &#169; {new Date().getFullYear()}
-      {footer.copyright}
+      <span data-rosey={generateRoseyId(footer.copyright)}>
+        {footer.copyright}
+      </span>
     </p>
   </div>
 </footer>

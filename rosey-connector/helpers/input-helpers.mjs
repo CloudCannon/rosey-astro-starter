@@ -101,6 +101,7 @@ async function getInputConfig(
         subscript: true,
         superscript: true,
         underline: true,
+        code: true,
         undo: true,
         redo: true,
         removeformat: true,

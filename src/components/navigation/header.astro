@@ -35,7 +35,8 @@ const pagePath = Astro.url.pathname || "page";
   class="header"
   x-data="{ open: false, langopen: false }"
   x-transition
-  style={`background-color: ${backgroundColor}; color: ${linkTextColor};`}>
+  style={`background-color: ${backgroundColor}; color: ${linkTextColor};`}
+  data-rosey-ns="common">
   <div class="header__container">
     <nav class="header__nav">
       <a class="header__logo-link" href={header.logo_url}>
@@ -70,7 +71,6 @@ const pagePath = Astro.url.pathname || "page";
                     <a
                       class="header__nav-link"
                       href={link.link}
-                      data-rosey-ns="common"
                       data-rosey={generateRoseyId(link.text)}>
                       {link.text}
                     </a>
@@ -89,7 +89,10 @@ const pagePath = Astro.url.pathname || "page";
             header.links.map((link) => {
               return (
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href={link.link}>
+                  <a
+                    class="header__nav-link"
+                    href={link.link}
+                    data-rosey={generateRoseyId(link.text)}>
                     {link.text}
                   </a>
                 </li>
@@ -112,7 +115,9 @@ const pagePath = Astro.url.pathname || "page";
                         src={locale.flag}
                         alt={`${locale.name} Flag`}
                       />
-                      <span>{locale.name}</span>
+                      <span data-rosey={generateRoseyId(locale.name)}>
+                        {locale.name}
+                      </span>
                     </a>
                   </li>
                 );

@@ -10,7 +10,12 @@ _inputs:
           inputs:
             - common:blog
             - common:cloudcannon
+            - common:deutsch
+            - common:english-us
+            - common:french
             - common:github
+            - common:mycompany-all-rights-reserved
+            - common:rss-feed
         - heading: Already translated (de-DE)
           comment: Text already translated
           inputs: []
@@ -24,11 +29,41 @@ _inputs:
     hidden: false
     type: text
     options: {}
+  common:deutsch:
+    label: Deutsch
+    hidden: false
+    type: text
+    options: {}
+  common:english-us:
+    label: English (US)
+    hidden: false
+    type: text
+    options: {}
+  common:french:
+    label: French
+    hidden: false
+    type: text
+    options: {}
   common:github:
     label: GitHub
     hidden: false
     type: text
     options: {}
+  common:mycompany-all-rights-reserved:
+    label: MyCompany. All rights reserved.
+    hidden: false
+    type: textarea
+    options: {}
+  common:rss-feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
 common:blog: ""
 common:cloudcannon: ""
+common:deutsch: ""
+common:english-us: ""
+common:french: ""
 common:github: ""
+common:mycompany-all-rights-reserved: ""
+common:rss-feed: ""

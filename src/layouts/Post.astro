@@ -31,14 +31,21 @@ const filteredPosts = posts.filter(
   <div class="post-container">
     <article aria-labelled-by="blog-hero-text">
       <PostHero bookshop:live {...frontmatter.post_hero} bodyContent={body} />
-      <div class="markdown-text" data-cms-edit="content" data-pagefind-body>
+      <div
+        class="markdown-text"
+        data-cms-edit="content"
+        data-pagefind-body
+        data-rosey-ns="markdown"
+        data-rosey-tagger="true">
         <slot />
       </div>
     </article>
   </div>
 
   <section class="blog-recent-posts">
-    <h2 class="blog-recent-posts-heading">Recent Posts</h2>
+    <h2 class="blog-recent-posts-heading" data-rosey="recent-posts">
+      Recent Posts
+    </h2>
     <ul class="blog-recent-posts-list">
       {
         filteredPosts.slice(0, 3).map((post, i) => {

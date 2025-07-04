@@ -6,4 +6,9 @@ const markdownContent = content ? md.render(content) : "";
 ---
 
 <!-- This is styled in src/styles/_markdown.scss, which also styles the blog markdown text -->
-<div class="markdown-text" set:html={markdownContent} />
+<div
+  class="markdown-text"
+  data-rosey-ns="markdown"
+  data-rosey-tagger="true"
+  set:html={markdownContent}
+/>

@@ -11,10 +11,242 @@ _inputs:
           comment: "[blog/search/](https://cool-ski.cloudvent.net/blog/search/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/blog/search.yaml)"
-          inputs: []
+          inputs:
+            - building
+            - markdown:A-new-paragraph
+            - markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration-You-can-see-the-prebuilt-UI-at-the-top-of-this-page
+            - markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer-The-search-bar-is-located-at-the-top-of-the-blog-index-page
+            - markdown:Pagefind-sup-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users-bandwidth-as-possible-and-without-hosting-any-infrastructure
+            - markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-Pagefinds-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself-For-most-sites-this-will-be-closer-to-100kB
+            - pagefind-search
+            - recent-posts
+            - search
+            - seo
+            - seo-controls
+            - styling
+            - tailwind
+            - words
         - heading: Already translated (fr-FR)
           comment: "[blog/search/](https://cool-ski.cloudvent.net/blog/search/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/blog/search.yaml)"
           inputs: []
+  building:
+    label: Building
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Building)"
+  markdown:A-new-paragraph:
+    label: A **new** paragraph.
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20**new**%\
+      20paragraph.)"
+  markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration-You-can-see-the-prebuilt-UI-at-the-top-of-this-page:
+    label: After indexing, Pagefind adds a static sea...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=After%20inde\
+      xing,of%20this%20page)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        After indexing, Pagefind adds a static search bundle to your built
+        files, which exposes a JavaScript search API that can be used anywhere
+        on your site. Pagefind also provides a prebuilt UI that can be used with
+        no configuration. (You can see the prebuilt UI at the top of this page.)
+  markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer-The-search-bar-is-located-at-the-top-of-the-blog-index-page:
+    label: On this template, the search has been scop...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=On%20this%20\
+      template,blog%20index%20page)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        On this template, the search has been scoped to index only the text
+        content of blog posts, to avoid showing results on the homepage, blog
+        index page, header and footer. The search bar is located at the top of
+        the blog index page.
+  markdown:Pagefind-sup-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users-bandwidth-as-possible-and-without-hosting-any-infrastructure:
+    label: Pagefind sup! is a sup fully static search...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Pagefind%20s\
+      up!%20is,hosting%20any%20infrastructure)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        Pagefind sup! is a sup fully static search library that aims to perform
+        well on large sites, while using as little of your users’ bandwidth as
+        possible, and without hosting any infrastructure.
+  markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-Pagefinds-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself-For-most-sites-this-will-be-closer-to-100kB:
+    label: The goal of Pagefind is that websites with...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=The%20goal%2\
+      0of,closer%20to%20100kB)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        The goal of Pagefind is that websites with tens of thousands of pages
+        should be searchable by someone in their browser, while consuming as
+        little bandwidth as possible. *Pagefind’s* search <sup>index</sup> is
+        <sub>split</sub> into chunks, so that searching in the browser *only*
+        ever <s>needs</s> to load a small subset of the search index. Pagefind
+        can run a full-text search on a 10,000 page site with a total network
+        payload under 300kB, including the Pagefind library itself. For most
+        sites, this will be closer to 100kB.
+  pagefind-search:
+    label: Pagefind Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Pagefind%20S\
+      earch)"
+  recent-posts:
+    label: Recent Posts
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Recent%20Pos\
+      ts)"
+  search:
+    label: Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Search)"
+  seo:
+    label: Seo
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Seo)"
+  seo-controls:
+    label: SEO Controls
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=SEO%20Contro\
+      ls)"
+  styling:
+    label: Styling
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Styling)"
+  tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Tailwind)"
+  words:
+    label: words
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/search/#:~:text=words)"
 urlTranslation: blog/search/index.html
+building: ""
+markdown:A-new-paragraph: ""
+markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration-You-can-see-the-prebuilt-UI-at-the-top-of-this-page: ""
+markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer-The-search-bar-is-located-at-the-top-of-the-blog-index-page: ""
+markdown:Pagefind-sup-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users-bandwidth-as-possible-and-without-hosting-any-infrastructure: ""
+markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-Pagefinds-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself-For-most-sites-this-will-be-closer-to-100kB: ""
+pagefind-search: ""
+recent-posts: ""
+search: ""
+seo: ""
+seo-controls: ""
+styling: ""
+tailwind: ""
+words: ""

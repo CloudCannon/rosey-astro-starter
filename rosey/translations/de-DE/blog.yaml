@@ -11,10 +11,68 @@ _inputs:
           comment: "[blog/](https://cool-ski.cloudvent.net/blog/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/blog.yaml)"
-          inputs: []
+          inputs:
+            - building
+            - pagefind-search
+            - search
+            - seo
+            - seo-controls
+            - styling
+            - tailwind
         - heading: Already translated (de-DE)
           comment: "[blog/](https://cool-ski.cloudvent.net/blog/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/blog.yaml)"
           inputs: []
+  building:
+    label: Building
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Building)"
+  pagefind-search:
+    label: Pagefind Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/#:~:text=Pagefind%20Search)"
+  search:
+    label: Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Search)"
+  seo:
+    label: Seo
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Seo)"
+  seo-controls:
+    label: SEO Controls
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/#:~:text=SEO%20Controls)"
+  styling:
+    label: Styling
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Styling)"
+  tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Tailwind)"
 urlTranslation: blog/index.html
+building: ""
+pagefind-search: ""
+search: ""
+seo: ""
+seo-controls: ""
+styling: ""
+tailwind: ""
