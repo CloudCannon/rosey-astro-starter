@@ -101,7 +101,7 @@
 	},
 	"markdown:Delete-your-tailwindconfigmjs-file": {
 		"original": "Delete your <code>tailwind.config.mjs</code> file.",
-		"value": "Delete your <code>tailwind.config.mjs</code> file."
+		"value": "<code>Code block instead of a normal phrase - what happens  const something = true</code>\n\n "
 	},
 	"markdown:Font-Awesome-icons": {
 		"original": "<a href=\"/blog/icons/\">Font Awesome icons</a>",
