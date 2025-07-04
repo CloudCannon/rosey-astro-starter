@@ -55,7 +55,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Comes%20with%20\
-      all,this%20as%20well)"
+      all,this%20as%20well.)"
     context:
       open: false
       title: Untranslated Text
@@ -83,7 +83,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Control%20SEO%2\
-      0values,and%20sitewide)"
+      0values,and)"
     context:
       open: false
       title: Untranslated Text
@@ -110,7 +110,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Inputs%20on%20i\
-      ndividual,as%20a%20fallback)"
+      ndividual,as%20a%20fallback.)"
     context:
       open: false
       title: Untranslated Text
