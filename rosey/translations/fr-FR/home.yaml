@@ -13,8 +13,6 @@ _inputs:
             /staging/./rosey/translations/fr-FR/home.yaml)"
           inputs:
             - cloudcannon-astro-starter
-            - markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms-a-sub-to-test
-            - markdown:another-paragraph-to-test-translations-with-punctuation-and-stufftm
         - heading: Already translated (fr-FR)
           comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
@@ -28,61 +26,5 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20\
       Astro%20Starter!)"
-  markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms-a-sub-to-test:
-    label: A starting point for <br> developers looki...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      italic: true
-      strike: true
-      link: true
-      subscript: true
-      superscript: true
-      underline: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
-      0point,to%20test)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: >
-        A starting point for <br> developers looking to build a website with
-        Astro, using <br> Bookshop components in CloudCannon. Create your own
-        copy, and start creating your own components to use in CloudCannon’s CMS
-        <sub>A sub to test</sub> .
-  markdown:another-paragraph-to-test-translations-with-punctuation-and-stufftm:
-    label: Another paragraph to test translations. Wi...
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      italic: true
-      strike: true
-      link: true
-      subscript: true
-      superscript: true
-      underline: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Another%20para\
-      graph%20to,stuff%20TM)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: >
-        Another paragraph to test translations. With punctuation and stuff
-        <sup>TM</sup> .
 urlTranslation: index.html
 cloudcannon-astro-starter: ""
-markdown:a-starting-point-for-developers-looking-to-build-a-website-with-astro-using-bookshop-components-in-cloudcannon-create-your-own-copy-and-start-creating-your-own-components-to-use-in-cloudcannon's-cms-a-sub-to-test: ""
-markdown:another-paragraph-to-test-translations-with-punctuation-and-stufftm: ""
