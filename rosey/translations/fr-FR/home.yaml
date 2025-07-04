@@ -89,7 +89,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible%2\
-      0git-backed,and%20data%20files)"
+      0gitbacked,and%20data%20files)"
     context:
       open: false
       title: Untranslated Text
@@ -291,8 +291,8 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Git-backed%20m\
-      eans%20you,collaborate%20via%20git)"
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=Gitbacked,coll\
+      aborate%20via%20git)"
     context:
       open: false
       title: Untranslated Text
