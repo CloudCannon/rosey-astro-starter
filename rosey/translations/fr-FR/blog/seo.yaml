@@ -11,10 +11,174 @@ _inputs:
           comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/blog/seo.yaml)"
-          inputs: []
+          inputs:
+            - building
+            - markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well
+            - markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis
+            - markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-theyre-not-set-the-site-wide-values-are-used-as-a-fallback
+            - pagefind-search
+            - recent-posts
+            - search
+            - seo
+            - seo-controls
+            - styling
+            - tailwind
+            - words
         - heading: Already translated (fr-FR)
           comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/blog/seo.yaml)"
           inputs: []
+  building:
+    label: Building
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Building)"
+  markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well:
+    label: Comes with all the inputs you need to enco...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Comes%20with%20\
+      all,this%20as%20well)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        Comes with all the inputs you need to encourage editors to fill in the
+        content that search engines expect for good SEO rankings. Performance,
+        best practices and accessibility all play a part in this as well.
+  markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis:
+    label: Control /SEO/ values on a page-by-page, an...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Control%20/SEO/\
+      %20values,and%20site-wide%20basis)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        Control [SEO](https://a-test-link.com) values on a page-by-page, and
+        site-wide basis.
+  markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-theyre-not-set-the-site-wide-values-are-used-as-a-fallback:
+    label: Inputs on individual pages are used for SE...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Inputs%20on%20i\
+      ndividual,as%20a%20fallback)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        Inputs on individual pages are used for SEO values for the page, and if
+        they’re not set the site-wide values are used as a fallback.
+  pagefind-search:
+    label: Pagefind Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Pagefind%20Sear\
+      ch)"
+  recent-posts:
+    label: Recent Posts
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Recent%20Posts)"
+  search:
+    label: Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Search)"
+  seo:
+    label: Seo
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Seo)"
+  seo-controls:
+    label: SEO Controls
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=SEO%20Controls)"
+  styling:
+    label: Styling
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Styling)"
+  tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Tailwind)"
+  words:
+    label: words
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=words)"
 urlTranslation: blog/seo/index.html
+building: ""
+markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well: ""
+markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis: ""
+markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-theyre-not-set-the-site-wide-values-are-used-as-a-fallback: ""
+pagefind-search: ""
+recent-posts: ""
+search: ""
+seo: ""
+seo-controls: ""
+styling: ""
+tailwind: ""
+words: ""

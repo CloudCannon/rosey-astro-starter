@@ -13,11 +13,38 @@ _inputs:
             it
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/tags/styling.yaml)"
-          inputs: []
+          inputs:
+            - building
+            - styling
+            - tailwind
         - heading: Already translated (de-DE)
           comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)  //  [G\
             it
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/tags/styling.yaml)"
           inputs: []
+  building:
+    label: Building
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Building)"
+  styling:
+    label: Styling
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Styling)"
+  tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Tailwind)"
 urlTranslation: tags/styling/index.html
+building: ""
+styling: ""
+tailwind: ""
