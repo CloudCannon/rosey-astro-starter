@@ -20,7 +20,6 @@ _inputs:
             - markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs
             - markdown:Run-the-following-command-in-the-root-of-the-site
             - markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want
-            - markdown:import-{-defineConfig-}-from-astro/config;-import-tailwind-from-astrojs/tailwind;-export-default-defineConfig{-//-integrations-[tailwind]-};
             - markdown:npm-uninstall-tailwindcss-astrojs/tailwind
             - pagefind-search
             - recent-posts
@@ -159,33 +158,6 @@ _inputs:
         without leaving your HTML. This can be used in combination with normal
         CSS and SCSS styling, leaving you to add styles to your site however you
         want.
-  markdown:import-{-defineConfig-}-from-astro/config;-import-tailwind-from-astrojs/tailwind;-export-default-defineConfig{-//-integrations-[tailwind]-};:
-    label: "`import  defineConfig  from 'astro/config'..."
-    hidden: false
-    type: markdown
-    options:
-      bold: true
-      italic: true
-      strike: true
-      link: true
-      subscript: true
-      superscript: true
-      underline: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60import%\
-      20%20defineConfig,integrations)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: >
-        `import { defineConfig } from 'astro/config'; import tailwind from
-        '@astrojs/tailwind'; export default defineConfig({ // ... integrations:
-        [tailwind()], });`
   markdown:npm-uninstall-tailwindcss-astrojs/tailwind:
     label: "`npm uninstall tailwindcss @astrojs/tailwi..."
     hidden: false
@@ -277,7 +249,6 @@ markdown:If-youd-like-to-remove-Tailwind: ""
 markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs: ""
 markdown:Run-the-following-command-in-the-root-of-the-site: ""
 markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want: ""
-markdown:import-{-defineConfig-}-from-astro/config;-import-tailwind-from-astrojs/tailwind;-export-default-defineConfig{-//-integrations-[tailwind]-};: ""
 markdown:npm-uninstall-tailwindcss-astrojs/tailwind: ""
 pagefind-search: ""
 recent-posts: ""
