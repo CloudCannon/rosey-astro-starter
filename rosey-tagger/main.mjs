@@ -68,6 +68,8 @@ const blockLevelElements = [
   "video",
 ];
 
+const disallowedBlockElements = ["pre"];
+
 // Main function
 (async () => {
   console.log("🖍️ Beginning tagging of html files...");
@@ -248,7 +250,10 @@ function walkChildren(node, filePath) {
         if (
           // Trim it to check innerText isn't just blank space - which would not be false, but will make a rubbish id
           innerText.trim() &&
-          !Object.keys(child.properties).includes("dataRosey")
+          // Don't add tag if a data-rosey tag already present
+          !Object.keys(child.properties).includes("dataRosey") &&
+          // Don't add tag if the type is in our disallowed elements eg. code blocks which begin with <pre>
+          !disallowedBlockElements.includes(child.tagName)
         ) {
           child.properties["data-rosey"] = slugify(innerText, {
             remove: disallowedIdChars,
