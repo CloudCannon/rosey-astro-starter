@@ -180,11 +180,13 @@ function generateLocationString(
 
   const startHighlightArrayWithoutPunctuation = [];
   const endHighlightArrayWithoutPunctuation = [];
-  const regexToMatch = /[&#,\-+)($~%.":*?<>{}_]/gm;
+  const joiningCharsToAvoid = /[&#,\-/+)($~%".:*?<>{}_]/gm;
 
   for (let i = 0; i < startHighlightArrayWithPunctuation.length; i++) {
     const word = startHighlightArrayWithPunctuation[i];
-    const foundMatches = word.match(regexToMatch);
+    // Special chars are ok for the last char just not in the middle of a 'word' (obtained through split on space)
+    const wordWithoutLastChar = word.slice(0, word.length - 2);
+    const foundMatches = wordWithoutLastChar.match(joiningCharsToAvoid);
     if (foundMatches && foundMatches.length > 0) {
       break;
     }
@@ -193,11 +195,10 @@ function generateLocationString(
 
   for (let j = 0; j < endHighlightArrayWithPunctuation.length; j++) {
     const word = endHighlightArrayWithPunctuation[j];
-    const foundMatches = word.match(regexToMatch);
+    // Special chars are ok for the last char just not in the middle of a 'word' (obtained through split on space)
+    const wordWithoutLastChar = word.slice(0, word.length - 2);
+    const foundMatches = wordWithoutLastChar.match(joiningCharsToAvoid);
     if (foundMatches && foundMatches.length > 0) {
-      endHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(regexToMatch, "")
-      );
       break;
     }
     endHighlightArrayWithoutPunctuation.push(word);
