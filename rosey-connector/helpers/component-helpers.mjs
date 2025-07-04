@@ -11,11 +11,3 @@ export function generateRoseyId(data) {
 
   return formatAndSlugifyText(text);
 }
-
-export function generateRoseyMarkdownId(text) {
-  if (!text) {
-    return "";
-  }
-
-  return `markdown:${formatAndSlugifyText(text)}`;
-}

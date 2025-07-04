@@ -1,8 +1,12 @@
 ---
+import { generateRoseyId } from "rosey-connector/helpers/component-helpers.mjs";
+
 const block = Astro.props;
 ---
 
 <details>
-  <summary>{block.heading}</summary>
-  {block.text}
+  <summary data-rosey={generateRoseyId(block.heading)}>{block.heading}</summary>
+  <div data-rosey={generateRoseyId(block.text)}>
+    {block.text}
+  </div>
 </details>

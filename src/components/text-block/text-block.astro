@@ -3,6 +3,7 @@ import markdownit from "markdown-it";
 const md = markdownit({ html: true });
 import Markdown from "../utility/markdown.astro";
 import { findComponentPaddingMultiplier } from "src/assets/js/findComponentPaddingMultiplier";
+import { generateRoseyId } from "rosey-connector/helpers/component-helpers.mjs";
 
 interface Props {
   content_blocks_length: number;
@@ -44,8 +45,11 @@ const componentBottomPaddingMultiplier = findComponentPaddingMultiplier(
   <div style={`color: ${text_color};`} class="text-block-container">
     {
       heading.text_content && (
-        <h2 class="main-heading" style={`color: ${heading.text_color};`}>
-          {md.render(heading.text_content ?? "")}
+        <h2
+          class="main-heading"
+          style={`color: ${heading.text_color};`}
+          data-rosey={generateRoseyId(heading.text_content)}>
+          {md.renderInline(heading.text_content ?? "")}
         </h2>
       )
     }

@@ -1,6 +1,7 @@
 ---
 import Markdown from "src/components/utility/markdown.astro";
 import Icon from "src/components/utility/Icon.jsx";
+import { generateRoseyId } from "rosey-connector/helpers/component-helpers.mjs";
 
 interface Props {
   heading: {
@@ -41,14 +42,7 @@ interface Props {
   ];
 }
 
-const {
-  heading,
-  subheading,
-  video,
-  header_style_overrides,
-  background_filters,
-  buttons,
-} = Astro.props;
+const { heading, subheading, video, background_filters, buttons } = Astro.props;
 
 const allButtons = import.meta.glob("/src/components/buttons/**/*.astro", {
   eager: true,
@@ -107,7 +101,8 @@ const videoExtension = videoExtArr[1];
       <h1
         id="hero-video-heading-text"
         class="hero-video-heading"
-        style={`color: ${heading.text_color};`}>
+        style={`color: ${heading.text_color};`}
+        data-rosey={generateRoseyId(heading.heading_text)}>
         {heading.heading_text}
       </h1>
       <div

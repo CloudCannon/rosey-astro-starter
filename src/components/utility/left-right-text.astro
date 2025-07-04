@@ -1,4 +1,5 @@
 ---
+import { generateRoseyId } from "rosey-connector/helpers/component-helpers.mjs";
 import Markdown from "../utility/markdown.astro";
 
 interface Props {
@@ -35,7 +36,8 @@ const ButtonComponent = (buttons[buttonFilePath] as any)?.default;
 <h2
   class="left-right-heading-text"
   id={`left-right-${key}-heading-text`}
-  style={`color: ${heading.color};`}>
+  style={`color: ${heading.color};`}
+  data-rosey={generateRoseyId(heading.heading_text)}>
   {heading.heading_text}
 </h2>
 <div style={`color: ${text.color};`}>

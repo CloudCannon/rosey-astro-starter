@@ -26,7 +26,9 @@ const hover_brightness = block.hover_brightness;
         </span>
       )
     }
-    {block.button_text}
+    <span data-rosey={generateRoseyId(block.button_text)}>
+      {block.button_text}
+    </span>
   </div>
 </a>
 
