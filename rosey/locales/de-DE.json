@@ -145,7 +145,7 @@
 	},
 	"markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs": {
 		"original": "Remove mentions of Tailwind from your <code>astro.config.mjs</code>",
-		"value": "Remove mentions of Tailwind from your <code>astro.config.mjs</code>"
+		"value": "TRANSLATED WITH CODE BLOCK <code>astro.config.yooooo</code>"
 	},
 	"markdown:Run-the-following-command-in-the-root-of-the-site": {
 		"original": "Run the following command in the root of the site:",
