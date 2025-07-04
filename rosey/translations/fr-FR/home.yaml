@@ -69,7 +69,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20\
-      you,Delete%20the%20rest)"
+      you,Delete%20the)"
   markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files:
     label: A flexible git-backed CMS that specialises...
     hidden: false
@@ -88,8 +88,8 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible%2\
-      0gitbacked,and%20data%20files)"
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible,a\
+      nd%20data)"
     context:
       open: false
       title: Untranslated Text
@@ -291,8 +291,8 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Gitbacked,coll\
-      aborate%20via%20git)"
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=,collaborate%2\
+      0via)"
     context:
       open: false
       title: Untranslated Text
@@ -439,7 +439,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Astro%20\
-      CloudCannon,of%20the%20box)"
+      CloudCannon,of%20the)"
     context:
       open: false
       title: Untranslated Text
@@ -468,7 +468,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Visual%20editi\
-      ng%20allows,you%20save%20them)"
+      ng%20allows,you%20save)"
     context:
       open: false
       title: Untranslated Text

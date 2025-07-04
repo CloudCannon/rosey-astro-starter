@@ -101,7 +101,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Remove%20m\
-      entions%20of,from%20your%20%60astroconfigmjs%60)"
+      entions%20of,from%20your)"
     context:
       open: false
       title: Untranslated Text
@@ -127,7 +127,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Run%20the%\
-      20following,of%20the%20site)"
+      20following,of%20the)"
     context:
       open: false
       title: Untranslated Text
@@ -153,7 +153,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Use%20Tail\
-      wind%20to,however%20you%20want)"
+      wind%20to,however%20you)"
     context:
       open: false
       title: Untranslated Text
