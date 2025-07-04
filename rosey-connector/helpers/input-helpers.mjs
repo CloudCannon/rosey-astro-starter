@@ -162,11 +162,14 @@ function generateLocationString(
   const lastPhrase = removeSuperAndSubFromText(
     originalPhraseArray[originalPhraseArray.length - 1]
   );
-  const endHighlightArrayAll = lastPhrase.split(" ");
 
+  // Get the first words of the translation
   const startHighlightArrayWithPunctuation = firstPhrase
     .split(" ")
     .slice(0, urlHighlighterWordLength);
+
+  // Get the last words of the translation
+  const endHighlightArrayAll = lastPhrase.split(" ");
   const endHighlightArrayWithPunctuation = endHighlightArrayAll.slice(
     endHighlightArrayAll.length - urlHighlighterWordLength,
     endHighlightArrayAll.length
@@ -192,6 +195,9 @@ function generateLocationString(
     const word = endHighlightArrayWithPunctuation[j];
     const foundMatches = word.match(regexToMatch);
     if (foundMatches && foundMatches.length > 0) {
+      endHighlightArrayWithoutPunctuation.push(
+        word.replaceAll(regexToMatch, "")
+      );
       break;
     }
     endHighlightArrayWithoutPunctuation.push(word);
