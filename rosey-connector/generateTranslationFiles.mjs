@@ -21,7 +21,7 @@ export async function generateTranslationFiles(configData) {
   // Get all the config data
   const locales = configData.locales;
   const seeOnPageCommentSettings = configData.see_on_page_comment;
-  const githubCommentSettings = configData.github_history;
+  const githubCommentSettings = configData.git_history_link;
   const inputLengths = configData.input_lengths;
   const baseFilePath = configData.rosey_paths.rosey_base_file_path;
   const baseUrlFilePath = configData.rosey_paths.rosey_base_urls_file_path;

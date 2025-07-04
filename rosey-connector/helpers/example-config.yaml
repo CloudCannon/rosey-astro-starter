@@ -23,7 +23,7 @@ see_on_page_comment:
   comment_text: See in context
 
 # Shows a comment under each input that links to the GitHub history for the page.
-github_history:
+git_history_link:
   # Define whether these 'Git history' comments should be enabled at all.
   enabled: true
   # Your site's GitHub url, used to generate the comments that link to the page's GitHub history.
@@ -65,6 +65,38 @@ smartling:
   outgoing_translation_file_uri: /rosey/translations/
 
 _inputs:
+  locales:
+    type: array
+    comment: >-
+      Add and remove the locales you need for your site. Locales can be any
+      format, usually either a two letter code (es), or a hyphenated four letter
+      code (es-ES).
+  input_lengths:
+    type: object
+    options:
+      preview:
+        icon: format_quote
+        text: Label and Textarea controls
+        subtext: 
+          - template: "Label: {label}, Textarea: {textarea}"
+  see_on_page_comment:
+    type: object
+    options:
+      preview:
+        icon: read_more
+        text:
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
+        subtext:
+          - template: "Link text: {comment_text}, Site url: {base_url}"
+  git_history_link:
+    type: object
+    options:
+      preview:
+        icon: history
+        text:
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
+        subtext:
+          - template: "Link text: {comment_text}, Repo url: {repo_url}"
   namespace_pages:
     type: array
     comment: >-
@@ -73,12 +105,6 @@ _inputs:
       namespaces, and grouped on the namespace page. See the [Rosey
       docs](https://rosey.app/docs/namespacing/) for details on adding
       namespaces to your html.
-  locales:
-    type: array
-    comment: >-
-      Add and remove the locales you need for your site. Locales can be any
-      format, usually either a two letter code (es), or a hyphenated four letter
-      code (es-ES).
   base_url:
     comment: >-
       The url to the CloudCannon staging site that you enter your translation
@@ -89,6 +115,7 @@ _inputs:
     options:
       preview:
         icon: folder
+        text: Configure the paths the RCC expects files at
   rosey_base_file_path:
     type: text
     comment: The location of your Rosey base.json file
@@ -106,6 +133,8 @@ _inputs:
     options:
       preview:
         icon: smart_toy
+        text:
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
   smartling_enabled:
     type: switch
     comment: >-

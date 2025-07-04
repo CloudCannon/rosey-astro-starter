@@ -1,4 +1,3 @@
-# TODO: add comments in here from the blog post
 locales:
   - de-DE
   - fr-FR
@@ -9,7 +8,7 @@ see_on_page_comment:
   enabled: true
   base_url: https://cool-ski.cloudvent.net/
   comment_text: See in context
-github_history:
+git_history_link:
   enabled: true
   repo_url: https://github.com/CloudCannon/rosey-astro-starter
   branch_name: staging
@@ -23,15 +22,48 @@ rosey_paths:
   locales_dir_path: ./rosey/locales
 smartling:
   smartling_enabled: false
-  dev_project_id: 403ba8439
-  dev_user_identifier: widgoyosxtbfsfonzlcfejabgndxst
+  dev_project_id:
+  dev_user_identifier:
   ping_interval: 20000
   ping_maximum: 6
   pings_to_wait_for_auth: 3
   incoming_translations_dir: ./rosey/smartling-translations/
   outgoing_translations_file_path: ./rosey/outgoing-smartling-translations.json
   outgoing_translation_file_uri: /rosey/translations/
+
 _inputs:
+  locales:
+    type: array
+    comment: >-
+      Add and remove the locales you need for your site. Locales can be any
+      format, usually either a two letter code (es), or a hyphenated four letter
+      code (es-ES).
+  input_lengths:
+    type: object
+    options:
+      preview:
+        icon: format_quote
+        text: Label and Textarea controls
+        subtext: 
+          - template: "Label: {label}, Textarea: {textarea}"
+  see_on_page_comment:
+    type: object
+    options:
+      preview:
+        icon: read_more
+        text:
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
+        subtext:
+          - template: "Link text: {comment_text}, Site url: {base_url}"
+  git_history_link:
+    type: object
+    options:
+      preview:
+        icon: history
+        text:
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
+        subtext:
+          - template: "Link text: {comment_text}, Repo url: {repo_url}"
   namespace_pages:
     type: array
     comment: >-
@@ -40,12 +72,6 @@ _inputs:
       namespaces, and grouped on the namespace page. See the [Rosey
       docs](https://rosey.app/docs/namespacing/) for details on adding
       namespaces to your html.
-  locales:
-    type: array
-    comment: >-
-      Add and remove the locales you need for your site. Locales can be any
-      format, usually either a two letter code (es), or a hyphenated four letter
-      code (es-ES).
   base_url:
     comment: >-
       The url to the CloudCannon staging site that you enter your translation
@@ -56,6 +82,7 @@ _inputs:
     options:
       preview:
         icon: folder
+        text: Configure the paths the RCC expects files at
   rosey_base_file_path:
     type: text
     comment: The location of your Rosey base.json file
@@ -73,6 +100,8 @@ _inputs:
     options:
       preview:
         icon: smart_toy
+        text:
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
   smartling_enabled:
     type: switch
     comment: >-

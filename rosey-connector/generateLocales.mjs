@@ -29,11 +29,11 @@ async function generateLocale(locale, configData) {
   console.log(`\n🌍 Processing locale: ${locale}`);
   const logStatistics = {
     numberOfKeysInBaseJson: 0,
-    completedTranslations: 0,
-    missingTranslations: 0,
+    completedTranslations: {},
+    missingTranslations: {},
     numberOfKeysInUrlBaseJson: 0,
-    numberOfUntranslatedUrls: 0,
-    numberOfTranslatedUrls: 0,
+    numberOfUntranslatedUrls: {},
+    numberOfTranslatedUrls: {},
   };
   const translationsDirPath = configData.rosey_paths.translations_dir_path;
   const localesDirPath = configData.rosey_paths.locales_dir_path;
@@ -118,15 +118,16 @@ async function generateLocale(locale, configData) {
         localeUrlsData[key] = urlData[key];
 
         // Update stats for url translations here
+        // We save the key in an object rather than incrementing a number to prevent duplicates ruining the totals
         if (urlData[key].original === urlData[key].value) {
-          logStatistics.numberOfUntranslatedUrls += 1;
+          logStatistics.numberOfUntranslatedUrls[key] = true;
         }
         // If the value and original aren't the same, and theres something for the value, we have a translated url
         if (
           urlData[key].original !== urlData[key].value &&
           urlData[key].value
         ) {
-          logStatistics.numberOfTranslatedUrls += 1;
+          logStatistics.numberOfTranslatedUrls[key] = true;
         }
       }
 
@@ -134,13 +135,18 @@ async function generateLocale(locale, configData) {
       for (const key of Object.keys(data)) {
         // Extract translation statistics for the logger
         if (data[key].untranslated) {
-          logStatistics.missingTranslations += 1;
+          logStatistics.missingTranslations[key] = true;
+        }
+        // If we clear a translation add it to missing translations
+        // We handle duplicates below (we haven't synced up dupes to be overwritten to be blank here yet)
+        if (data[key].isNewlyClearedTranslation) {
+          logStatistics.missingTranslations[key] = true;
         }
         if (data[key].isTranslated) {
-          logStatistics.completedTranslations += 1;
+          logStatistics.completedTranslations[key] = true;
         }
         if (data[key].isNewTranslation) {
-          logStatistics.completedTranslations += 1;
+          logStatistics.completedTranslations[key] = true;
         }
 
         if (!localeData[key] || data[key].isNewTranslation) {
@@ -159,9 +165,24 @@ async function generateLocale(locale, configData) {
         if (data[key].isNewTranslation) {
           keysToUpdate[key] = data[key].value;
         }
+        // If new translation is blank aka we've cleared an old one,
+        // add that to keys to update to sync duplicate keys on other pages
+        if (data[key].isNewlyClearedTranslation) {
+          keysToUpdate[key] = "";
+        }
       }
     })
   );
+
+  // Check keysToUpdate for anything with a blank string
+  // Remove any of those kets from logStatistics.completedTranslations
+  // It may have snuck in there if we there are duplicate keys on separate pages
+
+  for (const key of Object.keys(keysToUpdate)) {
+    if (keysToUpdate[key] === "" && logStatistics.completedTranslations[key]) {
+      delete logStatistics.completedTranslations[key];
+    }
+  }
 
   // Search for duplicate keys on each translation page for new translations
   await Promise.all(
@@ -175,6 +196,7 @@ async function generateLocale(locale, configData) {
       const data = YAML.parse(fileContents);
 
       const updatedKeys = [];
+
       for (const key of Object.keys(keysToUpdate)) {
         if (data[key] || data[key] === "" || data[key] === null) {
           data[key] = keysToUpdate[key];
@@ -182,7 +204,7 @@ async function generateLocale(locale, configData) {
         }
       }
 
-      // If we've found any duplicate keys to update write the file
+      // If we've found any duplicate keys to update overwrite the file
       if (updatedKeys.length > 0) {
         const yamlString = YAML.stringify(data);
         await fs.promises.writeFile(translationFilePath, yamlString);
@@ -222,17 +244,27 @@ async function generateLocale(locale, configData) {
   console.log(`Translation statistics:`);
   console.log(`- Total Keys: ${logStatistics.numberOfKeysInBaseJson}`);
   console.log(
-    `- Completed Translations: ${logStatistics.completedTranslations}`
+    `- Completed Translations: ${
+      Object.keys(logStatistics.completedTranslations).length
+    }`
   );
-  console.log(`- Missing Translations: ${logStatistics.missingTranslations}`);
+  console.log(
+    `- Missing Translations: ${
+      Object.keys(logStatistics.missingTranslations).length
+    }`
+  );
 
   // Only display url translation statistics if there is at least on url translation
   if (logStatistics.numberOfTranslatedUrls > 0) {
     console.log(
-      `- Completed Url Translations: ${logStatistics.numberOfTranslatedUrls}`
+      `- Completed Url Translations: ${
+        Object.keys(logStatistics.numberOfTranslatedUrls).length
+      }`
     );
     console.log(
-      `- Untranslated Urls: ${logStatistics.numberOfUntranslatedUrls}`
+      `- Untranslated Urls: ${
+        Object.keys(logStatistics.numberOfUntranslatedUrls).length
+      }`
     );
   } else {
     console.log(`- Total Urls: ${logStatistics.numberOfKeysInUrlBaseJson}`);
@@ -361,11 +393,20 @@ function processContentTranslationKey(
   oldLocaleData
 ) {
   // Exit early if it's not a new translation, and use old locales data instead
-  const oldLocaleDataValue = oldLocaleData[keyName]?.value.trim();
-  const baseFileDataOriginal = baseFileData[keyName]?.original.trim();
+  const oldLocaleDataValue = oldLocaleData[keyName]?.value;
+  const baseFileDataOriginal = baseFileData[keyName]?.original;
 
   // No translated string use the original
   if (!translatedString) {
+    // Check if there was a translation the round before and we've cleared it
+    if (oldLocaleDataValue && oldLocaleDataValue !== baseFileDataOriginal) {
+      return {
+        original: baseFileDataOriginal,
+        value: baseFileDataOriginal,
+        isNewlyClearedTranslation: true,
+      };
+    }
+    // Otherwise its just not translated so use the original
     return {
       original: baseFileDataOriginal,
       value: baseFileDataOriginal,
