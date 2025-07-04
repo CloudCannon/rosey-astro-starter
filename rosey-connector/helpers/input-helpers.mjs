@@ -178,7 +178,7 @@ function generateLocationString(
 
   const startHighlightArrayWithoutPunctuation = [];
   const endHighlightArrayWithoutPunctuation = [];
-  const regexToMatch = /[&#,+()$~%.":*?<>{}_]/gm;
+  const regexToMatch = /[&#,-+()$~%.":*?<>{}_]/gm;
 
   for (let i = 0; i < startHighlightArrayWithPunctuation.length; i++) {
     const word = startHighlightArrayWithPunctuation[i];
