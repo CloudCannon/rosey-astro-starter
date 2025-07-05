@@ -24,16 +24,20 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Pagefind%20S\
-      earch)"
+    comment: |-
+      [See in context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Pagefind%20Search)
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to locate the phrase manually.
   search:
     label: Search
     hidden: false
     type: text
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Search)"
+    comment: >-
+      [See in
+      context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Search)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
 urlTranslation: tags/search/index.html
 pagefind-search: ""
 search: ""

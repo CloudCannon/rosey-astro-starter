@@ -45,31 +45,36 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon)"
+    comment: >-
+      [See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   cloudcannon-astro-starter:
     label: CloudCannon Astro Starter!
     hidden: false
     type: textarea
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20\
-      Astro%20Starter!)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20Astro%20Starter!)
   github:
     label: GitHub
     hidden: false
     type: text
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=GitHub)"
+    comment: >-
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=GitHub)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   keep-what-you-need-delete-the-rest:
     label: Keep what you need. Delete the rest.
     hidden: false
     type: textarea
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20\
-      you,Delete%20the%20rest)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20you,Delete%20the%20rest)
   markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files:
     label: A flexible git-backed CMS that specialises...
     hidden: false
@@ -87,9 +92,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible%2\
-      0git,and%20data%20files)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible%20git,and%20data%20files)
     context:
       open: false
       title: Untranslated Text
@@ -114,9 +118,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
-      0point,to%20test%20.)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%20point,to%20test%20.)
     context:
       open: false
       title: Untranslated Text
@@ -143,9 +146,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Accessibility%\
-      20controls)"
+    comment: |-
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Accessibility%20controls)
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to locate the phrase manually.
   markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM:
     label: Another paragraph to test translations. Wi...
     hidden: false
@@ -163,9 +166,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Another%20para\
-      graph%20to,stuff%20TM%20.)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Another%20paragraph%20to,stuff%20TM%20.)
     context:
       open: false
       title: Untranslated Text
@@ -190,9 +192,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Blog%20with%20\
-      pagination%20&%20tags)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Blog%20with%20pagination%20&%20tags)
   markdown:Built-in-search-with-Pagefind:
     label: Built-in search with Pagefind
     hidden: false
@@ -210,9 +211,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Built-in%20sea\
-      rch%20with%20Pagefind)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=search%20with%20Pagefind)
   markdown:Color-palette-controls:
     label: Color palette controls
     hidden: false
@@ -230,9 +230,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Color%20palett\
-      e%20controls)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Color%20palette%20controls)
   markdown:Create-and-delete-pages:
     label: Create and delete pages
     hidden: false
@@ -250,9 +249,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Create%20and%2\
-      0delete%20pages)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Create%20and%20delete%20pages)
   markdown:Font-Awesome-icons:
     label: Font Awesome icons
     hidden: false
@@ -270,9 +268,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Font%20Awesome\
-      %20icons)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Font%20Awesome%20icons)
   markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git:
     label: Git-backed means you can keep all your fam...
     hidden: false
@@ -290,9 +287,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=means%20you,co\
-      llaborate%20via%20git)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=means%20you,collaborate%20via%20git)
     context:
       open: false
       title: Untranslated Text
@@ -318,9 +314,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Header%20and%2\
-      0Footer%20controls)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Header%20and%20Footer%20controls)
   markdown:Markdown-options-and-styles:
     label: Markdown options & styles
     hidden: false
@@ -338,9 +333,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Markdown%20opt\
-      ions%20&%20styles)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Markdown%20options%20&%20styles)
   markdown:Page-building-with-Bookshop-components:
     label: Page building with Bookshop components
     hidden: false
@@ -358,9 +352,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Page%20buildin\
-      g%20with%20Bookshop%20components)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Page%20building%20with%20Bookshop%20components)
   markdown:Pre-configured-shortcodes:
     label: Pre-configured shortcodes
     hidden: false
@@ -378,9 +371,12 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Pre-configured\
-      %20shortcodes)"
+    comment: >-
+      [See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=shortcodes)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   markdown:SEO-controls:
     label: SEO controls
     hidden: false
@@ -398,9 +394,12 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=SEO%20controls\
-      )"
+    comment: >-
+      [See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=SEO%20controls)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   markdown:Tailwind:
     label: Tailwind
     hidden: false
@@ -418,8 +417,12 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Tailwind)"
+    comment: >-
+      [See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=Tailwind)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box:
     label: The Astro CloudCannon Starter's aim is to ...
     hidden: false
@@ -437,9 +440,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Astro%20\
-      CloudCannon,of%20the%20box)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Astro%20CloudCannon,of%20the%20box)
     context:
       open: false
       title: Untranslated Text
@@ -466,9 +468,8 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Visual%20editi\
-      ng%20allows,you%20save%20them)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Visual%20editing%20allows,you%20save%20them)
     context:
       open: false
       title: Untranslated Text
@@ -481,9 +482,8 @@ _inputs:
     hidden: false
     type: textarea
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
-      0your%20editing%20experience.)"
+    comment: |
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%20your%20editing%20experience)
 urlTranslation: index.html
 cloudcannon: ""
 cloudcannon-astro-starter: ""

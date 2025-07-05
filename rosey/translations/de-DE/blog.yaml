@@ -29,45 +29,73 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Building)"
+    comment: >-
+      [See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Building)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   pagefind-search:
     label: Pagefind Search
     hidden: false
     type: text
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/#:~:text=Pagefind%20Search)"
+    comment: >-
+      [See in
+      context](https://cool-ski.cloudvent.net/blog/#:~:text=Pagefind%20Search)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   search:
     label: Search
     hidden: false
     type: text
     options: {}
-    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Search)"
+    comment: >-
+      [See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Search)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   seo:
     label: Seo
     hidden: false
     type: text
     options: {}
-    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Seo)"
+    comment: >-
+      [See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Seo)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   seo-controls:
     label: SEO Controls
     hidden: false
     type: text
     options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/#:~:text=SEO%20Controls)"
+    comment: >-
+      [See in
+      context](https://cool-ski.cloudvent.net/blog/#:~:text=SEO%20Controls)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   styling:
     label: Styling
     hidden: false
     type: text
     options: {}
-    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Styling)"
+    comment: >-
+      [See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Styling)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
   tailwind:
     label: Tailwind
     hidden: false
     type: text
     options: {}
-    comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Tailwind)"
+    comment: >-
+      [See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Tailwind)
+
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
+      locate the phrase manually.
 urlTranslation: blog/index.html
 building: ""
 pagefind-search: ""
