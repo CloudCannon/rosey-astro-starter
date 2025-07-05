@@ -147,83 +147,144 @@ async function getInputConfig(
   return inputConfig;
 }
 
+// TODO: Check if the highlightStringToUse is likely to fail, and provide a fallback message where this is called
+// Eg. Could not generate a highlight link, go to page and use cmd+f(Mac) or ctrl+f(other OS)
 function generateLocationString(
   originalPhrase,
   page,
   baseUrl,
   seeOnPageCommentText
 ) {
-  // Limit each phrase to 3 words
+  let highlightStringToUse = "";
+  // Limit to 𝑥 words at each end separated by a comma
   const urlHighlighterWordLength = 3;
+  const pageString = getPageString(page);
+  const startOfHighlightUrl = `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=`;
+  // We have to handle unsupported special chars while trying get as many words without them as we can
+  const illegalChars = /[&#,\-/+)($~%".:*?<>{}_]/gm;
+  // TODO: Test if we need to exclude
+  // "
+  // .
+  // ' seems to work all good
 
+  // If original phrase is less than 𝑥*2 words we don't use the comma syntax
   // Get the first and last line of the markdown so we only have complete lines in the highlight url
   const originalPhraseArray = originalPhrase.split(/[\n]+/);
-  const firstPhrase = removeSuperAndSubFromText(originalPhraseArray[0]);
-  const lastPhrase = removeSuperAndSubFromText(
-    originalPhraseArray[originalPhraseArray.length - 1]
-  );
+  // Join the original (which may be separate lines) into one string and split to check how many words
+  const originalPhraseOneLineArray = originalPhraseArray.join(" ").split(" ");
 
-  // Get the first words of the translation
-  const startHighlightArrayWithPunctuation = firstPhrase
+  // Return early here if length of the phrase is less than urlHighlighterWordLength * 2
+  if (originalPhraseOneLineArray.length < urlHighlighterWordLength * 2) {
+    const encodedOriginalPhrase = encodeURI(
+      originalPhraseOneLineArray.join(" ")
+    );
+
+    // TODO: Check here if there are special chars in the original and try capture a start and end
+
+    highlightStringToUse = `${startOfHighlightUrl}${encodedOriginalPhrase})`;
+    return highlightStringToUse;
+  }
+
+  // Otherwise we'll use the first 𝑥 and last 𝑥 words from the phrase
+  // up to 𝑥 at the start and end and separate them by a ","
+  const firstPhrase = removeSuperAndSubFromText(originalPhraseArray[0]);
+
+  // Add the first 𝑥 words of the translation to an array
+  const startArrayInclPunctuation = firstPhrase
     .split(" ")
     .slice(0, urlHighlighterWordLength);
 
-  // Get the last words of the translation
-  const endHighlightArrayAll = lastPhrase.split(" ");
-  const endHighlightArrayWithPunctuation = endHighlightArrayAll.slice(
-    endHighlightArrayAll.length - urlHighlighterWordLength,
-    endHighlightArrayAll.length
+  // Look at the start and end arrays for any word with a special character in it
+  // The phrase stops there in an attempt to still capture the block of text
+  const startHighlightArrayNoPunctuation = [];
+
+  // TODO: This could become a function to use for start and end
+  // Props: arrayInclPunctuation , illegalChars
+  // Return arrayNoPunctuation
+  for (const [index, word] of startArrayInclPunctuation.entries()) {
+    // Look for special chars in a word which will ruin the highlight url
+    const foundMatchAtIndex = word.search(illegalChars);
+    const wordIsFirst = index === 0;
+    const indexOfSpecialChar = foundMatchAtIndex > -1 ? foundMatchAtIndex : 0;
+
+    // If it is the first word:
+    // If we find a special character in the word don't push anything, but also don't break the loop
+    // If the word is first in the string we can safely attempt to capture the rest of the phrase still
+    if (wordIsFirst && !indexOfSpecialChar) {
+      startHighlightArrayNoPunctuation.push(word);
+    }
+
+    // If not the first word:
+    // If we find a special character in a word, we want to include the word up until the *first* special character
+    // To do this we need to loop through the word and find the index of the first special char
+    // Then we split the word so that we can push the word up until that point
+    // This will handle words with a hyphen or slash in the middle, and comma's/periods at the end of a word
+    // After pushing the word, break (we don't know it's the last word)
+
+    if (!wordIsFirst) {
+      if (indexOfSpecialChar) {
+        const wordUntilSpecChar = word.slice(0, indexOfSpecialChar);
+        startHighlightArrayNoPunctuation.push(wordUntilSpecChar);
+        break;
+      } else {
+        startHighlightArrayNoPunctuation.push(word);
+      }
+    }
+  }
+
+  const lastPhrase = removeSuperAndSubFromText(
+    originalPhraseArray[originalPhraseArray.length - 1]
+  );
+  // Add the last 𝑥 words of the translation to an array
+  const endHighlightArrayUnlimited = lastPhrase.split(" ");
+  const endHighlightArrayInclPunctuation = endHighlightArrayUnlimited.slice(
+    endHighlightArrayUnlimited.length - urlHighlighterWordLength,
+    endHighlightArrayUnlimited.length
   );
 
-  // Look at these arrays for any words with a special character in it
-  // The phrase stops there in an attempt to still capture the block of text
+  const endHighlightArrayNoPunctuation = [];
 
-  const startHighlightArrayWithoutPunctuation = [];
-  const endHighlightArrayWithoutPunctuation = [];
-  const joiningCharsToAvoid = /[&#,\-/+)($~%".:*?<>{}_]/gm;
+  for (const [index, word] of endHighlightArrayInclPunctuation.entries()) {
+    // Look for special chars in a word which will ruin the highlight url
+    const foundMatchAtIndex = word.search(illegalChars);
+    const indexOfSpecialChar = foundMatchAtIndex > -1 ? foundMatchAtIndex : 0;
 
-  for (let i = 0; i < startHighlightArrayWithPunctuation.length; i++) {
-    const word = startHighlightArrayWithPunctuation[i];
-    // Special chars are ok for the last char just not in the middle of a 'word' (obtained through split on space)
-    const wordWithoutLastChar = word.slice(0, word.length - 2);
-    const foundMatches = wordWithoutLastChar.match(joiningCharsToAvoid);
-    if (foundMatches && foundMatches.length > 0) {
-      break;
+    // If the word is first in the string we can attempt to capture the rest still
+    const wordIsFirst = index === 0;
+    if (wordIsFirst && !indexOfSpecialChar) {
+      endHighlightArrayNoPunctuation.push(word);
     }
-    startHighlightArrayWithoutPunctuation.push(word);
-  }
 
-  for (let j = 0; j < endHighlightArrayWithPunctuation.length; j++) {
-    const word = endHighlightArrayWithPunctuation[j];
-    // Special chars are ok for the last char just not in the middle of a 'word' (obtained through split on space)
-    const wordWithoutLastChar = word.slice(0, word.length - 2);
-    const foundMatches = wordWithoutLastChar.match(joiningCharsToAvoid);
-    if (foundMatches && foundMatches.length > 0) {
-      break;
+    if (!wordIsFirst) {
+      if (indexOfSpecialChar) {
+        const wordUntilSpecChar = word.slice(0, indexOfSpecialChar);
+        endHighlightArrayNoPunctuation.push(wordUntilSpecChar);
+        break;
+      } else {
+        endHighlightArrayNoPunctuation.push(word);
+      }
     }
-    endHighlightArrayWithoutPunctuation.push(word);
   }
-
-  const originalPhraseArrayByWord = originalPhraseArray.join(" ").split(" ");
 
   // Trim and encode the resulting phrase
-  const startHighlight = startHighlightArrayWithoutPunctuation.join(" ").trim();
-  const endHighlight = endHighlightArrayWithoutPunctuation.join(" ").trim();
+  const startHighlightString = startHighlightArrayNoPunctuation
+    .join(" ")
+    .trim();
+  const endHighlightString = endHighlightArrayNoPunctuation.join(" ").trim();
+  const encodedStartHighlightString = encodeURI(startHighlightString);
+  const encodedEndHighlightString = encodeURI(endHighlightString);
 
-  const encodedStartHighlight = encodeURI(startHighlight);
-  const encodedEndHighlight = encodeURI(endHighlight);
-  const encodedOriginalPhrase = encodeURI(originalPhraseArray.join(" "));
+  // Don't include the "," if the end or start phrase is empty otherwise separate by a comma
+  if (startHighlightString?.length > 0 && endHighlightString?.length > 0) {
+    highlightStringToUse = `${startOfHighlightUrl}${encodedStartHighlightString},${encodedEndHighlightString})`;
+  } else {
+    highlightStringToUse = `${startOfHighlightUrl}${encodedStartHighlightString}${encodedEndHighlightString})`;
+  }
 
-  const pageString = getPageString(page);
-  // Look to see if original phrase is 5 words or shorter
-  // if it is fallback to the encoded original phrase for the highlight link
-  return originalPhraseArrayByWord.length > urlHighlighterWordLength * 2
-    ? `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=${encodedStartHighlight},${encodedEndHighlight})`
-    : `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=${encodedOriginalPhrase})`;
+  return highlightStringToUse;
 }
 
 // Namespace pages input set up
-
 function initNamespacePageInputs(data, locale) {
   // Create the inputs obj if there is none
   if (!data._inputs) {
