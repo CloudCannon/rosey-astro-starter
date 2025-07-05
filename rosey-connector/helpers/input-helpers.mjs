@@ -191,8 +191,8 @@ function generateLocationString(
       illegalChars
     );
 
-    const encodedOriginalPhrase = encodeURI(
-      originalPhraseOneLineArrayNoPunc.join(" ")
+    const encodedOriginalPhrase = encodeURIComponent(
+      originalPhraseOneLineArray.join(" ")
     );
     if (originalPhraseOneLineArrayNoPunc.length < wordWarningThreshold) {
       warning = true;
