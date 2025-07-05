@@ -77,7 +77,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/search/#:~:text=After%20inde\
-      xing,%20Pagefind,of%20this%20page.))"
+      xing,of%20this%20page)"
     context:
       open: false
       title: Untranslated Text
@@ -106,7 +106,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/search/#:~:text=On%20this%20\
-      template,,blog%20index%20page.)"
+      template,blog%20index%20page)"
     context:
       open: false
       title: Untranslated Text
@@ -135,7 +135,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Pagefind%20s\
-      up!%20is,hosting%20any%20infrastructure.)"
+      up!%20is,hosting%20any%20infrastructure)"
     context:
       open: false
       title: Untranslated Text
@@ -163,7 +163,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/search/#:~:text=The%20goal%2\
-      0of,closer%20to%20100kB.)"
+      0of,closer%20to%20100kB)"
     context:
       open: false
       title: Untranslated Text
