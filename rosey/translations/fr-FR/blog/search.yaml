@@ -60,7 +60,7 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20**new**%20paragraph)
+      [See in context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20**new**%20paragraph.)
   markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration-You-can-see-the-prebuilt-UI-at-the-top-of-this-page:
     label: After indexing, Pagefind adds a static sea...
     hidden: false

@@ -193,7 +193,7 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: |
-      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Blog%20with%20pagination%20&%20tags)
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Blog%20with%20pagination%20%26%20tags)
   markdown:Built-in-search-with-Pagefind:
     label: Built-in search with Pagefind
     hidden: false
@@ -212,7 +212,7 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: |
-      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=search%20with%20Pagefind)
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Built-in%20search%20with%20Pagefind)
   markdown:Color-palette-controls:
     label: Color palette controls
     hidden: false
@@ -334,7 +334,7 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: |
-      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Markdown%20options%20&%20styles)
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Markdown%20options%20%26%20styles)
   markdown:Page-building-with-Bookshop-components:
     label: Page building with Bookshop components
     hidden: false
@@ -371,12 +371,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=shortcodes)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: |-
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=Pre-configured%20shortcodes)
+      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to locate the phrase manually.
   markdown:SEO-controls:
     label: SEO controls
     hidden: false
@@ -483,7 +480,7 @@ _inputs:
     type: textarea
     options: {}
     comment: |
-      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%20your%20editing%20experience)
+      [See in context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%20your%20editing%20experience.)
 urlTranslation: index.html
 cloudcannon: ""
 cloudcannon-astro-starter: ""

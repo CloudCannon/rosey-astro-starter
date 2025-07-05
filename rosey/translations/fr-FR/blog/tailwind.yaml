@@ -64,7 +64,7 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20your%20%60tailwind)
+      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20your%20%60tailwind.config.mjs%60%20file.)
   markdown:If-youd-like-to-remove-Tailwind:
     label: "If you’d like to remove Tailwind:"
     hidden: false
@@ -180,7 +180,7 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20uninstall%20tailwindcss%20@astrojs)
+      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20uninstall%20tailwindcss%20%40astrojs%2Ftailwind%60)
     context:
       open: false
       title: Untranslated Text
