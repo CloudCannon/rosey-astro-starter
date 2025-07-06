@@ -26,6 +26,16 @@ function formatTextForInputComments(text) {
   const removedNonPunctuationSpecChars = noLinks.replaceAll(/[#%`{}_]/gm, "");
   return removedNonPunctuationSpecChars;
 }
+function customEncodingForYamlKeys(text) {
+  // . ! ~ ' ( ) all need to be encoded
+  if (!text) {
+    return "";
+  }
+
+  const vanillaEncode = encodeURIComponent(text);
+  const fullyEncoded = vanillaEncode.replaceAll(".", "%2E");
+  return fullyEncoded;
+}
 function generateRoseyId(text) {
   if (!text) {
     return "";
@@ -33,7 +43,7 @@ function generateRoseyId(text) {
   // const formattedText = formatTextForIds(text).toLowerCase();
   const slugifiedText = slugify(text);
   // Dont remove special chars, just encode them
-  const encodedSlug = encodeURIComponent(slugifiedText);
+  const encodedSlug = customEncodingForYamlKeys(slugifiedText);
   return encodedSlug;
 }
 
