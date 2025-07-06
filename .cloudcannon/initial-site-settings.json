@@ -8,6 +8,7 @@
     "preserved_paths": "",
     "preserveOutput": false,
     "includeGit": true,
-    "environment_variables": []
+    "environment_variables": [],
+    "node_version": "20"
   }
 }
