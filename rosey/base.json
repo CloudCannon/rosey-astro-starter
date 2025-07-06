@@ -1,6 +1,84 @@
 {
   "version": 2,
   "keys": {
+    "CloudCannon": {
+      "original": "CloudCannon",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "CloudCannon-Astro-Starter!": {
+      "original": "CloudCannon Astro Starter!",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "GitHub": {
+      "original": "GitHub",
+      "value": null,
+      "pages": {
+        "index.html": 2
+      },
+      "total": 2
+    },
+    "Keep-what-you-need%2E-Delete-the-rest%2E": {
+      "original": "Keep what you need. Delete the rest.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "Pagefind-Search": {
+      "original": "Pagefind Search",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "tags/search/index.html": 1
+      },
+      "total": 5
+    },
+    "SEO-Controls": {
+      "original": "SEO Controls",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "tags/seo/index.html": 1
+      },
+      "total": 5
+    },
+    "Tailwind": {
+      "original": "Tailwind",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 7
+    },
+    "You-choose-your-editing-experience%2E": {
+      "original": "You choose your editing experience.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
     "building": {
       "original": "Building ",
       "value": null,
@@ -15,23 +93,7 @@
       },
       "total": 7
     },
-    "cloudcannon": {
-      "original": "CloudCannon",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "cloudcannon-astro-starter": {
-      "original": "CloudCannon Astro Starter!",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "common:blog": {
+    "common:Blog": {
       "original": "Blog",
       "value": null,
       "pages": {
@@ -49,7 +111,7 @@
       },
       "total": 33
     },
-    "common:cloudcannon": {
+    "common:CloudCannon": {
       "original": "CloudCannon",
       "value": null,
       "pages": {
@@ -67,7 +129,7 @@
       },
       "total": 22
     },
-    "common:deutsch": {
+    "common:Deutsch": {
       "original": "Deutsch",
       "value": null,
       "pages": {
@@ -85,7 +147,7 @@
       },
       "total": 11
     },
-    "common:english-us": {
+    "common:English-(US)": {
       "original": "English (US)",
       "value": null,
       "pages": {
@@ -103,7 +165,7 @@
       },
       "total": 11
     },
-    "common:french": {
+    "common:French": {
       "original": "French",
       "value": null,
       "pages": {
@@ -121,7 +183,7 @@
       },
       "total": 11
     },
-    "common:github": {
+    "common:GitHub": {
       "original": "GitHub",
       "value": null,
       "pages": {
@@ -139,7 +201,7 @@
       },
       "total": 22
     },
-    "common:mycompany-all-rights-reserved": {
+    "common:MyCompany%2E-All-rights-reserved%2E": {
       "original": "MyCompany. All rights reserved.",
       "value": null,
       "pages": {
@@ -157,7 +219,7 @@
       },
       "total": 11
     },
-    "common:rss-feed": {
+    "common:RSS-Feed": {
       "original": "RSS Feed",
       "value": null,
       "pages": {
@@ -175,39 +237,7 @@
       },
       "total": 11
     },
-    "github": {
-      "original": "GitHub",
-      "value": null,
-      "pages": {
-        "index.html": 2
-      },
-      "total": 2
-    },
-    "keep-what-you-need-delete-the-rest": {
-      "original": "Keep what you need. Delete the rest.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files": {
-      "original": "A flexible git-backed CMS that specialises in editing markdown and data files.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:A-new-paragraph": {
-      "original": "A <strong>new</strong> paragraph.",
-      "value": null,
-      "pages": {
-        "blog/search/index.html": 1
-      },
-      "total": 1
-    },
-    "markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test": {
+    "rcc-markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E": {
       "original": "A (starting) point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.",
       "value": null,
       "pages": {
@@ -215,7 +245,23 @@
       },
       "total": 1
     },
-    "markdown:Accessibility-controls": {
+    "rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E": {
+      "original": "A flexible git-backed CMS that specialises in editing markdown and data files.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "rcc-markdown:A-new-paragraph%2E": {
+      "original": "A <strong>new</strong> paragraph.",
+      "value": null,
+      "pages": {
+        "blog/search/index.html": 1
+      },
+      "total": 1
+    },
+    "rcc-markdown:Accessibility-controls": {
       "original": "<a href=\"/blog/markdown/\">Accessibility controls</a>",
       "value": null,
       "pages": {
@@ -223,7 +269,7 @@
       },
       "total": 1
     },
-    "markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration-You-can-see-the-prebuilt-UI-at-the-top-of-this-page": {
+    "rcc-markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site%2E-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration%2E-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page%2E)": {
       "original": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)",
       "value": null,
       "pages": {
@@ -231,7 +277,7 @@
       },
       "total": 1
     },
-    "markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM": {
+    "rcc-markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E": {
       "original": "Another~ paragraph to test translations. With punctuation and stuff<sup>TM</sup>.",
       "value": null,
       "pages": {
@@ -239,7 +285,7 @@
       },
       "total": 1
     },
-    "markdown:Blog-with-pagination-and-tags": {
+    "rcc-markdown:Blog-with-pagination-and-tags": {
       "original": "<a href=\"/blog/paginated-collection/\">Blog with pagination &amp; tags</a>",
       "value": null,
       "pages": {
@@ -247,7 +293,7 @@
       },
       "total": 1
     },
-    "markdown:Built-in-search-with-Pagefind": {
+    "rcc-markdown:Built-in-search-with-Pagefind": {
       "original": "<a href=\"/blog/search/\">Built-in search with Pagefind</a>",
       "value": null,
       "pages": {
@@ -255,7 +301,7 @@
       },
       "total": 1
     },
-    "markdown:Color-palette-controls": {
+    "rcc-markdown:Color-palette-controls": {
       "original": "<a href=\"/blog/data-files/\">Color palette controls</a>",
       "value": null,
       "pages": {
@@ -263,7 +309,7 @@
       },
       "total": 1
     },
-    "markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well": {
+    "rcc-markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings%2E-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well%2E": {
       "original": "Comes with all the inputs you need to encourage editors to fill in the content that search engines expect for good SEO rankings. Performance, best practices and accessibility all play a part in this as well.",
       "value": null,
       "pages": {
@@ -271,7 +317,7 @@
       },
       "total": 1
     },
-    "markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis": {
+    "rcc-markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis%2E": {
       "original": "Control <a href=\"https://a-test-link.com\">SEO</a> values on a page-by-page, and site-wide basis.",
       "value": null,
       "pages": {
@@ -279,7 +325,7 @@
       },
       "total": 1
     },
-    "markdown:Create-and-delete-pages": {
+    "rcc-markdown:Create-and-delete-pages": {
       "original": "<a href=\"/blog/page-building/\">Create and delete pages</a>",
       "value": null,
       "pages": {
@@ -287,7 +333,7 @@
       },
       "total": 1
     },
-    "markdown:Delete-your-tailwindconfigmjs-file": {
+    "rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E": {
       "original": "Delete your <code>tailwind.config.mjs</code> file.",
       "value": null,
       "pages": {
@@ -295,7 +341,7 @@
       },
       "total": 1
     },
-    "markdown:Font-Awesome-icons": {
+    "rcc-markdown:Font-Awesome-icons": {
       "original": "<a href=\"/blog/icons/\">Font Awesome icons</a>",
       "value": null,
       "pages": {
@@ -303,7 +349,7 @@
       },
       "total": 1
     },
-    "markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git": {
+    "rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E": {
       "original": "Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.",
       "value": null,
       "pages": {
@@ -311,7 +357,7 @@
       },
       "total": 1
     },
-    "markdown:Header-and-Footer-controls": {
+    "rcc-markdown:Header-and-Footer-controls": {
       "original": "<a href=\"/blog/data-files/\">Header and Footer controls</a>",
       "value": null,
       "pages": {
@@ -319,7 +365,7 @@
       },
       "total": 1
     },
-    "markdown:If-youd-like-to-remove-Tailwind": {
+    "rcc-markdown:If-you'd-like-to-remove-Tailwind%3A": {
       "original": "If you’d like to remove Tailwind:",
       "value": null,
       "pages": {
@@ -327,7 +373,7 @@
       },
       "total": 1
     },
-    "markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-theyre-not-set-the-site-wide-values-are-used-as-a-fallback": {
+    "rcc-markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback%2E": {
       "original": "Inputs on individual pages are used for SEO values for the page, and if they’re not set the site-wide values are used as a fallback.",
       "value": null,
       "pages": {
@@ -335,7 +381,7 @@
       },
       "total": 1
     },
-    "markdown:Markdown-options-and-styles": {
+    "rcc-markdown:Markdown-options-and-styles": {
       "original": "<a href=\"/blog/markdown/\">Markdown options &amp; styles</a>",
       "value": null,
       "pages": {
@@ -343,7 +389,7 @@
       },
       "total": 1
     },
-    "markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer-The-search-bar-is-located-at-the-top-of-the-blog-index-page": {
+    "rcc-markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer%2E-The-search-bar-is-located-at-the-top-of-the-blog-index-page%2E": {
       "original": "On this template, the search has been scoped to index only the text content of blog posts, to avoid showing results on the homepage, blog index page, header and footer. The search bar is located at the top of the blog index page.",
       "value": null,
       "pages": {
@@ -351,7 +397,7 @@
       },
       "total": 1
     },
-    "markdown:Page-building-with-Bookshop-components": {
+    "rcc-markdown:Page-building-with-Bookshop-components": {
       "original": "<a href=\"/blog/bookshop/\">Page building with Bookshop components</a>",
       "value": null,
       "pages": {
@@ -359,7 +405,7 @@
       },
       "total": 1
     },
-    "markdown:Pagefind-sup-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users-bandwidth-as-possible-and-without-hosting-any-infrastructure": {
+    "rcc-markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E": {
       "original": "Pagefind sup! is a sup fully static search library that aims to perform well on large sites, while using as little of your users’ bandwidth as possible, and without hosting any infrastructure.",
       "value": null,
       "pages": {
@@ -367,7 +413,7 @@
       },
       "total": 1
     },
-    "markdown:Pre-configured-shortcodes": {
+    "rcc-markdown:Pre-configured-shortcodes": {
       "original": "<a href=\"/blog/markdown/\">Pre-configured shortcodes</a>",
       "value": null,
       "pages": {
@@ -375,7 +421,7 @@
       },
       "total": 1
     },
-    "markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs": {
+    "rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs": {
       "original": "Remove mentions of Tailwind from your <code>astro.config.mjs</code>",
       "value": null,
       "pages": {
@@ -383,7 +429,7 @@
       },
       "total": 1
     },
-    "markdown:Run-the-following-command-in-the-root-of-the-site": {
+    "rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A": {
       "original": "Run the following command in the root of the site:",
       "value": null,
       "pages": {
@@ -391,7 +437,7 @@
       },
       "total": 1
     },
-    "markdown:SEO-controls": {
+    "rcc-markdown:SEO-controls": {
       "original": "<a href=\"/blog/seo/\">SEO controls</a>",
       "value": null,
       "pages": {
@@ -399,7 +445,7 @@
       },
       "total": 1
     },
-    "markdown:Tailwind": {
+    "rcc-markdown:Tailwind": {
       "original": "<a href=\"/blog/tailwind/\">Tailwind</a>",
       "value": null,
       "pages": {
@@ -407,7 +453,7 @@
       },
       "total": 1
     },
-    "markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box": {
+    "rcc-markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A": {
       "original": "The Astro* CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:",
       "value": null,
       "pages": {
@@ -415,7 +461,7 @@
       },
       "total": 1
     },
-    "markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-Pagefinds-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself-For-most-sites-this-will-be-closer-to-100kB": {
+    "rcc-markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible%2E-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index%2E-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself%2E-For-most-sites-this-will-be-closer-to-100kB%2E": {
       "original": "The goal of Pagefind is that websites with tens of thousands of pages should be searchable by someone in their browser, while consuming as little bandwidth as possible. <u>Pagefind’s</u> search <sup>index</sup> is <sub>split</sub> into chunks, so that searching in the browser <em>only</em> ever <s>needs</s> to load a small subset of the search index. Pagefind can run a full-text search on a 10,000 page site with a total network payload under 300kB, including the Pagefind library itself. For most sites, this will be closer to 100kB.",
       "value": null,
       "pages": {
@@ -423,7 +469,7 @@
       },
       "total": 1
     },
-    "markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want": {
+    "rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E": {
       "original": "Use Tailwind to style your HTML, allowing you to style your components without leaving your HTML. This can be used in combination with normal CSS and SCSS styling, leaving you to add styles to your site however you want.",
       "value": null,
       "pages": {
@@ -431,7 +477,7 @@
       },
       "total": 1
     },
-    "markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them": {
+    "rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E": {
       "original": "Visual editing allows you to preview your changes live before you save them.",
       "value": null,
       "pages": {
@@ -439,25 +485,13 @@
       },
       "total": 1
     },
-    "markdown:npm-uninstall-tailwindcss-astrojs/tailwind": {
+    "rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind": {
       "original": "<code>npm uninstall tailwindcss @astrojs/tailwind</code>",
       "value": null,
       "pages": {
         "blog/tailwind/index.html": 1
       },
       "total": 1
-    },
-    "pagefind-search": {
-      "original": "Pagefind Search",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "tags/search/index.html": 1
-      },
-      "total": 5
     },
     "recent-posts": {
       "original": "Recent Posts",
@@ -493,18 +527,6 @@
       },
       "total": 5
     },
-    "seo-controls": {
-      "original": "SEO Controls",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "tags/seo/index.html": 1
-      },
-      "total": 5
-    },
     "styling": {
       "original": "Styling ",
       "value": null,
@@ -523,15 +545,15 @@
       "original": "Tailwind",
       "value": null,
       "pages": {
-        "blog/index.html": 2,
-        "blog/search/index.html": 2,
-        "blog/seo/index.html": 2,
-        "blog/tailwind/index.html": 2,
-        "tags/building/index.html": 2,
-        "tags/styling/index.html": 2,
-        "tags/tailwind/index.html": 2
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
       },
-      "total": 14
+      "total": 7
     },
     "words": {
       "original": "words",
@@ -542,14 +564,6 @@
         "blog/tailwind/index.html": 1
       },
       "total": 3
-    },
-    "you-choose-your-editing-experience": {
-      "original": "You choose your editing experience.",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
     }
   }
 }

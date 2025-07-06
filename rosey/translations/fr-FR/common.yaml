@@ -8,62 +8,78 @@ _inputs:
         - heading: Still to translate (fr-FR)
           comment: Text to translate
           inputs:
-            - common:blog
-            - common:cloudcannon
-            - common:deutsch
-            - common:english-us
-            - common:french
-            - common:github
-            - common:mycompany-all-rights-reserved
-            - common:rss-feed
+            - common:Blog
+            - common:CloudCannon
+            - common:Deutsch
+            - common:English-(US)
+            - common:French
+            - common:GitHub
+            - common:MyCompany%2E-All-rights-reserved%2E
+            - common:RSS-Feed
         - heading: Already translated (fr-FR)
           comment: Text already translated
           inputs: []
-  common:blog:
+  common:Blog:
     label: Blog
     hidden: false
     type: text
     options: {}
-  common:cloudcannon:
+    comment: ""
+    context: {}
+  common:CloudCannon:
     label: CloudCannon
     hidden: false
     type: text
     options: {}
-  common:deutsch:
+    comment: ""
+    context: {}
+  common:Deutsch:
     label: Deutsch
     hidden: false
     type: text
     options: {}
-  common:english-us:
+    comment: ""
+    context: {}
+  common:English-(US):
     label: English (US)
     hidden: false
     type: text
     options: {}
-  common:french:
+    comment: ""
+    context: {}
+  common:French:
     label: French
     hidden: false
     type: text
     options: {}
-  common:github:
+    comment: ""
+    context: {}
+  common:GitHub:
     label: GitHub
     hidden: false
     type: text
     options: {}
-  common:mycompany-all-rights-reserved:
+    comment: ""
+    context: {}
+  common:MyCompany%2E-All-rights-reserved%2E:
     label: MyCompany. All rights reserved.
     hidden: false
     type: textarea
     options: {}
-  common:rss-feed:
+    comment: ""
+    context: {}
+  common:RSS-Feed:
     label: RSS Feed
     hidden: false
     type: text
     options: {}
-common:blog: ""
-common:cloudcannon: ""
-common:deutsch: ""
-common:english-us: ""
-common:french: ""
-common:github: ""
-common:mycompany-all-rights-reserved: ""
-common:rss-feed: ""
+    comment: ""
+    context: {}
+common:Blog: ""
+common:CloudCannon: ""
+common:Deutsch: ""
+common:English-(US): ""
+common:French: ""
+common:GitHub: ""
+common:MyCompany%2E-All-rights-reserved%2E: ""
+common:RSS-Feed: ""

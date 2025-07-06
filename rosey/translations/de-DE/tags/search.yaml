@@ -12,14 +12,14 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/tags/search.yaml)"
           inputs:
-            - pagefind-search
+            - Pagefind-Search
             - search
         - heading: Already translated (de-DE)
           comment: "[tags/search/](https://cool-ski.cloudvent.net/tags/search/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/tags/search.yaml)"
           inputs: []
-  pagefind-search:
+  Pagefind-Search:
     label: Pagefind Search
     hidden: false
     type: text
@@ -27,6 +27,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Pagefind%20S\
       earch)"
+    context: {}
   search:
     label: Search
     hidden: false
@@ -34,6 +35,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Search)"
+    context: {}
 urlTranslation: tags/search/index.html
-pagefind-search: ""
+Pagefind-Search: ""
 search: ""

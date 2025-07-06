@@ -12,15 +12,16 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/blog/seo.yaml)"
           inputs:
+            - Pagefind-Search
+            - SEO-Controls
+            - Tailwind
             - building
-            - markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well
-            - markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis
-            - markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-theyre-not-set-the-site-wide-values-are-used-as-a-fallback
-            - pagefind-search
+            - rcc-markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings%2E-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well%2E
+            - rcc-markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis%2E
+            - rcc-markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback%2E
             - recent-posts
             - search
             - seo
-            - seo-controls
             - styling
             - tailwind
             - words
@@ -29,6 +30,31 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/blog/seo.yaml)"
           inputs: []
+  Pagefind-Search:
+    label: Pagefind Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Pagefind%20Sear\
+      ch)"
+    context: {}
+  SEO-Controls:
+    label: SEO Controls
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=SEO%20Controls)"
+    context: {}
+  Tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Tailwind)"
+    context: {}
   building:
     label: Building
     hidden: false
@@ -36,7 +62,8 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Building)"
-  markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well:
+    context: {}
+  rcc-markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings%2E-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well%2E:
     label: Comes with all the inputs you need to enco...
     hidden: false
     type: markdown
@@ -64,7 +91,7 @@ _inputs:
         Comes with all the inputs you need to encourage editors to fill in the
         content that search engines expect for good SEO rankings. Performance,
         best practices and accessibility all play a part in this as well.
-  markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis:
+  rcc-markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis%2E:
     label: Control SEO values on a page-by-page, and ...
     hidden: false
     type: markdown
@@ -91,7 +118,7 @@ _inputs:
       content: >
         Control [SEO](https://a-test-link.com) values on a page-by-page, and
         site-wide basis.
-  markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-theyre-not-set-the-site-wide-values-are-used-as-a-fallback:
+  rcc-markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback%2E:
     label: Inputs on individual pages are used for SE...
     hidden: false
     type: markdown
@@ -118,14 +145,6 @@ _inputs:
       content: >
         Inputs on individual pages are used for SEO values for the page, and if
         they’re not set the site-wide values are used as a fallback.
-  pagefind-search:
-    label: Pagefind Search
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Pagefind%20Sear\
-      ch)"
   recent-posts:
     label: Recent Posts
     hidden: false
@@ -133,25 +152,21 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Recent%20Posts)"
+    context: {}
   search:
     label: Search
     hidden: false
     type: text
     options: {}
     comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Search)"
+    context: {}
   seo:
     label: Seo
     hidden: false
     type: text
     options: {}
     comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Seo)"
-  seo-controls:
-    label: SEO Controls
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=SEO%20Controls)"
+    context: {}
   styling:
     label: Styling
     hidden: false
@@ -159,6 +174,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Styling)"
+    context: {}
   tailwind:
     label: Tailwind
     hidden: false
@@ -166,22 +182,25 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Tailwind)"
+    context: {}
   words:
     label: words
     hidden: false
     type: text
     options: {}
     comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=words)"
+    context: {}
 urlTranslation: blog/seo/index.html
+Pagefind-Search: ""
+SEO-Controls: ""
+Tailwind: ""
 building: ""
-markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well: ""
-markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis: ""
-markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-theyre-not-set-the-site-wide-values-are-used-as-a-fallback: ""
-pagefind-search: ""
+rcc-markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings%2E-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well%2E: ""
+rcc-markdown:Control-SEO-values-on-a-page-by-page-and-site-wide-basis%2E: ""
+rcc-markdown:Inputs-on-individual-pages-are-used-for-SEO-values-for-the-page-and-if-they're-not-set-the-site-wide-values-are-used-as-a-fallback%2E: ""
 recent-posts: ""
 search: ""
 seo: ""
-seo-controls: ""
 styling: ""
 tailwind: ""
 words: ""

@@ -4,7 +4,6 @@
 
 import fs from "fs";
 import path from "path";
-import slugify from "slugify";
 
 import rehypeParse from "rehype-parse";
 import rehypeStringify from "rehype-stringify";
@@ -13,6 +12,7 @@ import { unified } from "unified";
 import { visit } from "unist-util-visit";
 
 import { isDirectory } from "../rosey-connector/helpers/file-helpers.mjs";
+import { generateRoseyId } from "../rosey-connector/helpers/text-formatters.mjs";
 
 // Find all of the .html pages in the build output
 // Scan the output build dir
@@ -31,7 +31,6 @@ import { isDirectory } from "../rosey-connector/helpers/file-helpers.mjs";
 
 // Looks for the tag data-rosey-tagger="true". Prop names are camelCased.
 const tagNameToLookFor = "dataRoseyTagger";
-const disallowedIdChars = /[*+~.()'",#%^!:@]/g;
 
 const logStatistics = {};
 
@@ -255,9 +254,7 @@ function walkChildren(node, filePath) {
           // Don't add tag if the type is in our disallowed elements eg. code blocks which begin with <pre>
           !disallowedBlockElements.includes(child.tagName)
         ) {
-          child.properties["data-rosey"] = slugify(innerText, {
-            remove: disallowedIdChars,
-          });
+          child.properties["data-rosey"] = generateRoseyId(innerText);
           // If there is already a running total for the tagName in the logStatistics obj for this page increment by 1
           if (
             logStatistics[filePath]?.tagsAdded &&

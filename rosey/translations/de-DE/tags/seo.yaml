@@ -12,26 +12,28 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/tags/seo.yaml)"
           inputs:
+            - SEO-Controls
             - seo
-            - seo-controls
         - heading: Already translated (de-DE)
           comment: "[tags/seo/](https://cool-ski.cloudvent.net/tags/seo/)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/tags/seo.yaml)"
           inputs: []
-  seo:
-    label: Seo
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=Seo)"
-  seo-controls:
+  SEO-Controls:
     label: SEO Controls
     hidden: false
     type: text
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=SEO%20Controls)"
+    context: {}
+  seo:
+    label: Seo
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=Seo)"
+    context: {}
 urlTranslation: tags/seo/index.html
+SEO-Controls: ""
 seo: ""
-seo-controls: ""

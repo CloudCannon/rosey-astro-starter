@@ -12,42 +12,43 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/home.yaml)"
           inputs:
-            - cloudcannon
-            - cloudcannon-astro-starter
-            - github
-            - keep-what-you-need-delete-the-rest
-            - markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files
-            - markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test
-            - markdown:Accessibility-controls
-            - markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM
-            - markdown:Blog-with-pagination-and-tags
-            - markdown:Built-in-search-with-Pagefind
-            - markdown:Color-palette-controls
-            - markdown:Create-and-delete-pages
-            - markdown:Font-Awesome-icons
-            - markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git
-            - markdown:Header-and-Footer-controls
-            - markdown:Markdown-options-and-styles
-            - markdown:Page-building-with-Bookshop-components
-            - markdown:Pre-configured-shortcodes
-            - markdown:SEO-controls
-            - markdown:Tailwind
-            - markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box
-            - markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them
-            - you-choose-your-editing-experience
+            - CloudCannon
+            - CloudCannon-Astro-Starter!
+            - GitHub
+            - Keep-what-you-need%2E-Delete-the-rest%2E
+            - You-choose-your-editing-experience%2E
+            - rcc-markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E
+            - rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E
+            - rcc-markdown:Accessibility-controls
+            - rcc-markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E
+            - rcc-markdown:Blog-with-pagination-and-tags
+            - rcc-markdown:Built-in-search-with-Pagefind
+            - rcc-markdown:Color-palette-controls
+            - rcc-markdown:Create-and-delete-pages
+            - rcc-markdown:Font-Awesome-icons
+            - rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E
+            - rcc-markdown:Header-and-Footer-controls
+            - rcc-markdown:Markdown-options-and-styles
+            - rcc-markdown:Page-building-with-Bookshop-components
+            - rcc-markdown:Pre-configured-shortcodes
+            - rcc-markdown:SEO-controls
+            - rcc-markdown:Tailwind
+            - rcc-markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A
+            - rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E
         - heading: Already translated (de-DE)
           comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/de-DE/home.yaml)"
           inputs: []
-  cloudcannon:
+  CloudCannon:
     label: CloudCannon
     hidden: false
     type: text
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon)"
-  cloudcannon-astro-starter:
+    context: {}
+  CloudCannon-Astro-Starter!:
     label: CloudCannon Astro Starter!
     hidden: false
     type: textarea
@@ -55,14 +56,16 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20\
       Astro%20Starter!)"
-  github:
+    context: {}
+  GitHub:
     label: GitHub
     hidden: false
     type: text
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=GitHub)"
-  keep-what-you-need-delete-the-rest:
+    context: {}
+  Keep-what-you-need%2E-Delete-the-rest%2E:
     label: Keep what you need. Delete the rest.
     hidden: false
     type: textarea
@@ -70,34 +73,17 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20\
       you%20need.%20Delete%20the%20rest.)"
-  markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files:
-    label: A flexible git-backed CMS that specialises...
+    context: {}
+  You-choose-your-editing-experience%2E:
+    label: You choose your editing experience.
     hidden: false
-    type: markdown
-    options:
-      bold: true
-      italic: true
-      strike: true
-      link: true
-      subscript: true
-      superscript: true
-      underline: true
-      code: true
-      undo: true
-      redo: true
-      removeformat: true
-      copyformatting: true
+    type: textarea
+    options: {}
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible%2\
-      0git%2Dbacked%20CMS,markdown%20and%20data%20files.)"
-    context:
-      open: false
-      title: Untranslated Text
-      icon: translate
-      content: >
-        A flexible git-backed CMS that specialises in editing markdown and data
-        files.
-  markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test:
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
+      0your%20editing%20experience.)"
+    context: {}
+  rcc-markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E:
     label: A (starting) point for<br>developers looki...
     hidden: false
     type: markdown
@@ -126,7 +112,34 @@ _inputs:
         Astro, using<br>Bookshop components in CloudCannon. Create your own
         copy, and start creating your own components to use in CloudCannon’s CMS
         <sub>A sub to test</sub>.
-  markdown:Accessibility-controls:
+  rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E:
+    label: A flexible git-backed CMS that specialises...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible%2\
+      0git%2Dbacked%20CMS,markdown%20and%20data%20files.)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        A flexible git-backed CMS that specialises in editing markdown and data
+        files.
+  rcc-markdown:Accessibility-controls:
     label: Accessibility controls
     hidden: false
     type: markdown
@@ -146,7 +159,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Accessibility%\
       20controls)"
-  markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM:
+    context: {}
+  rcc-markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E:
     label: Another~ paragraph to test translations. W...
     hidden: false
     type: markdown
@@ -173,7 +187,7 @@ _inputs:
       content: >
         Another~ paragraph to test translations. With punctuation and
         stuff<sup>TM</sup>.
-  markdown:Blog-with-pagination-and-tags:
+  rcc-markdown:Blog-with-pagination-and-tags:
     label: Blog with pagination & tags
     hidden: false
     type: markdown
@@ -193,7 +207,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Blog%20with%20\
       pagination%20%26%20tags)"
-  markdown:Built-in-search-with-Pagefind:
+    context: {}
+  rcc-markdown:Built-in-search-with-Pagefind:
     label: Built-in search with Pagefind
     hidden: false
     type: markdown
@@ -213,7 +228,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Built%2Din%20s\
       earch%20with%20Pagefind)"
-  markdown:Color-palette-controls:
+    context: {}
+  rcc-markdown:Color-palette-controls:
     label: Color palette controls
     hidden: false
     type: markdown
@@ -233,7 +249,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Color%20palett\
       e%20controls)"
-  markdown:Create-and-delete-pages:
+    context: {}
+  rcc-markdown:Create-and-delete-pages:
     label: Create and delete pages
     hidden: false
     type: markdown
@@ -253,7 +270,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Create%20and%2\
       0delete%20pages)"
-  markdown:Font-Awesome-icons:
+    context: {}
+  rcc-markdown:Font-Awesome-icons:
     label: Font Awesome icons
     hidden: false
     type: markdown
@@ -273,7 +291,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Font%20Awesome\
       %20icons)"
-  markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git:
+    context: {}
+  rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E:
     label: Git-backed means you can keep all your fam...
     hidden: false
     type: markdown
@@ -301,7 +320,7 @@ _inputs:
         Git-backed means you can keep all your familiar git workflows, while
         providing an easy-to-understand interface for non-technical editors to
         collaborate via git.
-  markdown:Header-and-Footer-controls:
+  rcc-markdown:Header-and-Footer-controls:
     label: Header and Footer controls
     hidden: false
     type: markdown
@@ -321,7 +340,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Header%20and%2\
       0Footer%20controls)"
-  markdown:Markdown-options-and-styles:
+    context: {}
+  rcc-markdown:Markdown-options-and-styles:
     label: Markdown options & styles
     hidden: false
     type: markdown
@@ -341,7 +361,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Markdown%20opt\
       ions%20%26%20styles)"
-  markdown:Page-building-with-Bookshop-components:
+    context: {}
+  rcc-markdown:Page-building-with-Bookshop-components:
     label: Page building with Bookshop components
     hidden: false
     type: markdown
@@ -361,7 +382,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Page%20buildin\
       g%20with%20Bookshop%20components)"
-  markdown:Pre-configured-shortcodes:
+    context: {}
+  rcc-markdown:Pre-configured-shortcodes:
     label: Pre-configured shortcodes
     hidden: false
     type: markdown
@@ -381,7 +403,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Pre%2Dconfigur\
       ed%20shortcodes)"
-  markdown:SEO-controls:
+    context: {}
+  rcc-markdown:SEO-controls:
     label: SEO controls
     hidden: false
     type: markdown
@@ -401,7 +424,8 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=SEO%20controls\
       )"
-  markdown:Tailwind:
+    context: {}
+  rcc-markdown:Tailwind:
     label: Tailwind
     hidden: false
     type: markdown
@@ -420,7 +444,8 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Tailwind)"
-  markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box:
+    context: {}
+  rcc-markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A:
     label: The Astro* CloudCannon Starter's aim is to...
     hidden: false
     type: markdown
@@ -449,7 +474,7 @@ _inputs:
         their own site quickly in CloudCannon. This template is trying to strike
         a balance between minimal, and easy-to-delete boiler plate, while
         providing some commonly used features out of the box:
-  markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them:
+  rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E:
     label: Visual editing allows you to preview your ...
     hidden: false
     type: markdown
@@ -476,35 +501,27 @@ _inputs:
       content: >
         Visual editing allows you to preview your changes live before you save
         them.
-  you-choose-your-editing-experience:
-    label: You choose your editing experience.
-    hidden: false
-    type: textarea
-    options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
-      0your%20editing%20experience.)"
 urlTranslation: index.html
-cloudcannon: ""
-cloudcannon-astro-starter: ""
-github: ""
-keep-what-you-need-delete-the-rest: ""
-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files: ""
-markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test: ""
-markdown:Accessibility-controls: ""
-markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM: ""
-markdown:Blog-with-pagination-and-tags: ""
-markdown:Built-in-search-with-Pagefind: ""
-markdown:Color-palette-controls: ""
-markdown:Create-and-delete-pages: ""
-markdown:Font-Awesome-icons: ""
-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git: ""
-markdown:Header-and-Footer-controls: ""
-markdown:Markdown-options-and-styles: ""
-markdown:Page-building-with-Bookshop-components: ""
-markdown:Pre-configured-shortcodes: ""
-markdown:SEO-controls: ""
-markdown:Tailwind: ""
-markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box: ""
-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them: ""
-you-choose-your-editing-experience: ""
+CloudCannon: ""
+CloudCannon-Astro-Starter!: ""
+GitHub: ""
+Keep-what-you-need%2E-Delete-the-rest%2E: ""
+You-choose-your-editing-experience%2E: ""
+rcc-markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E: ""
+rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: ""
+rcc-markdown:Accessibility-controls: ""
+rcc-markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E: ""
+rcc-markdown:Blog-with-pagination-and-tags: ""
+rcc-markdown:Built-in-search-with-Pagefind: ""
+rcc-markdown:Color-palette-controls: ""
+rcc-markdown:Create-and-delete-pages: ""
+rcc-markdown:Font-Awesome-icons: ""
+rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E: ""
+rcc-markdown:Header-and-Footer-controls: ""
+rcc-markdown:Markdown-options-and-styles: ""
+rcc-markdown:Page-building-with-Bookshop-components: ""
+rcc-markdown:Pre-configured-shortcodes: ""
+rcc-markdown:SEO-controls: ""
+rcc-markdown:Tailwind: ""
+rcc-markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A: ""
+rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E: ""

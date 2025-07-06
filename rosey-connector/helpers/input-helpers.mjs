@@ -1,7 +1,7 @@
 import { getPageString, getYamlFileName } from "./file-helpers.mjs";
 import {
   formatTextForInputComments,
-  removeFormattingElementsFromText,
+  removeFormattingElementsForHiglightUrls,
 } from "./text-formatters.mjs";
 import { htmlToMarkdown } from "./html-to-markdown.mjs";
 
@@ -62,6 +62,37 @@ function initDefaultInputs(
   }
 }
 
+// Namespace pages input set up
+function initNamespacePageInputs(data, locale) {
+  // Create the inputs obj if there is none
+  if (!data._inputs) {
+    data._inputs = {};
+  }
+
+  // Create the page input object
+  if (!data._inputs.$) {
+    data._inputs.$ = {
+      type: "object",
+      comment: "Translations that appear on many pages",
+      options: {
+        place_groups_below: false,
+        groups: [
+          {
+            heading: `Still to translate (${locale})`,
+            comment: "Text to translate",
+            inputs: [],
+          },
+          {
+            heading: `Already translated (${locale})`,
+            comment: "Text already translated",
+            inputs: [],
+          },
+        ],
+      },
+    };
+  }
+}
+
 async function getInputConfig(
   inputKey,
   page,
@@ -72,19 +103,71 @@ async function getInputConfig(
   const seeOnPageCommentEnabled = seeOnPageCommentSettings.enabled;
   const baseUrl = seeOnPageCommentSettings.base_url;
   const seeOnPageCommentText = seeOnPageCommentSettings.comment_text;
-  const untranslatedPhrase = baseTranslationObj.original.trim();
 
+  const untranslatedPhrase = baseTranslationObj.original.trim();
   const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );
 
-  const isKeyMarkdown = inputKey.slice(0, 10).includes("markdown:");
+  const locationString = seeOnPageCommentEnabled
+    ? generateHighlightLinkComment(
+        originalPhraseTidiedForComment,
+        page,
+        baseUrl,
+        seeOnPageCommentText
+      )
+    : false;
+
+  const inputConfig = setupInputConfig(
+    inputKey,
+    inputLengths,
+    originalPhraseTidiedForComment,
+    untranslatedPhraseMarkdown,
+    locationString
+  );
+
+  return inputConfig;
+}
+
+async function getNamespaceInputConfig(
+  inputKey,
+  baseTranslationObj,
+  inputLengths
+) {
+  const untranslatedPhrase = baseTranslationObj.original.trim();
+  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
+  const originalPhraseTidiedForComment = formatTextForInputComments(
+    untranslatedPhraseMarkdown
+  );
+
+  const inputConfig = setupInputConfig(
+    inputKey,
+    inputLengths,
+    originalPhraseTidiedForComment,
+    untranslatedPhraseMarkdown
+  );
+
+  return inputConfig;
+}
+
+async function setupInputConfig(
+  inputKey,
+  inputLengths,
+  originalPhraseTidiedForComment,
+  untranslatedPhraseMarkdown,
+  locationString
+) {
+  const isKeyMarkdown = inputKey.startsWith("rcc-markdown:");
   const labelCutoffLength = inputLengths.label;
   const textareaCutoffLength = inputLengths.textarea;
-  const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
+  const isInputShortText =
+    untranslatedPhraseMarkdown.length < textareaCutoffLength;
   const isLabelConcat =
     originalPhraseTidiedForComment.length > labelCutoffLength;
+  const formattedLabel = isLabelConcat
+    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
+    : originalPhraseTidiedForComment;
 
   const inputType = isKeyMarkdown
     ? "markdown"
@@ -109,40 +192,21 @@ async function getInputConfig(
       }
     : {};
 
-  const locationString = seeOnPageCommentEnabled
-    ? generateHighlightLinkComment(
-        originalPhraseTidiedForComment,
-        page,
-        baseUrl,
-        seeOnPageCommentText
-      )
-    : false;
-
-  const formattedLabel = isLabelConcat
-    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
-    : originalPhraseTidiedForComment;
-
-  const inputConfig = isLabelConcat
-    ? {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-        comment: locationString,
-        context: {
+  const inputConfig = {
+    label: formattedLabel,
+    hidden: untranslatedPhraseMarkdown === "",
+    type: inputType,
+    options: options,
+    comment: locationString || "", // Only on normal pages
+    context: isLabelConcat
+      ? {
           open: false,
           title: "Untranslated Text",
           icon: "translate",
           content: untranslatedPhraseMarkdown,
-        },
-      }
-    : {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-        comment: locationString,
-      };
+        }
+      : {},
+  };
 
   return inputConfig;
 }
@@ -161,7 +225,7 @@ function generateHighlightLinkComment(
 
   // Remove things that will ruin the highlight string like formatting elements, asterisks, and backticks
   const originalPhraseNoFormattingElements =
-    removeFormattingElementsFromText(originalPhrase);
+    removeFormattingElementsForHiglightUrls(originalPhrase);
   const originalPhraseNoEscapedAsterisks =
     originalPhraseNoFormattingElements.replaceAll("\\*", "*");
   const originalPhraseNoBackTicks = originalPhraseNoEscapedAsterisks.replaceAll(
@@ -221,102 +285,6 @@ function customEncode(text) {
   const escapedCharsEncoded = encodeURIText.replaceAll("-", "%2D");
 
   return escapedCharsEncoded;
-}
-
-// Namespace pages input set up
-function initNamespacePageInputs(data, locale) {
-  // Create the inputs obj if there is none
-  if (!data._inputs) {
-    data._inputs = {};
-  }
-
-  // Create the page input object
-  if (!data._inputs.$) {
-    data._inputs.$ = {
-      type: "object",
-      comment: "Translations that appear on many pages",
-      options: {
-        place_groups_below: false,
-        groups: [
-          {
-            heading: `Still to translate (${locale})`,
-            comment: "Text to translate",
-            inputs: [],
-          },
-          {
-            heading: `Already translated (${locale})`,
-            comment: "Text already translated",
-            inputs: [],
-          },
-        ],
-      },
-    };
-  }
-}
-
-async function getNamespaceInputConfig(
-  inputKey,
-  baseTranslationObj,
-  inputLengths
-) {
-  const untranslatedPhrase = baseTranslationObj.original.trim();
-  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
-  const originalPhraseTidiedForComment = formatTextForInputComments(
-    untranslatedPhraseMarkdown
-  );
-
-  const isKeyMarkdown = inputKey.slice(0, 10).includes("markdown:");
-  const labelCutoffLength = inputLengths.label;
-  const textareaCutoffLength = inputLengths.textarea;
-  const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
-  const isLabelConcat =
-    originalPhraseTidiedForComment.length > labelCutoffLength;
-
-  const inputType = isKeyMarkdown
-    ? "markdown"
-    : isInputShortText
-    ? "text"
-    : "textarea";
-
-  const options = isKeyMarkdown
-    ? {
-        bold: true,
-        format: "p h1 h2 h3 h4",
-        italic: true,
-        link: true,
-        undo: true,
-        redo: true,
-        removeformat: true,
-        copyformatting: true,
-        blockquote: true,
-      }
-    : {};
-
-  const formattedLabel = isLabelConcat
-    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
-    : originalPhraseTidiedForComment;
-
-  const inputConfig = isLabelConcat
-    ? {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-        context: {
-          open: false,
-          title: "Untranslated Text",
-          icon: "translate",
-          content: untranslatedPhraseMarkdown,
-        },
-      }
-    : {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-      };
-
-  return inputConfig;
 }
 
 function sortTranslationIntoInputGroup(translationDataToWrite, inputKey) {

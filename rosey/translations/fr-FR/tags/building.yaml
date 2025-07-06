@@ -14,6 +14,7 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/tags/building.yaml)"
           inputs:
+            - Tailwind
             - building
             - styling
             - tailwind
@@ -23,6 +24,14 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/tags/building.yaml)"
           inputs: []
+  Tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/building/#:~:text=Tailwind)"
+    context: {}
   building:
     label: Building
     hidden: false
@@ -30,6 +39,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/building/#:~:text=Building)"
+    context: {}
   styling:
     label: Styling
     hidden: false
@@ -37,6 +47,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/building/#:~:text=Styling)"
+    context: {}
   tailwind:
     label: Tailwind
     hidden: false
@@ -44,7 +55,9 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/building/#:~:text=Tailwind)"
+    context: {}
 urlTranslation: tags/building/index.html
+Tailwind: ""
 building: ""
 styling: ""
 tailwind: ""
