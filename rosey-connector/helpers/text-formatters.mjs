@@ -25,12 +25,12 @@ function removeAllSpecCharsFromText(text) {
   const removedSupSub = removeFormattingElementsFromText(text);
   return removedSupSub.replaceAll(/[&\/\\#+()$~.%'!:"*<>{}_]/gm, "");
 }
-function removeNonPuncCharsFromText(text) {
+function removeNonPuncCharsForLabels(text) {
   if (!text) {
     return "";
   }
   // We shouldn't remove any chars here that will help format context comments
-  return text.replaceAll(/[#%{}_]/gm, "");
+  return text.replaceAll(/[#%`{}_]/gm, "");
 }
 function formatTextForIds(text) {
   if (!text) {
@@ -49,7 +49,7 @@ function formatTextForInputComments(text) {
   const trimmedWhiteSpace = text.trim();
   const escapedAsterisks = trimmedWhiteSpace.replaceAll("\\*", "*");
   const noLinks = removeLinksFromMarkdown(escapedAsterisks);
-  const cleanedText = removeNonPuncCharsFromText(noLinks);
+  const cleanedText = removeNonPuncCharsForLabels(noLinks);
 
   return cleanedText;
 }
