@@ -67,41 +67,17 @@
 		"original": "RSS Feed",
 		"value": "RSS Feed"
 	},
-	"rcc-markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E": {
-		"original": "A (starting) point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.",
-		"value": "A (starting) point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>."
-	},
 	"rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E": {
 		"original": "A flexible git-backed CMS that specialises in editing markdown and data files.",
 		"value": "A flexible git-backed CMS that specialises in editing markdown and data files."
 	},
-	"rcc-markdown:A-new-paragraph%2E": {
-		"original": "A <strong>new</strong> paragraph.",
-		"value": "A <strong>new</strong> paragraph."
-	},
-	"rcc-markdown:Accessibility-controls": {
-		"original": "<a href=\"/blog/markdown/\">Accessibility controls</a>",
-		"value": "<a href=\"/blog/markdown/\">Accessibility controls</a>"
+	"rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E": {
+		"original": "A starting point for developers looking to build a multilingual website with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.",
+		"value": "A starting point for developers looking to build a multilingual website with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS."
 	},
 	"rcc-markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site%2E-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration%2E-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page%2E)": {
 		"original": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)",
 		"value": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)"
-	},
-	"rcc-markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E": {
-		"original": "Another~ paragraph to test translations. With punctuation and stuff<sup>TM</sup>.",
-		"value": "Another~ paragraph to test translations. With punctuation and stuff<sup>TM</sup>."
-	},
-	"rcc-markdown:Blog-with-pagination-and-tags": {
-		"original": "<a href=\"/blog/paginated-collection/\">Blog with pagination &amp; tags</a>",
-		"value": "<a href=\"/blog/paginated-collection/\">Blog with pagination &amp; tags</a>"
-	},
-	"rcc-markdown:Built-in-search-with-Pagefind": {
-		"original": "<a href=\"/blog/search/\">Built-in search with Pagefind</a>",
-		"value": "<a href=\"/blog/search/\">Built-in search with Pagefind</a>"
-	},
-	"rcc-markdown:Color-palette-controls": {
-		"original": "<a href=\"/blog/data-files/\">Color palette controls</a>",
-		"value": "<a href=\"/blog/data-files/\">Color palette controls</a>"
 	},
 	"rcc-markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings%2E-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well%2E": {
 		"original": "Comes with all the inputs you need to encourage editors to fill in the content that search engines expect for good SEO rankings. Performance, best practices and accessibility all play a part in this as well.",
@@ -111,25 +87,13 @@
 		"original": "Control <a href=\"https://a-test-link.com\">SEO</a> values on a page-by-page, and site-wide basis.",
 		"value": "Control <a href=\"https://a-test-link.com\">SEO</a> values on a page-by-page, and site-wide basis."
 	},
-	"rcc-markdown:Create-and-delete-pages": {
-		"original": "<a href=\"/blog/page-building/\">Create and delete pages</a>",
-		"value": "<a href=\"/blog/page-building/\">Create and delete pages</a>"
-	},
 	"rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E": {
 		"original": "Delete your <code>tailwind.config.mjs</code> file.",
 		"value": "Delete your <code>tailwind.config.mjs</code> file."
 	},
-	"rcc-markdown:Font-Awesome-icons": {
-		"original": "<a href=\"/blog/icons/\">Font Awesome icons</a>",
-		"value": "<a href=\"/blog/icons/\">Font Awesome icons</a>"
-	},
 	"rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E": {
 		"original": "Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.",
 		"value": "Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git."
-	},
-	"rcc-markdown:Header-and-Footer-controls": {
-		"original": "<a href=\"/blog/data-files/\">Header and Footer controls</a>",
-		"value": "<a href=\"/blog/data-files/\">Header and Footer controls</a>"
 	},
 	"rcc-markdown:If-you'd-like-to-remove-Tailwind%3A": {
 		"original": "If you’d like to remove Tailwind:",
@@ -139,25 +103,13 @@
 		"original": "Inputs on individual pages are used for SEO values for the page, and if they’re not set the site-wide values are used as a fallback.",
 		"value": "Inputs on individual pages are used for SEO values for the page, and if they’re not set the site-wide values are used as a fallback."
 	},
-	"rcc-markdown:Markdown-options-and-styles": {
-		"original": "<a href=\"/blog/markdown/\">Markdown options &amp; styles</a>",
-		"value": "<a href=\"/blog/markdown/\">Markdown options &amp; styles</a>"
-	},
 	"rcc-markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer%2E-The-search-bar-is-located-at-the-top-of-the-blog-index-page%2E": {
 		"original": "On this template, the search has been scoped to index only the text content of blog posts, to avoid showing results on the homepage, blog index page, header and footer. The search bar is located at the top of the blog index page.",
 		"value": "On this template, the search has been scoped to index only the text content of blog posts, to avoid showing results on the homepage, blog index page, header and footer. The search bar is located at the top of the blog index page."
 	},
-	"rcc-markdown:Page-building-with-Bookshop-components": {
-		"original": "<a href=\"/blog/bookshop/\">Page building with Bookshop components</a>",
-		"value": "<a href=\"/blog/bookshop/\">Page building with Bookshop components</a>"
-	},
-	"rcc-markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E": {
-		"original": "Pagefind sup! is a sup fully static search library that aims to perform well on large sites, while using as little of your users’ bandwidth as possible, and without hosting any infrastructure.",
-		"value": "Pagefind sup! is a sup fully static search library that aims to perform well on large sites, while using as little of your users’ bandwidth as possible, and without hosting any infrastructure."
-	},
-	"rcc-markdown:Pre-configured-shortcodes": {
-		"original": "<a href=\"/blog/markdown/\">Pre-configured shortcodes</a>",
-		"value": "<a href=\"/blog/markdown/\">Pre-configured shortcodes</a>"
+	"rcc-markdown:Pagefind-is-a-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E": {
+		"original": "Pagefind is a fully static search library that aims to perform well on large sites, while using as little of your users’ bandwidth as possible, and without hosting any infrastructure.",
+		"value": "Pagefind is a fully static search library that aims to perform well on large sites, while using as little of your users’ bandwidth as possible, and without hosting any infrastructure."
 	},
 	"rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs": {
 		"original": "Remove mentions of Tailwind from your <code>astro.config.mjs</code>",
@@ -167,21 +119,13 @@
 		"original": "Run the following command in the root of the site:",
 		"value": "Run the following command in the root of the site:"
 	},
-	"rcc-markdown:SEO-controls": {
-		"original": "<a href=\"/blog/seo/\">SEO controls</a>",
-		"value": "<a href=\"/blog/seo/\">SEO controls</a>"
-	},
-	"rcc-markdown:Tailwind": {
-		"original": "<a href=\"/blog/tailwind/\">Tailwind</a>",
-		"value": "<a href=\"/blog/tailwind/\">Tailwind</a>"
-	},
-	"rcc-markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A": {
-		"original": "The Astro* CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:",
-		"value": "The Astro* CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:"
+	"rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E": {
+		"original": "The Rosey Astro Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box. Read more about Rosey in CloudCannon <a href=\"https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/\">here</a>.",
+		"value": "The Rosey Astro Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box. Read more about Rosey in CloudCannon <a href=\"https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/\">here</a>."
 	},
 	"rcc-markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible%2E-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index%2E-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself%2E-For-most-sites-this-will-be-closer-to-100kB%2E": {
-		"original": "The goal of Pagefind is that websites with tens of thousands of pages should be searchable by someone in their browser, while consuming as little bandwidth as possible. <u>Pagefind’s</u> search <sup>index</sup> is <sub>split</sub> into chunks, so that searching in the browser <em>only</em> ever <s>needs</s> to load a small subset of the search index. Pagefind can run a full-text search on a 10,000 page site with a total network payload under 300kB, including the Pagefind library itself. For most sites, this will be closer to 100kB.",
-		"value": "The goal of Pagefind is that websites with tens of thousands of pages should be searchable by someone in their browser, while consuming as little bandwidth as possible. <u>Pagefind’s</u> search <sup>index</sup> is <sub>split</sub> into chunks, so that searching in the browser <em>only</em> ever <s>needs</s> to load a small subset of the search index. Pagefind can run a full-text search on a 10,000 page site with a total network payload under 300kB, including the Pagefind library itself. For most sites, this will be closer to 100kB."
+		"original": "The goal of Pagefind is that websites with tens of thousands of pages should be searchable by someone in their browser, while consuming as little bandwidth as possible. Pagefind’s search index is split into chunks, so that searching in the browser <em>only</em> ever <s>needs</s> to load a small subset of the search index. Pagefind can run a full-text search on a 10,000 page site with a total network payload under 300kB, including the Pagefind library itself. For most sites, this will be closer to 100kB.",
+		"value": "The goal of Pagefind is that websites with tens of thousands of pages should be searchable by someone in their browser, while consuming as little bandwidth as possible. Pagefind’s search index is split into chunks, so that searching in the browser <em>only</em> ever <s>needs</s> to load a small subset of the search index. Pagefind can run a full-text search on a 10,000 page site with a total network payload under 300kB, including the Pagefind library itself. For most sites, this will be closer to 100kB."
 	},
 	"rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E": {
 		"original": "Use Tailwind to style your HTML, allowing you to style your components without leaving your HTML. This can be used in combination with normal CSS and SCSS styling, leaving you to add styles to your site however you want.",
