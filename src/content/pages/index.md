@@ -20,14 +20,7 @@ hero_block:
     text_color: '#333232'
   subheading:
     text_content: >-
-      A (starting) point for <br> developers looking to build a website with
-      Astro, using <br>Bookshop components in CloudCannon. Create your own copy,
-      and start creating your own components to use in CloudCannon’s CMS <sub>A
-      sub to test</sub>.
-
-
-      Another~ paragraph to test translations. With punctuation and
-      stuff<sup>TM</sup>.
+      A starting point for developers looking to build a multilingual website with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.
     color: '#393939'
     text_color: '#333232'
   image:
@@ -59,35 +52,10 @@ content_blocks:
       text_color: '#333232'
     text:
       text_content: >-
-        The Astro* CloudCannon Starter's aim is to get developers building their
+        The Rosey Astro Starter's aim is to get developers building their
         own site quickly in CloudCannon. This template is trying to strike a
         balance between minimal, and easy-to-delete boiler plate, while
-        providing some commonly used features out of the box:
-
-
-        * [Tailwind](/blog/tailwind/)
-
-        * [Font Awesome icons](/blog/icons/)
-
-        * [Built-in search with Pagefind](/blog/search/)
-
-        * [Blog with pagination & tags](/blog/paginated-collection/)
-
-        * [Page building with Bookshop components](/blog/bookshop/)
-
-        * [Markdown options & styles](/blog/markdown/)
-
-        * [Pre-configured shortcodes](/blog/markdown/)
-
-        * [Header and Footer controls](/blog/data-files/)
-
-        * [Create and delete pages](/blog/page-building/)
-
-        * [Accessibility controls](/blog/markdown/)
-
-        * [SEO controls](/blog/seo/)
-
-        * [Color palette controls](/blog/data-files/)
+        providing some commonly used features out of the box. Read more about Rosey in CloudCannon [here](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/).
       color: '#393939'
       text_color: '#333232'
     image:
