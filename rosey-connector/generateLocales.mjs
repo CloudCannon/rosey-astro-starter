@@ -150,7 +150,7 @@ async function generateLocale(locale, configData) {
         }
 
         if (!localeData[key] || data[key].isNewTranslation) {
-          const isKeyMarkdown = key.slice(0, 10).includes("markdown:");
+          const isKeyMarkdown = key.startsWith("rcc-markdown:");
 
           localeData[key] = {
             original: data[key].original,

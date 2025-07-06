@@ -79,7 +79,7 @@ async function getInputConfig(
     untranslatedPhraseMarkdown
   );
 
-  const isKeyMarkdown = inputKey.slice(0, 10).includes("markdown:");
+  const isKeyMarkdown = inputKey.startsWith("rcc-markdown:");
   const labelCutoffLength = inputLengths.label;
   const textareaCutoffLength = inputLengths.textarea;
   const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
@@ -265,7 +265,7 @@ async function getNamespaceInputConfig(
     untranslatedPhraseMarkdown
   );
 
-  const isKeyMarkdown = inputKey.slice(0, 10).includes("markdown:");
+  const isKeyMarkdown = inputKey.startsWith("rcc-markdown:");
   const labelCutoffLength = inputLengths.label;
   const textareaCutoffLength = inputLengths.textarea;
   const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
