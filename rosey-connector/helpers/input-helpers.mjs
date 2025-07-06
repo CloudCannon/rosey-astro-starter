@@ -12,7 +12,7 @@ function initDefaultInputs(
   page,
   locale,
   seeOnPageCommentSettings,
-  githubCommentSettings
+  gitHistoryCommentSettings
 ) {
   // Create the inputs obj if there is none
   if (!data._inputs) {
@@ -25,19 +25,19 @@ function initDefaultInputs(
     const pageFilePath = getYamlFileName(page);
     const seeOnPageCommentEnabled = seeOnPageCommentSettings.enabled;
     const baseUrl = seeOnPageCommentSettings.base_url;
-    const githubCommentEnabled = githubCommentSettings.enabled;
-    const githubRepo = githubCommentSettings.repo_url;
-    const githubBranchName = githubCommentSettings.branch_name;
-    const githubCommentText = githubCommentSettings.comment_text;
+    const gitHistoryCommentEnabled = gitHistoryCommentSettings.enabled;
+    const githubRepo = gitHistoryCommentSettings.repo_url;
+    const githubBranchName = gitHistoryCommentSettings.branch_name;
+    const gitHistoryCommentText = gitHistoryCommentSettings.comment_text;
 
     let inputComment = "";
     if (seeOnPageCommentEnabled) {
       inputComment += `[${pageString}](${baseUrl}${pageString})`;
     }
-    if (githubCommentEnabled) {
+    if (gitHistoryCommentEnabled) {
       inputComment += `${
         inputComment.length > 1 ? "  //  " : ""
-      }[${githubCommentText}](${githubRepo}/commits/${githubBranchName}/${translationFilesDirPath}/${locale}/${pageFilePath})`;
+      }[${gitHistoryCommentText}](${githubRepo}/commits/${githubBranchName}/${translationFilesDirPath}/${locale}/${pageFilePath})`;
     }
 
     data._inputs.$ = {
