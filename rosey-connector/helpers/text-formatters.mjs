@@ -47,7 +47,8 @@ function formatTextForInputComments(text) {
     return "";
   }
   const trimmedWhiteSpace = text.trim();
-  const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
+  const escapedAsterisks = trimmedWhiteSpace.replaceAll("\\*", "*");
+  const noLinks = removeLinksFromMarkdown(escapedAsterisks);
   const cleanedText = removeNonPuncCharsFromText(noLinks);
 
   return cleanedText;

@@ -110,7 +110,7 @@ async function getInputConfig(
     : {};
 
   const locationString = seeOnPageCommentEnabled
-    ? generateLinkComment(
+    ? generateHighlightLinkComment(
         originalPhraseTidiedForComment,
         page,
         baseUrl,
@@ -147,7 +147,7 @@ async function getInputConfig(
   return inputConfig;
 }
 
-function generateLinkComment(
+function generateHighlightLinkComment(
   originalPhrase,
   page,
   baseUrl,
@@ -163,7 +163,9 @@ function generateLinkComment(
   // Get the first and last line of the markdown so we only have complete lines in the highlight url
   const originalPhraseNoFormattingElements =
     removeFormattingElementsFromText(originalPhrase);
-  const originalPhraseArray = originalPhraseNoFormattingElements.split(/[\n]+/);
+  const originalPhraseNoEscapedAsterisks =
+    originalPhraseNoFormattingElements.replaceAll("\\*", "*");
+  const originalPhraseArray = originalPhraseNoEscapedAsterisks.split(/[\n]+/);
   // Join the original (which may be separate lines) into one string and split to check how many words
   const originalPhraseOneLineArray = originalPhraseArray.join(" ").split(" ");
 
