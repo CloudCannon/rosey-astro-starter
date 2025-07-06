@@ -116,7 +116,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
-      0point%20for%3Cbr%3Edevelopers,A%20sub%20to%20test.)"
+      0point%20for,A%20sub%20to%20test.)"
     context:
       open: false
       title: Untranslated Text
