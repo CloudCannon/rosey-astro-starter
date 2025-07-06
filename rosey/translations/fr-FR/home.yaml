@@ -98,7 +98,7 @@ _inputs:
         A flexible git-backed CMS that specialises in editing markdown and data
         files.
   markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test:
-    label: A starting point for <br> developers looki...
+    label: A starting point for<br>developers looking...
     hidden: false
     type: markdown
     options:
@@ -116,16 +116,16 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
-      0point%20for,sub%20to%20test%20.)"
+      0point%20for%3Cbr%3Edevelopers,A%20sub%20to%20test.)"
     context:
       open: false
       title: Untranslated Text
       icon: translate
       content: >
-        A starting point for <br> developers looking to build a website with
-        Astro, using <br> Bookshop components in CloudCannon. Create your own
+        A starting point for<br>developers looking to build a website with
+        Astro, using<br>Bookshop components in CloudCannon. Create your own
         copy, and start creating your own components to use in CloudCannon’s CMS
-        <sub>A sub to test</sub> .
+        <sub>A sub to test</sub>.
   markdown:Accessibility-controls:
     label: Accessibility controls
     hidden: false
@@ -165,14 +165,14 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Another%20para\
-      graph%20to%20test,and%20stuff%20TM%20.)"
+      graph%20to%20test,With%20punctuation%20and%20stuffTM.)"
     context:
       open: false
       title: Untranslated Text
       icon: translate
       content: >
-        Another paragraph to test translations. With punctuation and stuff
-        <sup>TM</sup> .
+        Another paragraph to test translations. With punctuation and
+        stuff<sup>TM</sup>.
   markdown:Blog-with-pagination-and-tags:
     label: Blog with pagination & tags
     hidden: false
