@@ -421,7 +421,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Tailwind)"
   markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box:
-    label: The Astro\* CloudCannon Starter's aim is t...
+    label: The Astro* CloudCannon Starter's aim is to...
     hidden: false
     type: markdown
     options:
@@ -438,8 +438,8 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Astro%5C\
-      *%20CloudCannon%20Starter's,out%20of%20the%20box%3A)"
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Astro*%2\
+      0CloudCannon%20Starter's,out%20of%20the%20box%3A)"
     context:
       open: false
       title: Untranslated Text
