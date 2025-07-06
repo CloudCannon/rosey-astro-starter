@@ -40,12 +40,8 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Building)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Building)"
   markdown:Delete-your-tailwindconfigmjs-file:
     label: Delete your `tailwind.config.mjs` file.
     hidden: false
@@ -63,8 +59,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20your%20%60tailwind.config.mjs%60%20file.)
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
+      our%20%60tailwind.config.mjs%60%20file.)"
   markdown:If-youd-like-to-remove-Tailwind:
     label: "If you’d like to remove Tailwind:"
     hidden: false
@@ -82,8 +79,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E2%80%99d%20like,to%20remove%20Tailwind)
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
+      2%80%99d%20like%20to%20remove%20Tailwind%3A)"
   markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs:
     label: Remove mentions of Tailwind from your `ast...
     hidden: false
@@ -101,8 +99,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Remove%20mentions%20of,from%20your%20%60astro)
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Remove%20m\
+      entions%20of%20Tailwind%20from%20your%20%60astro.config.mjs%60)"
     context:
       open: false
       title: Untranslated Text
@@ -126,8 +125,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Run%20the%20following,of%20the%20site)
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Run%20the%\
+      20following%20command,root%20of%20the%20site%3A)"
     context:
       open: false
       title: Untranslated Text
@@ -151,8 +151,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Use%20Tailwind%20to,however%20you%20want)
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Use%20Tail\
+      wind%20to%20style,site%20however%20you%20want.)"
     context:
       open: false
       title: Untranslated Text
@@ -179,8 +180,9 @@ _inputs:
       redo: true
       removeformat: true
       copyformatting: true
-    comment: |
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20uninstall%20tailwindcss%20%40astrojs%2Ftailwind%60)
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20u\
+      ninstall%20tailwindcss%20%40astrojs%2Ftailwind%60)"
     context:
       open: false
       title: Untranslated Text
@@ -192,80 +194,60 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: |-
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Pagefind%20Search)
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Pagefind%2\
+      0Search)"
   recent-posts:
     label: Recent Posts
     hidden: false
     type: text
     options: {}
-    comment: |-
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Recent%20Posts)
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Recent%20P\
+      osts)"
   search:
     label: Search
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Search)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Search)"
   seo:
     label: Seo
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Seo)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Seo)"
   seo-controls:
     label: SEO Controls
     hidden: false
     type: text
     options: {}
-    comment: |-
-      [See in context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=SEO%20Controls)
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=SEO%20Cont\
+      rols)"
   styling:
     label: Styling
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Styling)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Styling)"
   tailwind:
     label: Tailwind
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Tailwind)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Tailwind)"
   words:
     label: words
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=words)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=words)"
 urlTranslation: blog/tailwind/index.html
 building: ""
 markdown:Delete-your-tailwindconfigmjs-file: ""

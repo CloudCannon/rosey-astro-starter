@@ -24,22 +24,14 @@ _inputs:
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=Seo)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=Seo)"
   seo-controls:
     label: SEO Controls
     hidden: false
     type: text
     options: {}
-    comment: >-
-      [See in
-      context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=SEO%20Controls)
-
-      Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to
-      locate the phrase manually.
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=SEO%20Controls)"
 urlTranslation: tags/seo/index.html
 seo: ""
 seo-controls: ""
