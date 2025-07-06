@@ -1,7 +1,7 @@
 import { getPageString, getYamlFileName } from "./file-helpers.mjs";
 import {
   formatTextForInputComments,
-  removeSuperAndSubFromText,
+  removeFormattingElementsFromText,
 } from "./text-formatters.mjs";
 import { htmlToMarkdown } from "./html-to-markdown.mjs";
 
@@ -161,8 +161,9 @@ function generateLinkComment(
 
   // If original phrase is less than 𝑥*2 words we don't use the comma syntax
   // Get the first and last line of the markdown so we only have complete lines in the highlight url
-  const originalPhraseNoSubNoSup = removeSuperAndSubFromText(originalPhrase);
-  const originalPhraseArray = originalPhraseNoSubNoSup.split(/[\n]+/);
+  const originalPhraseNoFormattingElements =
+    removeFormattingElementsFromText(originalPhrase);
+  const originalPhraseArray = originalPhraseNoFormattingElements.split(/[\n]+/);
   // Join the original (which may be separate lines) into one string and split to check how many words
   const originalPhraseOneLineArray = originalPhraseArray.join(" ").split(" ");
 
