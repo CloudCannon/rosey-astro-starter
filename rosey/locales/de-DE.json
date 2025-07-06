@@ -60,8 +60,8 @@
 		"value": "A <strong>new</strong> paragraph."
 	},
 	"markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test": {
-		"original": "A starting point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.",
-		"value": "A starting point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>."
+		"original": "A (starting) point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.",
+		"value": "A (starting) point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>."
 	},
 	"markdown:Accessibility-controls": {
 		"original": "<a href=\"/blog/markdown/\">Accessibility controls</a>",
@@ -72,8 +72,8 @@
 		"value": "After indexing, Pagefind adds a static search bundle to your built files, which exposes a JavaScript search API that can be used anywhere on your site. Pagefind also provides a prebuilt UI that can be used with no configuration. (You can see the prebuilt UI at the top of this page.)"
 	},
 	"markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM": {
-		"original": "Another paragraph to test translations. With punctuation and stuff<sup>TM</sup>.",
-		"value": "Another paragraph to test translations. With punctuation and stuff<sup>TM</sup>."
+		"original": "Another~ paragraph to test translations. With punctuation and stuff<sup>TM</sup>.",
+		"value": "Another~ paragraph to test translations. With punctuation and stuff<sup>TM</sup>."
 	},
 	"markdown:Blog-with-pagination-and-tags": {
 		"original": "<a href=\"/blog/paginated-collection/\">Blog with pagination &amp; tags</a>",
@@ -160,8 +160,8 @@
 		"value": "<a href=\"/blog/tailwind/\">Tailwind</a>"
 	},
 	"markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box": {
-		"original": "The Astro CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:",
-		"value": "The Astro CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:"
+		"original": "The Astro* CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:",
+		"value": "The Astro* CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:"
 	},
 	"markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible-Pagefinds-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself-For-most-sites-this-will-be-closer-to-100kB": {
 		"original": "The goal of Pagefind is that websites with tens of thousands of pages should be searchable by someone in their browser, while consuming as little bandwidth as possible. <u>Pagefind’s</u> search <sup>index</sup> is <sub>split</sub> into chunks, so that searching in the browser <em>only</em> ever <s>needs</s> to load a small subset of the search index. Pagefind can run a full-text search on a 10,000 page site with a total network payload under 300kB, including the Pagefind library itself. For most sites, this will be closer to 100kB.",

@@ -98,7 +98,7 @@ _inputs:
         A flexible git-backed CMS that specialises in editing markdown and data
         files.
   markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test:
-    label: A starting point for<br>developers looking...
+    label: A (starting) point for<br>developers looki...
     hidden: false
     type: markdown
     options:
@@ -115,14 +115,14 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
-      0point%20for,A%20sub%20to%20test.)"
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20(starting)\
+      %20point%20for,A%20sub%20to%20test.)"
     context:
       open: false
       title: Untranslated Text
       icon: translate
       content: >
-        A starting point for<br>developers looking to build a website with
+        A (starting) point for<br>developers looking to build a website with
         Astro, using<br>Bookshop components in CloudCannon. Create your own
         copy, and start creating your own components to use in CloudCannon’s CMS
         <sub>A sub to test</sub>.
@@ -147,7 +147,7 @@ _inputs:
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Accessibility%\
       20controls)"
   markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM:
-    label: Another paragraph to test translations. Wi...
+    label: Another~ paragraph to test translations. W...
     hidden: false
     type: markdown
     options:
@@ -164,14 +164,14 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=Another%20para\
-      graph%20to%20test,With%20punctuation%20and%20stuffTM.)"
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=Another~%20par\
+      agraph%20to%20test,With%20punctuation%20and%20stuffTM.)"
     context:
       open: false
       title: Untranslated Text
       icon: translate
       content: >
-        Another paragraph to test translations. With punctuation and
+        Another~ paragraph to test translations. With punctuation and
         stuff<sup>TM</sup>.
   markdown:Blog-with-pagination-and-tags:
     label: Blog with pagination & tags
@@ -421,7 +421,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Tailwind)"
   markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box:
-    label: The Astro CloudCannon Starter's aim is to ...
+    label: The Astro\* CloudCannon Starter's aim is t...
     hidden: false
     type: markdown
     options:
@@ -438,16 +438,16 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Astro%20\
-      CloudCannon%20Starter's,out%20of%20the%20box%3A)"
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Astro%5C\
+      *%20CloudCannon%20Starter's,out%20of%20the%20box%3A)"
     context:
       open: false
       title: Untranslated Text
       icon: translate
       content: >
-        The Astro CloudCannon Starter's aim is to get developers building their
-        own site quickly in CloudCannon. This template is trying to strike a
-        balance between minimal, and easy-to-delete boiler plate, while
+        The Astro\* CloudCannon Starter's aim is to get developers building
+        their own site quickly in CloudCannon. This template is trying to strike
+        a balance between minimal, and easy-to-delete boiler plate, while
         providing some commonly used features out of the box:
   markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them:
     label: Visual editing allows you to preview your ...
