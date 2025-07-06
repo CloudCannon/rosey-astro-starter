@@ -14,18 +14,19 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/blog/tailwind.yaml)"
           inputs:
+            - Pagefind-Search
+            - SEO-Controls
+            - Tailwind
             - building
-            - markdown:Delete-your-tailwindconfigmjs-file
-            - markdown:If-youd-like-to-remove-Tailwind
-            - markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs
-            - markdown:Run-the-following-command-in-the-root-of-the-site
-            - markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want
-            - markdown:npm-uninstall-tailwindcss-astrojs/tailwind
-            - pagefind-search
+            - markdown:Delete-your-tailwind.config.mjs-file.
+            - markdown:If-you'd-like-to-remove-Tailwind%3A
+            - markdown:Remove-mentions-of-Tailwind-from-your-astro.config.mjs
+            - markdown:Run-the-following-command-in-the-root-of-the-site%3A
+            - markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML.-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want.
+            - markdown:npm-uninstall-tailwindcss-%40astrojstailwind
             - recent-posts
             - search
             - seo
-            - seo-controls
             - styling
             - tailwind
             - words
@@ -35,6 +36,29 @@ _inputs:
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
             /staging/./rosey/translations/fr-FR/blog/tailwind.yaml)"
           inputs: []
+  Pagefind-Search:
+    label: Pagefind Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Pagefind%2\
+      0Search)"
+  SEO-Controls:
+    label: SEO Controls
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=SEO%20Cont\
+      rols)"
+  Tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Tailwind)"
   building:
     label: Building
     hidden: false
@@ -42,7 +66,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Building)"
-  markdown:Delete-your-tailwindconfigmjs-file:
+  markdown:Delete-your-tailwind.config.mjs-file.:
     label: Delete your tailwind.config.mjs file.
     hidden: false
     type: markdown
@@ -62,7 +86,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
       our%20tailwind.config.mjs%20file.)"
-  markdown:If-youd-like-to-remove-Tailwind:
+  markdown:If-you'd-like-to-remove-Tailwind%3A:
     label: "If you’d like to remove Tailwind:"
     hidden: false
     type: markdown
@@ -82,7 +106,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
       2%80%99d%20like%20to%20remove%20Tailwind%3A)"
-  markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs:
+  markdown:Remove-mentions-of-Tailwind-from-your-astro.config.mjs:
     label: Remove mentions of Tailwind from your astr...
     hidden: false
     type: markdown
@@ -108,7 +132,7 @@ _inputs:
       icon: translate
       content: |
         Remove mentions of Tailwind from your `astro.config.mjs`
-  markdown:Run-the-following-command-in-the-root-of-the-site:
+  markdown:Run-the-following-command-in-the-root-of-the-site%3A:
     label: Run the following command in the root of t...
     hidden: false
     type: markdown
@@ -134,7 +158,7 @@ _inputs:
       icon: translate
       content: |
         Run the following command in the root of the site:
-  markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want:
+  markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML.-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want.:
     label: Use Tailwind to style your HTML, allowing ...
     hidden: false
     type: markdown
@@ -163,7 +187,7 @@ _inputs:
         without leaving your HTML. This can be used in combination with normal
         CSS and SCSS styling, leaving you to add styles to your site however you
         want.
-  markdown:npm-uninstall-tailwindcss-astrojs/tailwind:
+  markdown:npm-uninstall-tailwindcss-%40astrojstailwind:
     label: npm uninstall tailwindcss @astrojs/tailwin...
     hidden: false
     type: markdown
@@ -189,14 +213,6 @@ _inputs:
       icon: translate
       content: |
         `npm uninstall tailwindcss @astrojs/tailwind`
-  pagefind-search:
-    label: Pagefind Search
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Pagefind%2\
-      0Search)"
   recent-posts:
     label: Recent Posts
     hidden: false
@@ -219,14 +235,6 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Seo)"
-  seo-controls:
-    label: SEO Controls
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=SEO%20Cont\
-      rols)"
   styling:
     label: Styling
     hidden: false
@@ -249,18 +257,19 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=words)"
 urlTranslation: blog/tailwind/index.html
+Pagefind-Search: ""
+SEO-Controls: ""
+Tailwind: ""
 building: ""
-markdown:Delete-your-tailwindconfigmjs-file: ""
-markdown:If-youd-like-to-remove-Tailwind: ""
-markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs: ""
-markdown:Run-the-following-command-in-the-root-of-the-site: ""
-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want: ""
-markdown:npm-uninstall-tailwindcss-astrojs/tailwind: ""
-pagefind-search: ""
+markdown:Delete-your-tailwind.config.mjs-file.: ""
+markdown:If-you'd-like-to-remove-Tailwind%3A: ""
+markdown:Remove-mentions-of-Tailwind-from-your-astro.config.mjs: ""
+markdown:Run-the-following-command-in-the-root-of-the-site%3A: ""
+markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML.-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want.: ""
+markdown:npm-uninstall-tailwindcss-%40astrojstailwind: ""
 recent-posts: ""
 search: ""
 seo: ""
-seo-controls: ""
 styling: ""
 tailwind: ""
 words: ""
