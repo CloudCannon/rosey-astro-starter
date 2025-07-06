@@ -20,13 +20,13 @@ hero_block:
     text_color: '#333232'
   subheading:
     text_content: >-
-      A starting point for <br> developers looking to build a website with
+      A (starting) point for <br> developers looking to build a website with
       Astro, using <br>Bookshop components in CloudCannon. Create your own copy,
       and start creating your own components to use in CloudCannon’s CMS <sub>A
       sub to test</sub>.
 
 
-      Another paragraph to test translations. With punctuation and
+      Another~ paragraph to test translations. With punctuation and
       stuff<sup>TM</sup>.
     color: '#393939'
     text_color: '#333232'
@@ -59,7 +59,7 @@ content_blocks:
       text_color: '#333232'
     text:
       text_content: >-
-        The Astro CloudCannon Starter's aim is to get developers building their
+        The Astro* CloudCannon Starter's aim is to get developers building their
         own site quickly in CloudCannon. This template is trying to strike a
         balance between minimal, and easy-to-delete boiler plate, while
         providing some commonly used features out of the box:
