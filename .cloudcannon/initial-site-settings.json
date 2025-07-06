@@ -7,7 +7,7 @@
     "output_path": "dist",
     "preserved_paths": "",
     "preserveOutput": false,
-    "includeGit": true,
+    "includeGit": false,
     "environment_variables": [],
     "node_version": "20"
   }
