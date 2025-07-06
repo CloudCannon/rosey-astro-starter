@@ -1,7 +1,7 @@
 import { getPageString, getYamlFileName } from "./file-helpers.mjs";
 import {
   formatTextForInputComments,
-  removeSuperAndSubFromText,
+  removeFormattingElementsFromText,
 } from "./text-formatters.mjs";
 import { htmlToMarkdown } from "./html-to-markdown.mjs";
 
@@ -12,7 +12,7 @@ function initDefaultInputs(
   page,
   locale,
   seeOnPageCommentSettings,
-  githubCommentSettings
+  gitHistoryCommentSettings
 ) {
   // Create the inputs obj if there is none
   if (!data._inputs) {
@@ -25,19 +25,19 @@ function initDefaultInputs(
     const pageFilePath = getYamlFileName(page);
     const seeOnPageCommentEnabled = seeOnPageCommentSettings.enabled;
     const baseUrl = seeOnPageCommentSettings.base_url;
-    const githubCommentEnabled = githubCommentSettings.enabled;
-    const githubRepo = githubCommentSettings.repo_url;
-    const githubBranchName = githubCommentSettings.branch_name;
-    const githubCommentText = githubCommentSettings.comment_text;
+    const gitHistoryCommentEnabled = gitHistoryCommentSettings.enabled;
+    const githubRepo = gitHistoryCommentSettings.repo_url;
+    const githubBranchName = gitHistoryCommentSettings.branch_name;
+    const gitHistoryCommentText = gitHistoryCommentSettings.comment_text;
 
     let inputComment = "";
     if (seeOnPageCommentEnabled) {
       inputComment += `[${pageString}](${baseUrl}${pageString})`;
     }
-    if (githubCommentEnabled) {
+    if (gitHistoryCommentEnabled) {
       inputComment += `${
         inputComment.length > 1 ? "  //  " : ""
-      }[${githubCommentText}](${githubRepo}/commits/${githubBranchName}/${translationFilesDirPath}/${locale}/${pageFilePath})`;
+      }[${gitHistoryCommentText}](${githubRepo}/commits/${githubBranchName}/${translationFilesDirPath}/${locale}/${pageFilePath})`;
     }
 
     data._inputs.$ = {
@@ -110,7 +110,7 @@ async function getInputConfig(
     : {};
 
   const locationString = seeOnPageCommentEnabled
-    ? generateLocationString(
+    ? generateHighlightLinkComment(
         originalPhraseTidiedForComment,
         page,
         baseUrl,
@@ -147,83 +147,83 @@ async function getInputConfig(
   return inputConfig;
 }
 
-function generateLocationString(
+function generateHighlightLinkComment(
   originalPhrase,
   page,
   baseUrl,
   seeOnPageCommentText
 ) {
-  // Limit each phrase to 3 words
-  const urlHighlighterWordLength = 3;
-  const originalPhraseArray = originalPhrase.split(/[\n]+/);
-  // Get the first and last line of the markdown so we only have complete lines in the highlight url
-  const firstPhrase = removeSuperAndSubFromText(originalPhraseArray[0]);
-  const lastPhrase = removeSuperAndSubFromText(
-    originalPhraseArray[originalPhraseArray.length - 1]
-  );
-  const endHighlightArrayAll = lastPhrase.split(" ");
+  let highlightStringToUse = "";
+  // Limit to 𝑥 words at each end separated by a comma
+  const urlHighlighterWordLength = 4;
+  const pageString = getPageString(page);
+  const startOfHighlightUrl = `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=`;
 
-  const startHighlightArrayWithPunctuation = firstPhrase
+  // Remove things that will ruin the highlight string like formatting elements, asterisks, and backticks
+  const originalPhraseNoFormattingElements =
+    removeFormattingElementsFromText(originalPhrase);
+  const originalPhraseNoEscapedAsterisks =
+    originalPhraseNoFormattingElements.replaceAll("\\*", "*");
+  const originalPhraseNoBackTicks = originalPhraseNoEscapedAsterisks.replaceAll(
+    "`",
+    ""
+  );
+  // If original phrase is less than 𝑥*2 words we don't use the comma syntax
+  // Get the first and last line of the markdown so we only have complete lines in the highlight url
+  const originalPhraseArray = originalPhraseNoBackTicks.split(/[\n]+/);
+  // Join the original (which may be separate lines) into one string and split to check how many words
+  const originalPhraseOneLineArray = originalPhraseArray.join(" ").split(" ");
+
+  // Return early here if length of the phrase is less than urlHighlighterWordLength * 2
+  if (originalPhraseOneLineArray.length < urlHighlighterWordLength * 2) {
+    const encodedOriginalPhrase = customEncode(
+      originalPhraseOneLineArray.join(" ")
+    );
+
+    highlightStringToUse = `${startOfHighlightUrl}${encodedOriginalPhrase})`;
+    return highlightStringToUse;
+  }
+
+  // Otherwise we'll use the first 𝑥 and last 𝑥 words from the phrase
+  // up to 𝑥 at the start and end and separate them by a comma
+  const firstPhrase = originalPhraseArray[0];
+  const lastPhrase = originalPhraseArray[originalPhraseArray.length - 1];
+
+  // Add the first 𝑥 words of the translation to an array
+  const startArrayInclPunctuation = firstPhrase
     .split(" ")
     .slice(0, urlHighlighterWordLength);
-
-  const endHighlightArrayWithPunctuation = endHighlightArrayAll.slice(
-    endHighlightArrayAll.length - urlHighlighterWordLength,
-    endHighlightArrayAll.length
+  const endHighlightArrayUnlimited = lastPhrase.split(" ");
+  const endHighlightArrayInclPunctuation = endHighlightArrayUnlimited.slice(
+    endHighlightArrayUnlimited.length - urlHighlighterWordLength,
+    endHighlightArrayUnlimited.length
   );
 
-  // Look at these arrays for any words with a special character after
-  // That is our last word in the start or end highlight
-  // The phrase stops there in an attempt to still capture the block of text
+  // Join, trim and encode the resulting phrases
+  const startHighlightString = startArrayInclPunctuation.join(" ").trim();
+  const endHighlightString = endHighlightArrayInclPunctuation.join(" ").trim();
+  const encodedStartHighlightString = customEncode(startHighlightString);
+  const encodedEndHighlightString = customEncode(endHighlightString);
 
-  const startHighlightArrayWithoutPunctuation = [];
-  const endHighlightArrayWithoutPunctuation = [];
-  const regexToMatch = /[&#,+()$~%.":*?<>{}_]/gm;
+  // Don't include the comma if the end or start phrase is empty
+  // Also set the link warning to true to display a warning to users that the highlighting might be unreliable
+  highlightStringToUse = `${startOfHighlightUrl}${encodedStartHighlightString},${encodedEndHighlightString})`;
 
-  for (let i = 0; i < startHighlightArrayWithPunctuation.length; i++) {
-    const word = startHighlightArrayWithPunctuation[i];
-    const foundMatches = word.match(regexToMatch);
-    if (foundMatches && foundMatches.length > 0) {
-      startHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(regexToMatch, "")
-      );
-      break;
-    }
-    startHighlightArrayWithoutPunctuation.push(word);
+  return highlightStringToUse;
+}
+
+function customEncode(text) {
+  if (!text) {
+    return "";
   }
 
-  for (let j = 0; j < endHighlightArrayWithPunctuation.length; j++) {
-    const word = endHighlightArrayWithPunctuation[j];
-    const foundMatches = word.match(regexToMatch);
-    if (foundMatches && foundMatches.length > 0) {
-      endHighlightArrayWithoutPunctuation.push(
-        word.replaceAll(regexToMatch, "")
-      );
-      break;
-    }
-    endHighlightArrayWithoutPunctuation.push(word);
-  }
+  const encodeURIText = encodeURIComponent(text);
+  const escapedCharsEncoded = encodeURIText.replaceAll("-", "%2D");
 
-  const originalPhraseArrayByWord = originalPhraseArray.join(" ").split(" ");
-
-  // Trim and encode the resulting phrase
-  const startHighlight = startHighlightArrayWithoutPunctuation.join(" ").trim();
-  const endHighlight = endHighlightArrayWithoutPunctuation.join(" ").trim();
-
-  const encodedStartHighlight = encodeURI(startHighlight);
-  const encodedEndHighlight = encodeURI(endHighlight);
-  const encodedOriginalPhrase = encodeURI(originalPhraseArray.join(" "));
-
-  const pageString = getPageString(page);
-  // Look to see if original phrase is 5 words or shorter
-  // if it is fallback to the encoded original phrase for the highlight link
-  return originalPhraseArrayByWord.length > urlHighlighterWordLength * 2
-    ? `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=${encodedStartHighlight},${encodedEndHighlight})`
-    : `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=${encodedOriginalPhrase})`;
+  return escapedCharsEncoded;
 }
 
 // Namespace pages input set up
-
 function initNamespacePageInputs(data, locale) {
   // Create the inputs obj if there is none
   if (!data._inputs) {

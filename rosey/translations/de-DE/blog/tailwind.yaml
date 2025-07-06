@@ -43,7 +43,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Building)"
   markdown:Delete-your-tailwindconfigmjs-file:
-    label: Delete your `tailwind.config.mjs` file.
+    label: Delete your tailwind.config.mjs file.
     hidden: false
     type: markdown
     options:
@@ -61,7 +61,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
-      our%20%60tailwind.config.mjs%60%20file.)"
+      our%20tailwind.config.mjs%20file.)"
   markdown:If-youd-like-to-remove-Tailwind:
     label: "If you’d like to remove Tailwind:"
     hidden: false
@@ -81,9 +81,9 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
-      2%80%99d%20like%20to%20remove%20Tailwind:)"
+      2%80%99d%20like%20to%20remove%20Tailwind%3A)"
   markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs:
-    label: Remove mentions of Tailwind from your `ast...
+    label: Remove mentions of Tailwind from your astr...
     hidden: false
     type: markdown
     options:
@@ -101,7 +101,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Remove%20m\
-      entions%20of,from%20your%20%60astroconfigmjs%60)"
+      entions%20of%20Tailwind%20from%20your%20astro.config.mjs)"
     context:
       open: false
       title: Untranslated Text
@@ -127,7 +127,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Run%20the%\
-      20following,of%20the%20site)"
+      20following%20command,root%20of%20the%20site%3A)"
     context:
       open: false
       title: Untranslated Text
@@ -153,7 +153,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Use%20Tail\
-      wind%20to,however%20you%20want)"
+      wind%20to%20style,site%20however%20you%20want.)"
     context:
       open: false
       title: Untranslated Text
@@ -164,7 +164,7 @@ _inputs:
         CSS and SCSS styling, leaving you to add styles to your site however you
         want.
   markdown:npm-uninstall-tailwindcss-astrojs/tailwind:
-    label: "`npm uninstall tailwindcss @astrojs/tailwi..."
+    label: npm uninstall tailwindcss @astrojs/tailwin...
     hidden: false
     type: markdown
     options:
@@ -181,8 +181,8 @@ _inputs:
       removeformat: true
       copyformatting: true
     comment: "[See in
-      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=%60npm%20u\
-      ninstall%20tailwindcss%20@astrojs/tailwind%60)"
+      context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=npm%20unin\
+      stall%20tailwindcss%20%40astrojs%2Ftailwind)"
     context:
       open: false
       title: Untranslated Text

@@ -208,7 +208,7 @@
       "total": 1
     },
     "markdown:A-starting-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannons-CMS-A-sub-to-test": {
-      "original": "A starting point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.",
+      "original": "A (starting) point for<br>developers looking to build a website with Astro, using<br>Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS <sub>A sub to test</sub>.",
       "value": null,
       "pages": {
         "index.html": 1
@@ -232,7 +232,7 @@
       "total": 1
     },
     "markdown:Another-paragraph-to-test-translations-With-punctuation-and-stuffTM": {
-      "original": "Another paragraph to test translations. With punctuation and stuff<sup>TM</sup>.",
+      "original": "Another~ paragraph to test translations. With punctuation and stuff<sup>TM</sup>.",
       "value": null,
       "pages": {
         "index.html": 1
@@ -408,7 +408,7 @@
       "total": 1
     },
     "markdown:The-Astro-CloudCannon-Starters-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box": {
-      "original": "The Astro CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:",
+      "original": "The Astro* CloudCannon Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box:",
       "value": null,
       "pages": {
         "index.html": 1

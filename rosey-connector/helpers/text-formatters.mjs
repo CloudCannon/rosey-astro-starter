@@ -6,26 +6,31 @@ function removeLinksFromMarkdown(markdownText) {
   }
   return markdownText.replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, "$1");
 }
-function removeSuperAndSubFromText(text) {
+// Used for removing elements from text for links.
+// Spaces have already been worked out whether to be preserved around these eles by htmlToMarkdown
+// hr and br are the exception where they will always represent a new word and therefore a space
+function removeFormattingElementsFromText(text) {
   return text
     .replaceAll("<sup>", "")
     .replaceAll("</sup>", "")
     .replaceAll("<sub>", "")
-    .replaceAll("</sub>", "");
+    .replaceAll("</sub>", "")
+    .replaceAll("<br>", " ")
+    .replaceAll("<hr>", " ");
 }
 function removeAllSpecCharsFromText(text) {
   if (!text) {
     return "";
   }
-  const removedSupSub = removeSuperAndSubFromText(text);
+  const removedSupSub = removeFormattingElementsFromText(text);
   return removedSupSub.replaceAll(/[&\/\\#+()$~.%'!:"*<>{}_]/gm, "");
 }
-function removeNonPuncCharsFromText(text) {
+function removeNonPuncCharsForLabels(text) {
   if (!text) {
     return "";
   }
   // We shouldn't remove any chars here that will help format context comments
-  return text.replaceAll(/[#%{}_]/gm, "");
+  return text.replaceAll(/[#%`{}_]/gm, "");
 }
 function formatTextForIds(text) {
   if (!text) {
@@ -42,8 +47,9 @@ function formatTextForInputComments(text) {
     return "";
   }
   const trimmedWhiteSpace = text.trim();
-  const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
-  const cleanedText = removeNonPuncCharsFromText(noLinks);
+  const escapedAsterisks = trimmedWhiteSpace.replaceAll("\\*", "*");
+  const noLinks = removeLinksFromMarkdown(escapedAsterisks);
+  const cleanedText = removeNonPuncCharsForLabels(noLinks);
 
   return cleanedText;
 }
@@ -58,5 +64,5 @@ function formatAndSlugifyText(text) {
 export {
   formatAndSlugifyText,
   formatTextForInputComments,
-  removeSuperAndSubFromText,
+  removeFormattingElementsFromText,
 };
