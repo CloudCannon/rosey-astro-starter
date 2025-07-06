@@ -110,7 +110,7 @@ async function getInputConfig(
     : {};
 
   const locationString = seeOnPageCommentEnabled
-    ? generateLocationString(
+    ? generateLinkComment(
         originalPhraseTidiedForComment,
         page,
         baseUrl,
@@ -122,20 +122,13 @@ async function getInputConfig(
     ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
     : originalPhraseTidiedForComment;
 
-  // If not enough words in the link display a warning as part of the comment
-  const warningComment =
-    "Warning: If highlighting is unsuccessful, use the CMD+F/CTRL+F shortcut to locate the phrase manually.";
-  let formattedComment = `${locationString.highlightStringToUse}\n${
-    locationString.warning ? warningComment : ""
-  }`;
-
   const inputConfig = isLabelConcat
     ? {
         label: formattedLabel,
         hidden: untranslatedPhrase === "",
         type: inputType,
         options: options,
-        comment: formattedComment,
+        comment: locationString,
         context: {
           open: false,
           title: "Untranslated Text",
@@ -148,66 +141,45 @@ async function getInputConfig(
         hidden: untranslatedPhrase === "",
         type: inputType,
         options: options,
-        comment: formattedComment,
+        comment: locationString,
       };
 
   return inputConfig;
 }
 
-function generateLocationString(
+function generateLinkComment(
   originalPhrase,
   page,
   baseUrl,
   seeOnPageCommentText
 ) {
   let highlightStringToUse = "";
-  let warning = false;
   // Limit to 𝑥 words at each end separated by a comma
-  // TODO:
-  // Add these magic numbers to config file and update readme
-  // Add the ability to turn off these warnings
-  const urlHighlighterWordLength = 3;
-  const wordWarningThreshold = 3;
-  const commaSeparatedWordWarningThreshold = 1;
+  const urlHighlighterWordLength = 4;
   const pageString = getPageString(page);
   const startOfHighlightUrl = `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=`;
-  // We have to handle unsupported special chars while trying get as many words without them as we can
-  const illegalChars = /[&#,\-/+)($~%".:*?<>{}_]/gm;
-  // TODO: Test if we actually need to exclude
-  // "
-  // .
-  // ' seems to work all good
 
   // If original phrase is less than 𝑥*2 words we don't use the comma syntax
   // Get the first and last line of the markdown so we only have complete lines in the highlight url
-  const originalPhraseArray = originalPhrase.split(/[\n]+/);
+  const originalPhraseNoSubNoSup = removeSuperAndSubFromText(originalPhrase);
+  const originalPhraseArray = originalPhraseNoSubNoSup.split(/[\n]+/);
   // Join the original (which may be separate lines) into one string and split to check how many words
   const originalPhraseOneLineArray = originalPhraseArray.join(" ").split(" ");
 
   // Return early here if length of the phrase is less than urlHighlighterWordLength * 2
   if (originalPhraseOneLineArray.length < urlHighlighterWordLength * 2) {
-    const originalPhraseOneLineArrayNoPunc = filterPunctuationForLocationString(
-      originalPhraseOneLineArray,
-      illegalChars
-    );
-
-    const encodedOriginalPhrase = encodeURIComponent(
+    const encodedOriginalPhrase = customEncode(
       originalPhraseOneLineArray.join(" ")
     );
-    if (originalPhraseOneLineArrayNoPunc.length < wordWarningThreshold) {
-      warning = true;
-    }
 
     highlightStringToUse = `${startOfHighlightUrl}${encodedOriginalPhrase})`;
-    return { highlightStringToUse: highlightStringToUse, warning: warning };
+    return highlightStringToUse;
   }
 
   // Otherwise we'll use the first 𝑥 and last 𝑥 words from the phrase
   // up to 𝑥 at the start and end and separate them by a comma
-  const firstPhrase = removeSuperAndSubFromText(originalPhraseArray[0]);
-  const lastPhrase = removeSuperAndSubFromText(
-    originalPhraseArray[originalPhraseArray.length - 1]
-  );
+  const firstPhrase = originalPhraseArray[0];
+  const lastPhrase = originalPhraseArray[originalPhraseArray.length - 1];
 
   // Add the first 𝑥 words of the translation to an array
   const startArrayInclPunctuation = firstPhrase
@@ -219,90 +191,28 @@ function generateLocationString(
     endHighlightArrayUnlimited.length
   );
 
-  // Look at the start and end arrays for any word with a special character in it
-  // The phrase stops there in an attempt to still capture the block of text
-  const startHighlightArrayNoPunctuation = filterPunctuationForLocationString(
-    startArrayInclPunctuation,
-    illegalChars
-  );
-  const endHighlightArrayNoPunctuation = filterPunctuationForLocationString(
-    endHighlightArrayInclPunctuation,
-    illegalChars
-  );
-
-  // Display a warning if the combined word count is less than the warning threshold
-  if (
-    startArrayInclPunctuation.length + endHighlightArrayNoPunctuation.length <
-    wordWarningThreshold
-  ) {
-    warning = true;
-  }
-
-  // Display a warning if the word count either side of the comma are less than the warning threshold
-  if (
-    startHighlightArrayNoPunctuation.length <
-      commaSeparatedWordWarningThreshold ||
-    endHighlightArrayNoPunctuation.length < commaSeparatedWordWarningThreshold
-  ) {
-    warning = true;
-  }
-
   // Join, trim and encode the resulting phrases
-  const startHighlightString = startHighlightArrayNoPunctuation
-    .join(" ")
-    .trim();
-  const endHighlightString = endHighlightArrayNoPunctuation.join(" ").trim();
-  const encodedStartHighlightString = encodeURI(startHighlightString);
-  const encodedEndHighlightString = encodeURI(endHighlightString);
+  const startHighlightString = startArrayInclPunctuation.join(" ").trim();
+  const endHighlightString = endHighlightArrayInclPunctuation.join(" ").trim();
+  const encodedStartHighlightString = customEncode(startHighlightString);
+  const encodedEndHighlightString = customEncode(endHighlightString);
 
   // Don't include the comma if the end or start phrase is empty
   // Also set the link warning to true to display a warning to users that the highlighting might be unreliable
-  if (startHighlightString?.length > 0 && endHighlightString?.length > 0) {
-    highlightStringToUse = `${startOfHighlightUrl}${encodedStartHighlightString},${encodedEndHighlightString})`;
-  } else {
-    highlightStringToUse = `${startOfHighlightUrl}${encodedStartHighlightString}${encodedEndHighlightString})`;
-    warning = true;
-  }
+  highlightStringToUse = `${startOfHighlightUrl}${encodedStartHighlightString},${encodedEndHighlightString})`;
 
-  return { highlightStringToUse: highlightStringToUse, warning: warning };
+  return highlightStringToUse;
 }
 
-function filterPunctuationForLocationString(
-  arrayInclPunctuation,
-  illegalChars
-) {
-  const arrayNoPunctuation = [];
-  for (const [index, word] of arrayInclPunctuation.entries()) {
-    // Look for special chars in a word which will ruin the highlight url
-    const foundMatchAtIndex = word.search(illegalChars);
-    const wordIsFirst = index === 0;
-    const indexOfSpecialChar = foundMatchAtIndex > -1 ? foundMatchAtIndex : 0;
-
-    // If it is the first word:
-    // If we find a special character in the word don't push anything, but also don't break the loop
-    // If the word is first in the string we can safely attempt to capture the rest of the phrase still
-    if (wordIsFirst && !indexOfSpecialChar) {
-      arrayNoPunctuation.push(word);
-    }
-
-    // If not the first word:
-    // If we find a special character in a word, we want to include the word up until the *first* special character
-    // To do this we need to loop through the word and find the index of the first special char
-    // Then we split the word so that we can push the word up until that point
-    // This will handle words with a hyphen or slash in the middle, and comma's/periods at the end of a word
-    // After pushing the word, break (we don't know it's the last word)
-
-    if (!wordIsFirst) {
-      if (indexOfSpecialChar) {
-        const wordUntilSpecChar = word.slice(0, indexOfSpecialChar);
-        arrayNoPunctuation.push(wordUntilSpecChar);
-        break;
-      } else {
-        arrayNoPunctuation.push(word);
-      }
-    }
+function customEncode(text) {
+  if (!text) {
+    return "";
   }
-  return arrayNoPunctuation;
+
+  const encodeURIText = encodeURIComponent(text);
+  const escapedCharsEncoded = encodeURIText.replaceAll("-", "%2D");
+
+  return escapedCharsEncoded;
 }
 
 // Namespace pages input set up
