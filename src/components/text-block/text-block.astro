@@ -3,7 +3,7 @@ import markdownit from "markdown-it";
 const md = markdownit({ html: true });
 import Markdown from "../utility/markdown.astro";
 import { findComponentPaddingMultiplier } from "src/assets/js/findComponentPaddingMultiplier";
-import { generateRoseyId } from "rosey-connector/helpers/generate-rosey-ids.mjs";
+import { generateRoseyId } from "rosey-connector/helpers/text-formatters.mjs";
 
 interface Props {
   content_blocks_length: number;

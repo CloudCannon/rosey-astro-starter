@@ -1,7 +1,7 @@
 import { getPageString, getYamlFileName } from "./file-helpers.mjs";
 import {
   formatTextForInputComments,
-  removeFormattingElementsFromText,
+  removeFormattingElementsForHiglightUrls,
 } from "./text-formatters.mjs";
 import { htmlToMarkdown } from "./html-to-markdown.mjs";
 
@@ -161,7 +161,7 @@ function generateHighlightLinkComment(
 
   // Remove things that will ruin the highlight string like formatting elements, asterisks, and backticks
   const originalPhraseNoFormattingElements =
-    removeFormattingElementsFromText(originalPhrase);
+    removeFormattingElementsForHiglightUrls(originalPhrase);
   const originalPhraseNoEscapedAsterisks =
     originalPhraseNoFormattingElements.replaceAll("\\*", "*");
   const originalPhraseNoBackTicks = originalPhraseNoEscapedAsterisks.replaceAll(

@@ -1,15 +1,9 @@
 import slugify from "slugify";
 
-function removeLinksFromMarkdown(markdownText) {
-  if (!markdownText) {
-    return "";
-  }
-  return markdownText.replaceAll(/(?:__[*#])|\[(.*?)\]\(.*?\)/gm, "$1");
-}
 // Used for removing elements from text for links.
 // Spaces have already been worked out whether to be preserved around these eles by htmlToMarkdown
 // hr and br are the exception where they will always represent a new word and therefore a space
-function removeFormattingElementsFromText(text) {
+function removeFormattingElementsForHiglightUrls(text) {
   return text
     .replaceAll("<sup>", "")
     .replaceAll("</sup>", "")
@@ -18,51 +12,33 @@ function removeFormattingElementsFromText(text) {
     .replaceAll("<br>", " ")
     .replaceAll("<hr>", " ");
 }
-function removeAllSpecCharsFromText(text) {
-  if (!text) {
-    return "";
-  }
-  const removedSupSub = removeFormattingElementsFromText(text);
-  return removedSupSub.replaceAll(/[&\/\\#+()$~.%'!:"*<>{}_]/gm, "");
-}
-function removeNonPuncCharsForLabels(text) {
-  if (!text) {
-    return "";
-  }
-  // We shouldn't remove any chars here that will help format context comments
-  return text.replaceAll(/[#%`{}_]/gm, "");
-}
-function formatTextForIds(text) {
-  if (!text) {
-    return "";
-  }
-  const trimmedWhiteSpace = text.trim();
-  const noLinks = removeLinksFromMarkdown(trimmedWhiteSpace);
-  const cleanedText = removeAllSpecCharsFromText(noLinks);
 
-  return cleanedText;
-}
 function formatTextForInputComments(text) {
   if (!text) {
     return "";
   }
   const trimmedWhiteSpace = text.trim();
   const escapedAsterisks = trimmedWhiteSpace.replaceAll("\\*", "*");
-  const noLinks = removeLinksFromMarkdown(escapedAsterisks);
-  const cleanedText = removeNonPuncCharsForLabels(noLinks);
-
-  return cleanedText;
+  const noLinks = escapedAsterisks.replaceAll(
+    /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
+    "$1"
+  );
+  const removedNonPunctuationSpecChars = noLinks.replaceAll(/[#%`{}_]/gm, "");
+  return removedNonPunctuationSpecChars;
 }
-function formatAndSlugifyText(text) {
+function generateRoseyId(text) {
   if (!text) {
     return "";
   }
-  const formattedText = formatTextForIds(text).toLowerCase();
-  return slugify(formattedText);
+  // const formattedText = formatTextForIds(text).toLowerCase();
+  const slugifiedText = slugify(text);
+  // Dont remove special chars, just encode them
+  const encodedSlug = encodeURIComponent(slugifiedText);
+  return encodedSlug;
 }
 
 export {
-  formatAndSlugifyText,
+  generateRoseyId,
   formatTextForInputComments,
-  removeFormattingElementsFromText,
+  removeFormattingElementsForHiglightUrls,
 };
