@@ -16,11 +16,11 @@ _inputs:
             - SEO-Controls
             - Tailwind
             - building
-            - markdown:A-new-paragraph.
-            - markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site.-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration.-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page.)
-            - markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer.-The-search-bar-is-located-at-the-top-of-the-blog-index-page.
-            - markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure.
-            - markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible.-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index.-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself.-For-most-sites-this-will-be-closer-to-100kB.
+            - markdown:A-new-paragraph%2E
+            - markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site%2E-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration%2E-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page%2E)
+            - markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer%2E-The-search-bar-is-located-at-the-top-of-the-blog-index-page%2E
+            - markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E
+            - markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible%2E-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index%2E-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself%2E-For-most-sites-this-will-be-closer-to-100kB%2E
             - recent-posts
             - search
             - seo
@@ -62,7 +62,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/search/#:~:text=Building)"
-  markdown:A-new-paragraph.:
+  markdown:A-new-paragraph%2E:
     label: A **new** paragraph.
     hidden: false
     type: markdown
@@ -82,7 +82,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/search/#:~:text=A%20**new**%\
       20paragraph.)"
-  markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site.-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration.-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page.):
+  markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site%2E-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration%2E-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page%2E):
     label: After indexing, Pagefind adds a static sea...
     hidden: false
     type: markdown
@@ -111,7 +111,7 @@ _inputs:
         files, which exposes a JavaScript search API that can be used anywhere
         on your site. Pagefind also provides a prebuilt UI that can be used with
         no configuration. (You can see the prebuilt UI at the top of this page.)
-  markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer.-The-search-bar-is-located-at-the-top-of-the-blog-index-page.:
+  markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer%2E-The-search-bar-is-located-at-the-top-of-the-blog-index-page%2E:
     label: On this template, the search has been scop...
     hidden: false
     type: markdown
@@ -140,7 +140,7 @@ _inputs:
         content of blog posts, to avoid showing results on the homepage, blog
         index page, header and footer. The search bar is located at the top of
         the blog index page.
-  markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure.:
+  markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E:
     label: Pagefind sup! is a sup fully static search...
     hidden: false
     type: markdown
@@ -168,7 +168,7 @@ _inputs:
         Pagefind sup! is a sup fully static search library that aims to perform
         well on large sites, while using as little of your users’ bandwidth as
         possible, and without hosting any infrastructure.
-  markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible.-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index.-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself.-For-most-sites-this-will-be-closer-to-100kB.:
+  markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible%2E-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index%2E-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself%2E-For-most-sites-this-will-be-closer-to-100kB%2E:
     label: The goal of Pagefind is that websites with...
     hidden: false
     type: markdown
@@ -248,11 +248,11 @@ Pagefind-Search: ""
 SEO-Controls: ""
 Tailwind: ""
 building: ""
-markdown:A-new-paragraph.: ""
-markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site.-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration.-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page.): ""
-markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer.-The-search-bar-is-located-at-the-top-of-the-blog-index-page.: ""
-markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure.: ""
-markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible.-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index.-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself.-For-most-sites-this-will-be-closer-to-100kB.: ""
+markdown:A-new-paragraph%2E: ""
+markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site%2E-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration%2E-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page%2E): ""
+markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer%2E-The-search-bar-is-located-at-the-top-of-the-blog-index-page%2E: ""
+markdown:Pagefind-sup!-is-a-sup-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E: ""
+markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible%2E-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index%2E-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself%2E-For-most-sites-this-will-be-closer-to-100kB%2E: ""
 recent-posts: ""
 search: ""
 seo: ""

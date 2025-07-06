@@ -15,26 +15,26 @@ _inputs:
             - CloudCannon
             - CloudCannon-Astro-Starter!
             - GitHub
-            - Keep-what-you-need.-Delete-the-rest.
-            - You-choose-your-editing-experience.
-            - markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon.-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test.
-            - markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files.
+            - Keep-what-you-need%2E-Delete-the-rest%2E
+            - You-choose-your-editing-experience%2E
+            - markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E
+            - markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E
             - markdown:Accessibility-controls
-            - markdown:Another~-paragraph-to-test-translations.-With-punctuation-and-stuffTM.
+            - markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E
             - markdown:Blog-with-pagination-and-tags
             - markdown:Built-in-search-with-Pagefind
             - markdown:Color-palette-controls
             - markdown:Create-and-delete-pages
             - markdown:Font-Awesome-icons
-            - markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git.
+            - markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E
             - markdown:Header-and-Footer-controls
             - markdown:Markdown-options-and-styles
             - markdown:Page-building-with-Bookshop-components
             - markdown:Pre-configured-shortcodes
             - markdown:SEO-controls
             - markdown:Tailwind
-            - markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon.-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A
-            - markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them.
+            - markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A
+            - markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E
         - heading: Already translated (fr-FR)
           comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
             history](https://github.com/CloudCannon/rosey-astro-starter/commits\
@@ -62,7 +62,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=GitHub)"
-  Keep-what-you-need.-Delete-the-rest.:
+  Keep-what-you-need%2E-Delete-the-rest%2E:
     label: Keep what you need. Delete the rest.
     hidden: false
     type: textarea
@@ -70,7 +70,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20\
       you%20need.%20Delete%20the%20rest.)"
-  You-choose-your-editing-experience.:
+  You-choose-your-editing-experience%2E:
     label: You choose your editing experience.
     hidden: false
     type: textarea
@@ -78,7 +78,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
       0your%20editing%20experience.)"
-  markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon.-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test.:
+  markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E:
     label: A (starting) point for<br>developers looki...
     hidden: false
     type: markdown
@@ -107,7 +107,7 @@ _inputs:
         Astro, using<br>Bookshop components in CloudCannon. Create your own
         copy, and start creating your own components to use in CloudCannon’s CMS
         <sub>A sub to test</sub>.
-  markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files.:
+  markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E:
     label: A flexible git-backed CMS that specialises...
     hidden: false
     type: markdown
@@ -154,7 +154,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Accessibility%\
       20controls)"
-  markdown:Another~-paragraph-to-test-translations.-With-punctuation-and-stuffTM.:
+  markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E:
     label: Another~ paragraph to test translations. W...
     hidden: false
     type: markdown
@@ -281,7 +281,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Font%20Awesome\
       %20icons)"
-  markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git.:
+  markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E:
     label: Git-backed means you can keep all your fam...
     hidden: false
     type: markdown
@@ -428,7 +428,7 @@ _inputs:
       copyformatting: true
     comment: "[See in
       context](https://cool-ski.cloudvent.net/index.html#:~:text=Tailwind)"
-  markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon.-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A:
+  markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A:
     label: The Astro* CloudCannon Starter's aim is to...
     hidden: false
     type: markdown
@@ -457,7 +457,7 @@ _inputs:
         their own site quickly in CloudCannon. This template is trying to strike
         a balance between minimal, and easy-to-delete boiler plate, while
         providing some commonly used features out of the box:
-  markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them.:
+  markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E:
     label: Visual editing allows you to preview your ...
     hidden: false
     type: markdown
@@ -488,23 +488,23 @@ urlTranslation: index.html
 CloudCannon: ""
 CloudCannon-Astro-Starter!: ""
 GitHub: ""
-Keep-what-you-need.-Delete-the-rest.: ""
-You-choose-your-editing-experience.: ""
-markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon.-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test.: ""
-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files.: ""
+Keep-what-you-need%2E-Delete-the-rest%2E: ""
+You-choose-your-editing-experience%2E: ""
+markdown:A-(starting)-point-for-developers-looking-to-build-a-website-with-Astro-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS-A-sub-to-test%2E: ""
+markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: ""
 markdown:Accessibility-controls: ""
-markdown:Another~-paragraph-to-test-translations.-With-punctuation-and-stuffTM.: ""
+markdown:Another~-paragraph-to-test-translations%2E-With-punctuation-and-stuffTM%2E: ""
 markdown:Blog-with-pagination-and-tags: ""
 markdown:Built-in-search-with-Pagefind: ""
 markdown:Color-palette-controls: ""
 markdown:Create-and-delete-pages: ""
 markdown:Font-Awesome-icons: ""
-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git.: ""
+markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E: ""
 markdown:Header-and-Footer-controls: ""
 markdown:Markdown-options-and-styles: ""
 markdown:Page-building-with-Bookshop-components: ""
 markdown:Pre-configured-shortcodes: ""
 markdown:SEO-controls: ""
 markdown:Tailwind: ""
-markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon.-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A: ""
-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them.: ""
+markdown:The-Astro*-CloudCannon-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%3A: ""
+markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E: ""
