@@ -43,7 +43,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Building)"
   markdown:Delete-your-tailwindconfigmjs-file:
-    label: Delete your `tailwind.config.mjs` file.
+    label: Delete your tailwind.config.mjs file.
     hidden: false
     type: markdown
     options:
@@ -83,7 +83,7 @@ _inputs:
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
       2%80%99d%20like%20to%20remove%20Tailwind%3A)"
   markdown:Remove-mentions-of-Tailwind-from-your-astroconfigmjs:
-    label: Remove mentions of Tailwind from your `ast...
+    label: Remove mentions of Tailwind from your astr...
     hidden: false
     type: markdown
     options:
@@ -164,7 +164,7 @@ _inputs:
         CSS and SCSS styling, leaving you to add styles to your site however you
         want.
   markdown:npm-uninstall-tailwindcss-astrojs/tailwind:
-    label: "`npm uninstall tailwindcss @astrojs/tailwi..."
+    label: npm uninstall tailwindcss @astrojs/tailwin...
     hidden: false
     type: markdown
     options:
