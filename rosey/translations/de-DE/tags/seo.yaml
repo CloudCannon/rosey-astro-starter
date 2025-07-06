@@ -26,12 +26,14 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=SEO%20Controls)"
+    context: {}
   seo:
     label: Seo
     hidden: false
     type: text
     options: {}
     comment: "[See in context](https://cool-ski.cloudvent.net/tags/seo/#:~:text=Seo)"
+    context: {}
 urlTranslation: tags/seo/index.html
 SEO-Controls: ""
 seo: ""

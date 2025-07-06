@@ -31,6 +31,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/tailwind/#:~:text=Tailwind)"
+    context: {}
   building:
     label: Building
     hidden: false
@@ -38,6 +39,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/tailwind/#:~:text=Building)"
+    context: {}
   styling:
     label: Styling
     hidden: false
@@ -45,6 +47,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/tailwind/#:~:text=Styling)"
+    context: {}
   tailwind:
     label: Tailwind
     hidden: false
@@ -52,6 +55,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/tags/tailwind/#:~:text=Tailwind)"
+    context: {}
 urlTranslation: tags/tailwind/index.html
 Tailwind: ""
 building: ""

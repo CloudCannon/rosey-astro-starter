@@ -38,6 +38,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Pagefind%20Sear\
       ch)"
+    context: {}
   SEO-Controls:
     label: SEO Controls
     hidden: false
@@ -45,6 +46,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=SEO%20Controls)"
+    context: {}
   Tailwind:
     label: Tailwind
     hidden: false
@@ -52,6 +54,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Tailwind)"
+    context: {}
   building:
     label: Building
     hidden: false
@@ -59,6 +62,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Building)"
+    context: {}
   rcc-markdown:Comes-with-all-the-inputs-you-need-to-encourage-editors-to-fill-in-the-content-that-search-engines-expect-for-good-SEO-rankings%2E-Performance-best-practices-and-accessibility-all-play-a-part-in-this-as-well%2E:
     label: Comes with all the inputs you need to enco...
     hidden: false
@@ -148,18 +152,21 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Recent%20Posts)"
+    context: {}
   search:
     label: Search
     hidden: false
     type: text
     options: {}
     comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Search)"
+    context: {}
   seo:
     label: Seo
     hidden: false
     type: text
     options: {}
     comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Seo)"
+    context: {}
   styling:
     label: Styling
     hidden: false
@@ -167,6 +174,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Styling)"
+    context: {}
   tailwind:
     label: Tailwind
     hidden: false
@@ -174,12 +182,14 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=Tailwind)"
+    context: {}
   words:
     label: words
     hidden: false
     type: text
     options: {}
     comment: "[See in context](https://cool-ski.cloudvent.net/blog/seo/#:~:text=words)"
+    context: {}
 urlTranslation: blog/seo/index.html
 Pagefind-Search: ""
 SEO-Controls: ""

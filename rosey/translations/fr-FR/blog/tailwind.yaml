@@ -44,6 +44,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Pagefind%2\
       0Search)"
+    context: {}
   SEO-Controls:
     label: SEO Controls
     hidden: false
@@ -52,6 +53,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=SEO%20Cont\
       rols)"
+    context: {}
   Tailwind:
     label: Tailwind
     hidden: false
@@ -59,6 +61,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Tailwind)"
+    context: {}
   building:
     label: Building
     hidden: false
@@ -66,6 +69,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Building)"
+    context: {}
   rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E:
     label: Delete your tailwind.config.mjs file.
     hidden: false
@@ -86,6 +90,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
       our%20tailwind.config.mjs%20file.)"
+    context: {}
   rcc-markdown:If-you'd-like-to-remove-Tailwind%3A:
     label: "If you’d like to remove Tailwind:"
     hidden: false
@@ -106,6 +111,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
       2%80%99d%20like%20to%20remove%20Tailwind%3A)"
+    context: {}
   rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs:
     label: Remove mentions of Tailwind from your astr...
     hidden: false
@@ -221,6 +227,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Recent%20P\
       osts)"
+    context: {}
   search:
     label: Search
     hidden: false
@@ -228,6 +235,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Search)"
+    context: {}
   seo:
     label: Seo
     hidden: false
@@ -235,6 +243,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Seo)"
+    context: {}
   styling:
     label: Styling
     hidden: false
@@ -242,6 +251,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Styling)"
+    context: {}
   tailwind:
     label: Tailwind
     hidden: false
@@ -249,6 +259,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Tailwind)"
+    context: {}
   words:
     label: words
     hidden: false
@@ -256,6 +267,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=words)"
+    context: {}
 urlTranslation: blog/tailwind/index.html
 Pagefind-Search: ""
 SEO-Controls: ""
