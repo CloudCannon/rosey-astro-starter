@@ -103,19 +103,71 @@ async function getInputConfig(
   const seeOnPageCommentEnabled = seeOnPageCommentSettings.enabled;
   const baseUrl = seeOnPageCommentSettings.base_url;
   const seeOnPageCommentText = seeOnPageCommentSettings.comment_text;
-  const untranslatedPhrase = baseTranslationObj.original.trim();
 
+  const untranslatedPhrase = baseTranslationObj.original.trim();
   const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
   const originalPhraseTidiedForComment = formatTextForInputComments(
     untranslatedPhraseMarkdown
   );
 
+  const locationString = seeOnPageCommentEnabled
+    ? generateHighlightLinkComment(
+        originalPhraseTidiedForComment,
+        page,
+        baseUrl,
+        seeOnPageCommentText
+      )
+    : false;
+
+  const inputConfig = setupInputConfig(
+    inputKey,
+    inputLengths,
+    originalPhraseTidiedForComment,
+    untranslatedPhraseMarkdown,
+    locationString
+  );
+
+  return inputConfig;
+}
+
+async function getNamespaceInputConfig(
+  inputKey,
+  baseTranslationObj,
+  inputLengths
+) {
+  const untranslatedPhrase = baseTranslationObj.original.trim();
+  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
+  const originalPhraseTidiedForComment = formatTextForInputComments(
+    untranslatedPhraseMarkdown
+  );
+
+  const inputConfig = setupInputConfig(
+    inputKey,
+    inputLengths,
+    originalPhraseTidiedForComment,
+    untranslatedPhraseMarkdown
+  );
+
+  return inputConfig;
+}
+
+async function setupInputConfig(
+  inputKey,
+  inputLengths,
+  originalPhraseTidiedForComment,
+  untranslatedPhraseMarkdown,
+  locationString
+) {
   const isKeyMarkdown = inputKey.startsWith("rcc-markdown:");
   const labelCutoffLength = inputLengths.label;
   const textareaCutoffLength = inputLengths.textarea;
-  const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
+  const isInputShortText =
+    untranslatedPhraseMarkdown.length < textareaCutoffLength;
   const isLabelConcat =
     originalPhraseTidiedForComment.length > labelCutoffLength;
+  const formattedLabel = isLabelConcat
+    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
+    : originalPhraseTidiedForComment;
 
   const inputType = isKeyMarkdown
     ? "markdown"
@@ -140,105 +192,21 @@ async function getInputConfig(
       }
     : {};
 
-  const locationString = seeOnPageCommentEnabled
-    ? generateHighlightLinkComment(
-        originalPhraseTidiedForComment,
-        page,
-        baseUrl,
-        seeOnPageCommentText
-      )
-    : false;
-
-  const formattedLabel = isLabelConcat
-    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
-    : originalPhraseTidiedForComment;
-
-  const inputConfig = isLabelConcat
-    ? {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-        comment: locationString,
-        context: {
+  const inputConfig = {
+    label: formattedLabel,
+    hidden: untranslatedPhraseMarkdown === "",
+    type: inputType,
+    options: options,
+    comment: locationString || "", // Only on normal pages
+    context: isLabelConcat
+      ? {
           open: false,
           title: "Untranslated Text",
           icon: "translate",
           content: untranslatedPhraseMarkdown,
-        },
-      }
-    : {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-        comment: locationString,
-      };
-
-  return inputConfig;
-}
-
-async function getNamespaceInputConfig(
-  inputKey,
-  baseTranslationObj,
-  inputLengths
-) {
-  const untranslatedPhrase = baseTranslationObj.original.trim();
-  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
-  const originalPhraseTidiedForComment = formatTextForInputComments(
-    untranslatedPhraseMarkdown
-  );
-
-  const isKeyMarkdown = inputKey.startsWith("rcc-markdown:");
-  const labelCutoffLength = inputLengths.label;
-  const textareaCutoffLength = inputLengths.textarea;
-  const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
-  const isLabelConcat =
-    originalPhraseTidiedForComment.length > labelCutoffLength;
-
-  const inputType = isKeyMarkdown
-    ? "markdown"
-    : isInputShortText
-    ? "text"
-    : "textarea";
-
-  const options = isKeyMarkdown
-    ? {
-        bold: true,
-        format: "p h1 h2 h3 h4",
-        italic: true,
-        link: true,
-        undo: true,
-        redo: true,
-        removeformat: true,
-        copyformatting: true,
-        blockquote: true,
-      }
-    : {};
-
-  const formattedLabel = isLabelConcat
-    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
-    : originalPhraseTidiedForComment;
-
-  const inputConfig = isLabelConcat
-    ? {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-        context: {
-          open: false,
-          title: "Untranslated Text",
-          icon: "translate",
-          content: untranslatedPhraseMarkdown,
-        },
-      }
-    : {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-      };
+        }
+      : {},
+  };
 
   return inputConfig;
 }
