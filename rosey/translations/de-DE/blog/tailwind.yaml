@@ -18,12 +18,12 @@ _inputs:
             - SEO-Controls
             - Tailwind
             - building
-            - markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E
-            - markdown:If-you'd-like-to-remove-Tailwind%3A
-            - markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs
-            - markdown:Run-the-following-command-in-the-root-of-the-site%3A
-            - markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E
-            - markdown:npm-uninstall-tailwindcss-%40astrojstailwind
+            - rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E
+            - rcc-markdown:If-you'd-like-to-remove-Tailwind%3A
+            - rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs
+            - rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A
+            - rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E
+            - rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind
             - recent-posts
             - search
             - seo
@@ -66,7 +66,7 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Building)"
-  markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E:
+  rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E:
     label: Delete your tailwind.config.mjs file.
     hidden: false
     type: markdown
@@ -86,7 +86,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=Delete%20y\
       our%20tailwind.config.mjs%20file.)"
-  markdown:If-you'd-like-to-remove-Tailwind%3A:
+  rcc-markdown:If-you'd-like-to-remove-Tailwind%3A:
     label: "If you’d like to remove Tailwind:"
     hidden: false
     type: markdown
@@ -106,7 +106,7 @@ _inputs:
     comment: "[See in
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=If%20you%E\
       2%80%99d%20like%20to%20remove%20Tailwind%3A)"
-  markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs:
+  rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs:
     label: Remove mentions of Tailwind from your astr...
     hidden: false
     type: markdown
@@ -132,7 +132,7 @@ _inputs:
       icon: translate
       content: |
         Remove mentions of Tailwind from your `astro.config.mjs`
-  markdown:Run-the-following-command-in-the-root-of-the-site%3A:
+  rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A:
     label: Run the following command in the root of t...
     hidden: false
     type: markdown
@@ -158,7 +158,7 @@ _inputs:
       icon: translate
       content: |
         Run the following command in the root of the site:
-  markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E:
+  rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E:
     label: Use Tailwind to style your HTML, allowing ...
     hidden: false
     type: markdown
@@ -187,7 +187,7 @@ _inputs:
         without leaving your HTML. This can be used in combination with normal
         CSS and SCSS styling, leaving you to add styles to your site however you
         want.
-  markdown:npm-uninstall-tailwindcss-%40astrojstailwind:
+  rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind:
     label: npm uninstall tailwindcss @astrojs/tailwin...
     hidden: false
     type: markdown
@@ -261,12 +261,12 @@ Pagefind-Search: ""
 SEO-Controls: ""
 Tailwind: ""
 building: ""
-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E: ""
-markdown:If-you'd-like-to-remove-Tailwind%3A: ""
-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs: ""
-markdown:Run-the-following-command-in-the-root-of-the-site%3A: ""
-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E: ""
-markdown:npm-uninstall-tailwindcss-%40astrojstailwind: ""
+rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E: ""
+rcc-markdown:If-you'd-like-to-remove-Tailwind%3A: ""
+rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs: ""
+rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A: ""
+rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E: ""
+rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind: ""
 recent-posts: ""
 search: ""
 seo: ""
