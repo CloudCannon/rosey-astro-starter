@@ -62,6 +62,37 @@ function initDefaultInputs(
   }
 }
 
+// Namespace pages input set up
+function initNamespacePageInputs(data, locale) {
+  // Create the inputs obj if there is none
+  if (!data._inputs) {
+    data._inputs = {};
+  }
+
+  // Create the page input object
+  if (!data._inputs.$) {
+    data._inputs.$ = {
+      type: "object",
+      comment: "Translations that appear on many pages",
+      options: {
+        place_groups_below: false,
+        groups: [
+          {
+            heading: `Still to translate (${locale})`,
+            comment: "Text to translate",
+            inputs: [],
+          },
+          {
+            heading: `Already translated (${locale})`,
+            comment: "Text already translated",
+            inputs: [],
+          },
+        ],
+      },
+    };
+  }
+}
+
 async function getInputConfig(
   inputKey,
   page,
@@ -147,6 +178,71 @@ async function getInputConfig(
   return inputConfig;
 }
 
+async function getNamespaceInputConfig(
+  inputKey,
+  baseTranslationObj,
+  inputLengths
+) {
+  const untranslatedPhrase = baseTranslationObj.original.trim();
+  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
+  const originalPhraseTidiedForComment = formatTextForInputComments(
+    untranslatedPhraseMarkdown
+  );
+
+  const isKeyMarkdown = inputKey.startsWith("rcc-markdown:");
+  const labelCutoffLength = inputLengths.label;
+  const textareaCutoffLength = inputLengths.textarea;
+  const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
+  const isLabelConcat =
+    originalPhraseTidiedForComment.length > labelCutoffLength;
+
+  const inputType = isKeyMarkdown
+    ? "markdown"
+    : isInputShortText
+    ? "text"
+    : "textarea";
+
+  const options = isKeyMarkdown
+    ? {
+        bold: true,
+        format: "p h1 h2 h3 h4",
+        italic: true,
+        link: true,
+        undo: true,
+        redo: true,
+        removeformat: true,
+        copyformatting: true,
+        blockquote: true,
+      }
+    : {};
+
+  const formattedLabel = isLabelConcat
+    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
+    : originalPhraseTidiedForComment;
+
+  const inputConfig = isLabelConcat
+    ? {
+        label: formattedLabel,
+        hidden: untranslatedPhrase === "",
+        type: inputType,
+        options: options,
+        context: {
+          open: false,
+          title: "Untranslated Text",
+          icon: "translate",
+          content: untranslatedPhraseMarkdown,
+        },
+      }
+    : {
+        label: formattedLabel,
+        hidden: untranslatedPhrase === "",
+        type: inputType,
+        options: options,
+      };
+
+  return inputConfig;
+}
+
 function generateHighlightLinkComment(
   originalPhrase,
   page,
@@ -221,102 +317,6 @@ function customEncode(text) {
   const escapedCharsEncoded = encodeURIText.replaceAll("-", "%2D");
 
   return escapedCharsEncoded;
-}
-
-// Namespace pages input set up
-function initNamespacePageInputs(data, locale) {
-  // Create the inputs obj if there is none
-  if (!data._inputs) {
-    data._inputs = {};
-  }
-
-  // Create the page input object
-  if (!data._inputs.$) {
-    data._inputs.$ = {
-      type: "object",
-      comment: "Translations that appear on many pages",
-      options: {
-        place_groups_below: false,
-        groups: [
-          {
-            heading: `Still to translate (${locale})`,
-            comment: "Text to translate",
-            inputs: [],
-          },
-          {
-            heading: `Already translated (${locale})`,
-            comment: "Text already translated",
-            inputs: [],
-          },
-        ],
-      },
-    };
-  }
-}
-
-async function getNamespaceInputConfig(
-  inputKey,
-  baseTranslationObj,
-  inputLengths
-) {
-  const untranslatedPhrase = baseTranslationObj.original.trim();
-  const untranslatedPhraseMarkdown = await htmlToMarkdown(untranslatedPhrase);
-  const originalPhraseTidiedForComment = formatTextForInputComments(
-    untranslatedPhraseMarkdown
-  );
-
-  const isKeyMarkdown = inputKey.startsWith("rcc-markdown:");
-  const labelCutoffLength = inputLengths.label;
-  const textareaCutoffLength = inputLengths.textarea;
-  const isInputShortText = untranslatedPhrase.length < textareaCutoffLength;
-  const isLabelConcat =
-    originalPhraseTidiedForComment.length > labelCutoffLength;
-
-  const inputType = isKeyMarkdown
-    ? "markdown"
-    : isInputShortText
-    ? "text"
-    : "textarea";
-
-  const options = isKeyMarkdown
-    ? {
-        bold: true,
-        format: "p h1 h2 h3 h4",
-        italic: true,
-        link: true,
-        undo: true,
-        redo: true,
-        removeformat: true,
-        copyformatting: true,
-        blockquote: true,
-      }
-    : {};
-
-  const formattedLabel = isLabelConcat
-    ? `${originalPhraseTidiedForComment.substring(0, labelCutoffLength)}...`
-    : originalPhraseTidiedForComment;
-
-  const inputConfig = isLabelConcat
-    ? {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-        context: {
-          open: false,
-          title: "Untranslated Text",
-          icon: "translate",
-          content: untranslatedPhraseMarkdown,
-        },
-      }
-    : {
-        label: formattedLabel,
-        hidden: untranslatedPhrase === "",
-        type: inputType,
-        options: options,
-      };
-
-  return inputConfig;
 }
 
 function sortTranslationIntoInputGroup(translationDataToWrite, inputKey) {
