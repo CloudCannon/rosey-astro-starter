@@ -159,13 +159,18 @@ function generateHighlightLinkComment(
   const pageString = getPageString(page);
   const startOfHighlightUrl = `[${seeOnPageCommentText}](${baseUrl}${pageString}#:~:text=`;
 
-  // If original phrase is less than 𝑥*2 words we don't use the comma syntax
-  // Get the first and last line of the markdown so we only have complete lines in the highlight url
+  // Remove things that will ruin the highlight string like formatting elements, asterisks, and backticks
   const originalPhraseNoFormattingElements =
     removeFormattingElementsFromText(originalPhrase);
   const originalPhraseNoEscapedAsterisks =
     originalPhraseNoFormattingElements.replaceAll("\\*", "*");
-  const originalPhraseArray = originalPhraseNoEscapedAsterisks.split(/[\n]+/);
+  const originalPhraseNoBackTicks = originalPhraseNoEscapedAsterisks.replaceAll(
+    "`",
+    ""
+  );
+  // If original phrase is less than 𝑥*2 words we don't use the comma syntax
+  // Get the first and last line of the markdown so we only have complete lines in the highlight url
+  const originalPhraseArray = originalPhraseNoBackTicks.split(/[\n]+/);
   // Join the original (which may be separate lines) into one string and split to check how many words
   const originalPhraseOneLineArray = originalPhraseArray.join(" ").split(" ");
 
