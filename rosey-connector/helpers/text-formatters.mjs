@@ -26,13 +26,14 @@ function formatTextForInputComments(text) {
   const removedNonPunctuationSpecChars = noLinks.replaceAll(/[#%`{}_]/gm, "");
   return removedNonPunctuationSpecChars;
 }
-function customEncodingForYamlKeys(text) {
-  // . ! ~ ' ( ) all need to be encoded
+function customEncodingForIds(text) {
   if (!text) {
     return "";
   }
 
   const vanillaEncode = encodeURIComponent(text);
+  // Periods ruin yml keys but are escaped by encodeURIComponent so we need to manually encode them
+  // https://www.w3schools.com/tags/ref_urlencode.ASP - handy list of encoded chars
   const fullyEncoded = vanillaEncode.replaceAll(".", "%2E");
   return fullyEncoded;
 }
@@ -43,7 +44,7 @@ function generateRoseyId(text) {
   // const formattedText = formatTextForIds(text).toLowerCase();
   const slugifiedText = slugify(text);
   // Dont remove special chars, just encode them
-  const encodedSlug = customEncodingForYamlKeys(slugifiedText);
+  const encodedSlug = customEncodingForIds(slugifiedText);
   return encodedSlug;
 }
 
