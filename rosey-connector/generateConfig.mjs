@@ -47,6 +47,9 @@ export async function generateConfig(
         gitHistoryCommentSettings.branchToUse;
     }
 
+    // Create a /rosey/ dir if none exists
+    await fs.promises.mkdir("rosey", { recursive: true });
+
     // Write the example config to the correct place
     await fs.promises.writeFile(configPath, YAML.stringify(exampleFileData));
     console.log("🏗️ Generated an RCC config file!");
