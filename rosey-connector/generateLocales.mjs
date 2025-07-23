@@ -6,6 +6,8 @@ import {
   isDirectory,
   readFileWithFallback,
   getTranslationHtmlFilename,
+  getTranslationFilePath,
+  handleConfigPaths,
 } from "./helpers/file-helpers.mjs";
 import dotenv from "dotenv";
 const md = markdownit({ html: true });
@@ -35,14 +37,18 @@ async function generateLocale(locale, configData) {
     numberOfUntranslatedUrls: {},
     numberOfTranslatedUrls: {},
   };
-  const translationsDirPath = configData.rosey_paths.translations_dir_path;
-  const localesDirPath = configData.rosey_paths.locales_dir_path;
+  const translationsDirPath = handleConfigPaths(
+    configData.rosey_paths.translations_dir_path
+  );
+  const localesDirPath = handleConfigPaths(
+    configData.rosey_paths.locales_dir_path
+  );
   const baseFile = await fs.promises.readFile(
-    configData.rosey_paths.rosey_base_file_path
+    handleConfigPaths(configData.rosey_paths.rosey_base_file_path)
   );
   const baseFileData = JSON.parse(baseFile.toString("utf-8")).keys;
   const baseUrlsFile = await fs.promises.readFile(
-    configData.rosey_paths.rosey_base_urls_file_path
+    handleConfigPaths(configData.rosey_paths.rosey_base_urls_file_path)
   );
   const baseUrlFileData = JSON.parse(baseUrlsFile.toString("utf-8")).keys;
   const namespaceArray = configData.namespace_pages;
@@ -81,7 +87,7 @@ async function generateLocale(locale, configData) {
     translationsFiles.map(async (filename) => {
       if (
         await isDirectory(
-          getTranslationPath(locale, translationsDirPath, filename)
+          getTranslationFilePath(locale, translationsDirPath, filename)
         )
       ) {
         return;
@@ -187,7 +193,7 @@ async function generateLocale(locale, configData) {
   // Search for duplicate keys on each translation page for new translations
   await Promise.all(
     Object.keys(localeDataEntries).map(async (filename) => {
-      const translationFilePath = getTranslationPath(
+      const translationFilePath = getTranslationFilePath(
         locale,
         translationsDirPath,
         filename
@@ -255,7 +261,7 @@ async function generateLocale(locale, configData) {
   );
 
   // Only display url translation statistics if there is at least on url translation
-  if (logStatistics.numberOfTranslatedUrls > 0) {
+  if (Object.keys(logStatistics.numberOfUntranslatedUrls).length > 0) {
     console.log(
       `- Completed Url Translations: ${
         Object.keys(logStatistics.numberOfTranslatedUrls).length
@@ -271,10 +277,6 @@ async function generateLocale(locale, configData) {
   }
 }
 
-function getTranslationPath(locale, translationsDirPath, translationFilename) {
-  return path.join(translationsDirPath, locale, translationFilename);
-}
-
 async function processTranslation(
   locale,
   translationFilename,
@@ -287,7 +289,7 @@ async function processTranslation(
 ) {
   const localeData = {};
   const localeUrlsData = {};
-  const translationsPath = getTranslationPath(
+  const translationsPath = getTranslationFilePath(
     locale,
     translationsDirPath,
     translationFilename
@@ -297,6 +299,7 @@ async function processTranslation(
   if (!fileContents) {
     console.log("No fileContents from filepath: ", translationsPath);
   }
+
   const data = YAML.parse(fileContents);
 
   if (!data) {
@@ -345,9 +348,12 @@ async function processTranslation(
       };
     }
 
+    // Unescape asterisks for the final write to locales where asterisks don't matter like in markdown
+    const translatedStringUnescaped = translatedString.replaceAll("\\*", "*");
+
     localeData[keyName] = processContentTranslationKey(
       keyName,
-      translatedString,
+      translatedStringUnescaped,
       localeData,
       baseFileData,
       oldLocaleData
@@ -397,7 +403,7 @@ function processContentTranslationKey(
   const baseFileDataOriginal = baseFileData[keyName]?.original;
 
   // No translated string use the original
-  if (!translatedString) {
+  if (!translatedString.trim()) {
     // Check if there was a translation the round before and we've cleared it
     if (oldLocaleDataValue && oldLocaleDataValue !== baseFileDataOriginal) {
       return {

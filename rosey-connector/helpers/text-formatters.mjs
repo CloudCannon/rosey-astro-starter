@@ -19,7 +19,12 @@ function formatTextForInputComments(text) {
   }
   const trimmedWhiteSpace = text.trim();
   const escapedAsterisks = trimmedWhiteSpace.replaceAll("\\*", "*");
-  const noLinks = escapedAsterisks.replaceAll(
+  const markdownFormattingAsterisks = escapedAsterisks
+    // Replace bold **word** with just word - must go before the emphasis one
+    .replaceAll(/\*\*(.+?)\*\*/gm, "$1")
+    // Replace emphasised **word** with just word
+    .replaceAll(/\*(.+?)\*/gm, "$1");
+  const noLinks = markdownFormattingAsterisks.replaceAll(
     /(?:__[*#])|\[(.*?)\]\(.*?\)/gm,
     "$1"
   );
