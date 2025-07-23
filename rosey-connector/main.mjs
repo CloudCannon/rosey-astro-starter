@@ -4,12 +4,13 @@ import { cleanUnusedFiles } from "./cleanUnusedFiles.mjs";
 import { callSmartling } from "./callSmartling.mjs";
 import { generateTranslationFiles } from "./generateTranslationFiles.mjs";
 import { generateLocales } from "./generateLocales.mjs";
-import { generateConfig } from "./generateConfig.mjs";
+import { generateConfig } from "./generate.mjs";
 
 (async () => {
   console.log("\n--- Starting Rosey CloudCannon Connector ---");
 
   console.log("\n🏗️ Reading config file...");
+  // Generate a config if not already done using CLI
   await generateConfig();
   const configData = await readConfigFile("./rosey/rcc.yaml");
 
