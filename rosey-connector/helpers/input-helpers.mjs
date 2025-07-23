@@ -26,18 +26,26 @@ function initDefaultInputs(
     const seeOnPageCommentEnabled = seeOnPageCommentSettings.enabled;
     const baseUrl = seeOnPageCommentSettings.base_url;
     const gitHistoryCommentEnabled = gitHistoryCommentSettings.enabled;
-    const githubRepo = gitHistoryCommentSettings.repo_url;
-    const githubBranchName = gitHistoryCommentSettings.branch_name;
+    const gitRepoUrl = gitHistoryCommentSettings.repo_url;
+    const gitBranchName = gitHistoryCommentSettings.branch_name;
     const gitHistoryCommentText = gitHistoryCommentSettings.comment_text;
 
     let inputComment = "";
     if (seeOnPageCommentEnabled) {
-      inputComment += `[${pageString}](${baseUrl}${pageString})`;
+      // Ensure there is a trailing slash on the baseUrl & there isn't an accidental //
+      const baseUrlFormatted = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
+
+      inputComment += `[${pageString}](${baseUrlFormatted}${pageString})`;
     }
     if (gitHistoryCommentEnabled) {
+      // Ensure there is a trailing slash on the gitRepo url & there isn't an accidental //
+      const gitRepoUrlFormatted = gitRepoUrl.endsWith("/")
+        ? gitRepoUrl
+        : `${gitRepoUrl}/`;
+
       inputComment += `${
-        inputComment.length > 1 ? "  //  " : ""
-      }[${gitHistoryCommentText}](${githubRepo}/commits/${githubBranchName}/${translationFilesDirPath}/${locale}/${pageFilePath})`;
+        inputComment.length > 1 ? "  //  " : "" // Adds a double slash between input comment and git history comment if input comment is enabled
+      }[${gitHistoryCommentText}](${gitRepoUrlFormatted}commits/${gitBranchName}/${translationFilesDirPath}/${locale}/${pageFilePath})`;
     }
 
     data._inputs.$ = {

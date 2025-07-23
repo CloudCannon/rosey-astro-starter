@@ -36,7 +36,6 @@ async function htmlToMarkdown(html) {
           /** @type {Html} */
           const result = { type: "html", value: toHtml(node) };
           state.patch(node, result);
-          // console.log(node.position);
           positionalInfoOfHandlers[`br${node.position.start.column}`] =
             node.position;
           return result;
