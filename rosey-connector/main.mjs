@@ -10,7 +10,7 @@ import { generateConfig } from "./generateConfig.mjs";
   console.log("\n--- Starting Rosey CloudCannon Connector ---");
 
   console.log("\n🏗️ Reading config file...");
-  // Generate a config if not already done using CLI
+  // Check for a config file and generate one if not found
   await generateConfig();
   const configData = await readConfigFile(
     handleConfigPaths("./rosey/rcc.yaml")

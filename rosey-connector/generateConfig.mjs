@@ -12,6 +12,7 @@ export async function generateConfig(
   // Check if a config already exists
   try {
     await fs.promises.access(configPath);
+    console.log("🏗️ Found an RCC config file.");
     return;
   } catch (error) {
     console.log("🏗️ No existing config file - Creating one...");
