@@ -1,0 +1,220 @@
+_inputs:
+  $:
+    type: object
+    comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/fr-FR/home.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/home.yaml)"
+          inputs:
+            - CloudCannon
+            - CloudCannon-Astro-Starter!
+            - GitHub
+            - Keep-what-you-need%2E-Delete-the-rest%2E
+            - You-choose-your-editing-experience%2E
+            - rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E
+            - rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E
+            - rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E
+            - rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E
+            - rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E
+        - heading: Already translated (fr-FR)
+          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/home.yaml)"
+          inputs: []
+  CloudCannon:
+    label: CloudCannon
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon)"
+    context: {}
+  CloudCannon-Astro-Starter!:
+    label: CloudCannon Astro Starter!
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=CloudCannon%20\
+      Astro%20Starter!)"
+    context: {}
+  GitHub:
+    label: GitHub
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=GitHub)"
+    context: {}
+  Keep-what-you-need%2E-Delete-the-rest%2E:
+    label: Keep what you need. Delete the rest.
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=Keep%20what%20\
+      you%20need.%20Delete%20the%20rest.)"
+    context: {}
+  You-choose-your-editing-experience%2E:
+    label: You choose your editing experience.
+    hidden: false
+    type: textarea
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=You%20choose%2\
+      0your%20editing%20experience.)"
+    context: {}
+  rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E:
+    label: A flexible git-backed CMS that specialises...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20flexible%2\
+      0git%2Dbacked%20CMS,markdown%20and%20data%20files.)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        A flexible git-backed CMS that specialises in editing markdown and data
+        files.
+  rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E:
+    label: A starting point for developers looking to...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=A%20starting%2\
+      0point%20for,use%20in%20CloudCannon%E2%80%99s%20CMS.)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        A starting point for developers looking to build a multilingual website
+        with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop
+        components in CloudCannon. Create your own copy, and start creating your
+        own components to use in CloudCannon’s CMS.
+  rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E:
+    label: Git-backed means you can keep all your fam...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=Git%2Dbacked%2\
+      0means%20you%20can,to%20collaborate%20via%20git.)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        Git-backed means you can keep all your familiar git workflows, while
+        providing an easy-to-understand interface for non-technical editors to
+        collaborate via git.
+  rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E:
+    label: The Rosey Astro Starter's aim is to get de...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=The%20Rosey%20\
+      Astro%20Starter's,Rosey%20in%20CloudCannon%20here.)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: |
+        The Rosey Astro Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box. Read more about Rosey in CloudCannon [here](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/).
+  rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E:
+    label: Visual editing allows you to preview your ...
+    hidden: false
+    type: markdown
+    options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/index.html#:~:text=Visual%20editi\
+      ng%20allows%20you,before%20you%20save%20them.)"
+    context:
+      open: false
+      title: Untranslated Text
+      icon: translate
+      content: >
+        Visual editing allows you to preview your changes live before you save
+        them.
+urlTranslation: index.html
+CloudCannon: ""
+CloudCannon-Astro-Starter!: ""
+GitHub: ""
+Keep-what-you-need%2E-Delete-the-rest%2E: ""
+You-choose-your-editing-experience%2E: ""
+rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: ""
+rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E: ""
+rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E: ""
+rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E: ""
+rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E: ""

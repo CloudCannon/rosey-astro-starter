@@ -1,0 +1,63 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)  //  [G\
+      it
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/de-DE/tags/styling.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)  //  [G\
+            it
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/tags/styling.yaml)"
+          inputs:
+            - Tailwind
+            - building
+            - styling
+            - tailwind
+        - heading: Already translated (de-DE)
+          comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)  //  [G\
+            it
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/de-DE/tags/styling.yaml)"
+          inputs: []
+  Tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Tailwind)"
+    context: {}
+  building:
+    label: Building
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Building)"
+    context: {}
+  styling:
+    label: Styling
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Styling)"
+    context: {}
+  tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Tailwind)"
+    context: {}
+urlTranslation: tags/styling/index.html
+Tailwind: ""
+building: ""
+styling: ""
+tailwind: ""

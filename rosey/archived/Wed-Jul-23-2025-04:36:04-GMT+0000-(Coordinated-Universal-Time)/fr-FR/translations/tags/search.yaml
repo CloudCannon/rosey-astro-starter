@@ -1,0 +1,41 @@
+_inputs:
+  $:
+    type: object
+    comment: "[tags/search/](https://cool-ski.cloudvent.net/tags/search/)  //  [Git
+      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
+      ng/./rosey/translations/fr-FR/tags/search.yaml)"
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: "[tags/search/](https://cool-ski.cloudvent.net/tags/search/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/search.yaml)"
+          inputs:
+            - Pagefind-Search
+            - search
+        - heading: Already translated (fr-FR)
+          comment: "[tags/search/](https://cool-ski.cloudvent.net/tags/search/)  //  [Git
+            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
+            /staging/./rosey/translations/fr-FR/tags/search.yaml)"
+          inputs: []
+  Pagefind-Search:
+    label: Pagefind Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Pagefind%20S\
+      earch)"
+    context: {}
+  search:
+    label: Search
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Search)"
+    context: {}
+urlTranslation: tags/search/index.html
+Pagefind-Search: ""
+search: ""
