@@ -41,7 +41,7 @@ export async function checkAndCleanRemovedLocales(configData) {
 
       // Move the old translation files
       await fs.promises.rename(pathToArchive, archivePath);
-      console.log(`Archived locale ${localeDir} translation files.`);
+      console.log(`🧹 Archived locale ${localeDir} translation files.`);
       haveWeArchivedFiles.push(localeDir);
     }
   }
@@ -76,15 +76,15 @@ export async function checkAndCleanRemovedLocales(configData) {
         localeFile
       );
       await fs.promises.rename(filePathToArchive, archivePath);
-      console.log(`Archived locale ${localeCode} locale files.`);
+      console.log(`🧹 Archived locale ${localeCode} locale files.`);
       haveWeArchivedFiles.push(localeCode);
     }
   }
 
   if (haveWeArchivedFiles.length > 0) {
     const archivedLocales = haveWeArchivedFiles.join(", ");
-    console.log(`Archived ${archivedLocales} files.`);
+    console.log(`🧹 Archived ${archivedLocales} files.`);
   } else {
-    console.log(`No old files to archive.`);
+    console.log(`🧹 No old files to archive.`);
   }
 }
