@@ -25,11 +25,11 @@ see_on_page_comment:
 # Shows a comment under each input that links to the GitHub history for the page.
 git_history_link:
   # Define whether these 'Git history' comments should be enabled at all.
-  enabled: true
+  enabled: false
   # Your site's GitHub url, used to generate the comments that link to the page's GitHub history.
   repo_url: https://github.com/org/repo
    # Your staging site's branch name, if different from the classic 'staging'.
-  branch_name: staging
+  branch_name: main
    # The text used for the link.
   comment_text: Git history
 

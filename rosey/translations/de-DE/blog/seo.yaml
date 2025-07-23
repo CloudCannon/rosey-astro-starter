@@ -1,16 +1,12 @@
 _inputs:
   $:
     type: object
-    comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
-      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
-      ng/./rosey/translations/de-DE/blog/seo.yaml)"
+    comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (de-DE)
-          comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
-            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
-            /staging/./rosey/translations/de-DE/blog/seo.yaml)"
+          comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)"
           inputs:
             - Pagefind-Search
             - SEO-Controls
@@ -26,9 +22,7 @@ _inputs:
             - tailwind
             - words
         - heading: Already translated (de-DE)
-          comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)  //  [Git
-            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
-            /staging/./rosey/translations/de-DE/blog/seo.yaml)"
+          comment: "[blog/seo/](https://cool-ski.cloudvent.net/blog/seo/)"
           inputs: []
   Pagefind-Search:
     label: Pagefind Search

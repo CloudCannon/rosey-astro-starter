@@ -1,6 +1,6 @@
-import { readConfigFile } from "./helpers/file-helpers.mjs";
+import { readConfigFile, handleConfigPaths } from "./helpers/file-helpers.mjs";
 import { configWarnings } from "./configWarnings.mjs";
-import { cleanUnusedFiles } from "./cleanUnusedFiles.mjs";
+import { checkAndCleanRemovedLocales } from "./cleanUnusedFiles.mjs";
 import { callSmartling } from "./callSmartling.mjs";
 import { generateTranslationFiles } from "./generateTranslationFiles.mjs";
 import { generateLocales } from "./generateLocales.mjs";
@@ -10,24 +10,27 @@ import { generateConfig } from "./generateConfig.mjs";
   console.log("\n--- Starting Rosey CloudCannon Connector ---");
 
   console.log("\n🏗️ Reading config file...");
+  // Check for a config file and generate one if not found
   await generateConfig();
-  const configData = await readConfigFile("./rosey/rcc.yaml");
+  const configData = await readConfigFile(
+    handleConfigPaths("./rosey/rcc.yaml")
+  );
 
   // Some warnings for commonly forgotten unconfigured values
   configWarnings(configData);
 
   console.log("\n\n🏗️ Checking for content to archive...");
-  await cleanUnusedFiles(configData);
-
-  if (configData.smartling.smartling_enabled) {
-    console.log("\n\n🏗️ Calling Smartling for translations...");
-    await callSmartling(configData);
-    console.log("🏗️ Finished calling & generating Smartling files!");
-  }
+  await checkAndCleanRemovedLocales(configData);
 
   console.log("\n\n🏗️ Generating translation files...");
   await generateTranslationFiles(configData);
   console.log("\n🏗️ Finished generating translation files!");
+
+  if (configData.smartling.enabled) {
+    console.log("\n\n🤖 Calling Smartling for translations...");
+    await callSmartling(configData);
+    console.log("🤖 Finished calling & generating Smartling files!");
+  }
 
   console.log("\n\n🏗️ Generating locales files...");
   await generateLocales(configData);

@@ -1,20 +1,14 @@
 _inputs:
   $:
     type: object
-    comment: "[404](https://cool-ski.cloudvent.net/404)  //  [Git
-      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
-      ng/./rosey/translations/fr-FR/404.yaml)"
+    comment: "[404](https://cool-ski.cloudvent.net/404)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
-          comment: "[404](https://cool-ski.cloudvent.net/404)  //  [Git
-            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
-            /staging/./rosey/translations/fr-FR/404.yaml)"
+          comment: "[404](https://cool-ski.cloudvent.net/404)"
           inputs: []
         - heading: Already translated (fr-FR)
-          comment: "[404](https://cool-ski.cloudvent.net/404)  //  [Git
-            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
-            /staging/./rosey/translations/fr-FR/404.yaml)"
+          comment: "[404](https://cool-ski.cloudvent.net/404)"
           inputs: []
 urlTranslation: 404.html
