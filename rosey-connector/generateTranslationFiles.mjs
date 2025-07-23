@@ -3,10 +3,11 @@ import YAML from "yaml";
 import path from "path";
 import {
   readJsonFromFile,
-  readYamlFromFile,
+  readTranslationFile,
   archiveOldTranslationFiles,
   getYamlFileName,
   createParentDirIfExists,
+  handleConfigPaths,
 } from "./helpers/file-helpers.mjs";
 import {
   initDefaultInputs,
@@ -15,7 +16,6 @@ import {
   getNamespaceInputConfig,
   sortTranslationIntoInputGroup,
 } from "./helpers/input-helpers.mjs";
-import { htmlToMarkdown } from "./helpers/html-to-markdown.mjs";
 
 export async function generateTranslationFiles(configData) {
   // Get all the config data
@@ -23,11 +23,15 @@ export async function generateTranslationFiles(configData) {
   const seeOnPageCommentSettings = configData.see_on_page_comment;
   const gitHistoryCommentSettings = configData.git_history_link;
   const inputLengths = configData.input_lengths;
-  const baseFilePath = configData.rosey_paths.rosey_base_file_path;
-  const baseUrlFilePath = configData.rosey_paths.rosey_base_urls_file_path;
-  const translationFilesDirPath = configData.rosey_paths.translations_dir_path;
-  const incomingSmartlingTranslationsDir =
-    configData.smartling.incoming_translations_dir;
+  const baseFilePath = handleConfigPaths(
+    configData.rosey_paths.rosey_base_file_path
+  );
+  const baseUrlFilePath = handleConfigPaths(
+    configData.rosey_paths.rosey_base_urls_file_path
+  );
+  const translationFilesDirPath = handleConfigPaths(
+    configData.rosey_paths.translations_dir_path
+  );
   const namespaceArray = configData.namespace_pages;
 
   // Get the base.json and base.urls.json
@@ -46,7 +50,6 @@ export async function generateTranslationFiles(configData) {
       baseFileData,
       baseUrlFileData,
       translationFilesDirPath,
-      incomingSmartlingTranslationsDir,
       namespaceArray
     ).catch((err) => {
       console.error(`\n❌ Encountered an error translating ${locale}:`, err);
@@ -62,7 +65,6 @@ async function generateTranslationFilesForLocale(
   baseFileData,
   baseUrlFileData,
   translationFilesDirPath,
-  incomingSmartlingTranslationsDir,
   namespaceArray
 ) {
   console.log(`\n🌍 Processing locale: ${locale}`);
@@ -92,16 +94,6 @@ async function generateTranslationFilesForLocale(
     namespaceArray
   );
 
-  // Get Smartling data if any exists
-  const smartlingTranslationsDataFilePath = path.join(
-    incomingSmartlingTranslationsDir,
-    `${locale}.json`
-  );
-  // Fallback of empty object
-  const smartlingTranslationData = await readJsonFromFile(
-    smartlingTranslationsDataFilePath
-  );
-
   // Loop through the pages present in the base.json
   await Promise.all(
     pages.map(async (page) => {
@@ -118,7 +110,9 @@ async function generateTranslationFilesForLocale(
       await createParentDirIfExists(page, translationFilesDirPath, locale);
 
       // Get existing translation page data, returns a fallback if none exists
-      const translationFileData = await readYamlFromFile(translationFilePath);
+      const translationFileData = await readTranslationFile(
+        translationFilePath
+      );
       // Set up inputs for the page if none exist already
       initDefaultInputs(
         translationDataToWrite,
@@ -137,7 +131,6 @@ async function generateTranslationFilesForLocale(
         baseFileData,
         translationFileData,
         translationDataToWrite,
-        smartlingTranslationData,
         page,
         namespaceArray,
         seeOnPageCommentSettings,
@@ -164,7 +157,7 @@ async function generateTranslationFilesForLocale(
       );
 
       // Get the existing namespace file translations
-      const existingNamespaceFileData = await readYamlFromFile(
+      const existingNamespaceFileData = await readTranslationFile(
         namespaceFilePath
       ); // Falls back to empty `inputs:` obj
 
@@ -241,7 +234,6 @@ async function processTranslations(
   baseFileData,
   translationFileData,
   translationDataToWrite,
-  smartlingTranslationData,
   page,
   namespaceArray,
   seeOnPageCommentSettings,
@@ -274,17 +266,9 @@ async function processTranslations(
         translationDataToWrite[inputKey] = translationFileData[inputKey];
       }
 
-      // If entry doesn't exist in our output file but exists in the base.json, add it
-      // Check Smartling translations for the translation and add it here if it exists
-      // We only need to check Smartling for new translations
+      // If entry doesn't exist in our output file but exists in the base.json, add it as an empty translation
       if (!translationDataToWrite[inputKey]) {
-        if (smartlingTranslationData[inputKey]) {
-          translationDataToWrite[inputKey] = htmlToMarkdown(
-            smartlingTranslationData[inputKey]
-          );
-        } else {
-          translationDataToWrite[inputKey] = "";
-        }
+        translationDataToWrite[inputKey] = "";
       }
 
       // Set up inputs for each key

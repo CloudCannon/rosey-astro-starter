@@ -9,6 +9,20 @@ async function isDirectory(filePath) {
   return stat.isDirectory();
 }
 
+function handleConfigPaths(pathString) {
+  if (!pathString) {
+    return "";
+  }
+
+  const splitPathArr = pathString.split("/");
+
+  let pathToReturn = "";
+  for (const pathSegment of splitPathArr) {
+    pathToReturn = path.join(pathToReturn, pathSegment);
+  }
+  return pathToReturn;
+}
+
 async function readFileWithFallback(filepath, fallbackString) {
   try {
     const buffer = await fs.promises.readFile(filepath);
@@ -27,7 +41,7 @@ async function readJsonFromFile(filepath) {
   return JSON.parse(contents);
 }
 
-async function readYamlFromFile(filepath) {
+async function readTranslationFile(filepath) {
   const translationFileRaw = await readFileWithFallback(
     filepath,
     "_inputs: {}"
@@ -131,6 +145,14 @@ function getParentDirName(filePath) {
   return filePath.substring(0, removedExtensionUrl.lastIndexOf("/") + 1);
 }
 
+function getTranslationFilePath(
+  locale,
+  translationsDirPath,
+  translationFilename
+) {
+  return path.join(translationsDirPath, locale, translationFilename);
+}
+
 async function createParentDirIfExists(
   pageName,
   translationFilesDirPath,
@@ -229,7 +251,7 @@ export {
   isDirectory,
   readFileWithFallback,
   readJsonFromFile,
-  readYamlFromFile,
+  readTranslationFile,
   readContentPage,
   readConfigFile,
   getTranslationHtmlFilename,
@@ -237,4 +259,6 @@ export {
   getPageString,
   createParentDirIfExists,
   archiveOldTranslationFiles,
+  getTranslationFilePath,
+  handleConfigPaths,
 };
