@@ -261,7 +261,7 @@ async function generateLocale(locale, configData) {
   );
 
   // Only display url translation statistics if there is at least on url translation
-  if (Object.keys(logStatistics.numberOfUntranslatedUrls).length > 0) {
+  if (Object.keys(logStatistics.numberOfTranslatedUrls).length > 0) {
     console.log(
       `- Completed Url Translations: ${
         Object.keys(logStatistics.numberOfTranslatedUrls).length
