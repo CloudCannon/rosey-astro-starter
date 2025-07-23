@@ -1,16 +1,12 @@
 _inputs:
   $:
     type: object
-    comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
-      history](https://github.com/CloudCannon/rosey-astro-starter/commits/stagi\
-      ng/./rosey/translations/fr-FR/home.yaml)"
+    comment: "[index.html](https://cool-ski.cloudvent.net/index.html)"
     options:
       place_groups_below: false
       groups:
         - heading: Still to translate (fr-FR)
-          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
-            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
-            /staging/./rosey/translations/fr-FR/home.yaml)"
+          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)"
           inputs:
             - CloudCannon
             - CloudCannon-Astro-Starter!
@@ -23,9 +19,7 @@ _inputs:
             - rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E
             - rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E
         - heading: Already translated (fr-FR)
-          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)  //  [Git
-            history](https://github.com/CloudCannon/rosey-astro-starter/commits\
-            /staging/./rosey/translations/fr-FR/home.yaml)"
+          comment: "[index.html](https://cool-ski.cloudvent.net/index.html)"
           inputs: []
   CloudCannon:
     label: CloudCannon
