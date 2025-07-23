@@ -93,13 +93,13 @@ export async function generateConfig(
       exampleFileData.locales = locales;
     }
     // Add highlight comment to config
-    if (highlightCommentSettings.isHighlightComment) {
+    if (highlightCommentSettings?.isHighlightComment) {
       exampleFileData.see_on_page_comment.enabled = true;
       exampleFileData.see_on_page_comment.base_url =
         highlightCommentSettings.untranslatedSiteUrl;
     }
     // Add git history comment to config
-    if (gitHistoryCommentSettings.isGitHistoryComment) {
+    if (gitHistoryCommentSettings?.isGitHistoryComment) {
       exampleFileData.git_history_link.enabled = true;
       exampleFileData.git_history_link.repo_url =
         gitHistoryCommentSettings.gitRepoUrl;
