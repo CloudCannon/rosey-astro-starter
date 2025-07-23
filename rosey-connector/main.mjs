@@ -4,7 +4,7 @@ import { checkAndCleanRemovedLocales } from "./cleanUnusedFiles.mjs";
 import { callSmartling } from "./callSmartling.mjs";
 import { generateTranslationFiles } from "./generateTranslationFiles.mjs";
 import { generateLocales } from "./generateLocales.mjs";
-import { generateConfig } from "./generate.mjs";
+import { generateConfig } from "./generateConfig.mjs";
 
 (async () => {
   console.log("\n--- Starting Rosey CloudCannon Connector ---");
