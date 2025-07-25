@@ -49,7 +49,7 @@ rosey_paths:
 # https://help.smartling.com/hc/en-us/articles/4405992477979-Node-js-SDK
 smartling:
   # Enable/Disbale the integration.
-  smartling_enabled: false
+  enabled: false
   # The public facing credentials Smartling gives you.
   dev_project_id: 
   dev_user_identifier: 
@@ -135,7 +135,7 @@ _inputs:
         icon: smart_toy
         text:
           - template: "{'Enabled'|if=enabled|default='Disabled'}"
-  smartling_enabled:
+  enabled:
     type: switch
     comment: >-
       Enable automatic Smartling AI powered machine translations? Requires a
@@ -144,27 +144,27 @@ _inputs:
       before enabling this.
   dev_project_id:
     type: text
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: Enter your Smartling project id here
   dev_user_identifier:
     type: text
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: Enter your Smartling user id here
   ping_interval:
     type: number
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: >-
       The time between pings to Smartlings API when checking if translations are
       done yet. Measured in ms.
   ping_maximum:
     type: number
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: >-
       The number of pings to try Smartlings API for new translations before
       giving up.
   pings_to_wait_for_auth:
     type: number
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: >-
       The number of pings to try Smartlings API for authorization for new
       translations before timing out. If there are no new translations, but the
@@ -173,17 +173,17 @@ _inputs:
       trying the full set of pings.
   incoming_translations_dir:
     type: text
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: >-
       The location of the directory that the incoming translation files are
       downloaded to.
   outgoing_translations_file_path:
     type: text
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: The location of the outgoing translations JSON file.
   outgoing_translation_file_uri:
     type: text
-    hidden: '!smartling_enabled'
+    hidden: '!enabled'
     comment: >-
       The unique identifier that Smartling uses for this site. Can be anything
       as long as it's unique to this site in your Smartling project.

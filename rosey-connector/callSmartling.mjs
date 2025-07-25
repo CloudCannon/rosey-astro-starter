@@ -110,6 +110,13 @@ export async function callSmartling(configData) {
     authRequestData
   );
 
+  if (!authData) {
+    console.log(
+      `⚠️ No authentication data received from Smartling, skipping Smartling call. Check you have set your Smartling credentials correctly, and try again.`
+    );
+    return;
+  }
+
   const authToken = authData.response.data.accessToken;
 
   // Create job.
@@ -306,15 +313,13 @@ async function generateOutgoingTranslationFile(
         const smartlingTranslations = await readJsonFromFile(
           smartlingTranslationsFilePath
         );
-        const fileLocaleName = translationFile.replace(".json", "");
-        existingSmartlingTranslations[fileLocaleName] = Object.keys(
+        const localeByFileName = translationFile.replace(".json", "");
+        existingSmartlingTranslations[localeByFileName] = Object.keys(
           smartlingTranslations
         );
       })
     );
-    // Otherwise just make it an empty obj so we see there is no existing Smartling translations
-  } else {
-    existingSmartlingTranslations = {};
+    // Otherwise just keep existingSmartlingTranslations an empty obj so we see there is no existing Smartling translations
   }
 
   // Check if the translation key is a blank string in any of the translation files
@@ -382,13 +387,20 @@ async function generateOutgoingTranslationFile(
   for (const key of inputKeys) {
     // If key doesn't have a translation in the translation files, look through the Smartling translations for each locale
     if (untranslatedKeysInTranslationFiles.includes(key)) {
-      // If there's also no translation been received before for any of the locales,
+      // If there's also no translation been received before for at least one of the locales,
       // we'll add it to the phrases to send to Smartling
-      for (const localeArr of Object.keys(existingSmartlingTranslations)) {
-        if (!localeArr.includes(key)) {
+      for (const locale of locales) {
+        // If the locale doesn't exist in Smartling translations a translation def doesn't exist so we're safe to send away
+        if (!existingSmartlingTranslations[locale]) {
           const originalPhrase = inputFileData.keys[key].original;
           translationObject[key] = originalPhrase;
-          // TODO: If we break here to stop checking the rest of the locales, will it also break the inputKey loop (undesirable)
+          // We can break because the translation doesn't exist in at least one locale so it should be sent away
+          break;
+          // If the key doesn't exist in our Smartling translations already we can send away
+        } else if (existingSmartlingTranslations[locale].includes(key)) {
+          const originalPhrase = inputFileData.keys[key].original;
+          translationObject[key] = originalPhrase;
+          break;
         }
       }
     }
