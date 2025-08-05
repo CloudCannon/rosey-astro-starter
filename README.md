@@ -1,7 +1,7 @@
 # Astro Rosey Starter
 
 - [Read this post for context](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/)
-- [Read the getting started guide here](https://github.com/CloudCannon/rcc)
+- [Read the getting started guide here](https://rad-turnip.cloudvent.net/docs/)
 
 ## Local Development
 
