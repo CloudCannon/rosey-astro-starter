@@ -260,19 +260,38 @@ _inputs:
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=words)"
     context: {}
 urlTranslation: blog/tailwind/index.html
-Pagefind-Search: ""
-SEO-Controls: ""
-Tailwind: ""
-building: ""
-rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E: ""
-rcc-markdown:If-you'd-like-to-remove-Tailwind%3A: ""
-rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs: ""
-rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A: ""
-rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E: ""
-rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind: ""
-recent-posts: ""
-search: ""
-seo: ""
-styling: ""
-tailwind: ""
-words: ""
+Pagefind-Search: |
+  Recherche de page
+SEO-Controls: |
+  Contrôles SEO
+Tailwind: |
+  Vent arrière
+building: |
+  Bâtiment
+rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E: |
+  Supprimez votre fichier `tailwind.config.mjs`.
+rcc-markdown:If-you'd-like-to-remove-Tailwind%3A: |
+  Si vous souhaitez supprimer Tailwind :
+rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs: |
+  Supprimez les mentions de Tailwind dans votre fichier `astro.config.mjs.`
+rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A: |
+  Exécutez la commande suivante à la racine du site :
+rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E: >
+  Utilisez Tailwind pour styliser votre HTML, ce qui vous permet de styliser vos
+  composants sans quitter votre HTML. Cela peut être utilisé en combinaison avec
+  les styles CSS et SCSS normaux, ce qui vous permet d'ajouter des styles à
+  votre site comme vous le souhaitez.
+rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind: |
+  `npm uninstall tailwindcss @astrojs/tailwind`
+recent-posts: |
+  Messages récents
+search: |
+  Recherche
+seo: |
+  Référencement
+styling: |
+  Stylisme
+tailwind: |
+  Vent arrière
+words: |
+  mots

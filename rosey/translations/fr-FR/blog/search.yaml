@@ -227,17 +227,49 @@ _inputs:
       context](https://cool-ski.cloudvent.net/blog/search/#:~:text=words)"
     context: {}
 urlTranslation: blog/search/index.html
-Pagefind-Search: ""
-SEO-Controls: ""
-Tailwind: ""
-building: ""
-rcc-markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site%2E-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration%2E-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page%2E): ""
-rcc-markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer%2E-The-search-bar-is-located-at-the-top-of-the-blog-index-page%2E: ""
-rcc-markdown:Pagefind-is-a-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E: ""
-rcc-markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible%2E-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index%2E-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself%2E-For-most-sites-this-will-be-closer-to-100kB%2E: ""
-recent-posts: ""
-search: ""
-seo: ""
-styling: ""
-tailwind: ""
-words: ""
+Pagefind-Search: |
+  Recherche de page
+SEO-Controls: |
+  Contrôles SEO
+Tailwind: |
+  Vent arrière
+building: |
+  Bâtiment
+rcc-markdown:After-indexing-Pagefind-adds-a-static-search-bundle-to-your-built-files-which-exposes-a-JavaScript-search-API-that-can-be-used-anywhere-on-your-site%2E-Pagefind-also-provides-a-prebuilt-UI-that-can-be-used-with-no-configuration%2E-(You-can-see-the-prebuilt-UI-at-the-top-of-this-page%2E): >
+  Après l'indexation, Pagefind ajoute un ensemble de recherche statique à vos
+  fichiers créés, qui expose une API de recherche JavaScript pouvant être
+  utilisée n'importe où sur votre site. Pagefind fournit également une interface
+  utilisateur prédéfinie qui peut être utilisée sans aucune configuration. (Vous
+  pouvez voir l'interface utilisateur préconstruite en haut de cette page.)
+rcc-markdown:On-this-template-the-search-has-been-scoped-to-index-only-the-text-content-of-blog-posts-to-avoid-showing-results-on-the-homepage-blog-index-page-header-and-footer%2E-The-search-bar-is-located-at-the-top-of-the-blog-index-page%2E: >
+  Dans ce modèle, la recherche a été limitée à l'indexation du contenu textuel
+  des articles de blog, afin d'éviter l'affichage des résultats sur la page
+  d'accueil, la page d'index du blog, l'en-tête et le pied de page. La barre de
+  recherche se trouve en haut de la page d'index du blog.
+rcc-markdown:Pagefind-is-a-fully-static-search-library-that-aims-to-perform-well-on-large-sites-while-using-as-little-of-your-users'-bandwidth-as-possible-and-without-hosting-any-infrastructure%2E: >
+  Pagefind est une bibliothèque de recherche entièrement statique qui vise à
+  offrir de bonnes performances sur les sites volumineux, tout en utilisant le
+  moins possible la bande passante de vos utilisateurs et sans héberger aucune
+  infrastructure.
+rcc-markdown:The-goal-of-Pagefind-is-that-websites-with-tens-of-thousands-of-pages-should-be-searchable-by-someone-in-their-browser-while-consuming-as-little-bandwidth-as-possible%2E-Pagefind's-search-index-is-split-into-chunks-so-that-searching-in-the-browser-only-ever-needs-to-load-a-small-subset-of-the-search-index%2E-Pagefind-can-run-a-full-text-search-on-a-10000-page-site-with-a-total-network-payload-under-300kB-including-the-Pagefind-library-itself%2E-For-most-sites-this-will-be-closer-to-100kB%2E: >
+  L'objectif de Pagefind est de permettre à tout utilisateur de rechercher des
+  informations sur des sites web comportant des dizaines de milliers de pages à
+  partir de son navigateur, tout en consommant le moins de bande passante
+  possible. L'index de recherche de Pagefind est divisé en morceaux, de sorte
+  que la recherche dans le navigateur *ne* <s>nécessite</s> que le chargement
+  d'un petit sous-ensemble de l'index de recherche. Pagefind peut effectuer une
+  recherche en texte intégral sur un site de 10 000 pages avec une charge utile
+  totale sur le réseau inférieure à 300 ko, y compris la bibliothèque Pagefind
+  elle-même. Pour la plupart des sites, cela sera plus proche de 100 Ko.
+recent-posts: |
+  Messages récents
+search: |
+  Recherche
+seo: |
+  Référencement
+styling: |
+  Stylisme
+tailwind: |
+  Vent arrière
+words: |
+  mots

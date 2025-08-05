@@ -75,11 +75,19 @@ _inputs:
     options: {}
     comment: ""
     context: {}
-common:Blog: ""
-common:CloudCannon: ""
-common:Deutsch: ""
-common:English-(US): ""
-common:French: ""
-common:GitHub: ""
-common:MyCompany%2E-All-rights-reserved%2E: ""
-common:RSS-Feed: ""
+common:Blog: |
+  Blog
+common:CloudCannon: |
+  CloudCannon
+common:Deutsch: |
+  Deutsch
+common:English-(US): |
+  Englisch (USA)
+common:French: |
+  Französisch
+common:GitHub: |
+  GitHub (Englisch)
+common:MyCompany%2E-All-rights-reserved%2E: |
+  MyCompany. Alle Rechte vorbehalten.
+common:RSS-Feed: |
+  RSS-Feed

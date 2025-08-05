@@ -48,7 +48,11 @@ _inputs:
       context](https://cool-ski.cloudvent.net/tags/styling/#:~:text=Tailwind)"
     context: {}
 urlTranslation: tags/styling/index.html
-Tailwind: ""
-building: ""
-styling: ""
-tailwind: ""
+Tailwind: |
+  Rückenwind
+building: |
+  Gebäude
+styling: |
+  Styling
+tailwind: |
+  Rückenwind

@@ -31,5 +31,7 @@ _inputs:
       context](https://cool-ski.cloudvent.net/tags/search/#:~:text=Search)"
     context: {}
 urlTranslation: tags/search/index.html
-Pagefind-Search: ""
-search: ""
+Pagefind-Search: |
+  Pagefind Suche
+search: |
+  Suchen

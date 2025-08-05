@@ -260,19 +260,38 @@ _inputs:
       context](https://cool-ski.cloudvent.net/blog/tailwind/#:~:text=words)"
     context: {}
 urlTranslation: blog/tailwind/index.html
-Pagefind-Search: ""
-SEO-Controls: ""
-Tailwind: ""
-building: ""
-rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E: ""
-rcc-markdown:If-you'd-like-to-remove-Tailwind%3A: ""
-rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs: ""
-rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A: ""
-rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E: ""
-rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind: ""
-recent-posts: ""
-search: ""
-seo: ""
-styling: ""
-tailwind: ""
-words: ""
+Pagefind-Search: |
+  Pagefind Suche
+SEO-Controls: |
+  SEO-Kontrollen
+Tailwind: |
+  Rückenwind
+building: |
+  Gebäude
+rcc-markdown:Delete-your-tailwind%2Econfig%2Emjs-file%2E: |
+  Löschen Sie Ihre `tailwind.config.mjs` Datei.
+rcc-markdown:If-you'd-like-to-remove-Tailwind%3A: |
+  Wenn Sie Tailwind entfernen möchten:
+rcc-markdown:Remove-mentions-of-Tailwind-from-your-astro%2Econfig%2Emjs: |
+  Entfernen Sie Erwähnungen von Tailwind aus Ihrem `astro.config.mjs`
+rcc-markdown:Run-the-following-command-in-the-root-of-the-site%3A: |
+  Führen Sie den folgenden Befehl im Stammverzeichnis der Website aus:
+rcc-markdown:Use-Tailwind-to-style-your-HTML-allowing-you-to-style-your-components-without-leaving-your-HTML%2E-This-can-be-used-in-combination-with-normal-CSS-and-SCSS-styling-leaving-you-to-add-styles-to-your-site-however-you-want%2E: >
+  Verwenden Sie Tailwind, um Ihren HTML-Code zu formatieren, sodass Sie Ihre
+  Komponenten formatieren können, ohne Ihren HTML-Code zu verlassen. Dies kann
+  in Kombination mit normalem CSS- und SCSS-Styling verwendet werden, sodass Sie
+  Ihrer Website nach Belieben Stile hinzufügen können.
+rcc-markdown:npm-uninstall-tailwindcss-%40astrojstailwind: |
+  `npm uninstall tailwindcss @astrojs/tailwind`
+recent-posts: |
+  Neueste Beiträge
+search: |
+  Suchen
+seo: |
+  Seo
+styling: |
+  Styling
+tailwind: |
+  Rückenwind
+words: |
+  Wörter
