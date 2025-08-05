@@ -202,13 +202,31 @@ _inputs:
         Visual editing allows you to preview your changes live before you save
         them.
 urlTranslation: index.html
-CloudCannon: ""
-CloudCannon-Astro-Starter!: ""
-GitHub: ""
-Keep-what-you-need%2E-Delete-the-rest%2E: ""
-You-choose-your-editing-experience%2E: ""
-rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: ""
-rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E: ""
-rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E: ""
-rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E: ""
-rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E: ""
+CloudCannon: |
+  CloudCannon
+CloudCannon-Astro-Starter!: |
+  CloudCannon Astro Starter!
+GitHub: |
+  GitHub (Englisch)
+Keep-what-you-need%2E-Delete-the-rest%2E: |
+  Behalten Sie, was Sie brauchen. Löschen Sie den Rest.
+You-choose-your-editing-experience%2E: |
+  Sie wählen Ihre Bearbeitungserfahrung.
+rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: >
+  Ein flexibles Git-gestütztes CMS, das sich auf die Bearbeitung von Markdown-
+  und Datendateien spezialisiert hat.
+rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E: >
+  Ein Ausgangspunkt für Entwickler, die eine mehrsprachige Website mit Astro,
+  Rosey und dem Rosey CloudCannon Connector erstellen möchten, indem sie
+  Bookshop-Komponenten in CloudCannon verwenden. Erstellen Sie Ihre eigene Kopie
+  und beginnen Sie mit der Erstellung Ihrer eigenen Komponenten, die Sie im CMS
+  von CloudCannon verwenden können.
+rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E: >
+  Git-gestützt bedeutet, dass Sie alle Ihre vertrauten Git-Workflows beibehalten
+  können, und bietet gleichzeitig eine leicht verständliche Oberfläche für
+  nicht-technische Redakteure, um über Git zusammenzuarbeiten.
+rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E: |
+  Das Ziel des Rosey Astro Starter ist es, Entwickler dazu zu bringen, schnell ihre eigene Website in CloudCannon zu erstellen. Diese Vorlage versucht, ein Gleichgewicht zwischen minimaler und leicht zu löschender Boilerplate zu finden und gleichzeitig einige häufig verwendete Funktionen sofort bereitzustellen. Lesen Sie [hier](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/) mehr über Rosey in CloudCannon.
+rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E: >
+  Mit der visuellen Bearbeitung können Sie Ihre Änderungen live in der Vorschau
+  anzeigen, bevor Sie sie speichern.
