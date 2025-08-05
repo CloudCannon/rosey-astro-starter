@@ -21,7 +21,7 @@ rosey_paths:
   translations_dir_path: ./rosey/translations
   locales_dir_path: ./rosey/locales
 smartling:
-  enabled: true
+  enabled: false
   dev_project_id:
   dev_user_identifier:
   ping_interval: 20000
