@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
+
 npx @bookshop/generate
 
-if [[ $ROSEYPROD != "true" ]];
+if [[ $ROSEY_PROD != "true" ]];
 then
-  node rosey-tagger/main.mjs --source dist
+  npx rosey-cloudcannon-connector tag --source dist
   npx rosey generate --source dist
-  node rosey-connector/main.mjs
+  npx rosey-cloudcannon-connector generate
 fi
 
-if [[ $ROSEYPROD == "true" ]];
+if [[ $ROSEY_PROD == "true" ]];
 then
-  node rosey-tagger/main.mjs --source dist
+  npx rosey-cloudcannon-connector tag --source dist
   echo "Translating site with Rosey"
   # By default, Rosey will place the default language under a language code, e.g. /en/index.html, and will generate a redirect file at /index.html.
   # By setting the flag --default-language-at-root, Rosey will output the default language at the root path, e.g. /index.html.
