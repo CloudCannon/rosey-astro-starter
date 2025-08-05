@@ -22,8 +22,8 @@ rosey_paths:
   locales_dir_path: ./rosey/locales
 smartling:
   enabled: true
-  dev_project_id: 403ba8439
-  dev_user_identifier: widgoyosxtbfsfonzlcfejabgndxst
+  dev_project_id:
+  dev_user_identifier:
   ping_interval: 20000
   ping_maximum: 6
   pings_to_wait_for_auth: 3
