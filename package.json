@@ -13,6 +13,7 @@
     "pagefind-server": "run-s build pagefind"
   },
   "dependencies": {
+    "@astrojs/alpinejs": "^0.4.8",
     "@astrojs/mdx": "4.0.7",
     "@astrojs/react": "4.2.0",
     "@astrojs/tailwind": "5.1.5",
@@ -22,8 +23,10 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/alpinejs": "^3.13.11",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "alpinejs": "^3.14.9",
     "astro": "5.1.10",
     "astro-embed": "0.9.0",
     "markdown-it": "^13.0.1",
