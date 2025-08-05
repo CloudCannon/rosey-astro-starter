@@ -6,6 +6,6 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tiny-jackal.cloudvent.net/",
+  site: "https://deluxe-gel.cloudvent.net/",
   integrations: [react(), tailwind(), bookshop(), mdx()],
 });
