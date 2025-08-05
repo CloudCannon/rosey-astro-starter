@@ -7,14 +7,14 @@ _inputs:
       groups:
         - heading: Still to translate (fr-FR)
           comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)"
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)"
           inputs:
             - Tailwind
             - building
             - styling
             - tailwind
-        - heading: Already translated (fr-FR)
-          comment: "[tags/styling/](https://cool-ski.cloudvent.net/tags/styling/)"
-          inputs: []
   Tailwind:
     label: Tailwind
     hidden: false

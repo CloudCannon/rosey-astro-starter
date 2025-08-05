@@ -7,6 +7,9 @@ _inputs:
       groups:
         - heading: Still to translate (de-DE)
           comment: "[blog/tailwind/](https://cool-ski.cloudvent.net/blog/tailwind/)"
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: "[blog/tailwind/](https://cool-ski.cloudvent.net/blog/tailwind/)"
           inputs:
             - Pagefind-Search
             - SEO-Controls
@@ -24,9 +27,6 @@ _inputs:
             - styling
             - tailwind
             - words
-        - heading: Already translated (de-DE)
-          comment: "[blog/tailwind/](https://cool-ski.cloudvent.net/blog/tailwind/)"
-          inputs: []
   Pagefind-Search:
     label: Pagefind Search
     hidden: false
