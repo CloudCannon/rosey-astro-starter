@@ -7,12 +7,12 @@ _inputs:
       groups:
         - heading: Still to translate (de-DE)
           comment: "[tags/search/](https://cool-ski.cloudvent.net/tags/search/)"
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: "[tags/search/](https://cool-ski.cloudvent.net/tags/search/)"
           inputs:
             - Pagefind-Search
             - search
-        - heading: Already translated (de-DE)
-          comment: "[tags/search/](https://cool-ski.cloudvent.net/tags/search/)"
-          inputs: []
   Pagefind-Search:
     label: Pagefind Search
     hidden: false

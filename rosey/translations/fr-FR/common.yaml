@@ -7,6 +7,9 @@ _inputs:
       groups:
         - heading: Still to translate (fr-FR)
           comment: Text to translate
+          inputs: []
+        - heading: Already translated (fr-FR)
+          comment: Text already translated
           inputs:
             - common:Blog
             - common:CloudCannon
@@ -16,9 +19,6 @@ _inputs:
             - common:GitHub
             - common:MyCompany%2E-All-rights-reserved%2E
             - common:RSS-Feed
-        - heading: Already translated (fr-FR)
-          comment: Text already translated
-          inputs: []
   common:Blog:
     label: Blog
     hidden: false
