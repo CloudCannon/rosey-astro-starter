@@ -5,10 +5,15 @@
     "install_command": "npm install",
     "build_command": "npm run build",
     "output_path": "dist",
-    "preserved_paths": "",
+    "preserved_paths": "node_modules/",
     "preserveOutput": false,
     "includeGit": false,
-    "environment_variables": [],
+    "environment_variables": [
+      {
+        "key": "CLOUDCANNON_SYNC_PATHS",
+        "value": "/rosey/"
+      }
+    ],
     "node_version": "20"
   }
 }
