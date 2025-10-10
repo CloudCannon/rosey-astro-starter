@@ -22,8 +22,8 @@ rosey_paths:
   locales_dir_path: ./rosey/locales
 smartling:
   enabled: false
-  dev_project_id:
-  dev_user_identifier:
+  dev_project_id: null
+  dev_user_identifier: null
   ping_interval: 20000
   ping_maximum: 6
   pings_to_wait_for_auth: 3
@@ -33,8 +33,7 @@ smartling:
 _inputs:
   locales:
     type: array
-    comment: >-
-      Add and remove the locales you need for your site. Locales can be any
+    comment: Add and remove the locales you need for your site. Locales can be any
       format, usually either a two letter code (es), or a hyphenated four letter
       code (es-ES).
   locales[*]:
@@ -46,38 +45,34 @@ _inputs:
         icon: format_quote
         text: Label and Textarea controls
         subtext:
-          - template: 'Label: {label}, Textarea: {textarea}'
+          - template: "Label: {label}, Textarea: {textarea}"
   input_lengths.label:
     type: number
-    comment: >-
-      At what character length will inputs concatenate their label, and create a
-      context box to see the whole translation.
+    comment: At what character length will inputs concatenate their label, and
+      create a context box to see the whole translation.
   input_lengths.textarea:
     type: number
-    comment: >-
-      At what character length will inputs concatenate their label, and create a
-      context box to see the whole translation.
+    comment: At what character length will inputs concatenate their label, and
+      create a context box to see the whole translation.
   see_on_page_comment:
     type: object
     options:
       preview:
         icon: read_more
         text:
-          - template: '{''Enabled''|if=enabled|default=''Disabled''}'
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
         subtext:
-          - template: 'Link text: {comment_text}, Site url: {base_url}'
+          - template: "Link text: {comment_text}, Site url: {base_url}"
   see_on_page_comment.enabled:
     type: switch
-    comment: >-
-      Enable links for each translation input that show a user the original
+    comment: Enable links for each translation input that show a user the original
       phrase in context on the untranslated page.
   see_on_page_comment.base_url:
-    hidden: '!enabled'
-    comment: >-
-      The url of the untranslated site. Used to generate links to the original
-      content to help provide context to translators.
+    hidden: "!enabled"
+    comment: The url of the untranslated site. Used to generate links to the
+      original content to help provide context to translators.
   see_on_page_comment.comment_text:
-    hidden: '!enabled'
+    hidden: "!enabled"
     comment: The text used for the link.
   git_history_link:
     type: object
@@ -85,26 +80,23 @@ _inputs:
       preview:
         icon: history
         text:
-          - template: '{''Enabled''|if=enabled|default=''Disabled''}'
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
         subtext:
-          - template: 'Link text: {comment_text}, Repo url: {repo_url}'
+          - template: "Link text: {comment_text}, Repo url: {repo_url}"
   git_history_link.enabled:
     type: switch
-    comment: >-
-      Enable links for each translation file that show a user the git history
+    comment: Enable links for each translation file that show a user the git history
       for the file.
   git_history_link.base_url:
-    hidden: '!enabled'
-    comment: >-
-      The url of the git repository. Used to generate links to the translation
-      file's git history.
+    hidden: "!enabled"
+    comment: The url of the git repository. Used to generate links to the
+      translation file's git history.
   git_history_link.comment_text:
-    hidden: '!enabled'
+    hidden: "!enabled"
     comment: The text used for the link.
   namespace_pages:
     type: array
-    comment: >-
-      Group translations by namespace. A page will be created for each
+    comment: Group translations by namespace. A page will be created for each
       namespace, your translations will be scanned for corresponding Rosey
       namespaces, and grouped on the namespace page. See the [Rosey
       docs](https://rosey.app/docs/namespacing/) for details on adding
@@ -133,60 +125,131 @@ _inputs:
       preview:
         icon: smart_toy
         text:
-          - template: '{''Enabled''|if=enabled|default=''Disabled''}'
+          - template: "{'Enabled'|if=enabled|default='Disabled'}"
   smartling.enabled:
     type: switch
-    comment: >-
-      Enable automatic Smartling AI powered machine translations? Requires a
+    comment: Enable automatic Smartling AI powered machine translations? Requires a
       Smartling account with an API key set in this site's environment
       variables. Make sure you understand the billing around these translations
       before enabling this.
   dev_project_id:
     type: text
-    hidden: '!enabled'
-    comment: >-
-      Enter your Smartling project id here. This will be supplied by Smartling
-      when you sign up.
+    hidden: "!enabled"
+    comment: Enter your Smartling project id here. This will be supplied by
+      Smartling when you sign up.
   dev_user_identifier:
     type: text
-    hidden: '!enabled'
-    comment: >-
-      Enter your Smartling user id here. This will be supplied by Smartling when
-      you sign up.
+    hidden: "!enabled"
+    comment: Enter your Smartling user id here. This will be supplied by Smartling
+      when you sign up.
   ping_interval:
     type: number
-    hidden: '!enabled'
-    comment: >-
-      The time between pings to Smartlings API when checking if translations are
-      done yet. Measured in ms.
+    hidden: "!enabled"
+    comment: The time between pings to Smartlings API when checking if translations
+      are done yet. Measured in ms.
   ping_maximum:
     type: number
-    hidden: '!enabled'
-    comment: >-
-      The number of pings to try Smartlings API for new translations before
+    hidden: "!enabled"
+    comment: The number of pings to try Smartlings API for new translations before
       giving up.
   pings_to_wait_for_auth:
     type: number
-    hidden: '!enabled'
-    comment: >-
-      The number of pings to try Smartlings API for authorization for new
+    hidden: "!enabled"
+    comment: The number of pings to try Smartlings API for authorization for new
       translations before timing out. If there are no new translations, but the
       API call somehow goes through, Smartling will get stuck on
       AWAITING_AUTHORIZATION. If this is the case can save time to exit before
       trying the full set of pings.
   incoming_translations_dir:
     type: text
-    hidden: '!enabled'
-    comment: >-
-      The location of the directory that the incoming translation files are
+    hidden: "!enabled"
+    comment: The location of the directory that the incoming translation files are
       downloaded to.
   outgoing_translations_file_path:
     type: text
-    hidden: '!enabled'
+    hidden: "!enabled"
     comment: The location of the outgoing translations JSON file.
   outgoing_translation_file_uri:
     type: text
-    hidden: '!enabled'
-    comment: >-
-      The unique identifier that Smartling uses for this site. Can be anything
-      as long as it's unique to this site in your Smartling project.
+    hidden: "!enabled"
+    comment: The unique identifier that Smartling uses for this site. Can be
+      anything as long as it's unique to this site in your Smartling project.
+  markdown_keys:
+    type: array
+    comment: Define namespaces that nominate a translation as requiring a type
+      markdown input. Each markdown key namespace can define which markdown
+      options are enabled.
+    options:
+      structures: _structures.markdown_key
+  index_html_pages_only:
+    type: switch
+    comment: If pages are built like /about/index.html, set this to false. If pages
+      are built like /about.html, set this to true.
+markdown_keys:
+  - id: rcc-markdown
+    enabled_markdown_options:
+      bold: true
+      italic: true
+      strike: true
+      link: true
+      subscript: true
+      superscript: true
+      underline: true
+      code: true
+      undo: true
+      redo: true
+      removeformat: true
+      copyformatting: true
+_structures:
+  markdown_key:
+    values:
+      - value:
+          id: ""
+          enabled_markdown_options:
+            bold: true
+            italic: true
+            strike: true
+            link: true
+            subscript: true
+            superscript: true
+            underline: true
+            code: true
+            undo: true
+            redo: true
+            removeformat: true
+            copyformatting: true
+        _inputs:
+          id:
+            type: text
+            comment: The value used for the namespace that nominates a Rosey tag as needing
+              a markdown type input for it's translation.
+          enabled_markdown_options:
+            type: object
+            options:
+              preview:
+                icon: list
+          bold:
+            type: switch
+          italic:
+            type: switch
+          strike:
+            type: switch
+          link:
+            type: switch
+          subscript:
+            type: switch
+          superscript:
+            type: switch
+          underline:
+            type: switch
+          code:
+            type: switch
+          undo:
+            type: switch
+          redo:
+            type: switch
+          removeformat:
+            type: switch
+          copyformatting:
+            type: switch
+index_html_pages_only: false
