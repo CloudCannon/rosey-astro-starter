@@ -12,7 +12,12 @@ _inputs:
             - blog:Pagefind-Search
             - blog:SEO-Controls
             - blog:Tailwind
+            - blog:WYSIWYG-editing
+            - blog:accessibility
             - blog:building
+            - blog:formatting
+            - blog:navigation
+            - blog:pagination
             - blog:recent-posts
             - blog:search
             - blog:seo
@@ -50,8 +55,43 @@ _inputs:
     options: {}
     comment: ""
     context: {}
+  blog:WYSIWYG-editing:
+    label: WYSIWYG editing
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  blog:accessibility:
+    label: Accessibility
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
   blog:building:
     label: Building
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  blog:formatting:
+    label: Formatting
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  blog:navigation:
+    label: Navigation
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  blog:pagination:
+    label: Pagination
     hidden: false
     type: text
     options: {}
@@ -99,14 +139,35 @@ _inputs:
     options: {}
     comment: ""
     context: {}
-blog:Blog: ""
-blog:Pagefind-Search: ""
-blog:SEO-Controls: ""
-blog:Tailwind: ""
-blog:building: ""
-blog:recent-posts: ""
-blog:search: ""
-blog:seo: ""
-blog:styling: ""
-blog:tailwind: ""
-blog:words: ""
+blog:Blog: |
+  Der Blog
+blog:Pagefind-Search: |
+  Pagefind-Suche
+blog:SEO-Controls: |
+  SEO-Kontrollen
+blog:Tailwind: |
+  Rückenwind
+blog:WYSIWYG-editing: |
+  WYSIWYG-Bearbeitung
+blog:accessibility: |
+  Zugänglichkeit
+blog:building: |
+  Gebäude
+blog:formatting: |
+  Formatierung
+blog:navigation: |
+  Navigation
+blog:pagination: |
+  Pagination
+blog:recent-posts: |
+  Neueste Beiträge
+blog:search: |
+  Suchen
+blog:seo: |
+  SEO
+blog:styling: |
+  Styling
+blog:tailwind: |
+  Rückenwind
+blog:words: |
+  Wörter

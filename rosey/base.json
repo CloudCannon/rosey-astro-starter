@@ -90,11 +90,62 @@
         "de-DE/blog/seo/index.html": 1,
         "fr-FR/blog/search/index.html": 1,
         "fr-FR/blog/seo/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 10
+      "total": 15
+    },
+    "blog:WYSIWYG-editing": {
+      "original": "WYSIWYG editing ",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "de-DE/blog/search/index.html": 1,
+        "de-DE/blog/seo/index.html": 1,
+        "fr-FR/blog/search/index.html": 1,
+        "fr-FR/blog/seo/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 16
+    },
+    "blog:accessibility": {
+      "original": "Accessibility ",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "de-DE/blog/search/index.html": 1,
+        "de-DE/blog/seo/index.html": 1,
+        "fr-FR/blog/search/index.html": 1,
+        "fr-FR/blog/seo/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 16
     },
     "blog:building": {
       "original": "Building ",
@@ -110,11 +161,85 @@
         "fr-FR/blog/search/index.html": 1,
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 13
+      "total": 18
+    },
+    "blog:formatting": {
+      "original": "Formatting",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "de-DE/blog/search/index.html": 1,
+        "de-DE/blog/seo/index.html": 1,
+        "fr-FR/blog/search/index.html": 1,
+        "fr-FR/blog/seo/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 16
+    },
+    "blog:navigation": {
+      "original": "Navigation ",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "de-DE/blog/search/index.html": 1,
+        "de-DE/blog/seo/index.html": 1,
+        "fr-FR/blog/search/index.html": 1,
+        "fr-FR/blog/seo/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 16
+    },
+    "blog:pagination": {
+      "original": "Pagination ",
+      "value": null,
+      "pages": {
+        "blog/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "de-DE/blog/search/index.html": 1,
+        "de-DE/blog/seo/index.html": 1,
+        "fr-FR/blog/search/index.html": 1,
+        "fr-FR/blog/seo/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
+        "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
+        "tags/styling/index.html": 1,
+        "tags/tailwind/index.html": 1
+      },
+      "total": 16
     },
     "blog:recent-posts": {
       "original": "Recent Posts",
@@ -182,14 +307,19 @@
         "fr-FR/blog/search/index.html": 1,
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 13
+      "total": 18
     },
     "blog:tailwind": {
-      "original": "Tailwind",
+      "original": "Tailwind ",
       "value": null,
       "pages": {
         "blog/index.html": 1,
@@ -202,11 +332,16 @@
         "fr-FR/blog/search/index.html": 1,
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 13
+      "total": 18
     },
     "blog:words": {
       "original": "words",
@@ -240,13 +375,18 @@
         "fr-FR/blog/seo/index.html": 3,
         "fr-FR/blog/tailwind/index.html": 3,
         "index.html": 3,
+        "tags/WYSIWYG editing/index.html": 3,
+        "tags/accessibility/index.html": 3,
         "tags/building/index.html": 3,
+        "tags/formatting/index.html": 3,
+        "tags/navigation/index.html": 3,
+        "tags/pagination/index.html": 3,
         "tags/search/index.html": 3,
         "tags/seo/index.html": 3,
         "tags/styling/index.html": 3,
         "tags/tailwind/index.html": 3
       },
-      "total": 51
+      "total": 66
     },
     "common:CloudCannon": {
       "original": "CloudCannon",
@@ -264,13 +404,18 @@
         "fr-FR/blog/seo/index.html": 2,
         "fr-FR/blog/tailwind/index.html": 2,
         "index.html": 2,
+        "tags/WYSIWYG editing/index.html": 2,
+        "tags/accessibility/index.html": 2,
         "tags/building/index.html": 2,
+        "tags/formatting/index.html": 2,
+        "tags/navigation/index.html": 2,
+        "tags/pagination/index.html": 2,
         "tags/search/index.html": 2,
         "tags/seo/index.html": 2,
         "tags/styling/index.html": 2,
         "tags/tailwind/index.html": 2
       },
-      "total": 34
+      "total": 44
     },
     "common:Deutsch": {
       "original": "Deutsch",
@@ -288,13 +433,18 @@
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
         "index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
         "tags/seo/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 17
+      "total": 22
     },
     "common:English-(US)": {
       "original": "English (US)",
@@ -312,13 +462,18 @@
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
         "index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
         "tags/seo/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 17
+      "total": 22
     },
     "common:French": {
       "original": "French",
@@ -336,13 +491,18 @@
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
         "index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
         "tags/seo/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 17
+      "total": 22
     },
     "common:GitHub": {
       "original": "GitHub",
@@ -360,13 +520,18 @@
         "fr-FR/blog/seo/index.html": 2,
         "fr-FR/blog/tailwind/index.html": 2,
         "index.html": 2,
+        "tags/WYSIWYG editing/index.html": 2,
+        "tags/accessibility/index.html": 2,
         "tags/building/index.html": 2,
+        "tags/formatting/index.html": 2,
+        "tags/navigation/index.html": 2,
+        "tags/pagination/index.html": 2,
         "tags/search/index.html": 2,
         "tags/seo/index.html": 2,
         "tags/styling/index.html": 2,
         "tags/tailwind/index.html": 2
       },
-      "total": 34
+      "total": 44
     },
     "common:MyCompany%2E-All-rights-reserved%2E": {
       "original": "MyCompany. All rights reserved.",
@@ -384,13 +549,18 @@
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
         "index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
         "tags/seo/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 17
+      "total": 22
     },
     "common:RSS-Feed": {
       "original": "RSS Feed",
@@ -408,13 +578,18 @@
         "fr-FR/blog/seo/index.html": 1,
         "fr-FR/blog/tailwind/index.html": 1,
         "index.html": 1,
+        "tags/WYSIWYG editing/index.html": 1,
+        "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
+        "tags/formatting/index.html": 1,
+        "tags/navigation/index.html": 1,
+        "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
         "tags/seo/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 17
+      "total": 22
     },
     "rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E": {
       "original": "A flexible git-backed CMS that specialises in editing markdown and data files.",

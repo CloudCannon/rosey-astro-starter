@@ -21,47 +21,67 @@
 	},
 	"blog:Blog": {
 		"original": "Blog",
-		"value": "Blog"
+		"value": "Der Blog\n"
 	},
 	"blog:Pagefind-Search": {
 		"original": "Pagefind Search",
-		"value": "Pagefind Search"
+		"value": "Pagefind-Suche\n"
 	},
 	"blog:SEO-Controls": {
 		"original": "SEO Controls",
-		"value": "SEO Controls"
+		"value": "SEO-Kontrollen\n"
 	},
 	"blog:Tailwind": {
 		"original": "Tailwind",
-		"value": "Tailwind"
+		"value": "Rückenwind\n"
+	},
+	"blog:WYSIWYG-editing": {
+		"original": "WYSIWYG editing ",
+		"value": "WYSIWYG-Bearbeitung\n"
+	},
+	"blog:accessibility": {
+		"original": "Accessibility ",
+		"value": "Zugänglichkeit\n"
 	},
 	"blog:building": {
 		"original": "Building ",
-		"value": "Building "
+		"value": "Gebäude\n"
+	},
+	"blog:formatting": {
+		"original": "Formatting",
+		"value": "Formatierung\n"
+	},
+	"blog:navigation": {
+		"original": "Navigation ",
+		"value": "Navigation\n"
+	},
+	"blog:pagination": {
+		"original": "Pagination ",
+		"value": "Pagination\n"
 	},
 	"blog:recent-posts": {
 		"original": "Recent Posts",
-		"value": "Recent Posts"
+		"value": "Neueste Beiträge\n"
 	},
 	"blog:search": {
 		"original": "Search",
-		"value": "Search"
+		"value": "Suchen\n"
 	},
 	"blog:seo": {
 		"original": "Seo",
-		"value": "Seo"
+		"value": "SEO\n"
 	},
 	"blog:styling": {
 		"original": "Styling ",
-		"value": "Styling "
+		"value": "Styling\n"
 	},
 	"blog:tailwind": {
-		"original": "Tailwind",
-		"value": "Tailwind"
+		"original": "Tailwind ",
+		"value": "Rückenwind\n"
 	},
 	"blog:words": {
 		"original": "words",
-		"value": "words"
+		"value": "Wörter\n"
 	},
 	"common:Blog": {
 		"original": "Blog",
