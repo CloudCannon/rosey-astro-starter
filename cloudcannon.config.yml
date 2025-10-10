@@ -128,7 +128,94 @@ collections_config:
     path: src/content/blogFrench
     glob:
       - '**/*.mdx'
-    url: '/fr/blog/[full_slug]/'
+    url: '/fr-FR/blog/[full_slug]/'
+    icon: newspaper
+    preview:
+      text:
+        - key: title
+      gallery:
+        fit: cover
+        image: 
+          - key: thumb_image_path
+          - key: post_hero.image
+      metadata:
+        - icon: calendar_month
+          text: 
+            - template: Created {post_hero.date|date_long}
+            - Add date
+        - icon: person
+          text:
+            - template: By {post_hero.author}
+            - No author
+        - icon: style
+          text:
+            - template: '{post_hero.tags[*]}'
+            - No tags
+    _enabled_editors:
+      - visual
+      - content
+    add_options:
+      - name: Add New Post
+        schema: default
+        icon: post_add
+        editor: content
+    schemas:
+      default:
+        path: '.cloudcannon/schemas/post.mdx'
+    create:
+      path: '[relative_base_path]/{filename|slugify|lowercase}.mdx'
+    _inputs:
+      title:
+        comment: Controls the metadata title, and the title used when linking to this page elsewhere on the site.
+        options:
+          empty_type: string
+      post_hero:
+        type: object
+        options:
+          preview:
+            image:
+              - key: image
+            icon: description
+      image:
+        type: image
+        comment: The hero image at the top of the post.
+        options:
+          empty_type: string
+          paths:
+            static: ''
+            uploads: src/assets/images/blog
+      image_alt:
+        type: textarea
+        options:
+          empty_type: string
+      thumb_image_path:
+        type: image
+        label: Thumbnail Image
+        comment: The image used as the page thumbnail when being referenced elsewhere on the site. Does not affect the image used when sharing the page, which is set inside of the page's SEO inputs.
+        options:
+          empty_type: string
+          paths:
+            static: ''
+            uploads: src/assets/images/blog
+      thumb_image_alt:
+        type: textarea
+        label: Thumbnail Image Alt Text
+        options:
+          empty_type: string
+      author:
+        options:
+          empty_type: string
+      tags:
+        type: multiselect
+        comment: To add a new tag, go to the [tags data file](cloudcannon:collections/data/tags.json).
+        options:
+          values: data.tags
+          empty_type: array
+  german_blog:
+    path: src/content/blogGerman
+    glob:
+      - '**/*.mdx'
+    url: '/de-DE/blog/[full_slug]/'
     icon: newspaper
     preview:
       text:
@@ -238,6 +325,7 @@ collection_groups:
       - pages
       - blog
       - french_blog
+      - german_blog
   - heading: Data
     collections:
       - data
