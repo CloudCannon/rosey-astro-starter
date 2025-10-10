@@ -6,6 +6,15 @@ This repository extends the [CloudCannon Astro Starter](https://cloudcannon.com/
 - Read the [getting started guide](https://rad-turnip.cloudvent.net/docs/#option-1-a-single-site) - This starter template is setup as a single site, rather than a staging to production workflow.
 - See a [demo version of the site](https://deluxe-gel.cloudvent.net/)
 
+## Getting Started
+
+1. Click `Use this template` to create your own copy of the repository.
+2. Change the placeholder values in the rosey/rcc.yaml to what you need, and your changes to the repo.
+3. Create a site on CloudCannon from the repo.
+4. Edit translations - via the WYSIWYG editor for the blog post translations, and the translations data collection for the rest of the site.
+5. Save and rebuild, and see translations on the live site.
+6. Start adding/changing components and layouts to suit your needs, tagging elements for translation along the way.
+
 ## Local Development
 
 To run dev server locally:
