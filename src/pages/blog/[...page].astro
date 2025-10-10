@@ -5,6 +5,7 @@ import BlogPagination from "../../components/blog/pagination";
 import type { Props as LayoutProps } from "../../layouts/Layout.astro";
 import Layout from "../../layouts/Paginated.astro";
 import { getCollection, getEntry, type CollectionEntry } from "astro:content";
+import { generateRoseyId } from "rosey-cloudcannon-connector/utils";
 
 type Props = {
   page: Page<CollectionEntry<"blog">>;
@@ -34,7 +35,10 @@ const { data: posts } = pagination;
 
 <Layout frontmatter={frontmatter}>
   <div class="blog-index">
-    <h1 class="blog-index-heading">
+    <h1
+      class="blog-index-heading"
+      data-rosey-ns="common-blog"
+      data-rosey={generateRoseyId(frontmatter.title)}>
       {frontmatter.title}
     </h1>
     <div class="search-bar">

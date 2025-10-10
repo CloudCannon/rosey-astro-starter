@@ -15,6 +15,7 @@ git_history_link:
   comment_text: Git history
 namespace_pages:
   - common
+  - common-blog
 rosey_paths:
   rosey_base_file_path: ./rosey/base.json
   rosey_base_urls_file_path: ./rosey/base.urls.json
@@ -252,4 +253,4 @@ _structures:
             type: switch
           copyformatting:
             type: switch
-index_html_pages_only: false
+index_html_pages_only: true
