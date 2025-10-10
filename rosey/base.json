@@ -41,7 +41,7 @@
       },
       "total": 1
     },
-    "common-blog:Blog": {
+    "blog:Blog": {
       "original": "Blog",
       "value": null,
       "pages": {
@@ -49,7 +49,7 @@
       },
       "total": 1
     },
-    "common-blog:Pagefind-Search": {
+    "blog:Pagefind-Search": {
       "original": "Pagefind Search",
       "value": null,
       "pages": {
@@ -61,7 +61,7 @@
       },
       "total": 5
     },
-    "common-blog:SEO-Controls": {
+    "blog:SEO-Controls": {
       "original": "SEO Controls",
       "value": null,
       "pages": {
@@ -73,7 +73,7 @@
       },
       "total": 5
     },
-    "common-blog:Tailwind": {
+    "blog:Tailwind": {
       "original": "Tailwind",
       "value": null,
       "pages": {
@@ -88,7 +88,7 @@
       },
       "total": 8
     },
-    "common-blog:building": {
+    "blog:building": {
       "original": "Building ",
       "value": null,
       "pages": {
@@ -104,7 +104,7 @@
       },
       "total": 9
     },
-    "common-blog:recent-posts": {
+    "blog:recent-posts": {
       "original": "Recent Posts",
       "value": null,
       "pages": {
@@ -116,7 +116,7 @@
       },
       "total": 5
     },
-    "common-blog:search": {
+    "blog:search": {
       "original": "Search",
       "value": null,
       "pages": {
@@ -130,7 +130,7 @@
       },
       "total": 7
     },
-    "common-blog:seo": {
+    "blog:seo": {
       "original": "Seo",
       "value": null,
       "pages": {
@@ -144,7 +144,7 @@
       },
       "total": 7
     },
-    "common-blog:styling": {
+    "blog:styling": {
       "original": "Styling ",
       "value": null,
       "pages": {
@@ -160,7 +160,7 @@
       },
       "total": 9
     },
-    "common-blog:tailwind": {
+    "blog:tailwind": {
       "original": "Tailwind",
       "value": null,
       "pages": {
@@ -176,7 +176,7 @@
       },
       "total": 9
     },
-    "common-blog:words": {
+    "blog:words": {
       "original": "words",
       "value": null,
       "pages": {

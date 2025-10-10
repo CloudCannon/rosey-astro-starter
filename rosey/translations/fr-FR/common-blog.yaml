@@ -8,116 +8,116 @@ _inputs:
         - heading: Still to translate (fr-FR)
           comment: Text to translate
           inputs:
-            - common-blog:Blog
-            - common-blog:Pagefind-Search
-            - common-blog:SEO-Controls
-            - common-blog:Tailwind
-            - common-blog:building
-            - common-blog:recent-posts
-            - common-blog:search
-            - common-blog:seo
-            - common-blog:styling
-            - common-blog:tailwind
-            - common-blog:words
+            - blog:Blog
+            - blog:Pagefind-Search
+            - blog:SEO-Controls
+            - blog:Tailwind
+            - blog:building
+            - blog:recent-posts
+            - blog:search
+            - blog:seo
+            - blog:styling
+            - blog:tailwind
+            - blog:words
         - heading: Already translated (fr-FR)
           comment: Text already translated
           inputs: []
-  common-blog:Blog:
+  blog:Blog:
     label: Blog
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:Pagefind-Search:
+  blog:Pagefind-Search:
     label: Pagefind Search
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:SEO-Controls:
+  blog:SEO-Controls:
     label: SEO Controls
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:Tailwind:
+  blog:Tailwind:
     label: Tailwind
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:building:
+  blog:building:
     label: Building
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:recent-posts:
+  blog:recent-posts:
     label: Recent Posts
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:search:
+  blog:search:
     label: Search
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:seo:
+  blog:seo:
     label: Seo
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:styling:
+  blog:styling:
     label: Styling
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:tailwind:
+  blog:tailwind:
     label: Tailwind
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-  common-blog:words:
+  blog:words:
     label: words
     hidden: false
     type: text
     options: {}
     comment: ""
     context: {}
-common-blog:Blog: |
+blog:Blog: |
   Blog
-common-blog:Pagefind-Search: |
+blog:Pagefind-Search: |
   Pagefind Search
-common-blog:SEO-Controls: |
+blog:SEO-Controls: |
   Contrôles SEO
-common-blog:Tailwind: |
+blog:Tailwind: |
   Tailwind
-common-blog:building: |
+blog:building: |
   Bâtiment
-common-blog:recent-posts: |
+blog:recent-posts: |
   Messages récents
-common-blog:search: |
+blog:search: |
   Recherche
-common-blog:seo: |
+blog:seo: |
   Seo
-common-blog:styling: |
+blog:styling: |
   Stylisme
-common-blog:tailwind: |
+blog:tailwind: |
   Tailwind
-common-blog:words: |
+blog:words: |
   mots

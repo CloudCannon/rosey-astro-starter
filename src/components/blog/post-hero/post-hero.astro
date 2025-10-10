@@ -57,9 +57,7 @@ const imageSrc = images[image]?.default ?? image;
           {tags.map((tag: string) => {
             return (
               <a href={`/tags/${tag}/`}>
-                <span
-                  data-rosey-ns="common-blog"
-                  data-rosey={generateRoseyId(tag)}>
+                <span data-rosey-ns="blog" data-rosey={generateRoseyId(tag)}>
                   {tag.charAt(0).toUpperCase() + tag.slice(1)}
                 </span>
               </a>
@@ -83,7 +81,7 @@ const imageSrc = images[image]?.default ?? image;
     <div class="post-data-time">
       <p>
         {wordCount}
-        <span data-rosey-ns="common-blog" data-rosey="words">words</span>
+        <span data-rosey-ns="blog" data-rosey="words">words</span>
       </p>
       <p>{readingTime}</p>
     </div>
