@@ -31,6 +31,24 @@
       "pages": {},
       "total": 0
     },
+    "de-DE/blog/search/index.html": {
+      "original": "de-DE/blog/search/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de-DE/blog/seo/index.html": {
+      "original": "de-DE/blog/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de-DE/blog/tailwind/index.html": {
+      "original": "de-DE/blog/tailwind/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
     "fr-FR/blog/search/index.html": {
       "original": "fr-FR/blog/search/index.html",
       "value": null,
@@ -39,6 +57,12 @@
     },
     "fr-FR/blog/seo/index.html": {
       "original": "fr-FR/blog/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr-FR/blog/tailwind/index.html": {
+      "original": "fr-FR/blog/tailwind/index.html",
       "value": null,
       "pages": {},
       "total": 0
