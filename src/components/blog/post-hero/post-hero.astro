@@ -50,6 +50,7 @@ const imageSrc = images[image]?.default ?? image;
   <h1
     id="blog-hero-text"
     class="blog-hero-heading"
+    data-rosey-ns="common-blog"
     data-rosey={generateRoseyId(heading)}>
     {heading}
   </h1>
@@ -60,7 +61,9 @@ const imageSrc = images[image]?.default ?? image;
           {tags.map((tag: string) => {
             return (
               <a href={`/tags/${tag}/`}>
-                <span data-rosey={generateRoseyId(tag)}>
+                <span
+                  data-rosey-ns="common-blog"
+                  data-rosey={generateRoseyId(tag)}>
                   {tag.charAt(0).toUpperCase() + tag.slice(1)}
                 </span>
               </a>
@@ -82,7 +85,10 @@ const imageSrc = images[image]?.default ?? image;
       }
     </p>
     <div class="post-data-time">
-      <p>{wordCount} <span data-rosey="words">words</span></p>
+      <p>
+        {wordCount}
+        <span data-rosey-ns="common-blog" data-rosey="words">words</span>
+      </p>
       <p>{readingTime}</p>
     </div>
   </div>
