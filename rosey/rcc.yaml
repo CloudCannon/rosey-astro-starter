@@ -2,8 +2,8 @@ locales:
   - fr-FR
   - de-DE
 input_lengths:
-  label: 42
-  textarea: 20
+  label: 64
+  textarea: 40
 see_on_page_comment:
   enabled: true
   base_url: https://cool-ski.cloudvent.net/

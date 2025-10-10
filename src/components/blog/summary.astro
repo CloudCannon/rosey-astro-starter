@@ -36,7 +36,9 @@ const imageSrc = images[thumb_image_path]?.default ?? thumb_image_path;
           {tags.map((tag: string) => {
             return (
               <a href={`/tags/${tag}/`}>
-                <span data-rosey={generateRoseyId(tag)}>
+                <span
+                  data-rosey-ns="common-blog"
+                  data-rosey={generateRoseyId(tag)}>
                   {tag.charAt(0).toUpperCase() + tag.slice(1)}
                 </span>
               </a>
@@ -46,7 +48,11 @@ const imageSrc = images[thumb_image_path]?.default ?? thumb_image_path;
       )
     }
     <h2 class="blog-summary-title">
-      <a href={`/blog/${slug}/`} data-rosey={generateRoseyId(title)}>{title}</a>
+      <a
+        href={`/blog/${slug}/`}
+        data-rosey-ns="common-blog"
+        data-rosey={generateRoseyId(title)}>{title}</a
+      >
     </h2>
     <p>
       {

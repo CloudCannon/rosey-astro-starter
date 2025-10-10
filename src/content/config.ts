@@ -12,8 +12,7 @@ const seoSchema = z
   })
   .optional();
 
-const blogCollection = defineCollection({
-  schema: z.object({
+const blogSchema = z.object({
     title: z.string(),
     post_hero: z.object({
       date: z.string().or(z.date()),
@@ -26,7 +25,12 @@ const blogCollection = defineCollection({
     thumb_image_path: z.string(),
     thumb_image_alt: z.string(),
     seo: seoSchema,
-  }),
+  })
+
+// TODO: Maybe add loaders for diff language collections that both use a separately defined schema if it doesn't work like this
+
+const blogCollection = defineCollection({
+  schema: blogSchema
 });
 
 const pageSchema = z.object({
@@ -47,6 +51,7 @@ const pagesCollection = defineCollection({
 });
 
 export const collections = {
+  blogFrench: blogCollection,
   blog: blogCollection,
   pages: pagesCollection,
 };
