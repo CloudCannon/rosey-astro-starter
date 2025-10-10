@@ -19,6 +19,10 @@
 		"original": "You choose your editing experience.",
 		"value": "You choose your editing experience."
 	},
+	"common-blog:Blog": {
+		"original": "Blog",
+		"value": "Blog"
+	},
 	"common-blog:Pagefind-Search": {
 		"original": "Pagefind Search",
 		"value": "Pagefind Search"
@@ -35,6 +39,10 @@
 		"original": "Building ",
 		"value": "Building "
 	},
+	"common-blog:recent-posts": {
+		"original": "Recent Posts",
+		"value": "Recent Posts"
+	},
 	"common-blog:search": {
 		"original": "Search",
 		"value": "Search"
@@ -50,6 +58,42 @@
 	"common-blog:tailwind": {
 		"original": "Tailwind",
 		"value": "Tailwind"
+	},
+	"common-blog:words": {
+		"original": "words",
+		"value": "words"
+	},
+	"common:Blog": {
+		"original": "Blog",
+		"value": "Blog"
+	},
+	"common:CloudCannon": {
+		"original": "CloudCannon",
+		"value": "CloudCannon"
+	},
+	"common:Deutsch": {
+		"original": "Deutsch",
+		"value": "Deutsch"
+	},
+	"common:English-(US)": {
+		"original": "English (US)",
+		"value": "English (US)"
+	},
+	"common:French": {
+		"original": "French",
+		"value": "French"
+	},
+	"common:GitHub": {
+		"original": "GitHub",
+		"value": "GitHub"
+	},
+	"common:MyCompany%2E-All-rights-reserved%2E": {
+		"original": "MyCompany. All rights reserved.",
+		"value": "MyCompany. All rights reserved."
+	},
+	"common:RSS-Feed": {
+		"original": "RSS Feed",
+		"value": "RSS Feed"
 	},
 	"rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E": {
 		"original": "A flexible git-backed CMS that specialises in editing markdown and data files.",

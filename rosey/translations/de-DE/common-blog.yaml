@@ -1,0 +1,112 @@
+_inputs:
+  $:
+    type: object
+    comment: Translations that appear on many pages
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (de-DE)
+          comment: Text to translate
+          inputs:
+            - common-blog:Blog
+            - common-blog:Pagefind-Search
+            - common-blog:SEO-Controls
+            - common-blog:Tailwind
+            - common-blog:building
+            - common-blog:recent-posts
+            - common-blog:search
+            - common-blog:seo
+            - common-blog:styling
+            - common-blog:tailwind
+            - common-blog:words
+        - heading: Already translated (de-DE)
+          comment: Text already translated
+          inputs: []
+  common-blog:Blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:Pagefind-Search:
+    label: Pagefind Search
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:SEO-Controls:
+    label: SEO Controls
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:Tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:building:
+    label: Building
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:recent-posts:
+    label: Recent Posts
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:search:
+    label: Search
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:seo:
+    label: Seo
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:styling:
+    label: Styling
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:tailwind:
+    label: Tailwind
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common-blog:words:
+    label: words
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+common-blog:Blog: ""
+common-blog:Pagefind-Search: ""
+common-blog:SEO-Controls: ""
+common-blog:Tailwind: ""
+common-blog:building: ""
+common-blog:recent-posts: ""
+common-blog:search: ""
+common-blog:seo: ""
+common-blog:styling: ""
+common-blog:tailwind: ""
+common-blog:words: ""

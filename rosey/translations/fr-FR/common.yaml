@@ -1,0 +1,85 @@
+_inputs:
+  $:
+    type: object
+    comment: Translations that appear on many pages
+    options:
+      place_groups_below: false
+      groups:
+        - heading: Still to translate (fr-FR)
+          comment: Text to translate
+          inputs:
+            - common:Blog
+            - common:CloudCannon
+            - common:Deutsch
+            - common:English-(US)
+            - common:French
+            - common:GitHub
+            - common:MyCompany%2E-All-rights-reserved%2E
+            - common:RSS-Feed
+        - heading: Already translated (fr-FR)
+          comment: Text already translated
+          inputs: []
+  common:Blog:
+    label: Blog
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:CloudCannon:
+    label: CloudCannon
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:Deutsch:
+    label: Deutsch
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:English-(US):
+    label: English (US)
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:French:
+    label: French
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:GitHub:
+    label: GitHub
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:MyCompany%2E-All-rights-reserved%2E:
+    label: MyCompany. All rights reserved.
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+  common:RSS-Feed:
+    label: RSS Feed
+    hidden: false
+    type: text
+    options: {}
+    comment: ""
+    context: {}
+common:Blog: ""
+common:CloudCannon: ""
+common:Deutsch: ""
+common:English-(US): ""
+common:French: ""
+common:GitHub: ""
+common:MyCompany%2E-All-rights-reserved%2E: ""
+common:RSS-Feed: ""

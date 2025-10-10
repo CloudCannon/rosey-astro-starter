@@ -41,19 +41,11 @@
       },
       "total": 1
     },
-    "common-blog:FR-Pagefind-Search": {
-      "original": "FR Pagefind Search",
+    "common-blog:Blog": {
+      "original": "Blog",
       "value": null,
       "pages": {
-        "fr-FR/blog/search/index.html": 1
-      },
-      "total": 1
-    },
-    "common-blog:FR-SEO-Controls": {
-      "original": "FR SEO Controls",
-      "value": null,
-      "pages": {
-        "fr-FR/blog/seo/index.html": 1
+        "blog/index.html": 1
       },
       "total": 1
     },
@@ -62,13 +54,12 @@
       "value": null,
       "pages": {
         "blog/index.html": 1,
-        "blog/search/index.html": 1,
         "blog/seo/index.html": 1,
         "blog/tailwind/index.html": 1,
         "fr-FR/blog/seo/index.html": 1,
         "tags/search/index.html": 1
       },
-      "total": 6
+      "total": 5
     },
     "common-blog:SEO-Controls": {
       "original": "SEO Controls",
@@ -76,12 +67,11 @@
       "pages": {
         "blog/index.html": 1,
         "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
         "blog/tailwind/index.html": 1,
         "fr-FR/blog/search/index.html": 1,
         "tags/seo/index.html": 1
       },
-      "total": 6
+      "total": 5
     },
     "common-blog:Tailwind": {
       "original": "Tailwind",
@@ -90,14 +80,13 @@
         "blog/index.html": 1,
         "blog/search/index.html": 1,
         "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
         "fr-FR/blog/search/index.html": 1,
         "fr-FR/blog/seo/index.html": 1,
         "tags/building/index.html": 1,
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 9
+      "total": 8
     },
     "common-blog:building": {
       "original": "Building ",
