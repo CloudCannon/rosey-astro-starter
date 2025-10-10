@@ -78,11 +78,19 @@ _inputs:
     comment: "[See in context](https://cool-ski.cloudvent.net/blog/#:~:text=Tailwind)"
     context: {}
 urlTranslation: blog/index.html
-common-blog:Pagefind-Search: ""
-common-blog:SEO-Controls: ""
-common-blog:Tailwind: ""
-common-blog:building: ""
-common-blog:search: ""
-common-blog:seo: ""
-common-blog:styling: ""
-common-blog:tailwind: ""
+common-blog:Pagefind-Search: |
+  Pagefind Search
+common-blog:SEO-Controls: |
+  Contrôles SEO
+common-blog:Tailwind: |
+  Tailwind
+common-blog:building: |
+  Bâtiment
+common-blog:search: |
+  Recherche
+common-blog:seo: |
+  Seo
+common-blog:styling: |
+  Stylisme
+common-blog:tailwind: |
+  Tailwind

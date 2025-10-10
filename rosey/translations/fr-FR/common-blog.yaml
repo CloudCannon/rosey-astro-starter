@@ -99,14 +99,25 @@ _inputs:
     options: {}
     comment: ""
     context: {}
-common-blog:Blog: ""
-common-blog:Pagefind-Search: ""
-common-blog:SEO-Controls: ""
-common-blog:Tailwind: ""
-common-blog:building: ""
-common-blog:recent-posts: ""
-common-blog:search: ""
-common-blog:seo: ""
-common-blog:styling: ""
-common-blog:tailwind: ""
-common-blog:words: ""
+common-blog:Blog: |
+  Blog
+common-blog:Pagefind-Search: |
+  Pagefind Search
+common-blog:SEO-Controls: |
+  Contrôles SEO
+common-blog:Tailwind: |
+  Tailwind
+common-blog:building: |
+  Bâtiment
+common-blog:recent-posts: |
+  Messages récents
+common-blog:search: |
+  Recherche
+common-blog:seo: |
+  Seo
+common-blog:styling: |
+  Stylisme
+common-blog:tailwind: |
+  Tailwind
+common-blog:words: |
+  mots
