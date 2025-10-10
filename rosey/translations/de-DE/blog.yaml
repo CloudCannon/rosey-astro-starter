@@ -7,6 +7,9 @@ _inputs:
       groups:
         - heading: Still to translate (de-DE)
           comment: Text to translate
+          inputs: []
+        - heading: Already translated (de-DE)
+          comment: Text already translated
           inputs:
             - blog:Blog
             - blog:Pagefind-Search
@@ -24,9 +27,6 @@ _inputs:
             - blog:styling
             - blog:tailwind
             - blog:words
-        - heading: Already translated (de-DE)
-          comment: Text already translated
-          inputs: []
   blog:Blog:
     label: Blog
     hidden: false
