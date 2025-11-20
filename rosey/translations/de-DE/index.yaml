@@ -8,7 +8,7 @@ _inputs:
         - heading: Still to translate (de-DE)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
           inputs:
-            - Translating-in-the-demo
+            - Update-live-for-the-demo%2E
         - heading: Already translated (de-DE)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
           inputs:
@@ -46,14 +46,14 @@ _inputs:
       context](https://deluxe-gel.cloudvent.net/index.html#:~:text=Keep%20what%\
       20you%20need.%20Delete%20the%20rest.)"
     context: {}
-  Translating-in-the-demo:
-    label: Translating in the demo
+  Update-live-for-the-demo%2E:
+    label: Update live for the demo.
     hidden: false
     type: text
     options: {}
     comment: "[See in
-      context](https://deluxe-gel.cloudvent.net/index.html#:~:text=Translating%\
-      20in%20the%20demo)"
+      context](https://deluxe-gel.cloudvent.net/index.html#:~:text=Update%20liv\
+      e%20for%20the%20demo.)"
     context: {}
   You-choose-your-editing-experience%2E:
     label: You choose your editing experience.
@@ -160,8 +160,8 @@ GitHub: |
   GitHub (Englisch)
 Keep-what-you-need%2E-Delete-the-rest%2E: |
   Behalten Sie, was Sie brauchen. Löschen Sie den Rest.
-Translating-in-the-demo: |
-  Übersetzung in der Demo
+Update-live-for-the-demo%2E: |
+  Live-Update für die Demo.
 You-choose-your-editing-experience%2E: |
   Sie wählen Ihre Bearbeitungserfahrung.
 rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: >
