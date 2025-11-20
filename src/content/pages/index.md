@@ -15,12 +15,15 @@ hero_block:
   _bookshop_name: heroes/hero
   background_color: '#ffffff'
   heading:
-    heading_text: CloudCannon Astro Starter!
+    heading_text: Translating in the demo
     heading_gradient_color: '#A0A2FF'
     text_color: '#333232'
   subheading:
     text_content: >-
-      A starting point for developers looking to build a multilingual website with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.
+      A starting point for developers looking to build a multilingual website
+      with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop
+      components in CloudCannon. Create your own copy, and start creating your
+      own components to use in CloudCannon’s CMS.
     color: '#393939'
     text_color: '#333232'
   image:
@@ -52,10 +55,12 @@ content_blocks:
       text_color: '#333232'
     text:
       text_content: >-
-        The Rosey Astro Starter's aim is to get developers building their
-        own site quickly in CloudCannon. This template is trying to strike a
-        balance between minimal, and easy-to-delete boiler plate, while
-        providing some commonly used features out of the box. Read more about Rosey in CloudCannon [here](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/).
+        The Rosey Astro Starter's aim is to get developers building their own
+        site quickly in CloudCannon. This template is trying to strike a balance
+        between minimal, and easy-to-delete boiler plate, while providing some
+        commonly used features out of the box. Read more about Rosey in
+        CloudCannon
+        [here](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/).
       color: '#393939'
       text_color: '#333232'
     image:
