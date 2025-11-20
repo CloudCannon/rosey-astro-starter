@@ -15,7 +15,7 @@ hero_block:
   _bookshop_name: heroes/hero
   background_color: '#ffffff'
   heading:
-    heading_text: Translating in the demo
+    heading_text: Update live for the demo.
     heading_gradient_color: '#A0A2FF'
     text_color: '#333232'
   subheading:
