@@ -3,10 +3,6 @@
 		"original": "CloudCannon",
 		"value": "CloudCannon\n"
 	},
-	"CloudCannon-Astro-Starter!": {
-		"original": "CloudCannon Astro Starter!",
-		"value": "CloudCannon Astro Starter!\n"
-	},
 	"GitHub": {
 		"original": "GitHub",
 		"value": "GitHub (Englisch)\n"
@@ -14,6 +10,10 @@
 	"Keep-what-you-need%2E-Delete-the-rest%2E": {
 		"original": "Keep what you need. Delete the rest.",
 		"value": "Behalten Sie, was Sie brauchen. Löschen Sie den Rest.\n"
+	},
+	"Translating-in-the-demo": {
+		"original": "Translating in the demo",
+		"value": "Übersetzung in der Demo\n"
 	},
 	"You-choose-your-editing-experience%2E": {
 		"original": "You choose your editing experience.",

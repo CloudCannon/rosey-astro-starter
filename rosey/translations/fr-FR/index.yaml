@@ -7,12 +7,12 @@ _inputs:
       groups:
         - heading: Still to translate (fr-FR)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
-          inputs: []
+          inputs:
+            - Translating-in-the-demo
         - heading: Already translated (fr-FR)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
           inputs:
             - CloudCannon
-            - CloudCannon-Astro-Starter!
             - GitHub
             - Keep-what-you-need%2E-Delete-the-rest%2E
             - You-choose-your-editing-experience%2E
@@ -28,15 +28,6 @@ _inputs:
     options: {}
     comment: "[See in
       context](https://deluxe-gel.cloudvent.net/index.html#:~:text=CloudCannon)"
-    context: {}
-  CloudCannon-Astro-Starter!:
-    label: CloudCannon Astro Starter!
-    hidden: false
-    type: text
-    options: {}
-    comment: "[See in
-      context](https://deluxe-gel.cloudvent.net/index.html#:~:text=CloudCannon%\
-      20Astro%20Starter!)"
     context: {}
   GitHub:
     label: GitHub
@@ -54,6 +45,15 @@ _inputs:
     comment: "[See in
       context](https://deluxe-gel.cloudvent.net/index.html#:~:text=Keep%20what%\
       20you%20need.%20Delete%20the%20rest.)"
+    context: {}
+  Translating-in-the-demo:
+    label: Translating in the demo
+    hidden: false
+    type: text
+    options: {}
+    comment: "[See in
+      context](https://deluxe-gel.cloudvent.net/index.html#:~:text=Translating%\
+      20in%20the%20demo)"
     context: {}
   You-choose-your-editing-experience%2E:
     label: You choose your editing experience.
@@ -156,12 +156,12 @@ _inputs:
 urlTranslation: index.html
 CloudCannon: |
   CloudCannon
-CloudCannon-Astro-Starter!: |
-  CloudCannon Astro Starter !
 GitHub: |
   GitHub
 Keep-what-you-need%2E-Delete-the-rest%2E: |
   Gardez ce dont vous avez besoin. Supprimez le reste.
+Translating-in-the-demo: |
+  Traduire dans la démo
 You-choose-your-editing-experience%2E: |
   Vous choisissez votre expérience d'édition.
 rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: >

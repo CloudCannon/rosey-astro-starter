@@ -9,14 +9,6 @@
       },
       "total": 1
     },
-    "CloudCannon-Astro-Starter!": {
-      "original": "CloudCannon Astro Starter!",
-      "value": null,
-      "pages": {
-        "index.html": 1
-      },
-      "total": 1
-    },
     "GitHub": {
       "original": "GitHub",
       "value": null,
@@ -27,6 +19,14 @@
     },
     "Keep-what-you-need%2E-Delete-the-rest%2E": {
       "original": "Keep what you need. Delete the rest.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "Translating-in-the-demo": {
+      "original": "Translating in the demo",
       "value": null,
       "pages": {
         "index.html": 1
