@@ -7,14 +7,14 @@ _inputs:
       groups:
         - heading: Still to translate (fr-FR)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
-          inputs:
-            - Update-live-for-the-demo%2E
+          inputs: []
         - heading: Already translated (fr-FR)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
           inputs:
             - CloudCannon
             - GitHub
             - Keep-what-you-need%2E-Delete-the-rest%2E
+            - Update-live-for-the-demo%2E
             - You-choose-your-editing-experience%2E
             - rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E
             - rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E
