@@ -7,7 +7,8 @@ _inputs:
       groups:
         - heading: Still to translate (de-DE)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
-          inputs: []
+          inputs:
+            - rcc-markdown:A-new-paragraph-for-a-demo-with-Karla%2E
         - heading: Already translated (de-DE)
           comment: "[index.html](https://deluxe-gel.cloudvent.net/index.html)"
           inputs:
@@ -91,6 +92,15 @@ _inputs:
       content: >
         A flexible git-backed CMS that specialises in editing markdown and data
         files.
+  rcc-markdown:A-new-paragraph-for-a-demo-with-Karla%2E:
+    label: A new paragraph for a demo with Karla.
+    hidden: false
+    type: markdown
+    options: *a1
+    comment: "[See in
+      context](https://deluxe-gel.cloudvent.net/index.html#:~:text=A%20new%20pa\
+      ragraph%20for,a%20demo%20with%20Karla.)"
+    context: {}
   rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E:
     label: A starting point for developers looking to build a multilingual ...
     hidden: false
@@ -167,6 +177,8 @@ You-choose-your-editing-experience%2E: |
 rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E: >
   Ein flexibles Git-gestütztes CMS, das sich auf die Bearbeitung von Markdown-
   und Datendateien spezialisiert hat.
+rcc-markdown:A-new-paragraph-for-a-demo-with-Karla%2E: |
+  Ein neuer Absatz für eine Demo mit Karla.
 rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E: >
   Ein Ausgangspunkt für Entwickler, die eine mehrsprachige Website mit Astro,
   Rosey und dem Rosey CloudCannon Connector erstellen möchten, indem sie

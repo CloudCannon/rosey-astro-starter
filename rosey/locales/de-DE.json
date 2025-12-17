@@ -119,6 +119,10 @@
 		"original": "A flexible git-backed CMS that specialises in editing markdown and data files.",
 		"value": "Ein flexibles Git-gestütztes CMS, das sich auf die Bearbeitung von Markdown- und Datendateien spezialisiert hat.\n"
 	},
+	"rcc-markdown:A-new-paragraph-for-a-demo-with-Karla%2E": {
+		"original": "A new paragraph for a demo with Karla.",
+		"value": "Ein neuer Absatz für eine Demo mit Karla.\n"
+	},
 	"rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E": {
 		"original": "A starting point for developers looking to build a multilingual website with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.",
 		"value": "Ein Ausgangspunkt für Entwickler, die eine mehrsprachige Website mit Astro, Rosey und dem Rosey CloudCannon Connector erstellen möchten, indem sie Bookshop-Komponenten in CloudCannon verwenden. Erstellen Sie Ihre eigene Kopie und beginnen Sie mit der Erstellung Ihrer eigenen Komponenten, die Sie im CMS von CloudCannon verwenden können.\n"

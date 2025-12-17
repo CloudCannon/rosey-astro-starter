@@ -599,6 +599,14 @@
       },
       "total": 1
     },
+    "rcc-markdown:A-new-paragraph-for-a-demo-with-Karla%2E": {
+      "original": "A new paragraph for a demo with Karla.",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
     "rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E": {
       "original": "A starting point for developers looking to build a multilingual website with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.",
       "value": null,
