@@ -105,27 +105,4 @@ content_blocks:
       hover_brightness: 0.85
       text_color: '#ffffff'
       button_aria_label:
-  - _bookshop_name: left-right
-    background_color: ''
-    heading:
-      heading_text: ''
-      color: ''
-      text_color: ''
-    text:
-      text_content: ''
-      color: ''
-      text_color: ''
-    image:
-      image_path: ''
-      alt_text: ''
-    flipped: false
-    button:
-      _bookshop_name: buttons/primary
-      button_text: ''
-      button_icon: ''
-      button_link: ''
-      background_color: ''
-      hover_brightness: 0
-      text_color: ''
-      button_aria_label:
 ---
