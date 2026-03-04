@@ -1,6 +1,6 @@
 # Astro Rosey Starter
 
-This repository extends the [CloudCannon Astro Starter](https://cloudcannon.com/templates/astro-starter/), by coming fully set up to use the `rosey-cloudcannon-connector` npm package with [Rosey](https://rosey.app/), to manage multilingual content in CloudCannon.
+This repository extends the [CloudCannon Astro Starter](https://cloudcannon.com/templates/astro-minimal-starter/), by coming fully set up to use the `rosey-cloudcannon-connector` npm package with [Rosey](https://rosey.app/), to manage multilingual content in CloudCannon.
 
 - Read [this post](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/) for context. This site uses a combination of using Rosey with the `rosey-cloudcannon-connector` package, and [pre-translating](https://rosey.app/docs/pretranslated-pages/) the text-heavy blog pages by content directory.
 - Read the [getting started guide](https://rad-turnip.cloudvent.net/docs/#option-1-a-single-site) - This starter template is setup as a single site, rather than a staging to production workflow.

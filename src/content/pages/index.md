@@ -36,7 +36,7 @@ hero_block:
     - _bookshop_name: buttons/primary
       button_text: GitHub
       button_icon: GitHub
-      button_link: https://github.com/CloudCannon/astro-starter/
+      button_link: https://github.com/CloudCannon/rosey-astro-starter/
       background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
@@ -100,7 +100,7 @@ content_blocks:
       _bookshop_name: buttons/primary
       button_text: GitHub
       button_icon: GitHub
-      button_link: https://github.com/CloudCannon/Astro-starter/
+      button_link: https://github.com/CloudCannon/rosey-astro-starter/
       background_color: '#034AD8'
       hover_brightness: 0.85
       text_color: '#ffffff'
