@@ -9,24 +9,17 @@ export async function getStaticPaths({ paginate }: { paginate: Function }) {
   const page = await getEntry("pages", "blog");
   const posts = await getCollection("blog");
 
-  if (!page) {
-    return;
-  }
+  if (!page) return;
 
   for (const post of posts) {
-    const postTags = post.data.post_hero.tags;
-    for (const tag of postTags) {
+    for (const tag of post.data.post_hero.tags) {
       tags[tag] = true;
     }
   }
 
-  // posts.forEach(({ data }) =>
-  //   data.post_hero.tags.forEach((tag: string) => (tags[tag] = true))
-  // );
-
   return Object.keys(tags).flatMap((tag) => {
     const filteredPosts = posts.filter(({ data }) =>
-      data.post_hero.tags.includes(tag)
+      data.post_hero.tags.includes(tag),
     );
     return paginate(filteredPosts, {
       params: { tag },
@@ -39,7 +32,7 @@ const tag = Astro.params.tag ?? "";
 const page = (await getEntry("pages", "blog"))?.data;
 
 if (!page) {
-  throw new Error(`Failed to get page with slug: ${Astro.params.slug}`);
+  throw new Error("Failed to get blog page data");
 }
 
 page.title = tag[0].toUpperCase() + tag.slice(1);
@@ -49,21 +42,13 @@ const filteredPosts = pagination.data;
 ---
 
 <Layout title={page.title} seo={page.seo}>
-  <div class="py-[96px]">
-    <h1
-      class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center my-12">
+  <div class="mx-auto max-w-6xl px-8 py-16">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">
       {page.title}
     </h1>
-    <section class="blog-index mx-auto">
+    <section>
       <BlogList posts={filteredPosts} />
       <BlogPagination pagination={pagination} />
     </section>
   </div>
 </Layout>
-
-<style>
-  .blog-index {
-    max-width: var(--pageContainer);
-    padding-inline: var(--pagePadding);
-  }
-</style>

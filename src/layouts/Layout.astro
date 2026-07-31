@@ -1,6 +1,6 @@
 ---
 import path from "node:path";
-import "../styles/main.scss";
+import "../styles/main.css";
 import site from "../../data/site.json";
 import Header from "../components/navigation/header.astro";
 import Footer from "../components/navigation/footer.astro";
@@ -18,76 +18,41 @@ export interface SEOProps {
 
 export interface Props {
   title: string;
-  hero_block?: any;
-  content_blocks?: any;
   seo?: SEOProps;
+  roseyRoot?: string;
 }
 
-const { seo, hero_block, title } = Astro.props;
+const { seo, title, roseyRoot } = Astro.props;
 const baseUrl = Astro.site?.toString() ?? "";
 
-// Find the title either at the top level of frontmatter, or nested in post_hero for a blog post
-// If no title defined in the page's props fallback to the site-wide title set in the data file
-// If it's the homepage only display the page title
-// Otherwise display the page title followed by the site title
+// Rosey namespace for this page. Split-by-directory locale pages pass the
+// English-equivalent path via roseyRoot so their keys match the source page.
+const derivedRoseyRoot = Astro.url.pathname.replace(/^\/|\/$/g, "") || "index";
+const pageRoseyRoot = roseyRoot ?? derivedRoseyRoot;
+
 let pageTitle = "";
 if (!title) {
   pageTitle = site.site_title;
+} else if (Astro.url.pathname === "/") {
+  pageTitle = title;
 } else {
-  if (Astro.url.pathname === "/") {
-    pageTitle = title;
-  } else {
-    pageTitle = `${title} | ${site.site_title}`;
-  }
+  pageTitle = `${title} | ${site.site_title}`;
 }
 
 const description = seo?.page_description ?? site.description;
-const image = seo?.featured_image ?? site.image; // Image should be a static image (coming from public not src/assets)
+const image = seo?.featured_image ?? site.image;
 const imagePath = path.join(baseUrl, image);
 const imageAlt = seo?.featured_image_alt ?? site.image_alt;
 const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
-const headerStyleOverrides = hero_block?.header_style_overrides ?? {};
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <!-- Favicon -->
-    <!-- Replace this with your own. You can use a 'favicon generator' to ensure you have all the parts you need -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/meta/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/meta/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/meta/favicon-16x16.png"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- CloudCannon CMS editor styles -->
-    <link rel="stylesheet" href="/css/editor.css" />
 
     <SEO
       noindex={seo?.no_index || false}
@@ -101,13 +66,8 @@ const headerStyleOverrides = hero_block?.header_style_overrides ?? {};
           type: seo?.open_graph_type || "website",
           image: imagePath,
         },
-        optional: {
-          description: description,
-        },
-        image: {
-          url: imagePath,
-          alt: imageAlt,
-        },
+        optional: { description },
+        image: { url: imagePath, alt: imageAlt },
       }}
       twitter={{
         creator: `${seo?.author_twitter_handle || site.twitter_site}`,
@@ -116,28 +76,21 @@ const headerStyleOverrides = hero_block?.header_style_overrides ?? {};
       }}
     />
   </head>
-  <body>
-    <Header headerStyleOverrides={headerStyleOverrides} />
-    <main>
-      <slot />
-    </main>
-    <Footer />
-    <style is:global>
-      :root {
-        /* Max width and inline padding of the page */
-        --pageContainer: 1280px;
-        --pagePadding: 32px;
-        /* The padding used between page sections (components) */
-        --sectionPadding: 6rem;
-        --sectionPaddingMobile: 3rem;
-        /* Set here rather than hardcoded to work out the styles for hero components overlapping header */
-        /* When increasing header padding, make sure to increase headerHeight to make room */
-        /* Logo size is calculated by subtracting headerPadding * 2 from the headerHeight */
-        --headerHeight: 4rem;
-        --headerPadding: 1rem;
-
-        box-sizing: border-box;
+  <body class="flex flex-col min-h-screen">
+    <div data-rcc class="flex flex-col min-h-screen">
+      <Header />
+      <main class="flex-1" data-rosey-root={pageRoseyRoot}>
+        <slot />
+      </main>
+      <Footer />
+    </div>
+    <script>
+      if (window.inEditorMode) {
+        import("../scripts/register-components.ts").catch((error) => {
+          console.warn("Failed to load CloudCannon component registration:", error);
+        });
+        import("rosey-cloudcannon-connector");
       }
-    </style>
+    </script>
   </body>
 </html>

@@ -1,0 +1,29 @@
+---
+_schema: default
+title: Optimierte Bilder
+post_hero:
+  heading: Optimierte Bilder
+  date: 2025-05-06T11:28:34+12:00
+  tags:
+    - images
+    - inputs
+    - building
+  author: T Richardson
+  image: /src/assets/images/blog/featured-image-2.jpg
+  image_alt: Kinder, die in einem belebten Klassenzimmer um einen Laptop herum arbeiten.
+thumb_image_path: /src/assets/images/blog/blog-thumb-1.jpg
+thumb_image_alt: Eine Gruppe von Menschen, die um einen Tisch herum arbeiten, von oben gesehen
+seo:
+  page_description: Ein Beitrag, der beschreibt, wie das Astro-Starter-Template optimierte Bilder verwendet.
+  canonical_url:
+  featured_image: /images/blog/featured-image-2.jpg
+  featured_image_alt: Kinder, die in einem belebten Klassenzimmer um einen Laptop herum arbeiten.
+  author_twitter_handle:
+  open_graph_type: article
+  no_index: false
+---
+Optimierte Bilder werden über [Astro Image](https://docs.astro.build/en/guides/images/#image--astroassets) unterstützt. Astro Image verarbeitet ein Bild in Ihrem Ordner `src/assets` und gibt ein optimiertes Bild mit einem `srcset` und `sizes` aus.
+
+Dieses Template zeigt außerdem, [wie man](https://cloudcannon.com/documentation/articles/adjusting-the-uploads-path/) `uploads`-Pfade auf Eingabeebene festlegt, um sowohl verarbeitete als auch unverarbeitete Bilder auf einer Website zu ermöglichen. In diesem Template werden Bildeingaben standardmäßig unter `public/images` geöffnet, es handelt sich also um unverarbeitete Bilder.
+
+Komponenten, die die Astro-Image-Komponente verwenden, sind so konfiguriert, dass die Bildquelleneingabe unter `src/assets/images` geöffnet wird – das sind Bilder, die beim Build verarbeitet und optimiert werden.

@@ -1,0 +1,61 @@
+---
+import { locales, localeCodes, defaultLocale } from "../../utils/locales";
+
+// Every language (including the default) is served under a /{code}/ prefix.
+const options = [
+  { code: defaultLocale, label: "EN" },
+  ...localeCodes.map((code) => ({ code, label: locales[code].label })),
+];
+const allCodes = options.map((o) => o.code);
+
+// Strip any leading locale segment to get the shared base path, then re-prefix
+// it per language. In the untranslated build the default pages sit at the root
+// (no prefix yet) — Rosey relocates them to /en/, but these picker links carry
+// data-rosey-ignore, so we emit the prefix ourselves.
+const segments = Astro.url.pathname.split("/").filter(Boolean);
+const rest = allCodes.includes(segments[0] as any) ? segments.slice(1) : segments;
+const basePath = "/" + rest.join("/") + (rest.length ? "/" : "");
+
+function buildPath(locale: string) {
+  return `/${locale}${basePath}`;
+}
+---
+
+<nav aria-label="Language" class="flex items-center gap-1 text-sm font-medium">
+  {
+    options.map(({ code, label }) => (
+      <a
+        href={buildPath(code)}
+        data-rosey-ignore
+        hreflang={code}
+        class="px-2 py-1 rounded text-gray-600 hover:text-blue-600 transition-colors"
+      >
+        {label}
+      </a>
+    ))
+  }
+</nav>
+
+<script>
+  if (window.inEditorMode) {
+    // In the CloudCannon Visual Editor, locale switching is handled by the RCC's
+    // injected floating picker. Hide the nav picker so editors don't have two
+    // competing switchers (and so nav clicks don't fight the RCC's locale clone).
+    document
+      .querySelectorAll("nav[aria-label='Language']")
+      .forEach((nav) => ((nav as HTMLElement).style.display = "none"));
+  } else {
+    // Build-time HTML always reflects the default-language perspective, so fix
+    // the active-state highlight on the client for Rosey-generated locale pages.
+    const links = document.querySelectorAll<HTMLAnchorElement>(
+      "nav[aria-label='Language'] a",
+    );
+    links.forEach((link) => {
+      const active = link.pathname === window.location.pathname;
+      link.classList.toggle("text-blue-600", active);
+      link.classList.toggle("font-semibold", active);
+      link.classList.toggle("text-gray-600", !active);
+      if (active) link.setAttribute("aria-current", "true");
+    });
+  }
+</script>

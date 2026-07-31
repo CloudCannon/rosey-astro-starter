@@ -1,6 +1,4 @@
 ---
-import PageHelper from "../shared/astro/page.astro";
-import HeroBlock from "src/shared/astro/hero-block.astro";
 import Layout, { type SEOProps } from "./Layout.astro";
 
 type Props = {
@@ -13,9 +11,47 @@ type Props = {
 };
 
 const props = Astro.props.frontmatter;
+
+const components: Record<string, Function> = {};
+const componentImports = import.meta.glob("../components/**/*.astro", {
+  eager: true,
+});
+
+const componentMap: Record<string, string> = {
+  Hero: "heroes/hero/hero",
+  LeftRight: "left-right/left-right",
+  TextBlock: "text-block/text-block",
+};
+
+Object.entries(componentImports).forEach(([path, obj]) => {
+  const relativePath = path.replace("../components/", "").replace(".astro", "");
+  const entry = Object.entries(componentMap).find(([, v]) => v === relativePath);
+  if (entry) {
+    components[entry[0]] = (obj as any).default;
+  }
+});
+
+const HeroComponent = props.hero_block?._name ? components[props.hero_block._name] : null;
 ---
 
 <Layout {...props}>
-  <HeroBlock bookshop:live heroBlock={props.hero_block} />
-  <PageHelper bookshop:live contentBlocks={props.content_blocks} />
+  {HeroComponent && (
+    <editable-component data-prop="hero_block" data-component={props.hero_block._name}>
+      <HeroComponent {...props.hero_block} />
+    </editable-component>
+  )}
+
+  {props.content_blocks?.length > 0 && (
+    <div data-editable="array" data-prop="content_blocks" data-id-key="_uuid" data-component-key="_name">
+      {props.content_blocks.map((block) => {
+        const Component = components[block._name];
+        if (!Component) return null;
+        return (
+          <section data-editable="array-item" data-id={block._uuid} data-component={block._name}>
+            <Component {...block} />
+          </section>
+        );
+      })}
+    </div>
+  )}
 </Layout>

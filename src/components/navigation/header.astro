@@ -1,254 +1,93 @@
 ---
-import { generateRoseyId } from "rosey-cloudcannon-connector/utils";
 import { header } from "../../../data/navigation.json";
-import Icon from "../utility/Icon";
-
-interface Props {
-  headerStyleOverrides: {
-    background_color: string;
-    text_color: string;
-    hover_text_color: string;
-    alternate_logo: {
-      image_path: string;
-      logo_alt_text: string;
-    };
-  };
-}
-
-// Sort out whether values are overridden by the hero at the top of the page,
-// Or use the values set in the site-wide data/navigation.json data file
-const headerStyleOverrides = Astro.props.headerStyleOverrides;
-const backgroundColor =
-  headerStyleOverrides?.background_color ?? header.background_color;
-const linkTextColor = headerStyleOverrides?.text_color ?? header.text_color;
-const linkHoverColor =
-  headerStyleOverrides?.hover_text_color ?? header.hover_text_color;
-const logoImagePath =
-  headerStyleOverrides?.alternate_logo?.image_path ?? header.logo;
-const logoAltText =
-  headerStyleOverrides?.alternate_logo?.logo_alt_text ?? header.logo_alt_text;
-
-const pagePath = Astro.url.pathname || "page";
+import LocalePicker from "./locale-picker.astro";
 ---
 
-<header
-  class="header"
-  x-data="{ open: false, langopen: false }"
-  x-transition
-  style={`background-color: ${backgroundColor}; color: ${linkTextColor};`}
-  data-rosey-ns="common">
-  <div class="header__container">
-    <nav class="header__nav">
-      <a class="header__logo-link" href={header.logo_url}>
-        <img class="header__logo-image" src={logoImagePath} alt={logoAltText} />
+<header class="bg-white">
+  <div class="mx-auto max-w-6xl px-8">
+    <nav class="flex items-center justify-between py-4">
+      <a href={header.logo_url}>
+        <img class="w-48" src={header.logo} alt={header.logo_alt_text} />
       </a>
 
-      <div class="header__nav-end">
-        <!-- Mobile menu -->
-        <button
-          class="hamburger-icon"
-          aria-label="Open mobile navigation menu"
-          popovertarget="mobile-menu"
-          popovertargetaction="show">
-          <Icon icon="Bars" />
-        </button>
-        <div popover id="mobile-menu" class="mobileMenuPopover">
-          <!-- Mobile menu -->
-          <button
-            class="close-icon"
-            aria-label="Close mobile navigation menu"
-            popovertarget="mobile-menu"
-            popovertargetaction="hide">
-            <Icon icon="Xmark" />
-          </button>
-          <ul
-            class="header__nav-links-mobile"
-            aria-label="Header navigation links">
-            {
-              header.links.map((link) => {
-                return (
-                  <li class="header__nav-item">
-                    <a
-                      class="header__nav-link"
-                      href={link.link}
-                      data-rosey={generateRoseyId(link.text)}>
-                      {link.text}
-                    </a>
-                  </li>
-                );
-              })
-            }
-          </ul>
-        </div>
-
-        <!-- Desktop header links -->
-        <ul
-          class="header__nav-links-desktop"
-          aria-label="Header navigation links">
-          {
-            header.links.map((link) => {
-              return (
-                <li class="header__nav-item">
-                  <a
-                    class="header__nav-link"
-                    href={link.link}
-                    data-rosey={generateRoseyId(link.text)}>
-                    {link.text}
-                  </a>
-                </li>
-              );
-            })
-          }
+      <div class="hidden sm:flex items-center gap-6">
+        <ul class="flex items-center gap-6" data-rosey-ns="nav">
+          {header.links.map((link) => (
+            <li>
+              <a
+                class="text-gray-700 hover:text-gray-500 transition-colors"
+                href={link.link}
+                data-rosey={link.text.toLowerCase().replace(/\s+/g, "-")}
+              >
+                {link.text}
+              </a>
+            </li>
+          ))}
         </ul>
-        <div class="language-picker">
-          <button x-on:click="langopen = !langopen" class="w-5">
-            <Icon icon="Language" />
+        <LocalePicker />
+      </div>
+
+      <button
+        class="sm:hidden p-2"
+        aria-label="Open navigation menu"
+        popovertarget="mobile-menu"
+        popovertargetaction="show"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <div popover id="mobile-menu" class="fixed inset-0 m-0 w-full h-full max-w-none max-h-none border-none bg-white z-50">
+        <div class="flex flex-col h-full">
+        <div class="mx-auto w-full max-w-6xl flex items-center justify-between px-8 py-4">
+          <a href={header.logo_url}>
+            <img class="w-48" src={header.logo} alt={header.logo_alt_text} />
+          </a>
+          <button
+            class="p-2"
+            aria-label="Close navigation menu"
+            popovertarget="mobile-menu"
+            popovertargetaction="hide"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </button>
-          <ul class="lang-list" x-show="langopen" x-cloak x-transition>
-            {
-              header.locales.map((locale) => {
-                return (
-                  <li>
-                    <a href={`/${locale.code}${pagePath}`}>
-                      <img
-                        class="w-[32px]"
-                        src={locale.flag}
-                        alt={`${locale.name} Flag`}
-                      />
-                      <span data-rosey={generateRoseyId(locale.name)}>
-                        {locale.name}
-                      </span>
-                    </a>
-                  </li>
-                );
-              })
-            }
-          </ul>
+        </div>
+        <ul class="flex flex-1 flex-col items-center justify-center gap-0 divide-y divide-gray-200" data-rosey-ns="nav">
+          {header.links.map((link) => (
+            <li class="w-full max-w-xs text-center">
+              <a
+                class="block py-5 text-2xl font-medium text-gray-800 hover:text-blue-600 transition-colors"
+                href={link.link}
+                data-rosey={link.text.toLowerCase().replace(/\s+/g, "-")}
+              >
+                {link.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div class="flex justify-center py-8">
+          <LocalePicker />
+        </div>
         </div>
       </div>
     </nav>
   </div>
 </header>
 
-<style define:vars={{ linkHoverColor }}>
-  .header__container {
-    max-width: var(--pageContainer);
-    margin: 0 auto;
-    padding-inline: var(--pagePadding);
+<style>
+  #mobile-menu {
+    opacity: 0;
+    transition: opacity 200ms ease, display 200ms allow-discrete, overlay 200ms allow-discrete;
   }
-
-  .header li {
-    list-style-type: none;
+  #mobile-menu:popover-open {
+    opacity: 1;
   }
-
-  .header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 1rem;
-  }
-  .header__nav-end {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .mobileMenuPopover {
-    /* Closed state transformed off the screen */
-    transform: translateY(calc((var(--headerHeight) + 100%) * -1));
-    transition:
-      transform 0.4s,
-      overlay 0.4s ease-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    inset: unset;
-    padding-top: var(--headerPadding);
-    padding-bottom: 48px;
-    padding-inline: var(--pagePadding);
-    height: fit-content;
-  }
-
-  /* Styles while the menu is open */
-  .mobileMenuPopover:popover-open {
-    transform: translateY(0);
-    position: relative;
-    z-index: 99;
-  }
-
-  .header__logo-image {
-    width: 200px;
-  }
-  .header__nav-links-desktop {
-    display: none;
-  }
-  .header__nav-links-mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  .header__nav-link {
-    cursor: pointer;
-  }
-  .header__nav-link:hover {
-    color: var(--linkHoverColor);
-  }
-  .hamburger-icon {
-    display: block;
-    width: 1rem;
-  }
-  .close-icon {
-    display: block;
-    width: 1rem;
-    align-self: flex-end;
-  }
-  .language-picker {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  .lang-list {
-    position: absolute;
-    z-index: 99;
-    right: 0;
-    top: var(--headerHeight);
-
-    width: max-content;
-    background-color: white;
-    padding-inline: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 0 0 0 4px;
-    letter-spacing: 1.2;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-  .lang-list li a {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  @media screen and (min-width: 600px) {
-    .header__nav-links-mobile,
-    .hamburger-icon {
-      display: none;
-    }
-    .header__nav-links-desktop {
-      position: static;
-      display: flex !important;
-      flex-direction: row;
-      justify-content: flex-end;
-      padding: 0;
-      min-width: none;
-      background-color: transparent;
-    }
-    .header__nav-item {
-      padding-left: 1rem;
+  @starting-style {
+    #mobile-menu:popover-open {
+      opacity: 0;
     }
   }
 </style>

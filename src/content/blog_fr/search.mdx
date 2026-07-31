@@ -1,0 +1,33 @@
+---
+_schema: default
+title: Recherche Pagefind
+post_hero:
+  heading: Recherche Pagefind
+  date: 2025-05-07T16:19:42+12:00
+  tags:
+    - search
+  author: T Richardson
+  image: /src/assets/images/blog/featured-image-4.jpg
+  image_alt: Une femme buvant une tasse de café au lit devant son ordinateur portable.
+thumb_image_path: /src/assets/images/blog/blog-thumb-4.jpg
+thumb_image_alt: >-
+  A group of four people working in front of one laptop in an office
+  environment.
+seo:
+  page_description: >-
+    Describes Pagefind search for searching static sites, and how it is set up
+    on this template.
+  canonical_url:
+  featured_image: /images/blog/featured-image-4.jpg
+  featured_image_alt: Une femme buvant une tasse de café au lit devant son ordinateur portable.
+  author_twitter_handle:
+  open_graph_type: article
+  no_index: false
+---
+Pagefind est une bibliothèque de recherche entièrement statique qui vise à être performante sur les grands sites, tout en consommant le moins possible de bande passante de vos utilisateurs et sans héberger la moindre infrastructure.
+
+Après l'indexation, Pagefind ajoute un bundle de recherche statique à vos fichiers compilés, qui expose une API de recherche JavaScript utilisable partout sur votre site. Pagefind fournit également une interface prête à l'emploi qui peut être utilisée sans aucune configuration. (Vous pouvez voir cette interface en haut de cette page.)
+
+Sur ce modèle, la recherche a été limitée à l'indexation du seul contenu textuel des articles de blog, afin d'éviter d'afficher des résultats sur la page d'accueil, la page d'index du blog, l'en-tête et le pied de page. La barre de recherche se trouve en haut de la page d'index du blog.
+
+L'objectif de Pagefind est que des sites web comptant des dizaines de milliers de pages puissent être consultés par un utilisateur dans son navigateur, tout en consommant le moins de bande passante possible. L'index de recherche de Pagefind est découpé en fragments, de sorte qu'une recherche dans le navigateur n'a besoin de charger qu'un petit sous-ensemble de l'index. Pagefind peut effectuer une recherche en texte intégral sur un site de 10 000 pages avec une charge réseau totale inférieure à 300 ko, y compris la bibliothèque Pagefind elle-même. Pour la plupart des sites, ce sera plus proche de 100 ko.

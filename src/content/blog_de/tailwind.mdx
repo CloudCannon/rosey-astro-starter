@@ -1,0 +1,35 @@
+---
+_schema: default
+title: Tailwind CSS v4
+post_hero:
+  heading: Tailwind CSS v4
+  date: 2025-05-06T11:28:34+12:00
+  tags:
+    - building
+    - styling
+    - tailwind
+  author: T Richardson
+  image: /src/assets/images/blog/featured-image-2.jpg
+  image_alt: Kinder, die in einem belebten Klassenzimmer um einen Laptop herum arbeiten.
+thumb_image_path: /src/assets/images/blog/blog-thumb-6.jpg
+thumb_image_alt: Eine Gruppe von Menschen, die um einen Tisch herum arbeiten, von oben gesehen.
+seo:
+  page_description: Ein Beitrag, der beschreibt, wie Tailwind CSS v4 für die Gestaltung verwendet wird.
+  canonical_url:
+  featured_image: /images/blog/featured-image-2.jpg
+  featured_image_alt: Kinder, die in einem belebten Klassenzimmer um einen Laptop herum arbeiten.
+  author_twitter_handle:
+  open_graph_type: article
+  no_index: false
+---
+Diese Website verwendet Tailwind CSS v4 mit dem CSS-First-Konfigurationsansatz. Das Haupt-Stylesheet unter `src/styles/main.css` importiert Tailwind mit `@import "tailwindcss"`.
+
+Tailwind v4 verwendet `@tailwindcss/vite` als Vite-Plugin anstelle der älteren `@astrojs/tailwind`-Integration. Die Konfiguration erfolgt in CSS mit `@layer theme` statt in einer JavaScript-Konfigurationsdatei.
+
+Wesentliche Unterschiede zu Tailwind v3:
+
+- Keine `tailwind.config.js`-Datei erforderlich
+- Verwenden Sie `@import "tailwindcss"` anstelle der `@tailwind`-Direktiven
+- Konfiguration über benutzerdefinierte CSS-Eigenschaften
+- Automatische Inhaltserkennung (keine `content`-Pfade)
+- Dynamische Abstands- und Rasterwerte, ohne die Konfiguration zu erweitern

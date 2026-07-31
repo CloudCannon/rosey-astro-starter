@@ -1,442 +1,111 @@
 {
   "version": 2,
   "keys": {
-    "CloudCannon": {
-      "original": "CloudCannon",
+    "404:back_home": {
+      "original": "Back home",
       "value": null,
       "pages": {
-        "index.html": 1
+        "404.html": 1
       },
       "total": 1
     },
-    "GitHub": {
-      "original": "GitHub",
+    "404:heading": {
+      "original": "Page not found!",
       "value": null,
       "pages": {
-        "index.html": 2
-      },
-      "total": 2
-    },
-    "Keep-what-you-need%2E-Delete-the-rest%2E": {
-      "original": "Keep what you need. Delete the rest.",
-      "value": null,
-      "pages": {
-        "index.html": 1
+        "404.html": 1
       },
       "total": 1
     },
-    "Update-live-for-the-demo%2E": {
-      "original": "Update live for the demo.",
+    "about:contact_details": {
+      "original": "\nHave a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.\n",
       "value": null,
       "pages": {
-        "index.html": 1
+        "about/index.html": 1
       },
       "total": 1
     },
-    "You-choose-your-editing-experience%2E": {
-      "original": "You choose your editing experience.",
+    "about:contact_heading": {
+      "original": "\nGet in Touch\n",
       "value": null,
       "pages": {
-        "index.html": 1
+        "about/index.html": 1
       },
       "total": 1
     },
-    "blog:Blog": {
-      "original": "Blog",
+    "about:description": {
+      "original": "\nWe're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.\n",
       "value": null,
       "pages": {
-        "blog/index.html": 1
+        "about/index.html": 1
       },
       "total": 1
     },
-    "blog:Pagefind-Search": {
-      "original": "Pagefind Search",
+    "about:heading": {
+      "original": "\nAbout Us\n",
       "value": null,
       "pages": {
+        "about/index.html": 1
+      },
+      "total": 1
+    },
+    "blog:title": {
+      "original": " Tailwind ",
+      "value": null,
+      "pages": {
+        "blog/2/index.html": 1,
         "blog/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "tags/search/index.html": 1
+        "de/blog/2/index.html": 1,
+        "de/blog/index.html": 1,
+        "fr/blog/2/index.html": 1,
+        "fr/blog/index.html": 1
       },
-      "total": 8
+      "total": 6
     },
-    "blog:SEO-Controls": {
-      "original": "SEO Controls",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "tags/seo/index.html": 1
-      },
-      "total": 8
-    },
-    "blog:Tailwind": {
-      "original": "Tailwind",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 15
-    },
-    "blog:WYSIWYG-editing": {
-      "original": "WYSIWYG editing ",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 16
-    },
-    "blog:accessibility": {
-      "original": "Accessibility ",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 16
-    },
-    "blog:building": {
-      "original": "Building ",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 18
-    },
-    "blog:formatting": {
-      "original": "Formatting",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 16
-    },
-    "blog:navigation": {
-      "original": "Navigation ",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 16
-    },
-    "blog:pagination": {
-      "original": "Pagination ",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 16
-    },
-    "blog:recent-posts": {
-      "original": "Recent Posts",
-      "value": null,
-      "pages": {
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1
-      },
-      "total": 9
-    },
-    "blog:search": {
-      "original": "Search",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "tags/search/index.html": 1
-      },
-      "total": 11
-    },
-    "blog:seo": {
-      "original": "Seo",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "tags/seo/index.html": 1
-      },
-      "total": 11
-    },
-    "blog:styling": {
-      "original": "Styling ",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 18
-    },
-    "blog:tailwind": {
-      "original": "Tailwind ",
-      "value": null,
-      "pages": {
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 18
-    },
-    "blog:words": {
-      "original": "words",
-      "value": null,
-      "pages": {
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1
-      },
-      "total": 9
-    },
-    "common:Blog": {
-      "original": "Blog",
-      "value": null,
-      "pages": {
-        "404.html": 3,
-        "blog/index.html": 3,
-        "blog/search/index.html": 3,
-        "blog/seo/index.html": 3,
-        "blog/tailwind/index.html": 3,
-        "de-DE/blog/search/index.html": 3,
-        "de-DE/blog/seo/index.html": 3,
-        "de-DE/blog/tailwind/index.html": 3,
-        "fr-FR/blog/search/index.html": 3,
-        "fr-FR/blog/seo/index.html": 3,
-        "fr-FR/blog/tailwind/index.html": 3,
-        "index.html": 3,
-        "tags/WYSIWYG editing/index.html": 3,
-        "tags/accessibility/index.html": 3,
-        "tags/building/index.html": 3,
-        "tags/formatting/index.html": 3,
-        "tags/navigation/index.html": 3,
-        "tags/pagination/index.html": 3,
-        "tags/search/index.html": 3,
-        "tags/seo/index.html": 3,
-        "tags/styling/index.html": 3,
-        "tags/tailwind/index.html": 3
-      },
-      "total": 66
-    },
-    "common:CloudCannon": {
-      "original": "CloudCannon",
-      "value": null,
-      "pages": {
-        "404.html": 2,
-        "blog/index.html": 2,
-        "blog/search/index.html": 2,
-        "blog/seo/index.html": 2,
-        "blog/tailwind/index.html": 2,
-        "de-DE/blog/search/index.html": 2,
-        "de-DE/blog/seo/index.html": 2,
-        "de-DE/blog/tailwind/index.html": 2,
-        "fr-FR/blog/search/index.html": 2,
-        "fr-FR/blog/seo/index.html": 2,
-        "fr-FR/blog/tailwind/index.html": 2,
-        "index.html": 2,
-        "tags/WYSIWYG editing/index.html": 2,
-        "tags/accessibility/index.html": 2,
-        "tags/building/index.html": 2,
-        "tags/formatting/index.html": 2,
-        "tags/navigation/index.html": 2,
-        "tags/pagination/index.html": 2,
-        "tags/search/index.html": 2,
-        "tags/seo/index.html": 2,
-        "tags/styling/index.html": 2,
-        "tags/tailwind/index.html": 2
-      },
-      "total": 44
-    },
-    "common:Deutsch": {
-      "original": "Deutsch",
+    "footer:blog": {
+      "original": " Blog ",
       "value": null,
       "pages": {
         "404.html": 1,
+        "about/index.html": 1,
+        "blog/2/index.html": 1,
+        "blog/data-files/index.html": 1,
         "blog/index.html": 1,
+        "blog/lighthouse-scores/index.html": 1,
+        "blog/markdown/index.html": 1,
+        "blog/optimized-images/index.html": 1,
+        "blog/paginated-collection/index.html": 1,
         "blog/search/index.html": 1,
         "blog/seo/index.html": 1,
         "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
+        "de/blog/2/index.html": 1,
+        "de/blog/data-files/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/lighthouse-scores/index.html": 1,
+        "de/blog/markdown/index.html": 1,
+        "de/blog/optimized-images/index.html": 1,
+        "de/blog/paginated-collection/index.html": 1,
+        "de/blog/search/index.html": 1,
+        "de/blog/seo/index.html": 1,
+        "de/blog/tailwind/index.html": 1,
+        "fr/blog/2/index.html": 1,
+        "fr/blog/data-files/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/lighthouse-scores/index.html": 1,
+        "fr/blog/markdown/index.html": 1,
+        "fr/blog/optimized-images/index.html": 1,
+        "fr/blog/paginated-collection/index.html": 1,
+        "fr/blog/search/index.html": 1,
+        "fr/blog/seo/index.html": 1,
+        "fr/blog/tailwind/index.html": 1,
         "index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
         "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
+        "tags/data/index.html": 1,
+        "tags/icons/index.html": 1,
+        "tags/images/index.html": 1,
+        "tags/inputs/index.html": 1,
+        "tags/markdown/index.html": 1,
         "tags/navigation/index.html": 1,
         "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
@@ -444,115 +113,52 @@
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 22
+      "total": 46
     },
-    "common:English-(US)": {
-      "original": "English (US)",
-      "value": null,
-      "pages": {
-        "404.html": 1,
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/search/index.html": 1,
-        "tags/seo/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 22
-    },
-    "common:French": {
-      "original": "French",
-      "value": null,
-      "pages": {
-        "404.html": 1,
-        "blog/index.html": 1,
-        "blog/search/index.html": 1,
-        "blog/seo/index.html": 1,
-        "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
-        "index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
-        "tags/accessibility/index.html": 1,
-        "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
-        "tags/navigation/index.html": 1,
-        "tags/pagination/index.html": 1,
-        "tags/search/index.html": 1,
-        "tags/seo/index.html": 1,
-        "tags/styling/index.html": 1,
-        "tags/tailwind/index.html": 1
-      },
-      "total": 22
-    },
-    "common:GitHub": {
-      "original": "GitHub",
-      "value": null,
-      "pages": {
-        "404.html": 2,
-        "blog/index.html": 2,
-        "blog/search/index.html": 2,
-        "blog/seo/index.html": 2,
-        "blog/tailwind/index.html": 2,
-        "de-DE/blog/search/index.html": 2,
-        "de-DE/blog/seo/index.html": 2,
-        "de-DE/blog/tailwind/index.html": 2,
-        "fr-FR/blog/search/index.html": 2,
-        "fr-FR/blog/seo/index.html": 2,
-        "fr-FR/blog/tailwind/index.html": 2,
-        "index.html": 2,
-        "tags/WYSIWYG editing/index.html": 2,
-        "tags/accessibility/index.html": 2,
-        "tags/building/index.html": 2,
-        "tags/formatting/index.html": 2,
-        "tags/navigation/index.html": 2,
-        "tags/pagination/index.html": 2,
-        "tags/search/index.html": 2,
-        "tags/seo/index.html": 2,
-        "tags/styling/index.html": 2,
-        "tags/tailwind/index.html": 2
-      },
-      "total": 44
-    },
-    "common:MyCompany%2E-All-rights-reserved%2E": {
+    "footer:copyright": {
       "original": "MyCompany. All rights reserved.",
       "value": null,
       "pages": {
         "404.html": 1,
+        "about/index.html": 1,
+        "blog/2/index.html": 1,
+        "blog/data-files/index.html": 1,
         "blog/index.html": 1,
+        "blog/lighthouse-scores/index.html": 1,
+        "blog/markdown/index.html": 1,
+        "blog/optimized-images/index.html": 1,
+        "blog/paginated-collection/index.html": 1,
         "blog/search/index.html": 1,
         "blog/seo/index.html": 1,
         "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
+        "de/blog/2/index.html": 1,
+        "de/blog/data-files/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/lighthouse-scores/index.html": 1,
+        "de/blog/markdown/index.html": 1,
+        "de/blog/optimized-images/index.html": 1,
+        "de/blog/paginated-collection/index.html": 1,
+        "de/blog/search/index.html": 1,
+        "de/blog/seo/index.html": 1,
+        "de/blog/tailwind/index.html": 1,
+        "fr/blog/2/index.html": 1,
+        "fr/blog/data-files/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/lighthouse-scores/index.html": 1,
+        "fr/blog/markdown/index.html": 1,
+        "fr/blog/optimized-images/index.html": 1,
+        "fr/blog/paginated-collection/index.html": 1,
+        "fr/blog/search/index.html": 1,
+        "fr/blog/seo/index.html": 1,
+        "fr/blog/tailwind/index.html": 1,
         "index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
         "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
+        "tags/data/index.html": 1,
+        "tags/icons/index.html": 1,
+        "tags/images/index.html": 1,
+        "tags/inputs/index.html": 1,
+        "tags/markdown/index.html": 1,
         "tags/navigation/index.html": 1,
         "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
@@ -560,28 +166,52 @@
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 22
+      "total": 46
     },
-    "common:RSS-Feed": {
-      "original": "RSS Feed",
+    "footer:rss-feed": {
+      "original": " RSS Feed ",
       "value": null,
       "pages": {
         "404.html": 1,
+        "about/index.html": 1,
+        "blog/2/index.html": 1,
+        "blog/data-files/index.html": 1,
         "blog/index.html": 1,
+        "blog/lighthouse-scores/index.html": 1,
+        "blog/markdown/index.html": 1,
+        "blog/optimized-images/index.html": 1,
+        "blog/paginated-collection/index.html": 1,
         "blog/search/index.html": 1,
         "blog/seo/index.html": 1,
         "blog/tailwind/index.html": 1,
-        "de-DE/blog/search/index.html": 1,
-        "de-DE/blog/seo/index.html": 1,
-        "de-DE/blog/tailwind/index.html": 1,
-        "fr-FR/blog/search/index.html": 1,
-        "fr-FR/blog/seo/index.html": 1,
-        "fr-FR/blog/tailwind/index.html": 1,
+        "de/blog/2/index.html": 1,
+        "de/blog/data-files/index.html": 1,
+        "de/blog/index.html": 1,
+        "de/blog/lighthouse-scores/index.html": 1,
+        "de/blog/markdown/index.html": 1,
+        "de/blog/optimized-images/index.html": 1,
+        "de/blog/paginated-collection/index.html": 1,
+        "de/blog/search/index.html": 1,
+        "de/blog/seo/index.html": 1,
+        "de/blog/tailwind/index.html": 1,
+        "fr/blog/2/index.html": 1,
+        "fr/blog/data-files/index.html": 1,
+        "fr/blog/index.html": 1,
+        "fr/blog/lighthouse-scores/index.html": 1,
+        "fr/blog/markdown/index.html": 1,
+        "fr/blog/optimized-images/index.html": 1,
+        "fr/blog/paginated-collection/index.html": 1,
+        "fr/blog/search/index.html": 1,
+        "fr/blog/seo/index.html": 1,
+        "fr/blog/tailwind/index.html": 1,
         "index.html": 1,
-        "tags/WYSIWYG editing/index.html": 1,
         "tags/accessibility/index.html": 1,
         "tags/building/index.html": 1,
-        "tags/formatting/index.html": 1,
+        "tags/data/index.html": 1,
+        "tags/icons/index.html": 1,
+        "tags/images/index.html": 1,
+        "tags/inputs/index.html": 1,
+        "tags/markdown/index.html": 1,
         "tags/navigation/index.html": 1,
         "tags/pagination/index.html": 1,
         "tags/search/index.html": 1,
@@ -589,55 +219,330 @@
         "tags/styling/index.html": 1,
         "tags/tailwind/index.html": 1
       },
-      "total": 22
+      "total": 46
     },
-    "rcc-markdown:A-flexible-git-backed-CMS-that-specialises-in-editing-markdown-and-data-files%2E": {
-      "original": "A flexible git-backed CMS that specialises in editing markdown and data files.",
+    "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:button_text": {
+      "original": " CloudCannon Docs ",
       "value": null,
       "pages": {
         "index.html": 1
       },
       "total": 1
     },
-    "rcc-markdown:A-new-paragraph-for-a-demo-with-Karla%2E": {
-      "original": "A new paragraph for a demo with Karla.",
+    "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:heading": {
+      "original": " You choose your editing experience. ",
       "value": null,
       "pages": {
         "index.html": 1
       },
       "total": 1
     },
-    "rcc-markdown:A-starting-point-for-developers-looking-to-build-a-multilingual-website-with-Astro-Rosey-and-the-Rosey-CloudCannon-Connector-using-Bookshop-components-in-CloudCannon%2E-Create-your-own-copy-and-start-creating-your-own-components-to-use-in-CloudCannon's-CMS%2E": {
-      "original": "A starting point for developers looking to build a multilingual website with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop components in CloudCannon. Create your own copy, and start creating your own components to use in CloudCannon’s CMS.",
+    "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:text_content": {
+      "original": "<p>A flexible git-backed CMS that specialises in editing markdown and data files.</p>\n<p>Visual editing allows you to preview your changes live before you save them.</p>\n<p>Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.</p>\n",
       "value": null,
       "pages": {
         "index.html": 1
       },
       "total": 1
     },
-    "rcc-markdown:Git-backed-means-you-can-keep-all-your-familiar-git-workflows-while-providing-an-easy-to-understand-interface-for-non-technical-editors-to-collaborate-via-git%2E": {
-      "original": "Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.",
+    "index:62ab02a7-7456-4180-8be1-a62e5f545f52:button_text": {
+      "original": " Get Started ",
       "value": null,
       "pages": {
         "index.html": 1
       },
       "total": 1
     },
-    "rcc-markdown:The-Rosey-Astro-Starter's-aim-is-to-get-developers-building-their-own-site-quickly-in-CloudCannon%2E-This-template-is-trying-to-strike-a-balance-between-minimal-and-easy-to-delete-boiler-plate-while-providing-some-commonly-used-features-out-of-the-box%2E-Read-more-about-Rosey-in-CloudCannon-here%2E": {
-      "original": "The Rosey Astro Starter's aim is to get developers building their own site quickly in CloudCannon. This template is trying to strike a balance between minimal, and easy-to-delete boiler plate, while providing some commonly used features out of the box. Read more about Rosey in CloudCannon <a href=\"https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/\">here</a>.",
+    "index:62ab02a7-7456-4180-8be1-a62e5f545f52:heading": {
+      "original": " Astro Minimal Starter ",
       "value": null,
       "pages": {
         "index.html": 1
       },
       "total": 1
     },
-    "rcc-markdown:Visual-editing-allows-you-to-preview-your-changes-live-before-you-save-them%2E": {
-      "original": "Visual editing allows you to preview your changes live before you save them.",
+    "index:62ab02a7-7456-4180-8be1-a62e5f545f52:subheading": {
+      "original": "<p>A <strong>minimal</strong> starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon. Create your own copy, and start creating your own components to use in the Visual Editor.</p>\n<p>Once you've explored this minimal starter, consider  taking a look at the <a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> to assist in building out your components.</p>\n",
       "value": null,
       "pages": {
         "index.html": 1
       },
       "total": 1
+    },
+    "index:953f2405-5e5c-41a1-839f-f12f23b12b9d:heading": {
+      "original": " Keep what you need. Delete the rest. ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:953f2405-5e5c-41a1-839f-f12f23b12b9d:text_content": {
+      "original": "<p>This starter aims to get developers building their own site quickly in CloudCannon. It strikes a balance between minimal boilerplate and useful features out of the box:</p>\n<ul>\n<li>Tailwind CSS v4</li>\n<li>Blog with pagination &amp; tags</li>\n<li>Visual editing with Editable Regions</li>\n<li>Header and Footer controls</li>\n<li>Create and delete pages</li>\n<li>SEO controls</li>\n</ul>\n",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:f2631fee-f0a5-4445-b79b-cccdf6a52ba0:heading": {
+      "original": " List rendering test ",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "index:f2631fee-f0a5-4445-b79b-cccdf6a52ba0:text_content": {
+      "original": "<p>A few list shapes to exercise stale detection across markdown's tight/loose\nrendering and CloudCannon's serializer:</p>\n<p>A tight unordered list:</p>\n<ul>\n<li>Espresso</li>\n<li>Cappuccino</li>\n<li>Flat white</li>\n</ul>\n<p>A loose unordered list:</p>\n<ul>\n<li>\n<p>Espresso</p>\n</li>\n<li>\n<p>Cappuccino</p>\n</li>\n<li>\n<p>Flat white</p>\n</li>\n</ul>\n<p>An ordered list:</p>\n<ol>\n<li>Grind the beans</li>\n<li>Pull the shot</li>\n<li>Steam the milk</li>\n</ol>\n<p>A nested list:</p>\n<ul>\n<li>Hot drinks\n<ul>\n<li>Espresso</li>\n<li>Mocha</li>\n</ul>\n</li>\n<li>Cold drinks\n<ul>\n<li>Iced latte</li>\n</ul>\n</li>\n</ul>\n<p>A list with a multi-paragraph item:</p>\n<ul>\n<li>\n<p>This item runs to two paragraphs.</p>\n<p>This second paragraph belongs to the same item.</p>\n</li>\n<li>\n<p>This item is a single line.</p>\n</li>\n</ul>\n",
+      "value": null,
+      "pages": {
+        "index.html": 1
+      },
+      "total": 1
+    },
+    "nav:about": {
+      "original": " About ",
+      "value": null,
+      "pages": {
+        "404.html": 2,
+        "about/index.html": 2,
+        "blog/2/index.html": 2,
+        "blog/data-files/index.html": 2,
+        "blog/index.html": 2,
+        "blog/lighthouse-scores/index.html": 2,
+        "blog/markdown/index.html": 2,
+        "blog/optimized-images/index.html": 2,
+        "blog/paginated-collection/index.html": 2,
+        "blog/search/index.html": 2,
+        "blog/seo/index.html": 2,
+        "blog/tailwind/index.html": 2,
+        "de/blog/2/index.html": 2,
+        "de/blog/data-files/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/lighthouse-scores/index.html": 2,
+        "de/blog/markdown/index.html": 2,
+        "de/blog/optimized-images/index.html": 2,
+        "de/blog/paginated-collection/index.html": 2,
+        "de/blog/search/index.html": 2,
+        "de/blog/seo/index.html": 2,
+        "de/blog/tailwind/index.html": 2,
+        "fr/blog/2/index.html": 2,
+        "fr/blog/data-files/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/lighthouse-scores/index.html": 2,
+        "fr/blog/markdown/index.html": 2,
+        "fr/blog/optimized-images/index.html": 2,
+        "fr/blog/paginated-collection/index.html": 2,
+        "fr/blog/search/index.html": 2,
+        "fr/blog/seo/index.html": 2,
+        "fr/blog/tailwind/index.html": 2,
+        "index.html": 2,
+        "tags/accessibility/index.html": 2,
+        "tags/building/index.html": 2,
+        "tags/data/index.html": 2,
+        "tags/icons/index.html": 2,
+        "tags/images/index.html": 2,
+        "tags/inputs/index.html": 2,
+        "tags/markdown/index.html": 2,
+        "tags/navigation/index.html": 2,
+        "tags/pagination/index.html": 2,
+        "tags/search/index.html": 2,
+        "tags/seo/index.html": 2,
+        "tags/styling/index.html": 2,
+        "tags/tailwind/index.html": 2
+      },
+      "total": 92
+    },
+    "nav:blog": {
+      "original": " Blog ",
+      "value": null,
+      "pages": {
+        "404.html": 2,
+        "about/index.html": 2,
+        "blog/2/index.html": 2,
+        "blog/data-files/index.html": 2,
+        "blog/index.html": 2,
+        "blog/lighthouse-scores/index.html": 2,
+        "blog/markdown/index.html": 2,
+        "blog/optimized-images/index.html": 2,
+        "blog/paginated-collection/index.html": 2,
+        "blog/search/index.html": 2,
+        "blog/seo/index.html": 2,
+        "blog/tailwind/index.html": 2,
+        "de/blog/2/index.html": 2,
+        "de/blog/data-files/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/lighthouse-scores/index.html": 2,
+        "de/blog/markdown/index.html": 2,
+        "de/blog/optimized-images/index.html": 2,
+        "de/blog/paginated-collection/index.html": 2,
+        "de/blog/search/index.html": 2,
+        "de/blog/seo/index.html": 2,
+        "de/blog/tailwind/index.html": 2,
+        "fr/blog/2/index.html": 2,
+        "fr/blog/data-files/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/lighthouse-scores/index.html": 2,
+        "fr/blog/markdown/index.html": 2,
+        "fr/blog/optimized-images/index.html": 2,
+        "fr/blog/paginated-collection/index.html": 2,
+        "fr/blog/search/index.html": 2,
+        "fr/blog/seo/index.html": 2,
+        "fr/blog/tailwind/index.html": 2,
+        "index.html": 2,
+        "tags/accessibility/index.html": 2,
+        "tags/building/index.html": 2,
+        "tags/data/index.html": 2,
+        "tags/icons/index.html": 2,
+        "tags/images/index.html": 2,
+        "tags/inputs/index.html": 2,
+        "tags/markdown/index.html": 2,
+        "tags/navigation/index.html": 2,
+        "tags/pagination/index.html": 2,
+        "tags/search/index.html": 2,
+        "tags/seo/index.html": 2,
+        "tags/styling/index.html": 2,
+        "tags/tailwind/index.html": 2
+      },
+      "total": 92
+    },
+    "nav:cloudcannon": {
+      "original": " CloudCannon ",
+      "value": null,
+      "pages": {
+        "404.html": 2,
+        "about/index.html": 2,
+        "blog/2/index.html": 2,
+        "blog/data-files/index.html": 2,
+        "blog/index.html": 2,
+        "blog/lighthouse-scores/index.html": 2,
+        "blog/markdown/index.html": 2,
+        "blog/optimized-images/index.html": 2,
+        "blog/paginated-collection/index.html": 2,
+        "blog/search/index.html": 2,
+        "blog/seo/index.html": 2,
+        "blog/tailwind/index.html": 2,
+        "de/blog/2/index.html": 2,
+        "de/blog/data-files/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/lighthouse-scores/index.html": 2,
+        "de/blog/markdown/index.html": 2,
+        "de/blog/optimized-images/index.html": 2,
+        "de/blog/paginated-collection/index.html": 2,
+        "de/blog/search/index.html": 2,
+        "de/blog/seo/index.html": 2,
+        "de/blog/tailwind/index.html": 2,
+        "fr/blog/2/index.html": 2,
+        "fr/blog/data-files/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/lighthouse-scores/index.html": 2,
+        "fr/blog/markdown/index.html": 2,
+        "fr/blog/optimized-images/index.html": 2,
+        "fr/blog/paginated-collection/index.html": 2,
+        "fr/blog/search/index.html": 2,
+        "fr/blog/seo/index.html": 2,
+        "fr/blog/tailwind/index.html": 2,
+        "index.html": 2,
+        "tags/accessibility/index.html": 2,
+        "tags/building/index.html": 2,
+        "tags/data/index.html": 2,
+        "tags/icons/index.html": 2,
+        "tags/images/index.html": 2,
+        "tags/inputs/index.html": 2,
+        "tags/markdown/index.html": 2,
+        "tags/navigation/index.html": 2,
+        "tags/pagination/index.html": 2,
+        "tags/search/index.html": 2,
+        "tags/seo/index.html": 2,
+        "tags/styling/index.html": 2,
+        "tags/tailwind/index.html": 2
+      },
+      "total": 92
+    },
+    "nav:github": {
+      "original": " GitHub ",
+      "value": null,
+      "pages": {
+        "404.html": 2,
+        "about/index.html": 2,
+        "blog/2/index.html": 2,
+        "blog/data-files/index.html": 2,
+        "blog/index.html": 2,
+        "blog/lighthouse-scores/index.html": 2,
+        "blog/markdown/index.html": 2,
+        "blog/optimized-images/index.html": 2,
+        "blog/paginated-collection/index.html": 2,
+        "blog/search/index.html": 2,
+        "blog/seo/index.html": 2,
+        "blog/tailwind/index.html": 2,
+        "de/blog/2/index.html": 2,
+        "de/blog/data-files/index.html": 2,
+        "de/blog/index.html": 2,
+        "de/blog/lighthouse-scores/index.html": 2,
+        "de/blog/markdown/index.html": 2,
+        "de/blog/optimized-images/index.html": 2,
+        "de/blog/paginated-collection/index.html": 2,
+        "de/blog/search/index.html": 2,
+        "de/blog/seo/index.html": 2,
+        "de/blog/tailwind/index.html": 2,
+        "fr/blog/2/index.html": 2,
+        "fr/blog/data-files/index.html": 2,
+        "fr/blog/index.html": 2,
+        "fr/blog/lighthouse-scores/index.html": 2,
+        "fr/blog/markdown/index.html": 2,
+        "fr/blog/optimized-images/index.html": 2,
+        "fr/blog/paginated-collection/index.html": 2,
+        "fr/blog/search/index.html": 2,
+        "fr/blog/seo/index.html": 2,
+        "fr/blog/tailwind/index.html": 2,
+        "index.html": 2,
+        "tags/accessibility/index.html": 2,
+        "tags/building/index.html": 2,
+        "tags/data/index.html": 2,
+        "tags/icons/index.html": 2,
+        "tags/images/index.html": 2,
+        "tags/inputs/index.html": 2,
+        "tags/markdown/index.html": 2,
+        "tags/navigation/index.html": 2,
+        "tags/pagination/index.html": 2,
+        "tags/search/index.html": 2,
+        "tags/seo/index.html": 2,
+        "tags/styling/index.html": 2,
+        "tags/tailwind/index.html": 2
+      },
+      "total": 92
+    },
+    "recent_posts": {
+      "original": "Recent Posts",
+      "value": null,
+      "pages": {
+        "blog/data-files/index.html": 1,
+        "blog/lighthouse-scores/index.html": 1,
+        "blog/markdown/index.html": 1,
+        "blog/optimized-images/index.html": 1,
+        "blog/paginated-collection/index.html": 1,
+        "blog/search/index.html": 1,
+        "blog/seo/index.html": 1,
+        "blog/tailwind/index.html": 1,
+        "de/blog/data-files/index.html": 1,
+        "de/blog/lighthouse-scores/index.html": 1,
+        "de/blog/markdown/index.html": 1,
+        "de/blog/optimized-images/index.html": 1,
+        "de/blog/paginated-collection/index.html": 1,
+        "de/blog/search/index.html": 1,
+        "de/blog/seo/index.html": 1,
+        "de/blog/tailwind/index.html": 1,
+        "fr/blog/data-files/index.html": 1,
+        "fr/blog/lighthouse-scores/index.html": 1,
+        "fr/blog/markdown/index.html": 1,
+        "fr/blog/optimized-images/index.html": 1,
+        "fr/blog/paginated-collection/index.html": 1,
+        "fr/blog/search/index.html": 1,
+        "fr/blog/seo/index.html": 1,
+        "fr/blog/tailwind/index.html": 1
+      },
+      "total": 24
     }
   }
 }

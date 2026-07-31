@@ -3,6 +3,7 @@ import Layout from "./Layout.astro";
 import PostSummary from "../components/blog/summary.astro";
 import PostHero from "../components/blog/post-hero/post-hero.astro";
 import { getCollection } from "astro:content";
+import { blogCollectionFor } from "../utils/locales";
 
 type Props = {
   frontmatter: {
@@ -17,40 +18,44 @@ type Props = {
     };
   };
   body: string;
+  locale?: string;
+  roseyRoot?: string;
 };
 
-const { frontmatter, body } = Astro.props;
+const { frontmatter, body, locale, roseyRoot } = Astro.props;
 
-const posts = await getCollection("blog");
+const posts = await getCollection(blogCollectionFor(locale));
 const filteredPosts = posts.filter(
-  (post) => post.data.title !== frontmatter.title
+  (post) => post.data.title !== frontmatter.title,
 );
 ---
 
-<Layout {...frontmatter}>
-  <div class="post-container">
-    <article aria-labelled-by="blog-hero-text">
-      <PostHero bookshop:live {...frontmatter.post_hero} bodyContent={body} />
-      <div class="markdown-text" data-cms-edit="content" data-pagefind-body>
-        <slot />
+<Layout {...frontmatter} roseyRoot={roseyRoot}>
+  <div class="mx-auto max-w-3xl px-8 py-12 md:py-20">
+    <article>
+      <editable-component data-prop="post_hero" data-component="PostHero">
+        <PostHero {...frontmatter.post_hero} bodyContent={body} />
+      </editable-component>
+      <div class="prose" data-pagefind-body>
+        <editable-text data-prop="@content" data-type="block">
+          <slot />
+        </editable-text>
       </div>
     </article>
   </div>
 
-  <section class="blog-recent-posts">
-    <h2 class="blog-recent-posts-heading" data-rosey="blog:recent-posts">
-      Recent Posts
-    </h2>
-    <ul class="blog-recent-posts-list">
-      {
-        filteredPosts.slice(0, 3).map((post, i) => {
-          return (
+  {
+    filteredPosts.length > 0 && (
+      <section class="mx-auto max-w-6xl px-8 pb-16" data-rosey-root="">
+        <h2 class="text-2xl font-bold mb-6" data-rosey="recent_posts">Recent Posts</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {filteredPosts.slice(0, 3).map((post) => (
             <li>
-              <PostSummary {...post} loading="lazy" />
+              <PostSummary {...post} locale={locale} loading="lazy" />
             </li>
-          );
-        })
-      }
-    </ul>
-  </section>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 </Layout>
