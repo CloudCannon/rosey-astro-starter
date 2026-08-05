@@ -210,9 +210,9 @@
     "_base_original": "Search | Astro Starter"
   },
   "tag_page_titles:seo": {
-    "original": "Seo | Astro Starter",
+    "original": "SEO | Astro Starter",
     "value": "SEO | Astro Starter",
-    "_base_original": "Seo | Astro Starter"
+    "_base_original": "SEO | Astro Starter"
   },
   "tag_page_titles:styling": {
     "original": "Styling | Astro Starter",
@@ -275,9 +275,9 @@
     "_base_original": "Search"
   },
   "tags:seo": {
-    "original": "Seo",
+    "original": "SEO",
     "value": "SEO",
-    "_base_original": "Seo"
+    "_base_original": "SEO"
   },
   "tags:styling": {
     "original": "Styling",

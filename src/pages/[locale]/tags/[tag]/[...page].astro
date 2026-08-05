@@ -4,6 +4,7 @@ import BlogPagination from "../../../../components/blog/pagination";
 import Layout from "../../../../layouts/Layout.astro";
 import { getCollection, getEntry } from "astro:content";
 import { localeCodes, blogCollectionFor } from "../../../../utils/locales";
+import { tagLabel } from "../../../../utils/tags";
 
 // Built natively per locale so each lists that locale's posts — otherwise Rosey
 // generates /{locale}/tags/* from the English page, listing English posts.
@@ -46,7 +47,7 @@ if (!page) {
   throw new Error("Failed to get blog page data");
 }
 
-const heading = tag[0].toUpperCase() + tag.slice(1);
+const heading = tagLabel(tag);
 
 const pagination = Astro.props.page;
 const filteredPosts = pagination.data;

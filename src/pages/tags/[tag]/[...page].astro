@@ -3,6 +3,7 @@ import BlogList from "../../../components/blog/list.astro";
 import BlogPagination from "../../../components/blog/pagination";
 import Layout from "../../../layouts/Layout.astro";
 import { getCollection, getEntry } from "astro:content";
+import { tagLabel } from "../../../utils/tags";
 
 export async function getStaticPaths({ paginate }: { paginate: Function }) {
   const tags: Record<string, any> = {};
@@ -37,7 +38,7 @@ if (!page) {
 
 // Don't assign to `page.title` — content entry data is cached and shared, so
 // mutating it leaks the tag name into every other route that reads this entry.
-const heading = tag[0].toUpperCase() + tag.slice(1);
+const heading = tagLabel(tag);
 
 const pagination = Astro.props.page;
 const filteredPosts = pagination.data;
