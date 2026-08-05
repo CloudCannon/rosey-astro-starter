@@ -95,6 +95,23 @@ Posts have **no translate button** — that's deliberate. A post is translated b
 opening its French or German copy and editing it directly, so there's no language
 to switch to on the page itself.
 
+### The blog listing page
+
+The [blog listing page](cloudcannon:collections/pages) does have a translate button,
+but it only changes some of what you see. Switch it to French and the page's own
+text translates — the "Blog" heading and the tag names — while the **post titles
+below stay in English**.
+
+That's expected. Those titles come from the French copies of the posts, which
+aren't part of this page, so the translate button can't reach them. Translate a
+post title by opening it in [Blog (Français)](cloudcannon:collections/blog_fr) or
+[Blog (Deutsch)](cloudcannon:collections/blog_de).
+
+To see how the listing really looks in French, open the published site and use the
+**EN / FR / DE** picker in the header. There's no French version of this page to
+open in CloudCannon — the French listing is built automatically from the English
+one plus your translations, so there's nothing on it to edit directly.
+
 Each post has a title, hero image, date, author, thumbnail and tags. Tags come from
 a fixed list — to add a new one, edit [tags.json](cloudcannon:collections/data/tags.json)
 first, then pick it on the post. Pick the same tags on the French and German copies

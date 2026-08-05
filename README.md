@@ -86,6 +86,14 @@ Split-by-directory pages set `data-rosey-root` to the **English-equivalent** pat
 
 They also pass `hideLocaleSwitcher`, which sets `data-rcc-exclude` to every locale on the snapshot boundary so the RCC skips its locale switcher. Post bodies carry no Rosey keys, so switching locale in the Visual Editor would offer nothing to translate and read as a bug. It's set in `Post.astro` so both the default-language and locale post routes are covered.
 
+### Mixed pages
+
+The blog listing keeps its switcher, because half of it *is* Rosey-keyed. Switching locale in the Visual Editor translates the `blog:title` heading and the tag chips, but leaves post titles in the default language — the switcher is a client-side swap of `[data-rosey]` elements, and those titles come from `blog_<locale>` files that were never part of this page's build.
+
+That's the expected split, and adding a key to the title would make it worse: `/en/blog/` and `/fr/blog/` are both natively built, so one key is captured from both, collapses to a single entry keeping the default-language original, and Rosey then overwrites the correct titles on `/fr/blog/`.
+
+`/fr/blog/` is a real Astro route, not a Rosey-generated page — it appears in `rosey/base.urls.json`, which is produced by scanning the Astro output *before* `rosey build` runs. It has no source file of its own, though: its heading and head text come from the English `pages/blog.md` entry plus Rosey keys, which is why that route passes `roseySeo`. Nothing on it is editable in CloudCannon directly.
+
 ### Head/SEO text
 
 Rosey scans `<head>`, but untagged head text is copied to translated pages unchanged. `Layout.astro` takes a `roseySeo` prop that keys `<title>` and the meta description as `{roseyRoot}:page_title` / `:page_description`. Routes serving many pages from one template pass `roseyTitleKey` / `roseyDescriptionKey` explicitly instead.
