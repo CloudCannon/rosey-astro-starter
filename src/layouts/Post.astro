@@ -34,7 +34,7 @@ const filteredPosts = posts.filter(
   <div class="mx-auto max-w-3xl px-8 py-12 md:py-20">
     <article>
       <editable-component data-prop="post_hero" data-component="PostHero">
-        <PostHero {...frontmatter.post_hero} bodyContent={body} />
+        <PostHero {...frontmatter.post_hero} bodyContent={body} locale={locale} />
       </editable-component>
       <div class="prose" data-pagefind-body>
         <editable-text data-prop="@content" data-type="block">

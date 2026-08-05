@@ -35,20 +35,22 @@ if (!page) {
   throw new Error("Failed to get blog page data");
 }
 
-page.title = tag[0].toUpperCase() + tag.slice(1);
+// Don't assign to `page.title` — content entry data is cached and shared, so
+// mutating it leaks the tag name into every other route that reads this entry.
+const heading = tag[0].toUpperCase() + tag.slice(1);
 
 const pagination = Astro.props.page;
 const filteredPosts = pagination.data;
 ---
 
-<Layout title={page.title} seo={page.seo}>
+<Layout title={heading} seo={page.seo} roseyRoot="tags">
   <div class="mx-auto max-w-6xl px-8 py-16">
-    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8">
-      {page.title}
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8" data-rosey={tag}>
+      {heading}
     </h1>
     <section>
       <BlogList posts={filteredPosts} />
-      <BlogPagination pagination={pagination} />
+      <BlogPagination pagination={pagination} basePath={`/tags/${tag}`} />
     </section>
   </div>
 </Layout>

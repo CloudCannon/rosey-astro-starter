@@ -10,9 +10,9 @@
     "_base_original": "Page not found!"
   },
   "about:contact_details": {
-    "original": "\nHave a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.\n",
-    "value": "\nVous avez une question ou souhaitez collaborer ? Contactez-nous à\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nou retrouvez-nous sur <a href=\"https://github.com\">GitHub</a>.\n",
-    "_base_original": "\nHave a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.\n"
+    "original": "\n<p>Have a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.</p>\n",
+    "value": "\n<p>Vous avez une question ou souhaitez collaborer ? Contactez-nous à\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nou retrouvez-nous sur <a href=\"https://github.com\">GitHub</a>.</p>\n",
+    "_base_original": "\n<p>Have a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.</p>\n"
   },
   "about:contact_heading": {
     "original": "\nGet in Touch\n",
@@ -20,9 +20,9 @@
     "_base_original": "\nGet in Touch\n"
   },
   "about:description": {
-    "original": "\nWe're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.\n",
-    "value": "\nNous sommes une petite équipe passionnée par la création de superbes sites web. Cette page est un composant Astro autonome édité avec des\n<strong>source editables</strong> — le contenu que vous voyez ici se trouve directement\n          dans le template et s'édite visuellement via CloudCannon.\n",
-    "_base_original": "\nWe're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.\n"
+    "original": "\n<p>We're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.</p>\n",
+    "value": "\n<p>Nous sommes une petite équipe passionnée par la création de superbes sites web. Cette page est un composant Astro autonome édité avec des\n<strong>source editables</strong> — le contenu que vous voyez ici se trouve directement\n          dans le template et s'édite visuellement via CloudCannon.</p>\n",
+    "_base_original": "\n<p>We're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.</p>\n"
   },
   "about:heading": {
     "original": "\nAbout Us\n",
