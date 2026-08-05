@@ -927,7 +927,7 @@
       "total": 3
     },
     "tag_page_titles:seo": {
-      "original": "Seo | Astro Starter",
+      "original": "SEO | Astro Starter",
       "value": null,
       "pages": {
         "de/tags/seo/index.html": 1,
@@ -1387,7 +1387,7 @@
       "total": 12
     },
     "tags:seo": {
-      "original": " Seo ",
+      "original": " SEO ",
       "value": null,
       "pages": {
         "blog/data-files/index.html": 2,
