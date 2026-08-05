@@ -123,5 +123,180 @@
     "original": "Recent Posts",
     "value": "Articles récents",
     "_base_original": "Recent Posts"
+  },
+  "index:page_title": {
+    "original": "Astro Minimal Starter",
+    "value": "Astro Minimal Starter",
+    "_base_original": "Astro Minimal Starter"
+  },
+  "index:page_description": {
+    "original": "A starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon.",
+    "value": "Un point de départ pour les développeurs souhaitant créer un site web avec Astro, en utilisant les Editable Regions dans CloudCannon.",
+    "_base_original": "A starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon."
+  },
+  "about:page_title": {
+    "original": "About | Astro Starter",
+    "value": "À propos | Astro Starter",
+    "_base_original": "About | Astro Starter"
+  },
+  "about:page_description": {
+    "original": "A starter template for Astro with Editable Regions, for CloudCannon CMS.",
+    "value": "Un modèle de départ pour Astro avec les Editable Regions, pour le CMS CloudCannon.",
+    "_base_original": "A starter template for Astro with Editable Regions, for CloudCannon CMS."
+  },
+  "404:page_title": {
+    "original": "404 - Not Found | Astro Starter",
+    "value": "404 - Page introuvable | Astro Starter",
+    "_base_original": "404 - Not Found | Astro Starter"
+  },
+  "404:page_description": {
+    "original": "A starter template for Astro with Editable Regions, for CloudCannon CMS.",
+    "value": "Un modèle de départ pour Astro avec les Editable Regions, pour le CMS CloudCannon.",
+    "_base_original": "A starter template for Astro with Editable Regions, for CloudCannon CMS."
+  },
+  "blog:page_title": {
+    "original": "Blog | Astro Starter",
+    "value": "Blog | Astro Starter",
+    "_base_original": "Blog | Astro Starter"
+  },
+  "blog:page_description": {
+    "original": "A blog template with tags.",
+    "value": "Un modèle de blog avec des tags.",
+    "_base_original": "A blog template with tags."
+  },
+  "tag_page_description": {
+    "original": "A blog template with tags.",
+    "value": "Un modèle de blog avec des tags.",
+    "_base_original": "A blog template with tags."
+  },
+  "tag_page_titles:accessibility": {
+    "original": "Accessibility | Astro Starter",
+    "value": "Accessibilité | Astro Starter",
+    "_base_original": "Accessibility | Astro Starter"
+  },
+  "tag_page_titles:building": {
+    "original": "Building | Astro Starter",
+    "value": "Développement | Astro Starter",
+    "_base_original": "Building | Astro Starter"
+  },
+  "tag_page_titles:data": {
+    "original": "Data | Astro Starter",
+    "value": "Données | Astro Starter",
+    "_base_original": "Data | Astro Starter"
+  },
+  "tag_page_titles:icons": {
+    "original": "Icons | Astro Starter",
+    "value": "Icônes | Astro Starter",
+    "_base_original": "Icons | Astro Starter"
+  },
+  "tag_page_titles:images": {
+    "original": "Images | Astro Starter",
+    "value": "Images | Astro Starter",
+    "_base_original": "Images | Astro Starter"
+  },
+  "tag_page_titles:inputs": {
+    "original": "Inputs | Astro Starter",
+    "value": "Champs | Astro Starter",
+    "_base_original": "Inputs | Astro Starter"
+  },
+  "tag_page_titles:markdown": {
+    "original": "Markdown | Astro Starter",
+    "value": "Markdown | Astro Starter",
+    "_base_original": "Markdown | Astro Starter"
+  },
+  "tag_page_titles:navigation": {
+    "original": "Navigation | Astro Starter",
+    "value": "Navigation | Astro Starter",
+    "_base_original": "Navigation | Astro Starter"
+  },
+  "tag_page_titles:pagination": {
+    "original": "Pagination | Astro Starter",
+    "value": "Pagination | Astro Starter",
+    "_base_original": "Pagination | Astro Starter"
+  },
+  "tag_page_titles:search": {
+    "original": "Search | Astro Starter",
+    "value": "Recherche | Astro Starter",
+    "_base_original": "Search | Astro Starter"
+  },
+  "tag_page_titles:seo": {
+    "original": "Seo | Astro Starter",
+    "value": "SEO | Astro Starter",
+    "_base_original": "Seo | Astro Starter"
+  },
+  "tag_page_titles:styling": {
+    "original": "Styling | Astro Starter",
+    "value": "Style | Astro Starter",
+    "_base_original": "Styling | Astro Starter"
+  },
+  "tag_page_titles:tailwind": {
+    "original": "Tailwind | Astro Starter",
+    "value": "Tailwind | Astro Starter",
+    "_base_original": "Tailwind | Astro Starter"
+  },
+  "tags:accessibility": {
+    "original": "Accessibility",
+    "value": "Accessibilité",
+    "_base_original": "Accessibility"
+  },
+  "tags:building": {
+    "original": "Building",
+    "value": "Développement",
+    "_base_original": "Building"
+  },
+  "tags:data": {
+    "original": "Data",
+    "value": "Données",
+    "_base_original": "Data"
+  },
+  "tags:icons": {
+    "original": "Icons",
+    "value": "Icônes",
+    "_base_original": "Icons"
+  },
+  "tags:images": {
+    "original": "Images",
+    "value": "Images",
+    "_base_original": "Images"
+  },
+  "tags:inputs": {
+    "original": "Inputs",
+    "value": "Champs",
+    "_base_original": "Inputs"
+  },
+  "tags:markdown": {
+    "original": "Markdown",
+    "value": "Markdown",
+    "_base_original": "Markdown"
+  },
+  "tags:navigation": {
+    "original": "Navigation",
+    "value": "Navigation",
+    "_base_original": "Navigation"
+  },
+  "tags:pagination": {
+    "original": "Pagination",
+    "value": "Pagination",
+    "_base_original": "Pagination"
+  },
+  "tags:search": {
+    "original": "Search",
+    "value": "Recherche",
+    "_base_original": "Search"
+  },
+  "tags:seo": {
+    "original": "Seo",
+    "value": "SEO",
+    "_base_original": "Seo"
+  },
+  "tags:styling": {
+    "original": "Styling",
+    "value": "Style",
+    "_base_original": "Styling"
+  },
+  "tags:tailwind": {
+    "original": "Tailwind",
+    "value": "Tailwind",
+    "_base_original": "Tailwind"
   }
 }
