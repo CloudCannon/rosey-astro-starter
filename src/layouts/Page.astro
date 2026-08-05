@@ -8,9 +8,11 @@ type Props = {
     hero_block: any;
     seo?: SEOProps;
   };
+  roseySeo?: boolean;
 };
 
 const props = Astro.props.frontmatter;
+const { roseySeo } = Astro.props;
 
 const components: Record<string, Function> = {};
 const componentImports = import.meta.glob("../components/**/*.astro", {
@@ -34,7 +36,7 @@ Object.entries(componentImports).forEach(([path, obj]) => {
 const HeroComponent = props.hero_block?._name ? components[props.hero_block._name] : null;
 ---
 
-<Layout {...props}>
+<Layout {...props} roseySeo={roseySeo}>
   {HeroComponent && (
     <editable-component data-prop="hero_block" data-component={props.hero_block._name}>
       <HeroComponent {...props.hero_block} />

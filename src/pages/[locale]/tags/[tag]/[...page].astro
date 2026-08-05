@@ -55,7 +55,13 @@ const filteredPosts = pagination.data;
 
 <!-- roseyRoot is "tags" (not the derived "{locale}/tags/{tag}") so the heading
      shares the same global label key as the tag chips. -->
-<Layout title={heading} seo={page.seo} roseyRoot="tags">
+<Layout
+  title={heading}
+  seo={page.seo}
+  roseyRoot="tags"
+  roseyTitleKey={`tag_page_titles:${tag}`}
+  roseyDescriptionKey="tag_page_description"
+>
   <div class="mx-auto max-w-6xl px-8 py-16">
     <h1 class="text-3xl md:text-4xl font-bold text-center mb-8" data-rosey={tag}>
       {heading}

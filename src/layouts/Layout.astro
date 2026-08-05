@@ -20,15 +20,35 @@ export interface Props {
   title: string;
   seo?: SEOProps;
   roseyRoot?: string;
+  // Explicit head keys, for pages needing one key per instance (taxonomy
+  // routes, where a root-derived name would cover every term). Titles usually
+  // want a key each; descriptions are usually one shared key.
+  roseyTitleKey?: string;
+  roseyDescriptionKey?: string;
+  // Opt in to head keys named after this page's Rosey root. Opt-in rather than
+  // default because split-by-directory post pages must NOT have them — their
+  // head already comes from translated frontmatter, and a Rosey value silently
+  // overrides it.
+  roseySeo?: boolean;
 }
 
-const { seo, title, roseyRoot } = Astro.props;
+const { seo, title, roseyRoot, roseyTitleKey, roseyDescriptionKey, roseySeo } =
+  Astro.props;
 const baseUrl = Astro.site?.toString() ?? "";
 
 // Rosey namespace for this page. Split-by-directory locale pages pass the
 // English-equivalent path via roseyRoot so their keys match the source page.
 const derivedRoseyRoot = Astro.url.pathname.replace(/^\/|\/$/g, "") || "index";
 const pageRoseyRoot = roseyRoot ?? derivedRoseyRoot;
+
+// Rosey scans <head>, but astro-seo renders <title>/<meta name="description">
+// with no way to attach data-rosey attributes — so when we have keys we
+// suppress its versions below and emit our own.
+const titleKey =
+  roseyTitleKey ?? (roseySeo ? `${pageRoseyRoot}:page_title` : undefined);
+const descriptionKey =
+  roseyDescriptionKey ??
+  (roseySeo ? `${pageRoseyRoot}:page_description` : undefined);
 
 let pageTitle = "";
 if (!title) {
@@ -54,10 +74,23 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
+    {titleKey && <title data-rosey={titleKey}>{pageTitle}</title>}
+    {
+      descriptionKey && (
+        <meta
+          name="description"
+          content={description}
+          data-rosey-attrs-explicit={JSON.stringify({
+            content: descriptionKey,
+          })}
+        />
+      )
+    }
+
     <SEO
       noindex={seo?.no_index || false}
-      title={pageTitle}
-      description={description}
+      title={titleKey ? undefined : pageTitle}
+      description={descriptionKey ? undefined : description}
       canonical={canonicalURL.toString()}
       openGraph={{
         basic: {

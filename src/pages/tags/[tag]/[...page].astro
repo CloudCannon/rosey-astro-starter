@@ -43,7 +43,16 @@ const pagination = Astro.props.page;
 const filteredPosts = pagination.data;
 ---
 
-<Layout title={heading} seo={page.seo} roseyRoot="tags">
+<!-- Explicit keys because roseyRoot is shared by every tag page: the title needs
+     one key per tag, while the description is the same sentence on all of
+     them and wants a single shared key. -->
+<Layout
+  title={heading}
+  seo={page.seo}
+  roseyRoot="tags"
+  roseyTitleKey={`tag_page_titles:${tag}`}
+  roseyDescriptionKey="tag_page_description"
+>
   <div class="mx-auto max-w-6xl px-8 py-16">
     <h1 class="text-3xl md:text-4xl font-bold text-center mb-8" data-rosey={tag}>
       {heading}
