@@ -91,6 +91,10 @@ Add new posts in **Blog** only. The French and German collections mirror the sam
 posts, so you edit the existing copies there rather than adding or deleting. Posts
 can be edited in either the content editor or the visual editor.
 
+Posts have **no translate button** — that's deliberate. A post is translated by
+opening its French or German copy and editing it directly, so there's no language
+to switch to on the page itself.
+
 Each post has a title, hero image, date, author, thumbnail and tags. Tags come from
 a fixed list — to add a new one, edit [tags.json](cloudcannon:collections/data/tags.json)
 first, then pick it on the post. Pick the same tags on the French and German copies

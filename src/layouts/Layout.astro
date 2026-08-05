@@ -5,6 +5,7 @@ import site from "../../data/site.json";
 import Header from "../components/navigation/header.astro";
 import Footer from "../components/navigation/footer.astro";
 import { SEO } from "astro-seo";
+import { localeCodes } from "../utils/locales";
 
 export interface SEOProps {
   page_description: string | null;
@@ -27,10 +28,25 @@ export interface Props {
   // Opt-in, not a default: split-by-directory pages must not have head keys —
   // their head comes from translated frontmatter, which a Rosey value overrides.
   roseySeo?: boolean;
+  // Hide the RCC's locale switcher. For split-by-directory pages, where the body
+  // is translated by editing the locale's own content file, so switching locale
+  // in the Visual Editor would offer nothing to translate.
+  hideLocaleSwitcher?: boolean;
 }
 
-const { seo, title, roseyRoot, roseyTitleKey, roseyDescriptionKey, roseySeo } =
-  Astro.props;
+const {
+  seo,
+  title,
+  roseyRoot,
+  roseyTitleKey,
+  roseyDescriptionKey,
+  roseySeo,
+  hideLocaleSwitcher,
+} = Astro.props;
+
+// The RCC hides its switcher when every locale is excluded. Derived from the
+// locale config so adding a language doesn't leave a locale switchable here.
+const rccExclude = hideLocaleSwitcher ? localeCodes.join(",") : undefined;
 const baseUrl = Astro.site?.toString() ?? "";
 
 // Rosey namespace for this page. Split-by-directory locale pages pass the
@@ -107,7 +123,7 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
     />
   </head>
   <body class="flex flex-col min-h-screen">
-    <div data-rcc class="flex flex-col min-h-screen">
+    <div data-rcc data-rcc-exclude={rccExclude} class="flex flex-col min-h-screen">
       <Header />
       <main class="flex-1" data-rosey-root={pageRoseyRoot}>
         <slot />

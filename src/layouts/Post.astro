@@ -30,7 +30,7 @@ const filteredPosts = posts.filter(
 );
 ---
 
-<Layout {...frontmatter} roseyRoot={roseyRoot}>
+<Layout {...frontmatter} roseyRoot={roseyRoot} hideLocaleSwitcher>
   <div class="mx-auto max-w-3xl px-8 py-12 md:py-20">
     <article>
       <editable-component data-prop="post_hero" data-component="PostHero">

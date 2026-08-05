@@ -84,6 +84,8 @@ Locale config is centralised in `src/utils/locales.ts` (collection name, date lo
 
 Split-by-directory pages set `data-rosey-root` to the **English-equivalent** path via a `roseyRoot` prop, so `/fr/blog/x/` shares keys with `/blog/x/` rather than creating `fr/`-prefixed duplicates.
 
+They also pass `hideLocaleSwitcher`, which sets `data-rcc-exclude` to every locale on the snapshot boundary so the RCC skips its locale switcher. Post bodies carry no Rosey keys, so switching locale in the Visual Editor would offer nothing to translate and read as a bug. It's set in `Post.astro` so both the default-language and locale post routes are covered.
+
 ### Head/SEO text
 
 Rosey scans `<head>`, but untagged head text is copied to translated pages unchanged. `Layout.astro` takes a `roseySeo` prop that keys `<title>` and the meta description as `{roseyRoot}:page_title` / `:page_description`. Routes serving many pages from one template pass `roseyTitleKey` / `roseyDescriptionKey` explicitly instead.
