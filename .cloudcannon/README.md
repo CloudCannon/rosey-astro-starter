@@ -45,13 +45,14 @@ for that language. Type over it and your translation saves to that language. The
 badge on the top-right of the button shows which language you're looking at, and
 you can drag the button out of the way if it covers something.
 
-Two things to know:
+Three things to know:
 
-- **Only text is translated.** Images, dates, tags, layout and the order of blocks
-  are shared by all three languages. To change any of those, switch back to
-  Original.
+- **Only text is translated.** Images, dates, layout and the order of blocks are
+  shared by all three languages. To change any of those, switch back to Original.
 - **The sidebar fields always edit English**, whichever language you're previewing.
-  Translations only ever happen by typing on the page itself.
+- **Some text isn't on the page**, so it can't be clicked — the browser tab title
+  and the description search engines show. Those live in
+  [Locales](cloudcannon:collections/locales), described below.
 
 ## Keeping translations up to date
 
@@ -92,7 +93,19 @@ can be edited in either the content editor or the visual editor.
 
 Each post has a title, hero image, date, author, thumbnail and tags. Tags come from
 a fixed list — to add a new one, edit [tags.json](cloudcannon:collections/data/tags.json)
-first, then pick it on the post.
+first, then pick it on the post. Pick the same tags on the French and German copies
+as the English one.
+
+### Tag names
+
+Each tag has its own page listing the posts using it, in all three languages.
+The tag **name** is translated, but the **web address stays English** — a French
+visitor sees "Développement" on a page at `/fr/tags/building/`. That's deliberate,
+so links keep working in every language.
+
+Tag names aren't typed on the page — translate them in
+[Locales](cloudcannon:collections/locales), where they're grouped under `tags`.
+Translate a tag once and it updates everywhere it appears.
 
 ## Site-wide content
 
@@ -115,6 +128,17 @@ French and German, with the English original shown beside it for reference. It's
 the quickest way to work through a batch of translations, or to find one you can't
 locate on a page. Editing here is exactly the same as editing on the page — the two
 stay in step.
+
+A few things can **only** be translated here, because they don't appear on the page:
+
+- `page_title` — the text in the browser tab and as the search-result heading
+- `page_description` — the summary search engines show
+- `tags` — tag names, wherever they appear
+- `tag_page_titles` — the browser tab title for each tag's page
+
+Names are grouped by where they belong, so `about:page_title` is the About page's
+tab title. If one shows as out of date, the English was edited since it was last
+translated — the review panel works the same as it does on the page.
 
 ## Publishing
 
