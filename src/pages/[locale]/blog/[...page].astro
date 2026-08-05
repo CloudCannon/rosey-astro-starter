@@ -24,8 +24,8 @@ export async function getStaticPaths({ paginate }: { paginate: Function }) {
       const bDate = new Date(b.data.post_hero.date);
       return bDate.getTime() - aDate.getTime();
     });
-    // `params` alone doesn't reach Astro.props — without `props` the template
-    // reads locale as undefined and emits /undefined/blog pagination links.
+    // `params` alone doesn't reach Astro.props; the template needs `locale` for
+    // localized links and pagination.
     paths.push(
       ...paginate(posts, { params: { locale }, props: { locale }, pageSize }),
     );

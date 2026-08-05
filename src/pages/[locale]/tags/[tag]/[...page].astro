@@ -5,9 +5,8 @@ import Layout from "../../../../layouts/Layout.astro";
 import { getCollection, getEntry } from "astro:content";
 import { localeCodes, blogCollectionFor } from "../../../../utils/locales";
 
-// Tag pages are built natively per locale so they list that locale's posts.
-// Without this route Rosey generates /{locale}/tags/* from the English page,
-// which lists the English collection.
+// Built natively per locale so each lists that locale's posts — otherwise Rosey
+// generates /{locale}/tags/* from the English page, listing English posts.
 export async function getStaticPaths({ paginate }: { paginate: Function }) {
   const page = await getEntry("pages", "blog");
   if (!page) return [];
@@ -53,8 +52,9 @@ const pagination = Astro.props.page;
 const filteredPosts = pagination.data;
 ---
 
-<!-- roseyRoot is "tags" (not the derived "{locale}/tags/{tag}") so the heading
-     shares the same global label key as the tag chips. -->
+<!-- roseyRoot is "tags", not the locale-prefixed derived path, so the heading
+     shares the tag chips' label key. Explicit title key per tag; shared
+     description, since it's identical across them. -->
 <Layout
   title={heading}
   seo={page.seo}

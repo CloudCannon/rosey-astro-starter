@@ -43,9 +43,8 @@ const pagination = Astro.props.page;
 const filteredPosts = pagination.data;
 ---
 
-<!-- Explicit keys because roseyRoot is shared by every tag page: the title needs
-     one key per tag, while the description is the same sentence on all of
-     them and wants a single shared key. -->
+<!-- roseyRoot is shared by every tag page, so the title needs an explicit key
+     per tag; the description is identical across them and stays shared. -->
 <Layout
   title={heading}
   seo={page.seo}

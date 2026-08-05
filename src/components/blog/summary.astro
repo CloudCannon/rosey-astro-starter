@@ -29,9 +29,8 @@ const imageSrc = images[thumb_image_path]?.default ?? thumb_image_path;
   </a>
   <div class="mt-3">
     {tags?.length > 0 && (
-      // Tag slugs stay canonical English (they're the URL), so only the label is
-      // translated. The `tags` root makes each label one global key reused by
-      // every chip on every page, rather than one key per page it appears on.
+      // Slugs are the URL and stay canonical; only the label is translated. The
+      // `tags` root makes each label one global key, shared by every chip.
       <div class="flex flex-wrap gap-2 mb-2" data-rosey-root="tags">
         {tags.map((tag: string) => (
           <a

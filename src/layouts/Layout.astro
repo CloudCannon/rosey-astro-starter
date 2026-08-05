@@ -20,15 +20,12 @@ export interface Props {
   title: string;
   seo?: SEOProps;
   roseyRoot?: string;
-  // Explicit head keys, for pages needing one key per instance (taxonomy
-  // routes, where a root-derived name would cover every term). Titles usually
-  // want a key each; descriptions are usually one shared key.
+  // Override the derived keys where one route serves many pages, so each needs
+  // its own key (taxonomy titles) or one shared key (their descriptions).
   roseyTitleKey?: string;
   roseyDescriptionKey?: string;
-  // Opt in to head keys named after this page's Rosey root. Opt-in rather than
-  // default because split-by-directory post pages must NOT have them — their
-  // head already comes from translated frontmatter, and a Rosey value silently
-  // overrides it.
+  // Opt-in, not a default: split-by-directory pages must not have head keys —
+  // their head comes from translated frontmatter, which a Rosey value overrides.
   roseySeo?: boolean;
 }
 
@@ -41,9 +38,9 @@ const baseUrl = Astro.site?.toString() ?? "";
 const derivedRoseyRoot = Astro.url.pathname.replace(/^\/|\/$/g, "") || "index";
 const pageRoseyRoot = roseyRoot ?? derivedRoseyRoot;
 
-// Rosey scans <head>, but astro-seo renders <title>/<meta name="description">
-// with no way to attach data-rosey attributes — so when we have keys we
-// suppress its versions below and emit our own.
+// astro-seo renders <title>/<meta name="description"> with no way to attach
+// data-rosey attributes, so where we have keys we suppress its versions and
+// emit our own instead.
 const titleKey =
   roseyTitleKey ?? (roseySeo ? `${pageRoseyRoot}:page_title` : undefined);
 const descriptionKey =
