@@ -25,7 +25,7 @@
     "_base_original": "<p>\nHave a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.\n</p>"
   },
   "about:contact_heading": {
-    "original": "\nGet in Touch\n",
+    "original": "Get in Touch",
     "value": "\nContactez-nous\n",
     "_base_original": "Get in Touch"
   },
@@ -35,7 +35,7 @@
     "_base_original": "<p>\nWe're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.\n</p>"
   },
   "about:heading": {
-    "original": "\nAbout Us\n",
+    "original": "About Us",
     "value": "\nÀ propos de nous\n",
     "_base_original": "About Us"
   },
@@ -60,12 +60,12 @@
     "_base_original": "Blog | Astro Starter"
   },
   "blog:title": {
-    "original": " Blog ",
+    "original": "Blog",
     "value": " Blog ",
     "_base_original": "Blog"
   },
   "footer:blog": {
-    "original": " Blog ",
+    "original": "Blog",
     "value": " Blog ",
     "_base_original": "Blog"
   },
@@ -75,42 +75,42 @@
     "_base_original": "MyCompany. All rights reserved."
   },
   "footer:rss-feed": {
-    "original": " RSS Feed ",
+    "original": "RSS Feed",
     "value": " Flux RSS ",
     "_base_original": "RSS Feed"
   },
   "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:button_text": {
-    "original": " CloudCannon Docs ",
+    "original": "CloudCannon Docs",
     "value": " Documentation CloudCannon ",
     "_base_original": "CloudCannon Docs"
   },
   "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:heading": {
-    "original": " You choose your editing experience. ",
+    "original": "You choose your editing experience.",
     "value": " Vous choisissez votre expérience d'édition. ",
     "_base_original": "You choose your editing experience."
   },
   "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:text_content": {
-    "original": "<p>A flexible git-backed CMS that specialises in editing markdown and data files.</p><p>Visual editing allows you to preview your changes live before you save them.</p><p>Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.</p>",
+    "original": "<p>A flexible git-backed CMS that specialises in editing markdown and data files.</p>\n<p>Visual editing allows you to preview your changes live before you save them.</p>\n<p>Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.</p>",
     "value": "<p>Un CMS flexible basé sur git, spécialisé dans l'édition de fichiers markdown et de données.</p>\n<p>L'édition visuelle vous permet de prévisualiser vos modifications en direct avant de les enregistrer.</p>\n<p>Basé sur git, vous pouvez conserver tous vos workflows git habituels, tout en offrant une interface simple à comprendre pour que les éditeurs non techniques collaborent via git.</p>\n",
     "_base_original": "<p>A flexible git-backed CMS that specialises in editing markdown and data files.</p>\n<p>Visual editing allows you to preview your changes live before you save them.</p>\n<p>Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.</p>"
   },
   "index:62ab02a7-7456-4180-8be1-a62e5f545f52:button_text": {
-    "original": " Get Started ",
+    "original": "Get Started",
     "value": " Commencer ",
     "_base_original": "Get Started"
   },
   "index:62ab02a7-7456-4180-8be1-a62e5f545f52:heading": {
-    "original": " Astro Minimal Starter ",
+    "original": "Astro Minimal Starter",
     "value": " Astro Minimal Starter ",
     "_base_original": "Astro Minimal Starter"
   },
   "index:62ab02a7-7456-4180-8be1-a62e5f545f52:subheading": {
-    "original": "<p>A <strong>minimal</strong> starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon. Create your own copy, and start creating your own components to use in the Visual Editor.</p><p>Once you've explored this minimal starter, consider taking a look at the <a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> to assist in building out your components.</p>",
+    "original": "<p>A <strong>minimal</strong> starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon. Create your own copy, and start creating your own components to use in the Visual Editor.</p>\n<p>Once you've explored this minimal starter, consider  taking a look at the <a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> to assist in building out your components.</p>",
     "value": "<p>Un point de départ <strong>minimal</strong> pour les développeurs souhaitant créer un site web avec Astro, en utilisant les Editable Regions de CloudCannon. Créez votre propre copie et commencez à concevoir vos propres composants à utiliser dans l'éditeur visuel.</p>\n<p>Une fois ce modèle minimal exploré, envisagez de consulter l'<a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> pour vous aider à développer vos composants.</p>\n",
     "_base_original": "<p>A <strong>minimal</strong> starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon. Create your own copy, and start creating your own components to use in the Visual Editor.</p>\n<p>Once you've explored this minimal starter, consider  taking a look at the <a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> to assist in building out your components.</p>"
   },
   "index:953f2405-5e5c-41a1-839f-f12f23b12b9d:heading": {
-    "original": " Keep what you need. Delete the rest. ",
+    "original": "Keep what you need. Delete the rest.",
     "value": " Gardez ce dont vous avez besoin. Supprimez le reste. ",
     "_base_original": "Keep what you need. Delete the rest."
   },
@@ -130,22 +130,22 @@
     "_base_original": "Astro Minimal Starter"
   },
   "nav:about": {
-    "original": " About ",
+    "original": "About",
     "value": " À propos ",
     "_base_original": "About"
   },
   "nav:blog": {
-    "original": " Blog ",
+    "original": "Blog",
     "value": " Blog ",
     "_base_original": "Blog"
   },
   "nav:cloudcannon": {
-    "original": " CloudCannon ",
+    "original": "CloudCannon",
     "value": " CloudCannon ",
     "_base_original": "CloudCannon"
   },
   "nav:github": {
-    "original": " GitHub ",
+    "original": "GitHub",
     "value": " GitHub ",
     "_base_original": "GitHub"
   },
