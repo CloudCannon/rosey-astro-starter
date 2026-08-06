@@ -1,15 +1,16 @@
-# Astro Minimal Starter
+# Rosey Astro Starter
 
-A minimal starter template for building an Astro site with [CloudCannon](https://cloudcannon.com/) using **Editable Regions** for visual editing.
+A multilingual starter template for building an Astro site with [CloudCannon](https://cloudcannon.com/). The site is written in English and translated into French and German with [Rosey](https://rosey.app/), with translations edited inline in the Visual Editor via the [Rosey CloudCannon Connector](https://github.com/CloudCannon/rcc).
 
 See a [demo site](https://tiny-jackal.cloudvent.net/).
 
 ## Features
 
+- Multilingual (English, French, German) with [Rosey](https://rosey.app/) and the [Rosey CloudCannon Connector](https://github.com/CloudCannon/rcc)
+- Inline translation editing, with split-by-directory collections for content that differs per language
 - Visual editing with [Editable Regions](https://cloudcannon.com/documentation/developer-guides/set-up-visual-editing/an-overview-of-editable-regions/) (text, image, array, source, and component regions)
 - Page building with reusable components
 - Blog with pagination and tags
-- Multilingual (English, French, German) with [Rosey](https://rosey.app/) and the [Rosey CloudCannon Connector](https://github.com/CloudCannon/rcc)
 - [Tailwind CSS v4](https://tailwindcss.com/) with CSS-first configuration
 - SEO controls, including translated page titles and descriptions
 - Pagefind search

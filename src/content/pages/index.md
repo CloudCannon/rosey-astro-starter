@@ -30,7 +30,7 @@ hero_block:
     alt_text: An illustration of someone leaning against a desktop computer monitor.
   button:
     text: Get Started
-    link: https://github.com/CloudCannon/astro-starter/
+    link: https://github.com/CloudCannon/rosey-astro-starter/
 content_blocks:
   - _name: LeftRight
     _uuid: 953f2405-5e5c-41a1-839f-f12f23b12b9d
