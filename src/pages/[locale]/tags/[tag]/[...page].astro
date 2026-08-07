@@ -1,0 +1,78 @@
+---
+import BlogList from "../../../../components/blog/list.astro";
+import BlogPagination from "../../../../components/blog/pagination";
+import Layout from "../../../../layouts/Layout.astro";
+import { getCollection, getEntry } from "astro:content";
+import { localeCodes, blogCollectionFor } from "../../../../utils/locales";
+import { tagLabel } from "../../../../utils/tags";
+
+// Built natively per locale so each lists that locale's posts — otherwise Rosey
+// generates /{locale}/tags/* from the English page, listing English posts.
+export async function getStaticPaths({ paginate }: { paginate: Function }) {
+  const page = await getEntry("pages", "blog");
+  if (!page) return [];
+  const pageSize = "page_size" in page.data ? page.data.page_size : 6;
+
+  const paths = [];
+  for (const locale of localeCodes) {
+    const posts = await getCollection(blogCollectionFor(locale));
+    const tags = new Set<string>();
+    for (const post of posts) {
+      for (const tag of post.data.post_hero.tags) {
+        tags.add(tag);
+      }
+    }
+
+    for (const tag of tags) {
+      const filteredPosts = posts.filter(({ data }) =>
+        data.post_hero.tags.includes(tag),
+      );
+      paths.push(
+        ...paginate(filteredPosts, {
+          params: { locale, tag },
+          props: { locale },
+          pageSize,
+        }),
+      );
+    }
+  }
+  return paths;
+}
+
+const { locale } = Astro.props;
+const tag = Astro.params.tag ?? "";
+const page = (await getEntry("pages", "blog"))?.data;
+
+if (!page) {
+  throw new Error("Failed to get blog page data");
+}
+
+const heading = tagLabel(tag);
+
+const pagination = Astro.props.page;
+const filteredPosts = pagination.data;
+---
+
+<!-- roseyRoot is "tags", not the locale-prefixed derived path, so the heading
+     shares the tag chips' label key. Explicit title key per tag; shared
+     description, since it's identical across them. -->
+<Layout
+  title={heading}
+  seo={page.seo}
+  roseyRoot="tags"
+  roseyTitleKey={`tag_page_titles:${tag}`}
+  roseyDescriptionKey="tag_page_description"
+>
+  <div class="mx-auto max-w-6xl px-8 py-16">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8" data-rosey={tag}>
+      {heading}
+    </h1>
+    <section>
+      <BlogList posts={filteredPosts} locale={locale} />
+      <BlogPagination
+        pagination={pagination}
+        basePath={`/${locale}/tags/${tag}`}
+      />
+    </section>
+  </div>
+</Layout>

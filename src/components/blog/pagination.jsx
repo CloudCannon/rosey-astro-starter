@@ -1,4 +1,4 @@
-export default function BlogPagination({ pagination }) {
+export default function BlogPagination({ pagination, basePath = "/blog" }) {
   const {
     currentPage,
     lastPage,
@@ -12,75 +12,48 @@ export default function BlogPagination({ pagination }) {
   const pageLinks = [];
   for (let i = 1; i <= lastPage; i++) {
     pageLinks.push(
-      <li className="page-item" key={i}>
+      <li key={i}>
         <a
-          className={`page-link ${
-            i === currentPage ? "active" : ""
+          className={`inline-block px-4 py-2 rounded-lg font-semibold ${
+            i === currentPage
+              ? "bg-blue-600 text-white"
+              : "text-gray-700 hover:text-blue-600"
           }`}
-          href={i === 1 ? "/blog" : `/blog/${i}`}
+          href={i === 1 ? basePath : `${basePath}/${i}`}
         >
           {i}
         </a>
-      </li>
+      </li>,
     );
   }
 
   return (
-    <>
-      <nav>
-        <ul className="pagination">
-          {prev && (
-            <li className="page-item">
-              <a className="page-link" href={prev} aria-label="Previous page">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20.657"
-                  height="11.314"
-                  viewBox="0 0 20.657 11.314"
-                  style={{ transform: "scale(-1, 1)" }}
-                >
-                  <g data-name="Group 12">
-                    <path d="M0 4.657h18v2H0z" data-name="Rectangle 2400" />
-                    <path
-                      d="M13.586 9.9l5.6568542-5.6568542 1.4142136 1.4142135-5.6568542 5.6568543z"
-                      data-name="Rectangle 2401"
-                    />
-                    <path
-                      d="M15 0l5.6568542 5.6568542-1.4142135 1.4142136-5.6568543-5.6568542z"
-                      data-name="Rectangle 2402"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </li>
-          )}
-          {pageLinks}
-          {next && (
-            <li className="page-item">
-              <a className="page-link" href={next} aria-label="Next page">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20.657"
-                  height="11.314"
-                  viewBox="0 0 20.657 11.314"
-                >
-                  <g data-name="Group 12">
-                    <path d="M0 4.657h18v2H0z" data-name="Rectangle 2400" />
-                    <path
-                      d="M13.586 9.9l5.6568542-5.6568542 1.4142136 1.4142135-5.6568542 5.6568543z"
-                      data-name="Rectangle 2401"
-                    />
-                    <path
-                      d="M15 0l5.6568542 5.6568542-1.4142135 1.4142136-5.6568543-5.6568542z"
-                      data-name="Rectangle 2402"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </li>
-          )}
-        </ul>
-      </nav>
-    </>
+    <nav className="flex justify-center mt-12">
+      <ul className="flex items-center gap-2">
+        {prev && (
+          <li>
+            <a
+              className="inline-block px-4 py-2 text-gray-700 hover:text-blue-600"
+              href={prev}
+              aria-label="Previous page"
+            >
+              &larr;
+            </a>
+          </li>
+        )}
+        {pageLinks}
+        {next && (
+          <li>
+            <a
+              className="inline-block px-4 py-2 text-gray-700 hover:text-blue-600"
+              href={next}
+              aria-label="Next page"
+            >
+              &rarr;
+            </a>
+          </li>
+        )}
+      </ul>
+    </nav>
   );
 }

@@ -1,0 +1,33 @@
+---
+import PostLayout from "../../../layouts/Post.astro";
+import { getCollection, getEntry, render } from "astro:content";
+import { localeCodes, blogCollectionFor } from "../../../utils/locales";
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const locale of localeCodes) {
+    const posts = await getCollection(blogCollectionFor(locale));
+    for (const post of posts) {
+      paths.push({ params: { locale, slug: post.id }, props: { locale } });
+    }
+  }
+  return paths;
+}
+
+const { locale } = Astro.props;
+const slug = Astro.params.slug;
+if (!slug) throw new Error("Post slug is undefined");
+
+const post = await getEntry(blogCollectionFor(locale), slug);
+if (!post) throw new Error(`Failed to get post: ${locale}/${slug}`);
+const { Content } = await render(post);
+---
+
+<PostLayout
+  frontmatter={post.data}
+  body={post.body}
+  locale={locale}
+  roseyRoot={`blog/${slug}`}
+>
+  <Content />
+</PostLayout>

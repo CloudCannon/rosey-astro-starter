@@ -7,8 +7,50 @@
       "pages": {},
       "total": 0
     },
+    "about/index.html": {
+      "original": "about/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/2/index.html": {
+      "original": "blog/2/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/data-files/index.html": {
+      "original": "blog/data-files/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
     "blog/index.html": {
       "original": "blog/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/lighthouse-scores/index.html": {
+      "original": "blog/lighthouse-scores/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/markdown/index.html": {
+      "original": "blog/markdown/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/optimized-images/index.html": {
+      "original": "blog/optimized-images/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "blog/paginated-collection/index.html": {
+      "original": "blog/paginated-collection/index.html",
       "value": null,
       "pages": {},
       "total": 0
@@ -31,50 +73,284 @@
       "pages": {},
       "total": 0
     },
-    "de-DE/blog/search/index.html": {
-      "original": "de-DE/blog/search/index.html",
+    "de/blog/2/index.html": {
+      "original": "de/blog/2/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "de-DE/blog/seo/index.html": {
-      "original": "de-DE/blog/seo/index.html",
+    "de/blog/data-files/index.html": {
+      "original": "de/blog/data-files/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "de-DE/blog/tailwind/index.html": {
-      "original": "de-DE/blog/tailwind/index.html",
+    "de/blog/index.html": {
+      "original": "de/blog/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "fr-FR/blog/search/index.html": {
-      "original": "fr-FR/blog/search/index.html",
+    "de/blog/lighthouse-scores/index.html": {
+      "original": "de/blog/lighthouse-scores/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "fr-FR/blog/seo/index.html": {
-      "original": "fr-FR/blog/seo/index.html",
+    "de/blog/markdown/index.html": {
+      "original": "de/blog/markdown/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
-    "fr-FR/blog/tailwind/index.html": {
-      "original": "fr-FR/blog/tailwind/index.html",
+    "de/blog/optimized-images/index.html": {
+      "original": "de/blog/optimized-images/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/blog/paginated-collection/index.html": {
+      "original": "de/blog/paginated-collection/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/blog/search/index.html": {
+      "original": "de/blog/search/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/blog/seo/index.html": {
+      "original": "de/blog/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/blog/tailwind/index.html": {
+      "original": "de/blog/tailwind/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/accessibility/index.html": {
+      "original": "de/tags/accessibility/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/building/index.html": {
+      "original": "de/tags/building/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/data/index.html": {
+      "original": "de/tags/data/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/icons/index.html": {
+      "original": "de/tags/icons/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/images/index.html": {
+      "original": "de/tags/images/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/inputs/index.html": {
+      "original": "de/tags/inputs/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/markdown/index.html": {
+      "original": "de/tags/markdown/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/navigation/index.html": {
+      "original": "de/tags/navigation/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/pagination/index.html": {
+      "original": "de/tags/pagination/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/search/index.html": {
+      "original": "de/tags/search/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/seo/index.html": {
+      "original": "de/tags/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/styling/index.html": {
+      "original": "de/tags/styling/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "de/tags/tailwind/index.html": {
+      "original": "de/tags/tailwind/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/2/index.html": {
+      "original": "fr/blog/2/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/data-files/index.html": {
+      "original": "fr/blog/data-files/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/index.html": {
+      "original": "fr/blog/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/lighthouse-scores/index.html": {
+      "original": "fr/blog/lighthouse-scores/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/markdown/index.html": {
+      "original": "fr/blog/markdown/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/optimized-images/index.html": {
+      "original": "fr/blog/optimized-images/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/paginated-collection/index.html": {
+      "original": "fr/blog/paginated-collection/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/search/index.html": {
+      "original": "fr/blog/search/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/seo/index.html": {
+      "original": "fr/blog/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/blog/tailwind/index.html": {
+      "original": "fr/blog/tailwind/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/accessibility/index.html": {
+      "original": "fr/tags/accessibility/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/building/index.html": {
+      "original": "fr/tags/building/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/data/index.html": {
+      "original": "fr/tags/data/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/icons/index.html": {
+      "original": "fr/tags/icons/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/images/index.html": {
+      "original": "fr/tags/images/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/inputs/index.html": {
+      "original": "fr/tags/inputs/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/markdown/index.html": {
+      "original": "fr/tags/markdown/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/navigation/index.html": {
+      "original": "fr/tags/navigation/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/pagination/index.html": {
+      "original": "fr/tags/pagination/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/search/index.html": {
+      "original": "fr/tags/search/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/seo/index.html": {
+      "original": "fr/tags/seo/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/styling/index.html": {
+      "original": "fr/tags/styling/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "fr/tags/tailwind/index.html": {
+      "original": "fr/tags/tailwind/index.html",
       "value": null,
       "pages": {},
       "total": 0
     },
     "index.html": {
       "original": "index.html",
-      "value": null,
-      "pages": {},
-      "total": 0
-    },
-    "tags/WYSIWYG editing/index.html": {
-      "original": "tags/WYSIWYG editing/index.html",
       "value": null,
       "pages": {},
       "total": 0
@@ -91,8 +367,32 @@
       "pages": {},
       "total": 0
     },
-    "tags/formatting/index.html": {
-      "original": "tags/formatting/index.html",
+    "tags/data/index.html": {
+      "original": "tags/data/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/icons/index.html": {
+      "original": "tags/icons/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/images/index.html": {
+      "original": "tags/images/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/inputs/index.html": {
+      "original": "tags/inputs/index.html",
+      "value": null,
+      "pages": {},
+      "total": 0
+    },
+    "tags/markdown/index.html": {
+      "original": "tags/markdown/index.html",
       "value": null,
       "pages": {},
       "total": 0

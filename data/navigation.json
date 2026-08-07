@@ -3,38 +3,22 @@
     "logo": "/images/logos/logo-wordmark-blue.png",
     "logo_alt_text": "CloudCannon logo",
     "logo_url": "/",
-    "background_color": "#ffffff",
-    "text_color": "#393939",
-    "hover_text_color": "#808080",
     "links": [
+      {
+        "link": "/about/",
+        "text": "About"
+      },
       {
         "link": "/blog/",
         "text": "Blog"
       },
       {
-        "link": "https://github.com/CloudCannon/rosey-astro-starter/",
+        "link": "https://github.com/CloudCannon/astro-starter/",
         "text": "GitHub"
       },
       {
         "link": "https://cloudcannon.com/",
         "text": "CloudCannon"
-      }
-    ],
-    "locales": [
-      {
-        "code": "de-DE",
-        "name": "Deutsch",
-        "flag": "/images/flags/germany-flag.png"
-      },
-      {
-        "code": "fr-FR",
-        "name": "French",
-        "flag": "/images/flags/france-flag.png"
-      },
-      {
-        "code": "en",
-        "name": "English (US)",
-        "flag": "/images/flags/usa-flag.jpeg"
       }
     ]
   },
@@ -43,9 +27,6 @@
     "logo_alt_text": "CloudCannon logo",
     "logo_url": "/",
     "copyright": "MyCompany. All rights reserved.",
-    "background_color": "#333232",
-    "text_color": "#ffffff",
-    "hover_text_color": "#F2F2F2",
     "links": [
       {
         "link": "/blog/",
@@ -54,28 +35,6 @@
       {
         "link": "/feed.xml",
         "text": "RSS Feed"
-      }
-    ],
-    "social": [
-      {
-        "link": "https://www.facebook.com/mycompany",
-        "icon": "Facebook",
-        "name": "Facebook"
-      },
-      {
-        "link": "https://www.instagram.com/mycompany",
-        "icon": "Instagram",
-        "name": "Instagram"
-      },
-      {
-        "link": "https://www.github.com/mycompany",
-        "icon": "GitHub",
-        "name": "GitHub"
-      },
-      {
-        "link": "https://www.youtube.com/mycompany",
-        "icon": "Youtube",
-        "name": "Youtube"
       }
     ]
   }

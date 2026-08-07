@@ -1,73 +1,32 @@
 ---
-import { generateRoseyId } from "rosey-cloudcannon-connector/utils";
 import { footer } from "../../../data/navigation.json";
-import Icon from "../utility/Icon";
-const linkHoverColor = footer.hover_text_color;
 ---
 
-<footer
-  style={`background-color: ${footer.background_color}; color: ${footer.text_color};`}
-  data-rosey-ns="common">
-  <div class="px-8">
-    <div
-      class="footer grid grid-cols-1 sm:grid-cols-3 justify-between items-center gap-8 py-[48px]">
-      <a
-        class="flex justify-center sm:justify-start items-center"
-        href={footer.logo_url}>
-        <img
-          class="footer__logo-image"
-          src={footer.logo}
-          alt={footer.logo_alt_text}
-        />
+<footer class="bg-gray-800 text-white">
+  <div class="mx-auto max-w-6xl px-8 py-12">
+    <div class="grid grid-cols-1 sm:grid-cols-3 items-center gap-8">
+      <a class="flex justify-center sm:justify-start" href={footer.logo_url}>
+        <img class="w-48" src={footer.logo} alt={footer.logo_alt_text} />
       </a>
-      <ul class="flex gap-4 items-center justify-center">
-        {
-          footer.social.map((link) => {
-            return (
-              <li class="w-[2rem]">
-                <a href={link.link} aria-label={link.name}>
-                  <Icon icon={link.icon} />
-                </a>
-              </li>
-            );
-          })
-        }
+
+      <ul class="flex gap-6 items-center justify-center" data-rosey-ns="footer">
+        {footer.links.map((link) => (
+          <li>
+            <a
+              class="hover:text-gray-300 transition-colors"
+              href={link.link}
+              data-rosey={link.text.toLowerCase().replace(/\s+/g, "-")}
+            >
+              {link.text}
+            </a>
+          </li>
+        ))}
       </ul>
 
-      <ul class="footer-links flex flex-col text-center sm:text-end gap-4">
-        {
-          footer.links.map((link) => {
-            return (
-              <li>
-                <a href={link.link} data-rosey={generateRoseyId(link.text)}>
-                  {link.text}
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
+      <div class="text-center sm:text-end text-sm text-gray-400">
+        &copy; {new Date().getFullYear()}{" "}
+        <span data-rosey-ns="footer" data-rosey="copyright">{footer.copyright}</span>
+      </div>
     </div>
-
-    <p class="text-center py-8">
-      &#169; {new Date().getFullYear()}
-      <span data-rosey={generateRoseyId(footer.copyright)}>
-        {footer.copyright}
-      </span>
-    </p>
   </div>
 </footer>
-
-<style define:vars={{ linkHoverColor }}>
-  .footer {
-    max-width: var(--pageContainer);
-    margin: 0 auto;
-  }
-  .footer__logo-image {
-    display: block;
-    max-width: min(200px, 80%);
-  }
-  .footer-links li:hover {
-    color: var(--linkHoverColor);
-  }
-</style>

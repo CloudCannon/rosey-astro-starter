@@ -1,13 +1,13 @@
 import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
-import bookshop from "@bookshop/astro-bookshop";
-import tailwind from "@astrojs/tailwind";
+import editableRegions from "@cloudcannon/editable-regions/astro-integration";
 import mdx from "@astrojs/mdx";
+import tailwindcss from "@tailwindcss/vite";
 
-import alpinejs from "@astrojs/alpinejs";
-
-// https://astro.build/config
 export default defineConfig({
-  site: "https://deluxe-gel.cloudvent.net/",
-  integrations: [react(), tailwind(), bookshop(), mdx(), alpinejs()],
+  site: "https://tiny-jackal.cloudvent.net/",
+  integrations: [react(), editableRegions(), mdx()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

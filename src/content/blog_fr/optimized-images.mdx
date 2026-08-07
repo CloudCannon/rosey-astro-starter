@@ -1,0 +1,29 @@
+---
+_schema: default
+title: Images optimisées
+post_hero:
+  heading: Images optimisées
+  date: 2025-05-06T11:28:34+12:00
+  tags:
+    - images
+    - inputs
+    - building
+  author: T Richardson
+  image: /src/assets/images/blog/featured-image-2.jpg
+  image_alt: "Des enfants travaillant autour d'un ordinateur portable dans une salle de classe animée."
+thumb_image_path: /src/assets/images/blog/blog-thumb-1.jpg
+thumb_image_alt: "Un groupe de personnes travaillant autour d'une table, vu du dessus"
+seo:
+  page_description: Un article décrivant comment le modèle de départ Astro utilise des images optimisées.
+  canonical_url:
+  featured_image: /images/blog/featured-image-2.jpg
+  featured_image_alt: "Des enfants travaillant autour d'un ordinateur portable dans une salle de classe animée."
+  author_twitter_handle:
+  open_graph_type: article
+  no_index: false
+---
+Images optimisées prises en charge grâce à [Astro Image](https://docs.astro.build/en/guides/images/#image--astroassets). Astro Image traite une image de votre dossier `src/assets` et produit une image optimisée avec un `srcset` et des `sizes`.
+
+Ce modèle montre également [comment définir](https://cloudcannon.com/documentation/articles/adjusting-the-uploads-path/) les chemins d'`uploads` au niveau de chaque champ, afin de permettre à la fois des images traitées et non traitées sur un même site. Sur ce modèle, par défaut, les champs d'image s'ouvrent sur `public/images`, ce qui signifie qu'il s'agit d'images non traitées.
+
+Les composants qui utilisent le composant Astro Image sont configurés de sorte que le champ source de l'image s'ouvre sur `src/assets/images`, c'est-à-dire des images à traiter et à optimiser lors de la compilation.

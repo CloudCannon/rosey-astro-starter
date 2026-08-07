@@ -1,0 +1,292 @@
+{
+  "404:back_home": {
+    "original": "Back home",
+    "value": "Retour à l'accueil",
+    "_base_original": "Back home"
+  },
+  "404:heading": {
+    "original": "Page not found!",
+    "value": "Page introuvable !",
+    "_base_original": "Page not found!"
+  },
+  "404:page_description": {
+    "original": "A starter template for Astro with Editable Regions, for CloudCannon CMS.",
+    "value": "Un modèle de départ pour Astro avec les Editable Regions, pour le CMS CloudCannon.",
+    "_base_original": "A starter template for Astro with Editable Regions, for CloudCannon CMS."
+  },
+  "404:page_title": {
+    "original": "404 - Not Found | Astro Starter",
+    "value": "404 - Page introuvable | Astro Starter",
+    "_base_original": "404 - Not Found | Astro Starter"
+  },
+  "about:contact_details": {
+    "original": "<p>\nHave a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.\n</p>",
+    "value": "\n<p>Vous avez une question ou souhaitez collaborer ? Contactez-nous à\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nou retrouvez-nous sur <a href=\"https://github.com\">GitHub</a>.</p>\n",
+    "_base_original": "<p>\nHave a question or want to work together? Reach out at\n<a href=\"mailto:hello@example.com\">hello@example.com</a>\nor find us on <a href=\"https://github.com\">GitHub</a>.\n</p>"
+  },
+  "about:contact_heading": {
+    "original": "Get in Touch",
+    "value": "\nContactez-nous\n",
+    "_base_original": "Get in Touch"
+  },
+  "about:description": {
+    "original": "<p>\nWe're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.\n</p>",
+    "value": "\n<p>Nous sommes une petite équipe passionnée par la création de superbes sites web. Cette page est un composant Astro autonome édité avec des\n<strong>source editables</strong> — le contenu que vous voyez ici se trouve directement\n          dans le template et s'édite visuellement via CloudCannon.</p>\n",
+    "_base_original": "<p>\nWe're a small team passionate about building great websites. This page\n          is a standalone Astro component edited with\n<strong>source editables</strong> — the content you see here lives directly\n          in the template and is edited visually through CloudCannon.\n</p>"
+  },
+  "about:heading": {
+    "original": "About Us",
+    "value": "\nÀ propos de nous\n",
+    "_base_original": "About Us"
+  },
+  "about:page_description": {
+    "original": "A starter template for Astro with Editable Regions, for CloudCannon CMS.",
+    "value": "Un modèle de départ pour Astro avec les Editable Regions, pour le CMS CloudCannon.",
+    "_base_original": "A starter template for Astro with Editable Regions, for CloudCannon CMS."
+  },
+  "about:page_title": {
+    "original": "About | Astro Starter",
+    "value": "À propos | Astro Starter",
+    "_base_original": "About | Astro Starter"
+  },
+  "blog:page_description": {
+    "original": "A blog template with tags.",
+    "value": "Un modèle de blog avec des tags.",
+    "_base_original": "A blog template with tags."
+  },
+  "blog:page_title": {
+    "original": "Blog | Astro Starter",
+    "value": "Blog | Astro Starter",
+    "_base_original": "Blog | Astro Starter"
+  },
+  "blog:title": {
+    "original": "Blog",
+    "value": " Blog ",
+    "_base_original": "Blog"
+  },
+  "footer:blog": {
+    "original": "Blog",
+    "value": " Blog ",
+    "_base_original": "Blog"
+  },
+  "footer:copyright": {
+    "original": "MyCompany. All rights reserved.",
+    "value": "MyCompany. Tous droits réservés.",
+    "_base_original": "MyCompany. All rights reserved."
+  },
+  "footer:rss-feed": {
+    "original": "RSS Feed",
+    "value": " Flux RSS ",
+    "_base_original": "RSS Feed"
+  },
+  "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:button_text": {
+    "original": "CloudCannon Docs",
+    "value": " Documentation CloudCannon ",
+    "_base_original": "CloudCannon Docs"
+  },
+  "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:heading": {
+    "original": "You choose your editing experience.",
+    "value": " Vous choisissez votre expérience d'édition. ",
+    "_base_original": "You choose your editing experience."
+  },
+  "index:06a2d4dd-1db5-4d63-8cfe-6e7683f95108:text_content": {
+    "original": "<p>A flexible git-backed CMS that specialises in editing markdown and data files.</p>\n<p>Visual editing allows you to preview your changes live before you save them.</p>\n<p>Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.</p>",
+    "value": "<p>Un CMS flexible basé sur git, spécialisé dans l'édition de fichiers markdown et de données.</p>\n<p>L'édition visuelle vous permet de prévisualiser vos modifications en direct avant de les enregistrer.</p>\n<p>Basé sur git, vous pouvez conserver tous vos workflows git habituels, tout en offrant une interface simple à comprendre pour que les éditeurs non techniques collaborent via git.</p>\n",
+    "_base_original": "<p>A flexible git-backed CMS that specialises in editing markdown and data files.</p>\n<p>Visual editing allows you to preview your changes live before you save them.</p>\n<p>Git-backed means you can keep all your familiar git workflows, while providing an easy-to-understand interface for non-technical editors to collaborate via git.</p>"
+  },
+  "index:62ab02a7-7456-4180-8be1-a62e5f545f52:button_text": {
+    "original": "Get Started",
+    "value": " Commencer ",
+    "_base_original": "Get Started"
+  },
+  "index:62ab02a7-7456-4180-8be1-a62e5f545f52:heading": {
+    "original": "Astro Minimal Starter",
+    "value": " Astro Minimal Starter ",
+    "_base_original": "Astro Minimal Starter"
+  },
+  "index:62ab02a7-7456-4180-8be1-a62e5f545f52:subheading": {
+    "original": "<p>A <strong>minimal</strong> starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon. Create your own copy, and start creating your own components to use in the Visual Editor.</p>\n<p>Once you've explored this minimal starter, consider  taking a look at the <a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> to assist in building out your components.</p>",
+    "value": "<p>Un point de départ <strong>minimal</strong> pour les développeurs souhaitant créer un site web avec Astro, en utilisant les Editable Regions de CloudCannon. Créez votre propre copie et commencez à concevoir vos propres composants à utiliser dans l'éditeur visuel.</p>\n<p>Une fois ce modèle minimal exploré, envisagez de consulter l'<a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> pour vous aider à développer vos composants.</p>\n",
+    "_base_original": "<p>A <strong>minimal</strong> starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon. Create your own copy, and start creating your own components to use in the Visual Editor.</p>\n<p>Once you've explored this minimal starter, consider  taking a look at the <a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> to assist in building out your components.</p>"
+  },
+  "index:953f2405-5e5c-41a1-839f-f12f23b12b9d:heading": {
+    "original": "Keep what you need. Delete the rest.",
+    "value": " Gardez ce dont vous avez besoin. Supprimez le reste. ",
+    "_base_original": "Keep what you need. Delete the rest."
+  },
+  "index:953f2405-5e5c-41a1-839f-f12f23b12b9d:text_content": {
+    "original": "<p>This starter aims to get developers building their own site quickly in CloudCannon. It strikes a balance between minimal boilerplate and useful features out of the box:</p><ul><li><p>Tailwind CSS v4</p></li><li><p>Blog with pagination &amp; tags</p></li><li><p>Visual editing with Editable Regions</p></li><li><p>Header and Footer controls</p></li><li><p>Create and delete pages</p></li><li><p>SEO controls</p></li></ul>",
+    "value": "<p>Ce modèle vise à permettre aux développeurs de créer rapidement leur propre site dans CloudCannon. Il trouve l'équilibre entre un minimum de code standard et des fonctionnalités utiles prêtes à l'emploi :</p>\n<ul>\n<li>Tailwind CSS v4</li>\n<li>Blog avec pagination &amp; tags</li>\n<li>Édition visuelle avec les Editable Regions</li>\n<li>Contrôles d'en-tête et de pied de page</li>\n<li>Création et suppression de pages</li>\n<li>Contrôles SEO</li>\n</ul>\n",
+    "_base_original": "<p>This starter aims to get developers building their own site quickly in CloudCannon. It strikes a balance between minimal boilerplate and useful features out of the box:</p>\n<ul>\n<li>Tailwind CSS v4</li>\n<li>Blog with pagination &amp; tags</li>\n<li>Visual editing with Editable Regions</li>\n<li>Header and Footer controls</li>\n<li>Create and delete pages</li>\n<li>SEO controls</li>\n</ul>"
+  },
+  "index:page_description": {
+    "original": "A starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon.",
+    "value": "Un point de départ pour les développeurs souhaitant créer un site web avec Astro, en utilisant les Editable Regions dans CloudCannon.",
+    "_base_original": "A starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon."
+  },
+  "index:page_title": {
+    "original": "Astro Minimal Starter",
+    "value": "Astro Minimal Starter",
+    "_base_original": "Astro Minimal Starter"
+  },
+  "nav:about": {
+    "original": "About",
+    "value": " À propos ",
+    "_base_original": "About"
+  },
+  "nav:blog": {
+    "original": "Blog",
+    "value": " Blog ",
+    "_base_original": "Blog"
+  },
+  "nav:cloudcannon": {
+    "original": "CloudCannon",
+    "value": " CloudCannon ",
+    "_base_original": "CloudCannon"
+  },
+  "nav:github": {
+    "original": "GitHub",
+    "value": " GitHub ",
+    "_base_original": "GitHub"
+  },
+  "recent_posts": {
+    "original": "Recent Posts",
+    "value": "Articles récents",
+    "_base_original": "Recent Posts"
+  },
+  "tag_page_description": {
+    "original": "A blog template with tags.",
+    "value": "Un modèle de blog avec des tags.",
+    "_base_original": "A blog template with tags."
+  },
+  "tag_page_titles:accessibility": {
+    "original": "Accessibility | Astro Starter",
+    "value": "Accessibilité | Astro Starter",
+    "_base_original": "Accessibility | Astro Starter"
+  },
+  "tag_page_titles:building": {
+    "original": "Building | Astro Starter",
+    "value": "Développement | Astro Starter",
+    "_base_original": "Building | Astro Starter"
+  },
+  "tag_page_titles:data": {
+    "original": "Data | Astro Starter",
+    "value": "Données | Astro Starter",
+    "_base_original": "Data | Astro Starter"
+  },
+  "tag_page_titles:icons": {
+    "original": "Icons | Astro Starter",
+    "value": "Icônes | Astro Starter",
+    "_base_original": "Icons | Astro Starter"
+  },
+  "tag_page_titles:images": {
+    "original": "Images | Astro Starter",
+    "value": "Images | Astro Starter",
+    "_base_original": "Images | Astro Starter"
+  },
+  "tag_page_titles:inputs": {
+    "original": "Inputs | Astro Starter",
+    "value": "Champs | Astro Starter",
+    "_base_original": "Inputs | Astro Starter"
+  },
+  "tag_page_titles:markdown": {
+    "original": "Markdown | Astro Starter",
+    "value": "Markdown | Astro Starter",
+    "_base_original": "Markdown | Astro Starter"
+  },
+  "tag_page_titles:navigation": {
+    "original": "Navigation | Astro Starter",
+    "value": "Navigation | Astro Starter",
+    "_base_original": "Navigation | Astro Starter"
+  },
+  "tag_page_titles:pagination": {
+    "original": "Pagination | Astro Starter",
+    "value": "Pagination | Astro Starter",
+    "_base_original": "Pagination | Astro Starter"
+  },
+  "tag_page_titles:search": {
+    "original": "Search | Astro Starter",
+    "value": "Recherche | Astro Starter",
+    "_base_original": "Search | Astro Starter"
+  },
+  "tag_page_titles:seo": {
+    "original": "SEO | Astro Starter",
+    "value": "SEO | Astro Starter",
+    "_base_original": "SEO | Astro Starter"
+  },
+  "tag_page_titles:styling": {
+    "original": "Styling | Astro Starter",
+    "value": "Style | Astro Starter",
+    "_base_original": "Styling | Astro Starter"
+  },
+  "tag_page_titles:tailwind": {
+    "original": "Tailwind | Astro Starter",
+    "value": "Tailwind | Astro Starter",
+    "_base_original": "Tailwind | Astro Starter"
+  },
+  "tags:accessibility": {
+    "original": "Accessibility",
+    "value": "Accessibilité",
+    "_base_original": "Accessibility"
+  },
+  "tags:building": {
+    "original": "Building",
+    "value": "Développement",
+    "_base_original": "Building"
+  },
+  "tags:data": {
+    "original": "Data",
+    "value": "Données",
+    "_base_original": "Data"
+  },
+  "tags:icons": {
+    "original": "Icons",
+    "value": "Icônes",
+    "_base_original": "Icons"
+  },
+  "tags:images": {
+    "original": "Images",
+    "value": "Images",
+    "_base_original": "Images"
+  },
+  "tags:inputs": {
+    "original": "Inputs",
+    "value": "Champs",
+    "_base_original": "Inputs"
+  },
+  "tags:markdown": {
+    "original": "Markdown",
+    "value": "Markdown",
+    "_base_original": "Markdown"
+  },
+  "tags:navigation": {
+    "original": "Navigation",
+    "value": "Navigation",
+    "_base_original": "Navigation"
+  },
+  "tags:pagination": {
+    "original": "Pagination",
+    "value": "Pagination",
+    "_base_original": "Pagination"
+  },
+  "tags:search": {
+    "original": "Search",
+    "value": "Recherche",
+    "_base_original": "Search"
+  },
+  "tags:seo": {
+    "original": "SEO",
+    "value": "SEO",
+    "_base_original": "SEO"
+  },
+  "tags:styling": {
+    "original": "Styling",
+    "value": "Style",
+    "_base_original": "Styling"
+  },
+  "tags:tailwind": {
+    "original": "Tailwind",
+    "value": "Tailwind",
+    "_base_original": "Tailwind"
+  }
+}

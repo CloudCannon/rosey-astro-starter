@@ -1,10 +1,10 @@
 ---
 _schema: default
-title: CloudCannon Astro Starter
+title: Astro Minimal Starter
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Astro, using
-    Bookshop components in CloudCannon.
+    Editable Regions in CloudCannon.
   canonical_url:
   featured_image:
   featured_image_alt:
@@ -12,97 +12,71 @@ seo:
   open_graph_type:
   no_index: false
 hero_block:
-  _bookshop_name: heroes/hero
-  background_color: '#ffffff'
-  heading:
-    heading_text: Update live for the demo.
-    heading_gradient_color: '#A0A2FF'
-    text_color: '#333232'
-  subheading:
-    text_content: >-
-      A starting point for developers looking to build a multilingual website
-      with Astro, Rosey, and the Rosey CloudCannon Connector, using Bookshop
-      components in CloudCannon. Create your own copy, and start creating your
-      own components to use in CloudCannon’s CMS.
+  _name: Hero
+  _uuid: 62ab02a7-7456-4180-8be1-a62e5f545f52
+  heading: Astro Minimal Starter
+  subheading: >-
+    A **minimal** starting point for developers looking to build a website with
+    Astro, using Editable Regions in CloudCannon. Create your own copy, and
+    start creating your own components to use in the Visual Editor. 
 
 
-      A new paragraph for a demo with Karla.
-    color: '#393939'
-    text_color: '#333232'
+    Once you've explored this minimal starter, consider  taking a look at the
+    [Astro Component
+    Starter](https://github.com/CloudCannon/astro-component-starter) to assist
+    in building out your components.
   image:
     image_path: /src/assets/images/transparent-bg/undraw-online-test.svg
-    alt_text: An image
-  buttons:
-    - _bookshop_name: buttons/primary
-      button_text: GitHub
-      button_icon: GitHub
-      button_link: https://github.com/CloudCannon/rosey-astro-starter/
-      background_color: '#034AD8'
-      hover_brightness: 0.85
-      text_color: '#ffffff'
-      button_aria_label:
-    - _bookshop_name: buttons/secondary
-      button_text: CloudCannon
-      button_icon: CloudCannon
-      button_link: https://www.cloudcannon.com
-      text_color: '#034AD8'
-      hover_brightness: 0.85
-      button_aria_label:
-      background_color: '#034ad8'
+    alt_text: An illustration of someone leaning against a desktop computer monitor.
+  button:
+    text: Get Started
+    link: https://github.com/CloudCannon/rosey-astro-starter/
 content_blocks:
-  - _bookshop_name: left-right
-    background_color: '#ffffff'
-    heading:
-      heading_text: Keep what you need. Delete the rest.
-      color: '#393939'
-      text_color: '#333232'
-    text:
-      text_content: >-
-        The Rosey Astro Starter's aim is to get developers building their own
-        site quickly in CloudCannon. This template is trying to strike a balance
-        between minimal, and easy-to-delete boiler plate, while providing some
-        commonly used features out of the box. Read more about Rosey in
-        CloudCannon
-        [here](https://cloudcannon.com/blog/managing-multilingual-content-in-cloudcannon/).
-      color: '#393939'
-      text_color: '#333232'
+  - _name: LeftRight
+    _uuid: 953f2405-5e5c-41a1-839f-f12f23b12b9d
+    heading: Keep what you need. Delete the rest.
+    text_content: >-
+      This starter aims to get developers building their own site quickly in
+      CloudCannon. It strikes a balance between minimal boilerplate and useful
+      features out of the box:
+
+
+      - Tailwind CSS v4
+
+      - Blog with pagination & tags
+
+      - Visual editing with Editable Regions
+
+      - Header and Footer controls
+
+      - Create and delete pages
+
+      - SEO controls
     image:
       image_path: /src/assets/images/transparent-bg/undraw-hello.svg
-      alt_text: An image
+      alt_text: An illustration of someone sitting at a desk with a monitor and books.
     flipped: true
-    button:
-  - _bookshop_name: left-right
-    background_color: '#ffffff'
-    heading:
-      heading_text: You choose your editing experience.
-      color: '#393939'
-      text_color: '#333232'
-    text:
-      text_content: >-
-        A flexible git-backed CMS that specialises in editing markdown and data
-        files. 
+    button: {}
+  - _name: LeftRight
+    _uuid: 06a2d4dd-1db5-4d63-8cfe-6e7683f95108
+    heading: You choose your editing experience.
+    text_content: >-
+      A flexible git-backed CMS that specialises in editing markdown and data
+      files.
 
 
-        Visual editing allows you to preview your changes live before you save
-        them. 
+      Visual editing allows you to preview your changes live before you save
+      them.
 
 
-        Git-backed means you can keep all your familiar git workflows, while
-        providing an easy-to-understand interface for non-technical editors to
-        collaborate via git. 
-      color: '#393939'
-      text_color: '#333232'
+      Git-backed means you can keep all your familiar git workflows, while
+      providing an easy-to-understand interface for non-technical editors to
+      collaborate via git.
     image:
       image_path: /src/assets/images/transparent-bg/undraw-startup.svg
-      alt_text: An image
+      alt_text: An illustration of someone sitting at a desk.
     flipped: false
     button:
-      _bookshop_name: buttons/primary
-      button_text: GitHub
-      button_icon: GitHub
-      button_link: https://github.com/CloudCannon/rosey-astro-starter/
-      background_color: '#034AD8'
-      hover_brightness: 0.85
-      text_color: '#ffffff'
-      button_aria_label:
+      text: CloudCannon Docs
+      link: https://cloudcannon.com/documentation/
 ---

@@ -1,25 +1,20 @@
 ---
 _schema: default
-title: Tailwind
+title: Tailwind CSS v4
 post_hero:
-  heading: Tailwind
+  heading: Tailwind CSS v4
   date: 2025-05-06T11:28:34+12:00
   tags:
     - building
     - styling
     - tailwind
-    - WYSIWYG editing
-    - pagination
-    - accessibility
-    - navigation
-    - formatting
   author: T Richardson
   image: /src/assets/images/blog/featured-image-2.jpg
   image_alt: Children working around a laptop in a busy classroom.
 thumb_image_path: /src/assets/images/blog/blog-thumb-6.jpg
 thumb_image_alt: A group of people working around a table, as seen from above.
 seo:
-  page_description: A post describing how to use Tailwind to style your site.
+  page_description: A post describing how Tailwind CSS v4 is used for styling.
   canonical_url:
   featured_image: /images/blog/featured-image-2.jpg
   featured_image_alt: Children working around a laptop in a busy classroom.
@@ -27,24 +22,14 @@ seo:
   open_graph_type: article
   no_index: false
 ---
-Use Tailwind to style your HTML, allowing you to style your components without leaving your HTML. This can be used in combination with normal CSS and SCSS styling, leaving you to add styles to your site however you want.
+This site uses Tailwind CSS v4 with the CSS-first configuration approach. The main stylesheet at `src/styles/main.css` imports Tailwind with `@import "tailwindcss"`.
 
-If you'd like to remove Tailwind:
+Tailwind v4 uses `@tailwindcss/vite` as a Vite plugin instead of the older `@astrojs/tailwind` integration. Configuration happens in CSS using `@layer theme` rather than a JavaScript config file.
 
-1. Run the following command in the root of the site:
+Key differences from Tailwind v3:
 
-`npm uninstall tailwindcss @astrojs/tailwind`
-
-2. Remove mentions of Tailwind from your `astro.config.mjs`
-
-```js
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-
-export default defineConfig({
-  // ...
-  integrations: [tailwind()],
-});
-```
-
-3. Delete your `tailwind.config.mjs` file.
+- No `tailwind.config.js` file needed
+- Use `@import "tailwindcss"` instead of `@tailwind` directives
+- Configuration via CSS custom properties
+- Automatic content detection (no `content` paths)
+- Dynamic spacing and grid values without extending config

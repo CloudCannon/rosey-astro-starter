@@ -9,7 +9,7 @@ export interface Props {
 export async function getStaticPaths() {
   const pages = await getCollection("pages");
   return pages.map((page) => {
-    const slug = page.slug.replace(/index$/, "");
+    const slug = page.id.replace(/index$/, "");
     if (slug.length === 0)
       return { params: { slug: undefined }, props: { page } };
     return { params: { slug }, props: { page } };
@@ -19,4 +19,4 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 ---
 
-<PageLayout frontmatter={page.data} />
+<PageLayout frontmatter={page.data} roseySeo />

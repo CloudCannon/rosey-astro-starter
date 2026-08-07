@@ -7,14 +7,17 @@ type Props = {
     page_size?: number;
     seo?: SEOProps;
   };
+  roseyRoot?: string;
+  roseySeo?: boolean;
 };
 
 if (!Astro.props.frontmatter) {
   throw new Error("Page frontmatter must be defined");
 }
 const props = Astro.props.frontmatter;
+const { roseyRoot, roseySeo } = Astro.props;
 ---
 
-<Layout {...props}>
+<Layout {...props} roseyRoot={roseyRoot} roseySeo={roseySeo}>
   <slot />
 </Layout>

@@ -1,13 +1,8 @@
-#!/usr/bin/env bash
-
-npx @bookshop/generate
-
-# Rosey translations
-npx rosey-cloudcannon-connector tag --source dist
-npx rosey generate --source dist
-npx rosey-cloudcannon-connector generate
-mv ./dist ./untranslated_site                  
-npx rosey build --source untranslated_site --dest dist --default-language-at-root
-
-# Pagefind search
 npx -y pagefind --site dist
+
+# Rosey
+npx rosey generate --source dist
+npx rosey-cloudcannon-connector write-locales --source rosey --dest dist --locales fr,de
+
+mv ./dist ./_untranslated_site
+npx rosey build --source _untranslated_site --dest dist --default-language en --exclusions "\.(html?)$"

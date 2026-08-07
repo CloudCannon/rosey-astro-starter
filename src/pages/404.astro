@@ -1,54 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const props = {
-  title: "404 - Not Found",
-  openGraph: {
-    basic: {
-      title: "404 - Not Found",
-      type: "website",
-      image: "/images/404.png",
-    },
-  },
-};
 ---
 
-<Layout {...props}>
-  <section class="error">
-    <div class="container">
-      <div class="error-content">
-        <img src="/images/404.png" class="" alt="Error illustration" />
-        <h1 class="my-5">Page not found!</h1>
-        <a href="/" class="btn btn-lg btn-primary"> &larr; Back home </a>
-      </div>
-    </div>
+<Layout title="404 - Not Found" roseySeo>
+  <section class="flex flex-col items-center justify-center min-h-[60vh] px-8">
+    <img src="/images/404.png" alt="Error illustration" class="max-w-sm mb-8" />
+    <h1 class="text-3xl md:text-4xl font-bold mb-4" data-rosey="heading">Page not found!</h1>
+    <a href="/" class="text-blue-600 hover:text-blue-800 font-medium text-lg">
+      &larr; <span data-rosey="back_home">Back home</span>
+    </a>
   </section>
 </Layout>
-
-<style>
-  .error {
-    max-width: var(--pageContainer);
-    margin: 0 auto;
-  }
-
-  .error-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  @media screen and (min-width: 960px) {
-    h1 {
-      font-size: 3rem;
-    }
-  }
-
-  a:hover {
-    color: blue;
-  }
-</style>
