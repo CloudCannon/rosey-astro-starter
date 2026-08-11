@@ -2,7 +2,7 @@
 
 A multilingual starter template for building an Astro site with [CloudCannon](https://cloudcannon.com/). The site is written in English and translated into French and German with [Rosey](https://rosey.app/), with translations edited inline in the Visual Editor via the [Rosey CloudCannon Connector](https://github.com/CloudCannon/rcc).
 
-See a [demo site](https://tiny-jackal.cloudvent.net/).
+See a [demo site](https://deluxe-gel.cloudvent.net/).
 
 ## Features
 
