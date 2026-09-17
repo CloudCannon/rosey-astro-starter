@@ -19,6 +19,10 @@ See a [demo site](https://deluxe-gel.cloudvent.net/).
 
 Click `Use this template` to make your own copy of the repository.
 
+### Prerequisites
+
+- Node.js 22 or newer. Node.js 24 is recommended — the CloudCannon CLI requires it.
+
 ### Local Development
 
 1. Clone the repository to your local machine.
@@ -33,6 +37,90 @@ npm run dev
 ## CloudCannon Setup
 
 This site is pre-configured for CloudCannon. Connect your repository and CloudCannon will detect the configuration in `.cloudcannon/initial-site-settings.json` and build your site automatically. The editing experience is defined in `cloudcannon.config.yml`, which you can modify to control your editors' experience.
+
+### Editing Locally with CloudCannon
+
+Run CloudCannon against your local files with the [CloudCannon CLI](https://cloudcannon.com/documentation/developer-reference/cli/)
+dev server. This is the fastest way to iterate on `cloudcannon.config.yml`, inputs, structures, and
+editable regions — you see the editing experience without committing and pushing first.
+
+1. Install the CLI and log in (requires Node.js 24+):
+
+   ```bash
+   npm install --global @cloudcannon/cli
+   cloudcannon login
+   ```
+
+2. Build the site, so the dev server has output to serve:
+
+   ```bash
+   npm run build
+   ```
+
+3. Start CloudCannon locally, pointing it at the build output:
+
+   ```bash
+   cloudcannon dev dist
+   ```
+
+The dev server runs on port `10101` by default and opens CloudCannon in your browser, pointed at the
+files in this repo. Content edits sync to disk as you make them; re-run `npm run build` after changing
+components or templates to refresh the preview.
+
+`npm run build` produces the English site only — Rosey runs in `.cloudcannon/postbuild`, after the
+Astro build. To preview the translated site locally, run the commands in that file after `npm run build`,
+then serve the result with `cloudcannon dev dist`. Note that it moves `dist` to `_untranslated_site`,
+so re-run `npm run build` before your next plain preview.
+
+Before you commit configuration changes, validate them:
+
+```bash
+cloudcannon validate
+```
+
+The dev server is a development tool only — editors never access it. See
+[Build your editing experience locally](https://cloudcannon.com/blog/build-your-editing-experience-locally-with-the-cloudcannon-dev-server/)
+for the full workflow.
+
+### AI Agent Skills
+
+If you build with an AI coding agent (Claude Code, Cursor, Copilot, and others), install
+[CloudCannon's agent skills](https://github.com/CloudCannon/agent-skills). They teach your agent how CloudCannon
+configuration, editable regions, and snippets actually work, so it stops guessing.
+
+```bash
+npx skills add cloudcannon/agent-skills --all
+```
+
+To see what's on offer before installing anything, or to install a subset:
+
+```bash
+npx skills add cloudcannon/agent-skills --list
+npx skills add cloudcannon/agent-skills --skill <names>
+```
+
+Other useful flags and commands:
+
+| Command                           | What it does                                                  |
+| --------------------------------- | ------------------------------------------------------------- |
+| `--all`                           | Install every skill for every detected agent, without prompts |
+| `-l`, `--list`                    | List the skills in the repository without installing          |
+| `-g`, `--global`                  | Install for your user account instead of just this project    |
+| `npx skills ls`                   | List the skills you have installed, project and global        |
+| `npx skills update`               | Update installed skills to their latest versions              |
+| `npx skills remove`               | Remove installed skills                                       |
+| `npx skills experimental_install` | Restore the exact skills recorded in `skills-lock.json`       |
+
+Skills install to `.agents/skills/`, with agent-specific directories such as `.claude/skills/` and `agent/skills/`
+pointing at them. Those directories are gitignored, but `skills-lock.json` is committed — so a teammate can restore
+the same set and versions you used.
+
+In Claude Code you can install them as a plugin instead:
+
+```
+/plugin marketplace add CloudCannon/agent-skills
+/plugin install agent-skills@cloudcannon
+```
 
 ### Editable Regions
 
@@ -114,6 +202,13 @@ Tag **slugs** stay English because they're the URL (`/fr/tags/markdown/`); only 
 3. Register the collection in `src/content.config.ts`
 4. In `cloudcannon.config.yml`: add a `blog_<code>` collection with `url: '/<code>/blog/[full_slug]/'`, a `data_config.locales_<code>` entry, and the collection to `collection_groups`
 5. Add the code to `--locales` in `.cloudcannon/postbuild`
+
+## Learn More
+
+- [CloudCannon documentation](https://cloudcannon.com/documentation/) — configuration, editing, and build reference
+- [CloudCannon CLI reference](https://cloudcannon.com/documentation/developer-reference/cli/) — `cloudcannon dev`, `validate`, and more
+- [CloudCannon agent skills](https://github.com/CloudCannon/agent-skills) — skills for working on CloudCannon sites with AI agents
+- [Rosey](https://rosey.app/) and the [Rosey CloudCannon Connector](https://github.com/CloudCannon/rcc) — the translation pipeline this starter uses
 
 ## Project Structure
 
