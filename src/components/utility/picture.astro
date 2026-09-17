@@ -1,0 +1,53 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image, Picture } from "astro:assets";
+
+interface Props {
+  src: ImageMetadata | string;
+  alt: string;
+  widths?: number[];
+  sizes?: string;
+  loading?: "eager" | "lazy";
+  formats?: string[];
+  [key: string]: any;
+}
+
+const {
+  src,
+  alt,
+  widths,
+  sizes,
+  loading,
+  formats = ["avif", "webp"],
+  ...rest
+} = Astro.props;
+
+// Astro doesn't rasterize SVG sources, so asking <Picture> for avif/webp
+// variants of one fails the build. Editors can pick any image here, so SVGs
+// are passed through unchanged instead of being resized into raster formats.
+const isSvg =
+  typeof src === "string"
+    ? src.split("?")[0].toLowerCase().endsWith(".svg")
+    : src.format === "svg";
+
+// Callers resolve images from a glob and fall back to the raw path when it
+// misses. Astro types that fallback as a remote image, which would demand
+// explicit dimensions, so the union is narrowed back to the imported form.
+const source = src as ImageMetadata;
+---
+
+{
+  isSvg ? (
+    <Image src={source} alt={alt} format="svg" loading={loading} {...rest} />
+  ) : (
+    <Picture
+      src={source}
+      alt={alt}
+      widths={widths}
+      sizes={sizes}
+      loading={loading}
+      formats={formats}
+      {...rest}
+    />
+  )
+}
