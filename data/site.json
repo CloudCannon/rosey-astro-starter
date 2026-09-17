@@ -2,7 +2,7 @@
   "site_title": "Astro Starter",
   "description": "A starter template for Astro with Editable Regions, for CloudCannon CMS.",
   "twitter_site": "",
-  "image": "/images/logos/logo-wordmark-blue.png",
-  "image_alt": "CloudCannon logo",
+  "image": "/images/logos/multilingual-by-cloudcannon.png",
+  "image_alt": "Multilingual by CloudCannon",
   "default_author": "CloudCannon"
 }
