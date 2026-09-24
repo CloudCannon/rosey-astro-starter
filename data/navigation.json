@@ -1,7 +1,7 @@
 {
   "header": {
-    "logo": "/images/logos/logo-wordmark-blue.png",
-    "logo_alt_text": "CloudCannon logo",
+    "logo": "/images/logos/multilingual-by-cloudcannon.svg",
+    "logo_alt_text": "Multilingual by CloudCannon",
     "logo_url": "/",
     "links": [
       {
@@ -23,8 +23,8 @@
     ]
   },
   "footer": {
-    "logo": "/images/logos/logo-wordmark-white.png",
-    "logo_alt_text": "CloudCannon logo",
+    "logo": "/images/logos/multilingual-by-cloudcannon-white.svg",
+    "logo_alt_text": "Multilingual by CloudCannon",
     "logo_url": "/",
     "copyright": "MyCompany. All rights reserved.",
     "links": [
