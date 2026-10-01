@@ -1,6 +1,6 @@
 ---
 _schema: default
-title: Astro Minimal Starter
+title: Astro Multilingual Starter
 seo:
   page_description: >-
     A starting point for developers looking to build a website with Astro, using
@@ -14,7 +14,7 @@ seo:
 hero_block:
   _name: Hero
   _uuid: 62ab02a7-7456-4180-8be1-a62e5f545f52
-  heading: Astro Minimal Starter
+  heading: Astro Multilingual Starter
   subheading: >-
     A **minimal** starting point for developers looking to build a website with
     Astro, using Editable Regions in CloudCannon. Create your own copy, and
