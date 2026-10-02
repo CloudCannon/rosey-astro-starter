@@ -100,9 +100,9 @@
     "_base_original": "Get Started"
   },
   "index:62ab02a7-7456-4180-8be1-a62e5f545f52:heading": {
-    "original": "Astro Minimal Starter",
-    "value": " Astro Minimal Starter ",
-    "_base_original": "Astro Minimal Starter"
+    "original": "Astro Multilingual Starter",
+    "value": " Astro Multilingual Starter ",
+    "_base_original": "Astro Multilingual Starter"
   },
   "index:62ab02a7-7456-4180-8be1-a62e5f545f52:subheading": {
     "original": "<p>A <strong>minimal</strong> starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon. Create your own copy, and start creating your own components to use in the Visual Editor.</p>\n<p>Once you've explored this minimal starter, consider  taking a look at the <a href=\"https://github.com/CloudCannon/astro-component-starter\">Astro Component Starter</a> to assist in building out your components.</p>",
@@ -125,9 +125,9 @@
     "_base_original": "A starting point for developers looking to build a website with Astro, using Editable Regions in CloudCannon."
   },
   "index:page_title": {
-    "original": "Astro Minimal Starter",
-    "value": "Astro Minimal Starter",
-    "_base_original": "Astro Minimal Starter"
+    "original": "Astro Multilingual Starter",
+    "value": "Astro Multilingual Starter",
+    "_base_original": "Astro Multilingual Starter"
   },
   "nav:about": {
     "original": "About",

@@ -269,6 +269,12 @@ collections_config:
         comment: Automatically prefixed with the current year.
       image:
         type: image
+      favicon_svg:
+        type: image
+        comment: SVG icon shown in browser tabs and bookmarks. Used by most modern browsers.
+      favicon_ico:
+        type: file
+        comment: ICO fallback icon for browsers that don't support SVG favicons.
 
   locales:
     path: rosey/locales

@@ -7,10 +7,10 @@ import LocalePicker from "./locale-picker.astro";
   <div class="mx-auto max-w-6xl px-8">
     <nav class="flex items-center justify-between py-4">
       <a href={header.logo_url}>
-        <img class="w-48" src={header.logo} alt={header.logo_alt_text} />
+        <img class="w-56" src={header.logo} alt={header.logo_alt_text} />
       </a>
 
-      <div class="hidden sm:flex items-center gap-6">
+      <div class="hidden md:flex items-center gap-6">
         <ul class="flex items-center gap-6" data-rosey-ns="nav">
           {header.links.map((link) => (
             <li>
@@ -28,7 +28,7 @@ import LocalePicker from "./locale-picker.astro";
       </div>
 
       <button
-        class="sm:hidden p-2"
+        class="md:hidden p-2"
         aria-label="Open navigation menu"
         popovertarget="mobile-menu"
         popovertargetaction="show"
@@ -42,7 +42,7 @@ import LocalePicker from "./locale-picker.astro";
         <div class="flex flex-col h-full">
         <div class="mx-auto w-full max-w-6xl flex items-center justify-between px-8 py-4">
           <a href={header.logo_url}>
-            <img class="w-48" src={header.logo} alt={header.logo_alt_text} />
+            <img class="w-56" src={header.logo} alt={header.logo_alt_text} />
           </a>
           <button
             class="p-2"

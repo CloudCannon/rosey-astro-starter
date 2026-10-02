@@ -84,7 +84,8 @@ const canonicalURL = new URL(seo?.canonical_url ?? Astro.url.pathname, baseUrl);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    {site.favicon_ico && <link rel="icon" href={site.favicon_ico} sizes="32x32" />}
+    {site.favicon_svg && <link rel="icon" type="image/svg+xml" href={site.favicon_svg} />}
     <meta name="generator" content={Astro.generator} />
 
     {titleKey && <title data-rosey={titleKey}>{pageTitle}</title>}

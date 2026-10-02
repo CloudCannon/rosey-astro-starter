@@ -1,7 +1,7 @@
 {
   "header": {
-    "logo": "/images/logos/multilingual-by-cloudcannon.svg",
-    "logo_alt_text": "Multilingual by CloudCannon",
+    "logo": "/images/logos/astro-multilingual-starter-logo.svg",
+    "logo_alt_text": "Astro Multilingual Starter",
     "logo_url": "/",
     "links": [
       {
@@ -23,8 +23,8 @@
     ]
   },
   "footer": {
-    "logo": "/images/logos/multilingual-by-cloudcannon-white.svg",
-    "logo_alt_text": "Multilingual by CloudCannon",
+    "logo": "/images/logos/astro-multilingual-starter-logo-reversed.svg",
+    "logo_alt_text": "Astro Multilingual Starter",
     "logo_url": "/",
     "copyright": "MyCompany. All rights reserved.",
     "links": [
